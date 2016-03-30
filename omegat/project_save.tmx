@@ -14,6 +14,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An Animation is defined by various properties and a collection of keys.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T154332Z" creationid="aceway" creationdate="20160330T154019Z">
+        <seg>一个动画是由许多属性和一系列的键值定义的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Animations
 ---
 # Animation
@@ -38,8 +46,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>The first is to define a collection of keys and defining your object's situation at each key.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T033542Z" creationid="aceway" creationdate="20160330T033530Z">
-        <seg>第一种方式是定义关键帧集合，并且每帧定义好你的对象物的状态。</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T154251Z" creationid="aceway" creationdate="20160330T033530Z">
+        <seg>第一种方式是定义一系列的键值集合，并且定义好每个键值对应的对象物状态。</seg>
       </tuv>
     </tu>
     <tu>
