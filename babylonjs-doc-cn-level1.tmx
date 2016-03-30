@@ -28,6 +28,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The animation is based on objects called Animation (!!).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T094901Z" creationid="aceway@qq.com" creationdate="20160330T094901Z">
+        <seg>基于众多物体对象动画也叫电影片段</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The first is to define a collection of keys and defining your object's situation at each key.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T033542Z" creationid="aceway" creationdate="20160330T033530Z">
