@@ -1,0 +1,11 @@
+StarDict's dict ifo file
+version=2.4.2
+wordcount=39429
+idxfilesize=721264
+bookname=牛津现代英汉双解词典
+author=Terrence Miao
+email=terence_miao@email.com
+website=http://igloo.its.unimelb.edu.au/Blowfish/
+description=胡正将其转换到StarDict，罗冲修正错误，霍东灵修正音标。
+date=2006.6.9
+sametypesequence=m
