@@ -60,8 +60,8 @@
       <tuv xml:lang="EN-US">
         <seg>**Parameter 5** - Finally, you have to decide and enter the type of behavior this animation will take at its upper limit (e.g. will it continue on, will it begin again, will it stop at the last key value, etc.):</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054123Z" creationid="aceway@qq.com" creationdate="20160331T020033Z">
-        <seg>**参数 5** - 最后,  你需要决定并输入这个动画的行为类型，这些会决定动画的上限(比如:当到最后一帧时是否继续，是否重新开始，或者停止)：</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083821Z" creationid="aceway@qq.com" creationdate="20160331T020033Z">
+        <seg>**参数 5** - 最后,  你需要决定并输入这个动画的行为类型，这些会决定动画的受限(比如:当到最后一帧时是否继续，是否重新开始，或者停止)：</seg>
       </tuv>
     </tu>
     <tu>
