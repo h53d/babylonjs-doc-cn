@@ -66,6 +66,38 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>**Parameters for scene.beginAnimation:**</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085729Z" creationid="aceway@qq.com" creationdate="20160331T085729Z">
+        <seg>**提供给scene.beginAnimation的参数：**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>//At the animation key 0, the value of scaling is "1"</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085257Z" creationid="aceway@qq.com" creationdate="20160331T085257Z">
+        <seg>//在动画0键，放在倍数是 1。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>//At the animation key 100, the value of scaling is "1"</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085404Z" creationid="aceway@qq.com" creationdate="20160331T085404Z">
+        <seg>//在动画的第100键，放大倍数是1。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>//At the animation key 20, the value of scaling is "0.2"</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085336Z" creationid="aceway@qq.com" creationdate="20160331T085336Z">
+        <seg>//在动画的第20键，放大倍数是0.2。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>//Create a box</seg>
       </tuv>
       <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014056Z" creationid="aceway@qq.com" creationdate="20160331T014056Z">
@@ -120,6 +152,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Finally, you can launch your animation in one line of code, at any time in your application:</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085655Z" creationid="aceway@qq.com" creationdate="20160331T085655Z">
+        <seg>最后，你可以在你应用的任何时间点通过一行代码加载动画。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>First, create our Animation object:</seg>
       </tuv>
       <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054019Z" creationid="aceway@qq.com" creationdate="20160331T014146Z">
@@ -156,6 +196,16 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054024Z" creationid="aceway@qq.com" creationdate="20160331T014205Z">
         <seg>更多信息在参数里：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Next, two important steps:
+* Adding the animation array to the animation object:</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085505Z" creationid="aceway@qq.com" creationdate="20160331T085505Z">
+        <seg>紧接着，最重要的两步：
+* 将存有动画信息的数组添加到动画对象上。</seg>
       </tuv>
     </tu>
     <tu>
@@ -244,6 +294,70 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053841Z" creationid="aceway@qq.com" creationdate="20160331T013721Z">
         <seg>_最终结果_ </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>```javascript
+// An array with all animation keys
+var keys = [];</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085154Z" creationid="aceway@qq.com" creationdate="20160331T085111Z">
+        <seg>```javascript
+// 存储素有动画键值的数组
+var keys = [];</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>```javascript
+animationBox.setKeys(keys);
+```
+* Link this animation to our box:</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085601Z" creationid="aceway@qq.com" creationdate="20160331T085601Z">
+        <seg>```javascript
+animationBox.setKeys(keys);
+```
+* 将动画和对象链接起来</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>| Name | Type | Description
+---|---|---|---</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085752Z" creationid="aceway@qq.com" creationdate="20160331T085752Z">
+        <seg>| 名称 | 类型 | 描述
+---|---|---|---</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>| from | number | The fps starting frame</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085900Z" creationid="aceway@qq.com" creationdate="20160331T085900Z">
+        <seg>| 起始| 数 | 开始fps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>| target | any | The target</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085822Z" creationid="aceway@qq.com" creationdate="20160331T085822Z">
+        <seg>| 目标 | 任意 | 特定目标</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>| to | number | The fps ending frame
+optional | loop | boolean | If true, the animation will loop (dependent upon BABYLON.Animation.ANIMATIONLOOPMODE)
+optional | speedRatio | number | default : 1.</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085929Z" creationid="aceway@qq.com" creationdate="20160331T085929Z">
+        <seg>| 止于 | 数量 | 结束fps
+optional | loop | boolean | If true, the animation will loop (dependent upon BABYLON.Animation.ANIMATIONLOOPMODE)
+optional | speedRatio | number | default : 1.</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->

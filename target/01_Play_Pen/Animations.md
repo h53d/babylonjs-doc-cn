@@ -42,59 +42,50 @@ var animationBox = new BABYLON.Animation("myAnimation", "scaling.x", 30, BABYLON
 * 保持最后的值: ```BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT```
 现在我们已经有动画对象了，可以谈论如何修改那些值了。在我们这个案例，我们想放大盒子，但是不是线性方式，而是放大时盒子越大则放大的速度越快，缩小时盒子越小缩得越慢。如此:
 ```javascript
-// An array with all animation keys
-var keys = []; 
-
-//At the animation key 0, the value of scaling is "1"
+// 存储素有动画键值的数组
+var keys = [];
+//在动画0键，放在倍数是 1。
   keys.push({
     frame: 0,
     value: 1
   });
-
-  //At the animation key 20, the value of scaling is "0.2"
+//在动画的第20键，放大倍数是0.2。
   keys.push({
     frame: 20,
     value: 0.2
   });
-
-  //At the animation key 100, the value of scaling is "1"
+//在动画的第100键，放大倍数是1。
   keys.push({
     frame: 100,
     value: 1
   });
 ```
-
-Next, two important steps:
-* Adding the animation array to the animation object:
-
+紧接着，最重要的两步：
+* 将存有动画信息的数组添加到动画对象上。
 ```javascript
 animationBox.setKeys(keys);
 ```
-* Link this animation to our box:
-
+* 将动画和对象链接起来
 ```javascript
 box1.animations.push(animationBox);
 ```
 
-Finally, you can launch your animation in one line of code, at any time in your application:
-
+最后，你可以在你应用的任何时间点通过一行代码加载动画。
 ```javascript
 scene.beginAnimation(box1, 0, 100, true);
 ```
 
-**Parameters for scene.beginAnimation:**
-
- | Name | Type | Description
+**提供给scene.beginAnimation的参数：**
+| 名称 | 类型 | 描述
 ---|---|---|---
- | target | any | The target
- | from | number | The fps starting frame
- | to | number | The fps ending frame
+ | 目标 | 任意 | 特定目标
+ | 起始| 数 | 开始fps
+ | 止于 | 数量 | 结束fps
 optional | loop | boolean | If true, the animation will loop (dependent upon BABYLON.Animation.ANIMATIONLOOPMODE)
 optional | speedRatio | number | default : 1. The speed ratio of this animation
 optional | onAnimationEnd | () => void | The function triggered on the end of the animation (also dependent upon ANIMATIONLOOPMODE)
 optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable) | An optional specific animation
 ---
-
 This function returns a ```BABYLON.Animatable``` object that you can use to get access to individual animations (for instance using ```getAnimationByTargetProperty``` function).
 
 The ```BABYLON.Animatable``` object also supports the following functions:
