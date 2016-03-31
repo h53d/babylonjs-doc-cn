@@ -1,13 +1,13 @@
 ---
 ID_PAGE: 22081
-PG_TITLE: 07. 动画 你的场景开始看起来很棒了，但它仍然是静态的。
+PG_TITLE: 07. 动画
 ---
-# Animation
-Your scene is beginning to look great, but it is very static. 为了给它注入动态，我们将开始学习如何控制电脑来按照人指定的方式移动你创建的网格对象。
+# 动画
+你的场景开始看起来很棒了，但它仍然是静态的。 为了给它注入动态，我们将开始学习如何控制电脑来按照人指定的方式移动你创建的网格对象。
 
 ![Elements](http://www.babylonjs.com/tutorials/07%20-%20Animation/07.png)
 
-_Final result_
+_最终结果_
 
 有两种主要的方式实现场景动画。第一种方式是定义关键帧集合，并且每帧定义好你的对象物的状态。第二种方式可以定义更复杂的动画，在运行是改变动画代码。
 
