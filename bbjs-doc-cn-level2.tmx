@@ -14,6 +14,18 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>* Use previous values and increment it: ```BABYLON.Animation.ANIMATIONLOOPMODE_RELATIVE```
+* Restart from initial value: ```BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE```
+* Keep their final value: ```BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT```</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054823Z" creationid="aceway@qq.com" creationdate="20160331T054823Z">
+        <seg>* 使用之前的值然后递增： ```BABYLON.Animation.ANIMATIONLOOPMODE_RELATIVE```
+* 从初始值重启 ```BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE```
+* 保持最后的值: ```BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>**Parameter 1** - Name of this animation, nothing more.</seg>
       </tuv>
       <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054041Z" creationid="aceway@qq.com" creationdate="20160331T014235Z">

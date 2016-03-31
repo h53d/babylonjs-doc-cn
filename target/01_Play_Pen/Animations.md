@@ -37,10 +37,9 @@ var animationBox = new BABYLON.Animation("myAnimation", "scaling.x", 30, BABYLON
 * ```BABYLON.Animation.ANIMATIONTYPE_COLOR3```
 
 **参数 5** - 最后,  你需要决定并输入这个动画的行为类型，这些会决定动画的上限(比如:当到最后一帧时是否继续，是否重新开始，或者停止)：
-* Use previous values and increment it: ```BABYLON.Animation.ANIMATIONLOOPMODE_RELATIVE```
-* Restart from initial value: ```BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE```
-* Keep their final value: ```BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT```
-
+* 使用之前的值然后递增： ```BABYLON.Animation.ANIMATIONLOOPMODE_RELATIVE```
+* 从初始值重启 ```BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE```
+* 保持最后的值: ```BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT```
 Now that we have our Animation object, it is time to say how those values will be modified. In our case, we want to scale our box, but not in a linear way: it must be faster when it became larger, and slower when it became thinner. So:
 
 ```javascript
