@@ -23,8 +23,7 @@ The best way to emulate different lengths for some parts of your mesh is then to
 The ribbon mesh provides two ways to automatically close an unclosed shape.
 
 * _closeArray_ parameter : this will add an extra unit ribbon between the last path and the first path of your _pathArray_.
-* _closePath_ parameter : this will join the last and first points of each _path_ in your _pathArray_.  
-
+* _closePath_ parameter : this will join the last and first points of each _path_ in your _pathArray_.
 Here's an unclosed ribbon : http://www.babylonjs-playground.com/#3XMWZ#1
 ```javascript
 var ribbon = BABYLON.Mesh.CreateRibbon("ribbon", paths, false, false, 0, scene, false, BABYLON.Mesh.BACKSIDE);
@@ -247,8 +246,7 @@ Remember : the _for_ loop iterating on _p_ is for the south to north pole angle.
 for (var p = -Math.PI / 2; p < Math.PI / 2 - 1.5; p += step / 2) {
 ```
 demo : http://www.babylonjs-playground.com/#E6IX1#4   
-Quite easy. You just derivated the initial sphere into another shape you wouldn't have got another way.   
-
+Quite easy. You just derivated the initial sphere into another shape you wouldn't have got another way.
 Now, you can keep the original pole angle limit PI / 2 but add a new behavior : if a certain angle limit is reached, then inverse the y radius around this limit.  
 ```javascript
 var yRadius;

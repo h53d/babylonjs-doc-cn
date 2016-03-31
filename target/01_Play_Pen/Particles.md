@@ -195,7 +195,7 @@ This section of the tutorial is under construction. We will have much more to sa
 You can get even more control over particles by using custom functions:
 ```startDirectionFunction: (emitPower: number, worldMatrix: Matrix, directionToUpdate: Vector3)```: This function can be defined to specify initial direction for every new particle. By default, this function is defined with the following code:
 
-    startDirectionFunction = (emitPower: number, worldMatrix: Matrix, directionToUpdate: Vector3): void => {
+startDirectionFunction = (emitPower: number, worldMatrix: Matrix, directionToUpdate: Vector3): void => {
         var randX = randomNumber(this.direction1.x, this.direction2.x);
         var randY = randomNumber(this.direction1.y, this.direction2.y);
         var randZ = randomNumber(this.direction1.z, this.direction2.z);
@@ -203,10 +203,9 @@ You can get even more control over particles by using custom functions:
         Vector3.TransformNormalFromFloatsToRef(randX * emitPower, randY * emitPower, randZ * emitPower, worldMatrix, directionToUpdate);
     }
 
-
 ```startPositionFunction = (worldMatrix: Matrix, positionToUpdate: Vector3)```: This function can be defined to specify initial position for every new particle. By default, this function is defined with the following code:
 
-    startPositionFunction = (worldMatrix: Matrix, positionToUpdate: Vector3): void => {
+startPositionFunction = (worldMatrix: Matrix, positionToUpdate: Vector3): void => {
         var randX = randomNumber(this.minEmitBox.x, this.maxEmitBox.x);
         var randY = randomNumber(this.minEmitBox.y, this.maxEmitBox.y);
         var randZ = randomNumber(this.minEmitBox.z, this.maxEmitBox.z);
@@ -214,10 +213,9 @@ You can get even more control over particles by using custom functions:
         Vector3.TransformCoordinatesFromFloatsToRef(randX, randY, randZ, worldMatrix, positionToUpdate);
     }
 
-
 ```updateFunction: (particles: Particle[])```: This function can be defined to provide custom update for active particles. This function will be called instead of regular update (age, position, color, etc.). Do not forget that this function will be called on every frame so try to keep it simple and fast :). By default the following code is used:
 
-    updateFunction = function(particles) {
+updateFunction = function(particles) {
          for (var index = 0; index < particles.length; index++) {
                var particle = particles[index];
                particle.age += this._scaledUpdateSpeed;
@@ -245,7 +243,6 @@ You can get even more control over particles by using custom functions:
                }
          }
     }
-
 
 ## Next step
 ParticleSystems are very powerful and versatile tools that can help bring realness and movement to your scenes. Don’t hesitate to use them as they are not resource-intensive.

@@ -8,8 +8,7 @@ In this tutorial, our goal is to understand height maps, and to learn how to gen
 
 ![HeightMap](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14.png)
 
-_Final result_
-
+_最终结果_
 ## How can I do this ?
 
 * **Introduction**

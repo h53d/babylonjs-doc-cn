@@ -90,21 +90,19 @@ So now, add this entire createScene function to your web page:
     // Now create a basic Babylon Scene object 
     var scene = new BABYLON.Scene(engine);
 
-    // Change the scene background color to green.
+// Change the scene background color to green.
     scene.clearColor = new BABYLON.Color3(0, 1, 0);
-
     // This creates and positions a free camera
     var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 5, -10), scene);
 
     // This targets the camera to scene origin
     camera.setTarget(BABYLON.Vector3.Zero());
 
-    // This attaches the camera to the canvas
+// This attaches the camera to the canvas
     camera.attachControl(canvas, false);
         
     // This creates a light, aiming 0,1,0 - to the sky.
     var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
-
     // Dim the light a small amount
     light.intensity = .5;
 
@@ -242,7 +240,6 @@ Here is what the entire web page should look like:
    </script>
 </body>
 </html>
-
 ```
 
 ## Moving On ##

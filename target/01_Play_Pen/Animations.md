@@ -1,47 +1,34 @@
 ---
 ID_PAGE: 22081
-PG_TITLE: 07. 动画
+PG_TITLE: 07. 动画片段
 ---
 # 动画
-你的场景开始看起来很棒了，但它仍然是静态的。 为了给它注入动态，我们将开始学习如何控制电脑来按照人指定的方式移动你创建的网格对象。
-
+你的场景开始看起来很棒了，但它仍然是呆板而静态的。. 为了给它注入动态，我们将开始学习如何控制电脑来按照人指定的方式移动你创建的网格对象。
 ![Elements](http://www.babylonjs.com/tutorials/07%20-%20Animation/07.png)
 
 _最终结果_
-
-有两种主要的方式实现场景动画。第一种方式是定义关键帧集合，并且每帧定义好你的对象物的状态。第二种方式可以定义更复杂的动画，在运行是改变动画代码。
-
-## Basic animation
-
-The animation is based on objects called Animation (!!). An Animation is defined by various properties and a collection of keys. Every key represents the value of the Animation at that key's given time.
-
-To achieve today’s animated scene, we begin by creating our environment:
-
+有两种主要的方式实现场景动画。第一种方式是定义一系列的键值集合，并且定义好每个键值对应的对象物状态。第二种方式可以定义更复杂的动画，在运行是改变动画代码。
+## 简单动画
+基于众多物体对象动画也叫电影片段一个动画是由许多属性和一系列的键值定义的. 每个键值代表了动画片段在那个时刻的值。
+未来实现今天的动态场景，我们开始创建自己的环境
 ```javascript
 function createScene() {
-  //Here... your basic scene as before: [scene, light, camera]
+  //这儿... 作为开头的基础场景元素[scene,light,camera]
   
-  //Create a box
+  //创建盒子
   var box1 = BABYLON.Mesh.CreateBox("Box1", 10.0, scene);
   box1.position.x = -20;
 ```
-
-Our goal: move this “box1”. First, create our Animation object:
-
+我们的目标是：移动这个"box1"首先，创建动画对象:
 ```javascript
 var animationBox = new BABYLON.Animation("myAnimation", "scaling.x", 30, BABYLON.Animation.ANIMATIONTYPE_FLOAT, BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
 ```
 
-Much information is in the parameters:
-
-**Parameter 1** - Name of this animation, nothing more.
-
-**Parameter 2** - The property concerned. This can be any mesh property, depending upon what you want to change. Here we want to scale an object on the X axis, so it will be “scaling.x”.
-
-**Parameter 3** - Frames per second requested: highest FPS possible in this animation.
-
-**Parameter 4** - Type of change. Here you decide and enter what kind of value will be modified: is it a float (e.g. a translation), a vector (e.g. a direction), or a quaternion. Exact values are:
-
+更多信息在参数里:
+**参数1** - 动画的名称，仅此而已.
+**参数 2** - 关心的属性. 这个可以是网格的任何属性，取决于你要修改什么此处我们想在X轴方向上放大对象, 所以此处使用“scaling.x”.
+**参数 3** - 请求的每秒帧数：这个动画里最大 的FPS.
+**参数 4** - 修改的类型. 此处你决定开始修改什么类型的数据：floating（比如是平移），一个向量(比如是方向)，或四元数. 具体的值会是:
 * ```BABYLON.Animation.ANIMATIONTYPE_FLOAT```
 * ```BABYLON.Animation.ANIMATIONTYPE_VECTOR2```
 * ```BABYLON.Animation.ANIMATIONTYPE_VECTOR3```
@@ -49,8 +36,7 @@ Much information is in the parameters:
 * ```BABYLON.Animation.ANIMATIONTYPE_MATRIX```
 * ```BABYLON.Animation.ANIMATIONTYPE_COLOR3```
 
-**Parameter 5** - Finally, you have to decide and enter the type of behavior this animation will take at its upper limit (e.g. will it continue on, will it begin again, will it stop at the last key value, etc.):
-
+**参数 5** - 最后,  你需要决定并输入这个动画的行为类型，这些会决定动画的上限(比如:当到最后一帧时是否继续，是否重新开始，或者停止):
 * Use previous values and increment it: ```BABYLON.Animation.ANIMATIONLOOPMODE_RELATIVE```
 * Restart from initial value: ```BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE```
 * Keep their final value: ```BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT```

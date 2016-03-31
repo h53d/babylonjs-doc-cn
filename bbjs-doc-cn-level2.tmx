@@ -16,56 +16,64 @@
       <tuv xml:lang="EN-US">
         <seg>**Parameter 1** - Name of this animation, nothing more.</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T125254Z" creationid="aceway@qq.com" creationdate="20160330T125243Z">
-        <seg>**参数 1** - 仅仅是这个动画的名字.</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014235Z" creationid="aceway@qq.com" creationdate="20160331T014235Z">
+        <seg>**参数1** - 动画的名称，仅此而已.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>**Parameter 2** - The property concerned.</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T125326Z" creationid="aceway@qq.com" creationdate="20160330T125251Z">
-        <seg>**参数 2** - 关注是属性.</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014303Z" creationid="aceway@qq.com" creationdate="20160331T014303Z">
+        <seg>**参数 2** - 关心的属性.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>**Parameter 3** - Frames per second requested: highest FPS possible in this animation.</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T125611Z" creationid="aceway@qq.com" creationdate="20160330T125611Z">
-        <seg>**参数 3** - 每秒请求的帧数: 这个动画的最大 FPS(Frames Per Second).</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014526Z" creationid="aceway@qq.com" creationdate="20160331T014526Z">
+        <seg>**参数 3** - 请求的每秒帧数：这个动画里最大 的FPS.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>**Parameter 4** - Type of change.</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T125631Z" creationid="aceway@qq.com" creationdate="20160330T125631Z">
-        <seg>**参数 4** - 修改类型.</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014543Z" creationid="aceway@qq.com" creationdate="20160331T014543Z">
+        <seg>**参数 4** - 修改的类型.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>**Parameter 5** - Finally, you have to decide and enter the type of behavior this animation will take at its upper limit (e.g. will it continue on, will it begin again, will it stop at the last key value, etc.):</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T020033Z" creationid="aceway@qq.com" creationdate="20160331T020033Z">
+        <seg>**参数 5** - 最后,  你需要决定并输入这个动画的行为类型，这些会决定动画的上限(比如:当到最后一帧时是否继续，是否重新开始，或者停止):</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>//Create a box</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T125052Z" creationid="aceway@qq.com" creationdate="20160330T125052Z">
-        <seg>//创建一个盒子</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014056Z" creationid="aceway@qq.com" creationdate="20160331T014056Z">
+        <seg>//创建盒子</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>//Here... your basic scene as before: [scene, light, camera]</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T125043Z" creationid="aceway@qq.com" creationdate="20160330T125043Z">
-        <seg>//这儿... 作为基础场景的: [scene, light, camera]</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014049Z" creationid="aceway@qq.com" creationdate="20160331T014049Z">
+        <seg>//这儿... 作为开头的基础场景元素[scene,light,camera]</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>An Animation is defined by various properties and a collection of keys.</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T123125Z" creationid="aceway@qq.com" creationdate="20160330T123125Z">
-        <seg>一个动画由各种属性和关键帧定义</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway" changedate="20160330T154332Z" creationid="aceway" creationdate="20160330T154019Z">
+        <seg>一个动画是由许多属性和一系列的键值定义的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -75,59 +83,83 @@
 # Animation
 Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway" changedate="20160330T033049Z" creationid="aceway" creationdate="20160330T031952Z">
-        <seg>动画 你的场景开始看起来很棒了，但它仍然是静态的。
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T013703Z" creationid="aceway" creationdate="20160330T031952Z">
+        <seg>动画片段
 ---
-# Animation
-Your scene is beginning to look great, but it is very static.</seg>
+# 动画
+你的场景开始看起来很棒了，但它仍然是呆板而静态的。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Every key represents the value of the Animation at that key's given time.</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T013853Z" creationid="aceway@qq.com" creationdate="20160331T013853Z">
+        <seg>每个键值代表了动画片段在那个时刻的值。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Exact values are:</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014821Z" creationid="aceway@qq.com" creationdate="20160331T014821Z">
+        <seg>具体的值会是:</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>First, create our Animation object:</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T125144Z" creationid="aceway@qq.com" creationdate="20160330T125144Z">
-        <seg>第一个步, 创建我们的动画对象:</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014146Z" creationid="aceway@qq.com" creationdate="20160331T014146Z">
+        <seg>首先，创建动画对象:</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Here we want to scale an object on the X axis, so it will be “scaling.x”.</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T125508Z" creationid="aceway@qq.com" creationdate="20160330T125508Z">
-        <seg>此处我们希望在X轴方向放大对象，所以是“scaling.x”.</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014428Z" creationid="aceway@qq.com" creationdate="20160331T014428Z">
+        <seg>此处我们想在X轴方向上放大对象, 所以此处使用“scaling.x”.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Here you decide and enter what kind of value will be modified: is it a float (e.g. a translation), a vector (e.g. a direction), or a quaternion.</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014934Z" creationid="aceway@qq.com" creationdate="20160331T014803Z">
+        <seg>此处你决定开始修改什么类型的数据：floating（比如是平移），一个向量(比如是方向)，或四元数.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Much information is in the parameters:</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T125201Z" creationid="aceway@qq.com" creationdate="20160330T125201Z">
-        <seg>许多信息在参数里</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014205Z" creationid="aceway@qq.com" creationdate="20160331T014205Z">
+        <seg>更多信息在参数里:</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>Our goal: move this “box1”.</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T125117Z" creationid="aceway@qq.com" creationdate="20160330T125117Z">
-        <seg>我们的目标：移动这个“box1”.</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014128Z" creationid="aceway@qq.com" creationdate="20160331T014128Z">
+        <seg>我们的目标是：移动这个"box1"</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>The animation is based on objects called Animation (!!).</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T123040Z" creationid="aceway@qq.com" creationdate="20160330T094901Z">
-        <seg>基于众多物体对象的动画也叫电影片段</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T094901Z" creationid="aceway@qq.com" creationdate="20160330T094901Z">
+        <seg>基于众多物体对象动画也叫电影片段</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>The first is to define a collection of keys and defining your object's situation at each key.</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway" changedate="20160330T033542Z" creationid="aceway" creationdate="20160330T033530Z">
-        <seg>第一种方式是定义关键帧集合，并且每帧定义好你的对象物的状态。</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway" changedate="20160330T154251Z" creationid="aceway" creationdate="20160330T033530Z">
+        <seg>第一种方式是定义一系列的键值集合，并且定义好每个键值对应的对象物状态。</seg>
       </tuv>
     </tu>
     <tu>
@@ -150,16 +182,16 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv xml:lang="EN-US">
         <seg>This can be any mesh property, depending upon what you want to change.</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T125401Z" creationid="aceway@qq.com" creationdate="20160330T125401Z">
-        <seg>这个可以是任意的网格属性，取决与你要修改什么.</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014336Z" creationid="aceway@qq.com" creationdate="20160331T014336Z">
+        <seg>这个可以是网格的任何属性，取决于你要修改什么</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>To achieve today’s animated scene, we begin by creating our environment:</seg>
       </tuv>
-      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160330T124953Z" creationid="aceway@qq.com" creationdate="20160330T124953Z">
-        <seg>为了实现今天的动画场景，我们开始创基础环境:</seg>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014002Z" creationid="aceway@qq.com" creationdate="20160331T014002Z">
+        <seg>未来实现今天的动态场景，我们开始创建自己的环境</seg>
       </tuv>
     </tu>
     <tu>
@@ -168,6 +200,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv xml:lang="ZH-CN" changeid="aceway" changedate="20160330T033249Z" creationid="aceway" creationdate="20160330T033249Z">
         <seg>为了给它注入动态，我们将开始学习如何控制电脑来按照人指定的方式移动你创建的网格对象。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>_Final result_</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T013721Z" creationid="aceway@qq.com" creationdate="20160331T013721Z">
+        <seg>_最终结果_</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
