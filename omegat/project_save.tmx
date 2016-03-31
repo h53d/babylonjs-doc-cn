@@ -263,10 +263,10 @@ optional | onAnimationEnd | () =&gt; void | The function triggered on the end of
 optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable) | An optional specific animation
 ---</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160331T144006Z" creationid="aceway" creationdate="20160331T144006Z">
-        <seg>he speed ratio of this animation
-optional | onAnimationEnd | () =&gt; void | The function triggered on the end of the animation (also dependent upon ANIMATIONLOOPMODE)
-optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable) | An optional specific animation
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160331T145934Z" creationid="aceway" creationdate="20160331T144006Z">
+        <seg>动画的速率
+可选 | onAnimationEnd | () =&gt; void | 该函数在动画的结束被触发调用(同样取决于 ANIMATIONLOOPMODE)
+可选 | 可播放 | [Animatable](http://doc.babylonjs.com/classes/Animatable) | 一个可选的特殊动画
 ---</seg>
       </tuv>
     </tu>
