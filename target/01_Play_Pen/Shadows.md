@@ -8,7 +8,7 @@ In this tutorial, we are going to learn how to create shadows in Babylon JS. Sha
 
 ![Shadows](http://www.babylonjs.com/tutorials/15%20-%20Shadows/15.png)
 
-_最终结果_
+_最终结果_ 
 ## How can I do this ?
 
 Shadows are easy to generate using the babylon.js “ShadowGenerator”. This function uses a shadow map: a map of your scene generated from the light’s point of view, as you can see here:

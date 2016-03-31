@@ -8,7 +8,7 @@ Nowadays, sprites are often used to display animated characters, and for particl
 
 ![Elements](http://www.babylonjs.com/tutorials/08%20-%20Sprites/08.png)
 
-_最终结果_
+_最终结果_ 
 ## How can I do this ?
 
 1- **Sprite manager**

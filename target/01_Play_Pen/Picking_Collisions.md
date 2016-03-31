@@ -11,7 +11,7 @@ Let’s see how we can get your mouse position transposed in your 3D scene by th
 
 ![Picking](http://www.babylonjs.com/tutorials/11%20-%20Collisions%20PickResult/11.png)
 
-_最终结果_
+_最终结果_ 
 ## How can I do this ?
 
 Babylon engine lets you do this very easily by giving you useful functions.

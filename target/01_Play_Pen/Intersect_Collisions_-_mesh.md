@@ -8,7 +8,7 @@ In dynamic scenes, objects are moving and interacting with each other. To get th
 
 ![Collisions](http://www.babylonjs.com/tutorials/10%20-%20Collisions%20Intersect/10.png)
 
-_最终结果_
+_最终结果_ 
 ## How can I do this ?
 
 This tutorial is going to show you two ways of collision detection: the first one is to raise a collision event when two meshes are in contact, the other one is detecting contact between a mesh and a single point.
