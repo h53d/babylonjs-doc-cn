@@ -144,6 +144,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>In our case, we want to scale our box, but not in a linear way: it must be faster when it became larger, and slower when it became thinner.</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083401Z" creationid="aceway@qq.com" creationdate="20160331T083401Z">
+        <seg>在我们这个案例，我们想放大盒子，但是不是线性方式，而是放大时盒子越大则放大的速度越快，缩小时盒子越小缩得越慢。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Much information is in the parameters:</seg>
       </tuv>
       <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054024Z" creationid="aceway@qq.com" creationdate="20160331T014205Z">
@@ -152,10 +160,26 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Now that we have our Animation object, it is time to say how those values will be modified.</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083112Z" creationid="aceway@qq.com" creationdate="20160331T083112Z">
+        <seg>现在我们已经有动画对象了，可以谈论如何修改那些值了。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Our goal: move this “box1”.</seg>
       </tuv>
       <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054015Z" creationid="aceway@qq.com" creationdate="20160331T014128Z">
         <seg>我们的目标是：移动这个"box1"。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>So:</seg>
+      </tuv>
+      <tuv xml:lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083415Z" creationid="aceway@qq.com" creationdate="20160331T083415Z">
+        <seg>如此:</seg>
       </tuv>
     </tu>
     <tu>

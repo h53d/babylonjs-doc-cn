@@ -40,8 +40,7 @@ var animationBox = new BABYLON.Animation("myAnimation", "scaling.x", 30, BABYLON
 * 使用之前的值然后递增： ```BABYLON.Animation.ANIMATIONLOOPMODE_RELATIVE```
 * 从初始值重启 ```BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE```
 * 保持最后的值: ```BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT```
-Now that we have our Animation object, it is time to say how those values will be modified. In our case, we want to scale our box, but not in a linear way: it must be faster when it became larger, and slower when it became thinner. So:
-
+现在我们已经有动画对象了，可以谈论如何修改那些值了。在我们这个案例，我们想放大盒子，但是不是线性方式，而是放大时盒子越大则放大的速度越快，缩小时盒子越小缩得越慢。如此:
 ```javascript
 // An array with all animation keys
 var keys = []; 
