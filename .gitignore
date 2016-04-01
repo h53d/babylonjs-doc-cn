@@ -1,6 +1,7 @@
 *.bak
 *.new
 *.tmp
+last_entry.properties
 project_stats.txt
 project_stats_match.txt
 bbjs-doc-cn-level1.tmx
