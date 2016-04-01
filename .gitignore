@@ -1,6 +1,7 @@
 *.bak
 *.new
 *.tmp
+bbjs-doc-cn-omegat.tmx
 last_entry.properties
 project_stats.txt
 project_stats_match.txt
