@@ -3,6 +3,11 @@
 *.tmp
 project_stats.txt
 project_stats_match.txt
+bbjs-doc-cn-level1.tmx
+bbjs-doc-cn-level2.tmx
+bbjs-level1.tmx
+bbjs-level2.tmx
+bbjs-omegat.tmx
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
