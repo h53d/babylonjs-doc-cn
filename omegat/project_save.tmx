@@ -14,10 +14,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Attach events to animations</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151933Z" creationid="aceway" creationdate="20160402T151933Z">
+        <seg>## 给动画添加事件</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Basic animation</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T033807Z" creationid="aceway" creationdate="20160330T033807Z">
         <seg>## 简单动画</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Complex animation</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T150904Z" creationid="aceway" creationdate="20160402T150904Z">
+        <seg>## 复杂动画</seg>
       </tuv>
     </tu>
     <tu>
@@ -54,6 +70,14 @@
         <seg>* 使用之前的值然后递增： ```BABYLON.Animation.ANIMATIONLOOPMODE_RELATIVE```
 * 从初始值重启 ```BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE```
 * 保持最后的值: ```BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**Next step**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152605Z" creationid="aceway" creationdate="20160402T152605Z">
+        <seg>**下一步**</seg>
       </tuv>
     </tu>
     <tu>
@@ -114,10 +138,100 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>- ```BABYLON.EasingFunction.EASINGMODE_EASEINOUT``` : Interpolation uses EaseIn for the first half of the animation and EaseOut for the second half.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T144354Z" creationid="aceway" creationdate="20160402T144354Z">
+        <seg>- ```BABYLON.EasingFunction.EASINGMODE_EASEINOUT``` : 头半部用EASEIN的方式,后半部用EASEOUT的方式来控制插入. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>- ```BABYLON.EasingFunction.EASINGMODE_EASEOUT``` : Interpolation follows 100% interpolation minus the output of the formula associated with the easing function.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T144214Z" creationid="aceway" creationdate="20160402T143618Z">
         <seg>- ```BABYLON.EasingFunction.EASINGMODE_EASEOUT``` : 按照内插法 减去 简化函数的公式输出 来控制插入 .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Adding animation to my torus animations collection
+torus.animations.push(animationTorus);</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145313Z" creationid="aceway" creationdate="20160402T145313Z">
+        <seg>// 将动画添加到我的 椭圆环体动画集中
+torus.animations.push(animationTorus);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Adding the easing function to the animation
+animationTorus.setEasingFunction(easingFunction);</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145237Z" creationid="aceway" creationdate="20160402T145237Z">
+        <seg>// 将简化函数添加到动画中
+animationTorus.setEasingFunction(easingFunction);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Animation keys
+var keysTorus = [];
+keysTorus.push({ frame: 0, value: torus.position });
+keysTorus.push({ frame: 120, value: nextPos });
+animationTorus.setKeys(keysTorus);</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145024Z" creationid="aceway" creationdate="20160402T145024Z">
+        <seg>// 动画片段的键值
+var keysTorus = [];
+keysTorus.push({ frame: 0, value: torus.position });
+keysTorus.push({ frame: 120, value: nextPos });
+animationTorus.setKeys(keysTorus);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Creating an easing function
+var easingFunction = new BABYLON.CircleEase();</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145044Z" creationid="aceway" creationdate="20160402T145044Z">
+        <seg>// 创建一个简化函数
+var easingFunction = new BABYLON.CircleEase();</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// For each easing function, you can choose beetween EASEIN (default), EASEOUT, EASEINOUT
+easingFunction.setEasingMode(BABYLON.EasingFunction.EASINGMODE_EASEINOUT);</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145214Z" creationid="aceway" creationdate="20160402T145214Z">
+        <seg>// 对于每个简化函数, 你可以从 EASEIN (default), EASEOUT, EASEINOUT 中选择一个模式
+easingFunction.setEasingMode(BABYLON.EasingFunction.EASINGMODE_EASEINOUT);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Gradient is the percent of value change</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T150402Z" creationid="aceway" creationdate="20160402T150402Z">
+        <seg>// Gradient 是改变值的百分比</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Here is the core method you should change to make your own Easing Function</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T150340Z" creationid="aceway" creationdate="20160402T150340Z">
+        <seg>// 这是你创建自己的简化函数时应该修改的核心方法.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// the torus destination position
+var nextPos = torus.position.add(new BABYLON.Vector3(-80, 0, 0));</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T144959Z" creationid="aceway" creationdate="20160402T144959Z">
+        <seg>// 椭圆环体的目标位置
+var nextPos = torus.position.add(new BABYLON.Vector3(-80, 0, 0));</seg>
       </tuv>
     </tu>
     <tu>
@@ -154,10 +268,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>//Finally, launch animations on torus, from key 0 to key 120 with loop activated
+scene.beginAnimation(torus, 0, 120, true);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145450Z" creationid="aceway" creationdate="20160402T145450Z">
+        <seg>//最后, 以不断重复的方式从0到120键值到方式加载动画
+scene.beginAnimation(torus, 0, 120, true);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>//Here... your basic scene as before: [scene, light, camera]</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T014049Z" creationid="aceway@qq.com" creationdate="20160331T014049Z">
         <seg>//这儿... 作为开头的基础场景元素[scene,light,camera]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>//Your code here
+});
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151229Z" creationid="aceway" creationdate="20160402T151218Z">
+        <seg>//你的代码放在这里
+});
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -182,6 +320,22 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053953Z" creationid="aceway" creationdate="20160330T154019Z">
         <seg>一个动画是由许多属性和一系列的键值定义的。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An event is a function that will be called at a given frame.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152230Z" creationid="aceway" creationdate="20160402T152230Z">
+        <seg>一个事件 是在某指定帧会被调用的函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And that's it!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152558Z" creationid="aceway" creationdate="20160402T152558Z">
+        <seg>就这些!</seg>
       </tuv>
     </tu>
     <tu>
@@ -224,10 +378,26 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Don't forget to [visit our API documentation](http://doc.babylonjs.com/classes/) in order to learn more about the [**Babylon.js Animation**](http://doc.babylonjs.com/classes/Animation) and [**Babylon.js Animatable**](http://doc.babylonjs.com/classes/Animatable) classes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151914Z" creationid="aceway" creationdate="20160402T151914Z">
+        <seg>不要忘记 [访问我们的API文档](http://doc.babylonjs.com/classes/) 以学习更多关于 [**Babylon.js 动画**](http://doc.babylonjs.com/classes/Animation) and [**Babylon.js Animatable**](http://doc.babylonjs.com/classes/Animatable) classes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Don't hesitate to combine many animations for one mesh object... by creating more Animations and pushing them into the mesh's _animation_ property.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110115Z" creationid="aceway" creationdate="20160402T110115Z">
         <seg>不要犹豫在一个网格对象上合并多个动画, 通过创建多个动画片段并把它们追加到 _animation_ 属性上.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don’t hesitate to combine all those types of animations.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151523Z" creationid="aceway" creationdate="20160402T151523Z">
+        <seg>不用犹豫, 可以混合使用所有这些动画类型.</seg>
       </tuv>
     </tu>
     <tu>
@@ -256,6 +426,22 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Feel free to try different animations on different objects, then come back and learn all about [**Sprites**](http://doc.babylonjs.com/tutorials/Sprites).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152948Z" creationid="aceway" creationdate="20160402T152948Z">
+        <seg>自己尝试在不同的物体上实现不同的动画, 然后回到这里再学习更多的关于 [**精力**](http://doc.babylonjs.com/tutorials/Sprites).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finally, you can extend the **EasingFunction** base function to create your own easing function, like this :</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T150120Z" creationid="aceway" creationdate="20160402T150120Z">
+        <seg>最后, 你能够扩展这 **EasingFunction** 基础函数, 从而创造你自己的简化函数,像这样:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Finally, you can launch your animation in one line of code, at any time in your application:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085655Z" creationid="aceway@qq.com" creationdate="20160331T085655Z">
@@ -276,6 +462,22 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110459Z" creationid="aceway" creationdate="20160402T110459Z">
         <seg>对于高级的关键帧动画, 你也可以定义个函数实现在键之间插入过度效果.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For purpose, here is a good reference to create your curve algorithm : [http://cubic-bezier.com](http://cubic-bezier.com)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145829Z" creationid="aceway" creationdate="20160402T145829Z">
+        <seg>这个特地准备了一个参考来说明如何创建你的曲线算法 : [http://cubic-bezier.com](http://cubic-bezier.com)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>From Babylon.js version 2.3, you can attach [animation events](http://doc.babylonjs.com/classes/AnimationEvent) to specific frames on an animation.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152058Z" creationid="aceway" creationdate="20160402T152058Z">
+        <seg>从Babylon.js 2.3 版本开始, 你可以附加 [动画事件](http://doc.babylonjs.com/classes/AnimationEvent) 给一个动画的指定帧.</seg>
       </tuv>
     </tu>
     <tu>
@@ -310,6 +512,22 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is a pretty cool implementation using the bezier curve algorithm :</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T150006Z" creationid="aceway" creationdate="20160402T150006Z">
+        <seg>这儿是个非常酷的使用贝塞尔算法的实现 :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is a straightforward sample to animate a torus within a ```CirleEase``` easing function :</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T144743Z" creationid="aceway" creationdate="20160402T144743Z">
+        <seg>这儿是个简单的例子, 使用简化函数 ```CirleEase``` 来让椭圆环体动起来的动画 :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is a straightforward sample using the **CreateAndStartAnimation()** function :</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111354Z" creationid="aceway" creationdate="20160402T111354Z">
@@ -330,6 +548,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054110Z" creationid="aceway@qq.com" creationdate="20160331T014803Z">
         <seg>此处你决定开始修改什么类型的数据：floating（比如是平移），一个向量(比如是方向)，或四元数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If well done, it’s very powerful.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151549Z" creationid="aceway" creationdate="20160402T151549Z">
+        <seg>如果我们做到了, 它将是强大的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -358,6 +584,32 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T124804Z" creationid="aceway" creationdate="20160402T112100Z">
         <seg>在下面这个娱乐展示中, 每次你点击 FPS 标签时, 那个盒子的当前位置会被作为参数重新渲染. :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It's very simple to do this:
+```javascript
+// 3 parameters to create an event:
+// - The frame at which the event will be triggered
+// - The action to execute
+// - A boolean if the event should execute only once (false by default)
+var event1 = new BABYLON.AnimationEvent(50, function() { console.log("Yeah!"); }, true);
+// Attach your event to your animation
+animation.addEvent(event1);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152545Z" creationid="aceway" creationdate="20160402T152545Z">
+        <seg>这样做非常简单:
+```javascript
+// 用3个参数创建一个事件:
+// - 触发事件的帧
+// - 将执行的动作
+// - 一个布尔值表明事件是否仅被执行一次 (默认是 否)
+var event1 = new BABYLON.AnimationEvent(50, function() { console.log("Yeah!"); }, true);
+// 将你的事件附加到动画上
+animation.addEvent(event1);
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -436,6 +688,26 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The code computed at run time must be located in this function:
+```javascript
+scene.registerBeforeRender(function () {</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151208Z" creationid="aceway" creationdate="20160402T151208Z">
+        <seg>运行时的计算代码必须位于这个函数内:
+```javascript
+scene.registerBeforeRender(function () {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The complex animation lets you choose everything at each frame of the animation (each tick).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151121Z" creationid="aceway" creationdate="20160402T151121Z">
+        <seg>复杂动画允许你选择每帧的每样东西. (每一瞬间).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The first is to define a collection of keys and defining your object's situation at each key.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T154251Z" creationid="aceway" creationdate="20160330T033530Z">
@@ -508,6 +780,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This function can be very useful for complex animation like games, where characters have to move depending on many parameters.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151447Z" creationid="aceway" creationdate="20160402T151409Z">
+        <seg>这个函数对复杂动画特别有用,比如一些游戏里角色的移动必需依赖于许多参数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This function returns a ```BABYLON.Animatable``` object that you can use to get access to individual animations (for instance using ```getAnimationByTargetProperty``` function).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T104358Z" creationid="aceway" creationdate="20160402T104358Z">
@@ -576,6 +856,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can play with bezier curve algorithm too, using the **BezierCurveEase(x1, y1, x2, y2)** function.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145650Z" creationid="aceway" creationdate="20160402T145650Z">
+        <seg>你也能用贝塞尔曲线到算法, 使用 **BezierCurveEase(x1, y1, x2, y2)** 函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can use an extended function to create a quick animation:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110722Z" creationid="aceway" creationdate="20160402T110702Z">
@@ -592,10 +880,30 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Your scene is now becoming dynamic, and all your meshes can move in all directions!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152713Z" creationid="aceway" creationdate="20160402T152713Z">
+        <seg>你的场景现在动起来了, 你的所有网格都可在所有方向上移动的!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>_Final result_</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053841Z" creationid="aceway@qq.com" creationdate="20160331T013721Z">
         <seg>_最终结果_ </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```Javascript
+//Create a Vector3 animation at 30 FPS
+var animationTorus = new BABYLON.Animation("torusEasingAnimation", "position", 30, BABYLON.Animation.ANIMATIONTYPE_VECTOR3, BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T144921Z" creationid="aceway" creationdate="20160402T144921Z">
+        <seg>```Javascript
+//创建一个3维空间里的30帧每秒的动画
+var animationTorus = new BABYLON.Animation("torusEasingAnimation", "position", 30, BABYLON.Animation.ANIMATIONTYPE_VECTOR3, BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);</seg>
       </tuv>
     </tu>
     <tu>
@@ -636,6 +944,20 @@ animationBox.setKeys(keys);
 animationBox.setKeys(keys);
 ```
 * 将动画和对象链接起来</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>return FunnyEase;
+})(BABYLON.EasingFunction);
+```
+You will find a complete demonstration of the easing functions behaviors, in the playground : [**Easing function playground**](http://babylonjs-playground.azurewebsites.net/?20)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T150850Z" creationid="aceway" creationdate="20160402T150850Z">
+        <seg>return FunnyEase;
+})(BABYLON.EasingFunction);
+```
+在娱乐展示里, 你会找到一个简化函数行为的完整演示: [**简化函数娱乐展示**](http://babylonjs-playground.azurewebsites.net/?20)</seg>
       </tuv>
     </tu>
     <tu>
