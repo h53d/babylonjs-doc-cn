@@ -58,10 +58,10 @@ var animationBox = new BABYLON.Animation("myAnimation", "scaling.x", 30, BABYLON
 现在我们已经有动画对象了，可以谈论如何修改那些值了。在我们这个案例，我们想放大盒子，但是不是线性方式，而是放大时盒子越大则放大的速度越快，缩小时盒子越小缩得越慢。如此:
 
 ```javascript
-// 存储素有动画键值的数组
+// 存储所有动画键值的数组
 var keys = [];
 
-//在动画0键，放在倍数是 1。
+//在动画0键，放大倍数是 1。
   keys.push({
     frame: 0,
     value: 1
@@ -79,6 +79,7 @@ var keys = [];
     value: 1
   });
 ```
+
 紧接着，最重要的两步：
 * 将存有动画信息的数组添加到动画对象上。
 
@@ -99,11 +100,11 @@ scene.beginAnimation(box1, 0, 100, true);
 
 **提供给scene.beginAnimation的参数：**
 
- | 名称 | 类型 | 描述
+  | 名称 | 类型 | 描述
 ---|---|---|---
- | 目标 | 任意 | 特定目标
- | 起始| 数 | 开始fps
- | 止于 | 数量 | 结束fps
+  | 目标 | 任意 | 特定目标
+  | 起始| 数 | 开始fps
+  | 止于 | 数量 | 结束fps
 可选 | 循环 | 布尔值 | 如果为真,则动画循环播放 (取决于BABYLON.Animation.ANIMATIONLOOPMODE)
 可选 | 速率 | 数值 | 默认 : 1. 动画的速率
 可选 | onAnimationEnd | () => void | 该函数在动画的结束被触发调用(同样取决于 ANIMATIONLOOPMODE)
@@ -111,8 +112,8 @@ scene.beginAnimation(box1, 0, 100, true);
 ---
 
 这个函数返回一个 ```BABYLON.Animatable``` 对象,通过该对象能够访问个别的动画 (例如使用 ```getAnimationByTargetProperty``` 功能).
-该 ```BABYLON.Animatable``` 对象也支持下列函数:
 
+该 ```BABYLON.Animatable``` 对象也支持下列函数:
 - ```pause()```
 - ```restart()```
 - ```stop()```
@@ -120,7 +121,7 @@ scene.beginAnimation(box1, 0, 100, true);
 
 这些指令将应用到包涵在 _animations 数组里的每个动画对象上. 通过提供目标对象来调用 ```scene.getAnimatableByTarget()``` 你也可以访问当前正在运行的 ```BABYLON.Animatable``` 对象.
 
-你做到了!现在我们已经完全实现在x轴方向实现缩放 box1 的动画. 现在你也许希望在y轴上缩放box1, 而且实时移动box1. 不要犹豫在一个网格对象上合并多个动画, 通过创建多个动画片段并把它们追加到 _animation_ 属性上. ;)
+你做到了!现在我们已经完全实现在x轴方向缩放 box1 的动画. 现在你也许希望在y轴上缩放box1, 而且实时移动box1. 不要犹豫在一个网格对象上合并多个动画, 通过创建多个动画片段并把它们追加到 _animation_ 属性上. ;)
 
 ## 控制动画
 
@@ -164,7 +165,7 @@ BABYLON.Animation.CreateAndStartAnimation('boxscale', box1, 'scaling.x', 30, 120
 
 ## 动画渲染
 
-作为2.3+版本的 Babylon.js 2.3, 你能通过设置 *enableBlending* 为 true来启动一个动画. 被渲染了动画将被添加到当前对象状态上这会对用户很方便 - 例如:控制行走中的角色, 或者实时响应来自输入设备的数据值变化.
+作为2.3+版本的 Babylon.js, 你能通过设置 *enableBlending* 为 true来启动一个动画. 被渲染了的动画将被添加到当前对象状态上. 这会对用户很方便 - 例如:控制行走中的角色, 或者实时响应来自输入设备的数据值变化.
 
 在下面这个娱乐展示中, 每次你点击 FPS 标签时, 那个盒子的当前位置会被作为参数重新渲染. :
 
@@ -172,14 +173,14 @@ http://www.babylonjs-playground.com/#2BLI9T#2
 
 尽管这个娱乐展示的是 渲染自身重复的动画, 但更常见的情况是, 渲染不同的动画 - 进入不同的状态,比如当一个走动中的角色切换到跑动.
 
-## 简化功能(函数)
+## 简化函数
 
 你可以使用简化函数给动画添加一些不同的行为.
 如果你希望获得关于简化函数的更多信息,这儿有一些有用的链接 : 
 - [MSDN 简化函数文档](http://msdn.microsoft.com/en-us/library/ee308751.aspx)
 - [简化函数懒人表单](http://easings.net/fr)
 
-所有这些BABYLON实现的简化函数,都允许使用自定义的数据公式应用在动画上.
+所有这些BABYLON实现的简化函数,都允许使用自定义的数学公式应用在动画上.
 
 这儿是一些你可直接使用的预定义简化函数 : 
 - ```BABYLON.CircleEase()```
@@ -198,7 +199,7 @@ http://www.babylonjs-playground.com/#2BLI9T#2
 有三个值你可以用来赋给 EasingMode: 
 - ```BABYLON.EasingFunction.EASINGMODE_EASEIN``` : 按照简化函数的数学公式来控制插入.
 - ```BABYLON.EasingFunction.EASINGMODE_EASEOUT``` : 按照内插法 减去 简化函数的公式输出 来控制插入 .
-- ```BABYLON.EasingFunction.EASINGMODE_EASEINOUT``` : 头半部用EASEIN的方式,后半部用EASEOUT的方式来控制插入. 
+- ```BABYLON.EasingFunction.EASINGMODE_EASEINOUT``` : 头半部份用EASEIN的方式,后半部份用EASEOUT的方式来控制插入. 
 
 这儿是个简单的例子, 使用简化函数 ```CirleEase``` 来让椭圆环体动起来的动画 :
 
@@ -227,12 +228,12 @@ animationTorus.setEasingFunction(easingFunction);
 // 将动画添加到我的 椭圆环体动画集中
 torus.animations.push(animationTorus);
 
-//最后, 以不断重复的方式从0到120键值到方式加载动画
+//最后, 以不断重复从0到120键值的方式加载动画
 scene.beginAnimation(torus, 0, 120, true);
 ```
 
-你也能用贝塞尔曲线到算法, 使用 **BezierCurveEase(x1, y1, x2, y2)** 函数.
-这个特地准备了一个参考来说明如何创建你的曲线算法 : [http://cubic-bezier.com](http://cubic-bezier.com)
+你也能用贝塞尔曲线的算法, 使用 **BezierCurveEase(x1, y1, x2, y2)** 函数.
+这特地准备了一个参考来说明如何创建你的曲线算法 : [http://cubic-bezier.com](http://cubic-bezier.com)
 
 这儿是个非常酷的使用贝塞尔算法的实现 :
 
@@ -242,7 +243,7 @@ scene.beginAnimation(torus, 0, 120, true);
 var bezierEase = new BABYLON.BezierCurveEase(0.32, -0.73, 0.69, 1.59);
 ```
 
-最后, 你能够扩展这 **EasingFunction** 基础函数, 从而创造你自己的简化函数,像这样:
+最后, 你能够扩展 **EasingFunction** 基础函数, 从而创造你自己的简化函数,像这样:
 
 ```Javascript
 var FunnyEase = (function (_super) {
@@ -263,7 +264,7 @@ var FunnyEase = (function (_super) {
 
 ## 复杂动画
 
-复杂动画允许你选择每帧的每样东西. (每一瞬间). 运行时的计算代码必须位于这个函数内:
+复杂动画允许你选择每帧的每样东西(每一瞬间). 运行时的计算代码必须位于这个函数内:
 
 ```javascript
 scene.registerBeforeRender(function () {
@@ -275,7 +276,7 @@ scene.registerBeforeRender(function () {
 
 不用犹豫, 可以混合使用所有这些动画类型. 如果我们做到了, 它将是强大的.
 
-不要忘记 [访问我们的API文档](http://doc.babylonjs.com/classes/) 以学习更多关于 [**Babylon.js 动画**](http://doc.babylonjs.com/classes/Animation) and [**Babylon.js Animatable**](http://doc.babylonjs.com/classes/Animatable) classes.
+不要忘记 [访问我们的API文档](http://doc.babylonjs.com/classes/) 以学习更多关于 [**Babylon.js 动画**](http://doc.babylonjs.com/classes/Animation) 和 [**Babylon.js 支持动画的**](http://doc.babylonjs.com/classes/Animatable) 类.
 
 ## 给动画添加事件
 
@@ -288,7 +289,7 @@ scene.registerBeforeRender(function () {
 // 用3个参数创建一个事件:
 // - 触发事件的帧
 // - 将执行的动作
-// - 一个布尔值表明事件是否仅被执行一次 (默认是 否)
+// - 一个布尔值表明事件是否仅被执行一次 (默认 否)
 var event1 = new BABYLON.AnimationEvent(50, function() { console.log("Yeah!"); }, true);
 // 将你的事件附加到动画上
 animation.addEvent(event1);
@@ -298,4 +299,4 @@ animation.addEvent(event1);
 
 **下一步**
 
-你的场景现在动起来了, 你的所有网格都可在所有方向上移动的!自己尝试在不同的物体上实现不同的动画, 然后回到这里再学习更多的关于 [**精力**](http://doc.babylonjs.com/tutorials/Sprites).
+你的场景现在动起来了, 你的所有网格都可在所有方向上移动!请自己尝试在不同的物体上实现不同的动画, 然后回到这里再学习更多的关于 [**精灵**](http://doc.babylonjs.com/tutorials/Sprites).
