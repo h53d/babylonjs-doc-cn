@@ -122,6 +122,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>And you are done!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105307Z" creationid="aceway" creationdate="20160402T105307Z">
+        <seg>你做到了!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Animations
 ---
 # Animation
@@ -234,6 +242,22 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The ```BABYLON.Animatable``` object also supports the following functions:
+- ```pause()```
+- ```restart()```
+- ```stop()```
+- ```reset()```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T104515Z" creationid="aceway" creationdate="20160402T104515Z">
+        <seg>该 ```BABYLON.Animatable``` 对象也支持下列函数:
+- ```pause()```
+- ```restart()```
+- ```stop()```
+- ```reset()```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The animation is based on objects called Animation (!!).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053948Z" creationid="aceway@qq.com" creationdate="20160330T094901Z">
@@ -280,10 +304,26 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These commands will apply to every animation object contained in the Animatable's ._animations array.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105020Z" creationid="aceway" creationdate="20160402T105020Z">
+        <seg>这些指令将应用到包涵在 _animations 数组里的每个动画对象上.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This can be any mesh property, depending upon what you want to change.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054051Z" creationid="aceway@qq.com" creationdate="20160331T014336Z">
         <seg>这个可以是网格的任何属性，取决于你要修改什么。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This function returns a ```BABYLON.Animatable``` object that you can use to get access to individual animations (for instance using ```getAnimationByTargetProperty``` function).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T104358Z" creationid="aceway" creationdate="20160402T104358Z">
+        <seg>这个函数返回一个 ```BABYLON.Animatable``` 对象,通过该对象能够访问个别的动画 (例如使用 ```getAnimationByTargetProperty``` 功能).</seg>
       </tuv>
     </tu>
     <tu>
@@ -300,6 +340,22 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053931Z" creationid="aceway" creationdate="20160330T033249Z">
         <seg>为了给它注入动态，我们将开始学习如何控制电脑来按照你指定的方式移动你创建的网格对象。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We have now completed an Animation for box1.scaling.x.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105422Z" creationid="aceway" creationdate="20160402T105422Z">
+        <seg>现在我们已经完全实现在x轴方向实现缩放 box1 的动画.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can also get access to current running ```BABYLON.Animatable``` objects by using ```scene.getAnimatableByTarget()``` providing the target object.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105257Z" creationid="aceway" creationdate="20160402T105257Z">
+        <seg>通过提供目标对象来调用 ```scene.getAnimatableByTarget()``` 你也可以访问当前正在运行的 ```BABYLON.Animatable``` 对象.</seg>
       </tuv>
     </tu>
     <tu>
