@@ -99,7 +99,7 @@ scene.beginAnimation(box1, 0, 100, true);
 
 **提供给scene.beginAnimation的参数：**
 
-| 名称 | 类型 | 描述
+ | 名称 | 类型 | 描述
 ---|---|---|---
  | 目标 | 任意 | 特定目标
  | 起始| 数 | 开始fps
