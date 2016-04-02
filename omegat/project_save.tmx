@@ -14,6 +14,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Controlling animations</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110133Z" creationid="aceway" creationdate="20160402T110133Z">
+        <seg>## 控制动画</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Helper function</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110605Z" creationid="aceway" creationdate="20160402T110605Z">
+        <seg>## 帮助函数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* Use previous values and increment it: ```BABYLON.Animation.ANIMATIONLOOPMODE_RELATIVE```
 * Restart from initial value: ```BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE```
 * Keep their final value: ```BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT```</seg>
@@ -144,6 +160,30 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By default these functions are the following:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110523Z" creationid="aceway" creationdate="20160402T110523Z">
+        <seg>默认情况下,这个函数如下:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don't hesitate to combine many animations for one mesh object... by creating more Animations and pushing them into the mesh's _animation_ property.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110115Z" creationid="aceway" creationdate="20160402T110115Z">
+        <seg>不要犹豫在一个网格对象上合并多个动画, 通过创建多个动画片段并把它们追加到 _animation_ 属性上.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each Animation has a property called ```currentFrame``` that indicates the current animation key.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110235Z" creationid="aceway" creationdate="20160402T110235Z">
+        <seg>每个动画片段都有一个属性: ```currentFrame``` , 其指明当前动画的键.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Every key represents the value of the Animation at that key's given time.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T013853Z" creationid="aceway@qq.com" creationdate="20160331T013853Z">
@@ -176,6 +216,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For advanced keyframe animation, you can also define the functions used to interpolate (transition) between keys.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110459Z" creationid="aceway" creationdate="20160402T110459Z">
+        <seg>对于高级的关键帧动画, 你也可以定义个函数实现在键之间插入过度效果.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here we want to scale an object on the X axis, so it will be “scaling.x”.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054056Z" creationid="aceway@qq.com" creationdate="20160331T014428Z">
@@ -196,6 +244,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083401Z" creationid="aceway@qq.com" creationdate="20160331T083401Z">
         <seg>在我们这个案例，我们想放大盒子，但是不是线性方式，而是放大时盒子越大则放大的速度越快，缩小时盒子越小缩得越慢。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Maybe now you want to build an Animation for box1.scaling.y, and really get box1 moving playfully.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105655Z" creationid="aceway" creationdate="20160402T105655Z">
+        <seg>现在你也许希望在y轴上缩放box1, 而且实时移动box1.</seg>
       </tuv>
     </tu>
     <tu>
@@ -356,6 +412,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105257Z" creationid="aceway" creationdate="20160402T105257Z">
         <seg>通过提供目标对象来调用 ```scene.getAnimatableByTarget()``` 你也可以访问当前正在运行的 ```BABYLON.Animatable``` 对象.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can use an extended function to create a quick animation:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110702Z" creationid="aceway" creationdate="20160402T110702Z">
+        <seg>通过一个扩展函数你可以创建快速动画</seg>
       </tuv>
     </tu>
     <tu>
