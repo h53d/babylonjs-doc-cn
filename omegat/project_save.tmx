@@ -238,8 +238,8 @@ var nextPos = torus.position.add(new BABYLON.Vector3(-80, 0, 0));</seg>
       <tuv lang="EN-US">
         <seg>//At the animation key 0, the value of scaling is "1"</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085257Z" creationid="aceway@qq.com" creationdate="20160331T085257Z">
-        <seg>//在动画0键，放在倍数是 1。</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T154509Z" creationid="aceway@qq.com" creationdate="20160331T085257Z">
+        <seg>//在动画0键，放大倍数是 1。</seg>
       </tuv>
     </tu>
     <tu>
