@@ -30,6 +30,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Easing functions</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T125349Z" creationid="aceway" creationdate="20160402T125349Z">
+        <seg>## 简化功能(函数)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Helper function</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110605Z" creationid="aceway" creationdate="20160402T110605Z">
@@ -146,6 +154,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All those easing functions are implemented in BABYLON allowing you to apply custom mathematical formulas to your animations.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T125926Z" creationid="aceway" creationdate="20160402T125926Z">
+        <seg>所有这些BABYLON实现的简化函数,都允许使用自定义的数据公式应用在动画上.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Although this playground is blending the same animation into itself, more often, a different animation will be blended-into the original, such as when a walking character changes to running.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T125321Z" creationid="aceway" creationdate="20160402T125321Z">
+        <seg>尽管这个娱乐展示的是 渲染自身重复的动画, 但更常见的情况是, 渲染不同的动画 - 进入不同的状态,比如当一个走动中的角色切换到跑动.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An Animation is defined by various properties and a collection of keys.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053953Z" creationid="aceway" creationdate="20160330T154019Z">
@@ -248,6 +272,36 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here are the predefined easing functions you can use : 
+- ```BABYLON.CircleEase()```
+- ```BABYLON.BackEase(amplitude)```
+- ```BABYLON.BounceEase(bounces, bounciness)```
+- ```BABYLON.CubicEase()```
+- ```BABYLON.ElasticEase(oscillations, springiness)```
+- ```BABYLON.ExponentialEase(exponent)```
+- ```BABYLON.PowerEase(power)```
+- ```BABYLON.QuadraticEase()```
+- ```BABYLON.QuarticEase()```
+- ```BABYLON.QuinticEase()```
+- ```BABYLON.SineEase()```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T130012Z" creationid="aceway" creationdate="20160402T130012Z">
+        <seg>这儿是一些你可直接使用的预定义简化函数 : 
+- ```BABYLON.CircleEase()```
+- ```BABYLON.BackEase(amplitude)```
+- ```BABYLON.BounceEase(bounces, bounciness)```
+- ```BABYLON.CubicEase()```
+- ```BABYLON.ElasticEase(oscillations, springiness)```
+- ```BABYLON.ExponentialEase(exponent)```
+- ```BABYLON.PowerEase(power)```
+- ```BABYLON.QuadraticEase()```
+- ```BABYLON.QuarticEase()```
+- ```BABYLON.QuinticEase()```
+- ```BABYLON.SineEase()```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is a straightforward sample using the **CreateAndStartAnimation()** function :</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111354Z" creationid="aceway" creationdate="20160402T111354Z">
@@ -272,6 +326,18 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you want more information about easing functions, here are some useful links : 
+- [MSDN Easing functions documentation](http://msdn.microsoft.com/en-us/library/ee308751.aspx)
+- [Easing functions cheat sheet](http://easings.net/fr)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T125800Z" creationid="aceway" creationdate="20160402T125800Z">
+        <seg>如果你希望获得关于简化函数的更多信息,这儿有一些有用的链接 : 
+- [MSDN 简化函数文档](http://msdn.microsoft.com/en-us/library/ee308751.aspx)
+- [简化函数懒人表单](http://easings.net/fr)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In our case, we want to scale our box, but not in a linear way: it must be faster when it became larger, and slower when it became thinner.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083401Z" creationid="aceway@qq.com" creationdate="20160331T083401Z">
@@ -282,8 +348,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>In the playground demo below, every time you click on the FPS marker, the new animation is blended with the box's current position:</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T112100Z" creationid="aceway" creationdate="20160402T112100Z">
-        <seg>在下面这个娱乐展示中, In the playground demo below, every time you click on the FPS marker, the new animation is blended with the box's current position:</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T124804Z" creationid="aceway" creationdate="20160402T112100Z">
+        <seg>在下面这个娱乐展示中, 每次你点击 FPS 标签时, 那个盒子的当前位置会被作为参数重新渲染. :</seg>
       </tuv>
     </tu>
     <tu>
@@ -472,6 +538,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105422Z" creationid="aceway" creationdate="20160402T105422Z">
         <seg>现在我们已经完全实现在x轴方向实现缩放 box1 的动画.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can add some behaviors to your animations, using easing functions.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T125451Z" creationid="aceway" creationdate="20160402T125451Z">
+        <seg>你可以使用简化函数给动画添加一些不同的行为.</seg>
       </tuv>
     </tu>
     <tu>
