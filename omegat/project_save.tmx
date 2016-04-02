@@ -6,6 +6,14 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>## Animation Blending</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111439Z" creationid="aceway" creationdate="20160402T111439Z">
+        <seg>## 动画渲染</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Basic animation</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T033807Z" creationid="aceway" creationdate="20160330T033807Z">
@@ -90,6 +98,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>- The animation is starting right after the method call.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111136Z" creationid="aceway" creationdate="20160402T111136Z">
+        <seg>- 这些动画在该函数调用后立即播放.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>//At the animation key 0, the value of scaling is "1"</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085257Z" creationid="aceway@qq.com" creationdate="20160331T085257Z">
@@ -160,6 +176,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As of Babylon.js 2.3+, you can  start an animation with *enableBlending* = true.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111552Z" creationid="aceway" creationdate="20160402T111552Z">
+        <seg>作为2.3+版本的 Babylon.js 2.3, 你能通过设置 *enableBlending* 为 true来启动一个动画.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By default these functions are the following:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110523Z" creationid="aceway" creationdate="20160402T110523Z">
@@ -224,6 +248,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is a straightforward sample using the **CreateAndStartAnimation()** function :</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111354Z" creationid="aceway" creationdate="20160402T111354Z">
+        <seg>这有个使用 **CreateAndStartAnimation()** 函数的例子:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here we want to scale an object on the X axis, so it will be “scaling.x”.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054056Z" creationid="aceway@qq.com" creationdate="20160331T014428Z">
@@ -244,6 +276,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083401Z" creationid="aceway@qq.com" creationdate="20160331T083401Z">
         <seg>在我们这个案例，我们想放大盒子，但是不是线性方式，而是放大时盒子越大则放大的速度越快，缩小时盒子越小缩得越慢。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the playground demo below, every time you click on the FPS marker, the new animation is blended with the box's current position:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T112100Z" creationid="aceway" creationdate="20160402T112100Z">
+        <seg>在下面这个娱乐展示中, In the playground demo below, every time you click on the FPS marker, the new animation is blended with the box's current position:</seg>
       </tuv>
     </tu>
     <tu>
@@ -368,6 +408,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This blended animation will interpolate FROM the current object's state.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111742Z" creationid="aceway" creationdate="20160402T111742Z">
+        <seg>被渲染了动画将被添加到当前对象状态上</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This can be any mesh property, depending upon what you want to change.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054051Z" creationid="aceway@qq.com" creationdate="20160331T014336Z">
@@ -384,10 +432,30 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This would be handy for user-controlled walking characters, or reacting to value changes from an input device.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111929Z" creationid="aceway" creationdate="20160402T111929Z">
+        <seg>这会对用户很方便 - 例如:控制行走中的角色, 或者实时响应来自输入设备的数据值变化.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To achieve today’s animated scene, we begin by creating our environment:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054000Z" creationid="aceway@qq.com" creationdate="20160331T014002Z">
         <seg>未来实现今天的动态场景，我们开始创建自己的环境：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To be able to use this function, you need to know that :
+- Your animation will have predefined key frames (Only 2 keyframes are generated : **Start** and **End**)
+- The animation works only on **AbstractMesh** objects.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111059Z" creationid="aceway" creationdate="20160402T111059Z">
+        <seg>为了使用该函数,你需要知道这些:
+- 你的动画需要有预定义的关键帧 (仅有2个关键帧被创建 : **开始** 和 **结束**)
+- 这些动画仅在 **AbstractMesh** 对象上有效.</seg>
       </tuv>
     </tu>
     <tu>
@@ -418,8 +486,8 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       <tuv lang="EN-US">
         <seg>You can use an extended function to create a quick animation:</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110702Z" creationid="aceway" creationdate="20160402T110702Z">
-        <seg>通过一个扩展函数你可以创建快速动画</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110722Z" creationid="aceway" creationdate="20160402T110702Z">
+        <seg>通过一个扩展函数你可以创建快速动画:</seg>
       </tuv>
     </tu>
     <tu>
@@ -428,6 +496,20 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053841Z" creationid="aceway@qq.com" creationdate="20160331T013721Z">
         <seg>_最终结果_ </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```Javascript
+BABYLON.Animation.CreateAndStartAnimation('boxscale', box1, 'scaling.x', 30, 120, 1.0, 1.5);
+```
+Fast and easy.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111425Z" creationid="aceway" creationdate="20160402T111425Z">
+        <seg>```Javascript
+BABYLON.Animation.CreateAndStartAnimation('boxscale', box1, 'scaling.x', 30, 120, 1.0, 1.5);
+```
+快速而简便.</seg>
       </tuv>
     </tu>
     <tu>
