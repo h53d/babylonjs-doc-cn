@@ -114,6 +114,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>- ```BABYLON.EasingFunction.EASINGMODE_EASEOUT``` : Interpolation follows 100% interpolation minus the output of the formula associated with the easing function.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T144214Z" creationid="aceway" creationdate="20160402T143618Z">
+        <seg>- ```BABYLON.EasingFunction.EASINGMODE_EASEOUT``` : 按照内插法 减去 简化函数的公式输出 来控制插入 .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>//At the animation key 0, the value of scaling is "1"</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085257Z" creationid="aceway@qq.com" creationdate="20160331T085257Z">
@@ -458,6 +466,16 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are three possible values you can give for EasingMode: 
+- ```BABYLON.EasingFunction.EASINGMODE_EASEIN``` : Interpolation follows the mathematical formula associated with the easing function.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T143727Z" creationid="aceway" creationdate="20160402T143214Z">
+        <seg>有三个值你可以用来赋给 EasingMode: 
+- ```BABYLON.EasingFunction.EASINGMODE_EASEIN``` : 按照简化函数的数学公式来控制插入.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are two primary ways of doing animations in your scene.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T033350Z" creationid="aceway" creationdate="20160330T033350Z">
@@ -562,6 +580,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110722Z" creationid="aceway" creationdate="20160402T110702Z">
         <seg>通过一个扩展函数你可以创建快速动画:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can use the **EasingMode** property to alter how the easing function behaves, that is, change how the animation interpolates.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T142847Z" creationid="aceway" creationdate="20160402T142839Z">
+        <seg>你可以使用 **EasingMode** 这个属性来修改简化函数的行为, 也就是, 改变动画是如何插入的.</seg>
       </tuv>
     </tu>
     <tu>
