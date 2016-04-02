@@ -926,9 +926,9 @@ BABYLON.Animation.CreateAndStartAnimation('boxscale', box1, 'scaling.x', 30, 120
 // An array with all animation keys
 var keys = [];</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085154Z" creationid="aceway@qq.com" creationdate="20160331T085111Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T154439Z" creationid="aceway@qq.com" creationdate="20160331T085111Z">
         <seg>```javascript
-// 存储素有动画键值的数组
+// 存储所有动画键值的数组
 var keys = [];</seg>
       </tuv>
     </tu>
