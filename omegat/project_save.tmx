@@ -48,8 +48,8 @@
       <tuv lang="EN-US">
         <seg>## Easing functions</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T125349Z" creationid="aceway" creationdate="20160402T125349Z">
-        <seg>## 简化功能(函数)</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160011Z" creationid="aceway" creationdate="20160402T125349Z">
+        <seg>## 简化函数</seg>
       </tuv>
     </tu>
     <tu>
@@ -140,8 +140,8 @@
       <tuv lang="EN-US">
         <seg>- ```BABYLON.EasingFunction.EASINGMODE_EASEINOUT``` : Interpolation uses EaseIn for the first half of the animation and EaseOut for the second half.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T144354Z" creationid="aceway" creationdate="20160402T144354Z">
-        <seg>- ```BABYLON.EasingFunction.EASINGMODE_EASEINOUT``` : 头半部用EASEIN的方式,后半部用EASEOUT的方式来控制插入. </seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160304Z" creationid="aceway" creationdate="20160402T144354Z">
+        <seg>- ```BABYLON.EasingFunction.EASINGMODE_EASEINOUT``` : 头半部份用EASEIN的方式,后半部份用EASEOUT的方式来控制插入. </seg>
       </tuv>
     </tu>
     <tu>
@@ -272,8 +272,8 @@ var nextPos = torus.position.add(new BABYLON.Vector3(-80, 0, 0));</seg>
 scene.beginAnimation(torus, 0, 120, true);
 ```</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145450Z" creationid="aceway" creationdate="20160402T145450Z">
-        <seg>//最后, 以不断重复的方式从0到120键值到方式加载动画
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160431Z" creationid="aceway" creationdate="20160402T145450Z">
+        <seg>//最后, 以不断重复从0到120键值的方式加载动画
 scene.beginAnimation(torus, 0, 120, true);
 ```</seg>
       </tuv>
@@ -302,8 +302,8 @@ scene.beginAnimation(torus, 0, 120, true);
       <tuv lang="EN-US">
         <seg>All those easing functions are implemented in BABYLON allowing you to apply custom mathematical formulas to your animations.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T125926Z" creationid="aceway" creationdate="20160402T125926Z">
-        <seg>所有这些BABYLON实现的简化函数,都允许使用自定义的数据公式应用在动画上.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160125Z" creationid="aceway" creationdate="20160402T125926Z">
+        <seg>所有这些BABYLON实现的简化函数,都允许使用自定义的数学公式应用在动画上.</seg>
       </tuv>
     </tu>
     <tu>
@@ -364,8 +364,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>As of Babylon.js 2.3+, you can  start an animation with *enableBlending* = true.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111552Z" creationid="aceway" creationdate="20160402T111552Z">
-        <seg>作为2.3+版本的 Babylon.js 2.3, 你能通过设置 *enableBlending* 为 true来启动一个动画.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155805Z" creationid="aceway" creationdate="20160402T111552Z">
+        <seg>作为2.3+版本的 Babylon.js, 你能通过设置 *enableBlending* 为 true来启动一个动画.</seg>
       </tuv>
     </tu>
     <tu>
@@ -380,8 +380,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>Don't forget to [visit our API documentation](http://doc.babylonjs.com/classes/) in order to learn more about the [**Babylon.js Animation**](http://doc.babylonjs.com/classes/Animation) and [**Babylon.js Animatable**](http://doc.babylonjs.com/classes/Animatable) classes.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151914Z" creationid="aceway" creationdate="20160402T151914Z">
-        <seg>不要忘记 [访问我们的API文档](http://doc.babylonjs.com/classes/) 以学习更多关于 [**Babylon.js 动画**](http://doc.babylonjs.com/classes/Animation) and [**Babylon.js Animatable**](http://doc.babylonjs.com/classes/Animatable) classes.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160757Z" creationid="aceway" creationdate="20160402T151914Z">
+        <seg>不要忘记 [访问我们的API文档](http://doc.babylonjs.com/classes/) 以学习更多关于 [**Babylon.js 动画**](http://doc.babylonjs.com/classes/Animation) 和 [**Babylon.js 支持动画的**](http://doc.babylonjs.com/classes/Animatable) 类.</seg>
       </tuv>
     </tu>
     <tu>
@@ -428,16 +428,16 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>Feel free to try different animations on different objects, then come back and learn all about [**Sprites**](http://doc.babylonjs.com/tutorials/Sprites).</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152948Z" creationid="aceway" creationdate="20160402T152948Z">
-        <seg>自己尝试在不同的物体上实现不同的动画, 然后回到这里再学习更多的关于 [**精力**](http://doc.babylonjs.com/tutorials/Sprites).</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160920Z" creationid="aceway" creationdate="20160402T152948Z">
+        <seg>请自己尝试在不同的物体上实现不同的动画, 然后回到这里再学习更多的关于 [**精灵**](http://doc.babylonjs.com/tutorials/Sprites).</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Finally, you can extend the **EasingFunction** base function to create your own easing function, like this :</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T150120Z" creationid="aceway" creationdate="20160402T150120Z">
-        <seg>最后, 你能够扩展这 **EasingFunction** 基础函数, 从而创造你自己的简化函数,像这样:</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160555Z" creationid="aceway" creationdate="20160402T150120Z">
+        <seg>最后, 你能够扩展 **EasingFunction** 基础函数, 从而创造你自己的简化函数,像这样:</seg>
       </tuv>
     </tu>
     <tu>
@@ -468,8 +468,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>For purpose, here is a good reference to create your curve algorithm : [http://cubic-bezier.com](http://cubic-bezier.com)</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145829Z" creationid="aceway" creationdate="20160402T145829Z">
-        <seg>这个特地准备了一个参考来说明如何创建你的曲线算法 : [http://cubic-bezier.com](http://cubic-bezier.com)</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160520Z" creationid="aceway" creationdate="20160402T145829Z">
+        <seg>这特地准备了一个参考来说明如何创建你的曲线算法 : [http://cubic-bezier.com](http://cubic-bezier.com)</seg>
       </tuv>
     </tu>
     <tu>
@@ -599,13 +599,13 @@ var event1 = new BABYLON.AnimationEvent(50, function() { console.log("Yeah!"); }
 animation.addEvent(event1);
 ```</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152545Z" creationid="aceway" creationdate="20160402T152545Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160828Z" creationid="aceway" creationdate="20160402T152545Z">
         <seg>这样做非常简单:
 ```javascript
 // 用3个参数创建一个事件:
 // - 触发事件的帧
 // - 将执行的动作
-// - 一个布尔值表明事件是否仅被执行一次 (默认是 否)
+// - 一个布尔值表明事件是否仅被执行一次 (默认 否)
 var event1 = new BABYLON.AnimationEvent(50, function() { console.log("Yeah!"); }, true);
 // 将你的事件附加到动画上
 animation.addEvent(event1);
@@ -702,8 +702,8 @@ scene.registerBeforeRender(function () {</seg>
       <tuv lang="EN-US">
         <seg>The complex animation lets you choose everything at each frame of the animation (each tick).</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151121Z" creationid="aceway" creationdate="20160402T151121Z">
-        <seg>复杂动画允许你选择每帧的每样东西. (每一瞬间).</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160646Z" creationid="aceway" creationdate="20160402T151121Z">
+        <seg>复杂动画允许你选择每帧的每样东西(每一瞬间).</seg>
       </tuv>
     </tu>
     <tu>
@@ -766,8 +766,8 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       <tuv lang="EN-US">
         <seg>This blended animation will interpolate FROM the current object's state.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111742Z" creationid="aceway" creationdate="20160402T111742Z">
-        <seg>被渲染了动画将被添加到当前对象状态上</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155922Z" creationid="aceway" creationdate="20160402T111742Z">
+        <seg>被渲染了的动画将被添加到当前对象状态上. </seg>
       </tuv>
     </tu>
     <tu>
@@ -834,8 +834,8 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       <tuv lang="EN-US">
         <seg>We have now completed an Animation for box1.scaling.x.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105422Z" creationid="aceway" creationdate="20160402T105422Z">
-        <seg>现在我们已经完全实现在x轴方向实现缩放 box1 的动画.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155412Z" creationid="aceway" creationdate="20160402T105422Z">
+        <seg>现在我们已经完全实现在x轴方向缩放 box1 的动画.</seg>
       </tuv>
     </tu>
     <tu>
@@ -858,8 +858,8 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       <tuv lang="EN-US">
         <seg>You can play with bezier curve algorithm too, using the **BezierCurveEase(x1, y1, x2, y2)** function.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145650Z" creationid="aceway" creationdate="20160402T145650Z">
-        <seg>你也能用贝塞尔曲线到算法, 使用 **BezierCurveEase(x1, y1, x2, y2)** 函数.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160449Z" creationid="aceway" creationdate="20160402T145650Z">
+        <seg>你也能用贝塞尔曲线的算法, 使用 **BezierCurveEase(x1, y1, x2, y2)** 函数.</seg>
       </tuv>
     </tu>
     <tu>
@@ -882,8 +882,8 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       <tuv lang="EN-US">
         <seg>Your scene is now becoming dynamic, and all your meshes can move in all directions!</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152713Z" creationid="aceway" creationdate="20160402T152713Z">
-        <seg>你的场景现在动起来了, 你的所有网格都可在所有方向上移动的!</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160839Z" creationid="aceway" creationdate="20160402T152713Z">
+        <seg>你的场景现在动起来了, 你的所有网格都可在所有方向上移动!</seg>
       </tuv>
     </tu>
     <tu>
@@ -965,8 +965,8 @@ You will find a complete demonstration of the easing functions behaviors, in the
         <seg>| Name | Type | Description
 ---|---|---|---</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085752Z" creationid="aceway@qq.com" creationdate="20160331T085752Z">
-        <seg>| 名称 | 类型 | 描述
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155325Z" creationid="aceway@qq.com" creationdate="20160331T085752Z">
+        <seg> | 名称 | 类型 | 描述
 ---|---|---|---</seg>
       </tuv>
     </tu>
@@ -974,16 +974,16 @@ You will find a complete demonstration of the easing functions behaviors, in the
       <tuv lang="EN-US">
         <seg>| from | number | The fps starting frame</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085900Z" creationid="aceway@qq.com" creationdate="20160331T085900Z">
-        <seg>| 起始| 数 | 开始fps</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155329Z" creationid="aceway@qq.com" creationdate="20160331T085900Z">
+        <seg> | 起始| 数 | 开始fps</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>| target | any | The target</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085822Z" creationid="aceway@qq.com" creationdate="20160331T085822Z">
-        <seg>| 目标 | 任意 | 特定目标</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155327Z" creationid="aceway@qq.com" creationdate="20160331T085822Z">
+        <seg> | 目标 | 任意 | 特定目标</seg>
       </tuv>
     </tu>
     <tu>
@@ -992,8 +992,8 @@ You will find a complete demonstration of the easing functions behaviors, in the
 optional | loop | boolean | If true, the animation will loop (dependent upon BABYLON.Animation.ANIMATIONLOOPMODE)
 optional | speedRatio | number | default : 1.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160331T144002Z" creationid="aceway@qq.com" creationdate="20160331T085929Z">
-        <seg>| 止于 | 数量 | 结束fps
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155344Z" creationid="aceway@qq.com" creationdate="20160331T085929Z">
+        <seg> | 止于 | 数量 | 结束fps
 可选 | 循环 | 布尔值 | 如果为真,则动画循环播放 (取决于BABYLON.Animation.ANIMATIONLOOPMODE)
 可选 | 速率 | 数值 | 默认 : 1.</seg>
       </tuv>
