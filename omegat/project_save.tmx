@@ -806,8 +806,8 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       <tuv lang="EN-US">
         <seg>To achieve today’s animated scene, we begin by creating our environment:</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054000Z" creationid="aceway@qq.com" creationdate="20160331T014002Z">
-        <seg>未来实现今天的动态场景，我们开始创建自己的环境：</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T161219Z" creationid="aceway@qq.com" creationdate="20160331T014002Z">
+        <seg>为了实现今天的动态场景，我们开始创建自己的环境：</seg>
       </tuv>
     </tu>
     <tu>
