@@ -508,6 +508,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each of these includes are JavaSCRIPT files, and so they are included-in by using HTML `&lt;SCRIPT&gt;` elements/tags.&amp;nbsp; The shown 'src' (source location) of these files is at the Babylon.js web site folders, but later I will tell you how to put these files on your home hard drive if you wish, and include them from there.&amp;nbsp; They load-in faster when they are 'local', but you will need to change the 'src' URL once you have saved them locally.&amp;nbsp; I will show you how to do that soon.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T135120Z" creationid="aceway" creationdate="20160403T135120Z">
+        <seg>每个引入都是 JavaSCRIPT 文件, 所以它们被放在使用 HTML的 `&lt;SCRIPT&gt;` 元素/标签中.&amp;nbsp; 这些文件里显示的 'src' (源码位置) 在 the Babylon.js 网站的文件夹里, 但是稍后我将告诉你如何把这些文件放到你的硬盘驱动器里 - 如果你希望那样做, 然后从那儿引入它们.&amp;nbsp; 当是"本地" 时她们加载会更快, 但是当你将它们保存到本地后你需要修改 'src' 的网址; 我很快会告诉你如何做的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Every key represents the value of the Animation at that key's given time.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T013853Z" creationid="aceway@qq.com" creationdate="20160331T013853Z">
