@@ -22,6 +22,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Babylon.js WebGL Game Creation System!##</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T031550Z" creationid="aceway" creationdate="20160403T031550Z">
+        <seg>## Babylon.js 页面图像库 游戏创建系统!##</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Basic animation</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T033807Z" creationid="aceway" creationdate="20160330T033807Z">
@@ -150,6 +158,22 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T144214Z" creationid="aceway" creationdate="20160402T143618Z">
         <seg>- ```BABYLON.EasingFunction.EASINGMODE_EASEOUT``` : 按照内插法 减去 简化函数的公式输出 来控制插入 .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>---
+ID_PAGE: 22621
+PG_TITLE: A Babylon.js Primer
+---
+Welcome to the...</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T031442Z" creationid="aceway" creationdate="20160403T031442Z">
+        <seg>---
+ID_PAGE: 22621
+PG_TITLE: A Babylon.js 初级教程
+---
+欢迎到此...</seg>
       </tuv>
     </tu>
     <tu>
@@ -588,6 +612,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It makes a complicated system, (WebGL,) much easier to use.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032859Z" creationid="aceway" creationdate="20160403T032859Z">
+        <seg>Babylon.js构造里一个复杂的系统, 让网页图形库更容易使用.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It's very simple to do this:
 ```javascript
 // 3 parameters to create an event:
@@ -836,6 +868,30 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155412Z" creationid="aceway" creationdate="20160402T105422Z">
         <seg>现在我们已经完全实现在x轴方向缩放 box1 的动画.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We hope to teach you a large amount of information in a very quick manner.&amp;nbsp; Often there are more ways than one to accomplish a task here.&amp;nbsp; I will let you discover those other ways by yourself.&amp;nbsp; For now we will teach you the quickest and easiest ways, determined by studying the traits of other new users of Babylon.js.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T033419Z" creationid="aceway" creationdate="20160403T033419Z">
+        <seg>我们希望以一种非常快速的方式教给你大量的信息.&amp;nbsp; 通常这里的任务都有多于一种方式达成.&amp;nbsp; 我希望你自己去发现其它的方式.&amp;nbsp; 现在我们交给你最快最简单的方式, For now we will teach you the quickest and easiest ways, determined by studying the traits of other new users of Babylon.js.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Welcome to The Babylon.js Primer, an introduction to some of the things you will need to know in order to get the most out of this useful Javascript-based WebGL framework.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032215Z" creationid="aceway" creationdate="20160403T032215Z">
+        <seg>欢迎阅读 Babylon.js 初级教程, 这是后面学习最棒的基于Javascript的网页图形库框架所需必备知识的一个基础介绍.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What is a framework, you ask?&amp;nbsp; You can think of a framework as scaffolding for a building, allowing you to build around it without worrying about the foundation.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032705Z" creationid="aceway" creationdate="20160403T032705Z">
+        <seg>你想知道什么是框架么?&amp;nbsp; 你可以把框架认为成 建筑里的脚手架, 它支撑你围绕它创建新东西而不必为底层细节操心.</seg>
       </tuv>
     </tu>
     <tu>
