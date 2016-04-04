@@ -662,8 +662,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>Here is the fifth HTML SCRIPT element/tag in the big picture scene file.&amp;nbsp; We used 4 SCRIPT elements/tags to do the external includes.&amp;nbsp; This one is an INTERNAL include.&amp;nbsp; Notice that it has no 'src' URL.&amp;nbsp; That is because it is a section of Javascript code that YOU have written directly into this document.&amp;nbsp; Yes, YOU.&amp;nbsp; Now you are a Javascript programmer!</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002750Z" creationid="aceway" creationdate="20160404T002750Z">
-        <seg>这是大图片场景文件里的第五个 HTML SCRIPT 元素/标签 .&amp;nbsp; 我们用了4个 SCRIPT 元素/标签 实现外部包含.&amp;nbsp; This one is an INTERNAL include.&amp;nbsp; Notice that it has no 'src' URL.&amp;nbsp; That is because it is a section of Javascript code that YOU have written directly into this document.&amp;nbsp; Yes, YOU.&amp;nbsp; Now you are a Javascript programmer!</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T005134Z" creationid="aceway" creationdate="20160404T002750Z">
+        <seg>这是大图片场景文件里的第五个 HTML SCRIPT 元素/标签 .&amp;nbsp; 我们用了4个 SCRIPT 元素/标签 实现外部包含.&amp;nbsp; 这个是内部包含.&amp;nbsp; 注意没有 'src' 地址.&amp;nbsp; 那是因为它是你直接写入这个文档的 Javascript代码段.&amp;nbsp; 是的, 你写的.&amp;nbsp; 现在你是名 Javascript 程序员!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1080,6 +1080,22 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T142847Z" creationid="aceway" creationdate="20160402T142839Z">
         <seg>你可以使用 **EasingMode** 这个属性来修改简化函数的行为, 也就是, 改变动画是如何插入的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You could 'externalize' the entire green section, and possibly place it into a file called... 'myJavascript.js'... maybe in a folder called 'jsfolder'.&amp;nbsp; Then you could remove the green section, and add one more EXTERNAL INCLUDE script element/tag that might look like this:
+``` html
+&lt;script src="./jsfolder/myJavascript.js"&gt;&lt;/script&gt;
+```
+You need not concern yourself with that, at this point.&amp;nbsp; Externalizing your Javascript is often done when you have written LOTS of Javascript code.&amp;nbsp; Externalizing your code into separate files helps your project be organized, but it is not necessary this early in your webGL adventures.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T005616Z" creationid="aceway" creationdate="20160404T005616Z">
+        <seg>你可以把绿色段外部化, 可以把它们放到一个叫做... 'myJavascript.js'文件里, 也许还在个叫做... 'jsfolder'的目录里.&amp;nbsp; 然后你可以移除绿色段, 且再添加一个外部包含 脚本 元素/标签, 看起来就像这样:
+``` html
+&lt;script src="./jsfolder/myJavascript.js"&gt;&lt;/script&gt;
+```
+You need not concern yourself with that, at this point.&amp;nbsp; Externalizing your Javascript is often done when you have written LOTS of Javascript code.&amp;nbsp; Externalizing your code into separate files helps your project be organized, but it is not necessary this early in your webGL adventures.</seg>
       </tuv>
     </tu>
     <tu>
