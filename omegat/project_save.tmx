@@ -72,6 +72,18 @@ We have worked hard and learned much, so we deserve some playground time, at the
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Diving into createScene() ##
+&amp;nbsp;
+I would like you to visit the Babylon.js Playground once again (open in a new window or new tab, if possible), but this time we will visit its base URL at:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T145947Z" creationid="aceway" creationdate="20160404T145752Z">
+        <seg>## 深入 createScene() ##
+&amp;nbsp;
+我希望你在此访问下 Babylon.js 娱乐展示厅 (如果可能的话,用新的窗口或标签打开), 只是这次我们访问的是它的基础网址:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Easing functions</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160011Z" creationid="aceway" creationdate="20160402T125349Z">
@@ -532,6 +544,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Click on it, please.&amp;nbsp; Notice that there is a wide variety of pre-installed scenes (createScene functions).&amp;nbsp; Feel free to select any of them.&amp;nbsp; Tour them, drag your pointer around on them, and even change the code in the editor and hit **RUN** again.&amp;nbsp; You cannot damage the pre-installed scenes, even if you hit **SAVE**.&amp;nbsp; You are safe in a playground of Babylon.js scenes, and you can see MANY createScene functions in action.&amp;nbsp; You can play with their settings and hit Run again - fun.&amp;nbsp; And again, you can use the **Get .zip** button on any of these playground demos, and take copies of them for your home collection.&amp;nbsp; Handy, yes?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T150650Z" creationid="aceway" creationdate="20160404T150650Z">
+        <seg>请点击它.&amp;nbsp; 注意那有许多不同当预装场景 (创建场景的功能).&amp;nbsp; 可以在它们中自便的选择.&amp;nbsp; 浏览一下, 在之中拖动鼠标, 甚或在编辑区域修改下代码然后点击 **运行** .&amp;nbsp; 你不可能毁坏预装的场景, 甚至你点击了 **保存**也不会.&amp;nbsp; You are safe in a playground of Babylon.js scenes, and you can see MANY createScene functions in action.&amp;nbsp; You can play with their settings and hit Run again - fun.&amp;nbsp; And again, you can use the **Get .zip** button on any of these playground demos, and take copies of them for your home collection.&amp;nbsp; Handy, yes?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Don't forget to [visit our API documentation](http://doc.babylonjs.com/classes/) in order to learn more about the [**Babylon.js Animation**](http://doc.babylonjs.com/classes/Animation) and [**Babylon.js Animatable**](http://doc.babylonjs.com/classes/Animatable) classes.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160757Z" creationid="aceway" creationdate="20160402T151914Z">
@@ -838,6 +858,14 @@ animation.addEvent(event1);
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085505Z" creationid="aceway@qq.com" creationdate="20160331T085505Z">
         <seg>紧接着，最重要的两步：
 * 将存有动画信息的数组添加到动画对象上。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice the button that is currently labeled **Basic Scene**.&amp;nbsp; (It is actually called the Scene Selector button, but it is currently LABELED 'Basic Scene')</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T150155Z" creationid="aceway" creationdate="20160404T150155Z">
+        <seg>注意当前标注了 **基础场景**的按钮.&amp;nbsp; (实际上它叫做场景选择按钮, 只是当前标上了'基础场景').</seg>
       </tuv>
     </tu>
     <tu>
@@ -1166,6 +1194,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T104506Z" creationid="aceway" creationdate="20160404T104506Z">
         <seg>哇, 到这儿信息量很大了,不是吗?&amp;nbsp; 你已经学了如何识别一个场景文件 (大突破) 了, 学了它重要的 createScene() 函数, 而且学了怎么复制粘贴它到别处.&amp;nbsp; 你已经见识了娱乐展示厅里的 createScene() 函数, 而且为你介绍了它的 运行, 保存 和 获取.zip压缩包的按钮.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You are becoming a Babylon.js TOOLS expert.&amp;nbsp; When I say 'tools', I mean... you have learned the things that SUPPORT the createScene() function.&amp;nbsp; Are you ready to engage in learning some things about the code that is used in a createScene() function?&amp;nbsp; I knew you were.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T145740Z" creationid="aceway" creationdate="20160404T145740Z">
+        <seg>您正在成为Babylon.js工具专家.&amp;nbsp; 我所说的 '工具', 是指... 那些你学到的支持 createScene() 函数的东西.&amp;nbsp; 你已经准备好加入学习代码知识,以用在创建场景的功能么?&amp;nbsp; 我知道你准备好了.</seg>
       </tuv>
     </tu>
     <tu>
