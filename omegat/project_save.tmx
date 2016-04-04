@@ -6,6 +6,16 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>## A Visit to The Playground ##
+We have worked hard and learned much, so we deserve some playground time, at the Babylon.js Playground web site.&amp;nbsp; Here is a scene that I once created and then saved... at the playground:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T033340Z" creationid="aceway" creationdate="20160404T033340Z">
+        <seg>## 访问 娱乐展示 ##
+我们做得很努力且学到不少东西了, 所以我们可以获得一些时间在 Babylon.js 娱乐展示网站游乐一下了.&amp;nbsp; 此处是创建保存一次性场景的练习场:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Animation Blending</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111439Z" creationid="aceway" creationdate="20160402T111439Z">
@@ -26,6 +36,14 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T031550Z" creationid="aceway" creationdate="20160403T031550Z">
         <seg>## Babylon.js 页面图像库 游戏创建系统!##</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## BabylonJS Playground ##</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T033413Z" creationid="aceway" creationdate="20160404T033413Z">
+        <seg>## BabylonJS 娱乐展示 ##</seg>
       </tuv>
     </tu>
     <tu>
@@ -730,6 +748,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Inside the createScene() function (the purple section)... we will be doing the actual Babylon.js commands and directives that cause beautiful webGL to happen.&amp;nbsp; The rest of the big picture sections... are simply helpers and preparations... for the fantastic purple section... the createScene() function.&amp;nbsp; Remember its name, because I will be mentioning it often in many Playpen Series tutorials.&amp;nbsp; It will become your best friend.&amp;nbsp; This I can promise.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T032447Z" creationid="aceway" creationdate="20160404T032427Z">
+        <seg>在 createScene() 函数里 (紫色部分)... 我们将开始执行真实的 Babylon.js 指令, 以产生漂亮的WebGL效果出现.&amp;nbsp; 大图片里的剩下部分... 是些简单的辅助和准备工作... 为神奇的紫色部分(那个createScene()函数)服务的.&amp;nbsp; 记住这个函数名, 因为我将在许多游戏练习系列教材里常常提到它.&amp;nbsp; 我能保证,它将成为你最好的支持者.&amp;nbsp</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It makes a complicated system, (WebGL,) much easier to use.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032859Z" creationid="aceway" creationdate="20160403T032859Z">
@@ -810,6 +836,14 @@ animation.addEvent(event1);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054015Z" creationid="aceway@qq.com" creationdate="20160331T014128Z">
         <seg>我们的目标是：移动这个"box1"。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See the 'createScene' function in the left-side code editing window?&amp;nbsp; Does it look familiar?&amp;nbsp; It is the very same code from the purple section of the big picture (but with a couple of word-wrapped lines).&amp;nbsp; Now you can see why the createScene function is an important section.&amp;nbsp; It is somewhat portable.&amp;nbsp; You can copy createScene functions to/from the playground editor, and to/from your home scene files.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T034539Z" creationid="aceway" creationdate="20160404T034539Z">
+        <seg>看到左边代码窗口里的 'createScene' 函数里么?&amp;nbsp; 看起来熟悉吧?&amp;nbsp; 它是和大图片里的紫色部分非常像的代码(只是多了些换行).&amp;nbsp; 现在你该清楚了为什么那个 createScene 函数是一个重要的部分.&amp;nbsp; 它是有一定可移植性的.&amp;nbsp; 你能够在 createScene 函数和你本地的场景文件之间将代码拷来拷去.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1114,6 +1148,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
 &lt;script src="./jsfolder/myJavascript.js"&gt;&lt;/script&gt;
 ```
 You need not concern yourself with that, at this point.&amp;nbsp; Externalizing your Javascript is often done when you have written LOTS of Javascript code.&amp;nbsp; Externalizing your code into separate files helps your project be organized, but it is not necessary this early in your webGL adventures.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You might want to open that playground scene in a new window or new tab, so you can switch back and forth between here and there.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T033725Z" creationid="aceway" creationdate="20160404T033725Z">
+        <seg>你也许希望在新的浏览器窗口或标签页来打开娱乐联系的场景, 那样可以通过后退和前进切换不同场景.</seg>
       </tuv>
     </tu>
     <tu>
