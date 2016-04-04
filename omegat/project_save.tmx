@@ -790,6 +790,14 @@ animation.addEvent(event1);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let's pretend that you have been working on a scene file at home, and after many tries, you just cannot get it to work properly.&amp;nbsp; You could copy your home createScene function, then visit the playground, press its **CLEAR** button to empty its editor window, and then paste YOUR createScene function into the editor.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T073957Z" creationid="aceway" creationdate="20160404T073957Z">
+        <seg>让我们假设,你在一直在家中创建了一个场景文件, 经过多次尝试, 它就是不能正常工作.&amp;nbsp; 你可以复制你家里的 createScene 函数, 然后访问娱乐展示页面, 点击 **清除** 按钮 来清空编辑窗口, 最后把你的 createScene 函数粘贴到编辑区域里.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Maybe now you want to build an Animation for box1.scaling.y, and really get box1 moving playfully.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105655Z" creationid="aceway" creationdate="20160402T105655Z">
@@ -836,6 +844,14 @@ animation.addEvent(event1);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054015Z" creationid="aceway@qq.com" creationdate="20160331T014128Z">
         <seg>我们的目标是：移动这个"box1"。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Press the playground's **RUN** button and see if it works.&amp;nbsp; If it does not work, you can do some changes in the editor window, and hit **RUN** again... and again, and again.&amp;nbsp; Experiment with it there, and if you still cannot get it to work, you can press the **SAVE** button.&amp;nbsp; When you do that, the playground will give your scene a unique URL.&amp;nbsp; It will look something like this:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T074453Z" creationid="aceway" creationdate="20160404T074453Z">
+        <seg>按下娱乐展示的**运行**按钮,看看它是否有效.&amp;nbsp; 如果不正常, 你可以在编辑窗口里做些修改, 然后再次点击 **运行** ... 如此不断调整.&amp;nbsp; Experiment with it there, and if you still cannot get it to work, you can press the **SAVE** button.&amp;nbsp; When you do that, the playground will give your scene a unique URL.&amp;nbsp; It will look something like this:</seg>
       </tuv>
     </tu>
     <tu>
