@@ -9,9 +9,9 @@
         <seg>## A Visit to The Playground ##
 We have worked hard and learned much, so we deserve some playground time, at the Babylon.js Playground web site.&amp;nbsp; Here is a scene that I once created and then saved... at the playground:</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T033340Z" creationid="aceway" creationdate="20160404T033340Z">
-        <seg>## 访问 娱乐展示 ##
-我们做得很努力且学到不少东西了, 所以我们可以获得一些时间在 Babylon.js 娱乐展示网站游乐一下了.&amp;nbsp; 此处是创建保存一次性场景的练习场:</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T101212Z" creationid="aceway" creationdate="20160404T033340Z">
+        <seg>## 访问 娱乐展示厅 ##
+我们做得很努力且学到不少东西了, 所以我们可以获得一些时间在 Babylon.js 娱乐展示厅游乐一下了.&amp;nbsp; 此处是创建保存一次性场景的练习场:</seg>
       </tuv>
     </tu>
     <tu>
@@ -42,8 +42,8 @@ We have worked hard and learned much, so we deserve some playground time, at the
       <tuv lang="EN-US">
         <seg>## BabylonJS Playground ##</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T033413Z" creationid="aceway" creationdate="20160404T033413Z">
-        <seg>## BabylonJS 娱乐展示 ##</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T101152Z" creationid="aceway" creationdate="20160404T033413Z">
+        <seg>## BabylonJS 娱乐展示厅 ##</seg>
       </tuv>
     </tu>
     <tu>
@@ -84,6 +84,16 @@ We have worked hard and learned much, so we deserve some playground time, at the
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110605Z" creationid="aceway" creationdate="20160402T110605Z">
         <seg>## 帮助函数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## More About The Playground ##
+Once again let's visit the saved playground scene that I sent you to, above.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T101124Z" creationid="aceway" creationdate="20160404T101124Z">
+        <seg>## 关于娱乐展示厅更多 ##
+Once again let's visit the saved playground scene that I sent you to, above.</seg>
       </tuv>
     </tu>
     <tu>
@@ -840,6 +850,14 @@ animation.addEvent(event1);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now you can bookmark that unique URL, and then visit the Babylon.js forum at:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T094332Z" creationid="aceway" creationdate="20160404T094332Z">
+        <seg>现在你可以用书签纪录下那个唯一的网址, 然后去访问 Babylon.js 论坛:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Our goal: move this “box1”.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054015Z" creationid="aceway@qq.com" creationdate="20160331T014128Z">
@@ -850,8 +868,8 @@ animation.addEvent(event1);
       <tuv lang="EN-US">
         <seg>Press the playground's **RUN** button and see if it works.&amp;nbsp; If it does not work, you can do some changes in the editor window, and hit **RUN** again... and again, and again.&amp;nbsp; Experiment with it there, and if you still cannot get it to work, you can press the **SAVE** button.&amp;nbsp; When you do that, the playground will give your scene a unique URL.&amp;nbsp; It will look something like this:</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T074453Z" creationid="aceway" creationdate="20160404T074453Z">
-        <seg>按下娱乐展示的**运行**按钮,看看它是否有效.&amp;nbsp; 如果不正常, 你可以在编辑窗口里做些修改, 然后再次点击 **运行** ... 如此不断调整.&amp;nbsp; Experiment with it there, and if you still cannot get it to work, you can press the **SAVE** button.&amp;nbsp; When you do that, the playground will give your scene a unique URL.&amp;nbsp; It will look something like this:</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T094224Z" creationid="aceway" creationdate="20160404T074453Z">
+        <seg>按下娱乐展示的**运行**按钮,看看它是否有效.&amp;nbsp; 如果不正常, 你可以在编辑窗口里做些修改, 然后再次点击 **运行** ... 如此不断调整.&amp;nbsp; 尝试下, 如果你你仍然不能使它有效运行, 你可以按下 **保存** 按钮.&amp;nbsp; 之后会为你的场景生成一个唯一的网址.&amp;nbsp; 看起来就像这个样子:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1004,6 +1022,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There, you can start a new topic, tell everyone the URL to your broken playground createScene function, and ask others if they will please visit your playground scene and help you get it working correctly.&amp;nbsp;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T094839Z" creationid="aceway" creationdate="20160404T094839Z">
+        <seg>在那,你可以开始一个新的话题, 将破坏你娱乐展示场景的函数网址告诉大家,  问下是否有人乐意访问你的娱乐展示场景并帮助你修正.&amp;nbsp;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These commands will apply to every animation object contained in the Animatable's ._animations array.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105020Z" creationid="aceway" creationdate="20160402T105020Z">
@@ -1040,6 +1066,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T104358Z" creationid="aceway" creationdate="20160402T104358Z">
         <seg>这个函数返回一个 ```BABYLON.Animatable``` 对象,通过该对象能够访问个别的动画 (例如使用 ```getAnimationByTargetProperty``` 功能).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is called white-boarding.&amp;nbsp; It is an easy way to allow many people to work on your createScene function and help you figure out what is wrong.&amp;nbsp; See how the createScene function is 'portable'?&amp;nbsp; You took it from your home, to the playground, then played with it there for awhile.&amp;nbsp; Then, if needed, you clicked the playground's **SAVE** button, which gave it a URL.&amp;nbsp; &amp;nbsp;Then you went to the forum and showed that URL to others, and asked for their help.&amp;nbsp; Handy, huh?&amp;nbsp; We think so.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T100906Z" creationid="aceway" creationdate="20160404T100906Z">
+        <seg>这就是所谓的白板 white-boarding.&amp;nbsp; 它使得其他人能很容易的在你创建的场景上工作, 并帮你指出错误之处.&amp;nbsp; 清楚了创建场景函数是如何'可移植'了么?&amp;nbsp; 从家里获得, 扔到娱乐展示网页上, 然后在上面折腾一阵.&amp;nbsp; 如果有必要, 你可以点击娱乐展示上的 **保持** 按钮, 产生一个网址.&amp;nbsp; &amp;nbsp;最后到论坛上讲网址告诉其他人, 向他们求助.&amp;nbsp; 很方便吧, 哼??&amp;nbsp; 我们认为是这样的.</seg>
       </tuv>
     </tu>
     <tu>
