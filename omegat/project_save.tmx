@@ -138,6 +138,16 @@ Simply put, you will need to use a browser that supports WebGL and has Javascrip
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### The createScene() Function - Purple Section ###
+The purple section of the big picture... is the createScene() 'function'... a Javascript 'function'.&amp;nbsp; It is the most important section of a 'single HTML file' Babylon.js scene.&amp;nbsp; You are not required to use a createScene() function in your Javascript code, but please do... in these early days of your webGL learning.&amp;nbsp; I have some magic to show you... which is available if you keep most of your scene code... inside a function called createScene().&amp;nbsp; (Like the one shown in the big picture.)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T025918Z" creationid="aceway" creationdate="20160404T025918Z">
+        <seg>### createScene() 函数 - 紫色部分 ###
+The purple section of the big picture... is the createScene() 'function'... a Javascript 'function'.&amp;nbsp; It is the most important section of a 'single HTML file' Babylon.js scene.&amp;nbsp; You are not required to use a createScene() function in your Javascript code, but please do... in these early days of your webGL learning.&amp;nbsp; I have some magic to show you... which is available if you keep most of your scene code... inside a function called createScene().&amp;nbsp; (Like the one shown in the big picture.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>'Includes' is not necessarily the best term to describe the red section of the big picture, but I will be using that term often in this tutorial.&amp;nbsp; Three external Javascript files are being included into this scene.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002223Z" creationid="aceway" creationdate="20160403T132340Z">
@@ -830,8 +840,8 @@ animation.addEvent(event1);
       <tuv lang="EN-US">
         <seg>The JS code you see inside the green section... will be talked about soon.&amp;nbsp; Mainly, I would like you to study the big picture, and see how the single HTML file method of creating Babylon.js scenes... is structured.&amp;nbsp; I want you to try to visualize and somewhat memorize... this scene file's 'layout'.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T025459Z" creationid="aceway" creationdate="20160404T025459Z">
-        <seg>你看到的在绿色段里的 JS 代码... 很快会被讨论到.&amp;nbsp; 我主要是希望你学习下大图片里的内容, 而且弄明白单个HTML文件里的Babylon.js场景是如何创建的.&amp;nbsp; I want you to try to visualize and somewhat memorize... this scene file's 'layout'.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T025807Z" creationid="aceway" creationdate="20160404T025459Z">
+        <seg>你看到的在绿色段里的 JS 代码... 很快会被讨论到.&amp;nbsp; 我主要是希望你学习下大图片里的内容, 而且弄明白单个HTML文件里的Babylon.js场景是如何创建的.&amp;nbsp; 对这个文件的格式, 我希望你能够尽力留下印象且记得一点点.</seg>
       </tuv>
     </tu>
     <tu>
