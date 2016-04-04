@@ -112,18 +112,36 @@ Simply put, you will need to use a browser that supports WebGL and has Javascrip
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### The CSS Styles - Blue Section ###
+&amp;nbsp;Notice the blue section of the big picture.&amp;nbsp; That is the CSS (Cascading Style Sheets) styles used to present the scene's web page,&amp;nbsp; and adjust its WebGL canvas to be centered and filled-out nicely in your browser.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T001438Z" creationid="aceway" creationdate="20160404T001438Z">
+        <seg>### CSS 样式 - 蓝色段 ###
+&amp;nbsp;注意大图片中的蓝色段.&amp;nbsp; 那是用来呈现场景页面的 CSS (布局样式表) 样式,&amp;nbsp; 它会调整 WebGL 画布居中且填满你的整个浏览器.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### The External Includes - Red Section ###</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T132416Z" creationid="aceway" creationdate="20160403T132226Z">
-        <seg>### 外部引入 - 红色段 ###</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002200Z" creationid="aceway" creationdate="20160403T132226Z">
+        <seg>### 外部包含 - 红色段 ###</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>### The Internal Include - Green Section ###</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002348Z" creationid="aceway" creationdate="20160404T002127Z">
+        <seg>### 内部包含 - 绿色段 ###</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>'Includes' is not necessarily the best term to describe the red section of the big picture, but I will be using that term often in this tutorial.&amp;nbsp; Three external Javascript files are being included into this scene.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T132653Z" creationid="aceway" creationdate="20160403T132340Z">
-        <seg>'引入' 不一定是对 图中红色段的最好的描述方式, 但是在这个教程中我会常常使用这中方式.&amp;nbsp; 三个外部的Javascript文件被引入到这个场景里.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002223Z" creationid="aceway" creationdate="20160403T132340Z">
+        <seg>'包含' 不一定是对 图中红色段的最好的描述方式, 但是在这个教程中我会常常使用这中方式.&amp;nbsp; 三个外部的Javascript文件被包含到这个场景里.</seg>
       </tuv>
     </tu>
     <tu>
@@ -510,8 +528,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>Each of these includes are JavaSCRIPT files, and so they are included-in by using HTML `&lt;SCRIPT&gt;` elements/tags.&amp;nbsp; The shown 'src' (source location) of these files is at the Babylon.js web site folders, but later I will tell you how to put these files on your home hard drive if you wish, and include them from there.&amp;nbsp; They load-in faster when they are 'local', but you will need to change the 'src' URL once you have saved them locally.&amp;nbsp; I will show you how to do that soon.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T135120Z" creationid="aceway" creationdate="20160403T135120Z">
-        <seg>每个引入都是 JavaSCRIPT 文件, 所以它们被放在使用 HTML的 `&lt;SCRIPT&gt;` 元素/标签中.&amp;nbsp; 这些文件里显示的 'src' (源码位置) 在 the Babylon.js 网站的文件夹里, 但是稍后我将告诉你如何把这些文件放到你的硬盘驱动器里 - 如果你希望那样做, 然后从那儿引入它们.&amp;nbsp; 当是"本地" 时她们加载会更快, 但是当你将它们保存到本地后你需要修改 'src' 的网址; 我很快会告诉你如何做的.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002328Z" creationid="aceway" creationdate="20160403T135120Z">
+        <seg>每个包含都是 JavaSCRIPT 文件, 所以它们被放在使用 HTML的 `&lt;SCRIPT&gt;` 元素/标签中.&amp;nbsp; 这些文件里显示的 'src' (源码位置) 在 the Babylon.js 网站的文件夹里, 但是稍后我将告诉你如何把这些文件放到你的硬盘驱动器里 - 如果你希望那样做, 然后从那儿包含它们.&amp;nbsp; 当是"本地" 时她们加载会更快, 但是当你将它们保存到本地后你需要修改 'src' 的网址; 我很快会告诉你如何做的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -638,6 +656,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111354Z" creationid="aceway" creationdate="20160402T111354Z">
         <seg>这有个使用 **CreateAndStartAnimation()** 函数的例子:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is the fifth HTML SCRIPT element/tag in the big picture scene file.&amp;nbsp; We used 4 SCRIPT elements/tags to do the external includes.&amp;nbsp; This one is an INTERNAL include.&amp;nbsp; Notice that it has no 'src' URL.&amp;nbsp; That is because it is a section of Javascript code that YOU have written directly into this document.&amp;nbsp; Yes, YOU.&amp;nbsp; Now you are a Javascript programmer!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002750Z" creationid="aceway" creationdate="20160404T002750Z">
+        <seg>这是大图片场景文件里的第五个 HTML SCRIPT 元素/标签 .&amp;nbsp; 我们用了4个 SCRIPT 元素/标签 实现外部包含.&amp;nbsp; This one is an INTERNAL include.&amp;nbsp; Notice that it has no 'src' URL.&amp;nbsp; That is because it is a section of Javascript code that YOU have written directly into this document.&amp;nbsp; Yes, YOU.&amp;nbsp; Now you are a Javascript programmer!</seg>
       </tuv>
     </tu>
     <tu>
@@ -786,6 +812,14 @@ animation.addEvent(event1);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Someday, you may want to 'externalize' these styles by placing them in a separate file, possibly called styles.css.&amp;nbsp; Then you could remove the blue section from this HTML file, and use a HTML LINK element/tag to include-in that separate CSS style document.&amp;nbsp; I will not be telling you how to do that, but there are plenty of documents on the web that will show you how.&amp;nbsp; It is very easy.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002058Z" creationid="aceway" creationdate="20160404T002058Z">
+        <seg>有一天, 你希望通过把这些样式内容放在单独的文件里使它们外部化, 也许可以把文件叫做 styles.css.&amp;nbsp; 那是可以把蓝色段从这个HTML文件里移除掉, 然后使用HTML LINK元素/标签把样式文件放到里面.&amp;nbsp; 我不回教你怎么做那个, 但是网上满是文档教你如何做的; 它非常简单.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>That is a BIG picture, isn't it?&amp;nbsp; This is a complete Babylon.js scene, using the 'single HTML file' method.&amp;nbsp; This is not the only (or best) method of setting up a scene, but it is fast and easy.&amp;nbsp; I have colored important sections of 'the big picture' and we will now examine each section individually.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T132127Z" creationid="aceway" creationdate="20160403T132119Z">
@@ -840,8 +874,8 @@ scene.registerBeforeRender(function () {</seg>
       <tuv lang="EN-US">
         <seg>The first external include is hand.minified-1.2.js (often simply called hand.js) - a small Javascript framework that assists the Babylon.js cameras.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T132845Z" creationid="aceway" creationdate="20160403T132837Z">
-        <seg>第一个从外部引入的是 hand.minified-1.2.js (通常简称为hand.js) - 一个用来辅助Babylon.js相机的小Javascript框架.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002241Z" creationid="aceway" creationdate="20160403T132837Z">
+        <seg>第一个从外部包含的是 hand.minified-1.2.js (通常简称为hand.js) - 一个用来辅助Babylon.js相机的小Javascript框架.</seg>
       </tuv>
     </tu>
     <tu>
