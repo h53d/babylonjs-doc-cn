@@ -115,25 +115,25 @@ Simply put, you will need to use a browser that supports WebGL and has Javascrip
         <seg>### The CSS Styles - Blue Section ###
 &amp;nbsp;Notice the blue section of the big picture.&amp;nbsp; That is the CSS (Cascading Style Sheets) styles used to present the scene's web page,&amp;nbsp; and adjust its WebGL canvas to be centered and filled-out nicely in your browser.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T001438Z" creationid="aceway" creationdate="20160404T001438Z">
-        <seg>### CSS 样式 - 蓝色段 ###
-&amp;nbsp;注意大图片中的蓝色段.&amp;nbsp; 那是用来呈现场景页面的 CSS (布局样式表) 样式,&amp;nbsp; 它会调整 WebGL 画布居中且填满你的整个浏览器.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030032Z" creationid="aceway" creationdate="20160404T001438Z">
+        <seg>### CSS 样式 - 蓝色部分 ###
+&amp;nbsp;注意大图片中的蓝色部分.&amp;nbsp; 那是用来呈现场景页面的 CSS (布局样式表) 样式,&amp;nbsp; 它会调整 WebGL 画布居中且填满你的整个浏览器.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>### The External Includes - Red Section ###</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002200Z" creationid="aceway" creationdate="20160403T132226Z">
-        <seg>### 外部包含 - 红色段 ###</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T025949Z" creationid="aceway" creationdate="20160403T132226Z">
+        <seg>### 外部包含 - 红色部分 ###</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>### The Internal Include - Green Section ###</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002348Z" creationid="aceway" creationdate="20160404T002127Z">
-        <seg>### 内部包含 - 绿色段 ###</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030054Z" creationid="aceway" creationdate="20160404T002127Z">
+        <seg>### 内部包含 - 绿色部分 ###</seg>
       </tuv>
     </tu>
     <tu>
@@ -141,17 +141,17 @@ Simply put, you will need to use a browser that supports WebGL and has Javascrip
         <seg>### The createScene() Function - Purple Section ###
 The purple section of the big picture... is the createScene() 'function'... a Javascript 'function'.&amp;nbsp; It is the most important section of a 'single HTML file' Babylon.js scene.&amp;nbsp; You are not required to use a createScene() function in your Javascript code, but please do... in these early days of your webGL learning.&amp;nbsp; I have some magic to show you... which is available if you keep most of your scene code... inside a function called createScene().&amp;nbsp; (Like the one shown in the big picture.)</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T025918Z" creationid="aceway" creationdate="20160404T025918Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T031410Z" creationid="aceway" creationdate="20160404T025918Z">
         <seg>### createScene() 函数 - 紫色部分 ###
-The purple section of the big picture... is the createScene() 'function'... a Javascript 'function'.&amp;nbsp; It is the most important section of a 'single HTML file' Babylon.js scene.&amp;nbsp; You are not required to use a createScene() function in your Javascript code, but please do... in these early days of your webGL learning.&amp;nbsp; I have some magic to show you... which is available if you keep most of your scene code... inside a function called createScene().&amp;nbsp; (Like the one shown in the big picture.)</seg>
+大图片里的紫色部分...是createScene() '函数'... 一个Javascript '函数'.&amp;nbsp; 它是'单HTML文件'场景里的最重要部分的.&amp;nbsp; 在你的Javascript代码里你不必使用createScene()函数, 但是在学习WebGL的早期日子里,请这样做吧.&amp;nbsp; 我有些魔法展示给你看... 如果你把大部分的场景代码放到一个叫做createScene()的函数里.&amp;nbsp; (就像大图片里展示的那样.)</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>'Includes' is not necessarily the best term to describe the red section of the big picture, but I will be using that term often in this tutorial.&amp;nbsp; Three external Javascript files are being included into this scene.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002223Z" creationid="aceway" creationdate="20160403T132340Z">
-        <seg>'包含' 不一定是对 图中红色段的最好的描述方式, 但是在这个教程中我会常常使用这中方式.&amp;nbsp; 三个外部的Javascript文件被包含到这个场景里.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T025957Z" creationid="aceway" creationdate="20160403T132340Z">
+        <seg>'包含' 不一定是对 图中红色部分的最好的描述方式, 但是在这个教程中我会常常使用这中方式.&amp;nbsp; 三个外部的Javascript文件被包含到这个场景里.</seg>
       </tuv>
     </tu>
     <tu>
@@ -672,8 +672,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>Here is the fifth HTML SCRIPT element/tag in the big picture scene file.&amp;nbsp; We used 4 SCRIPT elements/tags to do the external includes.&amp;nbsp; This one is an INTERNAL include.&amp;nbsp; Notice that it has no 'src' URL.&amp;nbsp; That is because it is a section of Javascript code that YOU have written directly into this document.&amp;nbsp; Yes, YOU.&amp;nbsp; Now you are a Javascript programmer!</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T005134Z" creationid="aceway" creationdate="20160404T002750Z">
-        <seg>这是大图片场景文件里的第五个 HTML SCRIPT 元素/标签 .&amp;nbsp; 我们用了4个 SCRIPT 元素/标签 实现外部包含.&amp;nbsp; 这个是内部包含.&amp;nbsp; 注意没有 'src' 地址.&amp;nbsp; 那是因为它是你直接写入这个文档的 Javascript代码段.&amp;nbsp; 是的, 你写的.&amp;nbsp; 现在你是名 Javascript 程序员!</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030127Z" creationid="aceway" creationdate="20160404T002750Z">
+        <seg>这是大图片场景文件里的第五个 HTML SCRIPT 元素/标签 .&amp;nbsp; 我们用了4个 SCRIPT 元素/标签 实现外部包含.&amp;nbsp; 这个是内部包含.&amp;nbsp; 注意没有 'src' 地址.&amp;nbsp; 那是因为它是你直接写入这个文档的 Javascript代码部分.&amp;nbsp; 是的, 你写的.&amp;nbsp; 现在你是名 Javascript 程序员!</seg>
       </tuv>
     </tu>
     <tu>
@@ -824,8 +824,8 @@ animation.addEvent(event1);
       <tuv lang="EN-US">
         <seg>Someday, you may want to 'externalize' these styles by placing them in a separate file, possibly called styles.css.&amp;nbsp; Then you could remove the blue section from this HTML file, and use a HTML LINK element/tag to include-in that separate CSS style document.&amp;nbsp; I will not be telling you how to do that, but there are plenty of documents on the web that will show you how.&amp;nbsp; It is very easy.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002058Z" creationid="aceway" creationdate="20160404T002058Z">
-        <seg>有一天, 你希望通过把这些样式内容放在单独的文件里使它们外部化, 也许可以把文件叫做 styles.css.&amp;nbsp; 那是可以把蓝色段从这个HTML文件里移除掉, 然后使用HTML LINK元素/标签把样式文件放到里面.&amp;nbsp; 我不回教你怎么做那个, 但是网上满是文档教你如何做的; 它非常简单.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030046Z" creationid="aceway" creationdate="20160404T002058Z">
+        <seg>有一天, 你希望通过把这些样式内容放在单独的文件里使它们外部化, 也许可以把文件叫做 styles.css.&amp;nbsp; 那是可以把蓝色部分从这个HTML文件里移除掉, 然后使用HTML LINK元素/标签把样式文件放到里面.&amp;nbsp; 我不回教你怎么做那个, 但是网上满是文档教你如何做的; 它非常简单.</seg>
       </tuv>
     </tu>
     <tu>
@@ -840,8 +840,8 @@ animation.addEvent(event1);
       <tuv lang="EN-US">
         <seg>The JS code you see inside the green section... will be talked about soon.&amp;nbsp; Mainly, I would like you to study the big picture, and see how the single HTML file method of creating Babylon.js scenes... is structured.&amp;nbsp; I want you to try to visualize and somewhat memorize... this scene file's 'layout'.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T025807Z" creationid="aceway" creationdate="20160404T025459Z">
-        <seg>你看到的在绿色段里的 JS 代码... 很快会被讨论到.&amp;nbsp; 我主要是希望你学习下大图片里的内容, 而且弄明白单个HTML文件里的Babylon.js场景是如何创建的.&amp;nbsp; 对这个文件的格式, 我希望你能够尽力留下印象且记得一点点.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030158Z" creationid="aceway" creationdate="20160404T025459Z">
+        <seg>你看到的在绿色部分里的 JS 代码... 很快会被讨论到.&amp;nbsp; 我主要是希望你学习下大图片里的内容, 而且弄明白单个HTML文件里的Babylon.js场景是如何创建的.&amp;nbsp; 对这个文件的格式, 我希望你能够尽力留下印象且记得一点点.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1108,8 +1108,8 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
 ```
 You need not concern yourself with that, at this point.&amp;nbsp; Externalizing your Javascript is often done when you have written LOTS of Javascript code.&amp;nbsp; Externalizing your code into separate files helps your project be organized, but it is not necessary this early in your webGL adventures.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T005616Z" creationid="aceway" creationdate="20160404T005616Z">
-        <seg>你可以把绿色段外部化, 可以把它们放到一个叫做... 'myJavascript.js'文件里, 也许还在个叫做... 'jsfolder'的目录里.&amp;nbsp; 然后你可以移除绿色段, 且再添加一个外部包含 脚本 元素/标签, 看起来就像这样:
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030142Z" creationid="aceway" creationdate="20160404T005616Z">
+        <seg>你可以把绿色部分外部化, 可以把它们放到一个叫做... 'myJavascript.js'文件里, 也许还在个叫做... 'jsfolder'的目录里.&amp;nbsp; 然后你可以移除绿色部分, 且再添加一个外部包含 脚本 元素/标签, 看起来就像这样:
 ``` html
 &lt;script src="./jsfolder/myJavascript.js"&gt;&lt;/script&gt;
 ```
