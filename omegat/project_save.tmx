@@ -828,6 +828,14 @@ animation.addEvent(event1);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The JS code you see inside the green section... will be talked about soon.&amp;nbsp; Mainly, I would like you to study the big picture, and see how the single HTML file method of creating Babylon.js scenes... is structured.&amp;nbsp; I want you to try to visualize and somewhat memorize... this scene file's 'layout'.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T025459Z" creationid="aceway" creationdate="20160404T025459Z">
+        <seg>你看到的在绿色段里的 JS 代码... 很快会被讨论到.&amp;nbsp; 我主要是希望你学习下大图片里的内容, 而且弄明白单个HTML文件里的Babylon.js场景是如何创建的.&amp;nbsp; I want you to try to visualize and somewhat memorize... this scene file's 'layout'.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The ```BABYLON.Animatable``` object also supports the following functions:
 - ```pause()```
 - ```restart()```
