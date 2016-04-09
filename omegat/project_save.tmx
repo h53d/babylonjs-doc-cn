@@ -546,8 +546,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>Click on it, please.&amp;nbsp; Notice that there is a wide variety of pre-installed scenes (createScene functions).&amp;nbsp; Feel free to select any of them.&amp;nbsp; Tour them, drag your pointer around on them, and even change the code in the editor and hit **RUN** again.&amp;nbsp; You cannot damage the pre-installed scenes, even if you hit **SAVE**.&amp;nbsp; You are safe in a playground of Babylon.js scenes, and you can see MANY createScene functions in action.&amp;nbsp; You can play with their settings and hit Run again - fun.&amp;nbsp; And again, you can use the **Get .zip** button on any of these playground demos, and take copies of them for your home collection.&amp;nbsp; Handy, yes?</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T150650Z" creationid="aceway" creationdate="20160404T150650Z">
-        <seg>请点击它.&amp;nbsp; 注意那有许多不同当预装场景 (创建场景的功能).&amp;nbsp; 可以在它们中自便的选择.&amp;nbsp; 浏览一下, 在之中拖动鼠标, 甚或在编辑区域修改下代码然后点击 **运行** .&amp;nbsp; 你不可能毁坏预装的场景, 甚至你点击了 **保存**也不会.&amp;nbsp; You are safe in a playground of Babylon.js scenes, and you can see MANY createScene functions in action.&amp;nbsp; You can play with their settings and hit Run again - fun.&amp;nbsp; And again, you can use the **Get .zip** button on any of these playground demos, and take copies of them for your home collection.&amp;nbsp; Handy, yes?</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160409T142203Z" creationid="aceway" creationdate="20160404T150650Z">
+        <seg>请点击它.&amp;nbsp; 注意那有许多不同当预装场景 (创建场景的功能).&amp;nbsp; 可以在它们中自便的选择.&amp;nbsp; 浏览一下, 在之中拖动鼠标, 甚或在编辑区域修改下代码然后点击 **运行** .&amp;nbsp; 你不可能毁坏预装的场景, 甚至你点击了 **保存**也不会.&amp;nbsp; 你在 Babylon.js 的娱乐展示厅的场景里很安全, 而且你可以看到许多的创建场景的函数.&amp;nbsp; 你可以使用它们的设定玩一下, 再次点击 运行.&amp;nbsp; 再次的, 你可以使用娱乐演示图任何一个演示上方的 *获取 .zip压缩包**, 从而实现你的收集梦想.&amp;nbsp; 方便, 是吧?</seg>
       </tuv>
     </tu>
     <tu>
