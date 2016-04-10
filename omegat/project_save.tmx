@@ -450,6 +450,30 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A Camera.**&amp;nbsp; The three most commonly used TYPES of cameras... are ArcRotateCamera, FreeCamera, and TouchCamera.&amp;nbsp; There are many types of camera available in Babylon.js, but these three are the most common.&amp;nbsp; ANY number of cameras can be coded into a scene, but only one of those cameras... is the 'active camera'.&amp;nbsp; We have a tutorial in our Playpen Series... dedicated to talking about cameras.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T140701Z" creationid="aceway" creationdate="20160410T140701Z">
+        <seg>相机.**&amp;nbsp; 众多相机类型里3种常用的是, ArcRotateCamera(弧形旋转相机), FreeCamera(自由相机), 和 TouchCamera(触控相机).&amp;nbsp; 在Babylon.js里有许多种可用的相机, 但是这3种是最常见的.&amp;nbsp; 一个场景里可以编码任意多个相机, 但是只有其中一个能是'激活的相机'.&amp;nbsp; 在操练系列教程里我们有一个例子, 专门谈论各种相机.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A Light.**&amp;nbsp; &amp;nbsp;There are 4 basic types of lights available in Babylon.js.&amp;nbsp; They are PointLight, SpotLight, DirectionalLight, and HemisphericLight.&amp;nbsp; ANY number of lights can be coded into a scene,&amp;nbsp; but only the first 4 lights in the scene's lights list... will be used by the scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T142454Z" creationid="aceway" creationdate="20160410T141237Z">
+        <seg>光源.**&amp;nbsp; &amp;nbsp;在Babylon.js里有4种基础类型的光源.&amp;nbsp; 它们是 PointLight(点光灯光源), SpotLight(聚光灯光源), DirectionalLight(平行光光源), 和 HemisphericLight(半球光源).&amp;nbsp; 一个场景里编码任意数量的光源,&amp;nbsp; 但是在场景光源列表里只有前4个光源被场景使用.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A Shape.**&amp;nbsp; A shape is also called a **mesh**.&amp;nbsp; Every scene needs something to be viewed, right?&amp;nbsp; Cameras are invisible, and so are lights.&amp;nbsp; Every scene needs a mesh, or many.&amp;nbsp; There is no limit to the number of mesh in your scene.&amp;nbsp; A mesh can be one of the many shapes that are built-in to Babylon.js, or it can be a shape that you plotted yourself using Babylon's VertexData system, or it can be a mesh that has been 'imported' into the scene... from a modeling package such as Blender or 3D Studio Max.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T143707Z" creationid="aceway" creationdate="20160410T143707Z">
+        <seg>有型物.**&amp;nbsp; 有型物也叫做 **网格对象**.&amp;nbsp; 每个场景里都需要可视物,对吧?&amp;nbsp; 相机是不可见的, 光源也不可见.&amp;nbsp; 每个场景都需要个有型物, 或者许多个.&amp;nbsp; 没有限制在你的场景里可有的网格对象个数.&amp;nbsp; 一个网格对象可以是Babylon.js的许多内置有型物之一, 或者是你自己通过Babylon.js的顶点数据系统绘制的有型物, 或者是从外部建模软件,例如 Blender 或 3D Studio Maxl里'导入'到场景里的一个网格对象.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>After that comes oimo.js - a different physics 'engine' that performs a similar function to cannon.js, but is generally faster although it lacks some of the more advanced features present in cannon.js.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T133432Z" creationid="aceway" creationdate="20160403T133432Z">
@@ -870,6 +894,14 @@ animation.addEvent(event1);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now for the good stuff.&amp;nbsp; Every createScene() (every scene)... in Babylon.js... generally REQUIRES three things.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T135954Z" creationid="aceway" creationdate="20160410T135954Z">
+        <seg>现在来讲干货stuff.&amp;nbsp; 在Babylon.js里每次 createScene()调用 (也就是每个场景)通常需要三件事情:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now that we have our Animation object, it is time to say how those values will be modified.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083112Z" creationid="aceway@qq.com" creationdate="20160331T083112Z">
@@ -1146,6 +1178,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
         <seg>为了使用该函数,你需要知道这些:
 - 你的动画需要有预定义的关键帧 (仅有2个关键帧被创建 : **开始** 和 **结束**)
 - 这些动画仅在 **AbstractMesh** 对象上有效.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To be honest, a light is not an absolute requirement.&amp;nbsp; If the mesh in a scene... all have a material.emissiveColor or material.emissiveTexture properly set, then they will each produce their own light.&amp;nbsp; They will be 'self-illuminated'.&amp;nbsp; Careful, it is easy to get lost in a scene without a light.&amp;nbsp; Good advice would be to ALWAYS have one light (a HemisphericLight aimed to the sky, is a very handy wide-lighting tool).&amp;nbsp; You can adjust its .intensity value to set its brightness.&amp;nbsp; We have a tutorial in our Playpen Series... dedicated to talking about lights.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T142550Z" creationid="aceway" creationdate="20160410T142433Z">
+        <seg>老实说, 光源不是绝对必需的.&amp;nbsp; 如果场景里的网格对象都设置了material.emissiveColor(材料的颜色)或material.emissiveTexture(材料的纹理)属性, 那么它们自己会产生各自的光.&amp;nbsp; 它们将是 '自发光的'.&amp;nbsp; 注意, 如果一个场景里没有光是很容易迷失的.&amp;nbsp; 好的建议是总是创建一个光源(半球体光源(HemisphericLight)是个非常方便的灯光工具 - 应用到天空体上).&amp;nbsp; 你可以通过调整它的 .intensity 值来设置光的亮度.&amp;nbsp;在操练系列教程里我们有一个例子, 专门谈论各种光源.</seg>
       </tuv>
     </tu>
     <tu>
