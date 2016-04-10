@@ -32,6 +32,14 @@ We have worked hard and learned much, so we deserve some playground time, at the
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Babylon.js Objects, Properties, Methods, and Values ##</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T144445Z" creationid="aceway" creationdate="20160410T144445Z">
+        <seg>## Babylon.js 对象, 属性, 方法, 和值 ##</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Babylon.js WebGL Game Creation System!##</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T031550Z" creationid="aceway" creationdate="20160403T031550Z">
@@ -1262,6 +1270,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can learn many more things about Babylon.js scenes... in the other [tutorials and documentation](http://doc.babylonjs.com/).&amp;nbsp; And don't forget to look at the 'createScene()' functions of the playground's pre-installed demo scenes.&amp;nbsp; The Babylon.js playground is a learning wonderland, and it is a whole lot of fun, too.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T144346Z" creationid="aceway" creationdate="20160410T144346Z">
+        <seg>关于Babylon.js的场景, 在另外的 [教程和文档](http://doc.babylonjs.com/)里你可以学到许多.&amp;nbsp; 而且别忘了察看娱乐展示厅里 'createScene()' 函数的预装演示场景.&amp;nbsp; Babylon.js的娱乐展示厅是个学习乐园, 也充满乐趣.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can play with bezier curve algorithm too, using the **BezierCurveEase(x1, y1, x2, y2)** function.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160449Z" creationid="aceway" creationdate="20160402T145650Z">
@@ -1298,6 +1314,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
 &lt;script src="./jsfolder/myJavascript.js"&gt;&lt;/script&gt;
 ```
 You need not concern yourself with that, at this point.&amp;nbsp; Externalizing your Javascript is often done when you have written LOTS of Javascript code.&amp;nbsp; Externalizing your code into separate files helps your project be organized, but it is not necessary this early in your webGL adventures.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You have seen some createScene functions, and you have noticed that much of the Javascript code used to make a Babylon.js scene... sets values on object properties.&amp;nbsp; To illustrate what I mean:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T144815Z" creationid="aceway" creationdate="20160410T144815Z">
+        <seg>你已经见识了一些创建场景的函数, 而且你也应该注意到大量Javascript代码被用来创建Babylon.js场景, 比如设置对象的属性值....&amp;nbsp; 为了更好的阐述我的意识,下面给些代码:</seg>
       </tuv>
     </tu>
     <tu>
