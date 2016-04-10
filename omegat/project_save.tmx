@@ -224,6 +224,14 @@ The purple section of the big picture... is the createScene() 'function'... a Ja
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**Objects**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T145135Z" creationid="aceway" creationdate="20160410T145135Z">
+        <seg>**对象**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>**Parameter 1** - Name of this animation, nothing more.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054041Z" creationid="aceway@qq.com" creationdate="20160331T014235Z">
@@ -1320,8 +1328,8 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       <tuv lang="EN-US">
         <seg>You have seen some createScene functions, and you have noticed that much of the Javascript code used to make a Babylon.js scene... sets values on object properties.&amp;nbsp; To illustrate what I mean:</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T144815Z" creationid="aceway" creationdate="20160410T144815Z">
-        <seg>你已经见识了一些创建场景的函数, 而且你也应该注意到大量Javascript代码被用来创建Babylon.js场景, 比如设置对象的属性值....&amp;nbsp; 为了更好的阐述我的意识,下面给些代码:</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T145024Z" creationid="aceway" creationdate="20160410T144815Z">
+        <seg>你已经见识了一些创建场景的函数, 而且你也应该注意到大量Javascript代码被用来创建Babylon.js场景... 给些代码阐述下我的意思, &amp;nbsp;比如设置对象的属性值:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1346,6 +1354,20 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053841Z" creationid="aceway@qq.com" creationdate="20160331T013721Z">
         <seg>_最终结果_ </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``` javascript
+object.property = value;
+```
+Let's talk more about these four things... objects, properties, methods, and values.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T145127Z" creationid="aceway" creationdate="20160410T145127Z">
+        <seg>``` javascript
+object.property = value;
+```
+让我们更深入的讨论这4个事情: 对象, 属性, 方法, 和 值.</seg>
       </tuv>
     </tu>
     <tu>
