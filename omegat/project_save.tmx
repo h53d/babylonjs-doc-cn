@@ -224,6 +224,14 @@ The purple section of the big picture... is the createScene() 'function'... a Ja
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**Methods**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T150747Z" creationid="aceway" creationdate="20160418T150747Z">
+        <seg>**方法**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>**Next step**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152605Z" creationid="aceway" creationdate="20160402T152605Z">
