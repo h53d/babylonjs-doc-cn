@@ -288,6 +288,14 @@ The purple section of the big picture... is the createScene() 'function'... a Ja
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**Properties**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T145907Z" creationid="aceway" creationdate="20160418T145907Z">
+        <seg>**属性**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>- The animation is starting right after the method call.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111136Z" creationid="aceway" creationdate="20160402T111136Z">
@@ -377,8 +385,8 @@ var light = new BABYLON.DirectionalLight("Dir0", new BABYLON.Vector3(0, -1, 0), 
         <seg>// Creates a BABYLON.FreeCamera type of object
 var camera = new BABYLON.FreeCamera("freecam", new BABYLON.Vector3(0, 0, 5), scene);</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T144413Z" creationid="aceway" creationdate="20160418T144413Z">
-        <seg>// 创建一个 BABYLON.FreeCamera 自由相机类型对象
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T144653Z" creationid="aceway" creationdate="20160418T144413Z">
+        <seg>// 创建一个 BABYLON.FreeCamera 自由相机对象类型
 var camera = new BABYLON.FreeCamera("freecam", new BABYLON.Vector3(0, 0, 5), scene);</seg>
       </tuv>
     </tu>
@@ -389,11 +397,11 @@ var mybox = BABYLON.Mesh.CreateBox("box", 6.0, scene);
 ```
 You get the idea.&amp;nbsp; Javascript objects, are used often in Babylon.js scenes.&amp;nbsp; Sometimes you will create them, and other times you will get a 'reference' or 'handle' to an object that was created earlier.&amp;nbsp; Getting a reference/handle to a Javascript object, essentially means opening a communication line to an already-built object.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T144538Z" creationid="aceway" creationdate="20160418T144538Z">
-        <seg>// 创建一个 BABYLON.Mesh 网格对象类型type of object
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T145248Z" creationid="aceway" creationdate="20160418T144538Z">
+        <seg>// 创建一个 BABYLON.Mesh 网格对象类型
 var mybox = BABYLON.Mesh.CreateBox("box", 6.0, scene);
 ```
-You get the idea.&amp;nbsp; Javascript objects, are used often in Babylon.js scenes.&amp;nbsp; Sometimes you will create them, and other times you will get a 'reference' or 'handle' to an object that was created earlier.&amp;nbsp; Getting a reference/handle to a Javascript object, essentially means opening a communication line to an already-built object.</seg>
+你该清楚了.&amp;nbsp; Javascript 对象, 常常用在 Babylon.js 场景里.&amp;nbsp; 又是你创建它们, 另外一些时候你获得一个早些时候创建的对象的'引用' 或 '句柄' .&amp;nbsp; 持有一个Javascript对象的引用或句柄, 实质上意味着和已有的对象建立了通信线.</seg>
       </tuv>
     </tu>
     <tu>
@@ -670,6 +678,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110235Z" creationid="aceway" creationdate="20160402T110235Z">
         <seg>每个动画片段都有一个属性: ```currentFrame``` , 其指明当前动画的键.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each of these Javascript objects have named 'pockets' to store things-within.&amp;nbsp; Often, values, data, and objects... get stored in those pockets.&amp;nbsp; These value-storing pockets are called object 'properties'.&amp;nbsp; Properties are commonly 'set' (putting a value INTO the pocket), and often 'get' (looking into the pocket to see what's there).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T145901Z" creationid="aceway" creationdate="20160418T145901Z">
+        <seg>这些每个 Javascript 对象都有命名的 '存储空间' 来保存内容到里面.&amp;nbsp; 通常是, 值, 数据, 和对象... 被存在这些内存空间里.&amp;nbsp; 这些存储着值的空间被叫做对象的'属性'.&amp;nbsp; 属性通常被 '设置(set)' (将一个值放入存储空间), 和 '获取(get)' (到存储空间查看里面是什么内容).</seg>
       </tuv>
     </tu>
     <tu>
@@ -1012,6 +1028,14 @@ animation.addEvent(event1);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T101813Z" creationid="aceway" creationdate="20160404T074453Z">
         <seg>按下娱乐展示厅的**运行**按钮,看看它是否有效.&amp;nbsp; 如果不正常, 你可以在编辑窗口里做些修改, 然后再次点击 **运行** ... 如此不断调整.&amp;nbsp; 尝试下, 如果你你仍然不能使它有效运行, 你可以按下 **保存** 按钮.&amp;nbsp; 之后会为你的场景生成一个唯一的网址.&amp;nbsp; 看起来就像这个样子:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Properties store values.&amp;nbsp; These values are used by the Babylon.js framework... to 'render' the scene.&amp;nbsp; Here is an example:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T150014Z" creationid="aceway" creationdate="20160418T150014Z">
+        <seg>属性是存储着的值.&amp;nbsp; 这些纸被Babylon.js框架使用... 用于 '渲染(render)' 场景.&amp;nbsp; 这是个例子:</seg>
       </tuv>
     </tu>
     <tu>
