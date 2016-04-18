@@ -1467,6 +1467,20 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     <tu>
       <tuv lang="EN-US">
         <seg>``` javascript
+light.intensity = 0.5;
+```
+Here, we 'set' the property named 'intensity' on the object called 'light' to a value of 0.5 (0.5 is called a FLOATING POINT value, or just 'a float').&amp;nbsp; We'll talk about values, shortly.&amp;nbsp; The main thing I want you to notice is that the property (pocket) had a NAME... .intensity, and we stored the value 0.5 into that pocket (on the object named 'light').</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T150733Z" creationid="aceway" creationdate="20160418T150733Z">
+        <seg>``` javascript
+light.intensity = 0.5;
+```
+此处, 我们给一个被称为'光'的对象设置其叫做 'intensity'的属性值为0.5 (0.5 叫做浮点值, 或仅称为'a float').&amp;nbsp; 我们后面简短的谈论下值.&amp;nbsp; 我主要是希望你注意 那个具有intensity名字的属性(存储空间), 而且我们吧值0.5存到那里(属于那个称为'light'的对象).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``` javascript
 object.property = value;
 ```
 Let's talk more about these four things... objects, properties, methods, and values.</seg>
