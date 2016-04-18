@@ -216,6 +216,14 @@ The purple section of the big picture... is the createScene() 'function'... a Ja
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**Javascript Objects**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T143641Z" creationid="aceway" creationdate="20160418T143641Z">
+        <seg>**Javascript 语言里的对象**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>**Next step**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152605Z" creationid="aceway" creationdate="20160402T152605Z">
@@ -352,6 +360,48 @@ var keysTorus = [];
 keysTorus.push({ frame: 0, value: torus.position });
 keysTorus.push({ frame: 120, value: nextPos });
 animationTorus.setKeys(keysTorus);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Creates a BABYLON.DirectionalLight type of object
+var light = new BABYLON.DirectionalLight("Dir0", new BABYLON.Vector3(0, -1, 0), scene);</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T144605Z" creationid="aceway" creationdate="20160418T144435Z">
+        <seg>// 创建一个 BABYLON.DirectionalLight 方向光对象类型
+var light = new BABYLON.DirectionalLight("Dir0", new BABYLON.Vector3(0, -1, 0), scene);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Creates a BABYLON.FreeCamera type of object
+var camera = new BABYLON.FreeCamera("freecam", new BABYLON.Vector3(0, 0, 5), scene);</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T144413Z" creationid="aceway" creationdate="20160418T144413Z">
+        <seg>// 创建一个 BABYLON.FreeCamera 自由相机类型对象
+var camera = new BABYLON.FreeCamera("freecam", new BABYLON.Vector3(0, 0, 5), scene);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Creates a BABYLON.Mesh type of object
+var mybox = BABYLON.Mesh.CreateBox("box", 6.0, scene);
+```
+You get the idea.&amp;nbsp; Javascript objects, are used often in Babylon.js scenes.&amp;nbsp; Sometimes you will create them, and other times you will get a 'reference' or 'handle' to an object that was created earlier.&amp;nbsp; Getting a reference/handle to a Javascript object, essentially means opening a communication line to an already-built object.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T144538Z" creationid="aceway" creationdate="20160418T144538Z">
+        <seg>// 创建一个 BABYLON.Mesh 网格对象类型type of object
+var mybox = BABYLON.Mesh.CreateBox("box", 6.0, scene);
+```
+You get the idea.&amp;nbsp; Javascript objects, are used often in Babylon.js scenes.&amp;nbsp; Sometimes you will create them, and other times you will get a 'reference' or 'handle' to an object that was created earlier.&amp;nbsp; Getting a reference/handle to a Javascript object, essentially means opening a communication line to an already-built object.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Creates a BABYLON.Scene type of object.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T144323Z" creationid="aceway" creationdate="20160418T144323Z">
+        <seg>// 创建一个 BABYLON.Scene 场景对象类型.</seg>
       </tuv>
     </tu>
     <tu>
@@ -680,10 +730,26 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>First, do not think of objects as 3D shapes/mesh.&amp;nbsp; Those ARE objects, but here, we are talking about...&amp;nbsp;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T143626Z" creationid="aceway" creationdate="20160418T143626Z">
+        <seg>首先,不要把对象认为成 3D造型/网格.&amp;nbsp; 那些事物品对象, 但此处, 我们谈论的事关于...&amp;nbsp;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For advanced keyframe animation, you can also define the functions used to interpolate (transition) between keys.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110459Z" creationid="aceway" creationdate="20160402T110459Z">
         <seg>对于高级的关键帧动画, 你也可以定义个函数实现在键之间插入过度效果.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, each of the following code lines... creates a Javascript object (or more):</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T144152Z" creationid="aceway" creationdate="20160418T144152Z">
+        <seg>比如, 下面每行代码... 创建了一个Javascript对象 (或者多个):</seg>
       </tuv>
     </tu>
     <tu>
@@ -962,6 +1028,14 @@ animation.addEvent(event1);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083415Z" creationid="aceway@qq.com" creationdate="20160331T083415Z">
         <seg>如此:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some of the common Javascript objects used in a Babylon.js scene... are named **engine, scene, canvas, mesh, light, camera, Vector3, Color3, ActionManager, and Animation**.&amp;nbsp;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T144108Z" creationid="aceway" creationdate="20160418T144108Z">
+        <seg>Javascript 对象里的一些常见对象在 Babylon.js 场景里有使用... 它们叫做 **引擎(engine), 场景(scene), 花布(canvas), 网格(mesh), 灯光(light), 相机(camera), 三元向量(Vector3), 三元颜色(Color3), 动作管理器(ActionManager), 和动画(Animation)**.&amp;nbsp;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1354,6 +1428,16 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053841Z" creationid="aceway@qq.com" creationdate="20160331T013721Z">
         <seg>_最终结果_ </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``` javascript
+// Create a BABYLON.Engine type of object.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T144338Z" creationid="aceway" creationdate="20160418T144229Z">
+        <seg>``` javascript
+// 创建一个 BABYLON.Engine 引擎对象类型.</seg>
       </tuv>
     </tu>
     <tu>
