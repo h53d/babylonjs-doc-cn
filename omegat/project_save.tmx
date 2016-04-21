@@ -222,6 +222,52 @@ BABYLON.Vector3(xValue, yValue, zValue)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&amp;nbsp;
+### Color3 Values ###
+Color3 values look very much like Vector3 values.&amp;nbsp; Here is an example:
+``` javascript
+BABYLON.Color3(rValue, gValue, bValue)
+```
+The rValue is for red, the gValue is for green, and the bValue is for blue.&amp;nbsp; I bet you have already figured out that Color3 values are used for setting colors.&amp;nbsp; The rValue, gValue, and bValue, all contain float numbers in the range of 0 to 1.&amp;nbsp; Let's look at a few examples:
+``` javascript
+BABYLON.Color3(1, 0, 0) - red
+BABYLON.Color3(0, 1, 1) - cyan
+BABYLON.Color3(0, 1, 0) - green
+BABYLON.Color3(1, 0, 1) - violet
+BABYLON.Color3(1, 1, 0) - yellow
+BABYLON.Color3(0, 0, 0) - black
+BABYLON.Color3(1, 1, 1) - white
+BABYLON.Color3(0.5, 0.5, 0.5) - medium gray
+BABYLON.Color3(0.2, 0, 0.2) - dark purple
+```
+&amp;nbsp;
+Not so difficult.&amp;nbsp; Let's say that you wanted to put a color on a box that you have already created.&amp;nbsp; The first thing you do is create a Javascript object called a StandardMaterial.&amp;nbsp; Then you would apply (set) that StandardMaterial as the box's .material property.&amp;nbsp; This is covered by our Materials tutorial, but let's look at how that is done, here.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T144445Z" creationid="aceway" creationdate="20160421T144445Z">
+        <seg>&amp;nbsp;
+### Color3值 ###
+Color3 values look very much like Vector3 values.&amp;nbsp; Here is an example:
+``` javascript
+BABYLON.Color3(rValue, gValue, bValue)
+```
+The rValue is for red, the gValue is for green, and the bValue is for blue.&amp;nbsp; I bet you have already figured out that Color3 values are used for setting colors.&amp;nbsp; The rValue, gValue, and bValue, all contain float numbers in the range of 0 to 1.&amp;nbsp; Let's look at a few examples:
+``` javascript
+BABYLON.Color3(1, 0, 0) - red
+BABYLON.Color3(0, 1, 1) - cyan
+BABYLON.Color3(0, 1, 0) - green
+BABYLON.Color3(1, 0, 1) - violet
+BABYLON.Color3(1, 1, 0) - yellow
+BABYLON.Color3(0, 0, 0) - black
+BABYLON.Color3(1, 1, 1) - white
+BABYLON.Color3(0.5, 0.5, 0.5) - medium gray
+BABYLON.Color3(0.2, 0, 0.2) - dark purple
+```
+&amp;nbsp;
+Not so difficult.&amp;nbsp; Let's say that you wanted to put a color on a box that you have already created.&amp;nbsp; The first thing you do is create a Javascript object called a StandardMaterial.&amp;nbsp; Then you would apply (set) that StandardMaterial as the box's .material property.&amp;nbsp; This is covered by our Materials tutorial, but let's look at how that is done, here.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>'Includes' is not necessarily the best term to describe the red section of the big picture, but I will be using that term often in this tutorial.&amp;nbsp; Three external Javascript files are being included into this scene.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T025957Z" creationid="aceway" creationdate="20160403T132340Z">
@@ -678,6 +724,14 @@ Your scene is beginning to look great, but it is very static.</seg>
 ---
 # 动画
 你的场景开始看起来很棒了，但它仍然是呆板且静态。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Another use for a Vector3 value... is setting the .direction for certain types of lights:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T143340Z" creationid="aceway" creationdate="20160421T143340Z">
+        <seg>那外种使用 Vector3 值是用来设置灯光的方向:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1706,6 +1760,20 @@ Here, we 'set' the property named 'intensity' on the object called 'light' to a 
 light.intensity = 0.5;
 ```
 此处, 我们给一个被称为'光'的对象设置其叫做 'intensity'的属性值为0.5 (0.5 叫做浮点值, 或仅称为'a float').&amp;nbsp; 我们后面简短的谈论下值.&amp;nbsp; 我主要是希望你注意 那个具有intensity名字的属性(存储空间), 而且我们吧值0.5存到那里(属于那个称为'light'的对象).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``` javascript
+mySpotLight.direction = new BABYLON.Vector3(0, -1, 0);
+```
+Generally speaking, when a Vector3 value is used to set a DIRECTION, the xValue, yValue, and zValue are each in a range of negative 1... to positive 1.&amp;nbsp; In the example above, our light is aimed negative on the y-axis... or... straight down.&amp;nbsp; Directions (directional vectors) are used for more things than just lights, but lights is a common use.&amp;nbsp; Directional vectors are not always easy things to determine the x, y, and z parameters/values for.&amp;nbsp; We have some helpful tools on our lights... that will assist you in setting directions.&amp;nbsp; You will learn about those tools in our lights tutorial.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T144435Z" creationid="aceway" creationdate="20160421T144435Z">
+        <seg>``` javascript
+mySpotLight.direction = new BABYLON.Vector3(0, -1, 0);
+```
+通常来说, 当一个Vector3值被用来设置一个方向是, 该xValue, yValue, 和 zValue是在负1和正1之间的.&amp;nbsp; 在上面的例子里, 我们的光是瞄向Y轴负方向的... 或者直接向下.&amp;nbsp; 矢量 (方向向量) 被用在不仅仅是灯光上, 但通常是灯光上.&amp;nbsp; 矢量并不总是能很容易的用x, y, 和z 为参数来衡量.&amp;nbsp; 我们有些辅助工具来处理灯光... 它们将帮助你设置方向.&amp;nbsp; 你讲在我们的灯光教程里来学习那些工具.</seg>
       </tuv>
     </tu>
     <tu>
