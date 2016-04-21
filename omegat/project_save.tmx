@@ -756,8 +756,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>Even though Vector3 values can contain very large negative or positive numbers, it is rarely necessary for any xValue, yValue, or zValue... to be outside the range of -6.28 to +6.28 **for setting rotations**.&amp;nbsp; Any numbers outside that range would be unnecessary, because -6.28 (radians) rotates 360 degrees in one direction, and +6.28 (radians) rotates 360 degrees in the opposite direction.&amp;nbsp; That's a full range of rotation, isn't it?&amp;nbsp; We'll talk a bit more about rotation, further below.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T141755Z" creationid="aceway" creationdate="20160421T141755Z">
-        <seg>尽管Vector3的值可以是非常大正数或负数, 但通常没必要为旋转属性将xValue, yValue, 或 zValue的值设置超出 -6.28 和 +6.28之外的值.&amp;nbsp; Any numbers outside that range would be unnecessary, because -6.28 (radians) rotates 360 degrees in one direction, and +6.28 (radians) rotates 360 degrees in the opposite direction.&amp;nbsp; That's a full range of rotation, isn't it?&amp;nbsp; We'll talk a bit more about rotation, further below.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T142350Z" creationid="aceway" creationdate="20160421T141755Z">
+        <seg>尽管Vector3的值可以是非常的大正数或负数, 但通常没必要为旋转属性将xValue, yValue, 或 zValue的值设置超出 -6.28 和 +6.28之外的值.&amp;nbsp; 任何这个范围之外的值都没必要, 因为 -6.28 (弧度) 是在一个方向旋转 360 度, 而 +6.28 (弧度) 是在另一个方向旋转 360.&amp;nbsp; 那是可旋转的所有范围, 不是么?&amp;nbsp; 后面我们将在多些讨论旋转.</seg>
       </tuv>
     </tu>
     <tu>
@@ -928,6 +928,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>I will talk more about scaling... further below.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T143226Z" creationid="aceway" creationdate="20160421T143226Z">
+        <seg>在后面我们会更多的讨论缩放.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If well done, it’s very powerful.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151549Z" creationid="aceway" creationdate="20160402T151549Z">
@@ -1092,6 +1100,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T140337Z" creationid="aceway" creationdate="20160421T140337Z">
         <seg>现在让我们可个使用Vector3来设置旋转值的例子:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now let's see a Vector3 used for scaling (stretching and shrinking) a mesh:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T142448Z" creationid="aceway" creationdate="20160421T142448Z">
+        <seg>现在让我看看使用Vector3设置缩放(拉伸和缩减)一个网格:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1652,6 +1668,20 @@ Here, our box is being rotated around the x-axis... about 45 degrees.&amp;nbsp; 
 box.rotation = new BABYLON.Vector3(Math.PI/4, 0, 0);
 ```
 此处, 我们的盒子绕着X轴旋转呢来大约45度.&amp;nbsp; 在Babylon.js里, 旋转是以弧度为度量单位的.&amp;nbsp; Math.PI/4 约等于.707 弧度.&amp;nbsp; 要旋转90度, 将是Math.PI/2, 或着说大约1.57 弧度.&amp;nbsp; 对于180度, 是Math.PI, 或大约3.14 弧度.&amp;nbsp; 要旋转360度, 那就是Math.PI 乘以2, 或者大约6.28弧度.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``` javascript
+box.scaling = new BABYLON.Vector3(1, 1, 3);
+```
+Scaling is a way to shrink or stretch a mesh along any of the 3 scene axes.&amp;nbsp; In the above example, the xValue (1) indicates that no scaling change to the mesh along its x-axis... is desired.&amp;nbsp; The yValue of 1 indicates that we want no change in scaling along the y-axis, either.&amp;nbsp; The zValue of 3 indicates that we we are 'stretching' our mesh along its z-axis... to 3 times its normal size.&amp;nbsp; Easy, right?&amp;nbsp; You bet!&amp;nbsp;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T143159Z" creationid="aceway" creationdate="20160421T143159Z">
+        <seg>``` javascript
+box.scaling = new BABYLON.Vector3(1, 1, 3);
+```
+缩放是种在场景3轴的任何方向上缩减或拉伸网格的方法.&amp;nbsp; 在上面的例子里, 该xValue (1) 表明网格在X轴上没有缩放改变.&amp;nbsp; 该yValue值1 表明也不要在Y轴上做缩放改变.&amp;nbsp; 该zValue值3表明我们希望在Z轴上拉伸到3倍原大小.&amp;nbsp; 简单吧, 这样就对了?&amp;nbsp; 你矇对了!&amp;nbsp;</seg>
       </tuv>
     </tu>
     <tu>
