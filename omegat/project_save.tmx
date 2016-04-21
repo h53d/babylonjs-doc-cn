@@ -160,6 +160,14 @@ Simply put, you will need to use a browser that supports WebGL and has Javascrip
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Vector3 and Color3 Values ##</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T135047Z" creationid="aceway" creationdate="20160421T135047Z">
+        <seg>## Vector3 和 Color3 值 ##</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### The CSS Styles - Blue Section ###
 &amp;nbsp;Notice the blue section of the big picture.&amp;nbsp; That is the CSS (Cascading Style Sheets) styles used to present the scene's web page,&amp;nbsp; and adjust its WebGL canvas to be centered and filled-out nicely in your browser.</seg>
       </tuv>
@@ -192,6 +200,24 @@ The purple section of the big picture... is the createScene() 'function'... a Ja
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T031410Z" creationid="aceway" creationdate="20160404T025918Z">
         <seg>### createScene() 函数 - 紫色部分 ###
 大图片里的紫色部分...是createScene() '函数'... 一个Javascript '函数'.&amp;nbsp; 它是'单HTML文件'场景里的最重要部分的.&amp;nbsp; 在你的Javascript代码里你不必使用createScene()函数, 但是在学习WebGL的早期日子里,请这样做吧.&amp;nbsp; 我有些魔法展示给你看... 如果你把大部分的场景代码放到一个叫做createScene()的函数里.&amp;nbsp; (就像大图片里展示的那样.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>### Vector3 Values ###
+Vector3 values take the form of...
+``` javascript
+BABYLON.Vector3(xValue, yValue, zValue)
+```
+They are often used to set/store...</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T135237Z" creationid="aceway" creationdate="20160421T135237Z">
+        <seg>### Vector3 值 ###
+Vector3 值的形式是...
+``` javascript
+BABYLON.Vector3(xValue, yValue, zValue)
+```
+它们长被用来设置/存储...</seg>
       </tuv>
     </tu>
     <tu>
@@ -332,6 +358,20 @@ The purple section of the big picture... is the createScene() 'function'... a Ja
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T144214Z" creationid="aceway" creationdate="20160402T143618Z">
         <seg>- ```BABYLON.EasingFunction.EASINGMODE_EASEOUT``` : 按照内插法 减去 简化函数的公式输出 来控制插入 .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- the value of a .position property on mesh, light, or camera objects
+- the value of a .rotation property on a mesh object
+- the value of a .scaling property on a mesh object
+- the value of a .direction property on a light object</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T135516Z" creationid="aceway" creationdate="20160421T135516Z">
+        <seg>- 网格,灯光活着相机对象的位置(.position)属性的值
+- 网格对象的旋转(.rotation)属性的值
+- 网格对象的缩放(.scaling)属性的值
+- 灯光对象的方向(.direction)属性的值</seg>
       </tuv>
     </tu>
     <tu>
@@ -714,6 +754,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Even though Vector3 values can contain very large negative or positive numbers, it is rarely necessary for any xValue, yValue, or zValue... to be outside the range of -6.28 to +6.28 **for setting rotations**.&amp;nbsp; Any numbers outside that range would be unnecessary, because -6.28 (radians) rotates 360 degrees in one direction, and +6.28 (radians) rotates 360 degrees in the opposite direction.&amp;nbsp; That's a full range of rotation, isn't it?&amp;nbsp; We'll talk a bit more about rotation, further below.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T141755Z" creationid="aceway" creationdate="20160421T141755Z">
+        <seg>尽管Vector3的值可以是非常大正数或负数, 但通常没必要为旋转属性将xValue, yValue, 或 zValue的值设置超出 -6.28 和 +6.28之外的值.&amp;nbsp; Any numbers outside that range would be unnecessary, because -6.28 (radians) rotates 360 degrees in one direction, and +6.28 (radians) rotates 360 degrees in the opposite direction.&amp;nbsp; That's a full range of rotation, isn't it?&amp;nbsp; We'll talk a bit more about rotation, further below.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Every key represents the value of the Animation at that key's given time.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T013853Z" creationid="aceway@qq.com" creationdate="20160331T013853Z">
@@ -966,6 +1014,22 @@ animation.addEvent(event1);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Keep in mind that Vector3 values can be negative numbers as well.&amp;nbsp; So you could easily use -Math.PI/4, -Math.PI/2, -Math.PI, and -Math.PI times 2.&amp;nbsp; These values would rotate the object in the opposite direction around the x-axis.&amp;nbsp; How about this Vector3 rotation:
+``` javascript
+box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
+```
+If you think that it rotates our box in a positive (+) direction 90 degrees around the x-axis, AND ALSO rotates our box 45 degrees in a negative (-) direction around the z-axis, you would be correct.&amp;nbsp;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T141353Z" creationid="aceway" creationdate="20160421T141149Z">
+        <seg>记住Vector3点值也能为负数.&amp;nbsp; 因此你可以使用 -Math.PI/4, -Math.PI/2, -Math.PI, 和 -Math.PI乘以2.&amp;nbsp; 这些值将是绕着X轴向相反方向旋转.&amp;nbsp; 这个Vector3如何旋转呢:
+``` javascript
+box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
+```
+如果你是这样想的就对了:将盒子绕着X轴旋转正的90度, 而且也绕着Z轴旋转负的45度.&amp;nbsp;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Let's pretend that you have been working on a scene file at home, and after many tries, you just cannot get it to work properly.&amp;nbsp; You could copy your home createScene function, then visit the playground, press its **CLEAR** button to empty its editor window, and then paste YOUR createScene function into the editor.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T101805Z" creationid="aceway" creationdate="20160404T073957Z">
@@ -1020,6 +1084,14 @@ animation.addEvent(event1);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T135954Z" creationid="aceway" creationdate="20160410T135954Z">
         <seg>现在来讲干货stuff.&amp;nbsp; 在Babylon.js里每次 createScene()调用 (也就是每个场景)通常需要三件事情:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now let's look at a Vector3 being used to set a .rotation value:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T140337Z" creationid="aceway" creationdate="20160421T140337Z">
+        <seg>现在让我们可个使用Vector3来设置旋转值的例子:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1226,6 +1298,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The three 'parameters' inside the parentheses of a Vector3 value... are floats.&amp;nbsp; They can be negative or positive, and there is no practical limit to the size of those values.&amp;nbsp; Let's look at a Vector3 being used to set the .position of a mesh.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T135852Z" creationid="aceway" creationdate="20160421T135852Z">
+        <seg>Vector3值的括号里三个'参数'是浮点类型的.&amp;nbsp; 它们可正可负, 这些值并没有实际大小的限制.&amp;nbsp; 让我们看个使用Vector3给网格对象设置位置属性值的例子.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are three possible values you can give for EasingMode: 
 - ```BABYLON.EasingFunction.EASINGMODE_EASEIN``` : Interpolation follows the mathematical formula associated with the easing function.</seg>
       </tuv>
@@ -1364,6 +1444,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053931Z" creationid="aceway" creationdate="20160330T033249Z">
         <seg>为了给它注入动态，我们将开始学习如何控制电脑来按照你指定的方式移动你创建的网格对象。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Two of the most-used values in Babylon.js, are Vector3 values and Color3 values.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T135134Z" creationid="aceway" creationdate="20160421T135134Z">
+        <seg>Babylon.js里最常用的两种值是 Vector3 值和 Color3 值.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1536,6 +1624,34 @@ It is difficult for me to explain, but actually quite easy to do, thanks to Baby
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T144338Z" creationid="aceway" creationdate="20160418T144229Z">
         <seg>``` javascript
 // 创建一个 BABYLON.Engine 引擎对象类型.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``` javascript
+box.position = new BABYLON.Vector3(0, 10, 0);
+```
+The xValue is 0, meaning that the box is positioned in the center of the x-axis.&amp;nbsp; The yValue is 10, meaning that the box is positioned 10 units above the center of the y-axis.&amp;nbsp; The zValue is 0, meaning that the box is positioned in the center of the z-axis.&amp;nbsp; Easy.&amp;nbsp; We will talk more about positioning... further below.&amp;nbsp;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T140257Z" creationid="aceway" creationdate="20160421T140257Z">
+        <seg>``` javascript
+box.position = new BABYLON.Vector3(0, 10, 0);
+```
+该 xValue 为是0, 意味着那个盒子位于X轴的中心.&amp;nbsp; 该yValue值是10, 意味着那个盒子位于Y轴中心上方10个单位的位置.&amp;nbsp; 该zValue值是0, 意味着那个盒子位于Z轴中心的位置.&amp;nbsp; 简单吧.&amp;nbsp; 在后面我们讲更多的讨论位置.&amp;nbsp;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``` javascript
+box.rotation = new BABYLON.Vector3(Math.PI/4, 0, 0);
+```
+Here, our box is being rotated around the x-axis... about 45 degrees.&amp;nbsp; In Babylon.js, rotation is measured in radians.&amp;nbsp; Math.PI/4 is approximately .707 radians.&amp;nbsp; To rotate 90 degrees, it would be Math.PI/2, or about 1.57 radians.&amp;nbsp; For 180 degrees, it would be Math.PI, or about 3.14 radians.&amp;nbsp; To rotate 360 degrees, it would Math.PI times 2, or about 6.28 radians.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T140823Z" creationid="aceway" creationdate="20160421T140823Z">
+        <seg>``` javascript
+box.rotation = new BABYLON.Vector3(Math.PI/4, 0, 0);
+```
+此处, 我们的盒子绕着X轴旋转呢来大约45度.&amp;nbsp; 在Babylon.js里, 旋转是以弧度为度量单位的.&amp;nbsp; Math.PI/4 约等于.707 弧度.&amp;nbsp; 要旋转90度, 将是Math.PI/2, 或着说大约1.57 弧度.&amp;nbsp; 对于180度, 是Math.PI, 或大约3.14 弧度.&amp;nbsp; 要旋转360度, 那就是Math.PI 乘以2, 或者大约6.28弧度.</seg>
       </tuv>
     </tu>
     <tu>
