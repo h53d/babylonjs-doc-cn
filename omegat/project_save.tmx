@@ -304,6 +304,14 @@ The purple section of the big picture... is the createScene() 'function'... a Ja
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**Values**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T102443Z" creationid="aceway@qq.com" creationdate="20160421T102443Z">
+        <seg>**值**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>- The animation is starting right after the method call.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111136Z" creationid="aceway" creationdate="20160402T111136Z">
@@ -916,6 +924,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is beyond the scope of this tutorial to teach everything about callable methods and settable properties on Javascript objects.&amp;nbsp; The main thing is to try to take notice WHEN a 'pocket' on an object... is a property, and when it is a method.&amp;nbsp; Methods always use parentheses... sometimes empty, sometimes full of parameters/args.&amp;nbsp; Properties never use parentheses and therefore never require parameters.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T101110Z" creationid="aceway@qq.com" creationdate="20160421T101110Z">
+        <seg>讨论Javascript对象的可调用方法和可设置属性的所有知识点已经超越了本教程的范围.&amp;nbsp; 此处的主要目标是让大家注意到什么情况下'存储空间'里放的是对象的方法，什么情况下是属性; 方法后面总是跟着小括号... 有时括号里面是空的, 有时填满了参数.&amp;nbsp; 属性后面绝不会有括号因此也绝不需要参数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It makes a complicated system, (WebGL,) much easier to use.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032859Z" creationid="aceway" creationdate="20160403T032859Z">
@@ -1024,6 +1040,14 @@ animation.addEvent(event1);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Objects are everywhere, but they are good friends that help us stay organized.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T103458Z" creationid="aceway@qq.com" creationdate="20160421T103458Z">
+        <seg>对象无处不在, 然而它是我们组织管理存储内容的好助手.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Our goal: move this “box1”.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054015Z" creationid="aceway@qq.com" creationdate="20160331T014128Z">
@@ -1076,6 +1100,14 @@ animation.addEvent(event1);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030046Z" creationid="aceway" creationdate="20160404T002058Z">
         <seg>有一天, 你希望通过把这些样式内容放在单独的文件里使它们外部化, 也许可以把文件叫做 styles.css.&amp;nbsp; 那是可以把蓝色部分从这个HTML文件里移除掉, 然后使用HTML LINK元素/标签把样式文件放到里面.&amp;nbsp; 我不回教你怎么做那个, 但是网上满是文档教你如何做的; 它非常简单.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sometimes, methods are used to SET values of properties, and sometimes methods are used to GET values of properties.&amp;nbsp; These methods/functions are often called GETTERS and SETTERS.&amp;nbsp; Notice the word 'get' in the getMeshByName method above?&amp;nbsp; It is a GETTER method.&amp;nbsp; Here is a more proper use of that 'call':</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T101614Z" creationid="aceway@qq.com" creationdate="20160421T101614Z">
+        <seg>有时候, 方法被用来设置属性值， 有时后别用来获取属性值.&amp;nbsp; 这些方法/函数通常被称为 GETTERS 和 SETTERS.&amp;nbsp; 注意到上面getMeshByName方法里的用词 'get' 没?&amp;nbsp; 它就是个 GETTER 方法.&amp;nbsp; 这儿又是一个该方法调用':</seg>
       </tuv>
     </tu>
     <tu>
@@ -1212,6 +1244,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are two types of value objects that are very common in Babylon.js.&amp;nbsp; They are the Vector3 value, and the Color3 value.&amp;nbsp; Vector3 and Color3 values... deserve to have their own section in this giant tutorial.&amp;nbsp; Here we go...</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T103952Z" creationid="aceway@qq.com" creationdate="20160421T103952Z">
+        <seg>在Babylon.js中有两类十分常见 的值类型.&amp;nbsp; 它们是三元向量(Vector3)值和3元颜色( Color3)值.&amp;nbsp; Vector3和Color3 values...保留着，后面各自有章节讲有.&amp;nbsp; 我们继续此处的内容....</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There is a tutorial for the Babylon.js playground.&amp;nbsp; Just [**click here**](http://doc.babylonjs.com/page.php?p=22631).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T103910Z" creationid="aceway" creationdate="20160404T103910Z">
@@ -1324,6 +1364,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053931Z" creationid="aceway" creationdate="20160330T033249Z">
         <seg>为了给它注入动态，我们将开始学习如何控制电脑来按照你指定的方式移动你创建的网格对象。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Values... are often the things that are stored in an object's properties ('pockets') and the things that are returned when GETTER methods are called.&amp;nbsp; As crazy as this sounds, all values are Javascript objects.&amp;nbsp; Remember that 0.5 float that we saw earlier?&amp;nbsp; That is a Floating Point&amp;nbsp; NUMBER OBJECT.&amp;nbsp; The 'box_I_made' variable above... it is a MESH OBJECT.&amp;nbsp; The names of mesh, cameras, and lights... are STRING OBJECTS.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T103316Z" creationid="aceway@qq.com" creationdate="20160421T103316Z">
+        <seg>值... 通常是存储在对象的属性(存储空间)里的内容, 而且可以通过调用 GETTER 方法获取到.&amp;nbsp; 也许听起来这很疯狂：所有值都是Javascript对象.&amp;nbsp; 还记得前面看到的那个0.5浮点数吗?&amp;nbsp; 那是个数值对象.&amp;nbsp; 上面那个 'box_I_made' 变量... 它是个网格对象.&amp;nbsp; 网格，像机和灯光的名称 是字符串对象.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1472,12 +1520,32 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>```
+It is difficult for me to explain, but actually quite easy to do, thanks to Babylon.js.&amp;nbsp; Experimenting with properties and methods... is the fastest way to learn.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T102435Z" creationid="aceway@qq.com" creationdate="20160421T102435Z">
+        <seg>```
+对我来而言，空说难但具体做起来很容易, 这要归功于 Babylon.js.&amp;nbsp; 尽快熟悉属性和方法... 是最佳的学习途径.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>``` javascript
 // Create a BABYLON.Engine type of object.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T144338Z" creationid="aceway" creationdate="20160418T144229Z">
         <seg>``` javascript
 // 创建一个 BABYLON.Engine 引擎对象类型.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``` javascript
+box_I_made.rotation.y = Math.PI/2;&amp;nbsp; // Rotate the box 90 degrees on the Y-axis.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T102031Z" creationid="aceway@qq.com" creationdate="20160421T102031Z">
+        <seg>``` javascript
+box_I_made.rotation.y = Math.PI/2;&amp;nbsp; // 在Y轴上旋转90度.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1520,6 +1588,20 @@ Here, we have 'called' the getMeshByName() method that is located on the object 
 scene.getMeshByName("box");
 ```
 此处,我们调用了一个叫做'scene'的对象上的 getMeshByName() 方法.&amp;nbsp; 看到括号里面的 "box" 了么?&amp;nbsp; 那是一个 '参数' 或者有时也叫做一个 '变元' 或简化为 '一个arg'.&amp;nbsp; 有些方法需要一个或多个参数在括号里, 而且有些压根不需要参数.&amp;nbsp; 如果你从上面的大图里查看下创建场景的函数(方法), 你会发现它的括号里是空的.&amp;nbsp; 调用一个函数并不必须提供参数.&amp;nbsp; 另外一些时候,你可能看到createScene(engine)这样的调用函数.&amp;nbsp; 这种情况下, 创建场景方法确实需要一个Javascript对象的引擎类型的参数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``` javascript
+var box_I_made = scene.getMeshByName("box");
+```
+This call is getting a reference/handle on a box that was made earlier in the code, and putting that reference into a variable called 'box_I_made'.&amp;nbsp; After you get that reference, you can do things to the box... like set property values.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T102002Z" creationid="aceway@qq.com" creationdate="20160421T102002Z">
+        <seg>``` javascript
+var box_I_made = scene.getMeshByName("box");
+```
+这个调用获取了之前代码创建的盒子对象引用/句柄, 然后把它赋值给一个叫 'box_I_made'的变量.&amp;nbsp; 你获得那个句柄后，就可以操作那个盒子了... 像设置属性.</seg>
       </tuv>
     </tu>
     <tu>
