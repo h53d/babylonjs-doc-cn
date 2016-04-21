@@ -243,27 +243,27 @@ BABYLON.Color3(0.2, 0, 0.2) - dark purple
 &amp;nbsp;
 Not so difficult.&amp;nbsp; Let's say that you wanted to put a color on a box that you have already created.&amp;nbsp; The first thing you do is create a Javascript object called a StandardMaterial.&amp;nbsp; Then you would apply (set) that StandardMaterial as the box's .material property.&amp;nbsp; This is covered by our Materials tutorial, but let's look at how that is done, here.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T144445Z" creationid="aceway" creationdate="20160421T144445Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T145552Z" creationid="aceway" creationdate="20160421T144445Z">
         <seg>&amp;nbsp;
 ### Color3值 ###
-Color3 values look very much like Vector3 values.&amp;nbsp; Here is an example:
+Color3值非常像Vector3值.&amp;nbsp;这儿是个例子:
 ``` javascript
 BABYLON.Color3(rValue, gValue, bValue)
 ```
-The rValue is for red, the gValue is for green, and the bValue is for blue.&amp;nbsp; I bet you have already figured out that Color3 values are used for setting colors.&amp;nbsp; The rValue, gValue, and bValue, all contain float numbers in the range of 0 to 1.&amp;nbsp; Let's look at a few examples:
+该rValue是用来表示红色, 该gValue用来表示绿色, 同时该bValue是用来表示蓝色.&amp;nbsp; 我猜你已经知道Color3是用在颜色上的.&amp;nbsp; 这些rValue, gValue, 和 bValue, 都是在0和1间的浮点值.&amp;nbsp; 让我们看些例子:
 ``` javascript
-BABYLON.Color3(1, 0, 0) - red
-BABYLON.Color3(0, 1, 1) - cyan
-BABYLON.Color3(0, 1, 0) - green
-BABYLON.Color3(1, 0, 1) - violet
-BABYLON.Color3(1, 1, 0) - yellow
-BABYLON.Color3(0, 0, 0) - black
-BABYLON.Color3(1, 1, 1) - white
-BABYLON.Color3(0.5, 0.5, 0.5) - medium gray
-BABYLON.Color3(0.2, 0, 0.2) - dark purple
+BABYLON.Color3(1, 0, 0) - 红
+BABYLON.Color3(0, 1, 1) - 青
+BABYLON.Color3(0, 1, 0) - 绿
+BABYLON.Color3(1, 0, 1) - 紫
+BABYLON.Color3(1, 1, 0) - 黄
+BABYLON.Color3(0, 0, 0) - 黑
+BABYLON.Color3(1, 1, 1) - 白
+BABYLON.Color3(0.5, 0.5, 0.5) - 中灰
+BABYLON.Color3(0.2, 0, 0.2) - 暗紫
 ```
 &amp;nbsp;
-Not so difficult.&amp;nbsp; Let's say that you wanted to put a color on a box that you have already created.&amp;nbsp; The first thing you do is create a Javascript object called a StandardMaterial.&amp;nbsp; Then you would apply (set) that StandardMaterial as the box's .material property.&amp;nbsp; This is covered by our Materials tutorial, but let's look at how that is done, here.</seg>
+没看起来这么难.&amp;nbsp; 让我们假设你要把一个颜色用到你之前已经创建的一个盒子上.&amp;nbsp; 你要做的第一件事情是创建一个叫做标准材质的Javascript对象.&amp;nbsp; 然后将该标准材质应用(设置)到盒子的材质(.material)属性上.&amp;nbsp; 这将在材质教程里讲, 但现在我们看这是如何做到的.</seg>
       </tuv>
     </tu>
     <tu>
