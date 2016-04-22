@@ -736,6 +736,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Another use of the Color3 value is to set the .diffuse property of lights.&amp;nbsp; Take careful note that the name of this property is .diffuse, and not .diffuseColor.&amp;nbsp; Lights use a property named .diffuse to set their primary color.&amp;nbsp; Let's take a look at how to set the primary color of a light that you have already created:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160422T150329Z" creationid="aceway" creationdate="20160422T150329Z">
+        <seg>另一个Color3值的用途是设置光的散射(.diffuse)属性.&amp;nbsp; 注意该处属性的名字是.diffuse, 而不是.diffuseColor.&amp;nbsp; Lights use a property named .diffuse to set their primary color.&amp;nbsp; Let's take a look at how to set the primary color of a light that you have already created:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As of Babylon.js 2.3+, you can  start an animation with *enableBlending* = true.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155805Z" creationid="aceway" creationdate="20160402T111552Z">
@@ -1186,6 +1194,22 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T103458Z" creationid="aceway@qq.com" creationdate="20160421T103458Z">
         <seg>对象无处不在, 然而它是我们组织管理存储内容的好助手.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One of the many properties on a StandardMaterial object... is named .diffuseColor.&amp;nbsp; That property is the primary way to set a basic color.&amp;nbsp; And right here... is where we use our new Color3 value.&amp;nbsp; Let's have a look:
+``` javascript
+myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
+```
+Our box is now colored medium green.&amp;nbsp; It's just that easy.&amp;nbsp; The StandardMaterial object has many other properties on it.&amp;nbsp; You can add color to properties such as&amp;nbsp; .specularColor, .emissiveColor, .ambientColor.&amp;nbsp; All those properties are set (if you choose)... using our friend... the Babylon.js Color3 value.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160422T150009Z" creationid="aceway" creationdate="20160422T150009Z">
+        <seg>在标准材质对象的众多属性中,有个叫作漫反射颜色(.diffuseColor).&amp;nbsp; 那个属性是设置基础颜色的主要途径.&amp;nbsp; 此处... 我们使用新分配的 Color3值来设置.&amp;nbsp; 让们看看代码:
+``` javascript
+myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
+`
+我们的盒子现在是种绿色了.&amp;nbsp; 就是那么简单.&amp;nbsp; 标准材质对象有许多其它的属性.&amp;nbsp; 你可以给诸如&amp;nbsp;镜面光颜色( .specularColor), 放射光颜色(.emissiveColor), 环境光颜色(.ambientColor)等属性天假颜色.&amp;nbsp; 所有这些属性都使用(如果你选择这样做)Babylon.js的三元色(Color3)值来设置.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1816,6 +1840,22 @@ This call is getting a reference/handle on a box that was made earlier in the co
 var box_I_made = scene.getMeshByName("box");
 ```
 这个调用获取了之前代码创建的盒子对象引用/句柄, 然后把它赋值给一个叫 'box_I_made'的变量.&amp;nbsp; 你获得那个句柄后，就可以操作那个盒子了... 像设置属性.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``` javascript
+var myMaterial = new BABYLON.StandardMaterial("mymat", scene);
+myBox.material = myMaterial;&amp;nbsp; 
+```
+The first line creates a StandardMaterial and puts it into the variable named myMaterial.&amp;nbsp; The second line sets the box's .material property... to be that newly-made StandardMaterial.&amp;nbsp; The appearance of the box will not change yet, because we have not given the StandardMaterial any information about what color we want the box to be.&amp;nbsp;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160422T145001Z" creationid="aceway" creationdate="20160422T145001Z">
+        <seg>``` javascript
+var myMaterial = new BABYLON.StandardMaterial("mymat", scene);
+myBox.material = myMaterial;&amp;nbsp; 
+```
+第一行创建了个标准材质并把它放入一个名为myMaterial的变量.&amp;nbsp; 第二行设置盒子的材质(.material)属性为那个新创建的标准材质.&amp;nbsp; 孩子的外观还没有改变,因为我们还没有给该标准材质提供任何我们想要的颜色.&amp;nbsp;</seg>
       </tuv>
     </tu>
     <tu>
