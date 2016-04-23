@@ -1,11 +1,9 @@
 ---
 ID_PAGE: 22631
-PG_TITLE: The Playground Tutorial
+PG_TITLE: 娱乐场教程
 ---
-Introducing...
-
-# The BabylonJS Playground!
-
+介绍...
+# BabylonJS娱乐场!
 ![](http://urbanproductions.com/wingy/babylon/misc/playground02.jpg)
 A Saved 'Custom' Playground Scene: http://babylonjs-playground.azurewebsites.net/#QKQHS
 
