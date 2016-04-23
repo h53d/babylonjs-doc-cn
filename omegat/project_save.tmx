@@ -108,6 +108,14 @@ I would like you to visit the Babylon.js Playground once again (open in a new wi
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Hey, you made it!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T085118Z" creationid="aceway" creationdate="20160423T085118Z">
+        <seg>## 嘿, 你做到了!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## More About The Playground ##
 Once again let's visit the saved playground scene that I sent you to, above.</seg>
       </tuv>
@@ -1324,6 +1332,42 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Once you have those external includes saved into your new js folder, you need to make some adjustments to the HTML.&amp;nbsp; In your index.html file, you will need to change the .src attributes of all four external includes (the first four SCRIPT elements).&amp;nbsp; Likely, you will want to make your SCRIPT elements look like this:
+``` html
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;script src="./js/hand.minified-1.2.js"&gt;&lt;/script&gt;
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;script src="./js/cannon.js"&gt;&lt;/script&gt;&amp;nbsp; &lt;!-- optional --&gt;
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;script src="./js/oimo.js"&gt;&lt;/script&gt;&amp;nbsp; &lt;!-- optional --&gt;
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;script src="./js/babylon.js"&gt;&lt;/script&gt;
+```
+If you are not using physics in your scene, you might want to remark-out (disable) the script elements that include-in cannon.js and oimo.js.&amp;nbsp; To do that, you could do this:
+``` html
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;script src="./js/hand.minified-1.2.js"&gt;&lt;/script&gt;
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;!-- &lt;script src="./js/cannon.js"&gt;&lt;/script&gt; --&gt;
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;!-- &lt;script src="./js/oimo.js"&gt;&lt;/script&gt; --&gt;
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;script src="./js/babylon.js"&gt;&lt;/script&gt;
+```
+Easy.&amp;nbsp; Most of these things you already know, don't you?&amp;nbsp; I thought so.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T085103Z" creationid="aceway" creationdate="20160423T085103Z">
+        <seg>一旦你将那些外部资源保存到你的新js文件夹, 你就需要调整下你的页面HTML内容.&amp;nbsp; 在你的index.html文件里, 你需要改变4个外部包含(那4个SCRIPT元素)的.src属性内容.&amp;nbsp; 可能, 你想让你的SCRIPT元素看起来像这样子:
+``` html
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;script src="./js/hand.minified-1.2.js"&gt;&lt;/script&gt;
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;script src="./js/cannon.js"&gt;&lt;/script&gt;&amp;nbsp; &lt;!-- 可选项 --&gt;
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;script src="./js/oimo.js"&gt;&lt;/script&gt;&amp;nbsp; &lt;!-- 可选项 --&gt;
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;script src="./js/babylon.js"&gt;&lt;/script&gt;
+```
+如果你在场景里不使用物理特性, 你可能会标注掉(禁用)包含cannon.js 和 oimo.js脚本的元素 .&amp;nbsp; 为了实现它, 你可以这样做:
+``` html
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;script src="./js/hand.minified-1.2.js"&gt;&lt;/script&gt;
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;!-- &lt;script src="./js/cannon.js"&gt;&lt;/script&gt; --&gt;
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;!-- &lt;script src="./js/oimo.js"&gt;&lt;/script&gt; --&gt;
+&amp;nbsp;&amp;nbsp; &amp;nbsp; &lt;script src="./js/babylon.js"&gt;&lt;/script&gt;
+```
+简单吧.&amp;nbsp; 大部分内容你都已经知道了, 难道你还没么?&amp;nbsp; 我想你会了.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One of the many properties on a StandardMaterial object... is named .diffuseColor.&amp;nbsp; That property is the primary way to set a basic color.&amp;nbsp; And right here... is where we use our new Color3 value.&amp;nbsp; Let's have a look:
 ``` javascript
 myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
@@ -1408,6 +1452,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T101614Z" creationid="aceway@qq.com" creationdate="20160421T101614Z">
         <seg>有时候, 方法被用来设置属性值， 有时后别用来获取属性值.&amp;nbsp; 这些方法/函数通常被称为 GETTERS 和 SETTERS.&amp;nbsp; 注意到上面getMeshByName方法里的用词 'get' 没?&amp;nbsp; 它就是个 GETTER 方法.&amp;nbsp; 这儿又是一个该方法调用':</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Store each of those files into the new js folder.&amp;nbsp; Also, you might want to copy them to some other folder as well, for using later.&amp;nbsp; Try to remember to repeat these actions fairly often, maybe once per month, to ensure that you are always using a reasonably fresh version of The Big 4 files.&amp;nbsp; Babylon.js is always evolving.&amp;nbsp; New features are being added very quickly, and you want your home versions of The Big 4... to be fresh, so you can take advantage of those new features.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T084223Z" creationid="aceway" creationdate="20160423T084223Z">
+        <seg>将这些文件保存到新的js文件夹.&amp;nbsp; 此外, 你也许想拷贝它们到其它文件夹, 以便以后使用.&amp;nbsp; 尽量经常重复这些动作, 也许每月一次的好, 以确保你使用的4大文件资源总是最新的版本.&amp;nbsp; Babylon.js一直在持续进化.&amp;nbsp; 新特性的添加非常快, 你想家里的4大资源文件版本保持新的, 以便利用这些新特性, 因此你就要经常重复上面的动作.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1760,6 +1812,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T145740Z" creationid="aceway" creationdate="20160404T145740Z">
         <seg>您正在成为Babylon.js工具专家.&amp;nbsp; 我所说的 '工具', 是指... 那些你学到的支持 createScene() 函数的东西.&amp;nbsp; 你已经准备好加入学习代码知识,以用在创建场景的功能么?&amp;nbsp; 我知道你准备好了.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You are finally at the bottom of this tutorial.&amp;nbsp; It was a long, but fun trip, wasn't it?&amp;nbsp; Things will be easy from now on.&amp;nbsp; The next tutorial in the Playpen Series tutorials... is about building a very basic scene.&amp;nbsp; I think it will be quite easy and fast, for you.&amp;nbsp; You have graduated from tutorial #0... this tutorial.&amp;nbsp; You are already a Babylon.js expert.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T085558Z" creationid="aceway" creationdate="20160423T085558Z">
+        <seg>你终于到达这个教程的底部了.&amp;nbsp; 它很长, 但是很有趣, 不是么?&amp;nbsp; 从现在开始将很容易的.&amp;nbsp; 下一演练系列的教程里... 是关于常见一个非常基础的场景的.&amp;nbsp; 我想对你而言,它会非常简单而且快; 你已经从本教程#0毕业啦... &amp;nbsp; 你已经是个Babylon.js专家啦.</seg>
       </tuv>
     </tu>
     <tu>
