@@ -9,9 +9,9 @@
         <seg>![](http://urbanproductions.com/wingy/babylon/misc/playground02.jpg)
 A Saved 'Custom' Playground Scene: http://babylonjs-playground.azurewebsites.net/#QKQHS</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T142546Z" creationid="aceway" creationdate="20160423T142546Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T151417Z" creationid="aceway" creationdate="20160423T142546Z">
         <seg>![](http://urbanproductions.com/wingy/babylon/misc/playground02.jpg)
-A Saved 'Custom' 娱乐场 Scene: http://babylonjs-playground.azurewebsites.net/#QKQHS</seg>
+一个保存的'定制的' 娱乐场场景: http://babylonjs-playground.azurewebsites.net/#QKQHS</seg>
       </tuv>
     </tu>
     <tu>
@@ -206,6 +206,14 @@ Simply put, you will need to use a browser that supports WebGL and has Javascrip
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T135047Z" creationid="aceway" creationdate="20160421T135047Z">
         <seg>## Vector3 和 Color3 值 ##</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## What is it?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T151951Z" creationid="aceway" creationdate="20160423T151951Z">
+        <seg>## 它是什么?</seg>
       </tuv>
     </tu>
     <tu>
@@ -1516,8 +1524,8 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       <tuv lang="EN-US">
         <seg>The BabylonJS Playground is an on-line white-boarding and experimenting application... used to assist in creating scenes for the Javascript-based BabylonJS webGL framework.&amp;nbsp; Your browser must be WebGL-ready and have Javascript active... in order to use the playground.&amp;nbsp; &amp;nbsp;Most modern browsers have these capabilities.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T142412Z" creationid="aceway" creationdate="20160423T142412Z">
-        <seg>The BabylonJS 娱乐场 is an on-line white-boarding and experimenting application... used to assist in creating scenes for the Javascript-based BabylonJS webGL framework.&amp;nbsp; Your browser must be WebGL-ready and have Javascript active... in order to use the 娱乐场.&amp;nbsp; &amp;nbsp;Most modern browsers have these capabilities.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T155120Z" creationid="aceway" creationdate="20160423T142412Z">
+        <seg>该BabylonJS 娱乐场是一个在线的白板式可,可试验的应用程序... 用于辅助创建基于Javascript的网页图形库框架BabylonJS的场景.&amp;nbsp; 为了试验该娱乐场你的浏览器必须支持WebGL-而激活Javascript... .&amp;nbsp; &amp;nbsp;大多数的现在浏览器都支持.</seg>
       </tuv>
     </tu>
     <tu>
