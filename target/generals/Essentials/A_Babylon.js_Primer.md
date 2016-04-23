@@ -116,9 +116,9 @@ http://babylonjs-playground.azurewebsites.net
 
 **1. 相机.**&nbsp; 众多相机类型里3种常用的是, ArcRotateCamera(弧形旋转相机), FreeCamera(自由相机), 和 TouchCamera(触控相机).&nbsp; 在Babylon.js里有许多种可用的相机, 但是这3种是最常见的.&nbsp; 一个场景里可以编码任意多个相机, 但是只有其中一个能是'激活的相机'.&nbsp; 在操练系列教程里我们有一个例子, 专门谈论各种相机.
 
-**2. 光源.**&nbsp; &nbsp;在Babylon.js里有4种基础类型的光源.&nbsp; 它们是 PointLight(点光灯光源), SpotLight(聚光灯光源), DirectionalLight(平行光光源), 和 HemisphericLight(半球光源).&nbsp; 一个场景里编码任意数量的光源,&nbsp; 但是在场景光源列表里只有前4个光源被场景使用.
+**2. 光源.**&nbsp; &nbsp;在Babylon.js里有4种基础类型的光源.&nbsp; 它们是 PointLight(点光光源), SpotLight(聚光光源), DirectionalLight(平行光光源), 和 HemisphericLight(半球光源).&nbsp; 一个场景里编码任意数量的光源,&nbsp; 但是在场景光源列表里只有前4个光源被场景使用.
 
-老实说, 光源不是绝对必需的.&nbsp; 如果场景里的网格对象都设置了material.emissiveColor(材料的颜色)或material.emissiveTexture(材料的纹理)属性, 那么它们自己会产生各自的光.&nbsp; 它们将是 '自发光的'.&nbsp; 注意, 如果一个场景里没有光是很容易迷失的.&nbsp; 好的建议是总是创建一个光源(半球体光源(HemisphericLight)是个非常方便的灯光工具 - 应用到天空体上).&nbsp; 你可以通过调整它的 .intensity 值来设置光的亮度.&nbsp;在操练系列教程里我们有一个例子, 专门谈论各种光源.
+老实说, 光源不是绝对必需的.&nbsp; 如果场景里的网格对象都设置了material.emissiveColor(材料的颜色)或material.emissiveTexture(材料的纹理)属性, 那么它们自己会产生各自的光.&nbsp; 它们将是 '自发光的'.&nbsp; 注意, 如果一个场景里没有光是很容易迷失的.&nbsp; 好的建议是总是创建一个光源(半球体光源(HemisphericLight)是个非常方便的光源工具 - 应用到天空体上).&nbsp; 你可以通过调整它的 .intensity 值来设置光的亮度.&nbsp;在操练系列教程里我们有一个例子, 专门谈论各种光源.
 
 **2. 有型物.**&nbsp; 有型物也叫做 **网格对象**.&nbsp; 每个场景里都需要可视物,对吧?&nbsp; 相机是不可见的, 光源也不可见.&nbsp; 每个场景都需要个有型物, 或者许多个.&nbsp; 没有限制在你的场景里可有的网格对象个数.&nbsp; 一个网格对象可以是Babylon.js的许多内置有型物之一, 或者是你自己通过Babylon.js的顶点数据系统绘制的有型物, 或者是从外部建模软件,例如 Blender 或 3D Studio Maxl里'导入'到场景里的一个网格对象.
 
@@ -139,7 +139,7 @@ object.property = value;
 
 **Javascript 语言里的对象**
 
-Javascript 对象里的一些常见对象在 Babylon.js 场景里有使用... 它们叫做 **引擎(engine), 场景(scene), 花布(canvas), 网格(mesh), 灯光(light), 相机(camera), 三元向量(Vector3), 三元颜色(Color3), 动作管理器(ActionManager), 和动画(Animation)**.&nbsp;
+Javascript 对象里的一些常见对象在 Babylon.js 场景里有使用... 它们叫做 **引擎(engine), 场景(scene), 花布(canvas), 网格(mesh), 光源(light), 相机(camera), 三元向量(Vector3), 三元颜色(Color3), 动作管理器(ActionManager), 和动画(Animation)**.&nbsp;
 
 比如, 下面每行代码... 创建了一个Javascript对象 (或者多个):
 
@@ -196,7 +196,7 @@ box_I_made.rotation.y = Math.PI/2;&nbsp; // 在Y轴上旋转90度.
 
 **值**
 
-值... 通常是存储在对象的属性(存储空间)里的内容, 而且可以通过调用 GETTER 方法获取到.&nbsp; 也许听起来这很疯狂：所有值都是Javascript对象.&nbsp; 还记得前面看到的那个0.5浮点数吗?&nbsp; 那是个数值对象.&nbsp; 上面那个 'box_I_made' 变量... 它是个网格对象.&nbsp; 网格，像机和灯光的名称 是字符串对象. 对象无处不在, 然而它是我们组织管理存储内容的好助手.
+值... 通常是存储在对象的属性(存储空间)里的内容, 而且可以通过调用 GETTER 方法获取到.&nbsp; 也许听起来这很疯狂：所有值都是Javascript对象.&nbsp; 还记得前面看到的那个0.5浮点数吗?&nbsp; 那是个数值对象.&nbsp; 上面那个 'box_I_made' 变量... 它是个网格对象.&nbsp; 网格，像机和光源的名称 是字符串对象. 对象无处不在, 然而它是我们组织管理存储内容的好助手.
 
 在Babylon.js中有两类十分常见 的值类型.&nbsp; 它们是三元向量(Vector3)值和3元颜色( Color3)值.&nbsp; Vector3和Color3 values...保留着，后面各自有章节讲有.&nbsp; 我们继续此处的内容....
 
@@ -211,10 +211,10 @@ BABYLON.Vector3(xValue, yValue, zValue)
 ```
 它们长被用来设置/存储...
 
-- 网格,灯光活着相机对象的位置(.position)属性的值
+- 网格,光源活着相机对象的位置(.position)属性的值
 - 网格对象的旋转(.rotation)属性的值
 - 网格对象的缩放(.scaling)属性的值
-- 灯光对象的方向(.direction)属性的值
+- 光源对象的方向(.direction)属性的值
 
 Vector3值的括号里三个'参数'是浮点类型的.&nbsp; 它们可正可负, 这些值并没有实际大小的限制.&nbsp; 让我们看个使用Vector3给网格对象设置位置属性值的例子.
 
@@ -247,12 +247,12 @@ box.scaling = new BABYLON.Vector3(1, 1, 3);
 
 在后面我们会更多的讨论缩放.
 
-那外种使用 Vector3 值是用来设置灯光的方向:
+那外种使用 Vector3 值是用来设置光源的方向:
 
 ``` javascript
 mySpotLight.direction = new BABYLON.Vector3(0, -1, 0);
 ```
-通常来说, 当一个Vector3值被用来设置一个方向是, 该xValue, yValue, 和 zValue是在负1和正1之间的.&nbsp; 在上面的例子里, 我们的光是瞄向Y轴负方向的... 或者直接向下.&nbsp; 矢量 (方向向量) 被用在不仅仅是灯光上, 但通常是灯光上.&nbsp; 矢量并不总是能很容易的用x, y, 和z 为参数来衡量.&nbsp; 我们有些辅助工具来处理灯光... 它们将帮助你设置方向.&nbsp; 你讲在我们的灯光教程里来学习那些工具.
+通常来说, 当一个Vector3值被用来设置一个方向是, 该xValue, yValue, 和 zValue是在负1和正1之间的.&nbsp; 在上面的例子里, 我们的光是瞄向Y轴负方向的... 或者直接向下.&nbsp; 矢量 (方向向量) 被用在不仅仅是光源上, 但通常是光源上.&nbsp; 矢量并不总是能很容易的用x, y, 和z 为参数来衡量.&nbsp; 我们有些辅助工具来处理光源... 它们将帮助你设置方向.&nbsp; 你讲在我们的光源教程里来学习那些工具.
 &nbsp;
 ### Color3值 ###
 Color3值非常像Vector3值.&nbsp;这儿是个例子:
