@@ -126,6 +126,14 @@ Once again let's visit the saved playground scene that I sent you to, above.</se
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Quick Downloading 'The Big 4' Externals ##</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T080403Z" creationid="aceway" creationdate="20160423T080403Z">
+        <seg>## 快速下载'四大'外部资源 ##</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Scene File Layout ##</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T131232Z" creationid="aceway" creationdate="20160403T131209Z">
@@ -394,8 +402,16 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       <tuv lang="EN-US">
         <seg>**ROTATION** - Every mesh is ROTATED in a scene... by setting the amount of spin around the shape's X, Y, and Z axes.&amp;nbsp; Picture a box with a rod stuck through every side and coming out the opposite side.&amp;nbsp; There are 6 sides to a box, so there would be 3 rods, an X rod, a Y rod, and a Z rod.&amp;nbsp; Rotation is the amount (and direction) of spin...</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T034044Z" creationid="aceway" creationdate="20160423T034044Z">
-        <seg>**旋转** - 场景里的每个网格的旋转... 都是通过设置造型的X, Y, 和 Z 轴的旋转量来实现的.&amp;nbsp; 想象一个画面:一个盒子,每个面都有个棒从这个面的边穿进去另一边穿出来.&amp;nbsp; 一个盒子有6个面, 所以需要3个棒, 一个为X轴, 一个为Y轴, 同时一个为Z轴.&amp;nbsp; Rotation is the amount (and direction) of spin...</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T062403Z" creationid="aceway" creationdate="20160423T034044Z">
+        <seg>**旋转** - 场景里的每个网格的旋转... 都是通过设置造型的X, Y, 和 Z 轴的自旋量来实现的.&amp;nbsp; 想象一个画面:一个盒子,每个面都有个棒从这个面的边穿进去另一边穿出来.&amp;nbsp; 一个盒子有6个面, 所以需要3个棒, 一个为X轴, 一个为Y轴, 同时一个为Z轴.&amp;nbsp; 旋转是自旋量(包括方向)的累积...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**SCALING** - Scaling... is stretching or shrinking... along any of the 3 scene axes.&amp;nbsp; Let's jump right into a saved playground scene that demonstrates scaling:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T074854Z" creationid="aceway" creationdate="20160423T074854Z">
+        <seg>**缩放** - 缩放... 是指拉伸或缩小... 沿着场景轴的三个方向中的任意方向.&amp;nbsp; 我们直接跳转到娱乐展示厅中演示缩放的场景:</seg>
       </tuv>
     </tu>
     <tu>
@@ -688,10 +704,26 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>AROUND each of these invisible rods.&amp;nbsp;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T062512Z" creationid="aceway" creationdate="20160423T062512Z">
+        <seg>围绕每个这些无形的棒.&amp;nbsp;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>After that comes oimo.js - a different physics 'engine' that performs a similar function to cannon.js, but is generally faster although it lacks some of the more advanced features present in cannon.js.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T133432Z" creationid="aceway" creationdate="20160403T133432Z">
         <seg>之后的是 oimo.js - 一个不同的物理 '引擎',  其表现的功能有点像 cannon.js, 但是它更快速高效, 尽管它缺少 cannon.js中出现的许多高级特性.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Again, take some time to watch the scene.&amp;nbsp; And once more, the yellow text shows the one-line Vector3 way of setting a mesh's .scaling, or you can use one or more of the discrete ways of setting scaling... shown in the green text.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T075443Z" creationid="aceway" creationdate="20160423T075443Z">
+        <seg>再次的,请花些时间观察下该场景.&amp;nbsp; 而且又一次的, 黄颜色的文本显示了通过一行代码里用Vector3量设置网格的缩放(.scaling)属性的方式, 或者你也可以使用一种或多种方式零散设置缩放... 绿色文本显示了那些方法.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1052,6 +1084,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>I would like you to take note... that scaling is **for mesh only**.&amp;nbsp; For example, you can POSITION a mesh, camera, or light.&amp;nbsp; You can often ROTATE a mesh, camera, or light.&amp;nbsp; But SCALING... is for mesh.&amp;nbsp; If you stretch or shrink (scale) a camera or light, you will break its electrical parts.&amp;nbsp; (It's a joke, ok?)&amp;nbsp; &amp;nbsp;There is no reason to set scaling for a camera or light.&amp;nbsp; They are invisible scene items.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T080321Z" creationid="aceway" creationdate="20160423T080321Z">
+        <seg>我希望你注意... 缩放是**仅仅网格可以**.&amp;nbsp; 例如, 你可以定位一个网格, 相机, 活着光源.&amp;nbsp; 你可以经常旋转一个网格, 相机, 或者光源.&amp;nbsp; 但是对于缩放... 它是针对网格的.&amp;nbsp; 如果你拉伸或缩小(缩放)一个相机或光源, 你会破坏其电力部分.&amp;nbsp; (开玩笑的,好么?)&amp;nbsp; &amp;nbsp;没有必要缩放相机或光源.&amp;nbsp; 它们是场景中不可见项.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If well done, it’s very powerful.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151549Z" creationid="aceway" creationdate="20160402T151549Z">
@@ -1068,6 +1108,14 @@ Your scene is beginning to look great, but it is very static.</seg>
         <seg>如果你希望获得关于简化函数的更多信息,这儿有一些有用的链接 : 
 - [MSDN 简化函数文档](http://msdn.microsoft.com/en-us/library/ee308751.aspx)
 - [简化函数懒人表单](http://easings.net/fr)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to make your home demo scenes run faster, you can download copies of the external includes... and put them into a folder.&amp;nbsp; That folder should be located WITHIN the folder that holds your index.html.&amp;nbsp; For example, in the same folder as index.html, you could create a folder called 'js' (no quotes).&amp;nbsp; Inside the js folder, you could put home copies of The Big 4 external include files.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T082056Z" creationid="aceway" creationdate="20160423T082056Z">
+        <seg>如果你想让家里的演示场景运行快些, 你可以下载这些外部文件的拷贝... 然后把它们放入一个文件夹.&amp;nbsp; 该本文件夹必须和你的index.html文件位于同一个文件夹下.&amp;nbsp; 例如, 在index.html的同一文件夹里, 你创建一个叫做'js' (没有引号)的文件夹.&amp;nbsp; 将你下载4大外部资源文件放入该js文件夹.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1166,6 +1214,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T101805Z" creationid="aceway" creationdate="20160404T073957Z">
         <seg>让我们假设,你在一直在家中创建了一个场景文件, 经过多次尝试, 它就是不能正常工作.&amp;nbsp; 你可以复制你家里的 createScene 函数, 然后访问娱乐展示厅, 点击 **清除** 按钮 来清空编辑窗口, 最后把你的 createScene 函数粘贴到编辑区域里.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let's take a look at a playground scene that I once created and saved.&amp;nbsp; In this demo, I made those invisible rods... be visible:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T062710Z" creationid="aceway" creationdate="20160423T062710Z">
+        <seg>让我们看看娱乐展示厅里的一个我曾经创建保存的场景.&amp;nbsp; 在这个演示里, 我将这些无形的棒可视化了:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1300,6 +1356,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Remember 'The Big Picture' far above?&amp;nbsp; In that section, I introduced you to 'The Big 4' external include files...&amp;nbsp; hand.js, cannon.js, oimo.js, and babylon.js.&amp;nbsp; Many people use GitHub version-management systems to download those files from the Babylon.js GitHub source code repository.&amp;nbsp; Some people make their own 'minified' versions of Babylon.js... using the absolute latest source code files.&amp;nbsp; Others like to be able to grab reasonably fresh versions of The Big 4... in simpler ways.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T081200Z" creationid="aceway" creationdate="20160423T081200Z">
+        <seg>还记得上面的'大图片'么?&amp;nbsp; 在那个段中, 我给你介绍了包含的'四大'外部文件资源...&amp;nbsp; hand.js, cannon.js, oimo.js, 和 babylon.js.&amp;nbsp; 许多人通过GitHub版本管理系统从Babylon.js的GitHub源代码仓库下载这些文件.&amp;nbsp; 有些人使用最新的源代码文件创建自己的 '缩小'版Babylon.js&amp;nbsp; 其他人则喜欢通过网络抓取的简单方式获取合适的新版四大文件资源.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See the 'createScene' function in the left-side code editing window?&amp;nbsp; Does it look familiar?&amp;nbsp; It is the very same code from the purple section of the big picture (but with a couple of word-wrapped lines).&amp;nbsp; Now you can see why the createScene function is an important section.&amp;nbsp; It is somewhat portable.&amp;nbsp; You can copy createScene functions to/from the playground editor, and to/from your home scene files.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T034539Z" creationid="aceway" creationdate="20160404T034539Z">
@@ -1336,6 +1400,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T101614Z" creationid="aceway@qq.com" creationdate="20160421T101614Z">
         <seg>有时候, 方法被用来设置属性值， 有时后别用来获取属性值.&amp;nbsp; 这些方法/函数通常被称为 GETTERS 和 SETTERS.&amp;nbsp; 注意到上面getMeshByName方法里的用词 'get' 没?&amp;nbsp; 它就是个 GETTER 方法.&amp;nbsp; 这儿又是一个该方法调用':</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Take some time to carefully watch that scene.&amp;nbsp; Like the last demo scene, the yellow text shows a Vector3 being used to set the .rotation property with some computer-generated values.&amp;nbsp; The box is shown doing positive and negative rotations around each of the 3 axes.&amp;nbsp; Under the yellow text... you again see the green text...&amp;nbsp; showing the 3 'discrete' ways to set the box's .rotation property with values.&amp;nbsp; I bet you understand this completely, don't you?&amp;nbsp; Easy.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T074610Z" creationid="aceway" creationdate="20160423T074610Z">
+        <seg>花些时间仔细观察下这个场景.&amp;nbsp; 更上个演示场景类似, 黄颜色文本显示了一个Vector3量, 它被一些电脑生成的值填充并被用来设置旋转属性(.rotation).&amp;nbsp; 盒子展示着绕3个轴各自独立正转反转的情形.&amp;nbsp; 在黄颜色文本下面... 你再次看到绿颜色文本...&amp;nbsp; 展示着3种 '零散'方式给盒子的旋转属性(.rotation)设置值.&amp;nbsp; 我打赌你已经完全理解了, 难道你们么??&amp;nbsp; 就是如此简单.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1660,6 +1732,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When you click Get .zip at the Babylon.js playground, you get a zip that contains a file called index.html.&amp;nbsp; If you examine index.html in a text editor, you will see a file that looks very much like The Big Picture far above.&amp;nbsp; Look at the external includes section... the first four HTML SCRIPT elements/tags.&amp;nbsp; The .src attribute within each of those SCRIPT elements... point to URL's located at the Babylon.js web site.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T081649Z" creationid="aceway" creationdate="20160423T081649Z">
+        <seg>当你在娱乐展示厅里点击获取.zip时, 你得到一个zip压缩文件其中包含个叫做index.html的文件.&amp;nbsp; 如果你在文本编辑器中查看这个index.html文件, 你将看到一个和上面大图里非常像的文件内容.&amp;nbsp; 查看下外部包含的段落... 第一批4个页面SCRIPT元素/标签.&amp;nbsp; 每个标签里的.src属性... 指向里Babylon.js网站的网址.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Wow, this is a lot of information, isn't it?&amp;nbsp; You have learned what a scene file (the big picture) looks like, you have learned about its important createScene() function and how copy'n'paste portable it is.&amp;nbsp; You have seen a createScene() function in the Babylon.js playground, and you have been introduced to the playground's RUN, SAVE, and Get .zip buttons.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T104506Z" creationid="aceway" creationdate="20160404T104506Z">
@@ -1744,6 +1824,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T145024Z" creationid="aceway" creationdate="20160410T144815Z">
         <seg>你已经见识了一些创建场景的函数, 而且你也应该注意到大量Javascript代码被用来创建Babylon.js场景... 给些代码阐述下我的意思, &amp;nbsp;比如设置对象的属性值:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may have noticed that scaling values are never negative.&amp;nbsp; It would be illogical to use a negative scaling value, and if you decide to use some negative values, unexpected results may occur.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T075646Z" creationid="aceway" creationdate="20160423T075646Z">
+        <seg>你也许注意到了缩放值没有出现过负数.&amp;nbsp; 使用负数值来缩放是非法的, 而且如果你决定使用负数值, 可能会出现未知异常.</seg>
       </tuv>
     </tu>
     <tu>
