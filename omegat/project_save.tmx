@@ -118,6 +118,14 @@ Once again let's visit the saved playground scene that I sent you to, above.</se
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## My New Friends - .position, .rotation, and .scaling&amp;nbsp; ##</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T030523Z" creationid="aceway" creationdate="20160423T030523Z">
+        <seg>## 新的帮手 - 位置属性(.position), 旋转属性(.rotation), 和缩放属性(.scaling)&amp;nbsp; ##</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Scene File Layout ##</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T131232Z" creationid="aceway" creationdate="20160403T131209Z">
@@ -320,6 +328,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**POSITION** - Also called translation, every mesh is POSITIONED in a scene using X, Y, and Z settings.&amp;nbsp; You can think of the .position property... as the mesh's LOCATION.&amp;nbsp; The link below... is a saved playground scene that illustrates using a mesh's .position property.&amp;nbsp; Try to open it in a new window or new tab, so you can jump back and forth between this tutorial... and the playground scene:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T031515Z" creationid="aceway" creationdate="20160423T031515Z">
+        <seg>**位置** - 也被叫作平移, 每个网格对象都通过设定其X, Y, 和Z来被定位到场景里.&amp;nbsp; 你可以把位置属性(.position)认为称网格对象的定位.&amp;nbsp; 下面的链接... 是一个保存的娱乐场景,它阐述了网格对象的位置属性的使用.&amp;nbsp; 请试着在新窗口或标签页中打开, 那样你就可以前后跳转,以在本教程和娱乐展示场景间切换:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>**Parameter 1** - Name of this animation, nothing more.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054041Z" creationid="aceway@qq.com" creationdate="20160331T014235Z">
@@ -372,6 +388,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T145907Z" creationid="aceway" creationdate="20160418T145907Z">
         <seg>**属性**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**ROTATION** - Every mesh is ROTATED in a scene... by setting the amount of spin around the shape's X, Y, and Z axes.&amp;nbsp; Picture a box with a rod stuck through every side and coming out the opposite side.&amp;nbsp; There are 6 sides to a box, so there would be 3 rods, an X rod, a Y rod, and a Z rod.&amp;nbsp; Rotation is the amount (and direction) of spin...</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T034044Z" creationid="aceway" creationdate="20160423T034044Z">
+        <seg>**旋转** - 场景里的每个网格的旋转... 都是通过设置造型的X, Y, 和 Z 轴的旋转量来实现的.&amp;nbsp; 想象一个画面:一个盒子,每个面都有个棒从这个面的边穿进去另一边穿出来.&amp;nbsp; 一个盒子有6个面, 所以需要3个棒, 一个为X轴, 一个为Y轴, 同时一个为Z轴.&amp;nbsp; Rotation is the amount (and direction) of spin...</seg>
       </tuv>
     </tu>
     <tu>
@@ -454,6 +478,20 @@ animationTorus.setEasingFunction(easingFunction);</seg>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145237Z" creationid="aceway" creationdate="20160402T145237Z">
         <seg>// 将简化函数添加到动画中
 animationTorus.setEasingFunction(easingFunction);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// And here is how it is colored green...
+myLines.color = new BABYLON.Color3(0,1,0);
+```
+The creation of the lines object was a bit strange, but it sure was easy to make it green, using a Color3 value.&amp;nbsp; You will learn more about the lines mesh....</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T025827Z" creationid="aceway" creationdate="20160423T025827Z">
+        <seg>// 然后是如何对它着色...
+myLines.color = new BABYLON.Color3(0,1,0);
+```
+线对象的创建优点怪怪的, 但是使它为绿色确很简单, 使用一个Color3值.&amp;nbsp; 关于线网格你将会学到更多....</seg>
       </tuv>
     </tu>
     <tu>
@@ -738,8 +776,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>Another use of the Color3 value is to set the .diffuse property of lights.&amp;nbsp; Take careful note that the name of this property is .diffuse, and not .diffuseColor.&amp;nbsp; Lights use a property named .diffuse to set their primary color.&amp;nbsp; Let's take a look at how to set the primary color of a light that you have already created:</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160422T150329Z" creationid="aceway" creationdate="20160422T150329Z">
-        <seg>另一个Color3值的用途是设置光的散射(.diffuse)属性.&amp;nbsp; 注意该处属性的名字是.diffuse, 而不是.diffuseColor.&amp;nbsp; Lights use a property named .diffuse to set their primary color.&amp;nbsp; Let's take a look at how to set the primary color of a light that you have already created:</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T024634Z" creationid="aceway" creationdate="20160422T150329Z">
+        <seg>另一个Color3值的用途是设置光的散射(.diffuse)属性.&amp;nbsp; 注意该属性的名字是.diffuse, 而不是.diffuseColor.&amp;nbsp; 光源使用一个名为.diffuse的属性设置其主色.&amp;nbsp; 让们看看如何给那个你创建的光源设置主色:</seg>
       </tuv>
     </tu>
     <tu>
@@ -748,6 +786,22 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155805Z" creationid="aceway" creationdate="20160402T111552Z">
         <seg>作为2.3+版本的 Babylon.js, 你能通过设置 *enableBlending* 为 true来启动一个动画.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As you toured the Babylon.js Playground demo scenes, you surely saw some .position, .rotation, and maybe some .scaling properties being 'set' with values.&amp;nbsp; Let's take a look at each one:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T030815Z" creationid="aceway" creationdate="20160423T030815Z">
+        <seg>如果你浏览了Babylon.js娱乐展示厅的演示场景, 你必定看到了一些位置属性(.position), 旋转属性(.rotation), 可能还有些缩放属性(.scaling)设置了值.&amp;nbsp; 让我们一个个的看看:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Below that, in green text, you will see 3 more lines of Babylon.js code.&amp;nbsp; You see, you are NOT required to use a Vector3 to set a .position on a mesh.&amp;nbsp; You can use the '**discrete**' way, instead.&amp;nbsp; Loosely defined, 'discrete' means... piece by piece... one step at a time.&amp;nbsp; If you would like to set a mesh's .position values axis by axis, feel free to use the handy green 'discrete' ways of doing it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T032815Z" creationid="aceway" creationdate="20160423T032815Z">
+        <seg>在那下面, 在绿色文本里, 你将看到另3行Babylon.js代码.&amp;nbsp; 你该清楚了, 你不需被迫使用Vector3值来设置网格的位置属性(.position).&amp;nbsp; 相反,你可以用'**零散(discrete)**'的方式.&amp;nbsp; 没有严格的定义, '林散' 意味着... 一块一块的... 一次一小步.&amp;nbsp; 如果你想一个轴一个轴的设置网格的位置属性, 可以自便的按照那个些绿色'零散'的方式去做.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1030,6 +1084,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T124804Z" creationid="aceway" creationdate="20160402T112100Z">
         <seg>在下面这个娱乐展示中, 每次你点击 FPS 标签时, 那个盒子的当前位置会被作为参数重新渲染. :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the yellow text at the top of the scene, you will see the Babylon.js one-line way to set mybox.position (using our friend... the Vector3 value object).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T031724Z" creationid="aceway" creationdate="20160423T031724Z">
+        <seg>场景顶部的黄颜色文本, 你将看到一行Bayblon.js代码设置mybox.position的方式 (使用我们的助手... 那个Vector3值对象).</seg>
       </tuv>
     </tu>
     <tu>
@@ -1558,6 +1620,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Watch this positioning demo scene for some time, if you please.&amp;nbsp; It will not take long for you to completely understand mesh positioning.&amp;nbsp;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T033026Z" creationid="aceway" creationdate="20160423T033026Z">
+        <seg>如果你乐意, 请多花些时间看这个关于位置属性的演示场景.&amp;nbsp; 要不了多久你就会完全理解网格定位了.&amp;nbsp;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We have now completed an Animation for box1.scaling.x.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155412Z" creationid="aceway" creationdate="20160402T105422Z">
@@ -1723,6 +1793,28 @@ It is difficult for me to explain, but actually quite easy to do, thanks to Baby
     <tu>
       <tuv lang="EN-US">
         <seg>``` javascript
+// Creation of a triangular lines mesh
+var myLines = BABYLON.Mesh.CreateLines("itsName", [
+&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; new BABYLON.Vector3(-5, 0, 5),
+&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; new BABYLON.Vector3(5, 0, 5),
+&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; new BABYLON.Vector3(0, 0, -5),
+&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; new BABYLON.Vector3(-5, 0, 5)
+], scene);</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T025529Z" creationid="aceway" creationdate="20160423T025529Z">
+        <seg>``` javascript
+// 三角线网格的创建
+var myLines = BABYLON.Mesh.CreateLines("itsName", [
+&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; new BABYLON.Vector3(-5, 0, 5),
+&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; new BABYLON.Vector3(5, 0, 5),
+&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; new BABYLON.Vector3(0, 0, -5),
+&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; new BABYLON.Vector3(-5, 0, 5)
+], scene);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``` javascript
 box.position = new BABYLON.Vector3(0, 10, 0);
 ```
 The xValue is 0, meaning that the box is positioned in the center of the x-axis.&amp;nbsp; The yValue is 10, meaning that the box is positioned 10 units above the center of the y-axis.&amp;nbsp; The zValue is 0, meaning that the box is positioned in the center of the z-axis.&amp;nbsp; Easy.&amp;nbsp; We will talk more about positioning... further below.&amp;nbsp;</seg>
@@ -1784,6 +1876,20 @@ Here, we 'set' the property named 'intensity' on the object called 'light' to a 
 light.intensity = 0.5;
 ```
 此处, 我们给一个被称为'光'的对象设置其叫做 'intensity'的属性值为0.5 (0.5 叫做浮点值, 或仅称为'a float').&amp;nbsp; 我们后面简短的谈论下值.&amp;nbsp; 我主要是希望你注意 那个具有intensity名字的属性(存储空间), 而且我们吧值0.5存到那里(属于那个称为'light'的对象).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``` javascript
+myLight.diffuse = new BABYLON.Color3(0.5, 0, 0);
+```
+And there we go.&amp;nbsp; We have colored the light beam that emits from our light... to be medium red.&amp;nbsp; There is one more use for a Color3 value, and that is on one of our newest basic shape objects... called a LINES object.&amp;nbsp; A LINES object does not use a StandardMaterial object for its color.&amp;nbsp; It uses a property called .color.&amp;nbsp; Here is an example of a LINES object being created, and then colored:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T025404Z" creationid="aceway" creationdate="20160423T025404Z">
+        <seg>``` javascript
+myLight.diffuse = new BABYLON.Color3(0.5, 0, 0);
+```
+我们开始吧.&amp;nbsp; 我们将光源发散出来的光线着色为中红色.&amp;nbsp; 有不止一种使用Color3值的方式, 其中一种使用在来我们最基础的造型对象(线对象)上.&amp;nbsp; 一个线对象不使用标准材质作为其颜色.&amp;nbsp; 它使用一个称为颜色(.color)的属性.&amp;nbsp; 此处我们有个例子创建一个线对象,然后为其着色的例子:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1908,6 +2014,14 @@ animationBox.setKeys(keys);
 animationBox.setKeys(keys);
 ```
 * 将动画和对象链接起来</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>in our Basic Elements tutorial.&amp;nbsp; For now, I just wanted to show you that it does not use a .diffuseColor property like a box with a StandardMaterial applied, nor a .diffuse property like we used for coloring light beams.&amp;nbsp; It, instead, uses a property called .color.&amp;nbsp; Simple.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T030404Z" creationid="aceway" creationdate="20160423T030404Z">
+        <seg>在我们的基础元素教程里.&amp;nbsp; 至于现在, 我只是想表示它(线对象)不像盒子那样应用标准材质并对其(材质)使用.diffuseColor属性来设置颜色, 也不想光线那样使用.diffuse属性来设置颜色.&amp;nbsp; 相反,我们直接使用一个.color属性.&amp;nbsp; 就是这样简单.</seg>
       </tuv>
     </tu>
     <tu>
