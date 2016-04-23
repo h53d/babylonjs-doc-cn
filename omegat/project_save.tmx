@@ -486,6 +486,22 @@ PG_TITLE: A Babylon.js 初级教程
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>---
+ID_PAGE: 22631
+PG_TITLE: The Playground Tutorial
+---
+Introducing...</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T090507Z" creationid="aceway" creationdate="20160423T090507Z">
+        <seg>---
+ID_PAGE: 22631
+PG_TITLE: 娱乐场教程
+---
+Introducing...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// Adding animation to my torus animations collection
 torus.animations.push(animationTorus);</seg>
       </tuv>
