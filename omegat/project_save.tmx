@@ -1316,6 +1316,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Once you have that folder made, you can use the 4 links shown below... to get copies of The Big 4... and put each of them into your js folder.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T082252Z" creationid="aceway" creationdate="20160423T082252Z">
+        <seg>一旦你准备好那个文件夹, 你可以使用下面显示的4个链接... 获取4大资源拷贝... 然后将它们各自放入你的文件夹.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One of the many properties on a StandardMaterial object... is named .diffuseColor.&amp;nbsp; That property is the primary way to set a basic color.&amp;nbsp; And right here... is where we use our new Color3 value.&amp;nbsp; Let's have a look:
 ``` javascript
 myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
@@ -1848,6 +1856,38 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160839Z" creationid="aceway" creationdate="20160402T152713Z">
         <seg>你的场景现在动起来了, 你的所有网格都可在所有方向上移动!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[**babylon.js**](http://www.babylonjs.com/babylon.js)&amp;nbsp; &amp;nbsp;&lt;= right-click... save link/target</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T082406Z" creationid="aceway" creationdate="20160423T082406Z">
+        <seg>[**babylon.js**](http://www.babylonjs.com/babylon.js)&amp;nbsp; &amp;nbsp;&lt;= 右击... 保存链接/目标</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[**cannon.js**](http://www.babylonjs.com/cannon.js)&amp;nbsp; &lt;= right-click... save link/target</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T082343Z" creationid="aceway" creationdate="20160423T082343Z">
+        <seg>[**cannon.js**](http://www.babylonjs.com/cannon.js)&amp;nbsp; &lt;= 右击... 保存链接/目标</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[**hand.js**](http://www.babylonjs.com/hand.minified-1.2.js)&amp;nbsp; &lt;= right-click... save link/target</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T082331Z" creationid="aceway" creationdate="20160423T082331Z">
+        <seg>[**hand.js**](http://www.babylonjs.com/hand.minified-1.2.js)&amp;nbsp; &lt;= 右击... 保存链接/目标</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[**oimo.js**](http://www.babylonjs.com/oimo.js)&amp;nbsp; &lt;= right-click... save link/target</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T082355Z" creationid="aceway" creationdate="20160423T082355Z">
+        <seg>[**oimo.js**](http://www.babylonjs.com/oimo.js)&amp;nbsp; &lt;= 右击... 保存链接/目标</seg>
       </tuv>
     </tu>
     <tu>
