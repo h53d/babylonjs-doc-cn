@@ -21,7 +21,7 @@ Hi!欢迎阅读 Babylon.js 初级教程, 这是后面学习最棒的基于Javasc
 | [**BabylonJS 论坛**](http://www.html5gamedevs.com/forum/16-babylonjs) | 询问,助人,预见小伙伴 |
 | [**BabylonJS GitHub 站点**](http://www.babylonjs.com) |&nbsp; 下载, 教程, 和许多链接 (在那个页面的底部) |
 | [**BabylonJS API 文档**](http://doc.babylonjs.com) | 所有Babylon.js类的完整 API 图册 |
-| [**BabylonJS 娱乐展示**](http://babylonjs-playground.azurewebsites.net) |&nbsp; 在线的,白板式 基础场景测试站点 |
+| [**BabylonJS 娱乐场**](http://babylonjs-playground.azurewebsites.net) |&nbsp; 在线的,白板式 基础场景测试站点 |
 | [**BabylonJS 沙箱**](http://www.babylonjs.com/sandbox) | 在线测试从建模工具导出的 .babylon 文件.
 
 ## 场景文件格式 ##
@@ -85,12 +85,12 @@ http://babylonjs-playground.azurewebsites.net/#QKQHS
 
 http://www.html5gamedevs.com/forum/16-babylonjs/
 
-在那,你可以开始一个新的话题, 将破坏你娱乐展示场景的createScene函数网址告诉大家,  问下是否有人乐意访问你的娱乐展示场景并帮助你修正.&nbsp;
+在那,你可以开始一个新的话题, 将破坏你娱乐场场景的createScene函数网址告诉大家,  问下是否有人乐意访问你的娱乐场场景并帮助你修正.&nbsp;
 
 这就是所谓的白板.&nbsp; 它使得其他人能很容易的在你创建的场景上工作, 并帮你指出错误之处.&nbsp; 清楚了创建场景函数是如何'可移植'了么?&nbsp; 从家里获得, 扔到娱乐场, 然后在上面折腾一阵.&nbsp; 如果有必要, 你可以点击娱乐场上的 **保持** 按钮, 产生一个网址.&nbsp; &nbsp;最后到论坛上讲网址告诉其他人, 向他们求助.&nbsp; 很方便吧, 哼??&nbsp; 我们认为是这样的.
 
 ## 关于娱乐场更多 ##
-让我们再次访问上面发给你的保存的娱乐展示场景网站.
+让我们再次访问上面发给你的保存的娱乐场场景网站.
 
 http://babylonjs-playground.azurewebsites.net/#QKQHS
 
@@ -312,7 +312,7 @@ myLines.color = new BABYLON.Color3(0,1,0);
 
 如果你浏览了Babylon.js娱乐场的演示场景, 你必定看到了一些位置属性(.position), 旋转属性(.rotation), 可能还有些缩放属性(.scaling)设置了值.&nbsp; 让我们一个个的看看:
 
-**位置** - 也被叫作平移, 每个网格对象都通过设定其X, Y, 和Z来被定位到场景里.&nbsp; 你可以把位置属性(.position)认为称网格对象的定位.&nbsp; 下面的链接... 是一个保存的娱乐场景,它阐述了网格对象的位置属性的使用.&nbsp; 请试着在新窗口或标签页中打开, 那样你就可以前后跳转,以在本教程和娱乐展示场景间切换:
+**位置** - 也被叫作平移, 每个网格对象都通过设定其X, Y, 和Z来被定位到场景里.&nbsp; 你可以把位置属性(.position)认为称网格对象的定位.&nbsp; 下面的链接... 是一个保存的娱乐场景,它阐述了网格对象的位置属性的使用.&nbsp; 请试着在新窗口或标签页中打开, 那样你就可以前后跳转,以在本教程和娱乐场场景间切换:
 
 http://babylonjs-playground.azurewebsites.net/#35CPC
 
