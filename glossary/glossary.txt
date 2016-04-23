@@ -1,0 +1,92 @@
+playground	娱乐场	展示Babylon.js演示程序的地方,同时提供相应源代码的实时修改,运行及其下载的一个网址.
+Scene	场景	游戏里一个情节环境里的所有物件
+Browser	浏览器	上万维网用的客户端
+link	链接
+Links	链接
+demo	演示
+scene	场景
+framework	框架
+mesh	网格
+meshes	网格
+object	对象
+objects	对象
+function	函数
+element	元素
+elements	元素
+tag	标签
+tags	标签
+folder	文件夹
+folders	文件夹
+CSS style	CSS样式
+CSS styles	样式
+ web	网页
+element/tag	元素/标签
+programmer	程序员
+tutorial	教程
+tutorials	教程
+Playpen	练习
+web site	网站
+window	窗口
+tab	标签页
+tabs	标签页
+code	代码
+editor	编辑器
+playground	娱乐场
+RUN	运行
+SAVE	保存
+forum	论坛
+button	按钮
+zip file	压缩文件
+computer	电脑
+UNZIP	解压
+scenes	场景
+**RUN**	**运行**
+Run	运行
+camera	相机
+Camera	相机
+cameras	相机
+ArcRotateCamera	弧形旋转相机
+FreeCamera	自由相机
+TouchCamera	触控相机
+Light	光源
+lighgts	光源
+lights	光源
+PointLight	点光光源
+SpotLight	聚光光源
+DirectionalLight	平行光光源
+HemisphericLight	半球光源
+material	材质
+material	材质
+Properties	属性
+properties	属性
+Property	属性
+property	属性
+Method	方法
+Methods	方法
+methods	方法
+Values	值
+functions	函数
+shapes/mesh	造型/网格
+canvas	画布
+Vector3	三元向量	存储3个值的量
+reference/handle	引用/句柄
+reference	引用
+handle	句柄
+pockets	存储空间
+pocket	存储空间
+properties	属性
+parentheses	小括号
+paramter	参数
+parameters	参数
+X-axis	X轴
+Y-axis	Y轴
+Z-axis	Z轴
+STRING	字符串
+stretching	拉伸
+shringking	缩小
+shrinking	缩小
+shrink	缩小
+stretch	拉伸
+POSITION	定位
+ROTATION	旋转
+SCALING	缩放
