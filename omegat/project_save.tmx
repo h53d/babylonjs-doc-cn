@@ -6,6 +6,16 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>![](http://urbanproductions.com/wingy/babylon/misc/playground02.jpg)
+A Saved 'Custom' Playground Scene: http://babylonjs-playground.azurewebsites.net/#QKQHS</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T142546Z" creationid="aceway" creationdate="20160423T142546Z">
+        <seg>![](http://urbanproductions.com/wingy/babylon/misc/playground02.jpg)
+A Saved 'Custom' 娱乐场 Scene: http://babylonjs-playground.azurewebsites.net/#QKQHS</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg># The BabylonJS Playground!</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T090905Z" creationid="aceway" creationdate="20160423T090905Z">
@@ -354,8 +364,8 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       <tuv lang="EN-US">
         <seg>**POSITION** - Also called translation, every mesh is POSITIONED in a scene using X, Y, and Z settings.&amp;nbsp; You can think of the .position property... as the mesh's LOCATION.&amp;nbsp; The link below... is a saved playground scene that illustrates using a mesh's .position property.&amp;nbsp; Try to open it in a new window or new tab, so you can jump back and forth between this tutorial... and the playground scene:</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T031515Z" creationid="aceway" creationdate="20160423T031515Z">
-        <seg>**位置** - 也被叫作平移, 每个网格对象都通过设定其X, Y, 和Z来被定位到场景里.&amp;nbsp; 你可以把位置属性(.position)认为称网格对象的定位.&amp;nbsp; 下面的链接... 是一个保存的娱乐场景,它阐述了网格对象的位置属性的使用.&amp;nbsp; 请试着在新窗口或标签页中打开, 那样你就可以前后跳转,以在本教程和娱乐展示场景间切换:</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T150859Z" creationid="aceway" creationdate="20160423T031515Z">
+        <seg>**定位** - 也被叫作平移, 每个网格对象都通过设定其X, Y, 和Z来被定位到场景里.&amp;nbsp; 你可以把位置属性(.position)认为称网格对象的定位.&amp;nbsp; 下面的链接... 是一个保存的娱乐场景,它阐述了网格对象的位置属性的使用.&amp;nbsp; 请试着在新窗口或标签页中打开, 那样你就可以前后跳转,以在本教程和娱乐展示场景间切换:</seg>
       </tuv>
     </tu>
     <tu>
@@ -722,8 +732,8 @@ scene.beginAnimation(torus, 0, 120, true);
       <tuv lang="EN-US">
         <seg>A Light.**&amp;nbsp; &amp;nbsp;There are 4 basic types of lights available in Babylon.js.&amp;nbsp; They are PointLight, SpotLight, DirectionalLight, and HemisphericLight.&amp;nbsp; ANY number of lights can be coded into a scene,&amp;nbsp; but only the first 4 lights in the scene's lights list... will be used by the scene.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T142454Z" creationid="aceway" creationdate="20160410T141237Z">
-        <seg>光源.**&amp;nbsp; &amp;nbsp;在Babylon.js里有4种基础类型的光源.&amp;nbsp; 它们是 PointLight(点光灯光源), SpotLight(聚光灯光源), DirectionalLight(平行光光源), 和 HemisphericLight(半球光源).&amp;nbsp; 一个场景里编码任意数量的光源,&amp;nbsp; 但是在场景光源列表里只有前4个光源被场景使用.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T145157Z" creationid="aceway" creationdate="20160410T141237Z">
+        <seg>光源.**&amp;nbsp; &amp;nbsp;在Babylon.js里有4种基础类型的光源.&amp;nbsp; 它们是 PointLight(点光光源), SpotLight(聚光光源), DirectionalLight(平行光光源), 和 HemisphericLight(半球光源).&amp;nbsp; 一个场景里编码任意数量的光源,&amp;nbsp; 但是在场景光源列表里只有前4个光源被场景使用.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1178,8 +1188,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>Inside the createScene() function (the purple section)... we will be doing the actual Babylon.js commands and directives that cause beautiful webGL to happen.&amp;nbsp; The rest of the big picture sections... are simply helpers and preparations... for the fantastic purple section... the createScene() function.&amp;nbsp; Remember its name, because I will be mentioning it often in many Playpen Series tutorials.&amp;nbsp; It will become your best friend.&amp;nbsp; This I can promise.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T032447Z" creationid="aceway" creationdate="20160404T032427Z">
-        <seg>在 createScene() 函数里 (紫色部分)... 我们将开始执行真实的 Babylon.js 指令, 以产生漂亮的WebGL效果出现.&amp;nbsp; 大图片里的剩下部分... 是些简单的辅助和准备工作... 为神奇的紫色部分(那个createScene()函数)服务的.&amp;nbsp; 记住这个函数名, 因为我将在许多游戏练习系列教材里常常提到它.&amp;nbsp; 我能保证,它将成为你最好的支持者.&amp;nbsp</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T143936Z" creationid="aceway" creationdate="20160404T032427Z">
+        <seg>=在 createScene() 函数里 (紫色部分)... 我们将开始执行真实的 Babylon.js 指令, 以产生漂亮的WebGL效果出现.&amp;nbsp; 大图片里的剩下部分... 是些简单的辅助和准备工作... 为神奇的紫色部分(那个createScene()函数)服务的.&amp;nbsp; 记住这个函数名, 因为我将在许多游戏练习系列教材里常常提到它.&amp;nbsp; 我能保证,它将成为你最好的支持者.&amp;nbsp</seg>
       </tuv>
     </tu>
     <tu>
@@ -1504,6 +1514,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The BabylonJS Playground is an on-line white-boarding and experimenting application... used to assist in creating scenes for the Javascript-based BabylonJS webGL framework.&amp;nbsp; Your browser must be WebGL-ready and have Javascript active... in order to use the playground.&amp;nbsp; &amp;nbsp;Most modern browsers have these capabilities.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T142412Z" creationid="aceway" creationdate="20160423T142412Z">
+        <seg>The BabylonJS 娱乐场 is an on-line white-boarding and experimenting application... used to assist in creating scenes for the Javascript-based BabylonJS webGL framework.&amp;nbsp; Your browser must be WebGL-ready and have Javascript active... in order to use the 娱乐场.&amp;nbsp; &amp;nbsp;Most modern browsers have these capabilities.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The JS code you see inside the green section... will be talked about soon.&amp;nbsp; Mainly, I would like you to study the big picture, and see how the single HTML file method of creating Babylon.js scenes... is structured.&amp;nbsp; I want you to try to visualize and somewhat memorize... this scene file's 'layout'.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030158Z" creationid="aceway" creationdate="20160404T025459Z">
@@ -1746,8 +1764,8 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       <tuv lang="EN-US">
         <seg>To be honest, a light is not an absolute requirement.&amp;nbsp; If the mesh in a scene... all have a material.emissiveColor or material.emissiveTexture properly set, then they will each produce their own light.&amp;nbsp; They will be 'self-illuminated'.&amp;nbsp; Careful, it is easy to get lost in a scene without a light.&amp;nbsp; Good advice would be to ALWAYS have one light (a HemisphericLight aimed to the sky, is a very handy wide-lighting tool).&amp;nbsp; You can adjust its .intensity value to set its brightness.&amp;nbsp; We have a tutorial in our Playpen Series... dedicated to talking about lights.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T142550Z" creationid="aceway" creationdate="20160410T142433Z">
-        <seg>老实说, 光源不是绝对必需的.&amp;nbsp; 如果场景里的网格对象都设置了material.emissiveColor(材料的颜色)或material.emissiveTexture(材料的纹理)属性, 那么它们自己会产生各自的光.&amp;nbsp; 它们将是 '自发光的'.&amp;nbsp; 注意, 如果一个场景里没有光是很容易迷失的.&amp;nbsp; 好的建议是总是创建一个光源(半球体光源(HemisphericLight)是个非常方便的灯光工具 - 应用到天空体上).&amp;nbsp; 你可以通过调整它的 .intensity 值来设置光的亮度.&amp;nbsp;在操练系列教程里我们有一个例子, 专门谈论各种光源.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T145335Z" creationid="aceway" creationdate="20160410T142433Z">
+        <seg>老实说, 光源不是绝对必需的.&amp;nbsp; 如果场景里的网格对象都设置了material.emissiveColor(材质的颜色)或material.emissiveTexture(材质的纹理)属性, 那么它们自己会产生各自的光.&amp;nbsp; 它们将是 '自发光的'.&amp;nbsp; 注意, 如果一个场景里没有光是很容易迷失的.&amp;nbsp; 好的建议是总是创建一个光源(半球体光源(HemisphericLight)是个非常方便的灯光工具 - 应用到天空体上).&amp;nbsp; 你可以通过调整它的 .intensity 值来设置光的亮度.&amp;nbsp;在操练系列教程里我们有一个例子, 专门谈论各种光源.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2230,6 +2248,14 @@ animationBox.setKeys(keys);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>http://www.html5gamedevs.com/forum/16-babylonjs/</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T144331Z" creationid="aceway" creationdate="20160423T144331Z">
+        <seg>http://www.html5gamedevs.com/论坛/16-babylonjs/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>in our Basic Elements tutorial.&amp;nbsp; For now, I just wanted to show you that it does not use a .diffuseColor property like a box with a StandardMaterial applied, nor a .diffuse property like we used for coloring light beams.&amp;nbsp; It, instead, uses a property called .color.&amp;nbsp; Simple.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T030404Z" creationid="aceway" creationdate="20160423T030404Z">
@@ -2248,6 +2274,22 @@ You will find a complete demonstration of the easing functions behaviors, in the
 })(BABYLON.EasingFunction);
 ```
 在娱乐展示里, 你会找到一个简化函数行为的完整演示: [**简化函数娱乐展示**](http://babylonjs-playground.azurewebsites.net/?20)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>var engine = new BABYLON.Engine(canvas, true);</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T145902Z" creationid="aceway" creationdate="20160423T145902Z">
+        <seg>var engine = new BABYLON.Engine(画布, true);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>var scene = new BABYLON.Scene(engine);</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T145906Z" creationid="aceway" creationdate="20160423T145906Z">
+        <seg>var 场景 = new BABYLON.Scene(engine);</seg>
       </tuv>
     </tu>
     <tu>
