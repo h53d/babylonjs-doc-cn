@@ -110,206 +110,153 @@ light.intensity = 0.5;
 ```
 此处, 我们给一个被称为'光'的对象设置其叫做 'intensity'的属性值为0.5 (0.5 叫做浮点值, 或仅称为'a float').&nbsp; 我们后面简短的谈论下值.&nbsp; 我主要是希望你注意 那个具有intensity名字的属性(存储空间), 而且我们吧值0.5存到那里(属于那个称为'light'的对象).
 **方法**
-The other common type of 'pocket' on a Javascript object... is called a 'method' (sometimes called a 'function').&nbsp; Methods are used to store Javascript code onto Javascript objects.&nbsp; Earlier, I said that properties are 'set'.&nbsp; Well, methods are 'called'.&nbsp; Here is the way a method is 'called'.
-
+Javascript对象里另外的'存储空间'常见''类型叫做'方法'(有时叫做 '函数').&nbsp; 方法用来讲Javascript代码存储到Javascript对象里.&nbsp; 早些时候,我说的'set'属性也是个方法.&nbsp; 嗯, 方法是被'调用'的.&nbsp; 这儿是个方法被'调用'的方式.
 ``` javascript
 scene.getMeshByName("box");
 ```
-Here, we have 'called' the getMeshByName() method that is located on the object called 'scene'.&nbsp; See that "box" thing inside the parentheses?&nbsp; That is called a 'parameter' or sometimes called an 'argument' or just... 'an arg'.&nbsp; Some methods require one or more parameters inside the parentheses, and some require none at all.&nbsp; If you look at your createScene function (method) from the big picture above, it had empty parentheses.&nbsp; It did not require any parameters in order to be called.&nbsp; At other times, you might see createScene(engine).&nbsp; In this case, the createScene method DOES require a parameter...&nbsp; a Javascript ENGINE-type of object.
-
-It is beyond the scope of this tutorial to teach everything about callable methods and settable properties on Javascript objects.&nbsp; The main thing is to try to take notice WHEN a 'pocket' on an object... is a property, and when it is a method.&nbsp; Methods always use parentheses... sometimes empty, sometimes full of parameters/args.&nbsp; Properties never use parentheses and therefore never require parameters.
-
-Sometimes, methods are used to SET values of properties, and sometimes methods are used to GET values of properties.&nbsp; These methods/functions are often called GETTERS and SETTERS.&nbsp; Notice the word 'get' in the getMeshByName method above?&nbsp; It is a GETTER method.&nbsp; Here is a more proper use of that 'call':
-
+此处,我们调用了一个叫做'scene'的对象上的 getMeshByName() 方法.&nbsp; 看到括号里面的 "box" 了么?&nbsp; 那是一个 '参数' 或者有时也叫做一个 '变元' 或简化为 '一个arg'.&nbsp; 有些方法需要一个或多个参数在括号里, 而且有些压根不需要参数.&nbsp; 如果你从上面的大图里查看下创建场景的函数(方法), 你会发现它的括号里是空的.&nbsp; 调用一个函数并不必须提供参数.&nbsp; 另外一些时候,你可能看到createScene(engine)这样的调用函数.&nbsp; 这种情况下, 创建场景方法确实需要一个Javascript对象的引擎类型的参数.
+讨论Javascript对象的可调用方法和可设置属性的所有知识点已经超越了本教程的范围.&nbsp; 此处的主要目标是让大家注意到什么情况下'存储空间'里放的是对象的方法，什么情况下是属性; 方法后面总是跟着小括号... 有时括号里面是空的, 有时填满了参数.&nbsp; 属性后面绝不会有括号因此也绝不需要参数.
+有时候, 方法被用来设置属性值， 有时后别用来获取属性值.&nbsp; 这些方法/函数通常被称为 GETTERS 和 SETTERS.&nbsp; 注意到上面getMeshByName方法里的用词 'get' 没?&nbsp; 它就是个 GETTER 方法.&nbsp; 这儿又是一个该方法调用':
 ``` javascript
 var box_I_made = scene.getMeshByName("box");
 ```
-This call is getting a reference/handle on a box that was made earlier in the code, and putting that reference into a variable called 'box_I_made'.&nbsp; After you get that reference, you can do things to the box... like set property values.
+这个调用获取了之前代码创建的盒子对象引用/句柄, 然后把它赋值给一个叫 'box_I_made'的变量.&nbsp; 你获得那个句柄后，就可以操作那个盒子了... 像设置属性.
 ``` javascript
-box_I_made.rotation.y = Math.PI/2;&nbsp; // Rotate the box 90 degrees on the Y-axis.
+box_I_made.rotation.y = Math.PI/2;&nbsp; // 在Y轴上旋转90度.
 ```
-It is difficult for me to explain, but actually quite easy to do, thanks to Babylon.js.&nbsp; Experimenting with properties and methods... is the fastest way to learn.
-
-**Values**
-
-Values... are often the things that are stored in an object's properties ('pockets') and the things that are returned when GETTER methods are called.&nbsp; As crazy as this sounds, all values are Javascript objects.&nbsp; Remember that 0.5 float that we saw earlier?&nbsp; That is a Floating Point&nbsp; NUMBER OBJECT.&nbsp; The 'box_I_made' variable above... it is a MESH OBJECT.&nbsp; The names of mesh, cameras, and lights... are STRING OBJECTS. Objects are everywhere, but they are good friends that help us stay organized.
-
-There are two types of value objects that are very common in Babylon.js.&nbsp; They are the Vector3 value, and the Color3 value.&nbsp; Vector3 and Color3 values... deserve to have their own section in this giant tutorial.&nbsp; Here we go...
-
-## Vector3 and Color3 Values ##
-
-Two of the most-used values in Babylon.js, are Vector3 values and Color3 values.
-
-### Vector3 Values ###
-Vector3 values take the form of...
+对我来而言，空说难但具体做起来很容易, 这要归功于 Babylon.js.&nbsp; 尽快熟悉属性和方法... 是最佳的学习途径.
+**值**
+值... 通常是存储在对象的属性(存储空间)里的内容, 而且可以通过调用 GETTER 方法获取到.&nbsp; 也许听起来这很疯狂：所有值都是Javascript对象.&nbsp; 还记得前面看到的那个0.5浮点数吗?&nbsp; 那是个数值对象.&nbsp; 上面那个 'box_I_made' 变量... 它是个网格对象.&nbsp; 网格，像机和灯光的名称 是字符串对象. 对象无处不在, 然而它是我们组织管理存储内容的好助手.
+在Babylon.js中有两类十分常见 的值类型.&nbsp; 它们是三元向量(Vector3)值和3元颜色( Color3)值.&nbsp; Vector3和Color3 values...保留着，后面各自有章节讲有.&nbsp; 我们继续此处的内容....
+## Vector3 和 Color3 值 ##
+Babylon.js里最常用的两种值是 Vector3 值和 Color3 值.
+### Vector3 值 ###
+Vector3 值的形式是...
 ``` javascript
 BABYLON.Vector3(xValue, yValue, zValue)
 ```
-They are often used to set/store...
-
-- the value of a .position property on mesh, light, or camera objects
-- the value of a .rotation property on a mesh object
-- the value of a .scaling property on a mesh object
-- the value of a .direction property on a light object
-
-The three 'parameters' inside the parentheses of a Vector3 value... are floats.&nbsp; They can be negative or positive, and there is no practical limit to the size of those values.&nbsp; Let's look at a Vector3 being used to set the .position of a mesh.
-
+它们长被用来设置/存储...
+- 网格,灯光活着相机对象的位置(.position)属性的值
+- 网格对象的旋转(.rotation)属性的值
+- 网格对象的缩放(.scaling)属性的值
+- 灯光对象的方向(.direction)属性的值
+Vector3值的括号里三个'参数'是浮点类型的.&nbsp; 它们可正可负, 这些值并没有实际大小的限制.&nbsp; 让我们看个使用Vector3给网格对象设置位置属性值的例子.
 ``` javascript
 box.position = new BABYLON.Vector3(0, 10, 0);
 ```
-The xValue is 0, meaning that the box is positioned in the center of the x-axis.&nbsp; The yValue is 10, meaning that the box is positioned 10 units above the center of the y-axis.&nbsp; The zValue is 0, meaning that the box is positioned in the center of the z-axis.&nbsp; Easy.&nbsp; We will talk more about positioning... further below.&nbsp; 
-
-Now let's look at a Vector3 being used to set a .rotation value:
-
+该 xValue 为是0, 意味着那个盒子位于X轴的中心.&nbsp; 该yValue值是10, 意味着那个盒子位于Y轴中心上方10个单位的位置.&nbsp; 该zValue值是0, 意味着那个盒子位于Z轴中心的位置.&nbsp; 简单吧.&nbsp; 在后面我们讲更多的讨论位置.&nbsp;
+现在让我们可个使用Vector3来设置旋转值的例子:
 ``` javascript
 box.rotation = new BABYLON.Vector3(Math.PI/4, 0, 0);
 ```
-Here, our box is being rotated around the x-axis... about 45 degrees.&nbsp; In Babylon.js, rotation is measured in radians.&nbsp; Math.PI/4 is approximately .707 radians.&nbsp; To rotate 90 degrees, it would be Math.PI/2, or about 1.57 radians.&nbsp; For 180 degrees, it would be Math.PI, or about 3.14 radians.&nbsp; To rotate 360 degrees, it would Math.PI times 2, or about 6.28 radians.
-
-Keep in mind that Vector3 values can be negative numbers as well.&nbsp; So you could easily use -Math.PI/4, -Math.PI/2, -Math.PI, and -Math.PI times 2.&nbsp; These values would rotate the object in the opposite direction around the x-axis.&nbsp; How about this Vector3 rotation:
+此处, 我们的盒子绕着X轴旋转呢来大约45度.&nbsp; 在Babylon.js里, 旋转是以弧度为度量单位的.&nbsp; Math.PI/4 约等于.707 弧度.&nbsp; 要旋转90度, 将是Math.PI/2, 或着说大约1.57 弧度.&nbsp; 对于180度, 是Math.PI, 或大约3.14 弧度.&nbsp; 要旋转360度, 那就是Math.PI 乘以2, 或者大约6.28弧度.
+记住Vector3点值也能为负数.&nbsp; 因此你可以使用 -Math.PI/4, -Math.PI/2, -Math.PI, 和 -Math.PI乘以2.&nbsp; 这些值将是绕着X轴向相反方向旋转.&nbsp; 这个Vector3如何旋转呢:
 ``` javascript
 box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
 ```
-If you think that it rotates our box in a positive (+) direction 90 degrees around the x-axis, AND ALSO rotates our box 45 degrees in a negative (-) direction around the z-axis, you would be correct.&nbsp; 
-
-Even though Vector3 values can contain very large negative or positive numbers, it is rarely necessary for any xValue, yValue, or zValue... to be outside the range of -6.28 to +6.28 **for setting rotations**.&nbsp; Any numbers outside that range would be unnecessary, because -6.28 (radians) rotates 360 degrees in one direction, and +6.28 (radians) rotates 360 degrees in the opposite direction.&nbsp; That's a full range of rotation, isn't it?&nbsp; We'll talk a bit more about rotation, further below.
-
-Now let's see a Vector3 used for scaling (stretching and shrinking) a mesh:
-
+如果你是这样想的就对了:将盒子绕着X轴旋转正的90度, 而且也绕着Z轴旋转负的45度.&nbsp;
+尽管Vector3的值可以是非常的大正数或负数, 但通常没必要为旋转属性将xValue, yValue, 或 zValue的值设置超出 -6.28 和 +6.28之外的值.&nbsp; 任何这个范围之外的值都没必要, 因为 -6.28 (弧度) 是在一个方向旋转 360 度, 而 +6.28 (弧度) 是在另一个方向旋转 360.&nbsp; 那是可旋转的所有范围, 不是么?&nbsp; 后面我们将在多些讨论旋转.
+现在让我看看使用Vector3设置缩放(拉伸和缩减)一个网格:
 ``` javascript
 box.scaling = new BABYLON.Vector3(1, 1, 3);
 ```
-Scaling is a way to shrink or stretch a mesh along any of the 3 scene axes.&nbsp; In the above example, the xValue (1) indicates that no scaling change to the mesh along its x-axis... is desired.&nbsp; The yValue of 1 indicates that we want no change in scaling along the y-axis, either.&nbsp; The zValue of 3 indicates that we we are 'stretching' our mesh along its z-axis... to 3 times its normal size.&nbsp; Easy, right?&nbsp; You bet!&nbsp; 
-
-I will talk more about scaling... further below.
-
-Another use for a Vector3 value... is setting the .direction for certain types of lights:
-
+缩放是种在场景3轴的任何方向上缩减或拉伸网格的方法.&nbsp; 在上面的例子里, 该xValue (1) 表明网格在X轴上没有缩放改变.&nbsp; 该yValue值1 表明也不要在Y轴上做缩放改变.&nbsp; 该zValue值3表明我们希望在Z轴上拉伸到3倍原大小.&nbsp; 简单吧, 这样就对了?&nbsp; 你矇对了!&nbsp;
+在后面我们会更多的讨论缩放.
+那外种使用 Vector3 值是用来设置灯光的方向:
 ``` javascript
 mySpotLight.direction = new BABYLON.Vector3(0, -1, 0);
 ```
-Generally speaking, when a Vector3 value is used to set a DIRECTION, the xValue, yValue, and zValue are each in a range of negative 1... to positive 1.&nbsp; In the example above, our light is aimed negative on the y-axis... or... straight down.&nbsp; Directions (directional vectors) are used for more things than just lights, but lights is a common use.&nbsp; Directional vectors are not always easy things to determine the x, y, and z parameters/values for.&nbsp; We have some helpful tools on our lights... that will assist you in setting directions.&nbsp; You will learn about those tools in our lights tutorial.
+通常来说, 当一个Vector3值被用来设置一个方向是, 该xValue, yValue, 和 zValue是在负1和正1之间的.&nbsp; 在上面的例子里, 我们的光是瞄向Y轴负方向的... 或者直接向下.&nbsp; 矢量 (方向向量) 被用在不仅仅是灯光上, 但通常是灯光上.&nbsp; 矢量并不总是能很容易的用x, y, 和z 为参数来衡量.&nbsp; 我们有些辅助工具来处理灯光... 它们将帮助你设置方向.&nbsp; 你讲在我们的灯光教程里来学习那些工具.
 &nbsp;
-### Color3 Values ###
-Color3 values look very much like Vector3 values.&nbsp; Here is an example:
+### Color3值 ###
+Color3值非常像Vector3值.&nbsp;这儿是个例子:
 ``` javascript
 BABYLON.Color3(rValue, gValue, bValue)
 ```
-The rValue is for red, the gValue is for green, and the bValue is for blue.&nbsp; I bet you have already figured out that Color3 values are used for setting colors.&nbsp; The rValue, gValue, and bValue, all contain float numbers in the range of 0 to 1.&nbsp; Let's look at a few examples:
+该rValue是用来表示红色, 该gValue用来表示绿色, 同时该bValue是用来表示蓝色.&nbsp; 我猜你已经知道Color3是用在颜色上的.&nbsp; 这些rValue, gValue, 和 bValue, 都是在0和1间的浮点值.&nbsp; 让我们看些例子:
 ``` javascript
-BABYLON.Color3(1, 0, 0) - red
-BABYLON.Color3(0, 1, 1) - cyan
-BABYLON.Color3(0, 1, 0) - green
-BABYLON.Color3(1, 0, 1) - violet
-BABYLON.Color3(1, 1, 0) - yellow
-BABYLON.Color3(0, 0, 0) - black
-BABYLON.Color3(1, 1, 1) - white
-BABYLON.Color3(0.5, 0.5, 0.5) - medium gray
-BABYLON.Color3(0.2, 0, 0.2) - dark purple
+BABYLON.Color3(1, 0, 0) - 红
+BABYLON.Color3(0, 1, 1) - 青
+BABYLON.Color3(0, 1, 0) - 绿
+BABYLON.Color3(1, 0, 1) - 紫
+BABYLON.Color3(1, 1, 0) - 黄
+BABYLON.Color3(0, 0, 0) - 黑
+BABYLON.Color3(1, 1, 1) - 白
+BABYLON.Color3(0.5, 0.5, 0.5) - 中灰
+BABYLON.Color3(0.2, 0, 0.2) - 暗紫
 ```
 &nbsp;
-Not so difficult.&nbsp; Let's say that you wanted to put a color on a box that you have already created.&nbsp; The first thing you do is create a Javascript object called a StandardMaterial.&nbsp; Then you would apply (set) that StandardMaterial as the box's .material property.&nbsp; This is covered by our Materials tutorial, but let's look at how that is done, here.
-
+没看起来这么难.&nbsp; 让我们假设你要把一个颜色用到你之前已经创建的一个盒子上.&nbsp; 你要做的第一件事情是创建一个叫做标准材质的Javascript对象.&nbsp; 然后将该标准材质应用(设置)到盒子的材质(.material)属性上.&nbsp; 这将在材质教程里讲, 但现在我们看这是如何做到的.
 ``` javascript
 var myMaterial = new BABYLON.StandardMaterial("mymat", scene);
 myBox.material = myMaterial;&nbsp; 
 ```
-The first line creates a StandardMaterial and puts it into the variable named myMaterial.&nbsp; The second line sets the box's .material property... to be that newly-made StandardMaterial.&nbsp; The appearance of the box will not change yet, because we have not given the StandardMaterial any information about what color we want the box to be.&nbsp; 
-
-One of the many properties on a StandardMaterial object... is named .diffuseColor.&nbsp; That property is the primary way to set a basic color.&nbsp; And right here... is where we use our new Color3 value.&nbsp; Let's have a look:
+第一行创建了个标准材质并把它放入一个名为myMaterial的变量.&nbsp; 第二行设置盒子的材质(.material)属性为那个新创建的标准材质.&nbsp; 孩子的外观还没有改变,因为我们还没有给该标准材质提供任何我们想要的颜色.&nbsp;
+在标准材质对象的众多属性中,有个叫作漫反射颜色(.diffuseColor).&nbsp; 那个属性是设置基础颜色的主要途径.&nbsp; 此处... 我们使用新分配的 Color3值来设置.&nbsp; 让们看看代码:
 ``` javascript
 myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
-```
-Our box is now colored medium green.&nbsp; It's just that easy.&nbsp; The StandardMaterial object has many other properties on it.&nbsp; You can add color to properties such as&nbsp; .specularColor, .emissiveColor, .ambientColor.&nbsp; All those properties are set (if you choose)... using our friend... the Babylon.js Color3 value.
-
-Another use of the Color3 value is to set the .diffuse property of lights.&nbsp; Take careful note that the name of this property is .diffuse, and not .diffuseColor.&nbsp; Lights use a property named .diffuse to set their primary color.&nbsp; Let's take a look at how to set the primary color of a light that you have already created:
-
+`
+我们的盒子现在是种绿色了.&nbsp; 就是那么简单.&nbsp; 标准材质对象有许多其它的属性.&nbsp; 你可以给诸如&nbsp;镜面光颜色( .specularColor), 放射光颜色(.emissiveColor), 环境光颜色(.ambientColor)等属性天假颜色.&nbsp; 所有这些属性都使用(如果你选择这样做)Babylon.js的三元色(Color3)值来设置.
+另一个Color3值的用途是设置光的散射(.diffuse)属性.&nbsp; 注意该属性的名字是.diffuse, 而不是.diffuseColor.&nbsp; 光源使用一个名为.diffuse的属性设置其主色.&nbsp; 让们看看如何给那个你创建的光源设置主色:
 ``` javascript
 myLight.diffuse = new BABYLON.Color3(0.5, 0, 0);
 ```
-And there we go.&nbsp; We have colored the light beam that emits from our light... to be medium red.&nbsp; There is one more use for a Color3 value, and that is on one of our newest basic shape objects... called a LINES object.&nbsp; A LINES object does not use a StandardMaterial object for its color.&nbsp; It uses a property called .color.&nbsp; Here is an example of a LINES object being created, and then colored:
-
+我们开始吧.&nbsp; 我们将光源发散出来的光线着色为中红色.&nbsp; 有不止一种使用Color3值的方式, 其中一种使用在来我们最基础的造型对象(线对象)上.&nbsp; 一个线对象不使用标准材质作为其颜色.&nbsp; 它使用一个称为颜色(.color)的属性.&nbsp; 此处我们有个例子创建一个线对象,然后为其着色的例子:
 ``` javascript
-// Creation of a triangular lines mesh
+// 三角线网格的创建
 var myLines = BABYLON.Mesh.CreateLines("itsName", [
 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; new BABYLON.Vector3(-5, 0, 5),
 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; new BABYLON.Vector3(5, 0, 5),
 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; new BABYLON.Vector3(0, 0, -5),
 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; new BABYLON.Vector3(-5, 0, 5)
 ], scene);
-
-// And here is how it is colored green...
+// 然后是如何对它着色...
 myLines.color = new BABYLON.Color3(0,1,0);
 ```
-The creation of the lines object was a bit strange, but it sure was easy to make it green, using a Color3 value.&nbsp; You will learn more about the lines mesh.... in our Basic Elements tutorial.&nbsp; For now, I just wanted to show you that it does not use a .diffuseColor property like a box with a StandardMaterial applied, nor a .diffuse property like we used for coloring light beams.&nbsp; It, instead, uses a property called .color.&nbsp; Simple.
+线对象的创建优点怪怪的, 但是使它为绿色确很简单, 使用一个Color3值.&nbsp; 关于线网格你将会学到更多.... 在我们的基础元素教程里.&nbsp; 至于现在, 我只是想表示它(线对象)不像盒子那样应用标准材质并对其(材质)使用.diffuseColor属性来设置颜色, 也不想光线那样使用.diffuse属性来设置颜色.&nbsp; 相反,我们直接使用一个.color属性.&nbsp; 就是这样简单.
 
-
-## My New Friends - .position, .rotation, and .scaling&nbsp; ##
-
-As you toured the Babylon.js Playground demo scenes, you surely saw some .position, .rotation, and maybe some .scaling properties being 'set' with values.&nbsp; Let's take a look at each one:
-
-**POSITION** - Also called translation, every mesh is POSITIONED in a scene using X, Y, and Z settings.&nbsp; You can think of the .position property... as the mesh's LOCATION.&nbsp; The link below... is a saved playground scene that illustrates using a mesh's .position property.&nbsp; Try to open it in a new window or new tab, so you can jump back and forth between this tutorial... and the playground scene:
-
+## 新的帮手 - 位置属性(.position), 旋转属性(.rotation), 和缩放属性(.scaling)&nbsp; ##
+如果你浏览了Babylon.js娱乐展示厅的演示场景, 你必定看到了一些位置属性(.position), 旋转属性(.rotation), 可能还有些缩放属性(.scaling)设置了值.&nbsp; 让我们一个个的看看:
+**位置** - 也被叫作平移, 每个网格对象都通过设定其X, Y, 和Z来被定位到场景里.&nbsp; 你可以把位置属性(.position)认为称网格对象的定位.&nbsp; 下面的链接... 是一个保存的娱乐场景,它阐述了网格对象的位置属性的使用.&nbsp; 请试着在新窗口或标签页中打开, 那样你就可以前后跳转,以在本教程和娱乐展示场景间切换:
 http://babylonjs-playground.azurewebsites.net/#35CPC
 
-In the yellow text at the top of the scene, you will see the Babylon.js one-line way to set mybox.position (using our friend... the Vector3 value object).
-
-Below that, in green text, you will see 3 more lines of Babylon.js code.&nbsp; You see, you are NOT required to use a Vector3 to set a .position on a mesh.&nbsp; You can use the '**discrete**' way, instead.&nbsp; Loosely defined, 'discrete' means... piece by piece... one step at a time.&nbsp; If you would like to set a mesh's .position values axis by axis, feel free to use the handy green 'discrete' ways of doing it.
-
-Watch this positioning demo scene for some time, if you please.&nbsp; It will not take long for you to completely understand mesh positioning.&nbsp; 
-
-**ROTATION** - Every mesh is ROTATED in a scene... by setting the amount of spin around the shape's X, Y, and Z axes.&nbsp; Picture a box with a rod stuck through every side and coming out the opposite side.&nbsp; There are 6 sides to a box, so there would be 3 rods, an X rod, a Y rod, and a Z rod.&nbsp; Rotation is the amount (and direction) of spin... AROUND each of these invisible rods.&nbsp; 
-
-Let's take a look at a playground scene that I once created and saved.&nbsp; In this demo, I made those invisible rods... be visible:
-
+场景顶部的黄颜色文本, 你将看到一行Bayblon.js代码设置mybox.position的方式 (使用我们的助手... 那个Vector3值对象).
+在那下面, 在绿色文本里, 你将看到另3行Babylon.js代码.&nbsp; 你该清楚了, 你不需被迫使用Vector3值来设置网格的位置属性(.position).&nbsp; 相反,你可以用'**零散(discrete)**'的方式.&nbsp; 没有严格的定义, '林散' 意味着... 一块一块的... 一次一小步.&nbsp; 如果你想一个轴一个轴的设置网格的位置属性, 可以自便的按照那个些绿色'零散'的方式去做.
+如果你乐意, 请多花些时间看这个关于位置属性的演示场景.&nbsp; 要不了多久你就会完全理解网格定位了.&nbsp;
+**旋转** - 场景里的每个网格的旋转... 都是通过设置造型的X, Y, 和 Z 轴的自旋量来实现的.&nbsp; 想象一个画面:一个盒子,每个面都有个棒从这个面的边穿进去另一边穿出来.&nbsp; 一个盒子有6个面, 所以需要3个棒, 一个为X轴, 一个为Y轴, 同时一个为Z轴.&nbsp; 旋转是自旋量(包括方向)的累积... 围绕每个这些无形的棒.&nbsp;
+让我们看看娱乐展示厅里的一个我曾经创建保存的场景.&nbsp; 在这个演示里, 我将这些无形的棒可视化了:
 http://babylonjs-playground.azurewebsites.net/#YIT1S
 
-Take some time to carefully watch that scene.&nbsp; Like the last demo scene, the yellow text shows a Vector3 being used to set the .rotation property with some computer-generated values.&nbsp; The box is shown doing positive and negative rotations around each of the 3 axes.&nbsp; Under the yellow text... you again see the green text...&nbsp; showing the 3 'discrete' ways to set the box's .rotation property with values.&nbsp; I bet you understand this completely, don't you?&nbsp; Easy.
-
-**SCALING** - Scaling... is stretching or shrinking... along any of the 3 scene axes.&nbsp; Let's jump right into a saved playground scene that demonstrates scaling:
-
+花些时间仔细观察下这个场景.&nbsp; 更上个演示场景类似, 黄颜色文本显示了一个Vector3量, 它被一些电脑生成的值填充并被用来设置旋转属性(.rotation).&nbsp; 盒子展示着绕3个轴各自独立正转反转的情形.&nbsp; 在黄颜色文本下面... 你再次看到绿颜色文本...&nbsp; 展示着3种 '零散'方式给盒子的旋转属性(.rotation)设置值.&nbsp; 我打赌你已经完全理解了, 难道你们么??&nbsp; 就是如此简单.
+**缩放** - 缩放... 是指拉伸或缩小... 沿着场景轴的三个方向中的任意方向.&nbsp; 我们直接跳转到娱乐展示厅中演示缩放的场景:
 http://babylonjs-playground.azurewebsites.net/#1VMQNH
 
-Again, take some time to watch the scene.&nbsp; And once more, the yellow text shows the one-line Vector3 way of setting a mesh's .scaling, or you can use one or more of the discrete ways of setting scaling... shown in the green text. You may have noticed that scaling values are never negative.&nbsp; It would be illogical to use a negative scaling value, and if you decide to use some negative values, unexpected results may occur.
-
-I would like you to take note... that scaling is **for mesh only**.&nbsp; For example, you can POSITION a mesh, camera, or light.&nbsp; You can often ROTATE a mesh, camera, or light.&nbsp; But SCALING... is for mesh.&nbsp; If you stretch or shrink (scale) a camera or light, you will break its electrical parts.&nbsp; (It's a joke, ok?)&nbsp; &nbsp;There is no reason to set scaling for a camera or light.&nbsp; They are invisible scene items.
-
-## Quick Downloading 'The Big 4' Externals ##
-
-Remember 'The Big Picture' far above?&nbsp; In that section, I introduced you to 'The Big 4' external include files...&nbsp; hand.js, cannon.js, oimo.js, and babylon.js.&nbsp; Many people use GitHub version-management systems to download those files from the Babylon.js GitHub source code repository.&nbsp; Some people make their own 'minified' versions of Babylon.js... using the absolute latest source code files.&nbsp; Others like to be able to grab reasonably fresh versions of The Big 4... in simpler ways.
-
-When you click Get .zip at the Babylon.js playground, you get a zip that contains a file called index.html.&nbsp; If you examine index.html in a text editor, you will see a file that looks very much like The Big Picture far above.&nbsp; Look at the external includes section... the first four HTML SCRIPT elements/tags.&nbsp; The .src attribute within each of those SCRIPT elements... point to URL's located at the Babylon.js web site.
-
-If you want to make your home demo scenes run faster, you can download copies of the external includes... and put them into a folder.&nbsp; That folder should be located WITHIN the folder that holds your index.html.&nbsp; For example, in the same folder as index.html, you could create a folder called 'js' (no quotes).&nbsp; Inside the js folder, you could put home copies of The Big 4 external include files.
-
-Once you have that folder made, you can use the 4 links shown below... to get copies of The Big 4... and put each of them into your js folder.
-
-[**hand.js**](http://www.babylonjs.com/hand.minified-1.2.js)&nbsp; <= right-click... save link/target
-
-[**cannon.js**](http://www.babylonjs.com/cannon.js)&nbsp; <= right-click... save link/target
-
-[**oimo.js**](http://www.babylonjs.com/oimo.js)&nbsp; <= right-click... save link/target
-
-[**babylon.js**](http://www.babylonjs.com/babylon.js)&nbsp; &nbsp;<= right-click... save link/target
-
-Store each of those files into the new js folder.&nbsp; Also, you might want to copy them to some other folder as well, for using later.&nbsp; Try to remember to repeat these actions fairly often, maybe once per month, to ensure that you are always using a reasonably fresh version of The Big 4 files.&nbsp; Babylon.js is always evolving.&nbsp; New features are being added very quickly, and you want your home versions of The Big 4... to be fresh, so you can take advantage of those new features.
-
-Once you have those external includes saved into your new js folder, you need to make some adjustments to the HTML.&nbsp; In your index.html file, you will need to change the .src attributes of all four external includes (the first four SCRIPT elements).&nbsp; Likely, you will want to make your SCRIPT elements look like this:
+再次的,请花些时间观察下该场景.&nbsp; 而且又一次的, 黄颜色的文本显示了通过一行代码里用Vector3量设置网格的缩放(.scaling)属性的方式, 或者你也可以使用一种或多种方式零散设置缩放... 绿色文本显示了那些方法. 你也许注意到了缩放值没有出现过负数.&nbsp; 使用负数值来缩放是非法的, 而且如果你决定使用负数值, 可能会出现未知异常.
+我希望你注意... 缩放是**仅仅网格可以**.&nbsp; 例如, 你可以定位一个网格, 相机, 活着光源.&nbsp; 你可以经常旋转一个网格, 相机, 或者光源.&nbsp; 但是对于缩放... 它是针对网格的.&nbsp; 如果你拉伸或缩小(缩放)一个相机或光源, 你会破坏其电力部分.&nbsp; (开玩笑的,好么?)&nbsp; &nbsp;没有必要缩放相机或光源.&nbsp; 它们是场景中不可见项.
+## 快速下载'四大'外部资源 ##
+还记得上面的'大图片'么?&nbsp; 在那个段中, 我给你介绍了包含的'四大'外部文件资源...&nbsp; hand.js, cannon.js, oimo.js, 和 babylon.js.&nbsp; 许多人通过GitHub版本管理系统从Babylon.js的GitHub源代码仓库下载这些文件.&nbsp; 有些人使用最新的源代码文件创建自己的 '缩小'版Babylon.js&nbsp; 其他人则喜欢通过网络抓取的简单方式获取合适的新版四大文件资源.
+当你在娱乐展示厅里点击获取.zip时, 你得到一个zip压缩文件其中包含个叫做index.html的文件.&nbsp; 如果你在文本编辑器中查看这个index.html文件, 你将看到一个和上面大图里非常像的文件内容.&nbsp; 查看下外部包含的段落... 第一批4个页面SCRIPT元素/标签.&nbsp; 每个标签里的.src属性... 指向里Babylon.js网站的网址.
+如果你想让家里的演示场景运行快些, 你可以下载这些外部文件的拷贝... 然后把它们放入一个文件夹.&nbsp; 该本文件夹必须和你的index.html文件位于同一个文件夹下.&nbsp; 例如, 在index.html的同一文件夹里, 你创建一个叫做'js' (没有引号)的文件夹.&nbsp; 将你下载4大外部资源文件放入该js文件夹.
+一旦你准备好那个文件夹, 你可以使用下面显示的4个链接... 获取4大资源拷贝... 然后将它们各自放入你的文件夹.
+[**hand.js**](http://www.babylonjs.com/hand.minified-1.2.js)&nbsp; <= 右击... 保存链接/目标
+[**cannon.js**](http://www.babylonjs.com/cannon.js)&nbsp; <= 右击... 保存链接/目标
+[**oimo.js**](http://www.babylonjs.com/oimo.js)&nbsp; <= 右击... 保存链接/目标
+[**babylon.js**](http://www.babylonjs.com/babylon.js)&nbsp; &nbsp;<= 右击... 保存链接/目标
+将这些文件保存到新的js文件夹.&nbsp; 此外, 你也许想拷贝它们到其它文件夹, 以便以后使用.&nbsp; 尽量经常重复这些动作, 也许每月一次的好, 以确保你使用的4大文件资源总是最新的版本.&nbsp; Babylon.js一直在持续进化.&nbsp; 新特性的添加非常快, 你想家里的4大资源文件版本保持新的, 以便利用这些新特性, 因此你就要经常重复上面的动作.
+一旦你将那些外部资源保存到你的新js文件夹, 你就需要调整下你的页面HTML内容.&nbsp; 在你的index.html文件里, 你需要改变4个外部包含(那4个SCRIPT元素)的.src属性内容.&nbsp; 可能, 你想让你的SCRIPT元素看起来像这样子:
 ``` html
 &nbsp;&nbsp; &nbsp; <script src="./js/hand.minified-1.2.js"></script>
-&nbsp;&nbsp; &nbsp; <script src="./js/cannon.js"></script>&nbsp; <!-- optional -->
-&nbsp;&nbsp; &nbsp; <script src="./js/oimo.js"></script>&nbsp; <!-- optional -->
+&nbsp;&nbsp; &nbsp; <script src="./js/cannon.js"></script>&nbsp; <!-- 可选项 -->
+&nbsp;&nbsp; &nbsp; <script src="./js/oimo.js"></script>&nbsp; <!-- 可选项 -->
 &nbsp;&nbsp; &nbsp; <script src="./js/babylon.js"></script>
 ```
-If you are not using physics in your scene, you might want to remark-out (disable) the script elements that include-in cannon.js and oimo.js.&nbsp; To do that, you could do this:
+如果你在场景里不使用物理特性, 你可能会标注掉(禁用)包含cannon.js 和 oimo.js脚本的元素 .&nbsp; 为了实现它, 你可以这样做:
 ``` html
 &nbsp;&nbsp; &nbsp; <script src="./js/hand.minified-1.2.js"></script>
 &nbsp;&nbsp; &nbsp; <!-- <script src="./js/cannon.js"></script> -->
 &nbsp;&nbsp; &nbsp; <!-- <script src="./js/oimo.js"></script> -->
 &nbsp;&nbsp; &nbsp; <script src="./js/babylon.js"></script>
 ```
-Easy.&nbsp; Most of these things you already know, don't you?&nbsp; I thought so.
-
-## Hey, you made it! ##
-
-You are finally at the bottom of this tutorial.&nbsp; It was a long, but fun trip, wasn't it?&nbsp; Things will be easy from now on.&nbsp; The next tutorial in the Playpen Series tutorials... is about building a very basic scene.&nbsp; I think it will be quite easy and fast, for you.&nbsp; You have graduated from tutorial #0... this tutorial.&nbsp; You are already a Babylon.js expert.
+简单吧.&nbsp; 大部分内容你都已经知道了, 难道你还没么?&nbsp; 我想你会了.
+## 嘿, 你做到了!##
+你终于到达这个教程的底部了.&nbsp; 它很长, 但是很有趣, 不是么?&nbsp; 从现在开始将很容易的.&nbsp; 下一演练系列的教程里... 是关于常见一个非常基础的场景的.&nbsp; 我想对你而言,它会非常简单而且快; 你已经从本教程#0毕业啦... &nbsp; 你已经是个Babylon.js专家啦.
