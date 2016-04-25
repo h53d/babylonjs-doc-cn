@@ -178,6 +178,16 @@ Simply put, you will need to use a browser that supports WebGL and has Javascrip
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## The Top Menu
+![](http://urbanproductions.com/wingy/babylon/misc/playground_tm01.jpg)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T141659Z" creationid="aceway" creationdate="20160425T141659Z">
+        <seg>## 顶部菜单
+![](http://urbanproductions.com/wingy/babylon/misc/playground_tm01.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Useful Links ##
 | Clickable Link&amp;nbsp; | What you will find |
 | ------------- | ------------- |
@@ -338,6 +348,22 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**Clear** - The Clear button is also easy to understand.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T150002Z" creationid="aceway" creationdate="20160425T150002Z">
+        <seg>**清除** - 清除Clear按钮也很容易理解.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**Get .zip** - The Get .zip button is a handy playground feature.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T145043Z" creationid="aceway" creationdate="20160425T143608Z">
+        <seg>**获取压缩.zip** - 获取.zip按钮娱乐场的一个方便特征.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>**Javascript Objects**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T143641Z" creationid="aceway" creationdate="20160418T143641Z">
@@ -350,6 +376,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T150747Z" creationid="aceway" creationdate="20160418T150747Z">
         <seg>**方法**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**New** - The New button is a unique and handy feature.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T145027Z" creationid="aceway" creationdate="20160425T145027Z">
+        <seg>**新建** - 新建按钮是个独特且方便的特征.</seg>
       </tuv>
     </tu>
     <tu>
@@ -442,10 +476,26 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**Run** - The Run button is easy to understand.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T141747Z" creationid="aceway" creationdate="20160425T141747Z">
+        <seg>**运行** - 运行按钮很容易理解.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>**SCALING** - Scaling... is stretching or shrinking... along any of the 3 scene axes.&amp;nbsp; Let's jump right into a saved playground scene that demonstrates scaling:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160423T074854Z">
         <seg>**缩放** - 缩放... 是指拉伸或缩小... 沿着场景轴的三个方向中的任意方向.&amp;nbsp; 我们直接跳转到娱乐场中演示缩放的场景:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**Save** - The Save button will cause your scene to be permanently stored in the playground's database, and it will issue a unique URL, which we will talk more about, below.&amp;nbsp; Don't worry about accidentally overwriting any of the pre-installed demo scenes in the playground.&amp;nbsp; That is not allowed to happen.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T142332Z" creationid="aceway" creationdate="20160425T142332Z">
+        <seg>**保存** - 保存按钮将使你的场景永久的保存到娱乐场的数据库里, 然后发出一个唯一的网址, 我们下面会更多的谈论它.&amp;nbsp; 别担心意外覆盖任何娱乐场里预装的场景.&amp;nbsp; 那个不会发生的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -770,6 +820,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>After you paste-in code to the editor, or after you make changes to the code in the editor, you press **Run**.&amp;nbsp; This commands the playground to try to render your scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T142010Z" creationid="aceway" creationdate="20160425T142010Z">
+        <seg>在你往编辑器里粘贴代码后, 或在你修改编辑器里的代码后, 按下**运行**.&amp;nbsp; 这个命令使娱乐场渲染你的场景.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Again, take some time to watch the scene.&amp;nbsp; And once more, the yellow text shows the one-line Vector3 way of setting a mesh's .scaling, or you can use one or more of the discrete ways of setting scaling... shown in the green text.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T075443Z" creationid="aceway" creationdate="20160423T075443Z">
@@ -884,6 +942,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T032815Z" creationid="aceway" creationdate="20160423T032815Z">
         <seg>在那下面, 在绿色文本里, 你将看到另3行Babylon.js代码.&amp;nbsp; 你该清楚了, 你不需被迫使用Vector3值来设置网格的位置属性(.position).&amp;nbsp; 相反,你可以用'**零散(discrete)**'的方式.&amp;nbsp; 没有严格的定义, '林散' 意味着... 一块一块的... 一次一小步.&amp;nbsp; 如果你想一个轴一个轴的设置网格的位置属性, 可以自便的按照那个些绿色'零散'的方式去做.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Briefly said, you can enter or modify Javascript-based BabylonJS scene code on the left-side 'editor' portion of the playground, press the Run button, and the playground will attempt to render the webGL scene on the right side, using the latest version of the BabylonJS framework.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T141641Z" creationid="aceway" creationdate="20160425T141641Z">
+        <seg>简单的说, 你可以在BabylonJS游乐场的左边编辑器输入或修改基于Javascript的场景代码, 按下运行按钮, 然后娱乐场将尝试在页面的右边区域里使用最近的BabylonJS框架版本渲染WebGL场景.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1150,6 +1216,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you look carefully at the editor code in the picture above, or if you have selected one of the pre-installed playground scenes from the drop-down scene selector, you will notice that they are 'wrapped' in a function called 'createScene()'.&amp;nbsp; The createScene() function is a very common function used in many BabylonJS scenes.&amp;nbsp; Copying and pasting createScene() functions is done often with users of the BabylonJS framework.&amp;nbsp; By pressing this button, you will empty the contents of the editor, and a basic un-programmed createScene() function will be placed in the editor.&amp;nbsp; A camera is provided by default, but you may want to add some light and mesh, so the new scene becomes renderable.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T145937Z" creationid="aceway" creationdate="20160425T145937Z">
+        <seg>如果你仔细查看过上面图片编辑器里的代码, 或者如果你在娱乐场场景的下拉选择器里选过某个预装的场景, 你应该会注意到'包裹'在一个叫做'createScene()'的函数里的部分.&amp;nbsp; 该createScene()函数是个在许多BabylonJS场景里都会被使用的非常普通的函数.&amp;nbsp; BabylonJS框架用户经常复制和粘贴createScene()的内容.&amp;nbsp; 通过按下这个按钮, 你将清空编辑器里的内容, 然后一个已经编写好基础内容的createScene()函数会出现在编辑器里.&amp;nbsp; 提供一个默认的相机t, 但是你也许想加些光源和网格, 以便新的场景可以被渲染e.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you want more information about easing functions, here are some useful links : 
 - [MSDN Easing functions documentation](http://msdn.microsoft.com/en-us/library/ee308751.aspx)
 - [Easing functions cheat sheet](http://easings.net/fr)</seg>
@@ -1166,6 +1240,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T082056Z" creationid="aceway" creationdate="20160423T082056Z">
         <seg>如果你想让家里的演示场景运行快些, 你可以下载这些外部文件的拷贝... 然后把它们放入一个文件夹.&amp;nbsp; 该本文件夹必须和你的index.html文件位于同一个文件夹下.&amp;nbsp; 例如, 在index.html的同一文件夹里, 你创建一个叫做'js' (没有引号)的文件夹.&amp;nbsp; 将你下载4大外部资源文件放入该js文件夹.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you wish to take your scene home, publish it on a web server, or hand it out to others, THIS is your button.&amp;nbsp; **Get .zip** attempts to install your editor code into a single index.html file, and puts that file into a zip called sample.zip.&amp;nbsp; Then it offers the sample.zip file to you, for downloading.&amp;nbsp; Once downloaded and unzipped, you will see the file named index.html.&amp;nbsp; You can browse this file with a webGL-ready browser, and your scene should render nicely in your browser.&amp;nbsp; After you are sure that your index.html file is working properly, you may want to publish it to a web server and share your beautiful playground scene with the entire world.&amp;nbsp; There is no need to install framework files such as babylon.js and hand.js in nearby directories, because the index.html file references the same on-line versions of the framework... as the playground itself uses.&amp;nbsp; The index.html file is ready-to-run and completely portable.&amp;nbsp; (We love it!)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T144941Z" creationid="aceway" creationdate="20160425T144941Z">
+        <seg>如果你想把你的场景带回家, 或发布到某个网站服务器上, 或者发送给其他人, 这个按钮就是为你提供的.&amp;nbsp; **获取.zip** 尝试将你编辑器里的代码放入一个单一的index.html文件, 然后把之打包进一个叫做sample.zip的压缩文件里.&amp;nbsp; 最后把这个sample.zip文件提供给你下载.&amp;nbsp; 一旦你下载并解压, 你就会看到名为index.html的文件.&amp;nbsp; 你能用一个支持WebGL的浏览器打开该文件, 你会发现场景被浏览器渲染得妥妥的在那.&amp;nbsp; 当妮确定index.html文件工作正常后, 你也许想将之发布到某个网页服务器上, 然后同全世界分享你漂亮的娱乐场场景.&amp;nbsp; 没有必要安装诸如babylon.js和hand.js的框架文件到index.html的附近路径, 因为index.html文件里引用了和在线娱乐场框架使用的一样版本.&amp;nbsp; index.html文件已经可以运行并且完全可移植.&amp;nbsp; (我们爱死它了!)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1362,6 +1444,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T103458Z" creationid="aceway@qq.com" creationdate="20160421T103458Z">
         <seg>对象无处不在, 然而它是我们组织管理存储内容的好助手.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Often, the **Save** button is used so that you may share the scene's URL with others, or to allow you to bookmark the saved URL in your browser, and return to continue your 'play' at another time.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T143514Z" creationid="aceway" creationdate="20160425T143514Z">
+        <seg>通常, **保存**按钮用在你要和其他人分享你的场景网址时, 或者用在你要将场景作为书签保存到浏览器里时, 这样你可以可以回来继续工作.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1614,6 +1704,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The playground's top menu currently contains 8 buttons:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T141727Z" creationid="aceway" creationdate="20160425T141727Z">
+        <seg>娱乐场的顶部菜单当前包含8个按钮:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The second way is for more complex animations, when you change animation code at run time.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T033700Z" creationid="aceway" creationdate="20160330T033700Z">
@@ -1698,6 +1796,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155922Z" creationid="aceway" creationdate="20160402T111742Z">
         <seg>被渲染了的动画将被添加到当前对象状态上. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This button simply empties all the code out of the playground editor.&amp;nbsp; It is often used in preparing for the pasting-in of a createScene() function, or in preparation for some experimenting that you are about to embark-upon.&amp;nbsp; The BabylonJS playground is a fantastic way to create experiments using the BabylonJS framework.&amp;nbsp; It is a wonderful way to learn.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T150008Z" creationid="aceway" creationdate="20160425T150008Z">
+        <seg>This 按钮 simply empties all the 代码 out of the 娱乐场 编辑器.&amp;nbsp; It is often used in preparing for the pasting-in of a createScene() 函数, or in preparation for some experimenting that you are about to embark-upon.&amp;nbsp; The BabylonJS 娱乐场 is a fantastic way to create experiments using the BabylonJS 框架.&amp;nbsp; It is a wonderful way to learn.</seg>
       </tuv>
     </tu>
     <tu>
