@@ -178,6 +178,16 @@ Simply put, you will need to use a browser that supports WebGL and has Javascrip
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## The Editor
+![](http://urbanproductions.com/wingy/babylon/misc/playground_ed02.jpg)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T144913Z" creationid="aceway" creationdate="20160426T144913Z">
+        <seg>## 编辑器
+![](http://urbanproductions.com/wingy/babylon/misc/playground_ed02.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## The Top Menu
 ![](http://urbanproductions.com/wingy/babylon/misc/playground_tm01.jpg)</seg>
       </tuv>
@@ -356,6 +366,22 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**Font size** - The Font size button almost needs no explaining.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T142815Z" creationid="aceway" creationdate="20160426T142815Z">
+        <seg>**字体大小** - 该字体大小按钮几乎不需要解释.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**Fullscreen** - The Fullscreen button also needs very little explaining.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T144600Z" creationid="aceway" creationdate="20160426T144600Z">
+        <seg>**全屏** - 全屏按钮也只需非常少的解释.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>**Get .zip** - The Get .zip button is a handy playground feature.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T145043Z" creationid="aceway" creationdate="20160425T143608Z">
@@ -496,6 +522,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T142332Z" creationid="aceway" creationdate="20160425T142332Z">
         <seg>**保存** - 保存按钮将使你的场景永久的保存到娱乐场的数据库里, 然后发出一个唯一的网址, 我们下面会更多的谈论它.&amp;nbsp; 别担心意外覆盖任何娱乐场里预装的场景.&amp;nbsp; 那个不会发生的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**Scene Selector** - This pull-down selector button (shown as 'Custom' in the picture above)... is used to select any of the pre-installed playground demo scenes.&amp;nbsp; 'Custom' is not the name of any of those demo scenes.&amp;nbsp; The reason that it says 'Custom' is because the scene in the editor at the time that the picture was taken... was a 'custom' scene.&amp;nbsp; It was a modified Basic Scene demo that I created for use in the picture.&amp;nbsp; Often, when you first arrive at the playground site, this button will be labeled 'Basic Scene'.&amp;nbsp; No matter what label is currently on the button, the button is called the **Scene Selector** button.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T144509Z" creationid="aceway" creationdate="20160426T144509Z">
+        <seg>**场景选择器** - 这个下拉选择器按钮 (上图里显示为'定制')...使用来从预装的娱乐场演示场景里自由选择的.&amp;nbsp; '定制'并不是任何一个演示场景的名称.&amp;nbsp; 它被称为'定制'是因为那个图片中编辑器里的场景是一个'定制'的场景.&amp;nbsp; 它是个修改了点基础场景演示(为上图而创建的).&amp;nbsp; 通常, 当你第一次打开娱乐场 站点时, 那个按钮会被标为'基础场景'.&amp;nbsp; 无论那个按钮上标注的是什么, 它都被叫做**场景选择器** 按钮.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1704,6 +1738,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The playground's left-side code editor is a 'smart' editor which is based-upon [the Ace Editor](http://ace.c9.io/).&amp;nbsp; The playground editor has many fantastic features.&amp;nbsp; It uses type-ahead features such as automatically adding matched quotes, parentheses, braces, and brackets... handy things for a programming editor.&amp;nbsp; It tries to spot programming errors, and places little icons along the left side when it sees potential syntax problems.&amp;nbsp; If you place your mouse pointer over these little icons that sometimes appear, the editor will pop-up a small window telling you about what it has seen.&amp;nbsp; The editor also has syntax highlighting, code-folding, text drag-and-drop, automatic indent and outdent, and a 4 million line capacity.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T144931Z" creationid="aceway" creationdate="20160426T144931Z">
+        <seg>ßThe playground's left-side 代码 编辑器 is a 'smart' 编辑器 which is based-upon [the Ace 编辑器](http://ace.c9.io/).&amp;nbsp; The 娱乐场 编辑器 has many fantastic features.&amp;nbsp; It uses type-ahead features such as automatically adding matched quotes, 小括号, braces, and brackets... handy things for a programming 编辑器.&amp;nbsp; It tries to spot programming errors, and places little icons along the left side when it sees potential syntax problems.&amp;nbsp; If you place your mouse pointer over these little icons that sometimes appear, the 编辑器 will pop-up a small 窗口 telling you about what it has seen.&amp;nbsp; The 编辑器 also has syntax highlighting, code-folding, text drag-and-drop, automatic indent and outdent, and a 4 million line capacity.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The playground's top menu currently contains 8 buttons:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T141727Z" creationid="aceway" creationdate="20160425T141727Z">
@@ -1800,10 +1842,26 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This button and resulting pull-down selector allows you to adjust the font size of the code in the playground editor.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T142931Z" creationid="aceway" creationdate="20160426T142931Z">
+        <seg>该按钮按钮和它提供的下拉选择器允许你修改娱乐场编辑器里代码的字体大小.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This button causes the right-side rendering canvas to go into fullscreen mode.&amp;nbsp; Upon entering fullscreen mode, your browser will provide instructions about how to exit fullscreen mode and return to the playground's default split-screen mode.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T144907Z" creationid="aceway" creationdate="20160426T144907Z">
+        <seg>这个按钮会使右边的渲染画布进入全屏模式.&amp;nbsp; 在进入全屏模式时, 你的浏览器会提供指令来退出全屏模式或返回到娱乐场的默认分屏模式.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This button simply empties all the code out of the playground editor.&amp;nbsp; It is often used in preparing for the pasting-in of a createScene() function, or in preparation for some experimenting that you are about to embark-upon.&amp;nbsp; The BabylonJS playground is a fantastic way to create experiments using the BabylonJS framework.&amp;nbsp; It is a wonderful way to learn.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160426T033922Z" creationid="aceway" creationdate="20160425T150008Z">
-        <seg>这个按钮 simply empties all the 代码 out of the 娱乐场 编辑器.&amp;nbsp; It is often used in preparing for the pasting-in of a createScene() 函数, or in preparation for some experimenting that you are about to embark-upon.&amp;nbsp; The BabylonJS 娱乐场 is a fantastic way to create experiments using the BabylonJS 框架.&amp;nbsp; It is a wonderful way to learn.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T142726Z" creationid="aceway" creationdate="20160425T150008Z">
+        <seg>这个按钮简单的清空娱乐场编辑器里的所有代码.&amp;nbsp; 它经常用在意境准备好代码直接往里粘贴createScene()函数代码, 或者用在当你准备做些试验的代码尝试时.&amp;nbsp; BabylonJS娱乐场是使用BabylonJS框架来创建试验代码的非常棒的地方.&amp;nbsp; 它是个美妙的学习方法.</seg>
       </tuv>
     </tu>
     <tu>
