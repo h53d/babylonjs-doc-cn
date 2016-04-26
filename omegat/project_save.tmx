@@ -1802,8 +1802,8 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       <tuv lang="EN-US">
         <seg>This button simply empties all the code out of the playground editor.&amp;nbsp; It is often used in preparing for the pasting-in of a createScene() function, or in preparation for some experimenting that you are about to embark-upon.&amp;nbsp; The BabylonJS playground is a fantastic way to create experiments using the BabylonJS framework.&amp;nbsp; It is a wonderful way to learn.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T150008Z" creationid="aceway" creationdate="20160425T150008Z">
-        <seg>This 按钮 simply empties all the 代码 out of the 娱乐场 编辑器.&amp;nbsp; It is often used in preparing for the pasting-in of a createScene() 函数, or in preparation for some experimenting that you are about to embark-upon.&amp;nbsp; The BabylonJS 娱乐场 is a fantastic way to create experiments using the BabylonJS 框架.&amp;nbsp; It is a wonderful way to learn.</seg>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160426T033922Z" creationid="aceway" creationdate="20160425T150008Z">
+        <seg>这个按钮 simply empties all the 代码 out of the 娱乐场 编辑器.&amp;nbsp; It is often used in preparing for the pasting-in of a createScene() 函数, or in preparation for some experimenting that you are about to embark-upon.&amp;nbsp; The BabylonJS 娱乐场 is a fantastic way to create experiments using the BabylonJS 框架.&amp;nbsp; It is a wonderful way to learn.</seg>
       </tuv>
     </tu>
     <tu>
