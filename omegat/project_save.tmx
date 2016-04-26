@@ -1638,6 +1638,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Telling of the many features of our editor... is beyond the scope of this tutorial.&amp;nbsp; You can learn more about the wonderful Ace Editor... with [a visit to their website](http://ace.c9.io/#nav=about)... and by simply spending some time using the playground editor.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T150549Z" creationid="aceway" creationdate="20160426T150549Z">
+        <seg>Telling of the many features of our 编辑器... is beyond the scope of this 教程.&amp;nbsp; You can learn more about the wonderful Ace 编辑器... with [a visit to their website](http://ace.c9.io/#nav=about)... and by simply spending some time using the 娱乐场 编辑器.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>That is a BIG picture, isn't it?&amp;nbsp; This is a complete Babylon.js scene, using the 'single HTML file' method.&amp;nbsp; This is not the only (or best) method of setting up a scene, but it is fast and easy.&amp;nbsp; I have colored important sections of 'the big picture' and we will now examine each section individually.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T132127Z" creationid="aceway" creationdate="20160403T132119Z">
@@ -1740,8 +1748,8 @@ scene.registerBeforeRender(function () {</seg>
       <tuv lang="EN-US">
         <seg>The playground's left-side code editor is a 'smart' editor which is based-upon [the Ace Editor](http://ace.c9.io/).&amp;nbsp; The playground editor has many fantastic features.&amp;nbsp; It uses type-ahead features such as automatically adding matched quotes, parentheses, braces, and brackets... handy things for a programming editor.&amp;nbsp; It tries to spot programming errors, and places little icons along the left side when it sees potential syntax problems.&amp;nbsp; If you place your mouse pointer over these little icons that sometimes appear, the editor will pop-up a small window telling you about what it has seen.&amp;nbsp; The editor also has syntax highlighting, code-folding, text drag-and-drop, automatic indent and outdent, and a 4 million line capacity.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T144931Z" creationid="aceway" creationdate="20160426T144931Z">
-        <seg>ßThe playground's left-side 代码 编辑器 is a 'smart' 编辑器 which is based-upon [the Ace 编辑器](http://ace.c9.io/).&amp;nbsp; The 娱乐场 编辑器 has many fantastic features.&amp;nbsp; It uses type-ahead features such as automatically adding matched quotes, 小括号, braces, and brackets... handy things for a programming 编辑器.&amp;nbsp; It tries to spot programming errors, and places little icons along the left side when it sees potential syntax problems.&amp;nbsp; If you place your mouse pointer over these little icons that sometimes appear, the 编辑器 will pop-up a small 窗口 telling you about what it has seen.&amp;nbsp; The 编辑器 also has syntax highlighting, code-folding, text drag-and-drop, automatic indent and outdent, and a 4 million line capacity.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T150541Z" creationid="aceway" creationdate="20160426T144931Z">
+        <seg>娱乐场左边的代码编辑器是个基于[Ace 编辑器](http://ace.c9.io/)的一个'智能'编辑器.&amp;nbsp; 娱乐场编辑器有许多奇妙的特征.&amp;nbsp; 它具有输入预判的特征, 比如自动补全匹配的引号, 小括号, 大括号, 和方括号... 这对编程编辑器是非常方便的.&amp;nbsp; 它尝试标出编程错误点, 而且当它发现潜在的语法问题时会编辑器左边防止小图标.&amp;nbsp; 如果你把鼠标指针指向那些小图标时,编辑器会弹出一个小窗口高速你它发现了什么问题.&amp;nbsp; 编辑器也有语法加亮,代码折叠,文笔拖放,自动缩进及扩充, 而且有4百万行的容量.</seg>
       </tuv>
     </tu>
     <tu>
