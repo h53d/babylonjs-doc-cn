@@ -5,95 +5,60 @@ PG_TITLE: 娱乐场教程
 介绍...
 # BabylonJS娱乐场!
 ![](http://urbanproductions.com/wingy/babylon/misc/playground02.jpg)
-A Saved 'Custom' Playground Scene: http://babylonjs-playground.azurewebsites.net/#QKQHS
-
-## What is it?
-
-The BabylonJS Playground is an on-line white-boarding and experimenting application... used to assist in creating scenes for the Javascript-based BabylonJS webGL framework.&nbsp; Your browser must be WebGL-ready and have Javascript active... in order to use the playground.&nbsp; &nbsp;Most modern browsers have these capabilities.
-
-Briefly said, you can enter or modify Javascript-based BabylonJS scene code on the left-side 'editor' portion of the playground, press the Run button, and the playground will attempt to render the webGL scene on the right side, using the latest version of the BabylonJS framework.
-
-## The Top Menu
+一个保存的'定制的' 娱乐场场景: http://babylonjs-playground.azurewebsites.net/#QKQHS
+## 它是什么?
+该BabylonJS 娱乐场是一个在线的白板式可,可试验的应用程序... 用于辅助创建基于Javascript的网页图形库框架BabylonJS的场景.&nbsp; 为了试验该娱乐场你的浏览器必须支持WebGL-而激活Javascript... .&nbsp; &nbsp;大多数的现在浏览器都支持.
+简单的说, 你可以在BabylonJS游乐场的左边编辑器输入或修改基于Javascript的场景代码, 按下运行按钮, 然后娱乐场将尝试在页面的右边区域里使用最近的BabylonJS框架版本渲染WebGL场景.
+## 顶部菜单
 ![](http://urbanproductions.com/wingy/babylon/misc/playground_tm01.jpg)
-
-The playground's top menu currently contains 8 buttons:
-
-**Run** - The Run button is easy to understand. After you paste-in code to the editor, or after you make changes to the code in the editor, you press **Run**.&nbsp; This commands the playground to try to render your scene.
-
-**Save** - The Save button will cause your scene to be permanently stored in the playground's database, and it will issue a unique URL, which we will talk more about, below.&nbsp; Don't worry about accidentally overwriting any of the pre-installed demo scenes in the playground.&nbsp; That is not allowed to happen. Often, the **Save** button is used so that you may share the scene's URL with others, or to allow you to bookmark the saved URL in your browser, and return to continue your 'play' at another time.
-
-**Get .zip** - The Get .zip button is a handy playground feature. If you wish to take your scene home, publish it on a web server, or hand it out to others, THIS is your button.&nbsp; **Get .zip** attempts to install your editor code into a single index.html file, and puts that file into a zip called sample.zip.&nbsp; Then it offers the sample.zip file to you, for downloading.&nbsp; Once downloaded and unzipped, you will see the file named index.html.&nbsp; You can browse this file with a webGL-ready browser, and your scene should render nicely in your browser.&nbsp; After you are sure that your index.html file is working properly, you may want to publish it to a web server and share your beautiful playground scene with the entire world.&nbsp; There is no need to install framework files such as babylon.js and hand.js in nearby directories, because the index.html file references the same on-line versions of the framework... as the playground itself uses.&nbsp; The index.html file is ready-to-run and completely portable.&nbsp; (We love it!)
-
-**New** - The New button is a unique and handy feature. If you look carefully at the editor code in the picture above, or if you have selected one of the pre-installed playground scenes from the drop-down scene selector, you will notice that they are 'wrapped' in a function called 'createScene()'.&nbsp; The createScene() function is a very common function used in many BabylonJS scenes.&nbsp; Copying and pasting createScene() functions is done often with users of the BabylonJS framework.&nbsp; By pressing this button, you will empty the contents of the editor, and a basic un-programmed createScene() function will be placed in the editor.&nbsp; A camera is provided by default, but you may want to add some light and mesh, so the new scene becomes renderable.
-
-**Clear** - The Clear button is also easy to understand. This button simply empties all the code out of the playground editor.&nbsp; It is often used in preparing for the pasting-in of a createScene() function, or in preparation for some experimenting that you are about to embark-upon.&nbsp; The BabylonJS playground is a fantastic way to create experiments using the BabylonJS framework.&nbsp; It is a wonderful way to learn.
-
-**Font size** - The Font size button almost needs no explaining. This button and resulting pull-down selector allows you to adjust the font size of the code in the playground editor.
-
-**Scene Selector** - This pull-down selector button (shown as 'Custom' in the picture above)... is used to select any of the pre-installed playground demo scenes.&nbsp; 'Custom' is not the name of any of those demo scenes.&nbsp; The reason that it says 'Custom' is because the scene in the editor at the time that the picture was taken... was a 'custom' scene.&nbsp; It was a modified Basic Scene demo that I created for use in the picture.&nbsp; Often, when you first arrive at the playground site, this button will be labeled 'Basic Scene'.&nbsp; No matter what label is currently on the button, the button is called the **Scene Selector** button.
-
-**Fullscreen** - The Fullscreen button also needs very little explaining. This button causes the right-side rendering canvas to go into fullscreen mode.&nbsp; Upon entering fullscreen mode, your browser will provide instructions about how to exit fullscreen mode and return to the playground's default split-screen mode.
-
-## The Editor
+娱乐场的顶部菜单当前包含8个按钮:
+**运行** - 运行按钮很容易理解. 在你往编辑器里粘贴代码后, 或在你修改编辑器里的代码后, 按下**运行**.&nbsp; 这个命令使娱乐场渲染你的场景.
+**保存** - 保存按钮将使你的场景永久的保存到娱乐场的数据库里, 然后发出一个唯一的网址, 我们下面会更多的谈论它.&nbsp; 别担心意外覆盖任何娱乐场里预装的场景.&nbsp; 那个不会发生的. 通常, **保存**按钮用在你要和其他人分享你的场景网址时, 或者用在你要将场景作为书签保存到浏览器里时, 这样你可以可以回来继续工作.
+**获取压缩.zip** - 获取.zip按钮娱乐场的一个方便特征. 如果你想把你的场景带回家, 或发布到某个网站服务器上, 或者发送给其他人, 这个按钮就是为你提供的.&nbsp; **获取.zip** 尝试将你编辑器里的代码放入一个单一的index.html文件, 然后把之打包进一个叫做sample.zip的压缩文件里.&nbsp; 最后把这个sample.zip文件提供给你下载.&nbsp; 一旦你下载并解压, 你就会看到名为index.html的文件.&nbsp; 你能用一个支持WebGL的浏览器打开该文件, 你会发现场景被浏览器渲染得妥妥的在那.&nbsp; 当妮确定index.html文件工作正常后, 你也许想将之发布到某个网页服务器上, 然后同全世界分享你漂亮的娱乐场场景.&nbsp; 没有必要安装诸如babylon.js和hand.js的框架文件到index.html的附近路径, 因为index.html文件里引用了和在线娱乐场框架使用的一样版本.&nbsp; index.html文件已经可以运行并且完全可移植.&nbsp; (我们爱死它了!)
+**新建** - 新建按钮是个独特且方便的特征. 如果你仔细查看过上面图片编辑器里的代码, 或者如果你在娱乐场场景的下拉选择器里选过某个预装的场景, 你应该会注意到'包裹'在一个叫做'createScene()'的函数里的部分.&nbsp; 该createScene()函数是个在许多BabylonJS场景里都会被使用的非常普通的函数.&nbsp; BabylonJS框架用户经常复制和粘贴createScene()的内容.&nbsp; 通过按下这个按钮, 你将清空编辑器里的内容, 然后一个已经编写好基础内容的createScene()函数会出现在编辑器里.&nbsp; 提供一个默认的相机t, 但是你也许想加些光源和网格, 以便新的场景可以被渲染e.
+**清除** - 清除Clear按钮也很容易理解. 这个按钮简单的清空娱乐场编辑器里的所有代码.&nbsp; 它经常用在意境准备好代码直接往里粘贴createScene()函数代码, 或者用在当你准备做些试验的代码尝试时.&nbsp; BabylonJS娱乐场是使用BabylonJS框架来创建试验代码的非常棒的地方.&nbsp; 它是个美妙的学习方法.
+**字体大小** - 该字体大小按钮几乎不需要解释. 该按钮按钮和它提供的下拉选择器允许你修改娱乐场编辑器里代码的字体大小.
+**场景选择器** - 这个下拉选择器按钮 (上图里显示为'定制')...使用来从预装的娱乐场演示场景里自由选择的.&nbsp; '定制'并不是任何一个演示场景的名称.&nbsp; 它被称为'定制'是因为那个图片中编辑器里的场景是一个'定制'的场景.&nbsp; 它是个修改了点基础场景演示(为上图而创建的).&nbsp; 通常, 当你第一次打开娱乐场 站点时, 那个按钮会被标为'基础场景'.&nbsp; 无论那个按钮上标注的是什么, 它都被叫做**场景选择器** 按钮.
+**全屏** - 全屏按钮也只需非常少的解释. 这个按钮会使右边的渲染画布进入全屏模式.&nbsp; 在进入全屏模式时, 你的浏览器会提供指令来退出全屏模式或返回到娱乐场的默认分屏模式.
+## 编辑器
 ![](http://urbanproductions.com/wingy/babylon/misc/playground_ed02.jpg)
-
-The playground's left-side code editor is a 'smart' editor which is based-upon [the Ace Editor](http://ace.c9.io/).&nbsp; The playground editor has many fantastic features.&nbsp; It uses type-ahead features such as automatically adding matched quotes, parentheses, braces, and brackets... handy things for a programming editor.&nbsp; It tries to spot programming errors, and places little icons along the left side when it sees potential syntax problems.&nbsp; If you place your mouse pointer over these little icons that sometimes appear, the editor will pop-up a small window telling you about what it has seen.&nbsp; The editor also has syntax highlighting, code-folding, text drag-and-drop, automatic indent and outdent, and a 4 million line capacity. Telling of the many features of our editor... is beyond the scope of this tutorial.&nbsp; You can learn more about the wonderful Ace Editor... with [a visit to their website](http://ace.c9.io/#nav=about)... and by simply spending some time using the playground editor.
-
-**oops** - One of the most important features in any programmer's editor... is UNDO and REDO, and our playground editor fully supports both of these features.&nbsp; I am not familiar with the undo and redo keypresses for all OS systems, but for Windows... undo is Control-z and redo is Shift-Control-z.&nbsp; You can do multiple undo and redo, as well. This is very handy, and again, we love it.
-
-## The Rendering Canvas
+娱乐场左边的代码编辑器是个基于[Ace 编辑器](http://ace.c9.io/)的一个'智能'编辑器.&nbsp; 娱乐场编辑器有许多奇妙的特征.&nbsp; 它具有输入预判的特征, 比如自动补全匹配的引号, 小括号, 大括号, 和方括号... 这对编程编辑器是非常方便的.&nbsp; 它尝试标出编程错误点, 而且当它发现潜在的语法问题时会编辑器左边防止小图标.&nbsp; 如果你把鼠标指针指向那些小图标时,编辑器会弹出一个小窗口高速你它发现了什么问题.&nbsp; 编辑器也有语法加亮,代码折叠,文笔拖放,自动缩进及扩充, 而且有4百万行的容量. 讲述编辑器的大量特征超越了本教程的范围.&nbsp; 通过访问[Ace编辑器的网站](http://ace.c9.io/#nav=about)你能够学习到更多的Ace编辑器知识，而且通过花更多时间在使用娱乐场编辑器上也可以.
+**吐槽** - 任何编辑器的重要特征之一是 撤销和重做, 我们的娱乐场编辑器完全支持这两个特征.&nbsp; 我并不熟悉所有操作系统里的撤销和重做的操作键，, 但知道Windows系统里撤销键是Conntrol-z 而且 重做键是 Shift-Control-z.&nbsp; 你也可以多次地执行撤销和重做。这个非常方便，我们再次爱死它了。
+## 渲染画布
 ![](http://urbanproductions.com/wingy/babylon/misc/playground_rc01.jpg)
-
-What can you say about the BabylonJS webGL rendering canvas, other than "IT IS THE COOLEST THING ON THE PLANET!".&nbsp; This right-side area of the playground is where the BabylonJS webGL framework attempts to render the scene that you currently have in the editor.&nbsp; Is the rendering canvas blank?&nbsp; Did you click the Run button?&nbsp; Have you got a camera?&nbsp; Is the camera aimed correctly?&nbsp; Do you have some lighting or an emissiveColor set on your mesh's material?
-
-If your code is wrapped in a createScene() function, does it include *var scene = new BABYLON.Scene(engine),* near the top of the function?&nbsp; How about a *return scene;* line as the last line inside the function braces?&nbsp; Do you have some mesh like a box, cylinder, ground, sphere, plane, torus, torusknot, etc?
-
-Are you running in free-flying mode and not wrapping your code in a createScene() function?&nbsp; That is certainly allowed, but you still need a camera, a light, and a mesh shape.&nbsp; These are a few things that can prevent your scene from rendering.&nbsp; Study the playground demo scenes listed under the drop-down Scene Selector button, and soon you will be a BabylonJS playground expert.
-
-## Compilation Errors
+对于BabylonJS的网页图形库渲染画布你怎么评价, 没有比这个说法更牛逼的了 "它是这个星球上最酷的事情!".&nbsp; 娱乐场的右边部分是BabylonJS网页图形库框架用来渲染场景的区域，而且你可以通过左边的编辑器实时控制场景.&nbsp; 渲染出来的画布还是空白么?&nbsp; 你点击了运行按钮么?&nbsp; 你有创建相机么?&nbsp; 相机的目标设置正确么?&nbsp; 你网格的材质设置好了光源或散射色么？
+如果你的代码已经包含在createScene()函数里, 那在该函数的顶部有这行代码么*var scene = new BABYLON.Scene(engine),*?&nbsp; 函数尾部的大括号里最后一行是否有*return scene;*呢?&nbsp; 你是否有创建一个网格对象，诸如：一个盒子, 圆柱体, 地面, 球体, 平面, 圆环体, 圆环节等?
+你是在自由模式下运行而且没把你的代码放到createScene() 函数中么?&nbsp; 那样当然也是允许的，只是你仍然需要一个相机，一个光源和一个网格造型。.&nbsp; 缺乏这些会导致你的场景渲染失败.&nbsp; 好好研究下娱乐场的场景选择器里下拉演示场景，你很快会成为一名BabylonJS娱乐场专家的。
+## 编译错误
 ![](http://urbanproductions.com/wingy/babylon/misc/playground_ce01.jpg)
-
-This is a picture of the playground's pop-up compilation error detector panel.&nbsp; A compilation error is an error detected by the BabylonJS framework... after you have clicked the Run button.&nbsp; It is not a syntax error detected by the editor, but the editor might ALSO detect it and possibly mark the problem line with a red X icon along its left side. The compilation error does not always contain pertinent information about the reason for the error, yet it is still handy.&nbsp; It tells you that the BabylonJS framework is not happy with something in your scene code.&nbsp; After making an adjustment to your code, you will want to close the compilation error pop-up (using its X closer) before clicking on Run again.
-
-## Playground URL formats
-When you first arrive at the BabylonJS playground web site, the URL in your browser's address field... will look like this:
-
+这是张弹出编译错误检测面板的娱乐场图片。&nbsp; 编译错误是当你点击运行按钮后BabylonJS框架检测出来的错误&nbsp; 它不是编辑器检测到的语法错误, 但是编辑器也可能检测到它并使用红色X图标在其左侧将问题标示出来。编辑错误里并不总能包含错误的关键点，但它仍然很便捷.&nbsp; 他告知你BabylonJS框架已经对你场景代码有些不爽拉。&nbsp; 你调整代码后, 在点击运行按钮前你也许希望关闭弹出的编译错误提示(通过它边上的X按钮).
+## 娱乐场网址的格式
+当你首次访问BabylonJS娱乐场网站时, 你浏览器地址栏里的网址... 看起来会像这样:
 http://www.babylonjs.com/playground/
 
-If you choose one of the demo scenes from the drop-down Scene Selector button, the playground URL will change to this:
-
+如果你从下拉的场景选择器选一个场景后, 娱乐场的网址会变成这样:
 http://www.babylonjs.com/playground/#
 
-(Feel free to edit the code of the demo scenes and click Run or Save. You can't damage the pre-installed demos)
-
-When you save a scene to the playground's database in order to share the URL with others or remember the scene for later, the URL will look something like this:
-
+(可以自行编辑演示场景的代码然后点击运行或保存. 你不可能毁坏预装的演示程序的)
+当你想同人分享网址或为之后工作记住场景而将一个场景保存到娱乐场的数据库里时，那么网址看起来会像这样的:
 http://www.babylonjs.com/playground/#QKQHS
 
-(Be sure to bookmark it, using your browser's bookmark system)
-
-If you save that scene again... (maybe after doing more work on the scene), the URL will increment, and look like this:
-
+(记得用浏览器的书签保存好)
+如果你再次保存场景... (也许是在对场景上做了更多工作之后), 那个网址将增长, 看着像这样子的:
 http://www.babylonjs.com/playground/#QKQHS#1
 
-If you save that scene again... the URL will increment, and look like this:
-
+如果再次保存... 网址还增长, 看起来像这样:
 http://www.babylonjs.com/playground/#QKQHS#2
 
-(Again, be sure to bookmark this URL so you can easily return to it later)
-
-And lastly, if you want to load a specific pre-installed demo scene, such as the #12 Particles demo, you can use a URL that looks like this:
-
+(再一次提醒, 务必用书签保存这个网址，以便之后你能很容易的回来找它)
+而且最后, 如果你想加载一个特殊的预装的演示场景, 比如第12个演示的, 你可以像这样的访问网址:
 http://www.babylonjs.com/playground/?12
 
 
-### Maintaining Your Focus
-Sometimes you will run a scene and use your cursor keys and mouse in the rendering canvas, and then want to 'focus' back to the editor... to make some more code changes.&nbsp; Sometimes, you will need to mouse-click somewhere in the editor area... to give the editor focus again.&nbsp; Once the editor has focus, your cursor keys will, once again, move the editor's cursor.&nbsp; This happens most often when a Babylon FreeCamera is the active camera.
+### 维持焦点
+有时候你运行一个场景，然后在渲染画布里使用光标键和鼠标, 最后想将焦点返回到编辑器里...以便做更多的代码修改.&nbsp; 有时候, 你要在编辑器里其它区域点击鼠标... 以便重新设定编辑器焦点.&nbsp; 一旦编辑器有了新焦点, 你的编辑器光标键会再次移动.&nbsp; 这个常在场景里有激活的自由相机的情况发生。.
 
-
-### And... That's A Wrap
-Hey, thanks for reading this tutorial and for discovering the BabylonJS playground.&nbsp; We are very proud of it, and we think you will enjoy using it.&nbsp; This tutorial is still quite new, and will likely be changing often.&nbsp; Be sure to check back for updates and future features.
-
-### The BabylonJS Playground is located at... http://www.babylonjs.com/playground/
-
-#### Feel free to discuss the BabylonJS Playground, or any other BabylonJS framework topic... on our forum... located at...&nbsp; http://www.html5gamedevs.com/forum/16-babylonjs/
+### 最后... 那是个包袱
+嘿，谢谢阅读本教程，一并谢谢探究了BabylonJS娱乐场.&nbsp; 我们为之自豪, 也认为你会喜欢它.&nbsp; 这个教程还非常的新，而且将会经常的改变.&nbsp; 记得回来检查更新，学习新特征哦.
+### BabylonJS娱乐场位于... http://www.babylonjs.com/playground/
+#### 请在我们的论坛上自由讨论BabylonJS娱乐场, 或者BabylonJS框架的其它话题... 论坛位于...&nbsp; http://www.html5gamedevs.com/forum/16-babylonjs/
