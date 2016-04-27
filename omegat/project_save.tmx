@@ -2736,7 +2736,7 @@ You will find a complete demonstration of the easing functions behaviors, in the
 | [#ILRIF#0](http://www.babylonjs-playground.com/#ILRIF#0) | Using mesh.lookAt | Stvsynrj |
 | [#EEOWP#7](http://www.babylonjs-playground.com/#EEOWP#7) | Fog of war prototype | Unknown |</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T062015Z" creationid="aceway@qq.com" creationdate="20160427T060402Z">
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T062452Z" creationid="aceway@qq.com" creationdate="20160427T060402Z">
         <seg>| Id | 标题 | 作者 |
 | :------------ |:---------------:| -----:|
 | [#27FN5R#8](http://www.babylonjs-playground.com/#27FN5R#8) | 等矩形映射为反射纹理 | Deltakosh |
@@ -2745,7 +2745,7 @@ You will find a complete demonstration of the easing functions behaviors, in the
 | [#CA4SM#1](http://www.babylonjs-playground.com/#CA4SM#1) | 保存动态纹理到磁盘 | dbawel |
 | [#QM57B](http://www.babylonjs-playground.com/#QM57B) | 高度图上的光线投射 | 未知 |
 | [#7SQDY#1](http://www.babylonjs-playground.com/#7SQDY#1) | 使用BABYLON.Path3D | jerome |
-| [#V1BSD](http://www.babylonjs-playground.com/#V1BSD) | 使用屏幕空间环境光遮蔽(SSAO) 管线 | Luaacro |
+| [#V1BSD](http://www.babylonjs-playground.com/#V1BSD) | 使用屏幕空间环境光遮蔽(SSAO) 管道 | Luaacro |
 | [#ILRIF#0](http://www.babylonjs-playground.com/#ILRIF#0) | 使用mesh.lookAt | Stvsynrj |
 | [#EEOWP#7](http://www.babylonjs-playground.com/#EEOWP#7) | 战争原型里的雾 | 未知 |</seg>
       </tuv>
