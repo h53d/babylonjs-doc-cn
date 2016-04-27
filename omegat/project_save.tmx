@@ -364,6 +364,14 @@ BABYLON.Vector3(xValue, yValue, zValue)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>##Examples</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T060346Z" creationid="aceway@qq.com" creationdate="20160427T060346Z">
+        <seg>##例子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Interesting Playgrounds</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T035629Z" creationid="aceway@qq.com" creationdate="20160427T035629Z">
@@ -2718,16 +2726,44 @@ You will find a complete demonstration of the easing functions behaviors, in the
       <tuv lang="EN-US">
         <seg>| Id | Title | Author|
 | :------------ |:---------------:| -----:|
-| [#2FPT1A#5](http://www.babylonjs-playground.com/#2FPT1A#5) | A lot of triangles with SPS | jerome |
-| [#GK7FK](http://www.babylonjs-playground.com/#GK7FK) | X-ray material with Fresnel | Raanan |
-| [#1WBBW0#1](http://www.babylonjs-playground.com/#1WBBW0#1) | Warp speed !</seg>
+| [#27FN5R#8](http://www.babylonjs-playground.com/#27FN5R#8) | Equirectangular map as reflection texture | Deltakosh |
+| [#RNBKQ#8](http://www.babylonjs-playground.com/#RNBKQ#8) | Glossiness and roughness | Deltakosh |
+| [#23M0G6#1](http://www.babylonjs-playground.com/#23M0G6#1) | Rotating mesh to look at a target | iiceman |
+| [#CA4SM#1](http://www.babylonjs-playground.com/#CA4SM#1) | Saving dynamic texture on disk | dbawel |
+| [#QM57B](http://www.babylonjs-playground.com/#QM57B) | Raycast on heighmap | Unknown |
+| [#7SQDY#1](http://www.babylonjs-playground.com/#7SQDY#1) | Using BABYLON.Path3D | jerome |
+| [#V1BSD](http://www.babylonjs-playground.com/#V1BSD) | Using SSAO Pipeline | Luaacro |
+| [#ILRIF#0](http://www.babylonjs-playground.com/#ILRIF#0) | Using mesh.lookAt | Stvsynrj |
+| [#EEOWP#7](http://www.babylonjs-playground.com/#EEOWP#7) | Fog of war prototype | Unknown |</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T040953Z" creationid="aceway@qq.com" creationdate="20160427T040953Z">
-        <seg>| Id | 标题 | 作者|
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T062015Z" creationid="aceway@qq.com" creationdate="20160427T060402Z">
+        <seg>| Id | 标题 | 作者 |
+| :------------ |:---------------:| -----:|
+| [#27FN5R#8](http://www.babylonjs-playground.com/#27FN5R#8) | 等矩形映射为反射纹理 | Deltakosh |
+| [#RNBKQ#8](http://www.babylonjs-playground.com/#RNBKQ#8) | 光滑度和粗糙度 | Deltakosh |
+| [#23M0G6#1](http://www.babylonjs-playground.com/#23M0G6#1) | 旋转网格至瞄准目标 | iiceman |
+| [#CA4SM#1](http://www.babylonjs-playground.com/#CA4SM#1) | 保存动态纹理到磁盘 | dbawel |
+| [#QM57B](http://www.babylonjs-playground.com/#QM57B) | 高度图上的光线投射 | 未知 |
+| [#7SQDY#1](http://www.babylonjs-playground.com/#7SQDY#1) | 使用BABYLON.Path3D | jerome |
+| [#V1BSD](http://www.babylonjs-playground.com/#V1BSD) | 使用屏幕空间环境光遮蔽(SSAO) 管线 | Luaacro |
+| [#ILRIF#0](http://www.babylonjs-playground.com/#ILRIF#0) | 使用mesh.lookAt | Stvsynrj |
+| [#EEOWP#7](http://www.babylonjs-playground.com/#EEOWP#7) | 战争原型里的雾 | 未知 |</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>| Id | Title | Author|
 | :------------ |:---------------:| -----:|
 | [#2FPT1A#5](http://www.babylonjs-playground.com/#2FPT1A#5) | A lot of triangles with SPS | jerome |
 | [#GK7FK](http://www.babylonjs-playground.com/#GK7FK) | X-ray material with Fresnel | Raanan |
 | [#1WBBW0#1](http://www.babylonjs-playground.com/#1WBBW0#1) | Warp speed !</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T055627Z" creationid="aceway@qq.com" creationdate="20160427T040953Z">
+        <seg>| Id | 标题 | 作者|
+| :------------ |:---------------:| -----:|
+| [#2FPT1A#5](http://www.babylonjs-playground.com/#2FPT1A#5) | 具有固态例子系统(SPS)的大量三角形 | jerome |
+| [#GK7FK](http://www.babylonjs-playground.com/#GK7FK) | 使用菲涅耳(Fresnel)公式的X射线材质 | Raanan |
+| [#1WBBW0#1](http://www.babylonjs-playground.com/#1WBBW0#1) | 曲率 !</seg>
       </tuv>
     </tu>
     <tu>
@@ -2750,14 +2786,14 @@ You will find a complete demonstration of the easing functions behaviors, in the
 | [#2JOSXE#13](http://www.babylonjs-playground.com/#2JOSXE#13) | PBR with music analyzer | Stvsynrj &amp; jerome |
 | [External](http://synergy-development.fr/babylonyzer/) | Music analyzer | Stvsynrj &amp; Kohai |</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T041056Z" creationid="aceway@qq.com" creationdate="20160427T041056Z">
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T060337Z" creationid="aceway@qq.com" creationdate="20160427T041056Z">
         <seg>| 未知 |
 | [#2EP7UB](http://babylonjs-playground.azurewebsites.net/#2EP7UB) | 镜像 | Wingnut |
-| [#VUJG1#1](http://www.babylonjs-playground.com/#VUJG1#1) | Hypnotizing infinite loader | Temechon |
-| [External](http://synergy-development.fr/equalonyzer/) | Equalizer (with audio) | Stvsynrj |
-| [#CXOLW#3](http://www.babylonjs-playground.com/#CXOLW#3) | Glass wubble ball | Stvsynrj |
-| [#2JOSXE#13](http://www.babylonjs-playground.com/#2JOSXE#13) | PBR with music analyzer | Stvsynrj &amp; jerome |
-| [External](http://synergy-development.fr/babylonyzer/) | Music analyzer | Stvsynrj &amp; Kohai |</seg>
+| [#VUJG1#1](http://www.babylonjs-playground.com/#VUJG1#1) | 无限加载式催眠 | Temechon |
+| [External](http://synergy-development.fr/equalonyzer/) | 平衡器(有音频) | Stvsynrj |
+| [#CXOLW#3](http://www.babylonjs-playground.com/#CXOLW#3) | 高斯气泡 | Stvsynrj |
+| [#2JOSXE#13](http://www.babylonjs-playground.com/#2JOSXE#13) | 基于物理过程的渲染(PBR) ，同时有音乐分析器 | Stvsynrj &amp; jerome |
+| [External](http://synergy-development.fr/babylonyzer/) | 音乐分析器 | Stvsynrj &amp; Kohai |</seg>
       </tuv>
     </tu>
     <tu>
