@@ -1,12 +1,9 @@
 ---
 ID_PAGE: 22641
-PG_TITLE: Creating the Mini-fied Version
+PG_TITLE: 创建迷你版
 ---
-To create the minified version of Babylon.js you just have to 
-use [gulp](https://github.com/BabylonJS/Babylon.js/tree/master/Tools/Gulp)
-
-But you may want to work with all basic files. In this case, please download the code and use the following includes (be aware to have the babylon folder at the root of your site. If you want to use your own shaders in this case, you just have to reference them with a "./" at beginning):
-
+创建一个迷你版的Babylon.js你必须使用[gulp](https://github.com/BabylonJS/Babylon.js/tree/master/Tools/Gulp)
+但是你也许希望使用所有的基本(一个个独立的)文件来工作. 这种情况下, 请下载源码然后使用下面的包含方式 (注意要在你的站点根目录下有个babylon文件夹. 如果你想要在这种情况下使用自己的渲染器，你需要通过以一个"./"起头的方式引用它们):
 ```
     <script src="src/Math/babylon.math.js"></script>
     <script src="src/Math/babylon.math.simd.js"></script>
@@ -179,7 +176,6 @@ But you may want to work with all basic files. In this case, please download the
     <script src="src/materials/textures/babylon.hdrCubeTexture.js"></script>
 ```
 
-When working with all files, you can provide the following information to the engine:
-
-* BABYLON.Engine.CodeRepository: By default, this value points to "/src/"
-* BABYLON.Engine.ShadersRepository: By default, this value points to "/src/Shaders/"
+当所有这些文件都正常工作时，你可以将下面的信息提供给引擎:
+* BABYLON.Engine.CodeRepository: 默认情况下，这个值指向 "/src/"
+* BABYLON.Engine.ShadersRepository: 默认情况下，这个值指向 "/src/Shaders/"

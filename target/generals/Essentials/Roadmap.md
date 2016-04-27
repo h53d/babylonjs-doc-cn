@@ -1,17 +1,14 @@
 ---
 ID_PAGE: 22681
-PG_TITLE: Roadmap
+PG_TITLE: 路线图
 ---
-## Roadmap
-
-Here are the next updates we will *probably* add to babylon.js:
-
+## 路线图
+这是下次更新我们 *可能* 添加到babylon.js里的内容:
 **vNext++:**
 
- * Reflection probe
- * Global illumination light
- * Generate incremental format from 3dsmax
- * Morph targets
- * Sprites collisions
- * Continuous update of octrees using webworkers
-
+ * 反射式探头
+ * 球形照明光光源
+ * 3dsmax中生成增量格式
+ * 变形目标
+ * 精灵碰撞
+ * 使用webworkers的八叉树连续更新

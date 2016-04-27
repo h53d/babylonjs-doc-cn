@@ -1,58 +1,53 @@
 ---
 ID_PAGE: 22661
-PG_TITLE: File Format Map (.babylon)
+PG_TITLE: 文件格式(.babylon)
 ---
-**Babylon.js** uses a JSON file format for describing scenes.
-
-You can find the complete loader code here:
+**Babylon.js** 使用JSON文件格式来描述场景.
+你可以在这儿找到完整的加载器代码:
 https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/babylon.babylonFileLoader.js
-
-## Basic types
-.babylon files uses the following convention for basic types:
-
-* **Vector3**: An array of 3 floats ([x, y, z]). Example: [1.1, 2.2, 3.3]
-* **Vector4**: An array of 4 floats ([x, y, z, w]). Example: [1.1, 2.2, 3.3, 4.4]
-* **Color3**: An array of 3 floats between 0 and 1 ([r, g, b]). Example: [0.2, 0.3, 0.5]
-* **Matrix**: An array of 16 floats exposed with row first convention
-* **Boolean**: true or false
-
-## Global structure
-The global structure of a .babylon file is the following:
-
+## 基础类型
+.babylon 文件使用下面的约定来定义基础类型:
+* **Vector3**: 一个含有3个浮点数([x, y, z])的数组. 例子: [1.1, 2.2, 3.3]
+* **Vector4**: 一个含有4个浮点数([x, y, z, w])的数组. 例子: [1.1, 2.2, 3.3, 4.4]
+* **Color3**: 一个含有3个浮点数且大小在0和1间的 ([r, g, b])数组. 例子: [0.2, 0.3, 0.5]
+* **Matrix**: 行优先(先按行存储)的含有16个浮点数的数组
+* **Boolean**: 真或假
+## 全局结构体
+.babylon文件里的全局结构体是下面这样的:
 ```javascript
 {
     "autoClear": boolean,
     "clearColor": color3,
     "ambientColor": color3,
-    "gravity": vector3 (usually [0,-9,0]),
-    "cameras": array of Cameras (see below),
+    "gravity": vector3 (通常是[0,-9,0]),
+    "cameras": 相机数组 (见下面),
     "activeCamera_": string,
-    "lights": array of Lights (see below),
-    "materials": array of Materials (see below),
-    "geometries": {...} (see below),
-    "meshes": array of Meshes (see below),
-    "multiMaterials": array of MultiMaterials (see below),
-    "shadowGenerators": array of ShadowGenerators (see below),
-    "skeletons": array of Skeletons (see below),
-    "particleSystems": array of ParticleSystems (see below),
-    "lensFlareSystems": array of LensFlareSystems (see below),
-    "actions": array of actions (see below),
-    "sounds": array of Sounds (see below),
+    "lights": array of Lights (见下面),
+    "materials": 材质数组 (见下面),
+    "geometries": {...} (见下面),
+    "meshes": 网格数组 (见下面),
+    "multiMaterials": 多材质数组(见下面),
+    "shadowGenerators":  ShadowGenerators数组 (见下面),
+    "skeletons": Skeletons数组 (见下面),
+    "particleSystems": ParticleSystems数组 (见下面),
+    "lensFlareSystems": LensFlareSystems数组 (见下面),
+    "actions": actions数组 (见下面),
+    "sounds": Sounds数组 (见下面),
     "workerCollisions": boolean,
     "collisionsEnabled": boolean,
     "physicsEnabled": boolean,
-    "physicsGravity": vector3 (defaults to [0,-9.81,0]),
-    "physicsEngine": string ("oimo" or "cannon", defaults to the default engine (oimo),
-    "animations": array of Animations (see below, can be omitted),
+    "physicsGravity": vector3 (默认是[0,-9.81,0]),
+    "physicsEngine": string ("oimo" 或 "cannon", 引擎默认为(oimo),
+    "animations": Animations数组 (见下面，可以省略),
     "autoAnimate": boolean,
     "autoAnimateFrom": int,
     "autoAnimateTo": int,
-    "autoAnimateLoop": boolean (can be omitted),
+    "autoAnimateLoop": boolean (可以省略),
     "autoAnimateSpeed": number (can be omitted)
 }
 ```
-## Cameras
-A camera is defined by the following JSON:
+## 相机
+一个相机通过如下JSON格式定义:
 ```javascript
 {
     "name": string,
@@ -63,69 +58,67 @@ A camera is defined by the following JSON:
     "lockedTargetId": string,
     "position": vector3,
     "target": vector3,
-    "alpha": float, // only for ArcRotateCamera and AnaglyphArcRotateCamera
-    "beta": float, // only for ArcRotateCamera and AnaglyphArcRotateCamera
-    "radius": float, // only for ArcRotateCamera, FollowCamera and AnaglyphArcRotateCamera
-    "eye_space": float, // only for AnaglyphFreeCamera and AnaglyphArcRotateCamera
-    "heightOffset": float, // only for FollowCamera
-    "rotationOffset": float, // only for FollowCamera
-    "cameraRigMode": int (can be omitted),
-    "fov": float (in radians),
+    "alpha": float, // 仅仅支持ArcRotateCamera 和 AnaglyphArcRotateCamera
+    "beta": float, // 仅仅支持 ArcRotateCamera 和 AnaglyphArcRotateCamera
+    "radius": float, // 仅仅支持 ArcRotateCamera, FollowCamera 和 AnaglyphArcRotateCamera
+    "eye_space": float, // 仅仅支持 AnaglyphFreeCamera 和 AnaglyphArcRotateCamera
+    "heightOffset": float, // 仅仅支持 FollowCamera
+    "rotationOffset": float, // 仅仅支持 FollowCamera
+    "cameraRigMode": int (可以忽略),
+    "fov": float (弧度单位),
     "minZ": float,
     "maxZ": float,
     "speed": float,
-    "inertia": float (between 0 and 1),
+    "inertia": float (在0和1间),
     "checkCollisions": boolean,
     "applyGravity": boolean,
     "ellipsoid": vector3,
-    "animations": array of Animations (see below, can be omitted),
+    "animations": Animations数组 (见下面，可以忽略),
     "autoAnimate": boolean,
     "autoAnimateFrom": int,
     "autoAnimateTo": int,
-    "autoAnimateLoop": boolean (can be omitted),
-    "autoAnimateSpeed": number (can be omitted),
-    "inputmgr" : map of camera inputs (can be omitted, see below)
+    "autoAnimateLoop": boolean (可以忽略),
+    "autoAnimateSpeed": number (可以忽略),
+    "inputmgr" : map of camera inputs (可以忽略, 见下面)
 }
 ```
-## Map of camera inputs
-This is an object literal using the input type as a key, and the input settings as a child object. Each input type has its own properties.
-
-## Lights
-A light is defined by the following JSON:
+## 相机输入的映射
+这是个用输入类型的字面量做键对象，同时使用输入设定作为自对象的映射. 每个输入类型都有其属性.
+## 光源
+一个光源通过如下的JSON格式定义:
 ```javascript
 {
     "name": string,
     "id": string,
     "tags": string,
-    "type": int (0 for point light, 1 for directional, 2 for spot and 3 for hemispheric),
+    "type": int (0表示点光，1表示方向光, 2表示聚光，3表示球面光),
     "position": vector3,
     "direction": vector3,
-    "angle": float (for spot lights),
-    "exponent": float (for spot lights),
-    "groundColor": color3 (for hemispheric lights),
+    "angle": float (用于点光源),
+    "exponent": float (用于点光源),
+    "groundColor": color3 (用于球面光光源),
     "intensity": float,
     "range": float,
     "diffuse": color3,
     "specular": color3,
     "excludedMeshesIds": array of string,
     "includedOnlyMeshesIds": array of string,
-    "animations": array of Animations (see below, can be omitted),
+    "animations": array of Animations (见下面，可以忽略),
     "autoAnimate": boolean,
     "autoAnimateFrom": int,
     "autoAnimateTo": int,
-    "autoAnimateLoop": boolean (can be omitted),
-    "autoAnimateSpeed": number (can be omitted)
+    "autoAnimateLoop": boolean (可以忽略),
+    "autoAnimateSpeed": number (可以忽略)
 }
 ```
-
-## Materials
-A material is defined by the following JSON:
+## 材质
+一个材质通过如下JSON格式定义:
 ```javascript
 {
     "name": string,
     "id": string,
     "tags": string,
-    "disableDepthWrite": boolean (can be omitted),
+    "disableDepthWrite": boolean (可以忽略),
     "ambient": color3,
     "diffuse": color3,
     "specular": color3,
@@ -134,30 +127,29 @@ A material is defined by the following JSON:
     "alpha": float,
     "backFaceCulling": boolean,
     "wireframe": boolean,
-    "diffuseTexture": Texture (see below),
-    "ambientTexture": Texture (see below),
-    "opacityTexture": Texture (see below),
-    "reflectionTexture": Texture (see below),
-    "refractionTexture": Texture (see below),
+    "diffuseTexture": Texture (见下面),
+    "ambientTexture": Texture (见下面),
+    "opacityTexture": Texture (见下面,
+    "reflectionTexture": Texture (见下面),
+    "refractionTexture": Texture (见下面),
     "indexOfRefraction": float,
-    "emissiveTexture": Texture (see below),
-    "specularTexture": Texture (see below),
-    "bumpTexture": Texture (see below),
-    "lightmapTexture": Texture (see below),
+    "emissiveTexture": Texture (见下面),
+    "specularTexture": Texture (见下面),
+    "bumpTexture": Texture (见下面),
+    "lightmapTexture": Texture (见下面),
     "useLightmapAsShadowmap": boolean, 
     "checkReadyOnlyOnce": boolean
-    "useReflectionFresnelFromSpecular": boolean (can be omitted),
-    "useEmissiveAsIllumination": boolean (can be omitted),
-    "diffuseFresnelParameters": Fresnel parameters (see below),
-    "opacityFresnelParameters": Fresnel parameters (see below),
-    "reflectionFresnelParameters": Fresnel parameters (see below),
-    "refractionFresnelParameters": Fresnel parameters (see below),
-    "emissiveFresnelParameters": Fresnel parameters (see below)
+    "useReflectionFresnelFromSpecular": boolean (可以忽略),
+    "useEmissiveAsIllumination": boolean (可以忽略),
+    "diffuseFresnelParameters": 菲涅耳参数 (见下面),
+    "opacityFresnelParameters": 菲涅耳参数 (见下面),
+    "reflectionFresnelParameters": 菲涅耳参数 (见下面),
+    "refractionFresnelParameters": 菲涅耳参数 (见下面),
+    "emissiveFresnelParameters": 菲涅耳参数 (见下面)
 }
 ```
-
-## Fresnel parameters
-Fresnel parameters are defined by the following JSON:
+## 菲涅耳参数
+菲涅耳参数通过如下的JSON格式定义:
 ```javascript
 {
     "isEnabled": boolean,
@@ -167,16 +159,15 @@ Fresnel parameters are defined by the following JSON:
     "power": float
 }
 ```
-
-## Textures
-A texture is defined by the following JSON:
+## 纹理
+纹理通过如下的JSON个格式定义:
 ```javascript
 {
-    "name": string (filename),
-    "level": float (between 0 and 1),
+    "name": string (文件名),
+    "level": float (在0和1间),
     "hasAlpha": boolean,
     "getAlphaFromRGB": boolean,
-    "coordinatesMode": int (0 = explicit, 1 spherical, 2 = planar, 3 = cubic, 4 = projection, 5 = skybox),
+    "coordinatesMode": int (0 = 显式, 1 = 球, 2 = 平面, 3 = 立方, 4 = 投影, 5 = 天空盒),
     "uOffset": float,
     "vOffset": float,
     "uScale": float,
@@ -187,39 +178,36 @@ A texture is defined by the following JSON:
     "wrapU": boolean,
     "wrapV": boolean,
     "coordinatesIndex": int,
-    "animations": array of Animations (see below, can be omitted),
-    "base64String": string (can be omitted)
+    "animations": array of Animations (见下面，可以忽略),
+    "base64String": string (可以忽略)
 }
 ```
-
-## MultiMaterials
-A multiMaterial is defined by the following JSON:
+## 多纹理
+多纹理通过如下JSON格式定义:
 ```javascript
 {
     "name": string,
     "id": string,
     "tags": string,
-    "materials": array of string (which are the ids of sub-materials)
+    "materials": string数组 (都是子纹理的ID)
 }
 ```
-
-## Geometries
-The structure of "geometries" is the following:
+## 几何体
+几何体的结构如下:
 ```javascript
 {
-    "boxes": array of Boxes (see below),
-    "spheres": array of Spheres (see below),
-    "cylinders": array of Cylinders (see below),
-    "toruses": array of Toruses (see below),
-    "grounds": array of Grounds (see below),
-    "planes": array of Planes (see below),
-    "torusKnots": array of TorusKnots (see below),
-    "vertexData": array of VertexData (see below)
+    "boxes": array of Boxes (见下面),
+    "spheres": array of Spheres (见下面),
+    "cylinders": array of Cylinders (见下面),
+    "toruses": array of Toruses (见下面),
+    "grounds": array of Grounds (见下面),
+    "planes": array of Planes (见下面),
+    "torusKnots": array of TorusKnots (见下面),
+    "vertexData": array of VertexData (见下面)
 }
 ```
-
-## Boxes
-A box is defined by the following JSON:
+## 盒子
+盒子通过如下的JSON格式定义:
 ```javascript
 {
     "id": string,
@@ -228,9 +216,8 @@ A box is defined by the following JSON:
     "tags": string
 }
 ```
-
-## Spheres
-A sphere is defined by the following JSON:
+## 球体
+球体通过如下的JSON格式定义:
 ```javascript
 {
     "id": string,
@@ -240,9 +227,8 @@ A sphere is defined by the following JSON:
     "tags": string
 }
 ```
-
-## Cylinders
-A cylinder is defined by the following JSON:
+## 圆柱体
+圆柱体通过如下的JSON格式定义:
 ```javascript
 {
     "id": string,
@@ -255,9 +241,8 @@ A cylinder is defined by the following JSON:
     "tags": string
 }
 ```
-
-## Toruses
-A torus is defined by the following JSON:
+## 环型体
+环型体通过如下的JSON定义:
 ```javascript
 {
     "id": string,
@@ -268,9 +253,8 @@ A torus is defined by the following JSON:
     "tags": string
 }
 ```
-
-## Grounds
-A ground is defined by the following JSON:
+## 地面
+地面通过如下的JSON格式定义:
 ```javascript
 {
     "id": string,
@@ -281,9 +265,8 @@ A ground is defined by the following JSON:
     "tags": string
 }
 ```
-
-## Planes
-A plane is defined by the following JSON:
+##平面
+平面通过如下的JSON格式定义:
 ```javascript
 {
     "id": string,
@@ -292,9 +275,8 @@ A plane is defined by the following JSON:
     "tags": string
 }
 ```
-
-## TorusKnots
-A torusKnot is defined by the following JSON:
+## 环形节
+环形节通过如下的JSON格式定义:
 ```javascript
 {
     "id": string,
@@ -308,44 +290,41 @@ A torusKnot is defined by the following JSON:
     "tags": string
 }
 ```
-
-## VertexData
-A vertexData is defined by the following JSON:
+## 顶点数据
+顶点数据通过如下的JSON格式定义:
 ```javascript
 {
     "id": string,
     "updatable": bool,
-    "positions": array of floats (3 per vertex),
-    "normals": array of floats (3 per vertex),
-    "uvs": array of floats (2 per vertex),
-    "uv2s": array of floats (2 per vertex) which is the 2nd texture coordinates (can be omitted),
-    "uv3s": array of floats (2 per vertex) which is the 3nd texture coordinates (can be omitted),
-    "uv4s": array of floats (2 per vertex) which is the 4nd texture coordinates (can be omitted),
-    "uv5s": array of floats (2 per vertex) which is the 5nd texture coordinates (can be omitted),
-    "uv6s": array of floats (2 per vertex) which is the 6nd texture coordinates (can be omitted),
-    "colors": array of floats (3 per vertex) which is the per vertex color (can be omitted),
-    "matricesIndices": array of ints (4 per vertex) which is the matrices indices for bones (can be omitted),
-    "matricesWeights": array of floats (4 per vertex) which is the matrices weights for bones (can be omitted),
-    "indices": array of ints (3 per face),
+    "positions": array of floats (每顶点3个数值),
+    "normals": array of floats (每顶点3个数值),
+    "uvs": array of floats (每顶点2个数值),
+    "uv2s": array of floats (每顶点2个数值) 第2个纹理坐标 (可以忽略),
+    "uv3s": array of floats (每顶点2个数值) 第3个纹理坐标 (可以忽略),
+    "uv4s": array of floats (每顶点2个数值) 第4个纹理坐标 (可以忽略),
+    "uv5s": array of floats (每顶点2个数值) 第5个纹理坐标 (可以忽略),
+    "uv6s": array of floats (每顶点2个数值) 第6个纹理坐标 (可以忽略),
+    "colors": array of floats (每顶点3个数值)每个顶点的颜色 (可以忽略),
+    "matricesIndices": array of ints (每顶点4个数值) 骨骼数据在矩阵数组里的索引 (可以忽略),
+    "matricesWeights": array of floats (每顶点4个数值) 骨骼数据在矩阵数组里的权重  (可以忽略),
+    "indices": array of ints (每面点3个数值),
     "tags": string
 }
 ```
-
-## Instances
-A instance is defined by the following JSON:
+## 实例
+实例过如下的JSON格式定义:
 ```javascript
 {
     "name": string,
     "tags": string,
     "position": vector3,
-    "rotation": vector3 (can be omitted),
-    "rotationQuaternion": vector4 (can be omitted),
+    "rotation": vector3 (可以忽略),
+    "rotationQuaternion": vector4 (可以忽略),
     "scaling": vector3
 }
 ```
-
-## Meshes
-A mesh is defined by the following JSON:
+## 网格
+网格过如下的JSON格式定义:
 ```javascript
 {
     "name": string,
@@ -353,13 +332,13 @@ A mesh is defined by the following JSON:
     "tags": string,
     "parentId": string,
     "materialId": string,
-    "geometryId": string (can be omitted),
+    "geometryId": string (可以忽略),
     "position": vector3,
-    "rotation": vector3 (can be omitted),
-    "rotationQuaternion": vector4 (can be omitted),
+    "rotation": vector3 (可以忽略),
+    "rotationQuaternion": vector4 (可以忽略),
     "scaling": vector3,
     "pivotMatrix": matrix,
-    "freezeWorldMatrix": boolean (can be omitted),
+    "freezeWorldMatrix": boolean (可以忽略),
     "infiniteDistance": boolean,
     "showBoundingBox": boolean,
     "showSubMeshesBoundingBox": boolean,
@@ -375,35 +354,33 @@ A mesh is defined by the following JSON:
     "physicsMass": float,
     "physicsFriction": float,
     "physicsRestitution": float,
-    "positions": array of floats (3 per vertex),
-    "normals": array of floats (3 per vertex),
-    "uvs": array of floats (2 per vertex),
-    "uvs2": array of floats (2 per vertex) which is the 2nd texture coordinates (can be omitted),
-    "uv3s": array of floats (2 per vertex) which is the 3nd texture coordinates (can be omitted),
-    "uv4s": array of floats (2 per vertex) which is the 4nd texture coordinates (can be omitted),
-    "uv5s": array of floats (2 per vertex) which is the 5nd texture coordinates (can be omitted),
-    "uv6s": array of floats (2 per vertex) which is the 6nd texture coordinates (can be omitted),
-    "colors": array of floats (4 per vertex) which is the per vertex color (can be omitted),
-    "hasVertexAlpha": boolean to indicate if colors field contains useful alpha value (can be omitted),
-    "matricesIndices": array of ints (4 per vertex) which is the matrices indices for bones (can be omitted),
-    "matricesWeights": array of floats (4 per vertex) which is the matrices weights for bones (can be omitted),
-    "indices": array of ints (3 per face),
-    "subMeshes": array of SubMeshes (see below),
-    "animations": array of Animations (see below, can be omitted),
+    "positions": array of floats (每顶点3个数值),
+    "normals": array of floats (每顶点3个数值),
+    "uvs": array of floats (每顶点2个数值),
+    "uvs2": array of floats (每顶点2个数值)  第2个纹理坐标(可以忽略),
+    "uv3s": array of floats (每顶点2个数值)  第3个纹理坐标 (可以忽略),
+    "uv4s": array of floats (每顶点2个数值)  第5个纹理坐标 (可以忽略),
+    "uv5s": array of floats (每顶点2个数值)  第6个纹理坐标 (可以忽略),
+    "uv6s": array of floats (每顶点2个数值)  第7个纹理坐标 (可以忽略),
+    "colors": array of floats (每顶点4个数值) 每个顶点的颜色 (可以忽略),
+    "hasVertexAlpha": 指明颜色是否包含透明信息的值(可以忽略),
+    "matricesIndices": array of ints (每顶点4个数值)  骨骼数据在矩阵数组里的索引  (可以忽略),
+    "matricesWeights": array of floats (每顶点4个数值)  骨骼数据在矩阵数组里的权重 (可以忽略),
+    "indices": array of ints (每面3个数值,
+    "subMeshes": array of SubMeshes (见下面),
+    "animations": array of Animations (见下面, 可以忽略),
     "autoAnimate": boolean,
     "autoAnimateFrom": int,
     "autoAnimateTo": int,
     "autoAnimateLoop": boolean,
-    "autoAnimateSpeed": number (can be omitted)
-    "instances": array of Instances (see below, can be omitted),
-    "actions": array of actions (see below)
+    "autoAnimateSpeed": number (可以忽略)
+    "instances": array of Instances (见下面, 可以忽略),
+    "actions": array of actions (见下面)
 }
 ```
-
-Please note that a parent mesh must be described before their children nodes
-
-## SubMeshes
-A subMesh is defined by the following JSON:
+请注意，父网格的描述必须在其子节点出现之前。
+## 子网格
+子网格过如下的JSON格式定义:
 ```javascript
 {
     "materialIndex": int,
@@ -413,72 +390,66 @@ A subMesh is defined by the following JSON:
     "indexCount": int
 }
 ```
-
-## Animations
-An animation can be defined by the following JSON:
+## 动画
+动画过如下的JSON格式定义:
 ```javascript
 {
-    "dataType": int (0 = float, 1 = vector3, 2 = quaternion, 3 = matrix),
+    "dataType": int (0 = 浮点, 1 = 3元量, 2 = 4元量, 3 = 矩阵),
     "framePerSecond": int,
-    "loopBehavior": int (0 = relative, 1 = cycle, 2 = constant),
+    "loopBehavior": int (0 = 相对, 1 = 周期, 2 = 常量),
     "name": string,
     "property": string,
-    "keys": array of AnimationKeys (see below),
+    "keys": array of AnimationKeys (见下面),
     "autoAnimate": boolean,
     "autoAnimateFrom": int,
     "autoAnimateTo": int,
     "autoAnimateLoop": boolean
 }
 ```
-
-## AnimationKeys
-An animationKey is defined by the following JSON:
+## 动画关键帧
+动画关键帧通过如下的JSON格式定义:
 ```javascript
 {
     "frame": int,
-    "values": array of float (depending of animated value)
+    "values": array of float (取决于播放的值)
 }
 ```
-
-## ShadowGenerators
-A shadowGenerator is defined by the following JSON:
+## 阴影生成器
+阴影生成器通过如下的JSON格式定义:
 ```javascript
 {
     "useBlurVarianceShadowMap": boolean,
     "useVarianceShadowMap": boolean,
     "usePoissonSampling": boolean,
-    "mapSize": int (between 64 and 2048, must be a power of 2),
+    "mapSize": int (在64和2048之间, 必须是2的幂),
     "bias": float,
     "forceBackFacesOnly": float,
     "lightId": string,
-    "renderList": array of string (which are IDs of meshes)
+    "renderList": array of string (网格的ID)
 }
 ```
-
-## Skeletons
-A skeleton is defined by the following JSON:
+## 骨架
+骨架通过如下的JSON格式定义:
 ```javascript
 {
     "name": string,
     "id": string,
-    "bones": array of Bones (see below)
+    "bones": array of Bones (见下面)
     "needInitialSkinMatrix": boolean
 }
 ```
-
-## Bones
-A bone is defined by the following JSON:
+## 骨骼
+骨骼通过如下的JSON格式定义:
 ```javascript
 {
     "parentBoneIndex": int,
     "name": string,
     "matrix": matrix,
-    "animations": array of Animations (must be of matrix type)
+    "animations": array of Animations (必须是个矩阵类型)
 }
 ```
-
-## ParticleSystems
-A particle system is defined by the following JSON:
+## 粒子系统
+粒子系统通过如下的JSON格式定义:
 ```javascript
 {
      "emitterId": string,
@@ -507,27 +478,25 @@ A particle system is defined by the following JSON:
      "capacity": int,
      "textureMask": color4,
      "linkToEmitter": bool,
-    "animations": array of Animations (see below, can be omitted),
+    "animations": Animations数组 (见下面，可以省略),
     "autoAnimate": boolean,
     "autoAnimateFrom": int,
     "autoAnimateTo": int,
-    "autoAnimateLoop": boolean (can be omitted),
-    "autoAnimateSpeed": number (can be omitted)
+    "autoAnimateLoop": boolean (可以省略),
+    "autoAnimateSpeed": number (可以忽略)
 }
 ```
-
-## LensFlareSystems
-A lens flare system is defined by the following JSON:
+## 镜头光晕系统
+镜头光晕系统通过如下的JSON格式定义:
 ```javascript
 {
      "emitterId": string,
      "borderLimit": int,
-     "flares": array of LensFlares (see below)
+     "flares": array of LensFlares (见下面)
 }
 ```
-
-## LensFlares
-A lens flare is defined by the following JSON:
+## 镜头光晕
+镜头光晕通过如下的JSON格式定义:
 ```javascript
 {
      "position": float,
@@ -536,56 +505,52 @@ A lens flare is defined by the following JSON:
      "textureName": string
 }
 ```
-
-## Sounds
-A sound is defined by the following JSON:
+## 音效
+音效通过如下的JSON格式定义:
 ```javascript
 {
-     "name": string, (name of the file to load)
-     "volume": float, (if omitted will be 1)
-     "autoplay": bool, (can be omitted)
-     "loop": bool, (can be omitted)
-     "soundTrackId": int, (can be omitted)
-     "spatialSound": bool, (to enable 3D sound, can be omitted)
-     "position": vector3, (if omitted will be 0,0,0)
-     "refDistance": float, (can be omitted, default to 1)
-     "rolloffFactor": float, (can be omitted, default to 1)
-     "maxDistance": float, (can be omitted, default to 100)
-     "distanceModel": string, (can be omitted, default to linear, other values: inverse or exponential)
-     "panningModel": string, (can be omitted, default to HRTF, other value: equalpower)
-     "isDirectional": bool, (to enable directional cone)
-     "coneInnerAngle": float, (can be omitted but set it for directional sound)
-     "coneOuterAngle": float, (can be omitted but set it for directional sound)
-     "coneOuterGain": float, (can be omitted but set it for directional sound)
-     "connectedMeshId": string, (ID of the mesh to attach to)
-     "localDirectionToMesh": vector3 (can be omitted, default to 1,0,0)
+     "name": string, (要加载的文件名)
+     "volume": float, (如果忽略则为1)
+     "autoplay": bool, (可忽略)
+     "loop": bool, (可忽略)
+     "soundTrackId": int, (可忽略)
+     "spatialSound": bool, (启用3维音效，可忽略)
+     "position": vector3, (如果忽略则为0,0,0)
+     "refDistance": float, (可忽略, 默认为1)
+     "rolloffFactor": float, (可忽略, 默认为1)
+     "maxDistance": float, (可忽略, 默认为100)
+     "distanceModel": string, (可忽略, 默认为线性的，其它值: 倒数或指数)
+     "panningModel": string, (可忽略, 默认为HRTF, 其它值: 等幂)
+     "isDirectional": bool, (启用方向椎体)
+     "coneInnerAngle": float, (可忽略,用来设置有向音效)
+     "coneOuterAngle": float, (可忽略,用来设置有向音效)
+     "coneOuterGain": float, (可忽略,用来设置有向音效)
+     "connectedMeshId": string, (网格附着对象的ID)
+     "localDirectionToMesh": vector3 (可忽略,默认1,0,0)
 }
 ```
-
-## Actions
-An action is defined by the following JSON. An action can contain children actions.
+## 动作
+动作通过如下的JSON格式定义. 动作可以包含多个子的动作.
 ```javascript
 {
-    "type": number, (action's type. 0 = Trigger, 1 = Action, 2 = Flow Control)
-    "name": string, (name of the action, trigger or flow control)
-    "detached": boolean, (if the node is detached or not. Means it will not be computed if detached === true)
-    "properties": array of properties, (see below)
+    "type": number, (动作类型. 0 = 触发式, 1 = 动作, 2 = 流控制)
+    "name": string, (触发式或流程的动作名)
+    "detached": boolean, (节点是否挂载上. 如果detached === true意味着不会被计算)
+    "properties": array of properties, (见下面)
     "children": array of Actions,
-    "combine": array of Actions (used as a combine action. i.e name = "CombineAction". Can be null)
+    "combine": array of Actions (用于组合动画. 例如 name = "CombineAction". 可以为null)
 }
 ```
-
-A property is defined by the following JSON. A property value is always a string
+属性通过如下JSON格式定义. 属性值总是字符串
 ```javascript
 {
-    "name": string, (name of the property)
-    "value": string, (value of the property. For example: name = "target" and value = "Plane001")
-    "targetType": string (internal use for the BabylonJS Actions Builder, specifies where to find the properties for "propertyPath")
+    "name": string, (属性名)
+    "value": string, (属性值. 例如: name = "target" 和 value = "Plane001")
+    "targetType": string (BabylonJS动作创建器内部使用的, 指明在哪找到"propertyPath"属性的)
 }
 ```
-
-## Example
-Here is a simple example of .babylon file:
+## 例子
+这儿是个简单的.babylon文件的例子:
 ```javascript
 {
     "autoClear": true,

@@ -1,33 +1,22 @@
-**Babylon.js** comes with different versions that you can find in the /dist folder of the [repository](https://github.com/BabylonJS/Babylon.js/tree/master/dist):
-
-## CDN
-
-Babylon.js files can be found on our CDN:
-
+**Babylon.js** 随同不同的版本一起提供，你可以在[仓库](https://github.com/BabylonJS/Babylon.js/tree/master/dist)的 /dist 文件夹下找到不同版本:
+## CDN(内容分发网络)
+Babylon.js文件能够在CDN上找到:
 * http://cdn.babylonjs.com/2-2/babylon.js 
 * http://cdn.babylonjs.com/2-2/babylon.max.js 
 * http://cdn.babylonjs.com/2-2/babylon.noworker.js 
 
 
-## Unminified version: *babylon.max.js*
-
-This version is aimed to be used for debugging purpose only. It is not minified so you can easy use it to debug. 
-Please do not use it in production environment as the file size is really important (more than 1.5 MB).
-
-## Minified version: *babylon.js*
-
-This is the complete version of babylon.js. File size is less than 250KB when gizipped. This version is aimed for production.
-
-## No worker version: *babylon.noworker.js*
-
-This version of babylon.js does not include web worker support for collision. File size is less than 200KB when gizipped. This version is aimed for production.
-
-## Core version: *babylon.core.js* (introduced in 2.3)
-
-The core version is based on the "no worker" version and it is here to keep the file to a minimal size (< 150 KB gzipped).
-
-The following files are not included in the core version:
-
+## 非迷你版本: *babylon.max.js*
+这个版本目的仅仅是供调试使用的. 它没有被压小因此你可以很容易的用它来调试
+.
+请不要将它用在生产环境，因为文件大小是需要考虑的重要因素 (超过1.5 MB).
+## 迷你版: *babylon.js*
+这个是完整的babylon.js版本. 当压缩后文件小于250KB. 这个版本是以生产环境为目标的.
+## 无worker的版本: *babylon.noworker.js*
+这个版本的babylon.js没有WebWorker(H5中的新技术)来解决冲突问题. 当压缩后文件小于200KB. 这个版本是以生产环境为目标的.
+## 核心版本: *babylon.core.js* (在2.3中介绍引入)
+核心版本是基于"no worker" 版本，而且此处保持文件的精小 (压缩后 < 150 KB ).
+下面文件没有包含在核心版本里:
 * babylon.shaderMaterial.js
 * babylon.tools.dds.js
 * babylon.cannonJSPlugin.js
