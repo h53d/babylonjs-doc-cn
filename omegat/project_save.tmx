@@ -356,6 +356,14 @@ BABYLON.Vector3(xValue, yValue, zValue)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>##Beautiful Playgrounds</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T040941Z" creationid="aceway@qq.com" creationdate="20160427T040941Z">
+        <seg>##漂亮的娱乐场</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Interesting Playgrounds</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T035629Z" creationid="aceway@qq.com" creationdate="20160427T035629Z">
@@ -1124,6 +1132,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Do not hesitate to update this file by editing it [directly on Github](https://github.com/BabylonJS/Documentation/tree/master/content/generals/General).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T040801Z" creationid="aceway@qq.com" creationdate="20160427T040801Z">
+        <seg>不要犹豫了，赶紧通过编辑此连接[直接访问Github](https://github.com/BabylonJS/Documentation/tree/master/content/generals/General)来更新此文件.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Don't forget to [visit our API documentation](http://doc.babylonjs.com/classes/) in order to learn more about the [**Babylon.js Animation**](http://doc.babylonjs.com/classes/Animation) and [**Babylon.js Animatable**](http://doc.babylonjs.com/classes/Animatable) classes.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160757Z" creationid="aceway" creationdate="20160402T151914Z">
@@ -1714,6 +1730,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054015Z" creationid="aceway@qq.com" creationdate="20160331T014128Z">
         <seg>我们的目标是：移动这个"box1"。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please credit the author if you can!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T040930Z" creationid="aceway@qq.com" creationdate="20160427T040930Z">
+        <seg>如果可以的话，请给与信任原作者!</seg>
       </tuv>
     </tu>
     <tu>
@@ -2692,12 +2716,48 @@ You will find a complete demonstration of the easing functions behaviors, in the
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>| Id | Title | Author|
+| :------------ |:---------------:| -----:|
+| [#2FPT1A#5](http://www.babylonjs-playground.com/#2FPT1A#5) | A lot of triangles with SPS | jerome |
+| [#GK7FK](http://www.babylonjs-playground.com/#GK7FK) | X-ray material with Fresnel | Raanan |
+| [#1WBBW0#1](http://www.babylonjs-playground.com/#1WBBW0#1) | Warp speed !</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T040953Z" creationid="aceway@qq.com" creationdate="20160427T040953Z">
+        <seg>| Id | 标题 | 作者|
+| :------------ |:---------------:| -----:|
+| [#2FPT1A#5](http://www.babylonjs-playground.com/#2FPT1A#5) | A lot of triangles with SPS | jerome |
+| [#GK7FK](http://www.babylonjs-playground.com/#GK7FK) | X-ray material with Fresnel | Raanan |
+| [#1WBBW0#1](http://www.babylonjs-playground.com/#1WBBW0#1) | Warp speed !</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>| Name | Type | Description
 ---|---|---|---</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155325Z" creationid="aceway@qq.com" creationdate="20160331T085752Z">
         <seg> | 名称 | 类型 | 描述
 ---|---|---|---</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>| Unknown |
+| [#2EP7UB](http://babylonjs-playground.azurewebsites.net/#2EP7UB) | Mirors | Wingnut |
+| [#VUJG1#1](http://www.babylonjs-playground.com/#VUJG1#1) | Hypnotizing infinite loader | Temechon |
+| [External](http://synergy-development.fr/equalonyzer/) | Equalizer (with audio) | Stvsynrj |
+| [#CXOLW#3](http://www.babylonjs-playground.com/#CXOLW#3) | Glass wubble ball | Stvsynrj |
+| [#2JOSXE#13](http://www.babylonjs-playground.com/#2JOSXE#13) | PBR with music analyzer | Stvsynrj &amp; jerome |
+| [External](http://synergy-development.fr/babylonyzer/) | Music analyzer | Stvsynrj &amp; Kohai |</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T041056Z" creationid="aceway@qq.com" creationdate="20160427T041056Z">
+        <seg>| 未知 |
+| [#2EP7UB](http://babylonjs-playground.azurewebsites.net/#2EP7UB) | 镜像 | Wingnut |
+| [#VUJG1#1](http://www.babylonjs-playground.com/#VUJG1#1) | Hypnotizing infinite loader | Temechon |
+| [External](http://synergy-development.fr/equalonyzer/) | Equalizer (with audio) | Stvsynrj |
+| [#CXOLW#3](http://www.babylonjs-playground.com/#CXOLW#3) | Glass wubble ball | Stvsynrj |
+| [#2JOSXE#13](http://www.babylonjs-playground.com/#2JOSXE#13) | PBR with music analyzer | Stvsynrj &amp; jerome |
+| [External](http://synergy-development.fr/babylonyzer/) | Music analyzer | Stvsynrj &amp; Kohai |</seg>
       </tuv>
     </tu>
     <tu>
