@@ -662,10 +662,38 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>- Private variables are named starting with _ : ```_myVariable```
+- Camel casing is used for non static properties/functions/variables: ```var myUberUsefulVariable```
+- Pascal casing must be used for "static" functions: ```BABYLON.Vector3.Project```
+- Braces ({}) must be used for every loop even when there is only one line:
+```
+if (condition) {</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T064821Z" creationid="aceway@qq.com" creationdate="20160427T064821Z">
+        <seg>- 私有变量的命名以 _开头 : ```_myVariable```
+- 驼峰规则(单词间首字母大写)用在非静态的属性/函数/变量: ```var myUberUsefulVariable```
+- Pascal规则(单词间点号隔开)必须用在静态函数: ```BABYLON.Vector3.Project```
+- 每个循环即使只有一行内容的也必须使用大括号({})包围:
+```
+if (条件) {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>- The animation is starting right after the method call.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111136Z" creationid="aceway" creationdate="20160402T111136Z">
         <seg>- 这些动画在该函数调用后立即播放.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- Update gulp's [config.json](https://github.com/BabylonJS/Babylon.js/blob/master/Tools/Gulp/config.json)
+- Update [documentation](http://doc.babylonjs.com/generals/Creating_the_Mini-fied_Version)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065155Z" creationid="aceway@qq.com" creationdate="20160427T065155Z">
+        <seg>- 更新gulp的配置[config.json](https://github.com/BabylonJS/Babylon.js/blob/master/Tools/Gulp/config.json)
+- 更新[文档](http://doc.babylonjs.com/generals/Creating_the_Mini-fied_Version)</seg>
       </tuv>
     </tu>
     <tu>
@@ -728,6 +756,22 @@ ID_PAGE: 22631
 PG_TITLE: 娱乐场教程
 ---
 介绍...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>---
+ID_PAGE: 22671
+PG_TITLE: Approved Naming Conventions
+---
+If you want to contribute to babylon.js (What an *excellent* idea!), you should attempt to align your code with the following naming conventions:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T064245Z" creationid="aceway@qq.com" creationdate="20160427T064245Z">
+        <seg>---
+ID_PAGE: 22671
+PG_TITLE: 已经审批的命名约定
+---
+如果你想为babylon.js做贡献 (多么*杰出* 的想法!), 你应当按照下面的命名约定调整你的代码:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1434,6 +1478,14 @@ Your scene is beginning to look great, but it is very static.</seg>
         <seg>如果你希望获得关于简化函数的更多信息,这儿有一些有用的链接 : 
 - [MSDN 简化函数文档](http://msdn.microsoft.com/en-us/library/ee308751.aspx)
 - [简化函数懒人表单](http://easings.net/fr)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to add a new file, please do the following as well:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065111Z" creationid="aceway@qq.com" creationdate="20160427T065111Z">
+        <seg>如果你想加个新文件, 请也按照下面要求做好:</seg>
       </tuv>
     </tu>
     <tu>
@@ -2368,6 +2420,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You have to use **TypeScript** to submit a pull request.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065039Z" creationid="aceway@qq.com" creationdate="20160427T065039Z">
+        <seg>你必须使用 **TypeScript** 提交拉取请求.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You may have noticed that scaling values are never negative.&amp;nbsp; It would be illogical to use a negative scaling value, and if you decide to use some negative values, unexpected results may occur.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T075646Z" creationid="aceway" creationdate="20160423T075646Z">
@@ -2704,6 +2764,22 @@ You will find a complete demonstration of the easing functions behaviors, in the
 })(BABYLON.EasingFunction);
 ```
 在娱乐展示里, 你会找到一个简化函数行为的完整演示: [**简化函数娱乐展示**](http://babylonjs-playground.azurewebsites.net/?20)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>this.doSomething();
+}
+```
+- Braces start on the same line and end on the next one
+- Each new file must contain only one class</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065002Z" creationid="aceway@qq.com" creationdate="20160427T065002Z">
+        <seg>this.doSomething();
+}
+```
+- 大括号的开始和代码在同一行，而大括号的结尾另起一行
+- 每个新文件必须只有一个类</seg>
       </tuv>
     </tu>
     <tu>
