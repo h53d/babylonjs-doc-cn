@@ -6,6 +6,26 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>![VS02](http://i.imgur.com/Tb3nxWZ.png)
+Make sure you check "Create directory for solution", this way the c:\test\babylon.js directory will be used to store the .sln file and a new directory will be created in c:\test\babylon.js\babylon.js for the project file.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T095606Z" creationid="aceway@qq.com" creationdate="20160427T095606Z">
+        <seg>![VS02](http://i.imgur.com/Tb3nxWZ.png)
+确保你选择了 "为解决方案创建目录", 这样则c:\test\babylon.js目录会被用于存储该 .sln 文件，而且在c:\test\babylon.js\babylon.js里会为工程创建一个新文件夹</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>![VS03](http://i.imgur.com/fZLlLQW.png)
+We select ASP.Net 4, don't try the 5 version Template: it's a lot of troubles right now.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T095715Z" creationid="aceway@qq.com" creationdate="20160427T095715Z">
+        <seg>![VS03](http://i.imgur.com/fZLlLQW.png)
+我们选择 ASP.Net 4, 不要尝试第5版模版: 它现在还有许多问题.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![](http://urbanproductions.com/wingy/babylon/misc/playground02.jpg)
 A Saved 'Custom' Playground Scene: http://babylonjs-playground.azurewebsites.net/#QKQHS</seg>
       </tuv>
@@ -186,6 +206,30 @@ This is an object literal using the input type as a key, and the input settings 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T090905Z" creationid="aceway" creationdate="20160423T090905Z">
         <seg># BabylonJS娱乐场!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## 1) Clone the repositoty</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094707Z" creationid="aceway@qq.com" creationdate="20160427T094707Z">
+        <seg>## 1) 复制仓库</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## 2) Create the Visual Studio project</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094937Z" creationid="aceway@qq.com" creationdate="20160427T094937Z">
+        <seg>## 2) 创建Visual Studio工程</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## 3) Include the Babylon.js source code</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100220Z" creationid="aceway@qq.com" creationdate="20160427T100220Z">
+        <seg>## 3) 引入Babylon.js源代码</seg>
       </tuv>
     </tu>
     <tu>
@@ -394,6 +438,16 @@ A box is defined by the following JSON:
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T024711Z" creationid="aceway@qq.com" creationdate="20160427T024711Z">
         <seg>## 编译错误
 ![](http://urbanproductions.com/wingy/babylon/misc/playground_ce01.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Compilation modes
+Before going further you have to understand there are two compilation modes available to build Babylon.js.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T092518Z" creationid="aceway@qq.com" creationdate="20160427T092518Z">
+        <seg>## 编译模式
+在深入之前，你需要明白有两种编译模式可用来编译Babylon.js.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1814,6 +1868,16 @@ A subMesh is defined by the following JSON:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Synopsis
+Here are the macro steps of what we're going to do:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094405Z" creationid="aceway@qq.com" creationdate="20160427T094405Z">
+        <seg>## 摘要
+这个是我们将怎么做的宏观步骤:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Textures
 A texture is defined by the following JSON:
 ```javascript
@@ -2068,10 +2132,34 @@ A vertexData is defined by the following JSON:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Why?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T092059Z" creationid="aceway@qq.com" creationdate="20160427T092059Z">
+        <seg>## 为什么?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### And...</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T032701Z" creationid="aceway@qq.com" creationdate="20160427T032701Z">
         <seg>### 最后...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>### Development mode</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093017Z" creationid="aceway@qq.com" creationdate="20160427T093017Z">
+        <seg>### 开发模式</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>### Fix the Visual Studio Solution &amp; Project</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100108Z" creationid="aceway@qq.com" creationdate="20160427T100108Z">
+        <seg>### 修复Visual Studio解决方案和工程</seg>
       </tuv>
     </tu>
     <tu>
@@ -2082,6 +2170,24 @@ Sometimes you will run a scene and use your cursor keys and mouse in the renderi
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T032648Z" creationid="aceway@qq.com" creationdate="20160427T031633Z">
         <seg>### 维持焦点
 有时候你运行一个场景，然后在渲染画布里使用光标键和鼠标, 最后想将焦点返回到编辑器里...以便做更多的代码修改.&amp;nbsp; 有时候, 你要在编辑器里其它区域点击鼠标... 以便重新设定编辑器焦点.&amp;nbsp; 一旦编辑器有了新焦点, 你的编辑器光标键会再次移动.&amp;nbsp; 这个常在场景里有激活的自由相机的情况发生。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>### Move the project one level up
+From Visual Studio, close the solution you just created, then go to the directory of the created project and move it one level up (c:\test\babylon.js\babylon.js\ will be moved to c:\test\babylon.js\)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T095924Z" creationid="aceway@qq.com" creationdate="20160427T095924Z">
+        <seg>### 将工程移动到上层目录
+在 Visual Studio里关掉钢厂创建的解决方案, 到被创建的工程目录，然后将它移到上层(c:\test\babylon.js\babylon.js\ 被移动到 c:\test\babylon.js\)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>### Release mode</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T092524Z" creationid="aceway@qq.com" creationdate="20160427T092524Z">
+        <seg>### 发布模式</seg>
       </tuv>
     </tu>
     <tu>
@@ -2148,10 +2254,26 @@ BABYLON.Vector3(xValue, yValue, zValue)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#### Cons</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093254Z" creationid="aceway@qq.com" creationdate="20160427T093254Z">
+        <seg>#### 缺点</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#### Feel free to discuss the BabylonJS Playground, or any other BabylonJS framework topic... on our forum... located at...&amp;nbsp; http://www.html5gamedevs.com/forum/16-babylonjs/</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T033424Z" creationid="aceway@qq.com" creationdate="20160427T033424Z">
         <seg>#### 请在我们的论坛上自由讨论BabylonJS娱乐场, 或者BabylonJS框架的其它话题... 论坛位于...&amp;nbsp; http://www.html5gamedevs.com/forum/16-babylonjs/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#### Pros</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093311Z" creationid="aceway@qq.com" creationdate="20160427T093311Z">
+        <seg>#### 优点</seg>
       </tuv>
     </tu>
     <tu>
@@ -2266,12 +2388,68 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* A particular setup of the engine has to be made to make sure it works.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093755Z" creationid="aceway@qq.com" creationdate="20160427T093755Z">
+        <seg>* 需要为引擎做特别的配置才能使它正常工作.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* BABYLON.Engine.CodeRepository: By default, this value points to "/src/"
 * BABYLON.Engine.ShadersRepository: By default, this value points to "/src/Shaders/"</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070151Z" creationid="aceway@qq.com" creationdate="20160427T070151Z">
         <seg>* BABYLON.Engine.CodeRepository: 默认情况下，这个值指向 "/src/"
 * BABYLON.Engine.ShadersRepository: 默认情况下，这个值指向 "/src/Shaders/"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Clone the Babylon.js repository localy</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094431Z" creationid="aceway@qq.com" creationdate="20160427T094431Z">
+        <seg>* 把Babylon.js仓库复制到本地</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Create a Web Application project/solution, move it to the root of the Babylon.js repo and fix it</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094545Z" creationid="aceway@qq.com" creationdate="20160427T094545Z">
+        <seg>* 创建一个WEB应用程序工程/解决方案, 并把它移动到Babylon.js仓库的根目录下，然后调好</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Create a small TypeScript Sandbox</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094644Z" creationid="aceway@qq.com" creationdate="20160427T094644Z">
+        <seg>* 创建一个小的TypeScript安全沙盒</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Include the Babylon.js source code in the web project.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094620Z" creationid="aceway@qq.com" creationdate="20160427T094620Z">
+        <seg>* 在该WEB工程里包含进Babylon.js源代码</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* The compilation is fast (it only compiles the .ts files to .js, there's no merging/minification)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093400Z" creationid="aceway@qq.com" creationdate="20160427T093400Z">
+        <seg>* 编译快速(它仅仅编译.ts文件成.js文件, 没有合并/缩小)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* The whole library source files must be accessible and served by the Web Server.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093842Z" creationid="aceway@qq.com" creationdate="20160427T093842Z">
+        <seg>* 整个库文件必须都可访问，且通过WEB服务器提供服务.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2284,6 +2462,30 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
         <seg>* 使用之前的值然后递增： ```BABYLON.Animation.ANIMATIONLOOPMODE_RELATIVE```
 * 从初始值重启 ```BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE```
 * 保持最后的值: ```BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* You can debug the library in TypeScript, set breakpoints in the .ts files, etc.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093451Z" creationid="aceway@qq.com" creationdate="20160427T093451Z">
+        <seg>* 你可以在TypeScript里调试库, 在.ts文件里设置断点, 等等.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* You must reference the approx 150 .js files of Babylon.js instead of the main file (i.e. Babylon.js)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093618Z" creationid="aceway@qq.com" creationdate="20160427T093618Z">
+        <seg>* 你必须引用BabylonJS的大约150个 .js 文件而不是一个主文件(比如Babylon.js)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**Also note that you won't be able to debug the TypeScript code of Babylon.js, the debugger will always step into the main JavaScript file (i.e. Babylon.js).**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093010Z" creationid="aceway@qq.com" creationdate="20160427T093010Z">
+        <seg>**也请注意，你不能调试Babylon.js的TypeScript代码, 调试器总是会进入到主JavaScript文件(比如Babylon.js).**</seg>
       </tuv>
     </tu>
     <tu>
@@ -2631,6 +2833,18 @@ ID_PAGE: 22671
 PG_TITLE: 已经审批的命名约定
 ---
 如果你想为babylon.js做贡献 (多么*杰出* 的想法!), 你应当按照下面的命名约定调整你的代码:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>---
+Setup Visual Studio to contribute to Babylon.js
+---</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T092050Z" creationid="aceway@qq.com" creationdate="20160427T092050Z">
+        <seg>---
+配置Visual Studio以便为Babylon.js做贡献
+---</seg>
       </tuv>
     </tu>
     <tu>
@@ -3095,6 +3309,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By the way, you can find more info about contributing to Babylon.js [here](http://pixelcodr.com/tutos/contribute/contribute.html)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094924Z" creationid="aceway@qq.com" creationdate="20160427T094924Z">
+        <seg>顺便说下, 关于为Babylon.js做贡献你可以在 [这儿](http://pixelcodr.com/tutos/contribute/contribute.html)找到更多信息</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Can be null)
 }
 ```</seg>
@@ -3333,6 +3555,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152058Z" creationid="aceway" creationdate="20160402T152058Z">
         <seg>从Babylon.js 2.3 版本开始, 你可以附加 [动画事件](http://doc.babylonjs.com/classes/AnimationEvent) 给一个动画的指定帧.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Go back to Visual Studio, open the solution.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100129Z" creationid="aceway@qq.com" creationdate="20160427T100129Z">
+        <seg>返回到Visual Studio里, 打开那个解决方案.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3692,6 +3922,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Neither Visual Studio nor Git like to create the project/repo in a non empty directory, which is a problem for us because we want the Visual Studio project to be in the root directory of the repo.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T095157Z" creationid="aceway@qq.com" creationdate="20160427T095157Z">
+        <seg>Visual Studio或Git都不会在一个非空目录下创建工程/仓库, 这对我们来说是个问题，因为我们希望该Visual Studio工程位于仓库的根目录.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Next, two important steps:
 * Adding the animation array to the animation object:</seg>
       </tuv>
@@ -3706,6 +3944,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T150155Z" creationid="aceway" creationdate="20160404T150155Z">
         <seg>注意当前标注了 **基础场景**的按钮.&amp;nbsp; (实际上它叫做场景选择按钮, 只是当前标上了'基础场景').</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now display all files in the solutions by clicking the "Show All Files" button to include the ones we care about.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100535Z" creationid="aceway@qq.com" creationdate="20160427T100535Z">
+        <seg>现在在解决方案里点击"显示所有文件" 按钮，然后选择我们关心的包含进来.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3886,6 +4132,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T034539Z" creationid="aceway" creationdate="20160404T034539Z">
         <seg>看到左边代码窗口里的 'createScene' 函数里么?&amp;nbsp; 看起来熟悉吧?&amp;nbsp; 它是和大图片里的紫色部分非常像的代码(只是多了些换行).&amp;nbsp; 现在你该清楚了为什么那个 createScene 函数是一个重要的部分.&amp;nbsp; 它是有一定可移植性的.&amp;nbsp; 你能够在 createScene 函数和你本地的场景文件之间将代码拷来拷去.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So we are going to create the Visual Studio project in a directory inside the repo, then move it one level up.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T095301Z" creationid="aceway@qq.com" creationdate="20160427T095301Z">
+        <seg>所以我们见在仓库的子目录里创建Visual Studio工程，然后把它移动到上层.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4096,6 +4350,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The quickest way is to edit the Visual Studio project file.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100925Z" creationid="aceway@qq.com" creationdate="20160427T100925Z">
+        <seg>最快的方式是编辑Visual Studio工程文件.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The second way is for more complex animations, when you change animation code at run time.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T033700Z" creationid="aceway" creationdate="20160330T033700Z">
@@ -4122,6 +4384,22 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T135852Z" creationid="aceway" creationdate="20160421T135852Z">
         <seg>Vector3值的括号里三个'参数'是浮点类型的.&amp;nbsp; 它们可正可负, 这些值并没有实际大小的限制.&amp;nbsp; 让我们看个使用Vector3给网格对象设置位置属性值的例子.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The up-to-date list of the .js files and indications about the Engine's setup can be found [here](http://doc.babylonjs.com/generals/Creating_the_Mini-fied_Version)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094136Z" creationid="aceway@qq.com" creationdate="20160427T094136Z">
+        <seg>最新的.js文件列表和引擎配置的指示可以在这儿[here](http://doc.babylonjs.com/generals/Creating_the_Mini-fied_Version)找到</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are many IDE out there you can use to contribute to Babylon.js, Visual Studio being one of them.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T092215Z" creationid="aceway@qq.com" creationdate="20160427T092215Z">
+        <seg>有许多IDE可用与为Babylon.js做贡献, Visual Studio是其中之一.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4264,6 +4542,22 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This mode is generaly used to build a new version soon to be publicly released, the compilation takes some time so it's not suitable for developmenent/test roundtrips.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T092848Z" creationid="aceway@qq.com" creationdate="20160427T092848Z">
+        <seg>这个模式通常用来创建一个新版本快速发布, 编译需要花费些时间所以不适合用在开发/测试流程里.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This mode is more suitable when you make changes in the library, instead of relying on Gulp to generate the release files you simply compile all the .ts files into .js (and .js.map) files.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093235Z" creationid="aceway@qq.com" creationdate="20160427T093235Z">
+        <seg>这种模式使用与你修改库时, 与依赖Gulp 来生成发布文件相反，你可以简单的将所有的.ts文件编译成.js (以及.js.map)文件.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This time, I would like you to press the **Get .zip** button.&amp;nbsp; The playground will open a small panel allowing you to download this scene.&amp;nbsp; Save the zip file in some new empty folder on your home computer.&amp;nbsp; Now use an UNZIP utility program to unzip it.&amp;nbsp; Notice that there is one file in the folder, called index.html.&amp;nbsp; Please load that file into a text editor or programming editor.&amp;nbsp; Does it look like the big picture above?&amp;nbsp; Sure it does.&amp;nbsp; ANY scene from the Babylon.js playground, including its pre-installed demo scenes, can be brought to your home with the **Get .zip** button.&amp;nbsp; Most of them will look very similar to the big picture, above.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T103716Z">
@@ -4348,6 +4642,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Use [Cmder](http://cmder.net/) or any Shell, go to the directory you want to clone your repo, then clone it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094819Z" creationid="aceway@qq.com" creationdate="20160427T094819Z">
+        <seg>使用[Cmder](http://cmder.net/) 或者其它任意Shell, 转到你希望存储仓库的地方，然后复制出一个仓库来.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Values... are often the things that are stored in an object's properties ('pockets') and the things that are returned when GETTER methods are called.&amp;nbsp; As crazy as this sounds, all values are Javascript objects.&amp;nbsp; Remember that 0.5 float that we saw earlier?&amp;nbsp; That is a Floating Point&amp;nbsp; NUMBER OBJECT.&amp;nbsp; The 'box_I_made' variable above... it is a MESH OBJECT.&amp;nbsp; The names of mesh, cameras, and lights... are STRING OBJECTS.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T103316Z" creationid="aceway@qq.com" creationdate="20160421T103316Z">
@@ -4380,6 +4682,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We will also fix the referenced nuget packages that are now incorrect because we moved the Visual Studio project one level up.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101127Z" creationid="aceway@qq.com" creationdate="20160427T101127Z">
+        <seg>我们也需要修复因移动Visual Studio工程到上层目录产生的nuget包引用异常的问题</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Welcome to The Babylon.js Primer, an introduction to some of the things you will need to know in order to get the most out of this useful Javascript-based WebGL framework.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032215Z" creationid="aceway" creationdate="20160403T032215Z">
@@ -4404,6 +4714,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When we included the "src" folder it also included the .js files corresponding to the .ts, we have to remove them from the project as we have no use of them.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100856Z" creationid="aceway@qq.com" creationdate="20160427T100856Z">
+        <seg>当我们包含进 "src" 文件夹时，也包含进了和 .ts 文件相应的 .js 文件, 我们需要将它们从工程里删除掉，因为我们不使用它们.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When working with all files, you can provide the following information to the engine:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070055Z" creationid="aceway@qq.com" creationdate="20160427T070055Z">
@@ -4424,6 +4742,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030925Z" creationid="aceway@qq.com" creationdate="20160427T030925Z">
         <seg>当你想同人分享网址或为之后工作记住场景而将一个场景保存到娱乐场的数据库里时，那么网址看起来会像这样的:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>With Visual Studio you will be able to build the library along with your custom code and being able to debug and test both of them.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T092426Z" creationid="aceway@qq.com" creationdate="20160427T092426Z">
+        <seg>通过Visual Studio你将能够将库和你的代码一起编译，而且能测试两者(库和你的代码.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4510,6 +4836,14 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can use the [Gulp](https://github.com/BabylonJS/Babylon.js/tree/master/Tools/Gulp) script to create the main release files (babylon.js, babylon.max.js, babylon.d.ts) that will be stored in the [preview directory](https://github.com/BabylonJS/Babylon.js/tree/master/dist/preview%20release).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T092645Z" creationid="aceway@qq.com" creationdate="20160427T092645Z">
+        <seg>你可以使用[Gulp](https://github.com/BabylonJS/Babylon.js/tree/master/Tools/Gulp)脚本来创建主发布文件(babylon.js, babylon.max.js, babylon.d.ts) , 它们将被存储到[之前的路径里](https://github.com/BabylonJS/Babylon.js/tree/master/dist/preview%20release).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can't damage the pre-installed demos)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030412Z" creationid="aceway@qq.com" creationdate="20160427T030412Z">
@@ -4566,6 +4900,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You need to unload the project from the solution to edit it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101204Z" creationid="aceway@qq.com" creationdate="20160427T101204Z">
+        <seg>你需要将工程从解决方案写在后再编辑它.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Your scene is now becoming dynamic, and all your meshes can move in all directions!</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160839Z" creationid="aceway" creationdate="20160402T152713Z">
@@ -4606,10 +4948,74 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>_Cut the directory..._</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100006Z" creationid="aceway@qq.com" creationdate="20160427T100006Z">
+        <seg>_剪切目录..._</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>_Final result_</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053841Z" creationid="aceway@qq.com" creationdate="20160331T013721Z">
         <seg>_最终结果_ </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_Paste one level up._</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100027Z" creationid="aceway@qq.com" creationdate="20160427T100027Z">
+        <seg>_粘贴到上一层._</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_The expected result_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100043Z" creationid="aceway@qq.com" creationdate="20160427T100043Z">
+        <seg>_预计的结果_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_We only need the "external references" and "src" folder to compile Babylon.js._</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100640Z" creationid="aceway@qq.com" creationdate="20160427T100640Z">
+        <seg>_我们仅需要 "external refeernces" 和 "src" 文件夹来编译Babylon.js._</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_add the new one_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100201Z" creationid="aceway@qq.com" creationdate="20160427T100201Z">
+        <seg>_添加一个新的_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_do a search/replace of "..\packages" by "packages", replace all occurences._</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101404Z" creationid="aceway@qq.com" creationdate="20160427T101404Z">
+        <seg>_用"packages"执行搜索/替换 "..\packages" , 替换所有._</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_get rid of all the .js files referenced_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101240Z" creationid="aceway@qq.com" creationdate="20160427T101240Z">
+        <seg>_避免所有的 .js 文件引用_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_remove the dead project_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100150Z" creationid="aceway@qq.com" creationdate="20160427T100150Z">
+        <seg>_移除已废弃的工程_</seg>
       </tuv>
     </tu>
     <tu>
