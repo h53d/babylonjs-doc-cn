@@ -5,7 +5,7 @@ PG_TITLE: 文件格式(.babylon)
 **Babylon.js** 使用JSON文件格式来描述场景.
 
 你可以在这儿找到完整的加载器代码:
-https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/babylon.babylonFileLoader.js
+https://github.com/BabylonJS/Babylon.js/blob/master/src/Loading/Plugins/babylon.babylonFileLoader.js
 
 ## 基础类型
 .babylon 文件使用下面的约定来定义基础类型:
@@ -51,6 +51,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "autoAnimateSpeed": number (can be omitted)
 }
 ```
+
 ## 相机
 一个相机通过如下JSON格式定义:
 ```javascript
@@ -87,6 +88,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "inputmgr" : map of camera inputs (可以忽略, 见下面)
 }
 ```
+
 ## 相机的输入映射
 这是个对象，它字面上用输入类型作为键，同时用输入设定作为子对象。每个输入类型都有其自身的属性.
 

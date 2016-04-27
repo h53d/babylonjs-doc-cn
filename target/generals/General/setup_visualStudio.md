@@ -2,8 +2,8 @@
 为Babylon.js配置Visual Studio
 ---
 
-## 为什么?
-有许多IDE可用与为Babylon.js做贡献, Visual Studio是其中之一.
+## 为什么(用Visual Studio)?
+有许多IDE可用于为Babylon.js, Visual Studio是其中之一.
 
 通过Visual Studio你将能够将库和你的代码一起编译，而且能测试两者(库和你的代码.
 
