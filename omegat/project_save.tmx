@@ -458,6 +458,16 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* BABYLON.Engine.CodeRepository: By default, this value points to "/src/"
+* BABYLON.Engine.ShadersRepository: By default, this value points to "/src/Shaders/"</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070151Z" creationid="aceway@qq.com" creationdate="20160427T070151Z">
+        <seg>* BABYLON.Engine.CodeRepository: 默认情况下，这个值指向 "/src/"
+* BABYLON.Engine.ShadersRepository: 默认情况下，这个值指向 "/src/Shaders/"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* Use previous values and increment it: ```BABYLON.Animation.ANIMATIONLOOPMODE_RELATIVE```
 * Restart from initial value: ```BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE```
 * Keep their final value: ```BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT```</seg>
@@ -756,6 +766,23 @@ ID_PAGE: 22631
 PG_TITLE: 娱乐场教程
 ---
 介绍...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>---
+ID_PAGE: 22641
+PG_TITLE: Creating the Mini-fied Version
+---
+To create the minified version of Babylon.js you just have to 
+use [gulp](https://github.com/BabylonJS/Babylon.js/tree/master/Tools/Gulp)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065417Z" creationid="aceway@qq.com" creationdate="20160427T065417Z">
+        <seg>---
+ID_PAGE: 22641
+PG_TITLE: 创建迷你版
+---
+创建一个迷你版的Babylon.js你必须使用[gulp](https://github.com/BabylonJS/Babylon.js/tree/master/Tools/Gulp)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1168,6 +1195,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But you may want to work with all basic files.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065552Z" creationid="aceway@qq.com" creationdate="20160427T065505Z">
+        <seg>但是你也许希望使用所有的基本(一个个独立的)文件来工作.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By default these functions are the following:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110523Z" creationid="aceway" creationdate="20160402T110523Z">
@@ -1498,6 +1533,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you want to use your own shaders in this case, you just have to reference them with a "./" at beginning):</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065941Z" creationid="aceway@qq.com" creationdate="20160427T065941Z">
+        <seg>如果你想要在这种情况下使用自己的渲染器，你需要通过以一个"./"起头的方式引用它们):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you wish to take your scene home, publish it on a web server, or hand it out to others, THIS is your button.&amp;nbsp; **Get .zip** attempts to install your editor code into a single index.html file, and puts that file into a zip called sample.zip.&amp;nbsp; Then it offers the sample.zip file to you, for downloading.&amp;nbsp; Once downloaded and unzipped, you will see the file named index.html.&amp;nbsp; You can browse this file with a webGL-ready browser, and your scene should render nicely in your browser.&amp;nbsp; After you are sure that your index.html file is working properly, you may want to publish it to a web server and share your beautiful playground scene with the entire world.&amp;nbsp; There is no need to install framework files such as babylon.js and hand.js in nearby directories, because the index.html file references the same on-line versions of the framework... as the playground itself uses.&amp;nbsp; The index.html file is ready-to-run and completely portable.&amp;nbsp; (We love it!)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T144941Z" creationid="aceway" creationdate="20160425T144941Z">
@@ -1534,6 +1577,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T031724Z" creationid="aceway" creationdate="20160423T031724Z">
         <seg>场景顶部的黄颜色文本, 你将看到一行Bayblon.js代码设置mybox.position的方式 (使用我们的助手... 那个Vector3值对象).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case, please download the code and use the following includes (be aware to have the babylon folder at the root of your site.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065723Z" creationid="aceway@qq.com" creationdate="20160427T065524Z">
+        <seg>这种情况下, 请下载源码然后使用下面的包含方式 (注意要在你的站点根目录下有个babylon文件夹.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2296,6 +2347,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032705Z" creationid="aceway" creationdate="20160403T032705Z">
         <seg>你想知道什么是框架么?&amp;nbsp; 你可以把框架认为成 建筑里的脚手架, 它支撑你围绕它创建新东西而不必为底层细节操心.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When working with all files, you can provide the following information to the engine:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070055Z" creationid="aceway@qq.com" creationdate="20160427T070055Z">
+        <seg>当所有这些文件都正常工作时，你可以将下面的信息提供给引擎:</seg>
       </tuv>
     </tu>
     <tu>
