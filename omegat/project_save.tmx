@@ -2854,6 +2854,22 @@ PG_TITLE: 已经审批的命名约定
     <tu>
       <tuv lang="EN-US">
         <seg>---
+ID_PAGE: 22681
+PG_TITLE: Roadmap
+---
+## Roadmap</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T104029Z" creationid="aceway@qq.com" creationdate="20160427T103452Z">
+        <seg>---
+ID_PAGE: 22681
+PG_TITLE: 路线图
+---
+## 路线图</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>---
 Setup Visual Studio to contribute to Babylon.js
 ---</seg>
       </tuv>
@@ -3611,6 +3627,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100129Z" creationid="aceway@qq.com" creationdate="20160427T100129Z">
         <seg>返回到Visual Studio里, 打开那个解决方案.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here are the next updates we will *probably* add to babylon.js:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T104120Z" creationid="aceway@qq.com" creationdate="20160427T104120Z">
+        <seg>这是下次更新我们 *可能* 添加到babylon.js里的内容:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5644,6 +5668,24 @@ optional | speedRatio | number | default : 1.</seg>
         <seg> | 止于 | 数量 | 结束fps
 可选 | 循环 | 布尔值 | 如果为真,则动画循环播放 (取决于BABYLON.Animation.ANIMATIONLOOPMODE)
 可选 | 速率 | 数值 | 默认 : 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> * Reflection probe
+ * Global illumination light
+ * Generate incremental format from 3dsmax
+ * Morph targets
+ * Sprites collisions
+ * Continuous update of octrees using webworkers</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T104501Z" creationid="aceway@qq.com" creationdate="20160427T104501Z">
+        <seg> * 反射式探头
+ * 球形照明光光源
+ * 3dsmax中生成增量格式
+ * 变形目标
+ * 精灵碰撞
+ * 使用webworkers的八叉树连续更新</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
