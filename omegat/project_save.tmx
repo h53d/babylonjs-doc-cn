@@ -356,6 +356,14 @@ BABYLON.Vector3(xValue, yValue, zValue)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Interesting Playgrounds</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T035629Z" creationid="aceway@qq.com" creationdate="20160427T035629Z">
+        <seg>#有趣的游乐场</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&amp;nbsp;
 ### Color3 Values ###
 Color3 values look very much like Vector3 values.&amp;nbsp; Here is an example:
@@ -1450,6 +1458,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T031724Z" creationid="aceway" creationdate="20160423T031724Z">
         <seg>场景顶部的黄颜色文本, 你将看到一行Bayblon.js代码设置mybox.position的方式 (使用我们的助手... 那个Vector3值对象).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this file, you can discover interesting playground done by the community.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T035729Z" creationid="aceway@qq.com" creationdate="20160427T035729Z">
+        <seg>在这个文件里，你会发现社区里大家在做的一些有趣的事情.</seg>
       </tuv>
     </tu>
     <tu>
