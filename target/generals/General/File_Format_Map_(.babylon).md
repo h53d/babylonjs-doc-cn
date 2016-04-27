@@ -3,17 +3,22 @@ ID_PAGE: 22661
 PG_TITLE: 文件格式(.babylon)
 ---
 **Babylon.js** 使用JSON文件格式来描述场景.
+
 你可以在这儿找到完整的加载器代码:
 https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/babylon.babylonFileLoader.js
+
 ## 基础类型
 .babylon 文件使用下面的约定来定义基础类型:
+
 * **Vector3**: 一个含有3个浮点数([x, y, z])的数组. 例子: [1.1, 2.2, 3.3]
 * **Vector4**: 一个含有4个浮点数([x, y, z, w])的数组. 例子: [1.1, 2.2, 3.3, 4.4]
 * **Color3**: 一个含有3个浮点数且大小在0和1间的 ([r, g, b])数组. 例子: [0.2, 0.3, 0.5]
 * **Matrix**: 行优先(先按行存储)的含有16个浮点数的数组
 * **Boolean**: 真或假
+
 ## 全局结构体
 .babylon文件里的全局结构体是下面这样的:
+
 ```javascript
 {
     "autoClear": boolean,
@@ -82,10 +87,11 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "inputmgr" : map of camera inputs (可以忽略, 见下面)
 }
 ```
-## 相机输入的映射
-这是个用输入类型的字面量做键对象，同时使用输入设定作为自对象的映射. 每个输入类型都有其属性.
+## 相机的输入映射
+这是个对象，它字面上用输入类型作为键，同时用输入设定作为子对象。每个输入类型都有其自身的属性.
+
 ## 光源
-一个光源通过如下的JSON格式定义:
+光源通过如下的JSON格式定义:
 ```javascript
 {
     "name": string,
@@ -111,6 +117,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "autoAnimateSpeed": number (可以忽略)
 }
 ```
+
 ## 材质
 一个材质通过如下JSON格式定义:
 ```javascript
@@ -148,6 +155,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "emissiveFresnelParameters": 菲涅耳参数 (见下面)
 }
 ```
+
 ## 菲涅耳参数
 菲涅耳参数通过如下的JSON格式定义:
 ```javascript
@@ -159,6 +167,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "power": float
 }
 ```
+
 ## 纹理
 纹理通过如下的JSON个格式定义:
 ```javascript
@@ -182,6 +191,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "base64String": string (可以忽略)
 }
 ```
+
 ## 多纹理
 多纹理通过如下JSON格式定义:
 ```javascript
@@ -192,6 +202,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "materials": string数组 (都是子纹理的ID)
 }
 ```
+
 ## 几何体
 几何体的结构如下:
 ```javascript
@@ -206,6 +217,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "vertexData": array of VertexData (见下面)
 }
 ```
+
 ## 盒子
 盒子通过如下的JSON格式定义:
 ```javascript
@@ -216,6 +228,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "tags": string
 }
 ```
+
 ## 球体
 球体通过如下的JSON格式定义:
 ```javascript
@@ -227,6 +240,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "tags": string
 }
 ```
+
 ## 圆柱体
 圆柱体通过如下的JSON格式定义:
 ```javascript
@@ -241,6 +255,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "tags": string
 }
 ```
+
 ## 环型体
 环型体通过如下的JSON定义:
 ```javascript
@@ -253,6 +268,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "tags": string
 }
 ```
+
 ## 地面
 地面通过如下的JSON格式定义:
 ```javascript
@@ -265,6 +281,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "tags": string
 }
 ```
+
 ##平面
 平面通过如下的JSON格式定义:
 ```javascript
@@ -275,6 +292,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "tags": string
 }
 ```
+
 ## 环形节
 环形节通过如下的JSON格式定义:
 ```javascript
@@ -290,6 +308,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "tags": string
 }
 ```
+
 ## 顶点数据
 顶点数据通过如下的JSON格式定义:
 ```javascript
@@ -311,6 +330,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "tags": string
 }
 ```
+
 ## 实例
 实例过如下的JSON格式定义:
 ```javascript
@@ -323,6 +343,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "scaling": vector3
 }
 ```
+
 ## 网格
 网格过如下的JSON格式定义:
 ```javascript
@@ -378,7 +399,9 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "actions": array of actions (见下面)
 }
 ```
+
 请注意，父网格的描述必须在其子节点出现之前。
+
 ## 子网格
 子网格过如下的JSON格式定义:
 ```javascript
@@ -390,6 +413,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "indexCount": int
 }
 ```
+
 ## 动画
 动画过如下的JSON格式定义:
 ```javascript
@@ -406,6 +430,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "autoAnimateLoop": boolean
 }
 ```
+
 ## 动画关键帧
 动画关键帧通过如下的JSON格式定义:
 ```javascript
@@ -414,6 +439,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "values": array of float (取决于播放的值)
 }
 ```
+
 ## 阴影生成器
 阴影生成器通过如下的JSON格式定义:
 ```javascript
@@ -428,6 +454,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "renderList": array of string (网格的ID)
 }
 ```
+
 ## 骨架
 骨架通过如下的JSON格式定义:
 ```javascript
@@ -438,6 +465,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "needInitialSkinMatrix": boolean
 }
 ```
+
 ## 骨骼
 骨骼通过如下的JSON格式定义:
 ```javascript
@@ -448,6 +476,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "animations": array of Animations (必须是个矩阵类型)
 }
 ```
+
 ## 粒子系统
 粒子系统通过如下的JSON格式定义:
 ```javascript
@@ -486,6 +515,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "autoAnimateSpeed": number (可以忽略)
 }
 ```
+
 ## 镜头光晕系统
 镜头光晕系统通过如下的JSON格式定义:
 ```javascript
@@ -495,6 +525,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
      "flares": array of LensFlares (见下面)
 }
 ```
+
 ## 镜头光晕
 镜头光晕通过如下的JSON格式定义:
 ```javascript
@@ -505,6 +536,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
      "textureName": string
 }
 ```
+
 ## 音效
 音效通过如下的JSON格式定义:
 ```javascript
@@ -529,6 +561,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
      "localDirectionToMesh": vector3 (可忽略,默认1,0,0)
 }
 ```
+
 ## 动作
 动作通过如下的JSON格式定义. 动作可以包含多个子的动作.
 ```javascript
@@ -541,6 +574,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "combine": array of Actions (用于组合动画. 例如 name = "CombineAction". 可以为null)
 }
 ```
+
 属性通过如下JSON格式定义. 属性值总是字符串
 ```javascript
 {
@@ -549,6 +583,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     "targetType": string (BabylonJS动作创建器内部使用的, 指明在哪找到"propertyPath"属性的)
 }
 ```
+
 ## 例子
 这儿是个简单的.babylon文件的例子:
 ```javascript
