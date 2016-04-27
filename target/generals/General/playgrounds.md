@@ -3,7 +3,7 @@
 在这个文件里，你会发现社区里大家在做的一些有趣的事情.
 不要犹豫了，赶紧通过编辑此连接[直接访问Github](https://github.com/BabylonJS/Documentation/tree/master/content/generals/General)来更新此文件.
 
-如果可以的话，请给与信任原作者!
+如果可以的话，请给与原作者信任!
 
 ##漂亮的娱乐场
 
