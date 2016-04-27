@@ -82,6 +82,14 @@ We have worked hard and learned much, so we deserve some playground time, at the
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## CDN</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070458Z" creationid="aceway@qq.com" creationdate="20160427T070458Z">
+        <seg>## CDN(内容分发网络)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Compilation Errors
 ![](http://urbanproductions.com/wingy/babylon/misc/playground_ce01.jpg)</seg>
       </tuv>
@@ -104,6 +112,14 @@ We have worked hard and learned much, so we deserve some playground time, at the
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110133Z" creationid="aceway" creationdate="20160402T110133Z">
         <seg>## 控制动画</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Core version: *babylon.core.js* (introduced in 2.3)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071838Z" creationid="aceway@qq.com" creationdate="20160427T071626Z">
+        <seg>## 核心版本: *babylon.core.js* (在2.3中介绍引入)</seg>
       </tuv>
     </tu>
     <tu>
@@ -144,6 +160,14 @@ I would like you to visit the Babylon.js Playground once again (open in a new wi
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Minified version: *babylon.js*</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070917Z" creationid="aceway@qq.com" creationdate="20160427T070917Z">
+        <seg>## 迷你版: *babylon.js*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## More About The Playground ##
 Once again let's visit the saved playground scene that I sent you to, above.</seg>
       </tuv>
@@ -158,6 +182,14 @@ Once again let's visit the saved playground scene that I sent you to, above.</se
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T030523Z" creationid="aceway" creationdate="20160423T030523Z">
         <seg>## 新的帮手 - 位置属性(.position), 旋转属性(.rotation), 和缩放属性(.scaling)&amp;nbsp; ##</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## No worker version: *babylon.noworker.js*</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071649Z" creationid="aceway@qq.com" creationdate="20160427T071649Z">
+        <seg>## 无worker的版本: *babylon.noworker.js*</seg>
       </tuv>
     </tu>
     <tu>
@@ -224,6 +256,14 @@ Simply put, you will need to use a browser that supports WebGL and has Javascrip
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T141659Z" creationid="aceway" creationdate="20160425T141659Z">
         <seg>## 顶部菜单
 ![](http://urbanproductions.com/wingy/babylon/misc/playground_tm01.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Unminified version: *babylon.max.js*</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070927Z" creationid="aceway@qq.com" creationdate="20160427T070537Z">
+        <seg>## 非迷你版本: *babylon.max.js*</seg>
       </tuv>
     </tu>
     <tu>
@@ -476,6 +516,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
         <seg>* 使用之前的值然后递增： ```BABYLON.Animation.ANIMATIONLOOPMODE_RELATIVE```
 * 从初始值重启 ```BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE```
 * 保持最后的值: ```BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**Babylon.js** comes with different versions that you can find in the /dist folder of the [repository](https://github.com/BabylonJS/Babylon.js/tree/master/dist):</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070439Z" creationid="aceway@qq.com" creationdate="20160427T070439Z">
+        <seg>**Babylon.js** 随同不同的版本一起提供，你可以在[仓库](https://github.com/BabylonJS/Babylon.js/tree/master/dist)的 /dist 文件夹下找到不同版本:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1179,6 +1227,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Babylon.js files can be found on our CDN:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070518Z" creationid="aceway@qq.com" creationdate="20160427T070518Z">
+        <seg>Babylon.js文件能够在CDN上找到:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Below that, in green text, you will see 3 more lines of Babylon.js code.&amp;nbsp; You see, you are NOT required to use a Vector3 to set a .position on a mesh.&amp;nbsp; You can use the '**discrete**' way, instead.&amp;nbsp; Loosely defined, 'discrete' means... piece by piece... one step at a time.&amp;nbsp; If you would like to set a mesh's .position values axis by axis, feel free to use the handy green 'discrete' ways of doing it.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T032815Z" creationid="aceway" creationdate="20160423T032815Z">
@@ -1303,6 +1359,22 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160920Z" creationid="aceway" creationdate="20160402T152948Z">
         <seg>请自己尝试在不同的物体上实现不同的动画, 然后回到这里再学习更多的关于 [**精灵**](http://doc.babylonjs.com/tutorials/Sprites).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>File size is less than 200KB when gizipped.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071359Z" creationid="aceway@qq.com" creationdate="20160427T071359Z">
+        <seg>当压缩后文件小于200KB.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>File size is less than 250KB when gizipped.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071045Z" creationid="aceway@qq.com" creationdate="20160427T071045Z">
+        <seg>当压缩后文件小于250KB.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1613,6 +1685,15 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is not minified so you can easy use it to debug.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070947Z" creationid="aceway@qq.com" creationdate="20160427T070806Z">
+        <seg>它没有被压小因此你可以很容易的用它来调试
+.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It makes a complicated system, (WebGL,) much easier to use.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032859Z" creationid="aceway" creationdate="20160403T032859Z">
@@ -1853,6 +1934,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Please do not use it in production environment as the file size is really important (more than 1.5 MB).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070904Z" creationid="aceway@qq.com" creationdate="20160427T070904Z">
+        <seg>请不要将它用在生产环境，因为文件大小是需要考虑的重要因素 (超过1.5 MB).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Press the playground's **RUN** button and see if it works.&amp;nbsp; If it does not work, you can do some changes in the editor window, and hit **RUN** again... and again, and again.&amp;nbsp; Experiment with it there, and if you still cannot get it to work, you can press the **SAVE** button.&amp;nbsp; When you do that, the playground will give your scene a unique URL.&amp;nbsp; It will look something like this:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T074453Z">
@@ -2027,6 +2116,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The core version is based on the "no worker" version and it is here to keep the file to a minimal size (&lt; 150 KB gzipped).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T072014Z" creationid="aceway@qq.com" creationdate="20160427T072014Z">
+        <seg>核心版本是基于"no worker" 版本，而且此处保持文件的精小 (压缩后 &lt; 150 KB ).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The first external include is hand.minified-1.2.js (often simply called hand.js) - a small Javascript framework that assists the Babylon.js cameras.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002241Z" creationid="aceway" creationdate="20160403T132837Z">
@@ -2039,6 +2136,14 @@ scene.registerBeforeRender(function () {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T154251Z" creationid="aceway" creationdate="20160330T033530Z">
         <seg>第一种方式是定义一系列的键值集合，并且定义好每个键值对应的对象物状态。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following files are not included in the core version:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T072029Z" creationid="aceway@qq.com" creationdate="20160427T072029Z">
+        <seg>下面文件没有包含在核心版本里:</seg>
       </tuv>
     </tu>
     <tu>
@@ -2227,6 +2332,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is the complete version of babylon.js.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071013Z" creationid="aceway@qq.com" creationdate="20160427T071013Z">
+        <seg>这个是完整的babylon.js版本.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is very handy, and again, we love it.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T022526Z" creationid="aceway@qq.com" creationdate="20160427T022526Z">
@@ -2239,6 +2352,30 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T103716Z">
         <seg>这次,我希望你按下 **获取zip压缩包** 按钮.&amp;nbsp; 娱乐场将打开一个小面板让你下载该场景.&amp;nbsp; 保存这个zip压缩文件到你家里电脑上某个新的空文件夹下.&amp;nbsp; 现在使用一个 UNZIP 工具程序解压开.&amp;nbsp; 注意那个文件夹下有一个index.html文件.&amp;nbsp; 请将该文件用文本编辑器或编程用 编辑器打开.&amp;nbsp; 它看起来像上面的大图片吧?&amp;nbsp; 必需的.&amp;nbsp; Babylon.js 娱乐场的任何场景, 包括它里面预装的演示场景, 都可以通过 **获取.zip压缩包** 按钮下载到你家里的电脑上.&amp;nbsp; 其中的大部分看起来都非常像上面的大图片.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This version is aimed for production.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071124Z" creationid="aceway@qq.com" creationdate="20160427T071124Z">
+        <seg>这个版本是以生产环境为目标的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This version is aimed to be used for debugging purpose only.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070704Z" creationid="aceway@qq.com" creationdate="20160427T070704Z">
+        <seg>这个版本目的仅仅是供调试使用的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This version of babylon.js does not include web worker support for collision.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071746Z" creationid="aceway@qq.com" creationdate="20160427T071339Z">
+        <seg>这个版本的babylon.js没有WebWorker(H5中的新技术)来解决冲突问题.</seg>
       </tuv>
     </tu>
     <tu>
