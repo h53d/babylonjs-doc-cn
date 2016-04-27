@@ -234,6 +234,14 @@ This is an object literal using the input type as a key, and the input settings 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## 4) Create a small sandbox</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101842Z" creationid="aceway@qq.com" creationdate="20160427T101842Z">
+        <seg>## 4) 创建一个小的安全沙盒</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## A Visit to The Playground ##
 We have worked hard and learned much, so we deserve some playground time, at the Babylon.js Playground web site.&amp;nbsp; Here is a scene that I once created and then saved... at the playground:</seg>
       </tuv>
@@ -2148,6 +2156,14 @@ A vertexData is defined by the following JSON:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### Build !</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101719Z" creationid="aceway@qq.com" creationdate="20160427T101719Z">
+        <seg>### 构建 !</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### Development mode</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093017Z" creationid="aceway@qq.com" creationdate="20160427T093017Z">
@@ -3293,6 +3309,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Build the solution, all the .ts fils will be compiled to .js file along with .js.map file (needed for debugging).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101827Z" creationid="aceway@qq.com" creationdate="20160427T101827Z">
+        <seg>构建解决方案, 所有的 .ts 文件将被编译成 .js 文件，伴随生成 .js.map 文件 (调试需要).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But you may want to work with all basic files.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065552Z" creationid="aceway@qq.com" creationdate="20160427T065505Z">
@@ -3333,6 +3357,22 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T150650Z">
         <seg>请点击它.&amp;nbsp; 注意那有许多不同当预装场景 (创建场景的功能).&amp;nbsp; 可以在它们中自便的选择.&amp;nbsp; 浏览一下, 在之中拖动鼠标, 甚或在编辑区域修改下代码然后点击 **运行** .&amp;nbsp; 你不可能毁坏预装的场景, 甚至你点击了 **保存**也不会.&amp;nbsp; 你在 Babylon.js 的娱乐场的场景里很安全, 而且你可以看到许多的创建场景的函数.&amp;nbsp; 你可以使用它们的设定玩一下, 再次点击 运行.&amp;nbsp; 再次的, 你可以使用娱乐演示图任何一个演示上方的 *获取 .zip压缩包**, 从而实现你的收集梦想.&amp;nbsp; 方便, 是吧?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create a HTML file that will reference all the .js file of Babylon.js (the list can be found [here](http://doc.babylonjs.com/generals/Creating_the_Mini-fied_Version))</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T102738Z" creationid="aceway@qq.com" creationdate="20160427T102738Z">
+        <seg>创建一个HTML文件用于引用Babylon.js的所有js文件 (列表可以在[这儿](http://doc.babylonjs.com/generals/Creating_the_Mini-fied_Version)找到)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create a new TypeScript file in your project, don't forget to set the following lines:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T102021Z" creationid="aceway@qq.com" creationdate="20160427T102021Z">
+        <seg>在你的工程你创建一个新的TypeScript文件，必要忘记添加下面这些行:</seg>
       </tuv>
     </tu>
     <tu>
@@ -3477,6 +3517,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071045Z" creationid="aceway@qq.com" creationdate="20160427T071045Z">
         <seg>当压缩后文件小于250KB.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finally we have to edit the web.config file to declare some file types (actually only .fx would suffice) that the web server would be allowed to serve.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T103037Z" creationid="aceway@qq.com" creationdate="20160427T103037Z">
+        <seg>我们终于可以编辑web.config文件来声明一些文件类型了(实际上仅 .fx 文件就够了) ，那些允许WEB服务访问的文件.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4128,6 +4176,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Save and reload the project</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101710Z" creationid="aceway@qq.com" creationdate="20160427T101710Z">
+        <seg>保存然后重新加载工程</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See the 'createScene' function in the left-side code editing window?&amp;nbsp; Does it look familiar?&amp;nbsp; It is the very same code from the purple section of the big picture (but with a couple of word-wrapped lines).&amp;nbsp; Now you can see why the createScene function is an important section.&amp;nbsp; It is somewhat portable.&amp;nbsp; You can copy createScene functions to/from the playground editor, and to/from your home scene files.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T034539Z" creationid="aceway" creationdate="20160404T034539Z">
@@ -4358,6 +4414,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The result should look like this:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101649Z" creationid="aceway@qq.com" creationdate="20160427T101649Z">
+        <seg>结果看起来像这样:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The second way is for more complex animations, when you change animation code at run time.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T033700Z" creationid="aceway" creationdate="20160330T033700Z">
@@ -4442,6 +4506,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T101942Z" creationid="aceway" creationdate="20160404T094839Z">
         <seg>在那,你可以开始一个新的话题, 将破坏你娱乐展示场景的createScene函数网址告诉大家,  问下是否有人乐意访问你的娱乐展示场景并帮助你修正.&amp;nbsp;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These are needed when you don't work with the main .js file, the reason is that the Shaders are stored as variables in the main .js file, so when you don't use it the Engine must load the .fx files from the web server in the location you specified.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T102503Z" creationid="aceway@qq.com" creationdate="20160427T102503Z">
+        <seg>当你不是用主 .js 文件工作时需要这些内容, 原因是：着色器被作为变量存储在主 .js 文件里, 当你没使用它时引擎必须通过你指定的WEB服务加载 .fx 文件.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4538,6 +4610,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T022526Z" creationid="aceway@qq.com" creationdate="20160427T022526Z">
         <seg>这个非常方便，我们再次爱死它了。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is why the sources must be stored in a location the web server can serve.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T102553Z" creationid="aceway@qq.com" creationdate="20160427T102553Z">
+        <seg>这就是为什么资源必须存储在WEB服务器能够访问的位置.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4804,10 +4884,26 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can grad the files:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101938Z" creationid="aceway@qq.com" creationdate="20160427T101938Z">
+        <seg>你可以获取这些文件:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can learn many more things about Babylon.js scenes... in the other [tutorials and documentation](http://doc.babylonjs.com/).&amp;nbsp; And don't forget to look at the 'createScene()' functions of the playground's pre-installed demo scenes.&amp;nbsp; The Babylon.js playground is a learning wonderland, and it is a whole lot of fun, too.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160410T144346Z">
         <seg>关于Babylon.js的场景, 在另外的 [教程和文档](http://doc.babylonjs.com/)里你可以学到许多.&amp;nbsp; 而且别忘了察看娱乐场里 'createScene()' 函数的预装演示场景.&amp;nbsp; Babylon.js的娱乐场是个学习乐园, 也充满乐趣.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can now debug the source code of Babylon.js along with yours.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T103301Z" creationid="aceway@qq.com" creationdate="20160427T103301Z">
+        <seg>你现在可以使用源码调试Babylon.js了.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4908,6 +5004,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You will also have to add a line below the TypeScriptSourceMap element to enable TypeScriptExperimentalDecorators.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101631Z" creationid="aceway@qq.com" creationdate="20160427T101631Z">
+        <seg>你还要在TypeScriptSourceMap元素下面添加一行，以便启用TypeScriptExperimentalDecorators.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Your scene is now becoming dynamic, and all your meshes can move in all directions!</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160839Z" creationid="aceway" creationdate="20160402T152713Z">
@@ -4948,6 +5052,22 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>_Add new files types in the web.config_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T103057Z" creationid="aceway@qq.com" creationdate="20160427T103057Z">
+        <seg>_在web.config添加新的文件类型_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_Build, run et voilà !_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T103228Z" creationid="aceway@qq.com" creationdate="20160427T103228Z">
+        <seg>_构建, 运行瞧瞧看哦 !_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>_Cut the directory..._</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100006Z" creationid="aceway@qq.com" creationdate="20160427T100006Z">
@@ -4964,6 +5084,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>_HTML page_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T102749Z" creationid="aceway@qq.com" creationdate="20160427T102749Z">
+        <seg>_HTML 页面_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>_Paste one level up._</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100027Z" creationid="aceway@qq.com" creationdate="20160427T100027Z">
@@ -4972,10 +5100,26 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>_Set the page as the startup one_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T102810Z" creationid="aceway@qq.com" creationdate="20160427T102810Z">
+        <seg>_设置启动页面_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>_The expected result_</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100043Z" creationid="aceway@qq.com" creationdate="20160427T100043Z">
         <seg>_预计的结果_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_TypeScript file_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T102600Z" creationid="aceway@qq.com" creationdate="20160427T102600Z">
+        <seg>_TypeScript文件_</seg>
       </tuv>
     </tu>
     <tu>
