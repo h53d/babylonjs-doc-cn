@@ -3,7 +3,7 @@
 在这个文件里，你会发现社区里大家在做的一些有趣的事情.
 不要犹豫了，赶紧通过编辑此连接[直接访问Github](https://github.com/BabylonJS/Documentation/tree/master/content/generals/General)来更新此文件.
 
-如果可以的话，请给与原作者信任!
+如果可以的话，请给与原作者信誉!
 
 ##漂亮的娱乐场
 
@@ -16,8 +16,8 @@
 | [#VUJG1#1](http://www.babylonjs-playground.com/#VUJG1#1) | 无限加载式催眠 | Temechon |
 | [External](http://synergy-development.fr/equalonyzer/) | 平衡器(有音频) | Stvsynrj |
 | [#CXOLW#3](http://www.babylonjs-playground.com/#CXOLW#3) | 高斯气泡 | Stvsynrj |
-| [#2JOSXE#13](http://www.babylonjs-playground.com/#2JOSXE#13) | 基于物理过程的渲染(PBR) ，同时有音乐分析器 | Stvsynrj & jerome |
-| [External](http://synergy-development.fr/babylonyzer/) | 音乐分析器 | Stvsynrj & Kohai |
+| [#2JOSXE#13](http://www.babylonjs-playground.com/#2JOSXE#13) | 基于物理过程的渲染(PBR) ，同时有音乐分析器 | Stvsynrj 和 jerome |
+| [External](http://synergy-development.fr/babylonyzer/) | 音乐分析器 | Stvsynrj 和 Kohai |
 
 
 ##例子
