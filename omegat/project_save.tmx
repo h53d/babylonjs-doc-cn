@@ -268,6 +268,32 @@ Simply put, you will need to use a browser that supports WebGL and has Javascrip
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### And...</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T032701Z" creationid="aceway@qq.com" creationdate="20160427T032701Z">
+        <seg>### 最后...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>### Maintaining Your Focus
+Sometimes you will run a scene and use your cursor keys and mouse in the rendering canvas, and then want to 'focus' back to the editor... to make some more code changes.&amp;nbsp; Sometimes, you will need to mouse-click somewhere in the editor area... to give the editor focus again.&amp;nbsp; Once the editor has focus, your cursor keys will, once again, move the editor's cursor.&amp;nbsp; This happens most often when a Babylon FreeCamera is the active camera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T032648Z" creationid="aceway@qq.com" creationdate="20160427T031633Z">
+        <seg>### 维持焦点
+有时候你运行一个场景，然后在渲染画布里使用光标键和鼠标, 最后想将焦点返回到编辑器里...以便做更多的代码修改.&amp;nbsp; 有时候, 你要在编辑器里其它区域点击鼠标... 以便重新设定编辑器焦点.&amp;nbsp; 一旦编辑器有了新焦点, 你的编辑器光标键会再次移动.&amp;nbsp; 这个常在场景里有激活的自由相机的情况发生。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>### The BabylonJS Playground is located at... http://www.babylonjs.com/playground/</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T033304Z" creationid="aceway@qq.com" creationdate="20160427T033304Z">
+        <seg>### BabylonJS娱乐场位于... http://www.babylonjs.com/playground/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### The CSS Styles - Blue Section ###
 &amp;nbsp;Notice the blue section of the big picture.&amp;nbsp; That is the CSS (Cascading Style Sheets) styles used to present the scene's web page,&amp;nbsp; and adjust its WebGL canvas to be centered and filled-out nicely in your browser.</seg>
       </tuv>
@@ -322,6 +348,14 @@ BABYLON.Vector3(xValue, yValue, zValue)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#### Feel free to discuss the BabylonJS Playground, or any other BabylonJS framework topic... on our forum... located at...&amp;nbsp; http://www.html5gamedevs.com/forum/16-babylonjs/</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T033424Z" creationid="aceway@qq.com" creationdate="20160427T033424Z">
+        <seg>#### 请在我们的论坛上自由讨论BabylonJS娱乐场, 或者BabylonJS框架的其它话题... 论坛位于...&amp;nbsp; http://www.html5gamedevs.com/forum/16-babylonjs/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&amp;nbsp;
 ### Color3 Values ###
 Color3 values look very much like Vector3 values.&amp;nbsp; Here is an example:
@@ -372,6 +406,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T025957Z" creationid="aceway" creationdate="20160403T132340Z">
         <seg>'包含' 不一定是对 图中红色部分的最好的描述方式, 但是在这个教程中我会常常使用这中方式.&amp;nbsp; 三个外部的Javascript文件被包含到这个场景里.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Again, be sure to bookmark this URL so you can easily return to it later)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T031423Z" creationid="aceway@qq.com" creationdate="20160427T031423Z">
+        <seg>(再一次提醒, 务必用书签保存这个网址，以便之后你能很容易的回来找它)</seg>
       </tuv>
     </tu>
     <tu>
@@ -960,6 +1002,14 @@ scene.beginAnimation(torus, 0, 120, true);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152230Z" creationid="aceway" creationdate="20160402T152230Z">
         <seg>一个事件 是在某指定帧会被调用的函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And lastly, if you want to load a specific pre-installed demo scene, such as the #12 Particles demo, you can use a URL that looks like this:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T031603Z" creationid="aceway@qq.com" creationdate="20160427T031603Z">
+        <seg>而且最后, 如果你想加载一个特殊的预装的演示场景, 比如第12个演示的, 你可以像这样的访问网址:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1744,6 +1794,16 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T132127Z" creationid="aceway" creationdate="20160403T132119Z">
         <seg>它是个大图片,不是么? &amp;nbsp; 这是个完整的 Babylon.js 场景, 使用 '简单的 HTML 文件' 的方法.&amp;nbsp; 这不是唯一(也不是最好)的设置一个场景的方法, 但是快速而简单.&amp;nbsp; 我已经在"大图片上"的重要段上标色,而且我们现在就一段段段查看.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That's A Wrap
+Hey, thanks for reading this tutorial and for discovering the BabylonJS playground.&amp;nbsp; We are very proud of it, and we think you will enjoy using it.&amp;nbsp; This tutorial is still quite new, and will likely be changing often.&amp;nbsp; Be sure to check back for updates and future features.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T033247Z" creationid="aceway@qq.com" creationdate="20160427T032833Z">
+        <seg>那是个包袱
+嘿，谢谢阅读本教程，一并谢谢探究了BabylonJS娱乐场.&amp;nbsp; 我们为之自豪, 也认为你会喜欢它.&amp;nbsp; 这个教程还非常的新，而且将会经常的改变.&amp;nbsp; 记得回来检查更新，学习新特征哦.</seg>
       </tuv>
     </tu>
     <tu>
