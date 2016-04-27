@@ -2454,6 +2454,25 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* Reflection probe [v2.3]
+* Material library (Water, fire, normal) [v2.3]
+* Logarithmic depth buffer
+* Global illumination light
+* Morph targets
+* Sprites collisions
+* Continuous update of octrees using webworkers</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T104619Z" creationid="aceway@qq.com" creationdate="20160427T104619Z">
+        <seg> * 反射式探头
+ * 球形照明光光源
+ * 3dsmax中生成增量格式
+ * 变形目标
+ * 精灵碰撞
+ * 使用webworkers的八叉树连续更新</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* The compilation is fast (it only compiles the .ts files to .js, there's no merging/minification)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093400Z" creationid="aceway@qq.com" creationdate="20160427T093400Z">
