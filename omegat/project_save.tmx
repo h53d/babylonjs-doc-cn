@@ -82,6 +82,16 @@ We have worked hard and learned much, so we deserve some playground time, at the
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Compilation Errors
+![](http://urbanproductions.com/wingy/babylon/misc/playground_ce01.jpg)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T024711Z" creationid="aceway@qq.com" creationdate="20160427T024711Z">
+        <seg>## 编译错误
+![](http://urbanproductions.com/wingy/babylon/misc/playground_ce01.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Complex animation</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T150904Z" creationid="aceway" creationdate="20160402T150904Z">
@@ -152,6 +162,16 @@ Once again let's visit the saved playground scene that I sent you to, above.</se
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Playground URL formats
+When you first arrive at the BabylonJS playground web site, the URL in your browser's address field... will look like this:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030116Z" creationid="aceway@qq.com" creationdate="20160427T030116Z">
+        <seg>## 娱乐场网址的格式
+当你首次访问BabylonJS娱乐场网站时, 你浏览器地址栏里的网址... 看起来会像这样:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Quick Downloading 'The Big 4' Externals ##</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T080403Z" creationid="aceway" creationdate="20160423T080403Z">
@@ -184,6 +204,16 @@ Simply put, you will need to use a browser that supports WebGL and has Javascrip
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T144913Z" creationid="aceway" creationdate="20160426T144913Z">
         <seg>## 编辑器
 ![](http://urbanproductions.com/wingy/babylon/misc/playground_ed02.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## The Rendering Canvas
+![](http://urbanproductions.com/wingy/babylon/misc/playground_rc01.jpg)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T022538Z" creationid="aceway@qq.com" creationdate="20160427T022538Z">
+        <seg>## 渲染画布
+![](http://urbanproductions.com/wingy/babylon/misc/playground_rc01.jpg)</seg>
       </tuv>
     </tu>
     <tu>
@@ -342,6 +372,22 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T025957Z" creationid="aceway" creationdate="20160403T132340Z">
         <seg>'包含' 不一定是对 图中红色部分的最好的描述方式, 但是在这个教程中我会常常使用这中方式.&amp;nbsp; 三个外部的Javascript文件被包含到这个场景里.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Be sure to bookmark it, using your browser's bookmark system)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T031011Z" creationid="aceway@qq.com" creationdate="20160427T031011Z">
+        <seg>(记得用浏览器的书签保存好)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Feel free to edit the code of the demo scenes and click Run or Save.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030335Z" creationid="aceway@qq.com" creationdate="20160427T030335Z">
+        <seg>(可以自行编辑演示场景的代码然后点击运行或保存.</seg>
       </tuv>
     </tu>
     <tu>
@@ -538,6 +584,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T102443Z" creationid="aceway@qq.com" creationdate="20160421T102443Z">
         <seg>**值**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**oops** - One of the most important features in any programmer's editor... is UNDO and REDO, and our playground editor fully supports both of these features.&amp;nbsp; I am not familiar with the undo and redo keypresses for all OS systems, but for Windows... undo is Control-z and redo is Shift-Control-z.&amp;nbsp; You can do multiple undo and redo, as well.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T022502Z" creationid="aceway@qq.com" creationdate="20160427T022502Z">
+        <seg>**吐槽** - 任何编辑器的重要特征之一是 撤销和重做, 我们的娱乐场编辑器完全支持这两个特征.&amp;nbsp; 我并不熟悉所有操作系统里的撤销和重做的操作键，, 但知道Windows系统里撤销键是Conntrol-z 而且 重做键是 Shift-Control-z.&amp;nbsp; 你也可以多次地执行撤销和重做。</seg>
       </tuv>
     </tu>
     <tu>
@@ -956,6 +1010,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Are you running in free-flying mode and not wrapping your code in a createScene() function?&amp;nbsp; That is certainly allowed, but you still need a camera, a light, and a mesh shape.&amp;nbsp; These are a few things that can prevent your scene from rendering.&amp;nbsp; Study the playground demo scenes listed under the drop-down Scene Selector button, and soon you will be a BabylonJS playground expert.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T024657Z" creationid="aceway@qq.com" creationdate="20160427T024657Z">
+        <seg>你是在自由模式下运行而且没把你的代码放到createScene() 函数中么?&amp;nbsp; 那样当然也是允许的，只是你仍然需要一个相机，一个光源和一个网格造型。.&amp;nbsp; 缺乏这些会导致你的场景渲染失败.&amp;nbsp; 好好研究下娱乐场的场景选择器里下拉演示场景，你很快会成为一名BabylonJS娱乐场专家的。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As of Babylon.js 2.3+, you can  start an animation with *enableBlending* = true.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155805Z" creationid="aceway" creationdate="20160402T111552Z">
@@ -1250,10 +1312,34 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you choose one of the demo scenes from the drop-down Scene Selector button, the playground URL will change to this:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030238Z" creationid="aceway@qq.com" creationdate="20160427T030238Z">
+        <seg>如果你从下拉的场景选择器选一个场景后, 娱乐场的网址会变成这样:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you look carefully at the editor code in the picture above, or if you have selected one of the pre-installed playground scenes from the drop-down scene selector, you will notice that they are 'wrapped' in a function called 'createScene()'.&amp;nbsp; The createScene() function is a very common function used in many BabylonJS scenes.&amp;nbsp; Copying and pasting createScene() functions is done often with users of the BabylonJS framework.&amp;nbsp; By pressing this button, you will empty the contents of the editor, and a basic un-programmed createScene() function will be placed in the editor.&amp;nbsp; A camera is provided by default, but you may want to add some light and mesh, so the new scene becomes renderable.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T145937Z" creationid="aceway" creationdate="20160425T145937Z">
         <seg>如果你仔细查看过上面图片编辑器里的代码, 或者如果你在娱乐场场景的下拉选择器里选过某个预装的场景, 你应该会注意到'包裹'在一个叫做'createScene()'的函数里的部分.&amp;nbsp; 该createScene()函数是个在许多BabylonJS场景里都会被使用的非常普通的函数.&amp;nbsp; BabylonJS框架用户经常复制和粘贴createScene()的内容.&amp;nbsp; 通过按下这个按钮, 你将清空编辑器里的内容, 然后一个已经编写好基础内容的createScene()函数会出现在编辑器里.&amp;nbsp; 提供一个默认的相机t, 但是你也许想加些光源和网格, 以便新的场景可以被渲染e.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you save that scene again... (maybe after doing more work on the scene), the URL will increment, and look like this:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T031141Z" creationid="aceway@qq.com" creationdate="20160427T031141Z">
+        <seg>如果你再次保存场景... (也许是在对场景上做了更多工作之后), 那个网址将增长, 看着像这样子的:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you save that scene again... the URL will increment, and look like this:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T031233Z" creationid="aceway@qq.com" creationdate="20160427T031233Z">
+        <seg>如果再次保存... 网址还增长, 看起来像这样:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1282,6 +1368,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T144941Z" creationid="aceway" creationdate="20160425T144941Z">
         <seg>如果你想把你的场景带回家, 或发布到某个网站服务器上, 或者发送给其他人, 这个按钮就是为你提供的.&amp;nbsp; **获取.zip** 尝试将你编辑器里的代码放入一个单一的index.html文件, 然后把之打包进一个叫做sample.zip的压缩文件里.&amp;nbsp; 最后把这个sample.zip文件提供给你下载.&amp;nbsp; 一旦你下载并解压, 你就会看到名为index.html的文件.&amp;nbsp; 你能用一个支持WebGL的浏览器打开该文件, 你会发现场景被浏览器渲染得妥妥的在那.&amp;nbsp; 当妮确定index.html文件工作正常后, 你也许想将之发布到某个网页服务器上, 然后同全世界分享你漂亮的娱乐场场景.&amp;nbsp; 没有必要安装诸如babylon.js和hand.js的框架文件到index.html的附近路径, 因为index.html文件里引用了和在线娱乐场框架使用的一样版本.&amp;nbsp; index.html文件已经可以运行并且完全可移植.&amp;nbsp; (我们爱死它了!)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If your code is wrapped in a createScene() function, does it include *var scene = new BABYLON.Scene(engine),* near the top of the function?&amp;nbsp; How about a *return scene;* line as the last line inside the function braces?&amp;nbsp; Do you have some mesh like a box, cylinder, ground, sphere, plane, torus, torusknot, etc?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T024014Z" creationid="aceway@qq.com" creationdate="20160427T024014Z">
+        <seg>如果你的代码已经包含在createScene()函数里, 那在该函数的顶部有这行代码么*var scene = new BABYLON.Scene(engine),*?&amp;nbsp; 函数尾部的大括号里最后一行是否有*return scene;*呢?&amp;nbsp; 你是否有创建一个网格对象，诸如：一个盒子, 圆柱体, 地面, 球体, 平面, 圆环体, 圆环节等?</seg>
       </tuv>
     </tu>
     <tu>
@@ -1640,8 +1734,8 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       <tuv lang="EN-US">
         <seg>Telling of the many features of our editor... is beyond the scope of this tutorial.&amp;nbsp; You can learn more about the wonderful Ace Editor... with [a visit to their website](http://ace.c9.io/#nav=about)... and by simply spending some time using the playground editor.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T150549Z" creationid="aceway" creationdate="20160426T150549Z">
-        <seg>Telling of the many features of our 编辑器... is beyond the scope of this 教程.&amp;nbsp; You can learn more about the wonderful Ace 编辑器... with [a visit to their website](http://ace.c9.io/#nav=about)... and by simply spending some time using the 娱乐场 编辑器.</seg>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T022040Z" creationid="aceway" creationdate="20160426T150549Z">
+        <seg>讲述编辑器的大量特征超越了本教程的范围.&amp;nbsp; 通过访问[Ace编辑器的网站](http://ace.c9.io/#nav=about)你能够学习到更多的Ace编辑器知识，而且通过花更多时间在使用娱乐场编辑器上也可以.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1702,6 +1796,14 @@ scene.registerBeforeRender(function () {</seg>
         <seg>运行时的计算代码必须位于这个函数内:
 ```javascript
 scene.registerBeforeRender(function () {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The compilation error does not always contain pertinent information about the reason for the error, yet it is still handy.&amp;nbsp; It tells you that the BabylonJS framework is not happy with something in your scene code.&amp;nbsp; After making an adjustment to your code, you will want to close the compilation error pop-up (using its X closer) before clicking on Run again.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T025947Z" creationid="aceway@qq.com" creationdate="20160427T025947Z">
+        <seg>编辑错误里并不总能包含错误的关键点，但它仍然很便捷.&amp;nbsp; 他告知你BabylonJS框架已经对你场景代码有些不爽拉。&amp;nbsp; 你调整代码后, 在点击运行按钮前你也许希望关闭弹出的编译错误提示(通过它边上的X按钮).</seg>
       </tuv>
     </tu>
     <tu>
@@ -1898,10 +2000,26 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is a picture of the playground's pop-up compilation error detector panel.&amp;nbsp; A compilation error is an error detected by the BabylonJS framework... after you have clicked the Run button.&amp;nbsp; It is not a syntax error detected by the editor, but the editor might ALSO detect it and possibly mark the problem line with a red X icon along its left side.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T025420Z" creationid="aceway@qq.com" creationdate="20160427T025420Z">
+        <seg>这是张弹出编译错误检测面板的娱乐场图片。&amp;nbsp; 编译错误是当你点击运行按钮后BabylonJS框架检测出来的错误&amp;nbsp; 它不是编辑器检测到的语法错误, 但是编辑器也可能检测到它并使用红色X图标在其左侧将问题标示出来。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is called white-boarding.&amp;nbsp; It is an easy way to allow many people to work on your createScene function and help you figure out what is wrong.&amp;nbsp; See how the createScene function is 'portable'?&amp;nbsp; You took it from your home, to the playground, then played with it there for awhile.&amp;nbsp; Then, if needed, you clicked the playground's **SAVE** button, which gave it a URL.&amp;nbsp; &amp;nbsp;Then you went to the forum and showed that URL to others, and asked for their help.&amp;nbsp; Handy, huh?&amp;nbsp; We think so.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T100906Z">
         <seg>这就是所谓的白板.&amp;nbsp; 它使得其他人能很容易的在你创建的场景上工作, 并帮你指出错误之处.&amp;nbsp; 清楚了创建场景函数是如何'可移植'了么?&amp;nbsp; 从家里获得, 扔到娱乐场, 然后在上面折腾一阵.&amp;nbsp; 如果有必要, 你可以点击娱乐场上的 **保持** 按钮, 产生一个网址.&amp;nbsp; &amp;nbsp;最后到论坛上讲网址告诉其他人, 向他们求助.&amp;nbsp; 很方便吧, 哼??&amp;nbsp; 我们认为是这样的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is very handy, and again, we love it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T022526Z" creationid="aceway@qq.com" creationdate="20160427T022526Z">
+        <seg>这个非常方便，我们再次爱死它了。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2006,6 +2124,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>What can you say about the BabylonJS webGL rendering canvas, other than "IT IS THE COOLEST THING ON THE PLANET!".&amp;nbsp; This right-side area of the playground is where the BabylonJS webGL framework attempts to render the scene that you currently have in the editor.&amp;nbsp; Is the rendering canvas blank?&amp;nbsp; Did you click the Run button?&amp;nbsp; Have you got a camera?&amp;nbsp; Is the camera aimed correctly?&amp;nbsp; Do you have some lighting or an emissiveColor set on your mesh's material?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T023517Z" creationid="aceway@qq.com" creationdate="20160427T023517Z">
+        <seg>对于BabylonJS的网页图形库渲染画布你怎么评价, 没有比这个说法更牛逼的了 "它是这个星球上最酷的事情!".&amp;nbsp; 娱乐场的右边部分是BabylonJS网页图形库框架用来渲染场景的区域，而且你可以通过左边的编辑器实时控制场景.&amp;nbsp; 渲染出来的画布还是空白么?&amp;nbsp; 你点击了运行按钮么?&amp;nbsp; 你有创建相机么?&amp;nbsp; 相机的目标设置正确么?&amp;nbsp; 你网格的材质设置好了光源或散射色么？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>What is a framework, you ask?&amp;nbsp; You can think of a framework as scaffolding for a building, allowing you to build around it without worrying about the foundation.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032705Z" creationid="aceway" creationdate="20160403T032705Z">
@@ -2018,6 +2144,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160423T081649Z">
         <seg>当你在娱乐场里点击获取.zip时, 你得到一个zip压缩文件其中包含个叫做index.html的文件.&amp;nbsp; 如果你在文本编辑器中查看这个index.html文件, 你将看到一个和上面大图里非常像的文件内容.&amp;nbsp; 查看下外部包含的段落... 第一批4个页面SCRIPT元素/标签.&amp;nbsp; 每个标签里的.src属性... 指向里Babylon.js网站的网址.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When you save a scene to the playground's database in order to share the URL with others or remember the scene for later, the URL will look something like this:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030925Z" creationid="aceway@qq.com" creationdate="20160427T030925Z">
+        <seg>当你想同人分享网址或为之后工作记住场景而将一个场景保存到娱乐场的数据库里时，那么网址看起来会像这样的:</seg>
       </tuv>
     </tu>
     <tu>
@@ -2090,6 +2224,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T142847Z" creationid="aceway" creationdate="20160402T142839Z">
         <seg>你可以使用 **EasingMode** 这个属性来修改简化函数的行为, 也就是, 改变动画是如何插入的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can't damage the pre-installed demos)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030412Z" creationid="aceway@qq.com" creationdate="20160427T030412Z">
+        <seg>你不可能毁坏预装的演示程序的)</seg>
       </tuv>
     </tu>
     <tu>
