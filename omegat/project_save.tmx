@@ -2310,6 +2310,16 @@ BABYLON.Vector3(xValue, yValue, zValue)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>##MeshBuilder CreateXXX() Methods With Options Parameter
+In this tutorial, we will learn how to use the classical _CreateXXX()_ methods with the _options_ parameter instead of the full list of parameters.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T144127Z" creationid="aceway" creationdate="20160428T144127Z">
+        <seg>##MeshBuilder CreateXXX() 方法 With Options Parameter
+In this 教程, we will learn how to use the classical _CreateXXX()_ 方法 with the _options_ parameter instead of the full list of 参数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Interesting Playgrounds</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T035629Z" creationid="aceway@qq.com" creationdate="20160427T035629Z">
@@ -2884,6 +2894,38 @@ ID_PAGE: 22681
 PG_TITLE: 路线图
 ---
 ## 路线图</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>---
+ID_PAGE: 25088
+PG_TITLE: Ribbon Tutorial
+---
+Here you'll find almost everything to understand how the Ribbon object works and how to play with it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T143706Z" creationid="aceway" creationdate="20160428T143706Z">
+        <seg>---
+ID_PAGE: 25088
+PG_TITLE: Ribbon 教程
+---
+Here you'll find almost everything to understand how the Ribbon 对象 works and how to play with it.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>---
+ID_PAGE: 25101
+PG_TITLE: Supporting fog with ShaderMaterial
+---
+In order to support fog in your custom shaders, you will have to add some lines of code in your vertex and pixel shaders.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T143713Z" creationid="aceway" creationdate="20160428T143713Z">
+        <seg>---
+ID_PAGE: 25101
+PG_TITLE: Supporting fog with ShaderMaterial
+---
+In order to support fog in your custom shaders, you will have to add some lines of 代码 in your vertex and pixel shaders.</seg>
       </tuv>
     </tu>
     <tu>
