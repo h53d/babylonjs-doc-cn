@@ -2931,6 +2931,22 @@ In order to support fog in your custom shaders, you will have to add some lines 
     <tu>
       <tuv lang="EN-US">
         <seg>---
+ID_PAGE: 25110
+PG_TITLE: Position, Rotate, Translate and Spaces
+---
+The simple creature in Fig 1 is our pilot (a mesh) through the world of positions, rotations, translations and spaces in Babylon.js.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T144306Z" creationid="aceway" creationdate="20160428T144306Z">
+        <seg>---
+ID_PAGE: 25110
+PG_TITLE: 定位, Rotate, Translate and Spaces
+---
+The simple creature in Fig 1 is our pilot (a 网格) through the world of positions, rotations, translations and spaces in Babylon.js.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>---
 Setup Visual Studio to contribute to Babylon.js
 ---</seg>
       </tuv>
