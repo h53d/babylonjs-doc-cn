@@ -2234,10 +2234,28 @@ From Visual Studio, close the solution you just created, then go to the director
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### The HTML Part
+First, create a basic HTML5 web page:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145400Z" creationid="aceway" creationdate="20160428T145400Z">
+        <seg>### HTML部分
+首先, 创建一个基础的HTML5网页:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### The Internal Include - Green Section ###</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030054Z" creationid="aceway" creationdate="20160404T002127Z">
         <seg>### 内部包含 - 绿色部分 ###</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>### The Javascript External Includes Part (the framework)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145706Z" creationid="aceway" creationdate="20160428T145706Z">
+        <seg>### 包含的外部Javascript部分(框架)</seg>
       </tuv>
     </tu>
     <tu>
@@ -3172,6 +3190,26 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;/html&gt;
+```
+### The CSS Style Part</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145449Z" creationid="aceway" creationdate="20160428T145449Z">
+        <seg>&lt;/html&gt;
+```
+### CSS样式部分</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;title&gt;Babylon - Basic scene&lt;/title&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145423Z" creationid="aceway" creationdate="20160428T145423Z">
+        <seg>&lt;title&gt;Babylon - 基础场景&lt;/title&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A Camera.**&amp;nbsp; The three most commonly used TYPES of cameras... are ArcRotateCamera, FreeCamera, and TouchCamera.&amp;nbsp; There are many types of camera available in Babylon.js, but these three are the most common.&amp;nbsp; ANY number of cameras can be coded into a scene, but only one of those cameras... is the 'active camera'.&amp;nbsp; We have a tutorial in our Playpen Series... dedicated to talking about cameras.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T140701Z" creationid="aceway" creationdate="20160410T140701Z">
@@ -3232,6 +3270,14 @@ scene.beginAnimation(torus, 0, 120, true);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T133432Z" creationid="aceway" creationdate="20160403T133432Z">
         <seg>之后的是 oimo.js - 一个不同的物理 '引擎',  其表现的功能有点像 cannon.js, 但是它更快速高效, 尽管它缺少 cannon.js中出现的许多高级特性.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After the CSS, (but still inside the ```&lt;head&gt;``` part), please add:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145822Z" creationid="aceway" creationdate="20160428T145822Z">
+        <seg>在CSS后面, (同时也是在```&lt;head&gt;```内部), 请添加:</seg>
       </tuv>
     </tu>
     <tu>
@@ -3386,6 +3432,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Before you start, be sure you have a WebGL compatible browser (e.g.  Internet Explorer 11+, Firefox 4+, Google Chrome 9+, Opera 15+, etc.).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145324Z" creationid="aceway" creationdate="20160428T145324Z">
+        <seg>在你开始之前,请确定你有个支持WebGL的浏览器 (比如:IE11+, 火狐4+, 谷歌浏览器9+, Opera15+, 等.).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Below that, in green text, you will see 3 more lines of Babylon.js code.&amp;nbsp; You see, you are NOT required to use a Vector3 to set a .position on a mesh.&amp;nbsp; You can use the '**discrete**' way, instead.&amp;nbsp; Loosely defined, 'discrete' means... piece by piece... one step at a time.&amp;nbsp; If you would like to set a mesh's .position values axis by axis, feel free to use the handy green 'discrete' ways of doing it.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T032815Z" creationid="aceway" creationdate="20160423T032815Z">
@@ -3466,6 +3520,18 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T102021Z" creationid="aceway@qq.com" creationdate="20160427T102021Z">
         <seg>在你的工程你创建一个新的TypeScript文件，必要忘记添加下面这些行:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creating Basic Scene
+---
+### In this tutorial, we are going to create a basic 3D scene with Babylon.js.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145125Z" creationid="aceway" creationdate="20160428T145125Z">
+        <seg>创建基础场景
+---
+### 在本教程里, 我们将用Babylon.js创建一个基础的3D场景.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3942,6 +4008,18 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Inside the ```&lt;head&gt;``` part, please add this CSS to view the canvas in maximum size:
+```css
+&lt;style&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145631Z" creationid="aceway" creationdate="20160428T145429Z">
+        <seg>在```&lt;head&gt;```内部, 请添加这个CSS以使画布视图最大化:
+```css
+&lt;style&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Inside the createScene() function (the purple section)... we will be doing the actual Babylon.js commands and directives that cause beautiful webGL to happen.&amp;nbsp; The rest of the big picture sections... are simply helpers and preparations... for the fantastic purple section... the createScene() function.&amp;nbsp; Remember its name, because I will be mentioning it often in many Playpen Series tutorials.&amp;nbsp; It will become your best friend.&amp;nbsp; This I can promise.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T143936Z" creationid="aceway" creationdate="20160404T032427Z">
@@ -4089,6 +4167,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Next, we go inside the ```&lt;body&gt;``` part of the web page... and add a HTML5 canvas element, which will be used to draw our scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145930Z" creationid="aceway" creationdate="20160428T145930Z">
+        <seg>Next, we go inside the ```&lt;body&gt;``` part of the web page... and add a HTML5 画布 元素, which will be used to draw our 场景.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Notice the button that is currently labeled **Basic Scene**.&amp;nbsp; (It is actually called the Scene Selector button, but it is currently LABELED 'Basic Scene')</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T150155Z" creationid="aceway" creationdate="20160404T150155Z">
@@ -4133,6 +4219,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083112Z" creationid="aceway@qq.com" creationdate="20160331T083112Z">
         <seg>现在我们已经有动画对象了，可以谈论如何修改那些值了。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now we load our framework files.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145722Z" creationid="aceway" creationdate="20160428T145722Z">
+        <seg>现在加载我们的框架文件.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5217,6 +5311,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>_Two Basic Shapes in a Basic Scene_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145157Z" creationid="aceway" creationdate="20160428T145157Z">
+        <seg>_具有两个造型物的基础场景_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>_TypeScript file_</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T102600Z" creationid="aceway@qq.com" creationdate="20160427T102600Z">
@@ -5481,6 +5583,26 @@ Fast and easy.</seg>
 BABYLON.Animation.CreateAndStartAnimation('boxscale', box1, 'scaling.x', 30, 120, 1.0, 1.5);
 ```
 快速而简便.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```html
+&lt;script src="babylon.js"&gt;&lt;/script&gt;
+&lt;script src="hand.js"&gt;&lt;/script&gt;
+&lt;script src="cannon.js"&gt;&lt;/script&gt;  &lt;!-- optional physics engine --&gt;
+&lt;!-- &lt;script src="Oimo.js"&gt;&lt;/script&gt;  New physics engine --&gt;
+```
+(if you don't already have those files, you can find them here: https://github.com/BabylonJS/Babylon.js, and here: http://handjs.codeplex.com/)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145920Z" creationid="aceway" creationdate="20160428T145920Z">
+        <seg>```html
+&lt;script src="babylon.js"&gt;&lt;/script&gt;
+&lt;script src="hand.js"&gt;&lt;/script&gt;
+&lt;script src="cannon.js"&gt;&lt;/script&gt;  &lt;!-- 可选的物理引擎 --&gt;
+&lt;!-- &lt;script src="Oimo.js"&gt;&lt;/script&gt;  新的物理引擎 --&gt;
+```
+(如果你还没有这些文件, 可以在此找到: https://github.com/BabylonJS/Babylon.js, and here: http://handjs.codeplex.com/)</seg>
       </tuv>
     </tu>
     <tu>
