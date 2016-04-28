@@ -48,7 +48,7 @@ https://github.com/BabylonJS/Babylon.js/blob/master/src/Loading/Plugins/babylon.
     "autoAnimateFrom": int,
     "autoAnimateTo": int,
     "autoAnimateLoop": boolean (可以省略),
-    "autoAnimateSpeed": number (can be omitted)
+    "autoAnimateSpeed": number (可以省略)
 }
 ```
 
@@ -85,12 +85,12 @@ https://github.com/BabylonJS/Babylon.js/blob/master/src/Loading/Plugins/babylon.
     "autoAnimateTo": int,
     "autoAnimateLoop": boolean (可以忽略),
     "autoAnimateSpeed": number (可以忽略),
-    "inputmgr" : map of camera inputs (可以忽略, 见下面)
+    "inputmgr" : 相机的输入映射(可以忽略, 见下面)
 }
 ```
 
 ## 相机的输入映射
-这是个对象，它字面上用输入类型作为键，同时用输入设定作为子对象。每个输入类型都有其自身的属性.
+这是个对象，它字面上用输入类型作为键，同时用输入设定作为存储子对象。每个输入类型都有其自身的属性.
 
 ## 光源
 光源通过如下的JSON格式定义:

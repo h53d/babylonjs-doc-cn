@@ -159,13 +159,13 @@ var light = new BABYLON.DirectionalLight("Dir0", new BABYLON.Vector3(0, -1, 0), 
 // 创建一个 BABYLON.Mesh 网格对象类型
 var mybox = BABYLON.Mesh.CreateBox("box", 6.0, scene);
 ```
-你该清楚了.&nbsp; Javascript 对象, 常常用在 Babylon.js 场景里.&nbsp; 又是你创建它们, 另外一些时候你获得一个早些时候创建的对象的'引用' 或 '句柄' .&nbsp; 持有一个Javascript对象的引用或句柄, 实质上意味着和已有的对象建立了通信线.
+你该清楚了.&nbsp; Javascript 对象, 常常用在 Babylon.js 场景里.&nbsp; 有时你创建它们, 另外一些时候你获得一个早些时候创建的对象的'引用' 或 '句柄' .&nbsp; 持有一个Javascript对象的引用或句柄, 实质上意味着和已有的对象建立了通信线.
 
 这些每个 Javascript 对象都有命名的 '存储空间' 来保存内容到里面.&nbsp; 通常是, 值, 数据, 和对象... 被存在这些内存空间里.&nbsp; 这些存储着值的空间被叫做对象的'属性'.&nbsp; 属性通常被 '设置(set)' (将一个值放入存储空间), 和 '获取(get)' (到存储空间查看里面是什么内容).
 
 **属性**
 
-属性是存储着的值.&nbsp; 这些纸被Babylon.js框架使用... 用于 '渲染(render)' 场景.&nbsp; 这是个例子:
+属性是存储着的值.&nbsp; 这些值被Babylon.js框架使用... 用于 '渲染(render)' 场景.&nbsp; 这是个例子:
 
 ``` javascript
 light.intensity = 0.5;
