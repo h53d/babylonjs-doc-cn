@@ -1588,6 +1588,16 @@ A multiMaterial is defined by the following JSON:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Next step ##
+----</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T141250Z" creationid="aceway" creationdate="20160429T141250Z">
+        <seg>## 下一步 ##
+----</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## No worker version: *babylon.noworker.js*</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071649Z" creationid="aceway@qq.com" creationdate="20160427T071649Z">
@@ -4405,6 +4415,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Next in the Playpen Series - [**Basic elements**](http://doc.babylonjs.com/tutorials/Discover_Basic_Elements)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T141435Z" creationid="aceway" creationdate="20160429T141435Z">
+        <seg>在下篇等练笔系列里 - [**基础元素**](http://doc.babylonjs.com/tutorials/Discover_Basic_Elements)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Next, two important steps:
 * Adding the animation array to the animation object:</seg>
       </tuv>
@@ -4475,6 +4493,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145722Z" creationid="aceway" creationdate="20160428T145722Z">
         <seg>现在加载我们的框架文件.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now you are ready to go further and learn how to create more elements like spheres, cylinders, boxes, etc.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T141347Z" creationid="aceway" creationdate="20160429T141159Z">
+        <seg>现在你可以进一步的学习如何创建更多的元素,像 球体, 圆柱体, 盒子, 等等.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5201,6 +5227,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071746Z" creationid="aceway@qq.com" creationdate="20160427T071339Z">
         <seg>这个版本的babylon.js没有WebWorker(H5中的新技术)来解决冲突问题.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This will allow others to help you with problems, and will also allow you to help others with their problems.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T141239Z" creationid="aceway" creationdate="20160429T141239Z">
+        <seg>这个允许其他人帮助你解决问题,也允许你帮助其他人解决问题.</seg>
       </tuv>
     </tu>
     <tu>
