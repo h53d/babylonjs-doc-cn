@@ -2424,6 +2424,22 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>*  a Babylon Scene object
+*  a camera that has been attached
+*  a light that has been aimed
+*  a sphere that has been placed at position 0,1,0 (we moved it upward +y)
+*  a ground plane that has been placed at position 0,0,0 (default position)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T041036Z" creationid="aceway@qq.com" creationdate="20160429T040733Z">
+        <seg>*  一个Babylon场景对象
+*  附加一个相机
+*  一个设置好目标的光源
+*  一个放置在0,1,0处的球体 (我们将它y轴上移了)
+*  一个放置在0,0,0处的地面(默认地方)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Vector3**: An array of 3 floats ([x, y, z]).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T072337Z" creationid="aceway@qq.com" creationdate="20160427T072337Z">
@@ -3026,6 +3042,14 @@ animationTorus.setKeys(keysTorus);</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// Change the scene background color to green.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T035401Z" creationid="aceway@qq.com" creationdate="20160429T035401Z">
+        <seg>// 改变场景的背景色为绿色.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// Creates a BABYLON.DirectionalLight type of object
 var light = new BABYLON.DirectionalLight("Dir0", new BABYLON.Vector3(0, -1, 0), scene);</seg>
       </tuv>
@@ -3078,12 +3102,28 @@ var easingFunction = new BABYLON.CircleEase();</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// Dim the light a small amount</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T035759Z" creationid="aceway@qq.com" creationdate="20160429T035759Z">
+        <seg>// 将光源光线置为昏暗</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// For each easing function, you can choose beetween EASEIN (default), EASEOUT, EASEINOUT
 easingFunction.setEasingMode(BABYLON.EasingFunction.EASINGMODE_EASEINOUT);</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T145214Z" creationid="aceway" creationdate="20160402T145214Z">
         <seg>// 对于每个简化函数, 你可以从 EASEIN (default), EASEOUT, EASEINOUT 中选择一个模式
 easingFunction.setEasingMode(BABYLON.EasingFunction.EASINGMODE_EASEINOUT);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Get the canvas element from our HTML above</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034521Z" creationid="aceway@qq.com" creationdate="20160429T034521Z">
+        <seg>// 从上面的HTML里获取我们的画布元素</seg>
       </tuv>
     </tu>
     <tu>
@@ -3100,6 +3140,94 @@ easingFunction.setEasingMode(BABYLON.EasingFunction.EASINGMODE_EASEINOUT);</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T150340Z" creationid="aceway" creationdate="20160402T150340Z">
         <seg>// 这是你创建自己的简化函数时应该修改的核心方法.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Leave this function</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040154Z" creationid="aceway@qq.com" creationdate="20160429T040154Z">
+        <seg>// 离开该函数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Let's try our built-in 'ground' shape.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040057Z" creationid="aceway@qq.com" creationdate="20160429T040057Z">
+        <seg>// 让我们尝试Babylonjs内置的'地面'状造型.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Let's try our built-in 'sphere' shape.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T035917Z" creationid="aceway@qq.com" creationdate="20160429T035917Z">
+        <seg>// 让我们尝试Babylonjs内置的'球'状造型.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Load the BABYLON 3D engine</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034537Z" creationid="aceway@qq.com" creationdate="20160429T034537Z">
+        <seg>// 加载BABYLON 3D引擎</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Move the sphere upward 1/2 its height</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040023Z" creationid="aceway@qq.com" creationdate="20160429T040023Z">
+        <seg>// 将移动球向上 1/2 其高度</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Now create a basic Babylon Scene object</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T035325Z" creationid="aceway@qq.com" creationdate="20160429T035325Z">
+        <seg>// 现在创建一个Babylon场景对象</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// This attaches the camera to the canvas</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T035523Z" creationid="aceway@qq.com" creationdate="20160429T035523Z">
+        <seg>// 将相机附加到画布上</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// This begins the creation of a function that we will 'call' just after it's built</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T035300Z" creationid="aceway@qq.com" creationdate="20160429T035300Z">
+        <seg>// 这是创建函数的开头，该函数在被构建后立即调用t</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// This creates a light, aiming 0,1,0 - to the sky.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T035627Z" creationid="aceway@qq.com" creationdate="20160429T035627Z">
+        <seg>// 创建一个光源，在0,1,0点朝向天空.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// This creates and positions a free camera</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T035433Z" creationid="aceway@qq.com" creationdate="20160429T035433Z">
+        <seg>// 创建并放置一个自由相机</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// This targets the camera to scene origin</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T035505Z" creationid="aceway@qq.com" creationdate="20160429T035505Z">
+        <seg>// 将相机朝向对准场景原点</seg>
       </tuv>
     </tu>
     <tu>
@@ -3282,6 +3410,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>After this, you will add your scene creation code.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034606Z" creationid="aceway@qq.com" creationdate="20160429T034606Z">
+        <seg>之后, 你将添加创建场景的代码.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>After you paste-in code to the editor, or after you make changes to the code in the editor, you press **Run**.&amp;nbsp; This commands the playground to try to render your scene.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T142010Z" creationid="aceway" creationdate="20160425T142010Z">
@@ -3444,6 +3580,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T032815Z" creationid="aceway" creationdate="20160423T032815Z">
         <seg>在那下面, 在绿色文本里, 你将看到另3行Babylon.js代码.&amp;nbsp; 你该清楚了, 你不需被迫使用Vector3值来设置网格的位置属性(.position).&amp;nbsp; 相反,你可以用'**零散(discrete)**'的方式.&amp;nbsp; 没有严格的定义, '林散' 意味着... 一块一块的... 一次一小步.&amp;nbsp; 如果你想一个轴一个轴的设置网格的位置属性, 可以自便的按照那个些绿色'零散'的方式去做.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Besides generating a Babylon Scene object, createScene() is where you will add your basic scene requirements:  One camera, one light, and one or more shapes/meshes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034910Z" creationid="aceway@qq.com" creationdate="20160429T034910Z">
+        <seg>除了生成一个Babylon场景对象外，这个createScene() 函数里也是你添加场景所需的地方:  一个相机，一个光源，一个或多个造型/网格.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4028,6 +4172,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It contains:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040613Z" creationid="aceway@qq.com" creationdate="20160429T040613Z">
+        <seg>它包括:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is beyond the scope of this tutorial to teach everything about callable methods and settable properties on Javascript objects.&amp;nbsp; The main thing is to try to take notice WHEN a 'pocket' on an object... is a property, and when it is a method.&amp;nbsp; Methods always use parentheses... sometimes empty, sometimes full of parameters/args.&amp;nbsp; Properties never use parentheses and therefore never require parameters.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T101110Z" creationid="aceway@qq.com" creationdate="20160421T101110Z">
@@ -4169,8 +4321,8 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       <tuv lang="EN-US">
         <seg>Next, we go inside the ```&lt;body&gt;``` part of the web page... and add a HTML5 canvas element, which will be used to draw our scene.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145930Z" creationid="aceway" creationdate="20160428T145930Z">
-        <seg>Next, we go inside the ```&lt;body&gt;``` part of the web page... and add a HTML5 画布 元素, which will be used to draw our 场景.</seg>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034318Z" creationid="aceway" creationdate="20160428T145930Z">
+        <seg>下一步，我们进入页面的 ```&lt;body&gt;``` 内部... 然后添加一个HTML5 画布元素, 我们将用它来绘制我们的场景.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4235,6 +4387,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T094332Z" creationid="aceway" creationdate="20160404T094332Z">
         <seg>现在你可以用书签纪录下那个唯一的网址, 然后去访问 Babylon.js 论坛:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now, we make the jump from HTML5 into Javascript.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034402Z" creationid="aceway@qq.com" creationdate="20160429T034352Z">
+        <seg>现在, 我们从HTML5跳进Javascript.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4323,6 +4483,22 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Params: name, subdivisions, size, scene</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T035958Z" creationid="aceway@qq.com" creationdate="20160429T035958Z">
+        <seg>参数:名称, 细分度, 大小, 场景</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Params: name, width, depth, subdivisions, scene</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040133Z" creationid="aceway@qq.com" creationdate="20160429T040133Z">
+        <seg>参数: 名称, 宽度, 深度, 细分度, 场景</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Please credit the author if you can!</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T040930Z" creationid="aceway@qq.com" creationdate="20160427T040930Z">
@@ -4387,6 +4563,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>So now, add this entire createScene function to your web page:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034958Z" creationid="aceway@qq.com" creationdate="20160429T034958Z">
+        <seg>所以现在，将这里整个createScene函数添加到你的网页里:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So we are going to create the Visual Studio project in a directory inside the repo, then move it one level up.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T095301Z" creationid="aceway@qq.com" creationdate="20160427T095301Z">
@@ -4423,6 +4607,18 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T101614Z" creationid="aceway@qq.com" creationdate="20160421T101614Z">
         <seg>有时候, 方法被用来设置属性值， 有时后别用来获取属性值.&amp;nbsp; 这些方法/函数通常被称为 GETTERS 和 SETTERS.&amp;nbsp; 注意到上面getMeshByName方法里的用词 'get' 没?&amp;nbsp; 它就是个 GETTER 方法.&amp;nbsp; 这儿又是一个该方法调用':</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Still inside the ```&lt;body&gt;``` part of the web page,  please add:
+```javascript
+&lt;script&gt;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034444Z" creationid="aceway@qq.com" creationdate="20160429T034444Z">
+        <seg>任然实在页面的 ```&lt;body&gt;```内部，请添加:
+```javascript
+&lt;script&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4565,6 +4761,14 @@ scene.registerBeforeRender(function () {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T072029Z" creationid="aceway@qq.com" creationdate="20160427T072029Z">
         <seg>下面文件没有包含在核心版本里:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The main thing to know is that our createScene function has all requirements complete.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040831Z" creationid="aceway@qq.com" creationdate="20160429T040605Z">
+        <seg>最重要的一点是我们的createScene 函数具有所要求的全部。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4901,6 +5105,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To keep your code compatible with the Babylon.js Playground, we recommend that you insert a 'createScene' function at this point.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034728Z" creationid="aceway@qq.com" creationdate="20160429T034728Z">
+        <seg>为了保持你的代码和Babylon.js娱乐场兼容, 我们建议你在此处插入一个 'createScene' 函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To put dynamics in it, we are going to learn how to tell your computer to move your meshes in any way you choose.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053931Z" creationid="aceway" creationdate="20160330T033249Z">
@@ -5033,6 +5245,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T104506Z">
         <seg>哇, 到这儿信息量很大了,不是吗?&amp;nbsp; 你已经学了如何识别一个场景文件 (大突破) 了, 学了它重要的 createScene() 函数, 而且学了怎么复制粘贴它到别处.&amp;nbsp; 你已经见识了娱乐场里的 createScene() 函数, 而且为你介绍了它的 运行, 保存 和 获取.zip压缩包的按钮.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Yes, that is quite a function, but do not let it scare you.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040321Z" creationid="aceway@qq.com" creationdate="20160429T040321Z">
+        <seg>是的，这就是个函数，但是不要让它把你吓着了。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5203,6 +5423,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101631Z" creationid="aceway@qq.com" creationdate="20160427T101631Z">
         <seg>你还要在TypeScriptSourceMap元素下面添加一行，以便启用TypeScriptExperimentalDecorators.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You will learn more about the parameters and properties for lights, cameras, and built-in shapes... in the tutorials to come.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040424Z" creationid="aceway@qq.com" creationdate="20160429T040424Z">
+        <seg>这个教程后面你将学习光源，相机，内置造型物的更多参数和属性。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5761,14 +5989,6 @@ You will find a complete demonstration of the easing functions behaviors, in the
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>var scene = new BABYLON.Scene(engine);</seg>
-      </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T145906Z" creationid="aceway" creationdate="20160423T145906Z">
-        <seg>var 场景 = new BABYLON.Scene(engine);</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>| Id | Title | Author|
 | :------------ |:---------------:| -----:|
 | [#27FN5R#8](http://www.babylonjs-playground.com/#27FN5R#8) | Equirectangular map as reflection texture | Deltakosh |
@@ -5867,6 +6087,16 @@ optional | speedRatio | number | default : 1.</seg>
         <seg> | 止于 | 数量 | 结束fps
 可选 | 循环 | 布尔值 | 如果为真,则动画循环播放 (取决于BABYLON.Animation.ANIMATIONLOOPMODE)
 可选 | 速率 | 数值 | 默认 : 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>};  // End of createScene function
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040205Z" creationid="aceway@qq.com" creationdate="20160429T040205Z">
+        <seg>};  // createScene函数结束
+```</seg>
       </tuv>
     </tu>
     <tu>
