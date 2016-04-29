@@ -1546,6 +1546,14 @@ Once again let's visit the saved playground scene that I sent you to, above.</se
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Moving On ##</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T125532Z" creationid="aceway" creationdate="20160429T125532Z">
+        <seg>## 继续前进 ##</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## MultiMaterials
 A multiMaterial is defined by the following JSON:
 ```javascript
@@ -3450,6 +3458,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>After you have spent some time using the Babylon.js Playground, you will see how createScene() is portable, and can be easily copied and pasted TO and FROM the playground editor window.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T130450Z" creationid="aceway" creationdate="20160429T130450Z">
+        <seg>当你使用Babylon.js娱乐场一段时间后, 你会明白createScene()是多么的方便, 能够简单的往/从编辑器窗口粘贴和复制进出内容.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>After you paste-in code to the editor, or after you make changes to the code in the editor, you press **Run**.&amp;nbsp; This commands the playground to try to render your scene.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T142010Z" creationid="aceway" creationdate="20160425T142010Z">
@@ -3966,6 +3982,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>From this point forward in the Basic Series tutorials, I will mostly talk about things that are contained in the createScene function (the part between the dashed lines).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T125859Z" creationid="aceway" creationdate="20160429T125859Z">
+        <seg>从本基础系列教程的这个点开始, 我将主要谈论createScene函数里面的内容(虚线之间的部分).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Go back to Visual Studio, open the solution.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100129Z" creationid="aceway@qq.com" creationdate="20160427T100129Z">
@@ -4056,6 +4080,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054110Z" creationid="aceway@qq.com" creationdate="20160331T014803Z">
         <seg>此处你决定开始修改什么类型的数据：floating（比如是平移），一个向量(比如是方向)，或四元数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I will assume that you already know how to insert a createScene function into a Babylon.js HTML5 scene document (like the one above).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T130035Z" creationid="aceway" creationdate="20160429T130035Z">
+        <seg>我假设你已经知道如何往HTML5页面文档里插入BabylonJS场景的createScene函数(就像上面那个).</seg>
       </tuv>
     </tu>
     <tu>
@@ -5225,6 +5257,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Try to memorize this web page layout, and see how the createScene function is at the heart of it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T130143Z" creationid="aceway" creationdate="20160429T130143Z">
+        <seg>努力记住这个页面布局, 而且弄清楚createScene函数是它的核心.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Two of the most-used values in Babylon.js, are Vector3 values and Color3 values.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T135134Z" creationid="aceway" creationdate="20160421T135134Z">
@@ -6097,6 +6137,14 @@ You will find a complete demonstration of the easing functions behaviors, in the
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T145902Z" creationid="aceway" creationdate="20160423T145902Z">
         <seg>var engine = new BABYLON.Engine(画布, true);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>window.addEventListener("resize", function () {</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T125454Z" creationid="aceway" creationdate="20160429T125454Z">
+        <seg>window.addEventListener("resize", 函数 () {</seg>
       </tuv>
     </tu>
     <tu>
