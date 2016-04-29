@@ -59,7 +59,7 @@ _具有两个造型物的基础场景_
 <script src="cannon.js"></script>  <!-- 可选的物理引擎 -->
 <!-- <script src="Oimo.js"></script>  新的物理引擎 -->
 ```
-(如果你还没有这些文件, 可以在此找到: https://github.com/BabylonJS/Babylon.js, and here: http://handjs.codeplex.com/)
+(如果你还没有这些文件, 可以在此找到: https://github.com/BabylonJS/Babylon.js, 还有这儿: http://handjs.codeplex.com/)
 
 
 下一步，我们进入页面的 ```<body>``` 内部... 然后添加一个HTML5 画布元素, 我们将用它来绘制我们的场景.
@@ -68,18 +68,18 @@ _具有两个造型物的基础场景_
 <canvas id="renderCanvas"></canvas>
 ```
 
-现在, 我们从HTML5跳进Javascript.  任然实在页面的 ```<body>```内部，请添加:
+现在, 我们从HTML5跳进Javascript.  仍然在 ```<body>```内部，请添加:
 ```javascript
 <script>
 
 // 从上面的HTML里获取我们的画布元素
   var canvas = document.getElementById("renderCanvas");
-// 加载BABYLON 3D引擎
 
+// 加载BABYLON 3D引擎
   var engine = new BABYLON.Engine(canvas, true);
 ```
 
-之后, 你将添加创建场景的代码.  为了保持你的代码和Babylon.js娱乐场兼容, 我们建议你在此处插入一个 'createScene' 函数.  除了生成一个Babylon场景对象外，这个createScene() 函数里也是你添加场景所需的地方:  一个相机，一个光源，一个或多个造型/网格.
+之后, 你将添加创建场景的代码.  为了保持你的代码和Babylon.js娱乐场兼容, 我们建议你在此处插入一个 'createScene' 函数.  除了生成一个Babylon场景对象外，你也在这个createScene()函数里添加场景的其它所需:  一个相机，一个光源，一个或多个造型/网格.
 
 所以现在，将这里整个createScene函数添加到你的网页里:
  
@@ -87,59 +87,57 @@ _具有两个造型物的基础场景_
   // 这是创建函数的开头，该函数在被构建后立即调用t
   var createScene = function () {
 
-// 现在创建一个Babylon场景对象
+	// 现在创建一个Babylon场景对象
     var scene = new BABYLON.Scene(engine);
-// 改变场景的背景色为绿色.
 
+	// 改变场景的背景色为绿色.
     scene.clearColor = new BABYLON.Color3(0, 1, 0);
-// 创建并放置一个自由相机
 
+	// 创建并放置一个自由相机
     var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 5, -10), scene);
 
-// 将相机朝向对准场景原点
+	// 将相机朝向对准场景原点
     camera.setTarget(BABYLON.Vector3.Zero());
 
-// 将相机附加到画布上
+	// 将相机附加到画布上
     camera.attachControl(canvas, false);
         
     // 创建一个光源，在0,1,0点朝向天空.
     var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
 
-// 将光源光线置为昏暗
+	// 将光源光线置为昏暗
     light.intensity = .5;
 
-// 让我们尝试Babylonjs内置的'球'状造型. 参数:名称, 细分度, 大小, 场景
+	// 让我们尝试Babylonjs内置的'球'状造型. 参数:名称, 细分度, 大小, 场景
     var sphere = BABYLON.Mesh.CreateSphere("sphere1", 16, 2, scene);
 
-// 将移动球向上 1/2 其高度
+	// 将移动球向上 1/2 其高度
     sphere.position.y = 1;
 
-// 让我们尝试Babylonjs内置的'地面'状造型.  参数: 名称, 宽度, 深度, 细分度, 场景
+	// 让我们尝试Babylonjs内置的'地面'状造型.  参数: 名称, 宽度, 深度, 细分度, 场景
     var ground = BABYLON.Mesh.CreateGround("ground1", 6, 6, 2, scene);
 
-// 离开该函数
+	// 离开该函数
     return scene;
 
 };  // createScene函数结束
 ```
 
-是的，这就是个函数，但是不要让它把你吓着了。这个教程后面你将学习光源，相机，内置造型物的更多参数和属性。最重要的一点是我们的createScene 函数具有所要求的全部。它包括:
+是的，这就是个函数，但是不要被它吓着了。这个教程后面你将学习光源，相机，内置造型物的更多参数和属性。最重要的一点是我们的createScene 函数具有所要求的全部。它包括:
 
 *  一个Babylon场景对象
-*  附加一个相机
+*  附加的一个相机
 *  一个设置好目标的光源
-*  一个放置在0,1,0处的球体 (我们将它y轴上移了)
+*  一个放置在0,1,0处的球体 (我们将它在y轴上移了)
 *  一个放置在0,0,0处的地面(默认地方)
 
-还有三个东东要添加到你的页面里.  首先, 对刚完成的createScene函数的调用.  添加这个:
-
+还有三个东东要添加到你的页面里. 首先, 对刚完成的createScene函数的调用, 添加这个:
 ```javascript
   // 现在, 调用刚创建完的createScene函数
   var scene = createScene();
 ```
 
-然后, 最重要的渲染循环.  添加这个:
-
+然后, 最重要的渲染循环. 添加这个:
 ```javascript
   // 注册一个渲染循环已重复的渲染场景
   engine.runRenderLoop(function () {
@@ -147,8 +145,7 @@ _具有两个造型物的基础场景_
   });
 ```
 
-最后, 可选但是便捷的，对画布/窗口大小改变事件的处理程序.  添加这个:
-
+最后, 可选但是便捷的，对画布/窗口大小改变事件的处理程序. 添加这个:
 ```javascript
   // 监测浏览器/画布大小改变事件
   window.addEventListener("resize", 函数 () {
@@ -156,20 +153,19 @@ _具有两个造型物的基础场景_
   });
 ```
 
-那儿.  所有的Javascript代码已经写入完.  请确保你已经使HTML的script, body, 和 html标签元素闭合. HTML5页面 的最后3行应当是:
-
+到此,  所有的Javascript代码已经写入完.  请确保你已经使HTML的script, body, 和html标签元素闭合. HTML5页面的最后3行应当是:
 ```html
 </script>
 </body>
 </html>
 ```
 
-你做到了!保存你的文件(在babylon.js, hand.js, 和cannon.js文件同一文件夹下)然后用已经支持WebGL的浏览器查看.  You should see your new scene displayed in 3D on its canvas.
+你做到了!保存你的文件(在babylon.js, hand.js, 和cannon.js文件同一文件夹下), 然后用已经支持WebGL的浏览器查看.  你将在画布上看到你新建的3维场景.
 
-A near-exact duplicate of the createScene function used in this tutorial... can be seen [**RIGHT HERE**](http://www.babylonjs.com/playground/#1GM4YQ) at the Babylon.js Playground.  You will also see the scene render LIVE, ONLINE!  Use the playground's 'Get .zip' choice if you want to download the entire index.html file used in this tutorial.
+和本教程里这个几乎类同的createScene函数可以在Babylon.js娱乐场的[**此处**](http://www.babylonjs.com/playground/#1GM4YQ)看到.  你也可以看到场景在线实时渲染出来！如果你想通过'获取.zip压缩包'下载index.html文件，请点击娱乐场里的下载按钮.
 
-## Got Troubles? ##
-Here is what the entire web page should look like:
+## 遇到问题? ##
+这儿是整个页面看起来的样子:
 
 ```html
 <!doctype html>
@@ -198,32 +194,42 @@ Here is what the entire web page should look like:
 <body>
    <canvas id="renderCanvas"></canvas>
    <script type="text/javascript">
-      // Get the canvas element from our HTML below
+      // 从下面的HTML里获取画布元素
       var canvas = document.querySelector("#renderCanvas");
+
       // 加载BABYLON 3D引擎
       var engine = new BABYLON.Engine(画布, true);
       // -------------------------------------------------------------
-      // Here begins a function that we will 'call' just after it's built
+      // 此处开始定义函数，它在构建完后就被调用
       var createScene = function () {
          // 现在创建一个Babylon场景对象
          var scene = new BABYLON.Scene(engine);
+
          // 改变场景的背景色为绿色.
          scene.clearColor = new BABYLON.Color3(0, 1, 0);
+
          // 创建并放置一个自由相机
          var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 5, -10), scene);
+
          // 将相机朝向对准场景原点
          camera.setTarget(BABYLON.Vector3.Zero());
+
          // 将相机附加到画布上
          camera.attachControl(canvas, false);
+
          // 创建一个光源，在0,1,0点朝向天空.
          var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
+
          // 将光源光线置为昏暗
          light.intensity = .5;
+
          // 让我们尝试Babylonjs内置的'球'状造型. 参数:名称, 细分度, 大小, 场景
          var sphere = BABYLON.Mesh.CreateSphere("sphere1", 16, 2, scene);
+
          // 将移动球向上 1/2 其高度
          sphere.position.y = 1;
          // 让我们尝试Babylonjs内置的'地面'状造型. 参数: 名称, 宽度, 深度, 细分度, 场景
+
          var ground = BABYLON.Mesh.CreateGround("ground1", 6, 6, 2, scene);
          // 离开该函数
          return scene;
@@ -249,11 +255,11 @@ Here is what the entire web page should look like:
 
 从本基础系列教程的这个点开始, 我将主要谈论createScene函数里面的内容(虚线之间的部分). 我假设你已经知道如何往HTML5页面文档里插入BabylonJS场景的createScene函数(就像上面那个).
 
-努力记住这个页面布局, 而且弄清楚createScene函数是它的核心. 当你使用Babylon.js娱乐场一段时间后, 你会明白createScene()是多么的方便, 能够简单的往/从编辑器窗口粘贴和复制进出内容. 这个会允许其他人帮你解决问题,而且还允许你帮助其他人解决问题.
+努力记住这个页面的布局, 并且弄清楚createScene函数是它的核心. 当你使用Babylon.js娱乐场一段时间后, 你会明白createScene()是多么的方便, 你能够简单的往/从编辑器窗口粘贴和复制进出内容. 这个会允许其他人帮你解决问题,而且还允许你帮助其他人解决问题.
 
 ## 下一步 ##
 ----
 
-现在你可以再进一步了, 学习如何创建更多的元素, 比如球体,圆柱体,盒子等.
+现在你可以再进一步学习如何创建更多的元素, 比如球体,圆柱体,盒子等.
 
 在下一练笔系列里 - [**基础元素**](http://doc.babylonjs.com/tutorials/Discover_Basic_Elements)
