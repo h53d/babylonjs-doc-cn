@@ -20,8 +20,8 @@ http://doc.babylonjs.com/ 在线文档的翻译。
 9. [路线图](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/generals/General/Roadmap.md)
 
 ###教程
-1. [动画](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Animations.md)
-2. [创建基础场景](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Creating_a_Basic_Scene.md)
+1. [创建基础场景](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Creating_a_Basic_Scene.md)
+2. [动画](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Animations.md)
 
 # 译中文档 #
 
