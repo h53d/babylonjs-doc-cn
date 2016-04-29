@@ -3192,6 +3192,22 @@ easingFunction.setEasingMode(BABYLON.EasingFunction.EASINGMODE_EASEINOUT);</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// Now, call the createScene function that you just finished creating</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065016Z" creationid="aceway@qq.com" creationdate="20160429T065016Z">
+        <seg>// 现在, 调用刚创建完的createScene函数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Register a render loop to repeatedly render the scene</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065147Z" creationid="aceway@qq.com" creationdate="20160429T065147Z">
+        <seg>// 注册一个渲染循环已重复的渲染场景</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// This attaches the camera to the canvas</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T035523Z" creationid="aceway@qq.com" creationdate="20160429T035523Z">
@@ -3228,6 +3244,14 @@ easingFunction.setEasingMode(BABYLON.EasingFunction.EASINGMODE_EASEINOUT);</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T035505Z" creationid="aceway@qq.com" creationdate="20160429T035505Z">
         <seg>// 将相机朝向对准场景原点</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Watch for browser/canvas resize events</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065430Z" creationid="aceway@qq.com" creationdate="20160429T065430Z">
+        <seg>// 监测浏览器/画布大小改变事件</seg>
       </tuv>
     </tu>
     <tu>
@@ -3394,6 +3418,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Add this:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T064925Z" creationid="aceway@qq.com" creationdate="20160429T064925Z">
+        <seg>添加这个:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>After that comes oimo.js - a different physics 'engine' that performs a similar function to cannon.js, but is generally faster although it lacks some of the more advanced features present in cannon.js.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T133432Z" creationid="aceway" creationdate="20160403T133432Z">
@@ -3430,6 +3462,14 @@ scene.beginAnimation(torus, 0, 120, true);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T075443Z" creationid="aceway" creationdate="20160423T075443Z">
         <seg>再次的,请花些时间观察下该场景.&amp;nbsp; 而且又一次的, 黄颜色的文本显示了通过一行代码里用Vector3量设置网格的缩放(.scaling)属性的方式, 或者你也可以使用一种或多种方式零散设置缩放... 绿色文本显示了那些方法.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All the Javascript inserting is done.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065545Z" creationid="aceway@qq.com" creationdate="20160429T065545Z">
+        <seg>所有的Javascript代码已经写入完.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3478,6 +3518,14 @@ scene.beginAnimation(torus, 0, 120, true);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152230Z" creationid="aceway" creationdate="20160402T152230Z">
         <seg>一个事件 是在某指定帧会被调用的函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And last, an optional but handy canvas/window resize event handler.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065357Z" creationid="aceway@qq.com" creationdate="20160429T065357Z">
+        <seg>最后, 可选但是便捷的，对画布/窗口大小改变事件的处理程序.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3844,6 +3892,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085655Z" creationid="aceway@qq.com" creationdate="20160331T085655Z">
         <seg>最后，你可以在你应用的任何时间点通过一行代码加载动画。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>First, a 'call' to the createScene function that we just completed.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T064917Z" creationid="aceway@qq.com" creationdate="20160429T064917Z">
+        <seg>首先, 对刚完成的createScene函数的调用.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4263,6 +4319,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Make sure you close the script, body, and html elements.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065642Z" creationid="aceway@qq.com" creationdate="20160429T065642Z">
+        <seg>请确保你已经使HTML的script, body, 和 html标签元素闭合.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Maybe now you want to build an Animation for box1.scaling.y, and really get box1 moving playfully.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105655Z" creationid="aceway" creationdate="20160402T105655Z">
@@ -4555,6 +4619,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Save your file (in the same folder as babylon.js, hand.js, and cannon.js) and browse it with your WebGL-ready browser.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T071748Z" creationid="aceway@qq.com" creationdate="20160429T071748Z">
+        <seg>保存你的文件(在babylon.js, hand.js, 和cannon.js文件同一文件夹下)然后用已经支持WebGL的浏览器查看.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See the 'createScene' function in the left-side code editing window?&amp;nbsp; Does it look familiar?&amp;nbsp; It is the very same code from the purple section of the big picture (but with a couple of word-wrapped lines).&amp;nbsp; Now you can see why the createScene function is an important section.&amp;nbsp; It is somewhat portable.&amp;nbsp; You can copy createScene functions to/from the playground editor, and to/from your home scene files.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T034539Z" creationid="aceway" creationdate="20160404T034539Z">
@@ -4765,6 +4837,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The last three lines of your HTML5 web page... should be:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T071602Z" creationid="aceway@qq.com" creationdate="20160429T071602Z">
+        <seg>HTML5页面 的最后3行应当是:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The main thing to know is that our createScene function has all requirements complete.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040831Z" creationid="aceway@qq.com" creationdate="20160429T040605Z">
@@ -4859,10 +4939,26 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Then, the all-important rendering loop.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065040Z" creationid="aceway@qq.com" creationdate="20160429T065040Z">
+        <seg>然后, 最重要的渲染循环.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are many IDE out there you can use to contribute to Babylon.js, Visual Studio being one of them.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T092215Z" creationid="aceway@qq.com" creationdate="20160427T092215Z">
         <seg>有许多IDE可用与为Babylon.js做贡献, Visual Studio是其中之一.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are three more things to add to your web page.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T064838Z" creationid="aceway@qq.com" creationdate="20160429T064838Z">
+        <seg>还有三个东东要添加到你的页面里.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4905,6 +5001,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T101942Z" creationid="aceway" creationdate="20160404T094839Z">
         <seg>在那,你可以开始一个新的话题, 将破坏你娱乐展示场景的createScene函数网址告诉大家,  问下是否有人乐意访问你的娱乐展示场景并帮助你修正.&amp;nbsp;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065511Z" creationid="aceway@qq.com" creationdate="20160429T065511Z">
+        <seg>那儿.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5261,6 +5365,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T145740Z" creationid="aceway" creationdate="20160404T145740Z">
         <seg>您正在成为Babylon.js工具专家.&amp;nbsp; 我所说的 '工具', 是指... 那些你学到的支持 createScene() 函数的东西.&amp;nbsp; 你已经准备好加入学习代码知识,以用在创建场景的功能么?&amp;nbsp; 我知道你准备好了.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You are done!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T071613Z" creationid="aceway@qq.com" creationdate="20160429T071613Z">
+        <seg>你做到了!</seg>
       </tuv>
     </tu>
     <tu>
