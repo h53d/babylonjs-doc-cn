@@ -2482,6 +2482,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **Creation of DashedLines Mesh**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T142341Z" creationid="aceway" creationdate="20160503T142341Z">
+        <seg>* **绘制点划线网格**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Creation of a Box**
 ```javascript
 var box = BABYLON.Mesh.CreateBox("box", 6.0, scene, false, BABYLON.Mesh.DEFAULTSIDE);
@@ -2494,6 +2502,30 @@ Parameters are: name, size of the box, the scene to attach the mesh, updatable?<
 var box = BABYLON.Mesh.CreateBox("box", 6.0, 场景, false, BABYLON.Mesh.DEFAULTSIDE);
 ```
 参数为: 名字,盒子大小, 它们将放到场景, 是否可更新?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Creation of a Cylinder**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T135916Z" creationid="aceway" creationdate="20160503T135916Z">
+        <seg>* **创建一个圆柱体**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Creation of a Knot**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T140735Z" creationid="aceway" creationdate="20160503T140735Z">
+        <seg>* **创建一个结**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Creation of a Lines Mesh**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T141418Z" creationid="aceway" creationdate="20160503T141317Z">
+        <seg>* **创建线型网格**</seg>
       </tuv>
     </tu>
     <tu>
@@ -2518,6 +2550,14 @@ Parameters are: name, number of segments (highly detailed or not), size, scene t
 var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BABYLON.Mesh.DEFAULTSIDE);
 ```
 参数为: 名字, 细分段数 (高度细节或不需), 大小, 将被放到的场景, 是否可更新?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Creation of a Torus**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T140318Z" creationid="aceway" creationdate="20160503T140318Z">
+        <seg>* **创建一个环面体**</seg>
       </tuv>
     </tu>
     <tu>
@@ -3516,6 +3556,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>After that, a comma, and then the next vector3 location... indicating where the line is drawing-to next.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T142113Z" creationid="aceway" creationdate="20160503T142113Z">
+        <seg>那之后, 一个逗号, 然后下一个三元向量为画线的线一个定位点.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>After the CSS, (but still inside the ```&lt;head&gt;``` part), please add:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145822Z" creationid="aceway" creationdate="20160428T145822Z">
@@ -4178,6 +4226,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>I could explain how the Lines Mesh constructor works, but I think you can see how it works just by looking at the demo code above.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T141618Z" creationid="aceway" creationdate="20160503T141618Z">
+        <seg>我可以解释线型网格是如何工作的, 当时我认为剋可以通过观察上面的演示代码而知晓.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>I will assume that you already know how to insert a createScene function into a Babylon.js HTML5 scene document (like the one above).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T130035Z" creationid="aceway" creationdate="20160429T130035Z">
@@ -4549,6 +4605,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Notice the [ and ].</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T141804Z" creationid="aceway" creationdate="20160503T141626Z">
+        <seg>注意 [ 和 ].</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Notice the button that is currently labeled **Basic Scene**.&amp;nbsp; (It is actually called the Scene Selector button, but it is currently LABELED 'Basic Scene')</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T150155Z" creationid="aceway" creationdate="20160404T150155Z">
@@ -4721,6 +4785,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Parameters are: name, height, diamTop, diamBottom, tessellation, heightSubdivs, scene, updatable and the optional side orientation (see below).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T140453Z" creationid="aceway" creationdate="20160503T140201Z">
+        <seg>参数为: 名称, 高度, 顶直径, 底直径, 边数, 高向细分度, 场景, 可更新否和可选的朝向(参见下面).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Parameters are: name, size, and scene to attach the mesh, updatable?</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T131851Z" creationid="aceway" creationdate="20160503T131851Z">
@@ -4757,6 +4829,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070904Z" creationid="aceway@qq.com" creationdate="20160427T070904Z">
         <seg>请不要将它用在生产环境，因为文件大小是需要考虑的重要因素 (超过1.5 MB).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please make your array of vectors be formatted similarly.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T142319Z" creationid="aceway" creationdate="20160503T142319Z">
+        <seg>请按照个格式组织向量数组.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5035,6 +5115,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The first vector3 of the array is the starting location for drawing lines.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T142007Z" creationid="aceway" creationdate="20160503T142007Z">
+        <seg>数组里的头个三元向量是线的开始地方.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following files are not included in the core version:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T072029Z" creationid="aceway@qq.com" creationdate="20160427T072029Z">
@@ -5075,6 +5163,60 @@ var box = BABYLON.Mesh.CreateBox("box", 6.0, scene);
       <tuv lang="EN-US">
         <seg>The last two parameters can be omitted if you just need the default behavior :
 ```javascript
+var cylinder = BABYLON.Mesh.CreateCylinder("cylinder", 3, 3, 3, 6, 1, scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T140233Z" creationid="aceway" creationdate="20160503T140233Z">
+        <seg>如果你需要默认表现,那么最后两个参数可以忽略:
+```javascript
+var cylinder = BABYLON.Mesh.CreateCylinder("cylinder", 3, 3, 3, 6, 1, scene);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The last two parameters can be omitted if you just need the default behavior :
+```javascript
+var disc = BABYLON.Mesh.CreateDisc("disc", 5, 30, scene);
+```
+With the  _tessellation_ value, you can get a regular polygon :  
+3 gives a triangle,  
+4 a square,  
+5 a pentagon,  
+6 a hexagon, 7 a heptagon, 8 an octogon, and so on.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T135849Z" creationid="aceway" creationdate="20160503T135849Z">
+        <seg>如果你需要默认的表现,那么最后两个参数参数可以忽略:
+```javascript
+var disc = BABYLON.Mesh.CreateDisc("disc", 5, 30, scene);
+```
+根据_tessellation_ 的值, 你可以创建一个多边形:  
+3产生一个三角形,  
+4产生一个正方形,  
+5产生一个五边形,  
+6产生一个六边形, 7产生一个七边形, 8产生一个八卦形, 以此类推.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The last two parameters can be omitted if you just need the default behavior :
+```javascript
+var knot = BABYLON.Mesh.CreateTorusKnot("knot", 2, 0.5, 128, 64, 2, 3, scene);
+```
+You can learn more about torus knots... [**RIGHT HERE**](http://en.wikipedia.org/wiki/Torus_knot).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T141358Z" creationid="aceway" creationdate="20160503T140756Z">
+        <seg>如果你使用默认的表现那么最后的两个参数可以忽略 :
+```javascript
+var knot = BABYLON.Mesh.CreateTorusKnot("knot", 2, 0.5, 128, 64, 2, 3, scene);
+```
+将将在[**此处**](http://en.wikipedia.org/wiki/Torus_knot)关于 结 学习更多知识.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The last two parameters can be omitted if you just need the default behavior :
+```javascript
 var plane = BABYLON.Mesh.CreatePlane("plane", 10.0, scene);
 ```
 * **Creation of a Disc (or a regular polygon)**
@@ -5083,7 +5225,7 @@ var disc = BABYLON.Mesh.CreateDisc("disc", 5, 30, scene, false, BABYLON.Mesh.DEF
 ```
 Parameters are: name, radius, tessellation, scene, updatable and the optional side orientation (see below).</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T132356Z" creationid="aceway" creationdate="20160503T132356Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T140520Z" creationid="aceway" creationdate="20160503T132356Z">
         <seg>如果你需要默认的表现,那么最后两个参数可以忽略 :
 ```javascript
 var plane = BABYLON.Mesh.CreatePlane("plane", 10.0, scene);
@@ -5092,7 +5234,7 @@ var plane = BABYLON.Mesh.CreatePlane("plane", 10.0, scene);
 ```javascript
 var disc = BABYLON.Mesh.CreateDisc("disc", 5, 30, scene, false, BABYLON.Mesh.DEFAULTSIDE);
 ```
-参数为: 名字, 半径, 花纹, 场景, 可更新否和可选的朝向(参见下面).</seg>
+参数为: 名字, 半径, 边数, 场景, 可更新否和可选的朝向(参见下面).</seg>
       </tuv>
     </tu>
     <tu>
@@ -5109,6 +5251,20 @@ Beware to adapt the number of segments to the size of your mesh ;)</seg>
 var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, scene);
 ```
 记得根据你的网格对象到校调整细分段数 ;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The last two parameters can be omitted if you just need the default behavior :
+```javascript
+var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T140714Z" creationid="aceway" creationdate="20160503T140714Z">
+        <seg>如果你使用默认表现那么最后两个参数可忽略 :
+```javascript
+var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene);
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -5203,6 +5359,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094136Z" creationid="aceway@qq.com" creationdate="20160427T094136Z">
         <seg>最新的.js文件列表和引擎配置的指示可以在这儿[here](http://doc.babylonjs.com/generals/Creating_the_Mini-fied_Version)找到</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then, another comma, and another vector3 to a new location.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T142156Z" creationid="aceway" creationdate="20160503T142156Z">
+        <seg>然后, 又一个逗号, 和又一个三元向标示点新定位点.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5457,6 +5621,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Those are the enclosing tokens for an array, yet another kind of Javascript value.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T141921Z" creationid="aceway" creationdate="20160503T141921Z">
+        <seg>这两个是数组的起止标志, 数值是Javascript的另一种值类型.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To achieve today’s animated scene, we begin by creating our environment:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T161219Z" creationid="aceway@qq.com" creationdate="20160331T014002Z">
@@ -5673,6 +5845,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T085558Z" creationid="aceway" creationdate="20160423T085558Z">
         <seg>你终于到达这个教程的底部了.&amp;nbsp; 它很长, 但是很有趣, 不是么?&amp;nbsp; 从现在开始将很容易的.&amp;nbsp; 下一演练系列的教程里... 是关于常见一个非常基础的场景的.&amp;nbsp; 我想对你而言,它会非常简单而且快; 你已经从本教程#0毕业啦... &amp;nbsp; 你已经是个Babylon.js专家啦.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can add as many vectors as you wish, but notice that the LAST vector3 does not have a comma following it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T142249Z" creationid="aceway" creationdate="20160503T142249Z">
+        <seg>可以添加任意多个向量, 但是注意最后一个三元向量之后没有逗号跟随.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6282,6 +6462,60 @@ animationBox.setKeys(keys);
     <tu>
       <tuv lang="EN-US">
         <seg>```javascript
+var cylinder = BABYLON.Mesh.CreateCylinder("cylinder", 3, 3, 3, 6, 1, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T135929Z" creationid="aceway" creationdate="20160503T135929Z">
+        <seg>```javascript
+var cylinder = BABYLON.Mesh.CreateCylinder("cylinder", 3, 3, 3, 6, 1, 场景, false, BABYLON.Mesh.DEFAULTSIDE);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+var dashedlines = BABYLON.Mesh.CreateDashedLines("dashedLines", [v1, v2, ... vn], dashSize, gapSize, dashNb, scene);
+```
+Parameters are : name, [array of Vectors3], dashSize, gapSize, dashNumber, scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T142512Z" creationid="aceway" creationdate="20160503T142512Z">
+        <seg>```javascript
+var dashedlines = BABYLON.Mesh.CreateDashedLines("dashedLines", [v1, v2, ... vn], dashSize, gapSize, dashNb, 场景);
+```
+参数为 : 名称, [三元向量数组], 短线大小, 间隙大小, 段划线数, 场景.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+var knot = BABYLON.Mesh.CreateTorusKnot("knot", 2, 0.5, 128, 64, 2, 3, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+```
+Parameters are: name, radius, tube, radialSegments, tubularSegments, p, q, scene, updatable and the optional side orientation (see below).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T141248Z" creationid="aceway" creationdate="20160503T140755Z">
+        <seg>```javascript
+var knot = BABYLON.Mesh.CreateTorusKnot("knot", 2, 0.5, 128, 64, 2, 3, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+```
+参数为: 名称, 半径, tube, 半径上分段数, tubularSegments, p, q, 场景, 可更新否和可选的朝向(参见下面).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+```
+Parameters are: name, diameter, thickness, tessellation (highly detailed or not), scene, updatable and the optional side orientation (see below).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T140815Z" creationid="aceway" creationdate="20160503T140342Z">
+        <seg>```javascript
+var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+```
+参数为: 名称, 直径, 厚度, 边数(高度细节或不是), 场景, 可更新否和可选的朝向(参见下面).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
 {
     "autoClear": boolean,
     "clearColor": color3,
@@ -6367,6 +6601,20 @@ animationBox.setKeys(keys);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T030404Z" creationid="aceway" creationdate="20160423T030404Z">
         <seg>在我们的基础元素教程里.&amp;nbsp; 至于现在, 我只是想表示它(线对象)不像盒子那样应用标准材质并对其(材质)使用.diffuseColor属性来设置颜色, 也不想光线那样使用.diffuse属性来设置颜色.&amp;nbsp; 相反,我们直接使用一个.color属性.&amp;nbsp; 就是这样简单.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>new BABYLON.Vector3(0, 0, 10)
+], scene);
+```
+Parameters are: name, [array of comma-separated vectors], scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T141502Z" creationid="aceway" creationdate="20160503T141502Z">
+        <seg>new BABYLON.Vector3(0, 0, 10)
+], 场景);
+```
+参数为: 名称, [都好分隔的向量数组], 场景.</seg>
       </tuv>
     </tu>
     <tu>
