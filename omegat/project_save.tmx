@@ -6,6 +6,14 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>![Elements](http://urbanproductions.com/wingy/babylon/misc/tut02pic.jpg)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T125754Z" creationid="aceway" creationdate="20160503T125754Z">
+        <seg>![元素](http://urbanproductions.com/wingy/babylon/misc/tut02pic.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![VS02](http://i.imgur.com/Tb3nxWZ.png)
 Make sure you check "Create directory for solution", this way the c:\test\babylon.js directory will be used to store the .sln file and a new directory will be created in c:\test\babylon.js\babylon.js for the project file.</seg>
       </tuv>
@@ -1214,6 +1222,14 @@ A ground is defined by the following JSON:
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T085118Z" creationid="aceway" creationdate="20160423T085118Z">
         <seg>## 嘿, 你做到了!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## How can I do this ?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T125843Z" creationid="aceway" creationdate="20160503T125843Z">
+        <seg>## 我怎么做到这个 ?</seg>
       </tuv>
     </tu>
     <tu>
@@ -2442,6 +2458,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(if the mesh must be modified later) and the optional side orientation (see below).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T131158Z" creationid="aceway" creationdate="20160503T131158Z">
+        <seg>(如果该网格后面必须被更新) 和可选的面朝向(参见下面).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>*  a Babylon Scene object
 *  a camera that has been attached
 *  a light that has been aimed
@@ -2454,6 +2478,46 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
 *  一个设置好目标的光源
 *  一个放置在0,1,0处的球体 (我们将它y轴上移了)
 *  一个放置在0,0,0处的地面(默认地方)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Creation of a Box**
+```javascript
+var box = BABYLON.Mesh.CreateBox("box", 6.0, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+```
+Parameters are: name, size of the box, the scene to attach the mesh, updatable?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T131102Z" creationid="aceway" creationdate="20160503T131102Z">
+        <seg>* **创建一个盒子**
+```javascript
+var box = BABYLON.Mesh.CreateBox("box", 6.0, 场景, false, BABYLON.Mesh.DEFAULTSIDE);
+```
+参数为: 名字,盒子大小, 它们将放到场景, 是否可更新?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Creation of a Plane**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T131758Z" creationid="aceway" creationdate="20160503T131758Z">
+        <seg>* **创建一个平面**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Creation of a Sphere**
+```javascript
+var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, scene, false,  BABYLON.Mesh.DEFAULTSIDE);
+```
+Parameters are: name, number of segments (highly detailed or not), size, scene to attach the mesh, updatable?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T131522Z" creationid="aceway" creationdate="20160503T131320Z">
+        <seg>* **创建一个球体**
+```javascript
+var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BABYLON.Mesh.DEFAULTSIDE);
+```
+参数为: 名字, 细分段数 (高度细节或不需), 大小, 将被放到的场景, 是否可更新?</seg>
       </tuv>
     </tu>
     <tu>
@@ -3540,6 +3604,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An easy way to get started using basic elements... is by visiting [**Playground Demo Scene 02**](http://babylonjs-playground.azurewebsites.net/?2).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130001Z" creationid="aceway" creationdate="20160503T130001Z">
+        <seg>一个简单的方法是通过访问[**娱乐场演示场景 02**](http://babylonjs-playground.azurewebsites.net/?2)来开始使用基础元素.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An event is a function that will be called at a given frame.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152230Z" creationid="aceway" creationdate="20160402T152230Z">
@@ -3750,6 +3822,18 @@ Your scene is beginning to look great, but it is very static.</seg>
         <seg>创建基础场景
 ---
 ### 在本教程里, 我们将用Babylon.js创建一个基础的3D场景.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Discover Basic Elements
+---
+## Introduction</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T125609Z" creationid="aceway" creationdate="20160503T125609Z">
+        <seg>发现基础元素
+---
+## 介绍</seg>
       </tuv>
     </tu>
     <tu>
@@ -4118,6 +4202,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>I'm sure you have already read the  [**Babylon.js Primer**](http://doc.babylonjs.com/generals/A_Babylon.js_Primer) and the  [**previous tutorial**](http://doc.babylonjs.com/tutorials/Creating_a_Basic_Scene), and thus you know how to format scene files.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130431Z" creationid="aceway" creationdate="20160503T130431Z">
+        <seg>我确定你已经读过[**Babylon.js初级教程**](http://doc.babylonjs.com/generals/A_Babylon.js_Primer) 和 [**先前的教程**](http://doc.babylonjs.com/tutorials/Creating_a_Basic_Scene), 因此你应该知道如何设置场景文件格式.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If well done, it’s very powerful.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151549Z" creationid="aceway" creationdate="20160402T151549Z">
@@ -4250,6 +4342,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this tutorial, we are going to learn how to create basic elements using Babylon.js, such as boxes, spheres, and planes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T125748Z" creationid="aceway" creationdate="20160503T125748Z">
+        <seg>在本教程, 我们将学习如何使用Babylon.js创建基础元素, 比如盒子, 球体, 和平面.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Inside the ```&lt;head&gt;``` part, please add this CSS to view the canvas in maximum size:
 ```css
 &lt;style&gt;</seg>
@@ -4357,6 +4457,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160423T062710Z">
         <seg>让我们看看娱乐场里的一个我曾经创建保存的场景.&amp;nbsp; 在这个演示里, 我将这些无形的棒可视化了:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let's talk about each of the basic shapes/meshes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130955Z" creationid="aceway" creationdate="20160503T130955Z">
+        <seg>让们一一谈论下各个基础形状/网格.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4597,10 +4705,26 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Open that link in a new tab or window, and then come back here, and we'll get started.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130627Z" creationid="aceway" creationdate="20160503T130627Z">
+        <seg>在新标签页或窗口中打开那个链接, 然后返回此处, 我们马上开始.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Our goal: move this “box1”.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054015Z" creationid="aceway@qq.com" creationdate="20160331T014128Z">
         <seg>我们的目标是：移动这个"box1"。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Parameters are: name, size, and scene to attach the mesh, updatable?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T131851Z" creationid="aceway" creationdate="20160503T131851Z">
+        <seg>参数为: 名字, 大小, 和将被放到的场景, 是否可更新?</seg>
       </tuv>
     </tu>
     <tu>
@@ -4669,6 +4793,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Remember that link, as we will talk more about it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130226Z" creationid="aceway" creationdate="20160503T130226Z">
+        <seg>记住那个链接, 因为我们将更多的谈论到它.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Save and reload the project</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101710Z" creationid="aceway@qq.com" creationdate="20160427T101710Z">
@@ -4709,6 +4841,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>So, we won't talk about that, here.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130506Z" creationid="aceway" creationdate="20160503T130506Z">
+        <seg>因此, 我们不在谈论它了.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083415Z" creationid="aceway@qq.com" creationdate="20160331T083415Z">
@@ -4737,6 +4877,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T101614Z" creationid="aceway@qq.com" creationdate="20160421T101614Z">
         <seg>有时候, 方法被用来设置属性值， 有时后别用来获取属性值.&amp;nbsp; 这些方法/函数通常被称为 GETTERS 和 SETTERS.&amp;nbsp; 注意到上面getMeshByName方法里的用词 'get' 没?&amp;nbsp; 它就是个 GETTER 方法.&amp;nbsp; 这儿又是一个该方法调用':</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Starting with the box, we create various basic elements, and then position them at the end of the function (to keep them from being atop one another).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130924Z" creationid="aceway" creationdate="20160503T130924Z">
+        <seg>从盒子开始, 我们创建了高中基础元素, 在该函数的最后将它们定位好(以防止它们堆叠起来).</seg>
       </tuv>
     </tu>
     <tu>
@@ -4895,10 +5043,72 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The index.html that you will receive in that zip... contains everything you will need to start making basic elements.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130154Z" creationid="aceway" creationdate="20160503T130154Z">
+        <seg>你得到的zip压缩包里的index.html文件,包含有你开始创建基础元素所需的一切.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The last three lines of your HTML5 web page... should be:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T071602Z" creationid="aceway@qq.com" creationdate="20160429T071602Z">
         <seg>HTML5页面 的最后3行应当是:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The last two parameters can be omitted if you just need the default behavior :
+```javascript
+var box = BABYLON.Mesh.CreateBox("box", 6.0, scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T131635Z" creationid="aceway" creationdate="20160503T131308Z">
+        <seg>如果你需要默认表现那么最后两个参数可以忽略:
+```javascript
+var box = BABYLON.Mesh.CreateBox("box", 6.0, scene);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The last two parameters can be omitted if you just need the default behavior :
+```javascript
+var plane = BABYLON.Mesh.CreatePlane("plane", 10.0, scene);
+```
+* **Creation of a Disc (or a regular polygon)**
+```javascript
+var disc = BABYLON.Mesh.CreateDisc("disc", 5, 30, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+```
+Parameters are: name, radius, tessellation, scene, updatable and the optional side orientation (see below).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T132356Z" creationid="aceway" creationdate="20160503T132356Z">
+        <seg>如果你需要默认的表现,那么最后两个参数可以忽略 :
+```javascript
+var plane = BABYLON.Mesh.CreatePlane("plane", 10.0, scene);
+```
+* **创建一个盘片(或着一个规则多边形)**
+```javascript
+var disc = BABYLON.Mesh.CreateDisc("disc", 5, 30, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+```
+参数为: 名字, 半径, 花纹, 场景, 可更新否和可选的朝向(参见下面).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The last two parameters can be omitted if you just need the default behavior :
+```javascript
+var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, scene);
+```
+Beware to adapt the number of segments to the size of your mesh ;)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T131740Z" creationid="aceway" creationdate="20160503T131612Z">
+        <seg>如果你需要默认的表现那么最后两个参数可以忽略:
+```javascript
+var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, scene);
+```
+记得根据你的网格对象到校调整细分段数 ;)</seg>
       </tuv>
     </tu>
     <tu>
@@ -5331,6 +5541,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We are going to go step by step through [**Playground Demo Scene 02**](http://babylonjs-playground.azurewebsites.net/?2).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130534Z" creationid="aceway" creationdate="20160503T130534Z">
+        <seg>我们将一步步通过[**娱乐场演示场景02**](http://babylonjs-playground.azurewebsites.net/?2)来学习.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We have now completed an Animation for box1.scaling.x.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155412Z" creationid="aceway" creationdate="20160402T105422Z">
@@ -5597,6 +5815,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You might wish to use the 'Get .zip' choice on its top menu.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130039Z" creationid="aceway" creationdate="20160503T130039Z">
+        <seg>你可能想使用弹出菜单的'下载.zip压缩包' 选项.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You need to unload the project from the solution to edit it.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101204Z" creationid="aceway@qq.com" creationdate="20160427T101204Z">
@@ -5625,6 +5851,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160839Z" creationid="aceway" creationdate="20160402T152713Z">
         <seg>你的场景现在动起来了, 你的所有网格都可在所有方向上移动!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[**Playground Demo Scene 2 - Seven basic shapes/mesh**](http://babylonjs-playground.azurewebsites.net/?2)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T125829Z" creationid="aceway" creationdate="20160503T125829Z">
+        <seg>[**娱乐场演示场景2 - 七个基本形状/网格**](http://babylonjs-playground.azurewebsites.net/?2)</seg>
       </tuv>
     </tu>
     <tu>
