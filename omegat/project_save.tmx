@@ -5529,12 +5529,12 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
 ```
 The tube can also be used as a [**Parametric Shapes**](http://doc.babylonjs.com/tutorials/Parametric_Shapes) by setting a radius function.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111542Z" creationid="aceway" creationdate="20160507T111542Z">
-        <seg>The last two 参数 can be omitted if you just need the default behavior :
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T113942Z" creationid="aceway" creationdate="20160507T111542Z">
+        <seg>如果你仅仅要使用默认的表现则最后两个参数可以忽略:
 ```javascript
-var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselation, radiusFunction, cap, 场景);
+var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselation, radiusFunction, cap, scene);
 ```
-The tube can also be used as a [**Parametric Shapes**](http://doc.babylonjs.com/教程/Parametric_Shapes) by setting a radius 函数.</seg>
+管子也可以通过设置一个半径函数而使用[**参数化造型**](http://doc.babylonjs.com/tutorials/Parametric_Shapes) .</seg>
       </tuv>
     </tu>
     <tu>
