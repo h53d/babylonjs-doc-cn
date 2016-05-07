@@ -2346,6 +2346,26 @@ BABYLON.Vector3(xValue, yValue, zValue)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#### Side Orientation
+When a mesh is created, an optional side orientation is given to it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T114548Z" creationid="aceway" creationdate="20160507T114443Z">
+        <seg>#### 朝向
+当一个网格被创建时, 可以为其提供一个可选的朝向.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#### Updatable
+This parameter, present in each mesh creation method... tells if the mesh can be updated after it is created.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T114234Z" creationid="aceway" creationdate="20160507T114234Z">
+        <seg>#### 可更新否
+这个参数, 在每个网格创建方法里出现... 告知该网格在创建后是否可以被更新.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>##Beautiful Playgrounds</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T040941Z" creationid="aceway@qq.com" creationdate="20160427T040941Z">
@@ -2454,6 +2474,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030335Z" creationid="aceway@qq.com" creationdate="20160427T030335Z">
         <seg>(可以自行编辑演示场景的代码然后点击运行或保存.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Remove your test material, too.)  You can only see the backs of planes, or only see the insides (internal faces) of the box and sphere.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T120538Z" creationid="aceway" creationdate="20160507T120538Z">
+        <seg>(也移除你试验的材质.)  你仅能看到平面的背面, 或者仅看到盒子和球体的里面 (内部的面).</seg>
       </tuv>
     </tu>
     <tu>
@@ -2608,6 +2636,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070151Z" creationid="aceway@qq.com" creationdate="20160427T070151Z">
         <seg>* BABYLON.Engine.CodeRepository: 默认情况下，这个值指向 "/src/"
 * BABYLON.Engine.ShadersRepository: 默认情况下，这个值指向 "/src/Shaders/"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* BABYLON.Mesh.DEFAULT which is the default value and equals FRONTSIDE currently.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T114952Z" creationid="aceway" creationdate="20160507T114952Z">
+        <seg>* BABYLON.Mesh.DEFAULT 这是默认值, 当前同 FRONTSIDE.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2831,6 +2867,30 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111408Z" creationid="aceway" creationdate="20160507T111408Z">
         <seg>* 可更新否: 布尔值, 该管子后面是否可以被更新,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*(We assume the backFaceCulling is enabled by default)*</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T115057Z" creationid="aceway" creationdate="20160507T115057Z">
+        <seg>*(我们假设默认 backFaceCulling 被启用了)*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*(You can disable _backFaceCulling_ with this _sideOrientation_ value)*</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T120300Z" creationid="aceway" creationdate="20160507T120300Z">
+        <seg>*(你可以用这个值来禁用 _backFaceCulling_ )*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*(you can disable _backFaceCulling_ with this _sideOrientation_ value)*</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T120756Z" creationid="aceway" creationdate="20160507T120756Z">
+        <seg>*(你可以用_朝向_值来禁用 _backFaceCulling_ )*</seg>
       </tuv>
     </tu>
     <tu>
@@ -3820,6 +3880,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>And if you give it a material, the light then reflects from both sides, too.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121011Z" creationid="aceway" creationdate="20160507T121011Z">
+        <seg>而且如果你提供了材质, 光也会在两边都反射.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>And last, an optional but handy canvas/window resize event handler.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065357Z" creationid="aceway@qq.com" creationdate="20160429T065357Z">
@@ -3906,10 +3974,26 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As you guessed, the mesh faces are now visible on both sides.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T120926Z" creationid="aceway" creationdate="20160507T120926Z">
+        <seg>正如你猜测的, 网格面现在两边可见了.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As you toured the Babylon.js Playground demo scenes, you surely saw some .position, .rotation, and maybe some .scaling properties being 'set' with values.&amp;nbsp; Let's take a look at each one:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160423T030815Z">
         <seg>如果你浏览了Babylon.js娱乐场的演示场景, 你必定看到了一些位置属性(.position), 旋转属性(.rotation), 可能还有些缩放属性(.scaling)设置了值.&amp;nbsp; 让我们一个个的看看:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At last, change the _sideOrientation_ parameter to _BABYLON.Mesh.DOUBLESIDE_.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T120831Z" creationid="aceway" creationdate="20160507T120831Z">
+        <seg>最后, 改变 _朝向_ 参数值为 _BABYLON.Mesh.DOUBLESIDE_.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4276,6 +4360,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For instance, imagine you create a basic shape like a box, a sphere or a plane, and you don't give it a material.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T115241Z" creationid="aceway" creationdate="20160507T115241Z">
+        <seg> 例如, 假设你创建一个基本形状像, 比如一个盒子，球体或平面，你没给它的设置材质.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For purpose, here is a good reference to create your curve algorithm : [http://cubic-bezier.com](http://cubic-bezier.com)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160520Z" creationid="aceway" creationdate="20160402T145829Z">
@@ -4442,6 +4534,30 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If false (default value), the mesh data are passed only once to the GPU.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T114323Z" creationid="aceway" creationdate="20160507T114323Z">
+        <seg>如果为 false (默认值), 则该网格数仅仅往GPU传送一次.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If not given, the DEFAULT value is set.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T115027Z" creationid="aceway" creationdate="20160507T115027Z">
+        <seg>如果没提供, 则 DEFAULT 值被设置.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If true, the mesh data may be recomputed and passed to the GPU at each frame refresh.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T114443Z" creationid="aceway" creationdate="20160507T114443Z">
+        <seg>如果为 true, 则该网格数据可以被重新计算并在每帧刷新时传递给GPU.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If well done, it’s very powerful.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151549Z" creationid="aceway" creationdate="20160402T151549Z">
@@ -4450,10 +4566,34 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you apply a test material to your mesh, set _material.backFaceCulling = false;_, and light it up, you will notice that the back (or internal) face... is now visible, but it doesn't reflect the light.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T115957Z" creationid="aceway" creationdate="20160507T115957Z">
+        <seg>如果你为网格应用了一个材质, 设置 _material.backFaceCulling = false;_, 同时用光源照明它, 你会注意到背面(或者里面)... 现在可见了, 但是它却不反射光.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you choose one of the demo scenes from the drop-down Scene Selector button, the playground URL will change to this:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030238Z" creationid="aceway@qq.com" creationdate="20160427T030238Z">
         <seg>如果你从下拉的场景选择器选一个场景后, 娱乐场的网址会变成这样:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you give your mesh some material, you can see that the light now only reflects on the back face (plane) or only inside (box, sphere, etc).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T120710Z" creationid="aceway" creationdate="20160507T120710Z">
+        <seg>如果你为网格提供一些材质, 你可以看到光源仅仅能照射到背面 (平面的)或者里面 (盒子的, 球体的等).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you go behind the plane or inside the box or the sphere, you will notice that the faces aren't visible any longer : Babylon.js mesh are often constructed with the default side orientation _FRONTSIDE_.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T115508Z" creationid="aceway" creationdate="20160507T115508Z">
+        <seg>如果你到平面的背后或者盒子/球体的里面, 你会注意到那些面时不可见的: Babylon.js 网格通常都是由默认的朝向 _FRONTSIDE_ 构成.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4901,6 +5041,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now, just change the _sideOrientation_ parameter in your mesh constructor... to _BABYLON.Mesh.BACKSIDE_.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T120401Z" creationid="aceway" creationdate="20160507T120401Z">
+        <seg>现在, 在你的网格构造函数里仅仅改变 _朝向_ 参数为 _BABYLON.Mesh.BACKSIDE_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now, we make the jump from HTML5 into Javascript.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034402Z" creationid="aceway@qq.com" creationdate="20160429T034352Z">
@@ -5113,6 +5261,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Same reason : the default side orientation is still _FRONTSIDE_.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T120049Z" creationid="aceway" creationdate="20160507T120049Z">
+        <seg>同样的原因: 默认的朝向仍然是 _FRONTSIDE_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Save and reload the project</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101710Z" creationid="aceway@qq.com" creationdate="20160427T101710Z">
@@ -5233,6 +5389,30 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T022040Z" creationid="aceway" creationdate="20160426T150549Z">
         <seg>讲述编辑器的大量特征超越了本教程的范围.&amp;nbsp; 通过访问[Ace编辑器的网站](http://ace.c9.io/#nav=about)你能够学习到更多的Ace编辑器知识，而且通过花更多时间在使用娱乐场编辑器上也可以.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Test it : http://www.babylonjs-playground.com/#14RNAU#4</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T115620Z" creationid="aceway" creationdate="20160507T115620Z">
+        <seg>试验下: http://www.babylonjs-playground.com/#14RNAU#4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Test it : http://www.babylonjs-playground.com/#14RNAU#5</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T120544Z" creationid="aceway" creationdate="20160507T120544Z">
+        <seg>试验: http://www.babylonjs-playground.com/#14RNAU#5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Test it : http://www.babylonjs-playground.com/#14RNAU#6</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121022Z" creationid="aceway" creationdate="20160507T121022Z">
+        <seg>试验: http://www.babylonjs-playground.com/#14RNAU#6</seg>
       </tuv>
     </tu>
     <tu>
@@ -5529,12 +5709,12 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
 ```
 The tube can also be used as a [**Parametric Shapes**](http://doc.babylonjs.com/tutorials/Parametric_Shapes) by setting a radius function.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T113942Z" creationid="aceway" creationdate="20160507T111542Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T114118Z" creationid="aceway" creationdate="20160507T111542Z">
         <seg>如果你仅仅要使用默认的表现则最后两个参数可以忽略:
 ```javascript
 var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselation, radiusFunction, cap, scene);
 ```
-管子也可以通过设置一个半径函数而使用[**参数化造型**](http://doc.babylonjs.com/tutorials/Parametric_Shapes) .</seg>
+管子也可以通过设置一个半径函数而作为[**参数化造型**](http://doc.babylonjs.com/tutorials/Parametric_Shapes) 的方式使用.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5619,6 +5799,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The side orientation is used to give visibility and/or light reflection to each side of the mesh.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T114829Z" creationid="aceway" creationdate="20160507T114447Z">
+        <seg>该朝向被用来提供可见性而且/或则光反射性.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The speed ratio of this animation
 optional | onAnimationEnd | () =&gt; void | The function triggered on the end of the animation (also dependent upon ANIMATIONLOOPMODE)
 optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable) | An optional specific animation
@@ -5661,6 +5849,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065040Z" creationid="aceway@qq.com" creationdate="20160429T065040Z">
         <seg>然后, 最重要的渲染循环.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are four possible values for this parameter :</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T114926Z" creationid="aceway" creationdate="20160507T114926Z">
+        <seg>这个值有四个可能的值:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5867,6 +6063,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This means that each side only has a front view.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T115608Z" creationid="aceway" creationdate="20160507T115608Z">
+        <seg>这意味着每个面只有一边可见.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This mode is generaly used to build a new version soon to be publicly released, the compilation takes some time so it's not suitable for developmenent/test roundtrips.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T092848Z" creationid="aceway@qq.com" creationdate="20160427T092848Z">
@@ -5879,6 +6083,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093235Z" creationid="aceway@qq.com" creationdate="20160427T093235Z">
         <seg>这种模式使用与你修改库时, 与依赖Gulp 来生成发布文件相反，你可以简单的将所有的.ts文件编译成.js (以及.js.map)文件.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This parameter is optional.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T115001Z" creationid="aceway" creationdate="20160507T115001Z">
+        <seg>这个参数时可选的.</seg>
       </tuv>
     </tu>
     <tu>
