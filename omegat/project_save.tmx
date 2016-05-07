@@ -1614,6 +1614,18 @@ A multiMaterial is defined by the following JSON:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Next step ##
+----
+We saw that we needed a bit of 'positioning' to keep our basic elements from sitting atop one another in the scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T125309Z" creationid="aceway" creationdate="20160507T125309Z">
+        <seg>## 下一步 ##
+----
+我们看到过, 我们需要一点'定位'来保持我们基础元素不覆盖场景里另一个基础元素.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## No worker version: *babylon.noworker.js*</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071649Z" creationid="aceway@qq.com" creationdate="20160427T071649Z">
@@ -2178,6 +2190,16 @@ A vertexData is defined by the following JSON:
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T092059Z" creationid="aceway@qq.com" creationdate="20160427T092059Z">
         <seg>## 为什么?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Wrapping Up ##
+And that’s it!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T124141Z" creationid="aceway" creationdate="20160507T124141Z">
+        <seg>## 结束语 ##
+就是这样!</seg>
       </tuv>
     </tu>
     <tu>
@@ -4056,6 +4078,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>At that link, Kostar111 thoroughly explains how the tiled ground works, and also provides some Babylon.js Playground scenes that nicely demonstrate some of its many uses.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T124109Z" creationid="aceway" creationdate="20160507T123812Z">
+        <seg>在那个链接, Kostar111全面地说明了瓷砖地面的工作方式，还提供了一些Babylon.js游乐场景, 很好地演示了一些它的许多用途.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Babylon.js files can be found on our CDN:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070518Z" creationid="aceway@qq.com" creationdate="20160427T070518Z">
@@ -4316,6 +4346,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Feel free to imagine a few of your own basic element ideas, and present them on the forum.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T125032Z" creationid="aceway" creationdate="20160507T125032Z">
+        <seg>请自由设想你自己的基础元素创意, 并把它们提交到论坛上.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Feel free to try different animations on different objects, then come back and learn all about [**Sprites**](http://doc.babylonjs.com/tutorials/Sprites).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160920Z" creationid="aceway" creationdate="20160402T152948Z">
@@ -4470,6 +4508,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T122828Z" creationid="aceway" creationdate="20160507T122319Z">
         <seg>高度图地面很简单, 但是我们决定创建一个独立的教程讲它, 以便能更多的讲述Babylon.js的这个重要特征.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Help us make our list of basic elements grow, if you can.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T125108Z" creationid="aceway" creationdate="20160507T125108Z">
+        <seg>如果你能,请帮助我们增加基础元素列表.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4923,6 +4969,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Keep watching this area of the tutorial for new basic elements, as they are being added quite quickly : you'll find the updated list with all parameter explanations [**in this section**](http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T124845Z" creationid="aceway" creationdate="20160507T124845Z">
+        <seg>保持关注教程里这方面的内容, 因为新的基础元素很快会被添加: 你会[**在这个章节里**](http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter)发现更新了的名单和其所有参数的解释.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Kostar111 was also kind enough to give us a fine tutorial about how to use tiled grounds.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T123722Z" creationid="aceway" creationdate="20160507T123722Z">
@@ -5083,6 +5137,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now let's learn more about positions (sometimes called translations) as well as about rotation and scaling.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T125850Z" creationid="aceway" creationdate="20160507T125850Z">
+        <seg>现在,我们进一步的学习定位(有时叫做平移) 还有旋转和缩放.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now let's look at a Vector3 being used to set a .rotation value:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T140337Z" creationid="aceway" creationdate="20160421T140337Z">
@@ -5127,6 +5189,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T094332Z" creationid="aceway" creationdate="20160404T094332Z">
         <seg>现在你可以用书签纪录下那个唯一的网址, 然后去访问 Babylon.js 论坛:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now you have seen all of our basic elements, and some ways to use them.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T124249Z" creationid="aceway" creationdate="20160507T124249Z">
+        <seg>现在你已经看了我们所有的基础元素, 同时看了它们的一些使用方法.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5383,6 +5453,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Ready?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T125902Z" creationid="aceway" creationdate="20160507T125902Z">
+        <seg>准备好了吗?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Remember 'The Big Picture' far above?&amp;nbsp; In that section, I introduced you to 'The Big 4' external include files...&amp;nbsp; hand.js, cannon.js, oimo.js, and babylon.js.&amp;nbsp; Many people use GitHub version-management systems to download those files from the Babylon.js GitHub source code repository.&amp;nbsp; Some people make their own 'minified' versions of Babylon.js... using the absolute latest source code files.&amp;nbsp; Others like to be able to grab reasonably fresh versions of The Big 4... in simpler ways.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T081200Z" creationid="aceway" creationdate="20160423T081200Z">
@@ -5519,6 +5597,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T084223Z" creationid="aceway" creationdate="20160423T084223Z">
         <seg>将这些文件保存到新的js文件夹.&amp;nbsp; 此外, 你也许想拷贝它们到其它文件夹, 以便以后使用.&amp;nbsp; 尽量经常重复这些动作, 也许每月一次的好, 以确保你使用的4大文件资源总是最新的版本.&amp;nbsp; Babylon.js一直在持续进化.&amp;nbsp; 新特性的添加非常快, 你想家里的4大资源文件版本保持新的, 以便利用这些新特性, 因此你就要经常重复上面的动作.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sure you are!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T125916Z" creationid="aceway" creationdate="20160507T125916Z">
+        <seg>你肯定准备好了!</seg>
       </tuv>
     </tu>
     <tu>
@@ -6747,6 +6833,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160839Z" creationid="aceway" creationdate="20160402T152713Z">
         <seg>你的场景现在动起来了, 你的所有网格都可在所有方向上移动!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[**Click here for the next tutorial.**](http://doc.babylonjs.com/tutorials/Materials)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T125954Z" creationid="aceway" creationdate="20160507T125954Z">
+        <seg>[**点击这儿进入下一教程.**](http://doc.babylonjs.com/tutorilas/Materials)</seg>
       </tuv>
     </tu>
     <tu>
