@@ -2458,6 +2458,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(if the mesh must be modified later)  and the optional side orientation (see below).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103801Z" creationid="aceway" creationdate="20160507T103801Z">
+        <seg>(如果网格之后要被修改)  和可选的朝向 (参见下面).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(if the mesh must be modified later) and the optional side orientation (see below).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T131158Z" creationid="aceway" creationdate="20160503T131158Z">
@@ -2478,6 +2486,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
 *  一个设置好目标的光源
 *  一个放置在0,1,0处的球体 (我们将它y轴上移了)
 *  一个放置在0,0,0处的地面(默认地方)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* ** Creation of a Tube**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T110441Z" creationid="aceway" creationdate="20160507T110441Z">
+        <seg>* ** 创业一个管子**</seg>
       </tuv>
     </tu>
     <tu>
@@ -2534,6 +2550,14 @@ var box = BABYLON.Mesh.CreateBox("box", 6.0, 场景, false, BABYLON.Mesh.DEFAULT
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T131758Z" creationid="aceway" creationdate="20160503T131758Z">
         <seg>* **创建一个平面**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Creation of a Ribbon**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103038Z" creationid="aceway" creationdate="20160507T102001Z">
+        <seg>* **创建一条板带**</seg>
       </tuv>
     </tu>
     <tu>
@@ -2679,6 +2703,134 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093618Z" creationid="aceway@qq.com" creationdate="20160427T093618Z">
         <seg>* 你必须引用BabylonJS的大约150个 .js 文件而不是一个主文件(比如Babylon.js)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* cap : BABYLON.Mesh.NO_CAP, BABYLON.Mesh.CAP_START, BABYLON.Mesh.CAP_END, BABYLON.Mesh.CAP_ALL,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111325Z" creationid="aceway" creationdate="20160507T111325Z">
+        <seg>* 头罩: BABYLON.Mesh.NO_CAP, BABYLON.Mesh.CAP_START, BABYLON.Mesh.CAP_END, BABYLON.Mesh.CAP_ALL,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* closeArray : boolean, if true an extra set of triangles is constructed between the last path and the first path of _pathArray_,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T104707Z" creationid="aceway" creationdate="20160507T104639Z">
+        <seg>* 闭合数组: 布尔值, 如果为真, 则会由 _路径数组_ 里的第一条路径和最后一条路径产生一组额外的三角形,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* closePath : boolean, if true the last point of each path of _pathArray_ is joined to the first point of this path,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T104832Z" creationid="aceway" creationdate="20160507T104659Z">
+        <seg>* 闭合路径: 布尔值, 如果为真, 则 _路径数组_ 里的每条路径的最后一个点和其第一个点相连接,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* name : a string, the name you want to give to your shape,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103847Z" creationid="aceway" creationdate="20160507T103847Z">
+        <seg>* 名称: 一个字符串, 你想要给你的造型物定义的名称,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* name : string, the name of the tube mesh,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T110942Z" creationid="aceway" creationdate="20160507T110942Z">
+        <seg>* 名称: 字符串, 管子网格的名字符,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* offset : integer (default half the _path_ size) mandatory only if the _pathArray_ contents only one path.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T105323Z" creationid="aceway" creationdate="20160507T104849Z">
+        <seg>* 偏移量 : 正数 (默认值是 _路径_ 大小的一半), 仅当 _路径数组_ 只有一条路径时才必须指定.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* path : an array of successive Vector3, at least two Vector3,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111015Z" creationid="aceway" creationdate="20160507T111015Z">
+        <seg>* 路径: 连续的三元向量数组,  至少两个三元向量,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* pathArray : an array populated with paths.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103940Z" creationid="aceway" creationdate="20160507T103940Z">
+        <seg>* 路径数组: 填充路径的数组.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* radius : nuumber, the tube radius, used when _radiusFunction_ parameter set to _null_,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111108Z" creationid="aceway" creationdate="20160507T111108Z">
+        <seg>* 半径: 数值, 管子的半径, 当 _半径函数_ 参数设置为 _null_时使用,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* radiusFunction : _optional_, a javascript function returns a radius value.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111252Z" creationid="aceway" creationdate="20160507T111252Z">
+        <seg>* 半径函数: _可选的_, 一个返回半径值的 javascript 函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* scene : the current scene object,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T105655Z" creationid="aceway" creationdate="20160507T105655Z">
+        <seg>* 场景 : 当前场景对象,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* sideOrientation : the wanted side orientation (front, back or double side).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111540Z" creationid="aceway" creationdate="20160507T111540Z">
+        <seg>* 朝向: 期望有用的朝向 (前向, 后像 或 双向).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* sideOrientation : the wanted side-orientation (BABYLON.Mesh.FRONTSIDE / BACKSIDE / DOUBLESIDE / DEFAULT).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T105838Z" creationid="aceway" creationdate="20160507T105838Z">
+        <seg>* 朝向: 期望的面朝向(BABYLON.Mesh.FRONTSIDE / BACKSIDE / DOUBLESIDE / DEFAULT).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* tesselation : the number of radial segments,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111209Z" creationid="aceway" creationdate="20160507T111209Z">
+        <seg>* 曲面细分: 径向的段数,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* updatable : boolean, if the ribbon should allow updating later,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T105758Z" creationid="aceway" creationdate="20160507T105702Z">
+        <seg>* 可更新否: 布尔值, 如果允许之后更新缎带则设置为true,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* updatable : boolean, if the tube should allow updating later,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111408Z" creationid="aceway" creationdate="20160507T111408Z">
+        <seg>* 可更新否: 布尔值, 该管子后面是否可以被更新,</seg>
       </tuv>
     </tu>
     <tu>
@@ -3738,6 +3890,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As for Lines, a line along the vectors3 will be displayed in space.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T100500Z" creationid="aceway" creationdate="20160507T100500Z">
+        <seg>作为许多线段, 每条段先都是以三元向量组的方式呈现在空间里.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As of Babylon.js 2.3+, you can  start an animation with *enableBlending* = true.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155805Z" creationid="aceway" creationdate="20160402T111552Z">
@@ -4078,6 +4238,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>First, imagine a series of successive points defining a path.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T102232Z" creationid="aceway" creationdate="20160507T102232Z">
+        <seg>首先, 想象一下一系列连续点定义的路径.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For advanced keyframe animation, you can also define the functions used to interpolate (transition) between keys.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110459Z" creationid="aceway" creationdate="20160402T110459Z">
@@ -4254,6 +4422,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T080321Z" creationid="aceway" creationdate="20160423T080321Z">
         <seg>我希望你注意... 缩放是**仅仅网格可以**.&amp;nbsp; 例如, 你可以定位一个网格, 相机, 活着光源.&amp;nbsp; 你可以经常旋转一个网格, 相机, 或者光源.&amp;nbsp; 但是对于缩放... 它是针对网格的.&amp;nbsp; 如果你拉伸或缩小(缩放)一个相机或光源, 你会破坏其电力部分.&amp;nbsp; (开玩笑的,好么?)&amp;nbsp; &amp;nbsp;没有必要缩放相机或光源.&amp;nbsp; 它们是场景中不可见项.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I you need more details about how to deal with this method, you would probably read the [**Parametric Shapes**](http://doc.babylonjs.com/tutorials/Parametric_Shapes) part.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T110251Z" creationid="aceway" creationdate="20160507T110251Z">
+        <seg>如果你想知道处理该方法的更多细节, 你可能会阅读[**参数化造型**](http://doc.babylonjs.com/教程/Parametric_Shapes) 部分.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4442,6 +4618,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is ignored if _pathArray_ has more than one path,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T105647Z" creationid="aceway" creationdate="20160507T105647Z">
+        <seg>这个参数会被忽略如果 _路径数组_ 里有多于一条路径,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is not minified so you can easy use it to debug.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070947Z" creationid="aceway@qq.com" creationdate="20160427T070806Z">
@@ -4455,6 +4639,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032859Z" creationid="aceway" creationdate="20160403T032859Z">
         <seg>Babylon.js构造里一个复杂的系统, 让网页图形库更容易使用.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It will try to set _dashNumber_ strokes on this line depending on the length of each segment between two successive vectors3.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T101336Z" creationid="aceway" creationdate="20160507T101336Z">
+        <seg>上面函数设置了这条点划线里线段的数量, 每段都是由两个连续三元向量定义.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4587,6 +4779,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Next, imagine another series of successive points, so another path.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T102314Z" creationid="aceway" creationdate="20160507T102314Z">
+        <seg>接下来，想象另一系列连续点，定义的一条路径.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Next, two important steps:
 * Adding the animation array to the animation object:</seg>
       </tuv>
@@ -4681,6 +4881,22 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T094332Z" creationid="aceway" creationdate="20160404T094332Z">
         <seg>现在你可以用书签纪录下那个唯一的网址, 然后去访问 Babylon.js 论坛:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now, if you construct triangular faces by joining alternate points of the first and the second path, like when you lace shoes, you get a ribbon.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103101Z" creationid="aceway" creationdate="20160507T102759Z">
+        <seg>现在, 如果你在第一条路径和第二条路径上互相间隔着连接点来构建三角形, 就像你系鞋带的方式, 你就会得到一个板带.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now, imagine, instead of having only two paths, you've got many successive different paths.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103229Z" creationid="aceway" creationdate="20160507T103229Z">
+        <seg>现在, 想象一下, 不是两条路径, 你定义了许多连续的不同路径.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4793,6 +5009,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Parameters are: name, pathArray, closeArray, closePath, offset, scene, updatable?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T104911Z" creationid="aceway" creationdate="20160507T103658Z">
+        <seg>参数为: 名称, 路径数组, 闭合数组, 闭合路径, 偏移量, 场景, 可更新否?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Parameters are: name, size, and scene to attach the mesh, updatable?</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T131851Z" creationid="aceway" creationdate="20160503T131851Z">
@@ -4813,6 +5037,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040133Z" creationid="aceway@qq.com" creationdate="20160429T040133Z">
         <seg>参数: 名称, 宽度, 深度, 细分度, 场景</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Paths are also arrays, populated with series of successive _Vector3_.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T104015Z" creationid="aceway" creationdate="20160507T104015Z">
+        <seg>路径也是数组, 由一系列连续点 _三元向量_ 填充.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5131,6 +5363,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The full ribbon will then be the continuous surface joining all these inbetween pair of paths surface.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103552Z" creationid="aceway" creationdate="20160507T103552Z">
+        <seg>成对路径间构成的所有板带会结合起来形成连续表面.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The index.html that you will receive in that zip... contains everything you will need to start making basic elements.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130154Z" creationid="aceway" creationdate="20160503T130154Z">
@@ -5241,6 +5481,20 @@ var disc = BABYLON.Mesh.CreateDisc("disc", 5, 30, scene, false, BABYLON.Mesh.DEF
       <tuv lang="EN-US">
         <seg>The last two parameters can be omitted if you just need the default behavior :
 ```javascript
+var ribbon = BABYLON.Mesh.CreateRibbon("ribbon", [path1, path2, ..., pathn], false, false, 0, scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T105921Z" creationid="aceway" creationdate="20160507T105921Z">
+        <seg>如果仅需要使用默认表现则最后两个参数可以被忽略:
+```javascript
+var ribbon = BABYLON.Mesh.CreateRibbon("ribbon", [path1, path2, ..., pathn], false, false, 0, scene);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The last two parameters can be omitted if you just need the default behavior :
+```javascript
 var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, scene);
 ```
 Beware to adapt the number of segments to the size of your mesh ;)</seg>
@@ -5265,6 +5519,22 @@ var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene);
 ```javascript
 var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene);
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The last two parameters can be omitted if you just need the default behavior :
+```javascript
+var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselation, radiusFunction, cap, scene);
+```
+The tube can also be used as a [**Parametric Shapes**](http://doc.babylonjs.com/tutorials/Parametric_Shapes) by setting a radius function.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111542Z" creationid="aceway" creationdate="20160507T111542Z">
+        <seg>The last two 参数 can be omitted if you just need the default behavior :
+```javascript
+var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselation, radiusFunction, cap, 场景);
+```
+The tube can also be used as a [**Parametric Shapes**](http://doc.babylonjs.com/教程/Parametric_Shapes) by setting a radius 函数.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5321,6 +5591,22 @@ var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101649Z" creationid="aceway@qq.com" creationdate="20160427T101649Z">
         <seg>结果看起来像这样:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ribbon will be constructed joining each i-th point of the single path to the i+offset-th point.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T105602Z" creationid="aceway" creationdate="20160507T105602Z">
+        <seg>此时板带由该单条路径上的 第 i 个点和第 i+偏移量 个点连接来构成.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ribbon will just follow your paths.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103123Z" creationid="aceway" creationdate="20160507T103017Z">
+        <seg>板带就沿着你定义的路径.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5461,6 +5747,22 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They are, well, whatever you want.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T102950Z" creationid="aceway" creationdate="20160507T102950Z">
+        <seg>它们可以是任何你想要的方式.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They don't even need to be straight lines or in the same plane.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T102924Z" creationid="aceway" creationdate="20160507T102924Z">
+        <seg>它们甚至不需要是直线或在同一平面内.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This blended animation will interpolate FROM the current object's state.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155922Z" creationid="aceway" creationdate="20160402T111742Z">
@@ -5497,6 +5799,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054051Z" creationid="aceway@qq.com" creationdate="20160331T014336Z">
         <seg>这个可以是网格的任何属性，取决于你要修改什么。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This can be set to _null_,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111309Z" creationid="aceway" creationdate="20160507T111309Z">
+        <seg>这个可以设置为 _null_,</seg>
       </tuv>
     </tu>
     <tu>
@@ -5769,6 +6079,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>What is a ribbon ?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103031Z" creationid="aceway" creationdate="20160507T102137Z">
+        <seg>什么是板带 ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When we included the "src" folder it also included the .js files corresponding to the .ts, we have to remove them from the project as we have no use of them.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100856Z" creationid="aceway@qq.com" creationdate="20160427T100856Z">
@@ -5987,6 +6305,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You might also be interested in our new [LinesSystem](http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter#linesystem).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T101829Z" creationid="aceway" creationdate="20160507T101829Z">
+        <seg>你可能会被我们新的[线系统](http://doc.babylonjs.com/tutorilas/Mesh_CreateXXX_Methods_With_Options_Parameter#linesystem)吸引住.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You might want to open that playground scene in a new window or new tab, so you can switch back and forth between here and there.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T033725Z" creationid="aceway" creationdate="20160404T033725Z">
@@ -5999,6 +6325,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130039Z" creationid="aceway" creationdate="20160503T130039Z">
         <seg>你可能想使用弹出菜单的'下载.zip压缩包' 选项.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You need at least one path to construct a ribbon and each path must contain at least four _Vector3_,</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T104116Z" creationid="aceway" creationdate="20160507T104116Z">
+        <seg>你需要至少一条路径形成板带,而且每条路径包含至少四个 _三元向量_,</seg>
       </tuv>
     </tu>
     <tu>
@@ -6023,6 +6357,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040424Z" creationid="aceway@qq.com" creationdate="20160429T040424Z">
         <seg>这个教程后面你将学习光源，相机，内置造型物的更多参数和属性。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Your paths don't need to be parallel.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T102833Z" creationid="aceway" creationdate="20160507T102833Z">
+        <seg>你的路径间不需要平行.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6171,6 +6513,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>_dashSize_ and _gapSize_ are relative to each other dash and gap sizes within these strokes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T101721Z" creationid="aceway" creationdate="20160507T101409Z">
+        <seg>_划线大小_ 和 _间隙大小_ 是指点划线里每个划线和之间间隙的相对大小.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>_do a search/replace of "..\packages" by "packages", replace all occurences._</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101404Z" creationid="aceway@qq.com" creationdate="20160427T101404Z">
@@ -6201,6 +6551,16 @@ It is difficult for me to explain, but actually quite easy to do, thanks to Baby
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T102435Z" creationid="aceway@qq.com" creationdate="20160421T102435Z">
         <seg>```
 对我来而言，空说难但具体做起来很容易, 这要归功于 Babylon.js.&amp;nbsp; 尽快熟悉属性和方法... 是最佳的学习途径.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```
+Parameters are : name, path, radius, tesselation, optional radiusFunction, cap, scene, updatable, sideOrientation.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T110924Z" creationid="aceway" creationdate="20160507T110924Z">
+        <seg>```
+参数为: 名称, 路径, 半径, 曲面细分, 可选的半径函数,  头罩, 场景, 可更新否, 朝向.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6478,11 +6838,11 @@ var dashedlines = BABYLON.Mesh.CreateDashedLines("dashedLines", [v1, v2, ... vn]
 ```
 Parameters are : name, [array of Vectors3], dashSize, gapSize, dashNumber, scene.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T142512Z" creationid="aceway" creationdate="20160503T142512Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T101440Z" creationid="aceway" creationdate="20160503T142512Z">
         <seg>```javascript
 var dashedlines = BABYLON.Mesh.CreateDashedLines("dashedLines", [v1, v2, ... vn], dashSize, gapSize, dashNb, 场景);
 ```
-参数为 : 名称, [三元向量数组], 短线大小, 间隙大小, 段划线数, 场景.</seg>
+参数为 : 名称, [三元向量数组], 划线大小, 间隙大小, 段划线数, 场景.</seg>
       </tuv>
     </tu>
     <tu>
