@@ -1,125 +1,100 @@
 ---
 ID_PAGE: 22011
-PG_TITLE: 02. Discover Basic Elements
+PG_TITLE: 02. 发现基础元素
 ---
-## Introduction
-
-In this tutorial, we are going to learn how to create basic elements using Babylon.js, such as boxes, spheres, and planes.
-
-![Elements](http://urbanproductions.com/wingy/babylon/misc/tut02pic.jpg)
-
-[**Playground Demo Scene 2 - Seven basic shapes/mesh**](http://babylonjs-playground.azurewebsites.net/?2)
-
-## How can I do this ?
-An easy way to get started using basic elements... is by visiting [**Playground Demo Scene 02**](http://babylonjs-playground.azurewebsites.net/?2).  You might wish to use the 'Get .zip' choice on its top menu.  The index.html that you will receive in that zip... contains everything you will need to start making basic elements.  Remember that link, as we will talk more about it.
-
-I'm sure you have already read the  [**Babylon.js Primer**](http://doc.babylonjs.com/generals/A_Babylon.js_Primer) and the  [**previous tutorial**](http://doc.babylonjs.com/tutorials/Creating_a_Basic_Scene), and thus you know how to format scene files.  So, we won't talk about that, here.  We are going to go step by step through [**Playground Demo Scene 02**](http://babylonjs-playground.azurewebsites.net/?2).  Open that link in a new tab or window, and then come back here, and we'll get started.
-
-Starting with the box, we create various basic elements, and then position them at the end of the function (to keep them from being atop one another).  Let's talk about each of the basic shapes/meshes.  
-
-* **Creation of a Box**
+## 介绍
+在本教程, 我们将学习如何使用Babylon.js创建基础元素, 比如盒子, 球体, 和平面.
+![元素](http://urbanproductions.com/wingy/babylon/misc/tut02pic.jpg)
+[**娱乐场演示场景2 - 七个基本形状/网格**](http://babylonjs-playground.azurewebsites.net/?2)
+## 我怎么做到这个 ?
+一个简单的方法是通过访问[**娱乐场演示场景 02**](http://babylonjs-playground.azurewebsites.net/?2)来开始使用基础元素.  你可能想使用弹出菜单的'下载.zip压缩包' 选项.  你得到的zip压缩包里的index.html文件,包含有你开始创建基础元素所需的一切.  记住那个链接, 因为我们将更多的谈论到它.
+我确定你已经读过[**Babylon.js初级教程**](http://doc.babylonjs.com/generals/A_Babylon.js_Primer) 和 [**先前的教程**](http://doc.babylonjs.com/tutorials/Creating_a_Basic_Scene), 因此你应该知道如何设置场景文件格式.  因此, 我们不在谈论它了.  我们将一步步通过[**娱乐场演示场景02**](http://babylonjs-playground.azurewebsites.net/?2)来学习.  在新标签页或窗口中打开那个链接, 然后返回此处, 我们马上开始.
+从盒子开始, 我们创建了高中基础元素, 在该函数的最后将它们定位好(以防止它们堆叠起来).  让们一一谈论下各个基础形状/网格.
+* **创建一个盒子**
 ```javascript
-var box = BABYLON.Mesh.CreateBox("box", 6.0, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+var box = BABYLON.Mesh.CreateBox("box", 6.0, 场景, false, BABYLON.Mesh.DEFAULTSIDE);
 ```
-Parameters are: name, size of the box, the scene to attach the mesh, updatable? (if the mesh must be modified later) and the optional side orientation (see below). The last two parameters can be omitted if you just need the default behavior :
+参数为: 名字,盒子大小, 它们将放到场景, 是否可更新?(如果该网格后面必须被更新) 和可选的面朝向(参见下面). 如果你需要默认表现那么最后两个参数可以忽略:
 ```javascript
 var box = BABYLON.Mesh.CreateBox("box", 6.0, scene);
 ```
-
-* **Creation of a Sphere**
+* **创建一个球体**
 ```javascript
-var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, scene, false,  BABYLON.Mesh.DEFAULTSIDE);
+var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BABYLON.Mesh.DEFAULTSIDE);
 ```
-Parameters are: name, number of segments (highly detailed or not), size, scene to attach the mesh, updatable? (if the mesh must be modified later) and the optional side orientation (see below). The last two parameters can be omitted if you just need the default behavior :
+参数为: 名字, 细分段数 (高度细节或不需), 大小, 将被放到的场景, 是否可更新?(如果该网格后面必须被更新) 和可选的面朝向(参见下面). 如果你需要默认的表现那么最后两个参数可以忽略:
 ```javascript
 var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, scene);
 ```
-Beware to adapt the number of segments to the size of your mesh ;)
-
-* **Creation of a Plane**
-
+记得根据你的网格对象到校调整细分段数 ;)
+* **创建一个平面**
 ```javascript
 var plane = BABYLON.Mesh.CreatePlane("plane", 10.0, scene, false, BABYLON.Mesh.DEFAULTSIDE);
 ```
 
-Parameters are: name, size, and scene to attach the mesh, updatable? (if the mesh must be modified later) and the optional side orientation (see below). The last two parameters can be omitted if you just need the default behavior :
+参数为: 名字, 大小, 和将被放到的场景, 是否可更新?(如果该网格后面必须被更新) 和可选的面朝向(参见下面). 如果你需要默认的表现,那么最后两个参数可以忽略 :
 ```javascript
 var plane = BABYLON.Mesh.CreatePlane("plane", 10.0, scene);
 ```
-* **Creation of a Disc (or a regular polygon)**
+* **创建一个盘片(或着一个规则多边形)**
 ```javascript
 var disc = BABYLON.Mesh.CreateDisc("disc", 5, 30, scene, false, BABYLON.Mesh.DEFAULTSIDE);
 ```
-Parameters are: name, radius, tessellation, scene, updatable and the optional side orientation (see below). The last two parameters can be omitted if you just need the default behavior :
+参数为: 名字, 半径, 边数, 场景, 可更新否和可选的朝向(参见下面). 如果你需要默认的表现,那么最后两个参数参数可以忽略:
 ```javascript
 var disc = BABYLON.Mesh.CreateDisc("disc", 5, 30, scene);
 ```
-With the  _tessellation_ value, you can get a regular polygon :  
-3 gives a triangle,  
-4 a square,  
-5 a pentagon,  
-6 a hexagon, 7 a heptagon, 8 an octogon, and so on.
-
-* **Creation of a Cylinder**
-
+根据_tessellation_ 的值, 你可以创建一个多边形:  
+3产生一个三角形,  
+4产生一个正方形,  
+5产生一个五边形,  
+6产生一个六边形, 7产生一个七边形, 8产生一个八卦形, 以此类推.
+* **创建一个圆柱体**
 ```javascript
-var cylinder = BABYLON.Mesh.CreateCylinder("cylinder", 3, 3, 3, 6, 1, scene, false, BABYLON.Mesh.DEFAULTSIDE);
+var cylinder = BABYLON.Mesh.CreateCylinder("cylinder", 3, 3, 3, 6, 1, 场景, false, BABYLON.Mesh.DEFAULTSIDE);
 ```
-
-Parameters are: name, height, diamTop, diamBottom, tessellation, heightSubdivs, scene, updatable and the optional side orientation (see below). The last two parameters can be omitted if you just need the default behavior :
+参数为: 名称, 高度, 顶直径, 底直径, 边数, 高向细分度, 场景, 可更新否和可选的朝向(参见下面). 如果你需要默认表现,那么最后两个参数可以忽略:
 ```javascript
 var cylinder = BABYLON.Mesh.CreateCylinder("cylinder", 3, 3, 3, 6, 1, scene);
 ```
-
-* **Creation of a Torus**
-
+* **创建一个环面体**
 ```javascript
 var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene, false, BABYLON.Mesh.DEFAULTSIDE);
 ```
-Parameters are: name, diameter, thickness, tessellation (highly detailed or not), scene, updatable and the optional side orientation (see below). The last two parameters can be omitted if you just need the default behavior :
+参数为: 名称, 直径, 厚度, 边数(高度细节或不是), 场景, 可更新否和可选的朝向(参见下面). 如果你使用默认表现那么最后两个参数可忽略 :
 ```javascript
 var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene);
 ```
-
-* **Creation of a Knot**
-
+* **创建一个结**
 ```javascript
 var knot = BABYLON.Mesh.CreateTorusKnot("knot", 2, 0.5, 128, 64, 2, 3, scene, false, BABYLON.Mesh.DEFAULTSIDE);
 ```
-Parameters are: name, radius, tube, radialSegments, tubularSegments, p, q, scene, updatable and the optional side orientation (see below). The last two parameters can be omitted if you just need the default behavior :
+参数为: 名称, 半径, tube, 半径上分段数, tubularSegments, p, q, 场景, 可更新否和可选的朝向(参见下面). 如果你使用默认的表现那么最后的两个参数可以忽略 :
 ```javascript
 var knot = BABYLON.Mesh.CreateTorusKnot("knot", 2, 0.5, 128, 64, 2, 3, scene);
 ```
-You can learn more about torus knots... [**RIGHT HERE**](http://en.wikipedia.org/wiki/Torus_knot).
-
-* **Creation of a Lines Mesh**
-
+将将在[**此处**](http://en.wikipedia.org/wiki/Torus_knot)关于 结 学习更多知识.
+* **创建线型网格**
 ```javascript
 var lines = BABYLON.Mesh.CreateLines("lines", [
     new BABYLON.Vector3(-10, 0, 0),
     new BABYLON.Vector3(10, 0, 0),
     new BABYLON.Vector3(0, 0, -10),
     new BABYLON.Vector3(0, 0, 10)
-], scene);
+], 场景);
 ```
-Parameters are: name, [array of comma-separated vectors], scene. 
-
-I could explain how the Lines Mesh constructor works, but I think you can see how it works just by looking at the demo code above.  Notice the [ and ].  Those are the enclosing tokens for an array, yet another kind of Javascript value.  The first vector3 of the array is the starting location for drawing lines.  After that, a comma, and then the next vector3 location... indicating where the line is drawing-to next.  Then, another comma, and another vector3 to a new location.  You can add as many vectors as you wish, but notice that the LAST vector3 does not have a comma following it.  Please make your array of vectors be formatted similarly.    
-
-* **Creation of DashedLines Mesh**
-
+参数为: 名称, [都好分隔的向量数组], 场景.
+我可以解释线型网格是如何工作的, 当时我认为剋可以通过观察上面的演示代码而知晓.  注意 [ 和 ].  这两个是数组的起止标志, 数值是Javascript的另一种值类型.  数组里的头个三元向量是线的开始地方.  那之后, 一个逗号, 然后下一个三元向量为画线的线一个定位点.  然后, 又一个逗号, 和又一个三元向标示点新定位点.  可以添加任意多个向量, 但是注意最后一个三元向量之后没有逗号跟随.  请按照个格式组织向量数组.
+* **绘制点划线网格**
 ```javascript
-var dashedlines = BABYLON.Mesh.CreateDashedLines("dashedLines", [v1, v2, ... vn], dashSize, gapSize, dashNb, scene);
+var dashedlines = BABYLON.Mesh.CreateDashedLines("dashedLines", [v1, v2, ... vn], dashSize, gapSize, dashNb, 场景);
 ```
-Parameters are : name, [array of Vectors3], dashSize, gapSize, dashNumber, scene.    
-As for Lines, a line along the vectors3 will be displayed in space. It will try to set _dashNumber_ strokes on this line depending on the length of each segment between two successive vectors3.    
-_dashSize_ and _gapSize_ are relative to each other dash and gap sizes within these strokes.   
+参数为 : 名称, [三元向量数组], 划线大小, 间隙大小, 段划线数, 场景.
+作为许多线段, 每条段先都是以三元向量组的方式呈现在空间里. 上面函数设置了这条点划线里线段的数量, 每段都是由两个连续三元向量定义.
+_划线大小_ 和 _间隙大小_ 是指点划线里每个划线和之间间隙的相对大小.
+你可能会被我们新的[线系统](http://doc.babylonjs.com/tutorilas/Mesh_CreateXXX_Methods_With_Options_Parameter#linesystem)吸引住.
 
-You might also be interested in our new [LinesSystem](http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter#linesystem).
-
-
-* **Creation of a Ribbon**
-
+* **创建丝带**
 What is a ribbon ?  
 
 First, imagine a series of successive points defining a path.  
