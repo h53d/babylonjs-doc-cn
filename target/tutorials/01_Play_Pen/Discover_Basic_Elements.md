@@ -94,137 +94,104 @@ var dashedlines = BABYLON.Mesh.CreateDashedLines("dashedLines", [v1, v2, ... vn]
 _划线大小_ 和 _间隙大小_ 是指点划线里每个划线和之间间隙的相对大小.
 你可能会被我们新的[线系统](http://doc.babylonjs.com/tutorilas/Mesh_CreateXXX_Methods_With_Options_Parameter#linesystem)吸引住.
 
-* **创建丝带**
-What is a ribbon ?  
-
-First, imagine a series of successive points defining a path.  
-Next, imagine another series of successive points, so another path.  
-Now, if you construct triangular faces by joining alternate points of the first and the second path, like when you lace shoes, you get a ribbon.  
-
-Your paths don't need to be parallel. They don't even need to be straight lines or in the same plane.  
-They are, well, whatever you want. The ribbon will just follow your paths.  
-
-Now, imagine, instead of having only two paths, you've got many successive different paths.  
-The full ribbon will then be the continuous surface joining all these inbetween pair of paths surface.
-
+* **创建一条板带**
+什么是板带 ?
+首先, 想象一下一系列连续点定义的路径.
+接下来，想象另一系列连续点，定义的一条路径.
+现在, 如果你在第一条路径和第二条路径上互相间隔着连接点来构建三角形, 就像你系鞋带的方式, 你就会得到一个板带.
+你的路径间不需要平行. 它们甚至不需要是直线或在同一平面内.
+它们可以是任何你想要的方式. 板带就沿着你定义的路径.
+现在, 想象一下, 不是两条路径, 你定义了许多连续的不同路径.
+成对路径间构成的所有板带会结合起来形成连续表面.
 ```javascript
 var ribbon = BABYLON.Mesh.CreateRibbon("ribbon", [path1, path2, ..., pathn], false, false, 0, scene, false, BABYLON.Mesh.DEFAULTSIDE);
 ```
 
-Parameters are: name, pathArray, closeArray, closePath, offset, scene, updatable? (if the mesh must be modified later)  and the optional side orientation (see below).
+参数为: 名称, 路径数组, 闭合数组, 闭合路径, 偏移量, 场景, 可更新否?(如果网格之后要被修改)  和可选的朝向 (参见下面).
 
-
-  * name : a string, the name you want to give to your shape,
-  * pathArray : an array populated with paths. Paths are also arrays, populated with series of successive _Vector3_. You need at least one path to construct a ribbon and each path must contain at least four _Vector3_,
-  * closeArray : boolean, if true an extra set of triangles is constructed between the last path and the first path of _pathArray_,
-  * closePath : boolean, if true the last point of each path of _pathArray_ is joined to the first point of this path,
-  * offset : integer (default half the _path_ size) mandatory only if the _pathArray_ contents only one path. The ribbon will be constructed joining each i-th point of the single path to the i+offset-th point. It is ignored if _pathArray_ has more than one path,
-  * scene : the current scene object,
-  * updatable : boolean, if the ribbon should allow updating later,
-  * sideOrientation : the wanted side-orientation (BABYLON.Mesh.FRONTSIDE / BACKSIDE / DOUBLESIDE / DEFAULT).
-
-The last two parameters can be omitted if you just need the default behavior :
+* 名称: 一个字符串, 你想要给你的造型物定义的名称,
+  * 路径数组: 填充路径的数组. 路径也是数组, 由一系列连续点 _三元向量_ 填充. 你需要至少一条路径形成板带,而且每条路径包含至少四个 _三元向量_,
+  * 闭合数组: 布尔值, 如果为真, 则会由 _路径数组_ 里的第一条路径和最后一条路径产生一组额外的三角形,
+  * 闭合路径: 布尔值, 如果为真, 则 _路径数组_ 里的每条路径的最后一个点和其第一个点相连接,
+  * 偏移量 : 正数 (默认值是 _路径_ 大小的一半), 仅当 _路径数组_ 只有一条路径时才必须指定. 此时板带由该单条路径上的 第 i 个点和第 i+偏移量 个点连接来构成. 这个参数会被忽略如果 _路径数组_ 里有多于一条路径,
+  * 场景 : 当前场景对象,
+  * 可更新否: 布尔值, 如果允许之后更新缎带则设置为true,
+  * 朝向: 期望的面朝向(BABYLON.Mesh.FRONTSIDE / BACKSIDE / DOUBLESIDE / DEFAULT).
+如果仅需要使用默认表现则最后两个参数可以被忽略:
 ```javascript
 var ribbon = BABYLON.Mesh.CreateRibbon("ribbon", [path1, path2, ..., pathn], false, false, 0, scene);
 ```
-
-I you need more details about how to deal with this method, you would probably read the [**Parametric Shapes**](http://doc.babylonjs.com/tutorials/Parametric_Shapes) part.
-
-* ** Creation of a Tube**
-
+如果你想知道处理该方法的更多细节, 你可能会阅读[**参数化造型**](http://doc.babylonjs.com/教程/Parametric_Shapes) 部分.
+* ** 创业一个管子**
 ```javascript
 var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselation, radiusFunction, cap, scene, false, BABYLON.Mesh.DEFAULTSIDE);
 
 ```
-Parameters are : name, path, radius, tesselation, optional radiusFunction, cap, scene, updatable, sideOrientation.
-
-  * name : string, the name of the tube mesh,
-  * path : an array of successive Vector3, at least two Vector3,
-  * radius : nuumber, the tube radius, used when _radiusFunction_ parameter set to _null_,
-  * tesselation : the number of radial segments,
-  * radiusFunction : _optional_, a javascript function returns a radius value. This can be set to _null_,
-  * cap : BABYLON.Mesh.NO_CAP, BABYLON.Mesh.CAP_START, BABYLON.Mesh.CAP_END, BABYLON.Mesh.CAP_ALL,  
-  * updatable : boolean, if the tube should allow updating later,
-  * sideOrientation : the wanted side orientation (front, back or double side).
-
-The last two parameters can be omitted if you just need the default behavior :
+参数为: 名称, 路径, 半径, 曲面细分, 可选的半径函数,  头罩, 场景, 可更新否, 朝向.
+* 名称: 字符串, 管子网格的名字符,
+  * 路径: 连续的三元向量数组,  至少两个三元向量,
+  * 半径: 数值, 管子的半径, 当 _半径函数_ 参数设置为 _null_时使用,
+  * 曲面细分: 径向的段数,
+  * 半径函数: _可选的_, 一个返回半径值的 javascript 函数. 这个可以设置为 _null_,
+  * 头罩: BABYLON.Mesh.NO_CAP, BABYLON.Mesh.CAP_START, BABYLON.Mesh.CAP_END, BABYLON.Mesh.CAP_ALL,
+  * 可更新否: 布尔值, 该管子后面是否可以被更新,
+  * 朝向: 期望有用的朝向 (前向, 后像 或 双向).
+如果你仅仅要使用默认的表现则最后两个参数可以忽略:
 ```javascript
 var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselation, radiusFunction, cap, scene);
 ```
-The tube can also be used as a [**Parametric Shapes**](http://doc.babylonjs.com/tutorials/Parametric_Shapes) by setting a radius function.
+管子也可以通过设置一个半径函数而作为[**参数化造型**](http://doc.babylonjs.com/tutorials/Parametric_Shapes) 的方式使用.
 
 
-
-#### Updatable
-This parameter, present in each mesh creation method... tells if the mesh can be updated after it is created.  
-If false (default value), the mesh data are passed only once to the GPU.  
-If true, the mesh data may be recomputed and passed to the GPU at each frame refresh.  
-
-#### Side Orientation
-When a mesh is created, an optional side orientation is given to it.  
-The side orientation is used to give visibility and/or light reflection to each side of the mesh.  
-There are four possible values for this parameter :  
-
-  * BABYLON.Mesh.FRONTSIDE,
+#### 可更新否
+这个参数, 在每个网格创建方法里出现... 告知该网格在创建后是否可以被更新.
+如果为 false (默认值), 则该网格数仅仅往GPU传送一次.
+如果为 true, 则该网格数据可以被重新计算并在每帧刷新时传递给GPU.
+#### 朝向
+当一个网格被创建时, 可以为其提供一个可选的朝向.
+该朝向被用来提供可见性而且/或则光反射性.
+这个值有四个可能的值:
+* BABYLON.Mesh.FRONTSIDE,
   * BABYLON.Mesh.BACKSIDE,
   * BABYLON.Mesh.DOUBLESIDE,
-  * BABYLON.Mesh.DEFAULT which is the default value and equals FRONTSIDE currently.
+  * BABYLON.Mesh.DEFAULT 这是默认值, 当前同 FRONTSIDE.
+这个参数时可选的. 如果没提供, 则 DEFAULT 值被设置.
+*(我们假设默认 backFaceCulling 被启用了)*
+ 例如, 假设你创建一个基本形状像, 比如一个盒子，球体或平面，你没给它的设置材质.
+如果你到平面的背后或者盒子/球体的里面, 你会注意到那些面时不可见的: Babylon.js 网格通常都是由默认的朝向 _FRONTSIDE_ 构成. 这意味着每个面只有一边可见.
+试验下: http://www.babylonjs-playground.com/#14RNAU#4
+如果你为网格应用了一个材质, 设置 _material.backFaceCulling = false;_, 同时用光源照明它, 你会注意到背面(或者里面)... 现在可见了, 但是它却不反射光.  同样的原因: 默认的朝向仍然是 _FRONTSIDE_.
+*(你可以用这个值来禁用 _backFaceCulling_ )*
+现在, 在你的网格构造函数里仅仅改变 _朝向_ 参数为 _BABYLON.Mesh.BACKSIDE_.  (也移除你试验的材质.)  你仅能看到平面的背面, 或者仅看到盒子和球体的里面 (内部的面).
+试验: http://www.babylonjs-playground.com/#14RNAU#5
+如果你为网格提供一些材质, 你可以看到光源仅仅能照射到背面 (平面的)或者里面 (盒子的, 球体的等).
+*(你可以用_朝向_值来禁用 _backFaceCulling_ )*
 
-This parameter is optional. If not given, the DEFAULT value is set.
-
-*(We assume the backFaceCulling is enabled by default)*  
-
-For instance, imagine you create a basic shape like a box, a sphere or a plane, and you don't give it a material.   
-If you go behind the plane or inside the box or the sphere, you will notice that the faces aren't visible any longer : Babylon.js mesh are often constructed with the default side orientation _FRONTSIDE_. This means that each side only has a front view.  
-Test it : http://www.babylonjs-playground.com/#14RNAU#4  
-
-If you apply a test material to your mesh, set _material.backFaceCulling = false;_, and light it up, you will notice that the back (or internal) face... is now visible, but it doesn't reflect the light.  Same reason : the default side orientation is still _FRONTSIDE_.  
-*(You can disable _backFaceCulling_ with this _sideOrientation_ value)*
-
-Now, just change the _sideOrientation_ parameter in your mesh constructor... to _BABYLON.Mesh.BACKSIDE_.  (Remove your test material, too.)  You can only see the backs of planes, or only see the insides (internal faces) of the box and sphere.  
-Test it : http://www.babylonjs-playground.com/#14RNAU#5
-
-If you give your mesh some material, you can see that the light now only reflects on the back face (plane) or only inside (box, sphere, etc).  
-*(you can disable _backFaceCulling_ with this _sideOrientation_ value)*
-
-
-At last, change the _sideOrientation_ parameter to _BABYLON.Mesh.DOUBLESIDE_.  
-As you guessed, the mesh faces are now visible on both sides. And if you give it a material, the light then reflects from both sides, too.  
-Test it : http://www.babylonjs-playground.com/#14RNAU#6   
-
-So why not always use _BABYLON.Mesh.DOUBLESIDE_ by default ?  
-
-Because this value creates twice the vertices of a frontside mesh. In other terms, your mesh will be twice heavier.  
-*(you shouldn't disable _backFaceCulling_ with _BABYLON.Mesh.DOUBLESIDE_ value)*
+最后, 改变 _朝向_ 参数值为 _BABYLON.Mesh.DOUBLESIDE_.
+正如你猜测的, 网格面现在两边可见了. 而且如果你提供了材质, 光也会在两边都反射.
+试验: http://www.babylonjs-playground.com/#14RNAU#6
+那么为何不总是用 _BABYLON.Mesh.DOUBLESIDE_ 作为默认值 ?
+因为此值创建一个前向面的网格两倍的顶点. 在其它方面, 你的网格消耗将翻倍.
+*(你不能用 _BABYLON.Mesh.DOUBLESIDE_ 值来禁用 _backFaceCulling_)*
 
 
-
-### More Basic Elements - Grounds
-Up to this point, we have been talking about basic elements from our [**Playground Demo Scene 02**](http://babylonjs-playground.azurewebsites.net/?2), but a few important mesh shapes (basic elements) are not included in that demo scene.  They are each ways of making 'ground' in Babylon.js.  Let's take a look: 
-
-* **Creation of a Ground**
-
+### 更多基础元素 - 地面
+对这点, 我们在 [**娱乐场演示场景 02**](http://babylonjs-playground.azurewebsites.net/?2)里谈论过该基础元素, 但有更多的重要网格造型 (基础元素)没有包含在那个演示场景里.  它们(下面例子)是Babylon.js创建'地面'的各种方法.  让我们看看:
+* **创建一个地面**
 ```javascript
 var ground = BABYLON.Mesh.CreateGround("ground", 6, 6, 2, scene);
 ```
 
-Parameters are: name, width, depth, subdivs, scene
-
-Our [**Playground Demo Scene 01**](http://www.babylonjs-playground.com/?1) uses a CreateGround constructor... so you can see one in action by using the above link.
-
-* **Creation of a Ground From HeightMap**
-
+参数为: 名称, 宽度, 纵深, 子分段数, 场景
+我们的 [**娱乐场演示场景01**](http://www.babylonjs-playground.com/?1)使用了一个CreateGround构造函数... 所以你可以使用上面的链接来看看它的行为.
+* **使用高度图创建地面**
 ```javascript
 var ground = BABYLON.Mesh.CreateGroundFromHeightMap("ground", "heightmap.jpg", 200, 200, 250, 0, 10, scene, false, successCallback);
 ```
-Parameters are: name, heightmapPath, width, depth, subdivs, minheight, maxheight, scene, updatable, successCallback
-
-HeightMap grounds are easy, but we decided to create a separate tutorial so we could say more about this important Babylon.js feature. Please see our [**HeightMap Tutorial**](http://doc.babylonjs.com/tutorials/Height_Map) to learn all about heightMap grounds.
-
-* **Create of a Tiled Ground**
-
-Thanks to forum user Kostar111 for this handy Tiled Ground constructor. Here is the basic code needed to create a tiled ground.
-
+参数为: 名称, 高度图路径, 宽度, 纵深, 子分段数, 最小高度,最大高度, 场景, 可更新否, 成功回调
+高度图地面很简单, 但是我们决定创建一个独立的教程讲它, 以便能更多的讲述Babylon.js的这个重要特征. 请看我们的[**高度图教程**](http://doc.babylonjs.com/tutorials/Height_Map) 以学习所有的高度图地面知识.
+* **创建一个瓦片地图**
+感谢论坛用户Kostar111提供了这个方便的瓦片地图构造方法. 这儿是创建一个瓦片地图所需的基础代码.
 ```javascript
 
 var precision = {
@@ -238,14 +205,11 @@ var subdivisions = {
 var tiledGround = BABYLON.Mesh.CreateTiledGround("Tiled Ground", -3, -3, 3, 3, subdivisions, precision, scene, false);
 ```
 
-Parameters are: name, xmin, zmin, xmax, zmax, subdivisions = the number of tiles. (subdivisions.w : in width; subdivisions.h: in height), precision = the number of subdivisions inside a tile. (precision.w : in width; precision.h: in height), scene, updatable.
-
-Kostar111 was also kind enough to give us a fine tutorial about how to use tiled grounds. [**Click right here**](http://makina-corpus.com/blog/metier/how-to-use-multimaterials-with-a-tiled-ground-in-babylonjs) to view it. At that link, Kostar111 thoroughly explains how the tiled ground works, and also provides some Babylon.js Playground scenes that nicely demonstrate some of its many uses.
-
-## Wrapping Up ##
-And that’s it! Now you have seen all of our basic elements, and some ways to use them. Keep watching this area of the tutorial for new basic elements, as they are being added quite quickly : you'll find the updated list with all parameter explanations [**in this section**](http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter). 
-Feel free to imagine a few of your own basic element ideas, and present them on the forum. Help us make our list of basic elements grow, if you can.  
-
-## Next step ##
+参数为: 名称, 最小x值, 最小z值, 最大x值, 最大z, 细分数量 = 瓦片数量. (subdivisions.w : 宽度上的细分数量; subdivisions.h: 高度上的细分数量), 精度 = 一个瓦片内部的细分数量. (precision.w : 宽度上的精度; precision.h: 高度上的精度), 场景, 可更新否.
+Kostar111 好人做到底了:为我们提供了一个关于如何使用瓦片地图的很好教程. [**点击这儿**](http://makina-corpus.com/blog/metier/how-to-use-multimaterials-with-a-tiled-ground-in-babylonjs) 查看该教程. 在那个链接, Kostar111全面地说明了瓷砖地面的工作方式，还提供了一些Babylon.js游乐场景, 很好地演示了一些它的许多用途.
+## 结束语 ##
+就是这样!现在你已经看了我们所有的基础元素, 同时看了它们的一些使用方法. 保持关注教程里这方面的内容, 因为新的基础元素很快会被添加: 你会[**在这个章节里**](http://doc.babylonjs.com/tutorials/Mesh_CreateXXX_Methods_With_Options_Parameter)发现更新了的名单和其所有参数的解释.
+请自由设想你自己的基础元素创意, 并把它们提交到论坛上. 如果你能,请帮助我们增加基础元素列表.
+## 下一步 ##
 ----
-We saw that we needed a bit of 'positioning' to keep our basic elements from sitting atop one another in the scene. Now let's learn more about positions (sometimes called translations) as well as about rotation and scaling. Ready? Sure you are! [**Click here for the next tutorial.**](http://doc.babylonjs.com/tutorials/Materials)
+我们看到过, 我们需要一点'定位'来保持我们基础元素不覆盖场景里另一个基础元素. 现在,我们进一步的学习定位(有时叫做平移) 还有旋转和缩放. 准备好了吗?你肯定准备好了![**点击这儿进入下一教程.**](http://doc.babylonjs.com/tutorilas/Materials)
