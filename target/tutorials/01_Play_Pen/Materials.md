@@ -1,105 +1,80 @@
 ---
 ID_PAGE: 22051
-PG_TITLE: 04. Materials
+PG_TITLE: 04. 材质
 ---
-## Introduction
-
-Now that you can create different basic mesh elements anywhere in the scene, we are going to give those meshes some materials, to define how those mesh look.
-
-![Elements](http://www.babylonjs.com/tutorials/04%20-%20Materials/04.png)
-
-[**Playground Demo Scene 4 - Materials**](http://www.babylonjs.com/playground/?4)
-
-## How can I do this ?
-We are so adept at making createScene functions that we can do it in our sleep, right? So let's get rolling with an omni-directional PointLight and an orbiting ArcRotateCamera.  After that, we'll start making some basic mesh elements to test our materials upon.
-
+## 介绍
+现在,你可以在场景的任意地方创建不同的基础网格元素, 我们将为这些网格赋予些材质, 以定义这些网格的外观.
+![元素](http://www.babylonjs.com/tutorials/04%20-%20Materials/04.png)
+[**娱乐场演示场景4 - 材质**](http://www.babylonjs.com/playground/?4)
+## 我怎么做到这个 ?
+我们对编写createScene函数已经很娴熟了,闭着眼睛都能搞定, 对吧?所以让我们开始摆弄一个全方位点光光源和一个有轨弧形旋转相机.  之后, 我们将开始制作些基础网格元素以便在其上测试我们的材质.
 ```javascript
 function createScene() {
     var scene = new BABYLON.Scene(engine);
     var light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(0, 100, 100), scene);
-    var camera = new BABYLON.ArcRotateCamera("Camera", 0, 0.8, 100, new BABYLON.Vector3.Zero(), scene);
-
-    //Creation of spheres
+    var camera = new BABYLON.ArcRotateCamera("camera", 0, 0.8, 100, new BABYLON.Vector3.Zero(), scene);
+     //创建球体
     var sphere1 = BABYLON.Mesh.CreateSphere("Sphere1", 10.0, 6.0, scene);
     var sphere2 = BABYLON.Mesh.CreateSphere("Sphere2", 2.0, 7.0, scene);
     var sphere3 = BABYLON.Mesh.CreateSphere("Sphere3", 10.0, 8.0, scene);
 […]
-    //Positioning the meshes
+    //定位网格
     sphere1.position.x = -40;
     sphere2.position.x = -30;
 ```
-
-So far, you only have some grey-colored meshes. How drab! To apply a material to them, you will need to create a new material object like this:
+到目前为止, 你只有些灰色的网格. 多么的单调啊!为了给它们应用材质, 你需要像这样的创建一个新的材质对象:
 ```javascript
 var materialSphere1 = new BABYLON.StandardMaterial("texture1", scene);
 ```
-
-And apply this material to the object of your choice, e.g.:
+然后把这个材质应用到一个你选折的对象上, 比如:
 ```javascript
 sphere1.material = materialSphere1;
 ```
-Or, create and apply all in one step:
+或者, 创建并应用材质一步搞定:
 ```javascript
 sphere1.material = new BABYLON.StandardMaterial("texture1", scene);
 ```
-
-“I tested my scene, and …nothing changed…”
-
-Exactly, because this material is the default one. You have to customize it as you like. You won’t change the mesh itself, but just the material.
-
-“So how can I adjust my material to give the perfect look to my object?”
-
-That is done by setting the properties on the material.  Let's see what they are:
-
-* **Transparency** (alpha channel)
-
-Alpha compositing and transparency in general can be a bit complex. A specific article about that can be found [here](page.php?p=25100). You might also want to read [the wikipedia page about it](http://en.wikipedia.org/wiki/Alpha_compositing).  You will encounter even more uses for it when you enjoy the BabylonJS particle system, and BabylonJS sprites system. 
-
- Alpha transparency, written in percent (%), can be applied to a material in this way:
+“我测试下我的场景, 然后 …没有变化…”
+确切的说, 这个材质是默认的. 你可以根据你的喜好自定义材质. 你不需要改变网格本身, 只要修改该材质.
+“所以,我该如何改变我的材质已使我的对象外观漂亮完美?”
+这通过设置材质的属性实现, 我们看看它们么样:
+* **透明度** (alpha通过)
+Alpha合成和透明度一般会有点复杂. 关于透明度 [这儿](page.php?p=25100)能找到篇专门的文章. 你也许想阅读[关于它的维基页](http://en.wikipedia.org/wiki/Alpha_compositing).  当你在享受BabylonJS的粒子系统和精灵系统时, 你会遇到更多的透明度用途.
+百分比(%)形式的Alpha透明, 可以按这种方式应用到材质:
 ```javascript
 materialSphere1.alpha = 0.5;
 ```
-
-* **Diffuse**
-
-The diffuse is the native color of the object material once it is lit with a light. You can specify a solid color with the ```diffuseColor``` property:
+* **散射**
+一旦对象材质被一个光源点亮, 散射光就是材质对象的天然色. 你可以用```diffuseColor```属性指定一个纯色:
 ```javascript
 materialSphere1.diffuseColor = new BABYLON.Color3(1.0, 0.2, 0.7);
 ```
-
-Or, you can use a texture:
+或者, 你可以使用纹理:
 ```javascript
 materialSphere1.diffuseTexture = new BABYLON.Texture("grass.png", scene);
 ```
-
 ![tof](http://www.babylonjs.com/tutorials/04%20-%20Materials/04-1.png)
 
-**More About Textures:** Be sure to use the correct path to your image (relative or absolute path). Supported image formats include JPG, PNG, JPEG, BMP, GIF… (every image format supported by your browser).
-
-If you want to translate (offset) your texture on your mesh, you can use the “uOffset” and “vOffset” properties:
+**更多关于纹理:** 请确保你图片的路径正确 (相对或绝对路径). 支持的图片格式包括 JPG, PNG, JPEG, BMP, GIF… (每种图片格式都被你的浏览器支持).
+如果你想在网格上平移(偏移) 你的纹理, 你可以使用 “uOffset” 和 “vOffset” 属性:
 ```javascript
 materialSphere1.diffuseTexture.uOffset = 1.5;
 materialSphere1.diffuseTexture.vOffset = 0.5;
 ```
-And if you want to repeat/tile an image pattern (e.g. grass texture), you can use the “uScale” and “vScale” properties:
+而且,如果你想重复/铺瓦片模式使用图片(比如. 草地纹理), 你可以使用 “uScale” 和 “vScale” 属性:
 ```javascript
 materialSphere1.diffuseTexture.uScale = 5.0;
 materialSphere1.diffuseTexture.vScale = 5.0;
 ```
-
-Remember that (u, v) coordinates refer to the following axis:
-
+请记住 (u, v) 坐标参考下面轴:
 ![tof](/img/tutorials/crate.jpg)
 
-And if your texture has some alpha, you will need to specify it:
+而且如果你的材质有alpha特性, 你需要指明它:
 ```javascript
 materialSphere1.diffuseTexture.hasAlpha = true;
 ```
-
-In this case, alpha is used for alpha testing. But you may want to use it for alpha blending. To do so, just set ```materialSphere1.useAlphaFromDiffuseTexture```
-
-All of these texture settings apply to the other StandardMaterial properties as well. (.emissiveTexture, .ambientTexture, .specularTexture)  I will remind you.  Now let's continue talking about the other StandardMaterial properties.
-
+这种情况下, alpha被用作alpha测试. 但是你也许想把它用在alpha混合上. 要做到这点, 只需设置 ```materialSphere1.useAlphaFromDiffuseTexture```
+All of these texture settings apply to the other StandardMaterial 属性 as well. (.emissiveTexture, .ambientTexture, .specularTexture)  I will remind you.  Now let's continue talking about the other StandardMaterial properties.
 
 * **Emissive**
 
