@@ -14,6 +14,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Elements](http://www.babylonjs.com/tutorials/04%20-%20Materials/04.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T121413Z" creationid="aceway" creationdate="20160508T121413Z">
+        <seg>![元素](http://www.babylonjs.com/tutorials/04%20-%20Materials/04.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![VS02](http://i.imgur.com/Tb3nxWZ.png)
 Make sure you check "Create directory for solution", this way the c:\test\babylon.js directory will be used to store the .sln file and a new directory will be created in c:\test\babylon.js\babylon.js for the project file.</seg>
       </tuv>
@@ -2686,6 +2694,22 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **Diffuse**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124847Z" creationid="aceway" creationdate="20160508T124847Z">
+        <seg>* **散射**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Transparency** (alpha channel)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124034Z" creationid="aceway" creationdate="20160508T124034Z">
+        <seg>* **透明度** (alpha通过)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Vector3**: An array of 3 floats ([x, y, z]).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T072337Z" creationid="aceway@qq.com" creationdate="20160427T072337Z">
@@ -3035,6 +3059,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T150747Z" creationid="aceway" creationdate="20160418T150747Z">
         <seg>**方法**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**More About Textures:** Be sure to use the correct path to your image (relative or absolute path).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T125557Z" creationid="aceway" creationdate="20160508T125557Z">
+        <seg>**更多关于纹理:** 请确保你图片的路径正确 (相对或绝对路径).</seg>
       </tuv>
     </tu>
     <tu>
@@ -3824,6 +3856,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A specific article about that can be found [here](page.php?p=25100).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124405Z" creationid="aceway" creationdate="20160508T124405Z">
+        <seg>关于透明度 [这儿](page.php?p=25100)能找到篇专门的文章.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>AROUND each of these invisible rods.&amp;nbsp;</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T062512Z" creationid="aceway" creationdate="20160423T062512Z">
@@ -3912,6 +3952,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Alpha compositing and transparency in general can be a bit complex.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124159Z" creationid="aceway" creationdate="20160508T124159Z">
+        <seg>Alpha合成和透明度一般会有点复杂.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Although this playground is blending the same animation into itself, more often, a different animation will be blended-into the original, such as when a walking character changes to running.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T125321Z" creationid="aceway" creationdate="20160402T125321Z">
@@ -3956,6 +4004,28 @@ scene.beginAnimation(torus, 0, 120, true);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152230Z" creationid="aceway" creationdate="20160402T152230Z">
         <seg>一个事件 是在某指定帧会被调用的函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And apply this material to the object of your choice, e.g.:
+```javascript
+sphere1.material = materialSphere1;
+```
+Or, create and apply all in one step:
+```javascript
+sphere1.material = new BABYLON.StandardMaterial("texture1", scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T123407Z" creationid="aceway" creationdate="20160508T123236Z">
+        <seg>然后把这个材质应用到一个你选折的对象上, 比如:
+```javascript
+sphere1.material = materialSphere1;
+```
+或者, 创建并应用材质一步搞定:
+```javascript
+sphere1.material = new BABYLON.StandardMaterial("texture1", scene);
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -4314,6 +4384,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Exactly, because this material is the default one.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T123526Z" creationid="aceway" creationdate="20160508T123526Z">
+        <seg>确切的说, 这个材质是默认的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Example: [0.2, 0.3, 0.5]
 * **Matrix**: An array of 16 floats exposed with row first convention
 * **Boolean**: true or false</seg>
@@ -4614,6 +4692,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>How drab!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T122834Z" creationid="aceway" creationdate="20160508T122834Z">
+        <seg>多么的单调啊!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>I could explain how the Lines Mesh constructor works, but I think you can see how it works just by looking at the demo code above.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T141618Z" creationid="aceway" creationdate="20160503T141618Z">
@@ -4774,6 +4860,32 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T082056Z" creationid="aceway" creationdate="20160423T082056Z">
         <seg>如果你想让家里的演示场景运行快些, 你可以下载这些外部文件的拷贝... 然后把它们放入一个文件夹.&amp;nbsp; 该本文件夹必须和你的index.html文件位于同一个文件夹下.&amp;nbsp; 例如, 在index.html的同一文件夹里, 你创建一个叫做'js' (没有引号)的文件夹.&amp;nbsp; 将你下载4大外部资源文件放入该js文件夹.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to translate (offset) your texture on your mesh, you can use the “uOffset” and “vOffset” properties:
+```javascript
+materialSphere1.diffuseTexture.uOffset = 1.5;
+materialSphere1.diffuseTexture.vOffset = 0.5;
+```
+And if you want to repeat/tile an image pattern (e.g. grass texture), you can use the “uScale” and “vScale” properties:
+```javascript
+materialSphere1.diffuseTexture.uScale = 5.0;
+materialSphere1.diffuseTexture.vScale = 5.0;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T130539Z" creationid="aceway" creationdate="20160508T125938Z">
+        <seg>如果你想在网格上平移(偏移) 你的纹理, 你可以使用 “uOffset” 和 “vOffset” 属性:
+```javascript
+materialSphere1.diffuseTexture.uOffset = 1.5;
+materialSphere1.diffuseTexture.vOffset = 0.5;
+```
+而且,如果你想重复/铺瓦片模式使用图片(比如. 草地纹理), 你可以使用 “uScale” 和 “vScale” 属性:
+```javascript
+materialSphere1.diffuseTexture.uScale = 5.0;
+materialSphere1.diffuseTexture.vScale = 5.0;
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -5025,6 +5137,18 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Materials
+---
+## Introduction</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T121134Z" creationid="aceway" creationdate="20160508T121134Z">
+        <seg>材质
+---
+## 介绍</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Maybe now you want to build an Animation for box1.scaling.y, and really get box1 moving playfully.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105655Z" creationid="aceway" creationdate="20160402T105655Z">
@@ -5165,6 +5289,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083112Z" creationid="aceway@qq.com" creationdate="20160331T083112Z">
         <seg>现在我们已经有动画对象了，可以谈论如何修改那些值了。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now that you can create different basic mesh elements anywhere in the scene, we are going to give those meshes some materials, to define how those mesh look.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T121352Z" creationid="aceway" creationdate="20160508T121352Z">
+        <seg>现在,你可以在场景的任意地方创建不同的基础网格元素, 我们将为这些网格赋予些材质, 以定义这些网格的外观.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5313,6 +5445,20 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130627Z" creationid="aceway" creationdate="20160503T130627Z">
         <seg>在新标签页或窗口中打开那个链接, 然后返回此处, 我们马上开始.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Or, you can use a texture:
+```javascript
+materialSphere1.diffuseTexture = new BABYLON.Texture("grass.png", scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T125400Z" creationid="aceway" creationdate="20160508T125400Z">
+        <seg>或者, 你可以使用纹理:
+```javascript
+materialSphere1.diffuseTexture = new BABYLON.Texture("grass.png", scene);
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -5469,6 +5615,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Remember that (u, v) coordinates refer to the following axis:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T130643Z" creationid="aceway" creationdate="20160508T130643Z">
+        <seg>请记住 (u, v) 坐标参考下面轴:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Remember that link, as we will talk more about it.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130226Z" creationid="aceway" creationdate="20160503T130226Z">
@@ -5505,6 +5659,22 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T034539Z" creationid="aceway" creationdate="20160404T034539Z">
         <seg>看到左边代码窗口里的 'createScene' 函数里么?&amp;nbsp; 看起来熟悉吧?&amp;nbsp; 它是和大图片里的紫色部分非常像的代码(只是多了些换行).&amp;nbsp; 现在你该清楚了为什么那个 createScene 函数是一个重要的部分.&amp;nbsp; 它是有一定可移植性的.&amp;nbsp; 你能够在 createScene 函数和你本地的场景文件之间将代码拷来拷去.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So far, you only have some grey-colored meshes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T122820Z" creationid="aceway" creationdate="20160508T122820Z">
+        <seg>到目前为止, 你只有些灰色的网格.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So let's get rolling with an omni-directional PointLight and an orbiting ArcRotateCamera.  After that, we'll start making some basic mesh elements to test our materials upon.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T122557Z" creationid="aceway" creationdate="20160508T122557Z">
+        <seg>所以让我们开始摆弄一个全方位点光光源和一个有轨弧形旋转相机.  之后, 我们将开始制作些基础网格元素以便在其上测试我们的材质.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5601,6 +5771,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Supported image formats include JPG, PNG, JPEG, BMP, GIF… (every image format supported by your browser).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T125718Z" creationid="aceway" creationdate="20160508T125718Z">
+        <seg>支持的图片格式包括 JPG, PNG, JPEG, BMP, GIF… (每种图片格式都被你的浏览器支持).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Sure you are!</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T125916Z" creationid="aceway" creationdate="20160507T125916Z">
@@ -5661,6 +5839,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T132127Z" creationid="aceway" creationdate="20160403T132119Z">
         <seg>它是个大图片,不是么? &amp;nbsp; 这是个完整的 Babylon.js 场景, 使用 '简单的 HTML 文件' 的方法.&amp;nbsp; 这不是唯一(也不是最好)的设置一个场景的方法, 但是快速而简单.&amp;nbsp; 我已经在"大图片上"的重要段上标色,而且我们现在就一段段段查看.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That is done by setting the properties on the material.  Let's see what they are:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124019Z" creationid="aceway" creationdate="20160508T124019Z">
+        <seg>这通过设置材质的属性实现, 我们看看它们么样:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5747,6 +5933,14 @@ scene.registerBeforeRender(function () {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T072014Z" creationid="aceway@qq.com" creationdate="20160427T072014Z">
         <seg>核心版本是基于"no worker" 版本，而且此处保持文件的精小 (压缩后 &lt; 150 KB ).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The diffuse is the native color of the object material once it is lit with a light.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T125230Z" creationid="aceway" creationdate="20160508T125230Z">
+        <seg>一旦对象材质被一个光源点亮, 散射光就是材质对象的天然色.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6407,6 +6601,20 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To apply a material to them, you will need to create a new material object like this:
+```javascript
+var materialSphere1 = new BABYLON.StandardMaterial("texture1", scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T122947Z" creationid="aceway" creationdate="20160508T122947Z">
+        <seg>为了给它们应用材质, 你需要像这样的创建一个新的材质对象:
+```javascript
+var materialSphere1 = new BABYLON.StandardMaterial("texture1", scene);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To be able to use this function, you need to know that :
 - Your animation will have predefined key frames (Only 2 keyframes are generated : **Start** and **End**)
 - The animation works only on **AbstractMesh** objects.</seg>
@@ -6487,6 +6695,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130534Z" creationid="aceway" creationdate="20160503T130534Z">
         <seg>我们将一步步通过[**娱乐场演示场景02**](http://babylonjs-playground.azurewebsites.net/?2)来学习.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We are so adept at making createScene functions that we can do it in our sleep, right?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T121839Z" creationid="aceway" creationdate="20160508T121839Z">
+        <seg>我们对编写createScene函数已经很娴熟了,闭着眼睛都能搞定, 对吧?</seg>
       </tuv>
     </tu>
     <tu>
@@ -6693,6 +6909,20 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can specify a solid color with the ```diffuseColor``` property:
+```javascript
+materialSphere1.diffuseColor = new BABYLON.Color3(1.0, 0.2, 0.7);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T125335Z" creationid="aceway" creationdate="20160508T125335Z">
+        <seg>你可以用```diffuseColor```属性指定一个纯色:
+```javascript
+materialSphere1.diffuseColor = new BABYLON.Color3(1.0, 0.2, 0.7);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can use an extended function to create a quick animation:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110722Z" creationid="aceway" creationdate="20160402T110702Z">
@@ -6749,6 +6979,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You have to customize it as you like.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T123648Z" creationid="aceway" creationdate="20160508T123648Z">
+        <seg>你可以根据你的喜好自定义材质.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You have to use **TypeScript** to submit a pull request.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065039Z" creationid="aceway@qq.com" creationdate="20160427T065039Z">
@@ -6769,6 +7007,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T101829Z" creationid="aceway" creationdate="20160507T101829Z">
         <seg>你可能会被我们新的[线系统](http://doc.babylonjs.com/tutorilas/Mesh_CreateXXX_Methods_With_Options_Parameter#linesystem)吸引住.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You might also want to read [the wikipedia page about it](http://en.wikipedia.org/wiki/Alpha_compositing).  You will encounter even more uses for it when you enjoy the BabylonJS particle system, and BabylonJS sprites system.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124734Z" creationid="aceway" creationdate="20160508T124734Z">
+        <seg>你也许想阅读[关于它的维基页](http://en.wikipedia.org/wiki/Alpha_compositing).  当你在享受BabylonJS的粒子系统和精灵系统时, 你会遇到更多的透明度用途.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6821,6 +7067,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You won’t change the mesh itself, but just the material.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T123725Z" creationid="aceway" creationdate="20160508T123725Z">
+        <seg>你不需要改变网格本身, 只要修改该材质.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Your paths don't need to be parallel.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T102833Z" creationid="aceway" creationdate="20160507T102833Z">
@@ -6857,6 +7111,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T125829Z" creationid="aceway" creationdate="20160503T125829Z">
         <seg>[**娱乐场演示场景2 - 七个基本形状/网格**](http://babylonjs-playground.azurewebsites.net/?2)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[**Playground Demo Scene 4 - Materials**](http://www.babylonjs.com/playground/?4)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T121438Z" creationid="aceway" creationdate="20160508T121438Z">
+        <seg>[**娱乐场演示场景4 - 材质**](http://www.babylonjs.com/playground/?4)</seg>
       </tuv>
     </tu>
     <tu>
@@ -7298,6 +7560,22 @@ animationBox.setKeys(keys);
     <tu>
       <tuv lang="EN-US">
         <seg>```javascript
+function createScene() {
+    var scene = new BABYLON.Scene(engine);
+    var light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(0, 100, 100), scene);
+    var camera = new BABYLON.ArcRotateCamera("Camera", 0, 0.8, 100, new BABYLON.Vector3.Zero(), scene);</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T122639Z" creationid="aceway" creationdate="20160508T122639Z">
+        <seg>```javascript
+function createScene() {
+    var scene = new BABYLON.Scene(engine);
+    var light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(0, 100, 100), scene);
+    var camera = new BABYLON.ArcRotateCamera("camera", 0, 0.8, 100, new BABYLON.Vector3.Zero(), scene);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
 var cylinder = BABYLON.Mesh.CreateCylinder("cylinder", 3, 3, 3, 6, 1, scene, false, BABYLON.Mesh.DEFAULTSIDE);
 ```</seg>
       </tuv>
@@ -7641,6 +7919,60 @@ optional | speedRatio | number | default : 1.</seg>
  * 变形目标
  * 精灵碰撞
  * 使用webworkers的八叉树连续更新</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> Alpha transparency, written in percent (%), can be applied to a material in this way:
+```javascript
+materialSphere1.alpha = 0.5;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124838Z" creationid="aceway" creationdate="20160508T124838Z">
+        <seg>百分比(%)形式的Alpha透明, 可以按这种方式应用到材质:
+```javascript
+materialSphere1.alpha = 0.5;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>    //Creation of spheres
+    var sphere1 = BABYLON.Mesh.CreateSphere("Sphere1", 10.0, 6.0, scene);
+    var sphere2 = BABYLON.Mesh.CreateSphere("Sphere2", 2.0, 7.0, scene);
+    var sphere3 = BABYLON.Mesh.CreateSphere("Sphere3", 10.0, 8.0, scene);
+[…]
+    //Positioning the meshes
+    sphere1.position.x = -40;
+    sphere2.position.x = -30;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T122756Z" creationid="aceway" creationdate="20160508T122730Z">
+        <seg>     //创建球体
+    var sphere1 = BABYLON.Mesh.CreateSphere("Sphere1", 10.0, 6.0, scene);
+    var sphere2 = BABYLON.Mesh.CreateSphere("Sphere2", 2.0, 7.0, scene);
+    var sphere3 = BABYLON.Mesh.CreateSphere("Sphere3", 10.0, 8.0, scene);
+[…]
+    //定位网格
+    sphere1.position.x = -40;
+    sphere2.position.x = -30;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>“I tested my scene, and …nothing changed…”</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T123440Z" creationid="aceway" creationdate="20160508T123239Z">
+        <seg>“我测试下我的场景, 然后 …没有变化…”</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>“So how can I adjust my material to give the perfect look to my object?”</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T123918Z" creationid="aceway" creationdate="20160508T123918Z">
+        <seg>“所以,我该如何改变我的材质已使我的对象外观漂亮完美?”</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
