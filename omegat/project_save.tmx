@@ -3936,6 +3936,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All of these texture settings apply to the other StandardMaterial properties as well.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T134028Z" creationid="aceway" creationdate="20160508T134028Z">
+        <seg>All of these texture settings apply to the other StandardMaterial 属性 as well.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All the Javascript inserting is done.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065545Z" creationid="aceway@qq.com" creationdate="20160429T065545Z">
@@ -4034,6 +4042,20 @@ sphere1.material = new BABYLON.StandardMaterial("texture1", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121011Z" creationid="aceway" creationdate="20160507T121011Z">
         <seg>而且如果你提供了材质, 光也会在两边都反射.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And if your texture has some alpha, you will need to specify it:
+```javascript
+materialSphere1.diffuseTexture.hasAlpha = true;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T132850Z" creationid="aceway" creationdate="20160508T132822Z">
+        <seg>而且如果你的材质有alpha特性, 你需要指明它:
+```javascript
+materialSphere1.diffuseTexture.hasAlpha = true;
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -4208,6 +4230,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101827Z" creationid="aceway@qq.com" creationdate="20160427T101827Z">
         <seg>构建解决方案, 所有的 .ts 文件将被编译成 .js 文件，伴随生成 .js.map 文件 (调试需要).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But you may want to use it for alpha blending.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T133941Z" creationid="aceway" creationdate="20160508T133941Z">
+        <seg>但是你也许想把它用在alpha混合上.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4942,6 +4972,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T031724Z" creationid="aceway" creationdate="20160423T031724Z">
         <seg>场景顶部的黄颜色文本, 你将看到一行Bayblon.js代码设置mybox.position的方式 (使用我们的助手... 那个Vector3值对象).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case, alpha is used for alpha testing.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T132912Z" creationid="aceway" creationdate="20160508T132912Z">
+        <seg>这种情况下, alpha被用作alpha测试.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6631,6 +6669,14 @@ var materialSphere1 = new BABYLON.StandardMaterial("texture1", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T145335Z" creationid="aceway" creationdate="20160410T142433Z">
         <seg>老实说, 光源不是绝对必需的.&amp;nbsp; 如果场景里的网格对象都设置了material.emissiveColor(材质的颜色)或material.emissiveTexture(材质的纹理)属性, 那么它们自己会产生各自的光.&amp;nbsp; 它们将是 '自发光的'.&amp;nbsp; 注意, 如果一个场景里没有光是很容易迷失的.&amp;nbsp; 好的建议是总是创建一个光源(半球体光源(HemisphericLight)是个非常方便的灯光工具 - 应用到天空体上).&amp;nbsp; 你可以通过调整它的 .intensity 值来设置光的亮度.&amp;nbsp;在操练系列教程里我们有一个例子, 专门谈论各种光源.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To do so, just set ```materialSphere1.useAlphaFromDiffuseTexture```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T133959Z" creationid="aceway" creationdate="20160508T133959Z">
+        <seg>要做到这点, 只需设置 ```materialSphere1.useAlphaFromDiffuseTexture```</seg>
       </tuv>
     </tu>
     <tu>
