@@ -2494,6 +2494,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(.emissiveTexture, .ambientTexture, .specularTexture)  I will remind you.  Now let's continue talking about the other StandardMaterial properties.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T145324Z" creationid="aceway" creationdate="20160521T145220Z">
+        <seg>(.emissiveTexture, .ambientTexture, .specularTexture)  我将会提醒你的.  现在让我们继续谈论关于其它的标准材质属性.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Again, be sure to bookmark this URL so you can easily return to it later)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T031423Z" creationid="aceway@qq.com" creationdate="20160427T031423Z">
@@ -2578,6 +2586,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T110441Z" creationid="aceway" creationdate="20160507T110441Z">
         <seg>* ** 创业一个管子**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Ambient**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150756Z" creationid="aceway" creationdate="20160521T150053Z">
+        <seg>* **环境光**</seg>
       </tuv>
     </tu>
     <tu>
@@ -2698,6 +2714,22 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124847Z" creationid="aceway" creationdate="20160508T124847Z">
         <seg>* **散射**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Emissive**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150826Z" creationid="aceway" creationdate="20160521T145336Z">
+        <seg>* **放射光**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Specular**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150747Z" creationid="aceway" creationdate="20160521T150747Z">
+        <seg>* **镜面光**</seg>
       </tuv>
     </tu>
     <tu>
@@ -3938,8 +3970,8 @@ scene.beginAnimation(torus, 0, 120, true);
       <tuv lang="EN-US">
         <seg>All of these texture settings apply to the other StandardMaterial properties as well.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T134028Z" creationid="aceway" creationdate="20160508T134028Z">
-        <seg>All of these texture settings apply to the other StandardMaterial 属性 as well.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T145229Z" creationid="aceway" creationdate="20160508T134028Z">
+        <seg>所有这些纹理设定对其它的标准材质属性也可同样使用.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5501,6 +5533,22 @@ materialSphere1.diffuseTexture = new BABYLON.Texture("grass.png", scene);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Or, you can use a texture:
+```javascript
+materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
+```
+See the **More About Textures** section above.  Change occurrences of 'diffuse' to 'emissive', of course.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150045Z" creationid="aceway" creationdate="20160521T145649Z">
+        <seg>或者, 你可以使用一个纹理:
+```javascript
+materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
+```
+参见上面的 **更多关于纹理** 一节.  当然, 要修改修改那个 'diffuse' 为 'emissive'.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Our [**Playground Demo Scene 01**](http://www.babylonjs-playground.com/?1) uses a CreateGround constructor... so you can see one in action by using the above link.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T122233Z" creationid="aceway" creationdate="20160507T122233Z">
@@ -5931,6 +5979,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The ambient can be seen as a second level of diffuse.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150848Z" creationid="aceway" creationdate="20160521T150135Z">
+        <seg>环境光可以被看作漫反射的第二层.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The animation is based on objects called Animation (!!).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053948Z" creationid="aceway@qq.com" creationdate="20160330T094901Z">
@@ -5979,6 +6035,14 @@ scene.registerBeforeRender(function () {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T125230Z" creationid="aceway" creationdate="20160508T125230Z">
         <seg>一旦对象材质被一个光源点亮, 散射光就是材质对象的天然色.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The emissive is the color produced by the object itself.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150829Z" creationid="aceway" creationdate="20160521T145416Z">
+        <seg>放射光决定了对象自身的颜色.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6231,6 +6295,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The produced color is multiplied to the diffuse color.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150857Z" creationid="aceway" creationdate="20160521T150315Z">
+        <seg>环境光产生的颜色对漫反色的作用是乘法效应.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The quickest way is to edit the Visual Studio project file.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100925Z" creationid="aceway@qq.com" creationdate="20160427T100925Z">
@@ -6275,6 +6347,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T114829Z" creationid="aceway" creationdate="20160507T114447Z">
         <seg>该朝向被用来提供可见性而且/或则光反射性.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The specular is the color produced by a light reflecting from a surface.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T151122Z" creationid="aceway" creationdate="20160521T150912Z">
+        <seg>镜面光体现了一个光滑平面对光源的反射色.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6515,6 +6595,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T100906Z">
         <seg>这就是所谓的白板.&amp;nbsp; 它使得其他人能很容易的在你创建的场景上工作, 并帮你指出错误之处.&amp;nbsp; 清楚了创建场景函数是如何'可移植'了么?&amp;nbsp; 从家里获得, 扔到娱乐场, 然后在上面折腾一阵.&amp;nbsp; 如果有必要, 你可以点击娱乐场上的 **保持** 按钮, 产生一个网址.&amp;nbsp; &amp;nbsp;最后到论坛上讲网址告诉其他人, 向他们求助.&amp;nbsp; 很方便吧, 哼??&amp;nbsp; 我们认为是这样的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is especially useful if you want to use light maps baked into textures.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150542Z" creationid="aceway" creationdate="20160521T150324Z">
+        <seg>这特别有用, 如果你想使用光照贴图烘焙到纹理.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6905,6 +6993,14 @@ var materialSphere1 = new BABYLON.StandardMaterial("texture1", scene);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can also control how specular behaves with alpha.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T151746Z" creationid="aceway" creationdate="20160521T151746Z">
+        <seg>你可也可以使用alpha值来控制镜面的行为表现.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can also get access to current running ```BABYLON.Animatable``` objects by using ```scene.getAnimatableByTarget()``` providing the target object.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105257Z" creationid="aceway" creationdate="20160402T105257Z">
@@ -6955,6 +7051,30 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can specify a solid color with the ```ambientColor``` property:
+```javascript
+materialSphere1.ambientColor = new BABYLON.Color3(1, 0.2, 0.7);
+```
+Or, you can use a texture:
+```javascript
+materialSphere1.ambientTexture = new BABYLON.Texture("grass.png", scene);
+```
+See the **More About Textures** section above.  Change occurrences of 'diffuse' to 'ambient', of course.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150731Z" creationid="aceway" creationdate="20160521T150731Z">
+        <seg>你可以使用 ```ambientColor``` 属性指定一个固体的颜色:
+```javascript
+materialSphere1.ambientColor = new BABYLON.Color3(1, 0.2, 0.7);
+```
+或者, 你能够使用一个纹理:
+```javascript
+materialSphere1.ambientTexture = new BABYLON.Texture("grass.png", scene);
+```
+参加上面的 **更多关于纹理** 一节.  当然, 修改 'diffuse' 为 'ambient'.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can specify a solid color with the ```diffuseColor``` property:
 ```javascript
 materialSphere1.diffuseColor = new BABYLON.Color3(1.0, 0.2, 0.7);
@@ -6965,6 +7085,44 @@ materialSphere1.diffuseColor = new BABYLON.Color3(1.0, 0.2, 0.7);
 ```javascript
 materialSphere1.diffuseColor = new BABYLON.Color3(1.0, 0.2, 0.7);
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can specify a solid color with the ```emissiveColor``` property:
+```javascript
+materialSphere1.emissiveColor = new BABYLON.Color3(1, .2, .7);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T145615Z" creationid="aceway" creationdate="20160521T145615Z">
+        <seg>你可以用```emissiveColor```属性指定一个固体的色:
+```javascript
+materialSphere1.emissiveColor = new BABYLON.Color3(1, .2, .7);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can specify a solid color with the ```specularColor``` property:
+```javascript
+materialSphere1.specularColor = new BABYLON.Color3(1.0, 0.2, 0.7);
+```
+Or, you can use a texture:
+```javascript
+materialSphere1.specularTexture = new BABYLON.Texture("grass.png", scene);
+```
+When using a texture you can set ```materialSphere1.useGlossinessFromSpecularMapAlpha``` to true to use specular map alpha as glossiness level.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T151700Z" creationid="aceway" creationdate="20160521T151632Z">
+        <seg>你可以通过 ```specularColor``` 属性指定一个固体的颜色:
+```javascript
+materialSphere1.specularColor = new BABYLON.Color3(1.0, 0.2, 0.7);
+```
+或者, 你能过使用一个纹理:
+```javascript
+materialSphere1.specularTexture = new BABYLON.Texture("grass.png", scene);
+```
+当使用纹理时能够设置 ```materialSphere1.useGlossinessFromSpecularMapAlpha``` 为真, 从而使用镜面映射alpha的光泽度.</seg>
       </tuv>
     </tu>
     <tu>
