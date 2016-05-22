@@ -52,6 +52,22 @@ A Saved 'Custom' Playground Scene: http://babylonjs-playground.azurewebsites.net
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![tof](http://www.babylonjs.com/tutorials/04%20-%20Materials/04-2.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T135403Z" creationid="aceway" creationdate="20160522T135403Z">
+        <seg>![tof](http://www.babylonjs.com/教程/04%20-%20Materials/04-2.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>![tof](http://www.babylonjs.com/tutorials/04%20-%20Materials/04-3.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T135505Z" creationid="aceway" creationdate="20160522T135505Z">
+        <seg>![tof](http://www.babylonjs.com/教程/04%20-%20Materials/04-3.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>"animations": array of Animations (see below, can be omitted),</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T073524Z" creationid="aceway@qq.com" creationdate="20160427T073524Z">
@@ -2432,6 +2448,18 @@ In this 教程, we will learn how to use the classical _CreateXXX()_ 方法 with
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>##Next step##
+----
+Great, your scene is looking better than ever with those materials!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T140258Z" creationid="aceway" creationdate="20160522T140258Z">
+        <seg>##下一步##
+----
+非常棒, 你的场景具有这些材质后看起来比之前好多了!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Interesting Playgrounds</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T035629Z" creationid="aceway@qq.com" creationdate="20160427T035629Z">
@@ -2598,6 +2626,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **Back-Face Culling**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T134309Z" creationid="aceway" creationdate="20160522T134309Z">
+        <seg>* **背面剔除**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Create of a Tiled Ground**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T123008Z" creationid="aceway" creationdate="20160507T123008Z">
@@ -2746,6 +2782,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T072337Z" creationid="aceway@qq.com" creationdate="20160427T072337Z">
         <seg>* **Vector3**: 一个含有3个浮点数([x, y, z])的数组.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **WireFrame**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T135420Z" creationid="aceway" creationdate="20160522T135420Z">
+        <seg>* **线框**</seg>
       </tuv>
     </tu>
     <tu>
@@ -3027,6 +3071,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121340Z" creationid="aceway" creationdate="20160507T121340Z">
         <seg>*(你不能用 _BABYLON.Mesh.DOUBLESIDE_ 值来禁用 _backFaceCulling_)*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*** Section on OpacityTexture needed here, coming soon.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T134052Z" creationid="aceway" creationdate="20160522T134052Z">
+        <seg>*** 此处需要一节讲述 OpacityTexture , 很快就会有的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3960,10 +4012,26 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Again, see the **More About Textures** section far above.  Change occurrences of 'diffuse' to 'specular', of course.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T133814Z" creationid="aceway" creationdate="20160522T133814Z">
+        <seg>再次一的, 参见上面 **更多关于纹理** 一节.  当然, 修改出现的 'diffuse' 为 'specular'.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Again, take some time to watch the scene.&amp;nbsp; And once more, the yellow text shows the one-line Vector3 way of setting a mesh's .scaling, or you can use one or more of the discrete ways of setting scaling... shown in the green text.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T075443Z" creationid="aceway" creationdate="20160423T075443Z">
         <seg>再次的,请花些时间观察下该场景.&amp;nbsp; 而且又一次的, 黄颜色的文本显示了通过一行代码里用Vector3量设置网格的缩放(.scaling)属性的方式, 或者你也可以使用一种或多种方式零散设置缩放... 绿色文本显示了那些方法.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Again, you can see things from this tutorial... come to life... by browsing to [the Babylon.js Playground scene 4](http://www.babylonjs.com/playground/?4).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T135844Z" creationid="aceway" creationdate="20160522T135844Z">
+        <seg>再次的, 在本教材里, 通过浏览[Babylon.js娱乐场场景 4](http://www.babylonjs.com/playground/?4), 你能越来越清晰生动地看事物了.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4266,6 +4334,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But for now, we have to learn [**how to use cameras**](http://doc.babylonjs.com/tutorials/Cameras).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T140430Z" creationid="aceway" creationdate="20160522T140430Z">
+        <seg>但是现在, 我们必须学习 [**怎么使用相机**](http://doc.babylonjs.com/tutorials/Cameras).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But you may want to use it for alpha blending.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T133941Z" creationid="aceway" creationdate="20160508T133941Z">
@@ -4286,6 +4362,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110523Z" creationid="aceway" creationdate="20160402T110523Z">
         <seg>默认情况下,这个函数如下:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By default, specular does not interact with alpha, but you can set ```materialSphere1.useSpecularOverAlpha``` to true to have alpha inversely proportional to specular value.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T133721Z" creationid="aceway" creationdate="20160522T133721Z">
+        <seg>默认情况下, 镜面光和alpha不相干, 但是你可以设置```materialSphere1.useSpecularOverAlpha``` 为真, 从而使alpha和镜面光成反比.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4826,6 +4910,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If set to TRUE or boolean 1, the  Babylon engine won’t render hidden face(s) of the meshes that use this material.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T134856Z" creationid="aceway" creationdate="20160522T134856Z">
+        <seg>如果它设置为TRUE或布尔1, 则Babylon引擎不会渲染使用了该材质的网格对象的隐藏面.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If true, the mesh data may be recomputed and passed to the GPU at each frame refresh.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T114443Z" creationid="aceway" creationdate="20160507T114443Z">
@@ -5024,6 +5116,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this example, the texture has some alpha, and back-face culling is set to false for the front sphere... in order to see its black inside face:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T135350Z" creationid="aceway" creationdate="20160522T135350Z">
+        <seg>在这个例子了, 纹理具有alpha, 而且前面那个球体的背面剔除被设置为false, 以便能够看到它的内面:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In this file, you can discover interesting playground done by the community.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T035729Z" creationid="aceway@qq.com" creationdate="20160427T035729Z">
@@ -5089,6 +5189,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070947Z" creationid="aceway@qq.com" creationdate="20160427T070806Z">
         <seg>它没有被压小因此你可以很容易的用它来调试
 .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is set TRUE by default, but can be changed to false as wanted.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T134946Z" creationid="aceway" creationdate="20160522T134946Z">
+        <seg>默认是设置为TRUE, 但是如果需要的话可以改为false.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5167,6 +5275,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Later we will see how to use advanced techniques with materials.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T140351Z" creationid="aceway" creationdate="20160522T140351Z">
+        <seg>稍后, 我们将看看如何使用高级材质技术.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Let's pretend that you have been working on a scene file at home, and after many tries, you just cannot get it to work properly.&amp;nbsp; You could copy your home createScene function, then visit the playground, press its **CLEAR** button to empty its editor window, and then paste YOUR createScene function into the editor.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T073957Z">
@@ -5237,6 +5353,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     "properties": array of properties, (见下面)
     "children": array of Actions,
     "combine": array of Actions (用于组合动画.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More information about materials can be found by reading [**Unleash the StandardMaterial**](http://blogs.msdn.com/b/eternalcoding/archive/2013/07/01/babylon-js-unleash-the-standardmaterial-for-your-babylon-js-game.aspx) and also [**Advanced Texturing**](http://doc.babylonjs.com/tutorials/Advanced_Texturing).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T140148Z" creationid="aceway" creationdate="20160522T140148Z">
+        <seg>关于材质的更多信息, 可以通过阅读[**释放标准材质**](http://blogs.msdn.com/b/eternalcoding/archive/2013/07/01/babylon-js-unleash-the-standardmaterial-for-your-babylon-js-game.aspx) 和 [**高级纹理**](http://doc.babylonjs.com/tutorials/Advanced_Texturing)找到.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5745,6 +5869,14 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T034539Z" creationid="aceway" creationdate="20160404T034539Z">
         <seg>看到左边代码窗口里的 'createScene' 函数里么?&amp;nbsp; 看起来熟悉吧?&amp;nbsp; 它是和大图片里的紫色部分非常像的代码(只是多了些换行).&amp;nbsp; 现在你该清楚了为什么那个 createScene 函数是一个重要的部分.&amp;nbsp; 它是有一定可移植性的.&amp;nbsp; 你能够在 createScene 函数和你本地的场景文件之间将代码拷来拷去.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Simply put, “back-face culling” determines whether or not a StandardMaterial is visible from its back side (from behind).  TRUE = NOT visible.  More precisely, this rendering-speed-optimization technique determines if a polygon of a graphical object is visible or not.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T134744Z" creationid="aceway" creationdate="20160522T134744Z">
+        <seg>简单的说, “背面剔除”决定了一个标准材质从背面看时是否可见.  设置TRUE = NOT 可见.  更确切的说, 这个渲染速度优化的技术决定了一个图形对象上的多边形是否可见.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6359,6 +6491,20 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The specular property has one more setting.  The size/intensity of the specular reflection can be set using the ```specularPower``` property:
+```javascript
+materialSphere1.specularPower = 32;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T133954Z" creationid="aceway" creationdate="20160522T133954Z">
+        <seg>镜面光有另外一个属性.  镜面反射光的大小/强度可以通过```specularPower```属性来设定:
+```javascript
+materialSphere1.specularPower = 32;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The speed ratio of this animation
 optional | onAnimationEnd | () =&gt; void | The function triggered on the end of the animation (also dependent upon ANIMATIONLOOPMODE)
 optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable) | An optional specific animation
@@ -6459,6 +6605,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T103910Z">
         <seg>Babylon.js 娱乐场有个教程.&amp;nbsp; 就在 [**点击这儿**](http://doc.babylonjs.com/page.php?p=22631).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There, we have visited the primary color and texture properties of StandardMaterial.  But we are not done yet.  Here are a few more handy properties.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T134247Z" creationid="aceway" creationdate="20160522T134247Z">
+        <seg>在那里, 我们访问了标准材质的主要颜色和纹理属性.  但是我们还没讲完.  这儿还有些方便使用的属性.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7051,6 +7205,20 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can see your object in wireframe mode... by using:
+```javascript
+materialSphere1.wireframe = true;
+ ```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T135503Z" creationid="aceway" creationdate="20160522T135503Z">
+        <seg>你可以在线框模式下查看你的对象... 通过使用:
+```javascript
+materialSphere1.wireframe = true;
+ ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can specify a solid color with the ```ambientColor``` property:
 ```javascript
 materialSphere1.ambientColor = new BABYLON.Color3(1, 0.2, 0.7);
@@ -7203,6 +7371,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T075646Z" creationid="aceway" creationdate="20160423T075646Z">
         <seg>你也许注意到了缩放值没有出现过负数.&amp;nbsp; 使用负数值来缩放是非法的, 而且如果你决定使用负数值, 可能会出现未知异常.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may want to read more about back-face culling at [the wikipedia page about it](http://en.wikipedia.org/wiki/Back_face_culling). </seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T135142Z" creationid="aceway" creationdate="20160522T135142Z">
+        <seg>你也许想在[维基页](http://en.wikipedia.org/wiki/Back_face_culling)上阅读更多的背面剔除信息. </seg>
       </tuv>
     </tu>
     <tu>
