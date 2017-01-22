@@ -5559,6 +5559,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Nowadays, sprites are often used to display animated characters, and for particles, and to simulate 3D complex objects like trees.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T105513Z" creationid="aceway" creationdate="20170122T105513Z">
+        <seg>如今，精灵往往用于显示动画角色，粒子效果，以及模拟复杂的三维对象，比如树木。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Objects are everywhere, but they are good friends that help us stay organized.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T103458Z" creationid="aceway@qq.com" creationdate="20160421T103458Z">
