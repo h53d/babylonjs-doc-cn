@@ -6837,6 +6837,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This manager is mandatory, even if you want to create one sprite.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T111523Z" creationid="aceway" creationdate="20170122T111523Z">
+        <seg>这个管理器是强制的，即使你至想创建一个精灵。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This means that each side only has a front view.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T115608Z" creationid="aceway" creationdate="20160507T115608Z">
@@ -7099,6 +7107,16 @@ var materialSphere1 = new BABYLON.StandardMaterial("texture1", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103031Z" creationid="aceway" creationdate="20160507T102137Z">
         <seg>什么是板带 ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When creating a sprite manager, you have to decide a few parameters:
+* Name: a name for this manager.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T111703Z" creationid="aceway" creationdate="20170122T111703Z">
+        <seg>当创建一个精灵管理器时，你需要确定一些参数:
+* Name: 该管理器的名字.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7415,6 +7433,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065039Z" creationid="aceway@qq.com" creationdate="20160427T065039Z">
         <seg>你必须使用 **TypeScript** 提交拉取请求.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You just have to write:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T111540Z" creationid="aceway" creationdate="20170122T111540Z">
+        <seg>你只需像这样写代码:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7973,6 +7999,20 @@ var keys = [];</seg>
         <seg>```javascript
 // 存储所有动画键值的数组
 var keys = [];</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+// Create a sprite manager
+var spriteManagerTrees = new BABYLON.SpriteManager("treesManagr", "Assets/Palm-arecaceae.png", 2000, 800, scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T111614Z" creationid="aceway" creationdate="20170122T111614Z">
+        <seg>```javascript
+// 创建一个精灵管理器
+var spriteManagerTrees = new BABYLON.SpriteManager("treesManagr", "Assets/Palm-arecaceae.png", 2000, 800, scene);
+```</seg>
       </tuv>
     </tu>
     <tu>
