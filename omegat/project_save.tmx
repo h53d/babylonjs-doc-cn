@@ -3872,6 +3872,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>1- **Sprite manager**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T110934Z" creationid="aceway" creationdate="20170122T110934Z">
+        <seg>1- **精灵管理器**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;/html&gt;
 ```
 ### The CSS Style Part</seg>
