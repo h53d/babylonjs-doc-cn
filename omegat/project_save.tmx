@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.5.4" segtype="sentence" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.6.0" segtype="sentence" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -5957,6 +5957,26 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T101614Z" creationid="aceway@qq.com" creationdate="20160421T101614Z">
         <seg>有时候, 方法被用来设置属性值， 有时后别用来获取属性值.&amp;nbsp; 这些方法/函数通常被称为 GETTERS 和 SETTERS.&amp;nbsp; 注意到上面getMeshByName方法里的用词 'get' 没?&amp;nbsp; 它就是个 GETTER 方法.&amp;nbsp; 这儿又是一个该方法调用':</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sprites
+---
+In this tutorial, we are going to learn how to manipulate Sprites.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T094019Z" creationid="aceway" creationdate="20170122T094019Z">
+        <seg>精灵
+---
+在本教程里，我们将学习如何操作精灵.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sprites are 2D image/animation, and we will use them to display an image with alpha channel.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T094151Z" creationid="aceway" creationdate="20170122T094151Z">
+        <seg>精灵是二维的图片或动画，我们将使用精灵来显示具有透明通道的图片。</seg>
       </tuv>
     </tu>
     <tu>
