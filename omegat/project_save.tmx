@@ -2879,6 +2879,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* The capacity of this manager : the maximum number of instances in this manager (in our example, we could create 2000 instances of trees).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T112629Z" creationid="aceway" creationdate="20170122T112629Z">
+        <seg>* 管理器的容量: 这个管理器里可以管理的最大实例数(在我们的例子里, 我们可以创建树的两千个实例)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* The compilation is fast (it only compiles the .ts files to .js, there's no merging/minification)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093400Z" creationid="aceway@qq.com" creationdate="20160427T093400Z">
