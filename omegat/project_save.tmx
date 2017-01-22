@@ -5973,6 +5973,14 @@ In this tutorial, we are going to learn how to manipulate Sprites.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Sprites always face the camera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T104652Z" creationid="aceway" creationdate="20170122T104652Z">
+        <seg>精灵总是朝向摄像机的。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Sprites are 2D image/animation, and we will use them to display an image with alpha channel.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T094151Z" creationid="aceway" creationdate="20170122T094151Z">
