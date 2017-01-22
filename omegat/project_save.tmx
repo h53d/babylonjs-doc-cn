@@ -2871,6 +2871,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* The 2D image URL (most of the time, you will want use an image format which contain alpha channel, like .PNG).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T112444Z" creationid="aceway" creationdate="20170122T112444Z">
+        <seg>* 二维图片的地址 (大多数时候，你会使用带透明通道的图片，比如.PNG格式的).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* The compilation is fast (it only compiles the .ts files to .js, there's no merging/minification)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093400Z" creationid="aceway@qq.com" creationdate="20160427T093400Z">
