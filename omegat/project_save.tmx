@@ -5052,6 +5052,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you want to use sprites, you need to create a “sprite manager” to optimize GPU resources by grouping in one place multiple instances of a sprite.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T111405Z" creationid="aceway" creationdate="20170122T111405Z">
+        <seg> 如果你想使用精灵，你需要创建一个"精灵管理"(在一处分组管理精灵的多个实例)来优化GPU资源。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you want to use your own shaders in this case, you just have to reference them with a "./" at beginning):</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065941Z" creationid="aceway@qq.com" creationdate="20160427T065941Z">
