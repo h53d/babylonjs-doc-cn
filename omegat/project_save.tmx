@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.6.0" segtype="sentence" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.5.4" segtype="sentence" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -2879,10 +2879,26 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* The actual scene, to which we will add this manager.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011304Z" creationid="aceway@qq.com" creationdate="20170123T011304Z">
+        <seg>* 实际的场景，我们往其中添加本管理器.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* The capacity of this manager : the maximum number of instances in this manager (in our example, we could create 2000 instances of trees).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T112629Z" creationid="aceway" creationdate="20170122T112629Z">
         <seg>* 管理器的容量: 这个管理器里可以管理的最大实例数(在我们的例子里, 我们可以创建树的两千个实例)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* The cell size, corresponding to the size of your image, like we’ll see below.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011220Z" creationid="aceway@qq.com" creationdate="20170123T011220Z">
+        <seg>* 单元尺寸，取决于你的图片尺寸，就像我们将在下面看到.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3896,6 +3912,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>2- **Create an instance**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011704Z" creationid="aceway@qq.com" creationdate="20170123T011704Z">
+        <seg>2- **创建一个实例**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;/html&gt;
 ```
 ### The CSS Style Part</seg>
@@ -4454,6 +4478,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Creating an instance is as simple as:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011824Z" creationid="aceway@qq.com" creationdate="20170123T011824Z">
+        <seg>创建实例就是如此简单:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Discover Basic Elements
 ---
 ## Introduction</seg>
@@ -4502,6 +4534,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110235Z" creationid="aceway" creationdate="20160402T110235Z">
         <seg>每个动画片段都有一个属性: ```currentFrame``` , 其指明当前动画的键.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each image of a sprite must be contained in a 64 pixel square, no more no less.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011654Z" creationid="aceway@qq.com" creationdate="20170123T011654Z">
+        <seg>没给精灵的图片必须存储在64像素的方块中，不多也不少.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4842,6 +4882,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030127Z" creationid="aceway" creationdate="20160404T002750Z">
         <seg>这是大图片场景文件里的第五个 HTML SCRIPT 元素/标签 .&amp;nbsp; 我们用了4个 SCRIPT 元素/标签 实现外部包含.&amp;nbsp; 这个是内部包含.&amp;nbsp; 注意没有 'src' 地址.&amp;nbsp; 那是因为它是你直接写入这个文档的 Javascript代码部分.&amp;nbsp; 是的, 你写的.&amp;nbsp; 现在你是名 Javascript 程序员!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is what our image looks like:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011515Z" creationid="aceway@qq.com" creationdate="20170123T011515Z">
+        <seg>这个是我们的图片看起来的样子:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5515,6 +5563,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083112Z" creationid="aceway@qq.com" creationdate="20160331T083112Z">
         <seg>现在我们已经有动画对象了，可以谈论如何修改那些值了。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now that we have our manager, we can create instances of our sprite linked to this manager.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011805Z" creationid="aceway@qq.com" creationdate="20170123T011805Z">
+        <seg>现在我们已经有了管理器，我们可以创建精灵并将其关联到该管理器上。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6901,6 +6957,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This time, we only want 2 instances, and we said that our sprite’s size is 64.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011446Z" creationid="aceway@qq.com" creationdate="20170123T011446Z">
+        <seg>这次，我们仅要2个实例，而且我们精灵的尺寸是64像素的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This version is aimed for production.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071124Z" creationid="aceway@qq.com" creationdate="20160427T071124Z">
@@ -6999,6 +7063,20 @@ var materialSphere1 = new BABYLON.StandardMaterial("texture1", scene);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To give another example, look at this snippet:
+```javascript
+var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Player.png", 2, 64, scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011337Z" creationid="aceway@qq.com" creationdate="20170123T011337Z">
+        <seg>在举一个例子，看看这个代码片段:
+```javascript
+var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Player.png", 2, 64, scene);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To keep your code compatible with the Babylon.js Playground, we recommend that you insert a 'createScene' function at this point.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034728Z" creationid="aceway@qq.com" creationdate="20160429T034728Z">
@@ -7043,6 +7121,14 @@ var materialSphere1 = new BABYLON.StandardMaterial("texture1", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T103316Z" creationid="aceway@qq.com" creationdate="20160421T103316Z">
         <seg>值... 通常是存储在对象的属性(存储空间)里的内容, 而且可以通过调用 GETTER 方法获取到.&amp;nbsp; 也许听起来这很疯狂：所有值都是Javascript对象.&amp;nbsp; 还记得前面看到的那个0.5浮点数吗?&amp;nbsp; 那是个数值对象.&amp;nbsp; 上面那个 'box_I_made' 变量... 它是个网格对象.&amp;nbsp; 网格，像机和灯光的名称 是字符串对象.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Voilà, you have got your sprite displayed!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011928Z" creationid="aceway@qq.com" creationdate="20170123T011928Z">
+        <seg>瞧， 你已经显示出你的精灵了!</seg>
       </tuv>
     </tu>
     <tu>
