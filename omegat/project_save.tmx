@@ -7683,6 +7683,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You only have to load one large image file which will contain all animation images, one next to another.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T121834Z" creationid="aceway" creationdate="20170129T121834Z">
+        <seg>你仅需加载一个大的包含所有动画图像的图片文件.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You will also have to add a line below the TypeScriptSourceMap element to enable TypeScriptExperimentalDecorators.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101631Z" creationid="aceway@qq.com" creationdate="20160427T101631Z">
