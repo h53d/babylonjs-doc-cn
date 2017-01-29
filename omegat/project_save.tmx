@@ -5342,6 +5342,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this tutorial, we are going to simulate the same camera movements: the camera is on the floor, in collision with the ground, and potentially in collision with any objects in the scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T130524Z" creationid="aceway" creationdate="20170129T130524Z">
+        <seg>在本教程里, 我们将模拟同样的(FPS)相机运动: 相机对着地板，可视区域与地面碰撞，并有可能与场景中的任何物体发生碰撞。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Inside the ```&lt;head&gt;``` part, please add this CSS to view the canvas in maximum size:
 ```css
 &lt;style&gt;</seg>
