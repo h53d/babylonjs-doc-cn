@@ -4334,6 +4334,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Babylon's engine is automatically reading sprites on more than one line, so the engine does the work for you :)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T122713Z" creationid="aceway" creationdate="20170129T122713Z">
+        <seg>Babylon的引擎会自动读取精灵数据，这些都是引擎帮你做的 :)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Babylon.js files can be found on our CDN:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070518Z" creationid="aceway@qq.com" creationdate="20160427T070518Z">
@@ -4428,6 +4436,14 @@ player.invertU = -1;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065552Z" creationid="aceway@qq.com" creationdate="20160427T065505Z">
         <seg>但是你也许希望使用所有的基本(一个个独立的)文件来工作.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By calling « playAnimation » with those parameters, our player will be animated from frame 0 to frame 43.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T122938Z" creationid="aceway" creationdate="20170129T122938Z">
+        <seg>通过使用这些参数来调用 « playAnimation » , 我们的角色会播放从0帧到43帧的动画.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5125,6 +5141,20 @@ player.position.y = -0.3;
         <seg>如果你希望给这个实例添加参数，你可以像操作其它网格对象一样:
 ```javascript
 player.position.y = -0.3;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to begin the animation, simply call this function:
+```javascript
+player.playAnimation(0, 43, true, 100);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T122751Z" creationid="aceway" creationdate="20170129T122751Z">
+        <seg>如果你想开始播放动画，可以简单的调用这个函数:
+```javascript
+player.playAnimation(0, 43, true, 100);
 ```</seg>
       </tuv>
     </tu>
