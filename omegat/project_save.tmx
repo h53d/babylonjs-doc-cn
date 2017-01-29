@@ -7279,6 +7279,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To replicate this movement, we have to do 3 simple steps:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T130653Z" creationid="aceway" creationdate="20170129T130653Z">
+        <seg>要复现这个运动, 我们需要做简单的3步:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Try to memorize this web page layout, and see how the createScene function is at the heart of it.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T130143Z" creationid="aceway" creationdate="20160429T130143Z">
