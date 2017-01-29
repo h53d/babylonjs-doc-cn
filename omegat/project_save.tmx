@@ -5278,6 +5278,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In a classic world such as Earth, the direction of the force of gravity is down (negative) along the Y axis, but feel free to change it!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131518Z" creationid="aceway" creationdate="20170129T131518Z">
+        <seg>在一个经典的世界里，比如地球上，重力加速度的方向是沿着Y轴向下的(负方向) , 但是你可以自由的改变它!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In other terms, your mesh will be twice heavier.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121305Z" creationid="aceway" creationdate="20160507T121305Z">
@@ -6493,6 +6501,14 @@ scene.registerBeforeRender(function () {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T154251Z" creationid="aceway" creationdate="20160330T033530Z">
         <seg>第一种方式是定义一系列的键值集合，并且定义好每个键值对应的对象物状态。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first thing to do is to define our gravity vector, defining the G-force.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131242Z" creationid="aceway" creationdate="20170129T131242Z">
+        <seg>第一件要做的时定义我们的重力向量，定义重力加速度G.</seg>
       </tuv>
     </tu>
     <tu>
