@@ -1628,6 +1628,16 @@ A multiMaterial is defined by the following JSON:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Next step
+Don’t hesitate to use sprites in your scene: they are not resource intensive, and they really can help keep high frame rates in your application.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T124947Z" creationid="aceway" creationdate="20170129T124947Z">
+        <seg>## 下一步
+在你的场景中使用精灵吧，不要犹豫: 它们不是资源密集性的，而且它们真的有助于保持应用程序的高帧频.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Next step ##
 ----</seg>
       </tuv>
@@ -5719,6 +5729,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T124249Z" creationid="aceway" creationdate="20160507T124249Z">
         <seg>现在你已经看了我们所有的基础元素, 同时看了它们的一些使用方法.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now you know how to create a complete simple dynamic scene and it is going to be important to talk about [collisions](http://doc.babylonjs.com/tutorials/Intersect_Collisions_-_mesh).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T125207Z" creationid="aceway" creationdate="20170129T125207Z">
+        <seg>现在你知道如何创建一个完整简约的动态场景，而且它对于即将讨论[碰撞](http://doc.babylonjs.com/tutorials/Intersect_Collisions_-_mesh)非常重要.</seg>
       </tuv>
     </tu>
     <tu>
