@@ -3920,6 +3920,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>3- **Sprite animation**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T121549Z" creationid="aceway" creationdate="20170129T121549Z">
+        <seg>3- **精灵动画**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;/html&gt;
 ```
 ### The CSS Style Part</seg>
@@ -4378,6 +4386,24 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101827Z" creationid="aceway@qq.com" creationdate="20160427T101827Z">
         <seg>构建解决方案, 所有的 .ts 文件将被编译成 .js 文件，伴随生成 .js.map 文件 (调试需要).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But because it’s a sprite, you may use specific parameters: you can change their size, or their orientation:
+```javascript
+player.size = 0.3;
+player.angle = Math.PI/4;
+player.invertU = -1;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T121330Z" creationid="aceway" creationdate="20170129T121330Z">
+        <seg>但是因为它是个精灵，你可以使用特殊的参数: 你可以改变它们的大小，或者它们的朝向:
+```javascript
+player.size = 0.3;
+player.angle = Math.PI/4;
+player.invertU = -1;
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -5729,6 +5755,14 @@ Easy.&amp;nbsp; Most of these things you already know, don't you?&amp;nbsp; I th
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One of the advantages of sprites is animations.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T121636Z" creationid="aceway" creationdate="20170129T121636Z">
+        <seg>使用精灵的优势之一是利用它们的动画功能.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One of the many properties on a StandardMaterial object... is named .diffuseColor.&amp;nbsp; That property is the primary way to set a basic color.&amp;nbsp; And right here... is where we use our new Color3 value.&amp;nbsp; Let's have a look:
 ``` javascript
 myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
@@ -6095,6 +6129,22 @@ In this tutorial, we are going to learn how to manipulate Sprites.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T094151Z" creationid="aceway" creationdate="20170122T094151Z">
         <seg>精灵是二维的图片或动画，我们将使用精灵来显示具有透明通道的图片。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Starting with Babylon.js v2.1, you can define sprite's width and height:
+```
+player.width = 0.3;
+player.height = 0.4;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T121408Z" creationid="aceway" creationdate="20170129T121408Z">
+        <seg>从Babylon.js v2.1开始, 你可以定义精灵的宽度和高度:
+```
+player.width = 0.3;
+player.height = 0.4;
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -7363,6 +7413,14 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101938Z" creationid="aceway@qq.com" creationdate="20160427T101938Z">
         <seg>你可以获取这些文件:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can keep using ```player.size``` and in this case width and height will just be the same.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T121539Z" creationid="aceway" creationdate="20170129T121539Z">
+        <seg>你可以继续使用 ```player.size``` 而且在这种情况下宽度和高度是一样的.</seg>
       </tuv>
     </tu>
     <tu>
