@@ -4886,6 +4886,14 @@ player.cellIndex = 44;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Gravity can be applied to any camera that you have defined previously in your code.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131617Z" creationid="aceway" creationdate="20170129T131617Z">
+        <seg>重力加速度可以应用到任何你代码里之前已经定义的相机上。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>HeightMap grounds are easy, but we decided to create a separate tutorial so we could say more about this important Babylon.js feature.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T122828Z" creationid="aceway" creationdate="20160507T122319Z">
