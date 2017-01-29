@@ -4912,6 +4912,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is what a complete sprite image looks like:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T122108Z" creationid="aceway" creationdate="20170129T122108Z">
+        <seg>这儿是个完整的精灵图像例子的样子:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is what our image looks like:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011515Z" creationid="aceway@qq.com" creationdate="20170123T011515Z">
@@ -5359,6 +5367,14 @@ var event1 = new BABYLON.AnimationEvent(50, function() { console.log("Yeah!"); }
 // 将你的事件附加到动画上
 animation.addEvent(event1);
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Just be careful to respect the square pixel size that you have specified in your manager (e.g. 64 pixel).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T122012Z" creationid="aceway" creationdate="20170129T122012Z">
+        <seg>只是要注意在管理器中指定方形的像素尺寸 (例如 64 像素的).</seg>
       </tuv>
     </tu>
     <tu>
