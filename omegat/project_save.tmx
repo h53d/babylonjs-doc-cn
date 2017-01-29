@@ -4729,8 +4729,8 @@ player.invertU = -1;
 player.cellIndex = 44;
 ```</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T123201Z" creationid="aceway" creationdate="20170129T123201Z">
-        <seg>最后，Finally, if you want to go to a specific image (e.g. the last one, when the character is not moving), just call:
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T123359Z" creationid="aceway" creationdate="20170129T123201Z">
+        <seg>最后，如果你想定位到某个特殊图像上 (例如. 最后一帧的图像, 当角色不在移动时), 就调用:
 ```javascript
 player.cellIndex = 44;
 ```</seg>
@@ -7529,6 +7529,14 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160449Z" creationid="aceway" creationdate="20160402T145650Z">
         <seg>你也能用贝塞尔曲线的算法, 使用 **BezierCurveEase(x1, y1, x2, y2)** 函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can play with the scene and code used in this tutorial... by visiting the Babylon.js [**Playground sprites demo**](http://babylonjs-playground.azurewebsites.net/?8).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T123636Z" creationid="aceway" creationdate="20170129T123636Z">
+        <seg>你可以通过访问 [**娱乐场场精灵演示**](http://babylonjs-playground.azurewebsites.net/?8) 来体验本教程的这些场景和代码.</seg>
       </tuv>
     </tu>
     <tu>
