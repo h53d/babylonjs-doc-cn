@@ -4240,6 +4240,14 @@ materialSphere1.diffuseTexture.hasAlpha = true;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>And the last parameter is the delay between the frames (the smaller it is, the faster the animation).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T123205Z" creationid="aceway" creationdate="20170129T123147Z">
+        <seg>还有第三个参数是帧间的延迟 (延迟越小，动画会播放得更快).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>And you are done!</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105307Z" creationid="aceway" creationdate="20160402T105307Z">
@@ -4712,6 +4720,20 @@ player.invertU = -1;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T103037Z" creationid="aceway@qq.com" creationdate="20160427T103037Z">
         <seg>我们终于可以编辑web.config文件来声明一些文件类型了(实际上仅 .fx 文件就够了) ，那些允许WEB服务访问的文件.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finally, if you want to go to a specific image (e.g. the last one, when the character is not moving), just call:
+```javascript
+player.cellIndex = 44;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T123201Z" creationid="aceway" creationdate="20170129T123201Z">
+        <seg>最后，Finally, if you want to go to a specific image (e.g. the last one, when the character is not moving), just call:
+```javascript
+player.cellIndex = 44;
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -6749,6 +6771,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
 可选 | onAnimationEnd | () =&gt; void | 该函数在动画的结束被触发调用(同样取决于 ANIMATIONLOOPMODE)
 可选 | 可播放 | [Animatable](http://doc.babylonjs.com/classes/Animatable) | 一个可选的特殊动画
 ---</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The third parameter is indicating if this animation will loop or not.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T123014Z" creationid="aceway" creationdate="20170129T123014Z">
+        <seg>第三个参数指示这个动画时否会循环播放。.</seg>
       </tuv>
     </tu>
     <tu>
