@@ -4490,6 +4490,18 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cameras, Mesh Collisions and Gravity
+---
+Did you ever play a FPS (First Person Shooter) game?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T125532Z" creationid="aceway" creationdate="20170129T125532Z">
+        <seg>相机，网格碰撞和重力
+---
+你玩过一款FPS (第一人称视角射击)游戏么?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Can be null)
 }
 ```</seg>
