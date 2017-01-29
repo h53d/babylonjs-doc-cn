@@ -3125,6 +3125,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**1 - Define and apply gravity**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131024Z" creationid="aceway" creationdate="20170129T131024Z">
+        <seg>**1 - 定义并应用重力**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>**Also note that you won't be able to debug the TypeScript code of Babylon.js, the debugger will always step into the main JavaScript file (i.e. Babylon.js).**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093010Z" creationid="aceway@qq.com" creationdate="20160427T093010Z">
@@ -5344,8 +5352,8 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       <tuv lang="EN-US">
         <seg>In this tutorial, we are going to simulate the same camera movements: the camera is on the floor, in collision with the ground, and potentially in collision with any objects in the scene.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T130524Z" creationid="aceway" creationdate="20170129T130524Z">
-        <seg>在本教程里, 我们将模拟同样的(FPS)相机运动: 相机对着地板，可视区域与地面碰撞，并有可能与场景中的任何物体发生碰撞。</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131141Z" creationid="aceway" creationdate="20170129T130524Z">
+        <seg>在本教程里, 我们将模拟同样的(FPS)相机运动: 放在地板上的相机，与地面发生的碰撞，以及可能与场景中的任何物体发生的碰撞。</seg>
       </tuv>
     </tu>
     <tu>
