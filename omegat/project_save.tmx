@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.5.4" segtype="sentence" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.6.0" segtype="sentence" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -5078,6 +5078,20 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065111Z" creationid="aceway@qq.com" creationdate="20160427T065111Z">
         <seg>如果你想加个新文件, 请也按照下面要求做好:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to add parameters to this instance, you can manipulate it like any other meshes:
+```javascript
+player.position.y = -0.3;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T121210Z" creationid="aceway" creationdate="20170129T121210Z">
+        <seg>如果你希望给这个实例添加参数，你可以像操作其它网格对象一样:
+```javascript
+player.position.y = -0.3;
+```</seg>
       </tuv>
     </tu>
     <tu>
