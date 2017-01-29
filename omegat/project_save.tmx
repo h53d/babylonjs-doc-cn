@@ -7077,6 +7077,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This will animate our players in more than 40 positions, depending upon the situation (walking, jumping,…).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T122418Z" creationid="aceway" creationdate="20170129T122418Z">
+        <seg>这个会演示角色的40多个动作定位，取决于具体的情况 (走路，跳跃,…).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This would be handy for user-controlled walking characters, or reacting to value changes from an input device.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111929Z" creationid="aceway" creationdate="20160402T111929Z">
