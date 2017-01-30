@@ -54,6 +54,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Picking](http://www.babylonjs.com/tutorials/11%20-%20Collisions%20PickResult/11.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T092754Z" creationid="aceway" creationdate="20170130T092754Z">
+        <seg>![拾取](http://www.babylonjs.com/tutorials/11%20-%20Collisions%20PickResult/11.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![VS02](http://i.imgur.com/Tb3nxWZ.png)
 Make sure you check "Create directory for solution", this way the c:\test\babylon.js directory will be used to store the .sln file and a new directory will be created in c:\test\babylon.js\babylon.js for the project file.</seg>
       </tuv>
@@ -1690,6 +1698,16 @@ Great, now you can develop a real FPS game!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Next step
+With those two functions, your scenes are becoming a lot more dynamic: you can define a specific reaction to object intersecting and colliding, and begin to introduce physics notions into your scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T091813Z" creationid="aceway" creationdate="20170130T091813Z">
+        <seg>## 下一步
+通过这两个函数，你的场景变得更加的动态了: 你可以为相交和碰撞定义指定的响应方式， 以及开始为你的场景引入物理概念.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Next step ##
 ----</seg>
       </tuv>
@@ -2836,6 +2854,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084622Z" creationid="aceway" creationdate="20170130T084622Z">
         <seg>* **相交网格**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Intersect point**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T090520Z" creationid="aceway" creationdate="20170130T090520Z">
+        <seg>* **相交点**</seg>
       </tuv>
     </tu>
     <tu>
@@ -4468,6 +4494,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Babylon engine lets you do this very easily by giving you useful functions.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T093105Z" creationid="aceway" creationdate="20170130T093105Z">
+        <seg>Babylon引擎提供了有用的函数让你非常轻松的实现这个.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Babylon's engine is automatically reading sprites on more than one line, so the engine does the work for you :)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T122713Z" creationid="aceway" creationdate="20170129T122713Z">
@@ -5356,6 +5390,14 @@ player.cellIndex = 44;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you want more information about this second parameter, you can have a look at this Wikipedia page, especially about AABB and OBB mode: [http://en.wikipedia.org/wiki/Bounding_volume](http://en.wikipedia.org/wiki/Bounding_volume)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T090457Z" creationid="aceway" creationdate="20170130T090457Z">
+        <seg>如果你了解第二个参数的更多信息，你可以看看这个维基网页: [http://en.wikipedia.org/wiki/Bounding_volume](http://en.wikipedia.org/wiki/Bounding_volume), 特别是关于AABB和OBB模式</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you want to add a new file, please do the following as well:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065111Z" creationid="aceway@qq.com" creationdate="20160427T065111Z">
@@ -5486,6 +5528,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083401Z" creationid="aceway@qq.com" creationdate="20160331T083401Z">
         <seg>在我们这个案例，我们想放大盒子，但是不是线性方式，而是放大时盒子越大则放大的速度越快，缩小时盒子越小缩得越慢。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In our next tutorial, you will discover how to [check collisions between your scene and the mouse](http://doc.babylonjs.com/tutorials/Picking_Collisions).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T091911Z" creationid="aceway" creationdate="20170130T091911Z">
+        <seg>在我们下一教程, 你会发现如何[检测场景与鼠标的碰撞](http://doc.babylonjs.com/tutorials/Picking_Collisions).</seg>
       </tuv>
     </tu>
     <tu>
@@ -5773,6 +5823,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let’s see how we can get your mouse position transposed in your 3D scene by this gun shooting example:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T092746Z" creationid="aceway" creationdate="20170130T092746Z">
+        <seg>通过下面这个手枪射击的例子，让我们弄明白如何在你的三维场景中获得转换后的鼠标位置:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Make sure you close the script, body, and html elements.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065642Z" creationid="aceway@qq.com" creationdate="20160429T065642Z">
@@ -5997,6 +6055,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T125207Z" creationid="aceway" creationdate="20170129T125207Z">
         <seg>现在你知道如何创建一个完整简约的动态场景，而且它对于即将讨论[碰撞](http://doc.babylonjs.com/tutorials/Intersect_Collisions_-_mesh)非常重要.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now you should know everything about collisions, so it’s time to move on to a classic effect in 3D : [particles](http://doc.babylonjs.com/tutorials/Particles).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T092913Z" creationid="aceway" creationdate="20170130T092913Z">
+        <seg>ow you should know everything about collisions, so it’s time to move on to a classic effect in 3D : [particles](http://doc.babylonjs.com/tutorials/Particles).</seg>
       </tuv>
     </tu>
     <tu>
@@ -6267,6 +6333,18 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Picking Collisions
+---
+## Introduction</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T092017Z" creationid="aceway" creationdate="20170130T092003Z">
+        <seg>拾取碰触
+---
+## 介绍</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Please credit the author if you can!</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T040930Z" creationid="aceway@qq.com" creationdate="20160427T040930Z">
@@ -6423,6 +6501,14 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034958Z" creationid="aceway@qq.com" creationdate="20160429T034958Z">
         <seg>所以现在，将这里整个createScene函数添加到你的网页里:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So think about the collisions details you need before to choose.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T090259Z" creationid="aceway" creationdate="20170130T090259Z">
+        <seg>因此，当你选择碰撞检测方式是请考虑对碰撞细节的要求。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6825,6 +6911,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The last collision type could be very useful for you: it’s picking an object with your mouse.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T092134Z" creationid="aceway" creationdate="20170130T092134Z">
+        <seg>为你准备的非常有用的最后一种碰撞类型: 它就是使用你的鼠标拾取物体.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The last three lines of your HTML5 web page... should be:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T071602Z" creationid="aceway@qq.com" creationdate="20160429T071602Z">
@@ -6985,6 +7079,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The main difficulty is to click on a 3D object whereas your screen is a flat 2D display.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T092351Z" creationid="aceway" creationdate="20170130T092351Z">
+        <seg>主要的难点是：点击的是三维物体而与此同时你的显示器却是二维平面的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The main thing to know is that our createScene function has all requirements complete.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040831Z" creationid="aceway@qq.com" creationdate="20160429T040605Z">
@@ -7013,6 +7115,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160420T141810Z" creationid="aceway" creationdate="20160420T141810Z">
         <seg>Javascript对象里另外的'存储空间'常见''类型叫做'方法'(有时叫做 '函数').&amp;nbsp; 方法用来讲Javascript代码存储到Javascript对象里.&amp;nbsp; 早些时候,我说的'set'属性也是个方法.&amp;nbsp; 嗯, 方法是被'调用'的.&amp;nbsp; 这儿是个方法被'调用'的方式.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The other function you can use is “intersectsPoint()” with a specific point, like this:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T090652Z" creationid="aceway" creationdate="20170130T090652Z">
+        <seg>另一个你可以使用的函数是“intersectsPoint()”，通过指定点来调用, 像这样:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7767,6 +7877,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We defined a precise point in our scene, and if our balloon intersects this point, wherever on the balloon, then the event is raised and we change the color of the balloon.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T091221Z" creationid="aceway" creationdate="20170130T091221Z">
+        <seg>我们在场景中定义了个精确的点, 如果我们的气球和这个点相交，那么特定事件将会被抛出，然后我们会改变气球的颜色。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We have now completed an Animation for box1.scaling.x.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T155412Z" creationid="aceway" creationdate="20160402T105422Z">
@@ -8023,6 +8141,14 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160449Z" creationid="aceway" creationdate="20160402T145650Z">
         <seg>你也能用贝塞尔曲线的算法, 使用 **BezierCurveEase(x1, y1, x2, y2)** 函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can play with the code used in this tutorial... by visiting [**a demo at our playground**](http://babylonjs-playground.azurewebsites.net/?10).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T091406Z" creationid="aceway" creationdate="20170130T091406Z">
+        <seg>通过访问[**我们娱乐厅的一个演示**](http://babylonjs-playground.azurewebsites.net/?10)，你能够体验本教程使用的这些代码.</seg>
       </tuv>
     </tu>
     <tu>
