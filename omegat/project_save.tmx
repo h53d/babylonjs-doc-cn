@@ -7665,6 +7665,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can also do the same thing with a mesh by playing with _mesh.ellipsoid_ property and _mesh.moveWithCollisions(velocity)_ function.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T041029Z" creationid="aceway" creationdate="20170130T041029Z">
+        <seg>你也能够在网格间执行同样的功能，通过使用 _mesh.ellipsoid_ 属性并调用 _mesh.moveWithCollisions(velocity)_ 函数来实现.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can also get access to current running ```BABYLON.Animatable``` objects by using ```scene.getAnimatableByTarget()``` providing the target object.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105257Z" creationid="aceway" creationdate="20160402T105257Z">
