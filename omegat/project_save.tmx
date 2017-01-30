@@ -6729,6 +6729,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The next important step is to define the ellipsoid around our camera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T034426Z" creationid="aceway" creationdate="20170130T034426Z">
+        <seg>下一个重要的步骤是定义个椭球体包围相机.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The next is cannon.js - an optional physics 'engine' that allows WebGL shapes (meshes) to act like real life objects.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T133115Z" creationid="aceway" creationdate="20160403T133115Z">
