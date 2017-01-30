@@ -6,6 +6,14 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>![Collisions](http://www.babylonjs.com/tutorials/10%20-%20Collisions%20Intersect/10.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T081512Z" creationid="aceway" creationdate="20170130T081512Z">
+        <seg>![碰撞检测](http://www.babylonjs.com/tutorials/10%20-%20Collisions%20Intersect/10.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![Elements](http://urbanproductions.com/wingy/babylon/misc/tut02pic.jpg)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T125754Z" creationid="aceway" creationdate="20160503T125754Z">
@@ -373,9 +381,9 @@ An animation can be defined by the following JSON:
         <seg>## ArcRotateCamera
 The ArcRotateCamera can also check collisions but instead of sliding along obstacles, this camera won't move when a collision appends.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T051155Z" creationid="aceway" creationdate="20170130T051042Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T080503Z" creationid="aceway" creationdate="20170130T051042Z">
         <seg>## 弧形旋转相机
-弧形旋转相机也能后检测碰撞，但是并非obstacles, this camera won't move when a collision appends.</seg>
+弧形旋转相机也能支持检测碰撞，但是当碰撞发生时相机会停止移动而不是沿着障碍物移动。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1652,6 +1660,16 @@ Don’t hesitate to use sprites in your scene: they are not resource intensive, 
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T124947Z" creationid="aceway" creationdate="20170129T124947Z">
         <seg>## 下一步
 在你的场景中使用精灵吧，不要犹豫: 它们不是资源密集性的，而且它们真的有助于保持应用程序的高帧频.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Next step
+Great, now you can develop a real FPS game!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T080741Z" creationid="aceway" creationdate="20170130T080741Z">
+        <seg>## 下一步
+非常棒, 现在你能够开发真实的FPS游戏了!</seg>
       </tuv>
     </tu>
     <tu>
@@ -4524,6 +4542,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But maybe you would like to know when a mesh is in collision with another mesh?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T080822Z" creationid="aceway" creationdate="20170130T080822Z">
+        <seg>但是你也许想知道一个网格时什么时候与另外的网格发生碰撞的?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But you may want to use it for alpha blending.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T133941Z" creationid="aceway" creationdate="20160508T133941Z">
@@ -4976,6 +5002,14 @@ player.cellIndex = 44;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Good, because that is exactly the purpose of our [next tutorial](http://doc.babylonjs.com/tutorials/Intersect_Collisions_-_mesh).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T080947Z" creationid="aceway" creationdate="20170130T080925Z">
+        <seg>非常好，因为这就是我们[下一教程](http://doc.babylonjs.com/tutorials/Intersect_Collisions_-_mesh)的教学目的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Gravity can be applied to any camera that you have defined previously in your code.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131617Z" creationid="aceway" creationdate="20170129T131617Z">
@@ -5384,6 +5418,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In dynamic scenes, objects are moving and interacting with each other.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T081301Z" creationid="aceway" creationdate="20170130T081301Z">
+        <seg>在动态场景里，物体是在运动中彼此相互作用的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In other terms, your mesh will be twice heavier.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121305Z" creationid="aceway" creationdate="20160507T121305Z">
@@ -5456,6 +5498,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this tutorial, we are going to discover how the collision system works.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T081504Z" creationid="aceway" creationdate="20170130T081445Z">
+        <seg>在本教程里，我们将探索碰撞检测系统是如何工作的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In this tutorial, we are going to learn how to create basic elements using Babylon.js, such as boxes, spheres, and planes.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T125748Z" creationid="aceway" creationdate="20160503T125748Z">
@@ -5488,6 +5538,18 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T143936Z" creationid="aceway" creationdate="20160404T032427Z">
         <seg>=在 createScene() 函数里 (紫色部分)... 我们将开始执行真实的 Babylon.js 指令, 以产生漂亮的WebGL效果出现.&amp;nbsp; 大图片里的剩下部分... 是些简单的辅助和准备工作... 为神奇的紫色部分(那个createScene()函数)服务的.&amp;nbsp; 记住这个函数名, 因为我将在许多游戏练习系列教材里常常提到它.&amp;nbsp; 我能保证,它将成为你最好的支持者.&amp;nbsp</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Intersect Collisions - mesh
+---
+## Introduction</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T081119Z" creationid="aceway" creationdate="20170130T081040Z">
+        <seg>网格碰撞相交
+---
+## 介绍</seg>
       </tuv>
     </tu>
     <tu>
@@ -7433,6 +7495,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To activate collisions, just call ```camera.checkCollisions = true```.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T080534Z" creationid="aceway" creationdate="20170130T080534Z">
+        <seg>为了启用碰撞检测，仅需调用 ```camera.checkCollisions = true```.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To apply a material to them, you will need to create a new material object like this:
 ```javascript
 var materialSphere1 = new BABYLON.StandardMaterial("texture1", scene);
@@ -7471,6 +7541,14 @@ var materialSphere1 = new BABYLON.StandardMaterial("texture1", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T133959Z" creationid="aceway" creationdate="20160508T133959Z">
         <seg>要做到这点, 只需设置 ```materialSphere1.useAlphaFromDiffuseTexture```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To get the best rendering, you will want to know when your meshes are in contact with each other.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T081400Z" creationid="aceway" creationdate="20170130T081400Z">
+        <seg>为了更好的渲染此种情景，你需要知道你的网格具体什么 时候彼此相交的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7775,6 +7853,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T041919Z" creationid="aceway" creationdate="20170130T041622Z">
         <seg>你也能使用 _mesh.ellipsoidOffset_ 在网格上偏移椭球体 (默认情况下椭球体位于网格中心)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can define the collision radius with this code:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T080638Z" creationid="aceway" creationdate="20170130T080638Z">
+        <seg>你可以使用这行代码来定义碰撞半径:</seg>
       </tuv>
     </tu>
     <tu>
