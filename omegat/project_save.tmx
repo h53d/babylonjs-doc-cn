@@ -4614,6 +4614,14 @@ Did you ever play a FPS (First Person Shooter) game?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Demo by Dad72: [**Move character with gravity and collision**](http://www.babylon.actifgames.com/moveCharacter/)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T042152Z" creationid="aceway" creationdate="20170130T042152Z">
+        <seg>Dad72提供了演示: [**支持重力和碰撞检测的角色移动**](http://www.babylon.actifgames.com/moveCharacter/)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Discover Basic Elements
 ---
 ## Introduction</seg>
@@ -7183,6 +7191,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This function will try to move the mesh according to given velocity and will check if there is no collision between current mesh and all meshes with checkCollisions activated.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T041604Z" creationid="aceway" creationdate="20170130T041604Z">
+        <seg>当启用碰撞检测时，此函数将根据给定的加速度移动网格，并检测当前网格和任何其它网格对象间是否会碰撞.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is a picture of the playground's pop-up compilation error detector panel.&amp;nbsp; A compilation error is an error detected by the BabylonJS framework... after you have clicked the Run button.&amp;nbsp; It is not a syntax error detected by the editor, but the editor might ALSO detect it and possibly mark the problem line with a red X icon along its left side.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T025420Z" creationid="aceway@qq.com" creationdate="20160427T025420Z">
@@ -7677,6 +7693,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105257Z" creationid="aceway" creationdate="20160402T105257Z">
         <seg>通过提供目标对象来调用 ```scene.getAnimatableByTarget()``` 你也可以访问当前正在运行的 ```BABYLON.Animatable``` 对象.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can also use _mesh.ellipsoidOffset_ to move the ellipsoid on the mesh (By default the ellipsoid is centered on the mesh)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T041919Z" creationid="aceway" creationdate="20170130T041622Z">
+        <seg>你也能使用 _mesh.ellipsoidOffset_ 在网格上偏移椭球体 (默认情况下椭球体位于网格中心)</seg>
       </tuv>
     </tu>
     <tu>
@@ -8612,6 +8636,20 @@ var knot = BABYLON.Mesh.CreateTorusKnot("knot", 2, 0.5, 128, 64, 2, 3, scene, fa
     <tu>
       <tuv lang="EN-US">
         <seg>```javascript
+var speedCharacter = 8;
+var gravity = 0.15;
+var character = Your mesh;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T041946Z" creationid="aceway" creationdate="20170130T041946Z">
+        <seg>```javascript
+var speedCharacter = 8;
+var gravity = 0.15;
+var character = 你的网格对象;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
 var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene, false, BABYLON.Mesh.DEFAULTSIDE);
 ```
 Parameters are: name, diameter, thickness, tessellation (highly detailed or not), scene, updatable and the optional side orientation (see below).</seg>
@@ -8763,6 +8801,26 @@ You will find a complete demonstration of the easing functions behaviors, in the
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T145902Z" creationid="aceway" creationdate="20160423T145902Z">
         <seg>var engine = new BABYLON.Engine(画布, true);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>var forwards = new BABYLON.Vector3(parseFloat(Math.sin(character.rotation.y)) / speedCharacter, gravity, parseFloat(Math.cos(character.rotation.y)) / speedCharacter);
+forwards.negate();
+character.moveWithCollisions(forwards);
+// or
+var backwards = new BABYLON.Vector3(parseFloat(Math.sin(character.rotation.y)) / speedCharacter, -gravity, parseFloat(Math.cos(character.rotation.y)) / speedCharacter);
+character.moveWithCollisions(backwards);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T042016Z" creationid="aceway" creationdate="20170130T042016Z">
+        <seg>var forwards = new BABYLON.Vector3(parseFloat(Math.sin(character.rotation.y)) / speedCharacter, gravity, parseFloat(Math.cos(character.rotation.y)) / speedCharacter);
+forwards.negate();
+character.moveWithCollisions(forwards);
+// 或者
+var backwards = new BABYLON.Vector3(parseFloat(Math.sin(character.rotation.y)) / speedCharacter, -gravity, parseFloat(Math.cos(character.rotation.y)) / speedCharacter);
+character.moveWithCollisions(backwards);
+```</seg>
       </tuv>
     </tu>
     <tu>
