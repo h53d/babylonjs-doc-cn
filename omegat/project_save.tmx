@@ -2816,6 +2816,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **Intersect mesh**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084622Z" creationid="aceway" creationdate="20170130T084622Z">
+        <seg>* **相交网格**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Specular**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150747Z" creationid="aceway" creationdate="20160521T150747Z">
@@ -6009,6 +6017,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Once you have created this basic scene, continue reading to learn how to check collisions.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084603Z" creationid="aceway" creationdate="20170130T084603Z">
+        <seg>当你你创建了这个基础的场景后，请继续阅读以学习更多的碰撞检测知识.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Once you have that folder made, you can use the 4 links shown below... to get copies of The Big 4... and put each of them into your js folder.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T082252Z" creationid="aceway" creationdate="20160423T082252Z">
@@ -6693,6 +6709,14 @@ scene.registerBeforeRender(function () {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150829Z" creationid="aceway" creationdate="20160521T145416Z">
         <seg>放射光决定了对象自身的颜色.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first and second sphere (balloon) will collide on the rotated ground, the last one will be in collision only on a single point.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084422Z" creationid="aceway" creationdate="20170130T084422Z">
+        <seg>第一个和第二个球体(气球)将在旋转的地面上碰撞, 后者仅是单点的接触碰撞.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7431,6 +7455,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This tutorial is going to show you two ways of collision detection: the first one is to raise a collision event when two meshes are in contact, the other one is detecting contact between a mesh and a single point.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084054Z" creationid="aceway" creationdate="20170130T084054Z">
+        <seg>本教程里将为你展示两种碰撞检测的方法: 第一种时当网格彼此相交时抛出碰撞事件，另一种是检测网格和单点的接触.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This version is aimed for production.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071124Z" creationid="aceway@qq.com" creationdate="20160427T071124Z">
@@ -7651,6 +7683,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130534Z" creationid="aceway" creationdate="20160503T130534Z">
         <seg>我们将一步步通过[**娱乐场演示场景02**](http://babylonjs-playground.azurewebsites.net/?2)来学习.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We are going to talk about the scene above.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084119Z" creationid="aceway" creationdate="20170130T084119Z">
+        <seg>我们将讨论上面的场景.</seg>
       </tuv>
     </tu>
     <tu>
