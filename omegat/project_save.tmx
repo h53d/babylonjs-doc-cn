@@ -3133,6 +3133,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**2 - Define an ellipsoid**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T034239Z" creationid="aceway" creationdate="20170130T034239Z">
+        <seg>**2 - 定义一个椭球体**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>**Also note that you won't be able to debug the TypeScript code of Babylon.js, the debugger will always step into the main JavaScript file (i.e. Babylon.js).**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093010Z" creationid="aceway@qq.com" creationdate="20160427T093010Z">
