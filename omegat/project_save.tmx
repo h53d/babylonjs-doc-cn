@@ -334,6 +334,14 @@ An action is defined by the following JSON.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Advanced Picking Features</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T095230Z" creationid="aceway" creationdate="20170130T095230Z">
+        <seg>## 高级拾取特征</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Animation Blending</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T111439Z" creationid="aceway" creationdate="20160402T111439Z">
@@ -3519,6 +3527,30 @@ if (条件) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>- `bu` and `bv` properties: these are the barycentric coordinates of the picked point in the face.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T095728Z" creationid="aceway" creationdate="20170130T095728Z">
+        <seg>- `bu` 和 `bv` 属性: 这些是拾取面的重心坐标.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- `faceId`: this is the position of the picked face's indices in the indices array.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T095509Z" creationid="aceway" creationdate="20170130T095509Z">
+        <seg>- `faceId`: 这是拾取面的索引位置--在索引数组里的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- `submeshId`: the ID of the picked submesh inside the picked mesh</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T095617Z" creationid="aceway" creationdate="20170130T095617Z">
+        <seg>- `submeshId`: 拾取网格里的子网格ID</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>- the value of a .position property on mesh, light, or camera objects
 - the value of a .rotation property on a mesh object
 - the value of a .scaling property on a mesh object
@@ -4916,6 +4948,14 @@ Did you ever play a FPS (First Person Shooter) game?</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T125032Z" creationid="aceway" creationdate="20160507T125032Z">
         <seg>请自由设想你自己的基础元素创意, 并把它们提交到论坛上.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Feel free to play with this scene... [at our online playground](http://babylonjs-playground.azurewebsites.net/?11).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T095210Z" creationid="aceway" creationdate="20170130T095210Z">
+        <seg>请去[我们的在线娱乐厅](http://babylonjs-playground.azurewebsites.net/?11)随意体验这个场景... </seg>
       </tuv>
     </tu>
     <tu>
@@ -6425,6 +6465,14 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Please note that the pickResult object can provide you with additional information, detailed below:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T095354Z" creationid="aceway" creationdate="20170130T095354Z">
+        <seg>请注意pickResult对象能够提供额外的信息，详细如下:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Please see our [**HeightMap Tutorial**](http://doc.babylonjs.com/tutorials/Height_Map) to learn all about heightMap grounds.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T122945Z" creationid="aceway" creationdate="20160507T122945Z">
@@ -7461,6 +7509,26 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These can be accessed like so:
+```
+var indices = pickResult.pickedMesh.getIndices();
+var index0 = indices[pickResult.faceId * 3];
+var index1 = indices[pickResult.faceId * 3 + 1];
+var index2 = indices[pickResult.faceId * 3 + 2];
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T095550Z" creationid="aceway" creationdate="20170130T095533Z">
+        <seg>这些索引可以这样访问:
+```
+var indices = pickResult.pickedMesh.getIndices();
+var index0 = indices[pickResult.faceId * 3];
+var index1 = indices[pickResult.faceId * 3 + 1];
+var index2 = indices[pickResult.faceId * 3 + 2];
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These commands will apply to every animation object contained in the Animatable's ._animations array.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105020Z" creationid="aceway" creationdate="20160402T105020Z">
@@ -7953,6 +8021,20 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T034041Z" creationid="aceway" creationdate="20160403T033419Z">
         <seg>我们希望以一种非常快速的方式教给你大量的信息.&amp;nbsp; 通常这里的任务都有多于一种方式达成.&amp;nbsp; 我希望你自己去发现其它的方式.&amp;nbsp; 根据对Babylon.js初学者特点的研究, 现在我们教你最快最简单的方式.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We just have to position our gun’s impact picture (a plane made earlier... called impact) when the user clicks on the wall plane:
+```javascript
+// if the click hits the wall object, we change the impact picture position
+if (pickResult.hit) {</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T095043Z" creationid="aceway" creationdate="20170130T094955Z">
+        <seg>当用户点击墙面时我们仅需把中弹效果图(之前已经创建好的平面...所谓的中弹)放置好:
+```javascript
+// 如果点击到了墙面, 我们改变中弹图片位置
+if (pickResult.hit) {</seg>
       </tuv>
     </tu>
     <tu>
