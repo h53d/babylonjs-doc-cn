@@ -3149,6 +3149,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**3 - Apply collision**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035827Z" creationid="aceway" creationdate="20170130T035827Z">
+        <seg>**3 - 应用碰撞**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>**Also note that you won't be able to debug the TypeScript code of Babylon.js, the debugger will always step into the main JavaScript file (i.e. Babylon.js).**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093010Z" creationid="aceway@qq.com" creationdate="20160427T093010Z">
@@ -7097,8 +7105,8 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       <tuv lang="EN-US">
         <seg>This ellipsoid represents our player’s dimensions: a collision event will be raised when a mesh comes in contact with this ellipsoid, preventing our camera from getting too close to this mesh:</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035008Z" creationid="aceway" creationdate="20170130T034702Z">
-        <seg>这个椭球体表示我们角色的活动空间: 当网格和椭球体发生接触时就会抛出一个碰撞事件，以预防我们的相机和该网格考得太近:</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035759Z" creationid="aceway" creationdate="20170130T034702Z">
+        <seg>这个椭球体表示我们播放器大小: 当网格和椭球体发生接触时就会抛出一个碰撞事件，以预防我们的相机和该网格考得太近:</seg>
       </tuv>
     </tu>
     <tu>
@@ -8412,6 +8420,20 @@ var spriteManagerTrees = new BABYLON.SpriteManager("treesManagr", "Assets/Palm-a
         <seg>```javascript
 // 创建一个精灵管理器
 var spriteManagerTrees = new BABYLON.SpriteManager("treesManagr", "Assets/Palm-arecaceae.png", 2000, 800, scene);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+//Set the ellipsoid around the camera (e.g. your player's size)
+camera.ellipsoid = new BABYLON.Vector3(1, 1, 1);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035720Z" creationid="aceway" creationdate="20170130T035720Z">
+        <seg>```javascript
+//设置包围相机的椭球体 (如您的播放器大小)
+camera.ellipsoid = new BABYLON.Vector3(1, 1, 1);
 ```</seg>
       </tuv>
     </tu>
