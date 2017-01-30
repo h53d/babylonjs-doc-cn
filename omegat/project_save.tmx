@@ -6,6 +6,22 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>![Collisions](http://www.babylonjs.com/tutorials/10%20-%20Collisions%20Intersect/10-1.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T085313Z" creationid="aceway" creationdate="20170130T085313Z">
+        <seg>![碰撞检测](http://www.babylonjs.com/tutorials/10%20-%20Collisions%20Intersect/10-1.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>![Collisions](http://www.babylonjs.com/tutorials/10%20-%20Collisions%20Intersect/10-2.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T090141Z" creationid="aceway" creationdate="20170130T090141Z">
+        <seg>![碰撞检测](http://www.babylonjs.com/tutorials/10%20-%20Collisions%20Intersect/10-2.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![Collisions](http://www.babylonjs.com/tutorials/10%20-%20Collisions%20Intersect/10.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T081512Z" creationid="aceway" creationdate="20170130T081512Z">
@@ -4476,6 +4492,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Be aware that this type of bounding box is especially useful when your mesh is rotated to an angle.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T090120Z" creationid="aceway" creationdate="20170130T090120Z">
+        <seg>请注意这种类型的边界盒对于旋转了一定角度的网格特别有用。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because this value creates twice the vertices of a frontside mesh.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121219Z" creationid="aceway" creationdate="20160507T121219Z">
@@ -4554,6 +4578,14 @@ player.invertU = -1;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T080822Z" creationid="aceway" creationdate="20170130T080822Z">
         <seg>但是你也许想知道一个网格时什么时候与另外的网格发生碰撞的?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But this bounding box can be more or less precise, and that’s why we have our second parameter.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T085732Z" creationid="aceway" creationdate="20170130T085421Z">
+        <seg>而且这个边界盒的精度可大可小, 这就是为什么我们有第二个参数的原因.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5104,6 +5136,14 @@ player.cellIndex = 44;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is an example of a bounding box:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T085723Z" creationid="aceway" creationdate="20170130T085304Z">
+        <seg>这儿是个边界盒的例子:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is the basic code needed to create a tiled ground.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T123143Z" creationid="aceway" creationdate="20160507T123143Z">
@@ -5446,6 +5486,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083401Z" creationid="aceway@qq.com" creationdate="20160331T083401Z">
         <seg>在我们这个案例，我们想放大盒子，但是不是线性方式，而是放大时盒子越大则放大的速度越快，缩小时盒子越小缩得越慢。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In short, if this parameter is set to true (false by default), then the bounding box is closer to the mesh (OBB bounding type), but it’s a more costly calculation.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T085926Z" creationid="aceway" creationdate="20170130T085643Z">
+        <seg>简而言之, 如果这个参数为true (默认是false), 那么边界盒将更叫贴近网格(OBB边界类型), 但是会有更多的计算开销.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6985,6 +7033,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The point here is to check contact between our balloons and the ground.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084738Z" creationid="aceway" creationdate="20170130T084738Z">
+        <seg>此处的关键是检测气球和地面间的接触点。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The produced color is multiplied to the diffuse color.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150857Z" creationid="aceway" creationdate="20160521T150315Z">
@@ -7549,6 +7605,14 @@ var materialSphere1 = new BABYLON.StandardMaterial("texture1", scene);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To avoid costly calculation by checking many details on a mesh, Babylon engine creates a bounding box around the object, and tests for intersection between this box, and the colliding mesh.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T085718Z" creationid="aceway" creationdate="20170130T085245Z">
+        <seg>为了避免网格上大量细节的检测计算销， Babylon引擎在物体的周围创建了一个边界盒, 以及碰撞网格.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To be able to use this function, you need to know that :
 - Your animation will have predefined key frames (Only 2 keyframes are generated : **Start** and **End**)
 - The animation works only on **AbstractMesh** objects.</seg>
@@ -7723,6 +7787,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101127Z" creationid="aceway@qq.com" creationdate="20160427T101127Z">
         <seg>我们也需要修复因移动Visual Studio工程到上层目录产生的nuget包引用异常的问题</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We will use the “intersectsMesh()” function, with two parameters: the mesh to be checked, and the precision of the intersection (boolean).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084919Z" creationid="aceway" creationdate="20170130T084919Z">
+        <seg>我们用带两个参数的 “intersectsMesh()” 函数 : 被检测的网格，和相交的精度(布尔类型).</seg>
       </tuv>
     </tu>
     <tu>
