@@ -2220,6 +2220,14 @@ A vertexData is defined by the following JSON:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Web worker based collision system (Since 2.1)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T043037Z" creationid="aceway" creationdate="20170130T043012Z">
+        <seg>## 基于碰撞检测的Web工作者线程 (2.1版本以上)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## What is it?</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T151951Z" creationid="aceway" creationdate="20160423T151951Z">
