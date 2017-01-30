@@ -4236,6 +4236,14 @@ sphere1.material = new BABYLON.StandardMaterial("texture1", scene);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>And declare which meshes could be in collision with our camera:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040154Z" creationid="aceway" creationdate="20170130T040154Z">
+        <seg>然后声明哪些网格会和我们的相机发生碰撞:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>And if you give it a material, the light then reflects from both sides, too.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121011Z" creationid="aceway" creationdate="20160507T121011Z">
@@ -4670,6 +4678,14 @@ Did you ever play a FPS (First Person Shooter) game?</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002328Z" creationid="aceway" creationdate="20160403T135120Z">
         <seg>每个包含都是 JavaSCRIPT 文件, 所以它们被放在使用 HTML的 `&lt;SCRIPT&gt;` 元素/标签中.&amp;nbsp; 这些文件里显示的 'src' (源码位置) 在 the Babylon.js 网站的文件夹里, 但是稍后我将告诉你如何把这些文件放到你的硬盘驱动器里 - 如果你希望那样做, 然后从那儿包含它们.&amp;nbsp; 当是"本地" 时她们加载会更快, 但是当你将它们保存到本地后你需要修改 'src' 的网址; 我很快会告诉你如何做的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Easy!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040241Z" creationid="aceway" creationdate="20170130T040241Z">
+        <seg>简单!</seg>
       </tuv>
     </tu>
     <tu>
@@ -5917,6 +5933,14 @@ Easy.&amp;nbsp; Most of these things you already know, don't you?&amp;nbsp; I th
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Once you have those previous settings completed, our final step is to declare that we are interested in sensing collisions in our scene:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040023Z" creationid="aceway" creationdate="20170130T040023Z">
+        <seg>一旦你完成前面的设置，我们最后一步便是声明我们的场景对碰撞检测感兴趣:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One of the advantages of sprites is animations.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T121636Z" creationid="aceway" creationdate="20170129T121636Z">
@@ -6425,6 +6449,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T033247Z" creationid="aceway@qq.com" creationdate="20160427T032833Z">
         <seg>那是个包袱
 嘿，谢谢阅读本教程，一并谢谢探究了BabylonJS娱乐场.&amp;nbsp; 我们为之自豪, 也认为你会喜欢它.&amp;nbsp; 这个教程还非常的新，而且将会经常的改变.&amp;nbsp; 记得回来检查更新，学习新特征哦.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That’s it!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040230Z" creationid="aceway" creationdate="20170130T040230Z">
+        <seg>这就可以了!</seg>
       </tuv>
     </tu>
     <tu>
@@ -8420,6 +8452,22 @@ var spriteManagerTrees = new BABYLON.SpriteManager("treesManagr", "Assets/Palm-a
         <seg>```javascript
 // 创建一个精灵管理器
 var spriteManagerTrees = new BABYLON.SpriteManager("treesManagr", "Assets/Palm-arecaceae.png", 2000, 800, scene);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+// Enable Collisions
+scene.collisionsEnabled = true;
+camera.checkCollisions = true;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040050Z" creationid="aceway" creationdate="20170130T040039Z">
+        <seg>```javascript
+// 启用碰撞检测
+scene.collisionsEnabled = true;
+camera.checkCollisions = true;
 ```</seg>
       </tuv>
     </tu>
