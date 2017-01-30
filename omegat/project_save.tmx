@@ -5326,6 +5326,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the example below, we will make our camera's ellipsoid a bit bigger than the default one:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035626Z" creationid="aceway" creationdate="20170130T035626Z">
+        <seg>下面的例子里，我们将使相机的椭球体比默认的大一点:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the playground demo below, every time you click on the FPS marker, the new animation is blended with the box's current position:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T124804Z" creationid="aceway" creationdate="20160402T112100Z">
@@ -6425,6 +6433,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030158Z" creationid="aceway" creationdate="20160404T025459Z">
         <seg>你看到的在绿色部分里的 JS 代码... 很快会被讨论到.&amp;nbsp; 我主要是希望你学习下大图片里的内容, 而且弄明白单个HTML文件里的Babylon.js场景是如何创建的.&amp;nbsp; 对这个文件的格式, 我希望你能够尽力留下印象且记得一点点.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The _ellipsoid_ property on babylon.js cameras is default to size (0.5, 1, 0.5), but changing values will make you taller, bigger, smaller, thinner, it depends upon the adjusted axis.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035540Z" creationid="aceway" creationdate="20170130T035540Z">
+        <seg>Babylon.js里相机的_椭球体_属性默认大小是 (0.5, 1, 0.5), 但是你通过改变值可以更高、更大、更小、更薄, 这依赖于轴的调整.</seg>
       </tuv>
     </tu>
     <tu>
