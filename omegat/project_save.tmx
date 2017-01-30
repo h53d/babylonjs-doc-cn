@@ -370,6 +370,16 @@ An animation can be defined by the following JSON:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## ArcRotateCamera
+The ArcRotateCamera can also check collisions but instead of sliding along obstacles, this camera won't move when a collision appends.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T051155Z" creationid="aceway" creationdate="20170130T051042Z">
+        <seg>## 弧形旋转相机
+弧形旋转相机也能后检测碰撞，但是并非obstacles, this camera won't move when a collision appends.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Attach events to animations</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151933Z" creationid="aceway" creationdate="20160402T151933Z">
@@ -2222,8 +2232,8 @@ A vertexData is defined by the following JSON:
       <tuv lang="EN-US">
         <seg>## Web worker based collision system (Since 2.1)</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T043037Z" creationid="aceway" creationdate="20170130T043012Z">
-        <seg>## 基于碰撞检测的Web工作者线程 (2.1版本以上)</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T045852Z" creationid="aceway" creationdate="20170130T043012Z">
+        <seg>## 基于碰撞检测的Web工作线程 (2.1版本以上)</seg>
       </tuv>
     </tu>
     <tu>
@@ -4432,6 +4442,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>BabylonJS 2.1 allows the user to move the collision calculations to an external web worker thus achieving better rendering time.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T050120Z" creationid="aceway" creationdate="20170130T050120Z">
+        <seg>BabylonJS 2.1 允许用户将碰撞检测的计算移到外部的Web工作线程以实现更好的实时渲染.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because this value creates twice the vertices of a frontside mesh.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121219Z" creationid="aceway" creationdate="20160507T121219Z">
@@ -6243,6 +6261,14 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Setting it to false will set the collision to the regular collision calculation as it always was.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T050739Z" creationid="aceway" creationdate="20170130T050739Z">
+        <seg>设置为false将使它为常规的碰撞检测计算.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Simply put, “back-face culling” determines whether or not a StandardMaterial is visible from its back side (from behind).  TRUE = NOT visible.  More precisely, this rendering-speed-optimization technique determines if a polygon of a graphical object is visible or not.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T134744Z" creationid="aceway" creationdate="20160522T134744Z">
@@ -6913,6 +6939,22 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The scene has now a new flag (false per default):
+```javascript
+scene.workerCollisions = true|false
+```
+Setting this flag to true will start the worker in the background.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T050544Z" creationid="aceway" creationdate="20170130T050434Z">
+        <seg>场景现在有新的标识(默认为false):
+```javascript
+scene.workerCollisions = true|false
+```
+设置该值为true将使工作线程在后台执行.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The second way is for more complex animations, when you change animation code at run time.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T033700Z" creationid="aceway" creationdate="20160330T033700Z">
@@ -6985,6 +7027,22 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094136Z" creationid="aceway@qq.com" creationdate="20160427T094136Z">
         <seg>最新的.js文件列表和引擎配置的指示可以在这儿[here](http://doc.babylonjs.com/generals/Creating_the_Mini-fied_Version)找到</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The worker is integrated in the single framework file, and no changes are required by the developer.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T050324Z" creationid="aceway" creationdate="20170130T050324Z">
+        <seg>该工作线程的实现集成在那个单一的框架文件中，而且开发者不需要做什么改变.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The worker will then receive all collision requests from the cameras and meshes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T050640Z" creationid="aceway" creationdate="20170130T050640Z">
+        <seg>该线程将接收来自相机和网格的全部碰撞检测请求.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7443,6 +7501,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053931Z" creationid="aceway" creationdate="20160330T033249Z">
         <seg>为了给它注入动态，我们将开始学习如何控制电脑来按照你指定的方式移动你创建的网格对象。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To read more about how workers were integrated head to Raanan Weber's blog:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T051006Z" creationid="aceway" creationdate="20170130T051006Z">
+        <seg>想读到更多关于工作线程是如何实现的，请移步到Raanan的网页博客:</seg>
       </tuv>
     </tu>
     <tu>
