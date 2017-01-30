@@ -3143,8 +3143,8 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       <tuv lang="EN-US">
         <seg>**2 - Define an ellipsoid**</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T034717Z" creationid="aceway" creationdate="20170130T034239Z">
-        <seg>**2 - 定义一个椭球面**</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035020Z" creationid="aceway" creationdate="20170130T034239Z">
+        <seg>**2 - 定义一个椭球体**</seg>
       </tuv>
     </tu>
     <tu>
