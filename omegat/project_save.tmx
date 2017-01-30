@@ -3157,6 +3157,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**4 - Object vs. object collision**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040640Z" creationid="aceway" creationdate="20170130T040640Z">
+        <seg>**4 - 物体间的碰撞**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>**Also note that you won't be able to debug the TypeScript code of Babylon.js, the debugger will always step into the main JavaScript file (i.e. Babylon.js).**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093010Z" creationid="aceway@qq.com" creationdate="20160427T093010Z">
@@ -4302,6 +4310,14 @@ materialSphere1.diffuseTexture.hasAlpha = true;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105307Z" creationid="aceway" creationdate="20160402T105307Z">
         <seg>你做到了!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And, your camera will collide with the box when you move it too near to it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040611Z" creationid="aceway" creationdate="20170130T040611Z">
+        <seg>而且，你的相机会和盒子发生碰撞当你将相机移近它时。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5861,6 +5877,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034402Z" creationid="aceway@qq.com" creationdate="20160429T034352Z">
         <seg>现在, 我们从HTML5跳进Javascript.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now, your camera is going to fall on the y-axis until it collides with the ground.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040452Z" creationid="aceway" creationdate="20170130T040452Z">
+        <seg>现在，你的相机会沿Y轴下落直到和地面发生碰撞.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7703,6 +7727,14 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T123636Z" creationid="aceway" creationdate="20170129T123636Z">
         <seg>你可以通过访问 [**娱乐场场精灵演示**](http://babylonjs-playground.azurewebsites.net/?8) 来体验本教程的这些场景和代码.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can play with the scene used in this tutorial... by visiting the Babylon.js [**playground demo**](http://www.babylonjs-playground.com/#4HUQQ).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040400Z" creationid="aceway" creationdate="20170130T040400Z">
+        <seg>通过访问Babylon.js [**娱乐场的演示**](http://www.babylonjs-playground.com/#4HUQQ)你能够体验下我们例子里使用的场景.</seg>
       </tuv>
     </tu>
     <tu>
