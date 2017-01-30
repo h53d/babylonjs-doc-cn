@@ -22,6 +22,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Ellipsoid](https://camo.githubusercontent.com/19931f529e19679a0e2556e23fc94536e6a9b88c/687474703a2f2f7777772e626162796c6f6e6a732e636f6d2f7475746f7269616c732f30392532302d253230436f6c6c6973696f6e73253230477261766974792f30392d312e6a7067)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T034936Z" creationid="aceway" creationdate="20170130T034936Z">
+        <seg>![椭球体](https://camo.githubusercontent.com/19931f529e19679a0e2556e23fc94536e6a9b88c/687474703a2f2f7777772e626162796c6f6e6a732e636f6d2f7475746f7269616c732f30392532302d253230436f6c6c6973696f6e73253230477261766974792f30392d312e6a7067)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![VS02](http://i.imgur.com/Tb3nxWZ.png)
 Make sure you check "Create directory for solution", this way the c:\test\babylon.js directory will be used to store the .sln file and a new directory will be created in c:\test\babylon.js\babylon.js for the project file.</seg>
       </tuv>
@@ -3135,8 +3143,8 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       <tuv lang="EN-US">
         <seg>**2 - Define an ellipsoid**</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T034239Z" creationid="aceway" creationdate="20170130T034239Z">
-        <seg>**2 - 定义一个椭球体**</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T034717Z" creationid="aceway" creationdate="20170130T034239Z">
+        <seg>**2 - 定义一个椭球面**</seg>
       </tuv>
     </tu>
     <tu>
@@ -6731,7 +6739,7 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
       <tuv lang="EN-US">
         <seg>The next important step is to define the ellipsoid around our camera.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T034426Z" creationid="aceway" creationdate="20170130T034426Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035015Z" creationid="aceway" creationdate="20170130T034426Z">
         <seg>下一个重要的步骤是定义个椭球体包围相机.</seg>
       </tuv>
     </tu>
@@ -7067,6 +7075,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111309Z" creationid="aceway" creationdate="20160507T111309Z">
         <seg>这个可以设置为 _null_,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This ellipsoid represents our player’s dimensions: a collision event will be raised when a mesh comes in contact with this ellipsoid, preventing our camera from getting too close to this mesh:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035008Z" creationid="aceway" creationdate="20170130T034702Z">
+        <seg>这个椭球体表示我们角色的活动空间: 当网格和椭球体发生接触时就会抛出一个碰撞事件，以预防我们的相机和该网格考得太近:</seg>
       </tuv>
     </tu>
     <tu>
