@@ -3954,6 +3954,14 @@ easingFunction.setEasingMode(BABYLON.EasingFunction.EASINGMODE_EASEINOUT);</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// We try to pick an object</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T093720Z" creationid="aceway" creationdate="20170130T093720Z">
+        <seg>// 我们尝试拾取一个物体</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// the torus destination position
 var nextPos = torus.position.add(new BABYLON.Vector3(-80, 0, 0));</seg>
       </tuv>
@@ -4974,6 +4982,14 @@ player.cellIndex = 44;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>First of all, after creation of a plane representing the wall, and a plane with our impact’s picture, we have to detect a click on the UI (User Interface).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T093456Z" creationid="aceway" creationdate="20170130T093456Z">
+        <seg>首先, 创建一个代表墙的平面, 而且是个附有中弹效果的平面, 我们将检索UI (用户界面)上的鼠标点击.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>First, a 'call' to the createScene function that we just completed.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T064917Z" creationid="aceway@qq.com" creationdate="20160429T064917Z">
@@ -5294,6 +5310,14 @@ player.cellIndex = 44;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T115027Z" creationid="aceway" creationdate="20160507T115027Z">
         <seg>如果没提供, 则 DEFAULT 值被设置.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If not, it’s null.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T094228Z" creationid="aceway" creationdate="20170130T094228Z">
+        <seg>如果没有，它是null.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5825,8 +5849,8 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       <tuv lang="EN-US">
         <seg>Let’s see how we can get your mouse position transposed in your 3D scene by this gun shooting example:</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T092746Z" creationid="aceway" creationdate="20170130T092746Z">
-        <seg>通过下面这个手枪射击的例子，让我们弄明白如何在你的三维场景中获得转换后的鼠标位置:</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T094533Z" creationid="aceway" creationdate="20170130T092746Z">
+        <seg>通过下面这个用枪射击的例子，让我们弄明白如何在你的三维场景中获得转换后的鼠标位置:</seg>
       </tuv>
     </tu>
     <tu>
@@ -6019,6 +6043,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now we have all the data we need to build our scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T094436Z" creationid="aceway" creationdate="20170130T094436Z">
+        <seg>现在我们已经有了创建场景的所有数据。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now we load our framework files.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145722Z" creationid="aceway" creationdate="20160428T145722Z">
@@ -6115,6 +6147,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Null if no hit.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T094406Z" creationid="aceway" creationdate="20170130T094406Z">
+        <seg>如果没命中则为null.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Objects are everywhere, but they are good friends that help us stay organized.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T103458Z" creationid="aceway@qq.com" creationdate="20160421T103458Z">
@@ -6127,6 +6167,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T143514Z" creationid="aceway" creationdate="20160425T143514Z">
         <seg>通常, **保存**按钮用在你要和其他人分享你的场景网址时, 或者用在你要将场景作为书签保存到浏览器里时, 这样你可以可以回来继续工作.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once the event is raised, use the function “pick” to get some powerful information about the relation between your click and your scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T093647Z" creationid="aceway" creationdate="20170130T093647Z">
+        <seg>当事件一旦抛出, 使用函数“pick”获取些强有力的信息---点击和场景的关系.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7123,6 +7171,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T090652Z" creationid="aceway" creationdate="20170130T090652Z">
         <seg>另一个你可以使用的函数是“intersectsPoint()”，通过指定点来调用, 像这样:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The pickResult object is mainly composed of 4 pieces of information:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T093830Z" creationid="aceway" creationdate="20170130T093830Z">
+        <seg>该pickResult对象主要是4个信息片段的组合:</seg>
       </tuv>
     </tu>
     <tu>
@@ -8619,6 +8675,16 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>_distance_ (float): the “distance” between the active camera and your hit (infinite if no mesh was hit)
+1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T094132Z" creationid="aceway" creationdate="20170130T094132Z">
+        <seg>_距离_ (浮点值): 激活相机与你命中的物体间的 “距离” (如果没有命中则未无穷大)
+1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>_do a search/replace of "..\packages" by "packages", replace all occurences._</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101404Z" creationid="aceway@qq.com" creationdate="20160427T101404Z">
@@ -8631,6 +8697,30 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101240Z" creationid="aceway@qq.com" creationdate="20160427T101240Z">
         <seg>_避免所有的 .js 文件引用_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_hit_ (bool): « True » if your click hits an object in the scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T093951Z" creationid="aceway" creationdate="20170130T093951Z">
+        <seg>_点击_ (布尔值): « 真 » 如果你的点击命中了场景中的一个物体.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_pickedMesh_ (BABYLON.Mesh): if you hit an object, this is the selected mesh.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T094211Z" creationid="aceway" creationdate="20170130T094211Z">
+        <seg>_拾取的网格_ (BABYLON.Mesh): 如果你命中一个物体，这时该选中的网格.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_pickedPoint_ (BABYLON.Vector3): the point you have clicked, transformed in 3D coordinates, depending on the object you’ve clicked.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T094350Z" creationid="aceway" creationdate="20170130T094350Z">
+        <seg>_拾取点_ (BABYLON.Vector3): 你点击的点, 转换到三维空间坐标的, 依赖于你点击的物体.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8945,6 +9035,18 @@ camera.ellipsoid = new BABYLON.Vector3(1, 1, 1);
 //设置包围相机的椭球体 (如您的播放器大小)
 camera.ellipsoid = new BABYLON.Vector3(1, 1, 1);
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+//When click event is raised
+window.addEventListener("click", function () {</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T093707Z" creationid="aceway" creationdate="20170130T093707Z">
+        <seg>```javascript
+//当点击事件抛出时
+window.addEventListener("click", function () {</seg>
       </tuv>
     </tu>
     <tu>
