@@ -1384,6 +1384,14 @@ A ground is defined by the following JSON:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## How can I do this?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104419Z" creationid="aceway" creationdate="20170131T104419Z">
+        <seg>## 我怎么做到这个?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Instances
 A instance is defined by the following JSON:
 ```javascript
@@ -2428,6 +2436,14 @@ And that’s it!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### Changing the Background color (`scene.clearColor`)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T105002Z" creationid="aceway" creationdate="20170131T105002Z">
+        <seg>### 改变背景色(`scene.clearColor`)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### Development mode</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093017Z" creationid="aceway@qq.com" creationdate="20160427T093017Z">
@@ -3267,6 +3283,22 @@ particleSystem.maxSize = 0.5;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093618Z" creationid="aceway@qq.com" creationdate="20160427T093618Z">
         <seg>* 你必须引用BabylonJS的大约150个 .js 文件而不是一个主文件(比如Babylon.js)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `scene.ambientColor` - changes the color used in several effects, including ambient lighting.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104744Z" creationid="aceway" creationdate="20170131T104744Z">
+        <seg> `scene.ambientColor` - 通过几种效果改变颜色，包括环境光源.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `scene.clearColor` - changes the 'background' color.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104619Z" creationid="aceway" creationdate="20170131T104619Z">
+        <seg>* `scene.clearColor` - 改变'背景'色.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4924,6 +4956,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Both of them are very useful, and powerful in their own right.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104950Z" creationid="aceway" creationdate="20170131T104950Z">
+        <seg>两者都非常有用，且在各自范围内效果强劲.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Briefly said, you can enter or modify Javascript-based BabylonJS scene code on the left-side 'editor' portion of the playground, press the Run button, and the playground will attempt to render the webGL scene on the right side, using the latest version of the BabylonJS framework.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T141641Z" creationid="aceway" creationdate="20160425T141641Z">
@@ -5476,6 +5516,14 @@ particleSystem.start();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>First, I want to introduce you to two interesting properties on the [scene class object](http://doc.babylonjs.com/classes/Scene):</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104559Z" creationid="aceway" creationdate="20170131T104559Z">
+        <seg>首先, 我想给介绍下[场景类型对象](http://doc.babylonjs.com/classes/Scene)的两个有趣属性:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>First, a 'call' to the createScene function that we just completed.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T064917Z" creationid="aceway@qq.com" creationdate="20160429T064917Z">
@@ -5706,6 +5754,14 @@ particleSystem.manualEmitCount = 300;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T085723Z" creationid="aceway" creationdate="20170130T085304Z">
         <seg>这儿是个边界盒的例子:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is how it is done:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T105349Z" creationid="aceway" creationdate="20170131T105349Z">
+        <seg>这个就是具体做法:</seg>
       </tuv>
     </tu>
     <tu>
@@ -6269,6 +6325,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T134946Z" creationid="aceway" creationdate="20160522T134946Z">
         <seg>默认是设置为TRUE, 但是如果需要的话可以改为false.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is simply the background color of the scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T105823Z" creationid="aceway" creationdate="20170131T105823Z">
+        <seg>它简化了场景的背景色.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7203,6 +7267,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Simply stated, this is how you change the background color of the scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T105330Z" creationid="aceway" creationdate="20170131T105330Z">
+        <seg>简单的说，这是你改变场景背景色的方式.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So far, you only have some grey-colored meshes.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T122820Z" creationid="aceway" creationdate="20160508T122820Z">
@@ -7473,6 +7545,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040230Z" creationid="aceway" creationdate="20170130T040230Z">
         <seg>这就可以了!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The 'clearColor' property on the scene object is the most rudimentary of environment properties/adjustments.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T105228Z" creationid="aceway" creationdate="20170131T105228Z">
+        <seg>场景对象的这个'clearColor'属性，是基础的环境属性/调整器.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8901,6 +8981,14 @@ if (pickResult.hit) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We will talk about that nice fog effect, shortly.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104509Z" creationid="aceway" creationdate="20170131T104509Z">
+        <seg>不久我们将讨论那个漂亮的雾效果.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We will use the “intersectsMesh()” function, with two parameters: the mesh to be checked, and the precision of the intersection (boolean).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084919Z" creationid="aceway" creationdate="20170130T084919Z">
@@ -9357,8 +9445,8 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       <tuv lang="EN-US">
         <seg>You have come a long way, have learned about shapes, lights, sprites, particles, materials.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T103331Z" creationid="aceway" creationdate="20170131T103331Z">
-        <seg>你已经走过漫长的路途了，已经学了造型，灯光，精灵，粒子，材质.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104810Z" creationid="aceway" creationdate="20170131T103331Z">
+        <seg>你已经走过漫长的路途了，已经学了造型，光源，精灵，粒子，材质.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9581,6 +9669,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
 - 片段名(可以是着色器里存储的，或者时页面DOM元素的ID)
 - 附加参数的数组(类型统一)
 - 附加采样的数组(给附加纹理使用的!)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_A picture showing Babylon.js fog in action_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104404Z" creationid="aceway" creationdate="20170131T104404Z">
+        <seg>_一图展示Babylon.js的雾感_</seg>
       </tuv>
     </tu>
     <tu>
@@ -10109,6 +10205,28 @@ function createScene() {
     var scene = new BABYLON.Scene(engine);
     var light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(0, 100, 100), scene);
     var camera = new BABYLON.ArcRotateCamera("camera", 0, 0.8, 100, new BABYLON.Vector3.Zero(), scene);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+scene.clearColor = new BABYLON.Color3(0.5, 0.8, 0.5);
+```
+Or maybe you want to use one of our preset colors and avoid using the `new` keyword:
+```javascript
+scene.clearColor = BABYLON.Color3.Blue();
+```
+This color and property is not used in any calculations for the final colors of mesh, materials, textures, or anything else.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T105811Z" creationid="aceway" creationdate="20170131T105811Z">
+        <seg>```javascript
+scene.clearColor = new BABYLON.Color3(0.5, 0.8, 0.5);
+```
+或者你想使用某个预设的颜色而避免使用`new`关键字:
+```javascript
+scene.clearColor = BABYLON.Color3.Blue();
+```
+在网格、材质、纹理或任何其它东西最终颜色的计算中，该颜色和属性都不会被使用.</seg>
       </tuv>
     </tu>
     <tu>
