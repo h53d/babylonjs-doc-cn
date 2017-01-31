@@ -4352,6 +4352,20 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A bit below that, you will see:
+```javascript
+var effect = engine.createEffectForParticles("myParticle", ["time"]);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T094423Z" creationid="aceway" creationdate="20170131T094423Z">
+        <seg>下面一点, 你会看到:
+```javascript
+var effect = engine.createEffectForParticles("myParticle", ["time"]);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A picture of [the playground's ParticleSystem demo](http://babylonjs-playground.azurewebsites.net/?12)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T025021Z" creationid="aceway" creationdate="20170131T025021Z">
@@ -4516,6 +4530,14 @@ scene.beginAnimation(torus, 0, 120, true);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031129Z" creationid="aceway" creationdate="20170131T031129Z">
         <seg>也请记住，多个粒子系统能够共用同一个发射器。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Also notice that the ShadersStore is a namespace upon this special [Effect Object](http://doc.babylonjs.com/classes/Effect).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T095114Z" creationid="aceway" creationdate="20170131T095114Z">
+        <seg>还要注意，ShadersStore是基于该特殊[效果对象](http://doc.babylonjs.com/classes/Effect)的命名空间.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6383,6 +6405,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Notice how it is used in the registerBeforeRender function.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T095258Z" creationid="aceway" creationdate="20170131T095258Z">
+        <seg>注意在registerBeforeRender函数中是如何使用它的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Notice the [ and ].</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T141804Z" creationid="aceway" creationdate="20160503T141626Z">
@@ -6395,6 +6425,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T150155Z" creationid="aceway" creationdate="20160404T150155Z">
         <seg>注意当前标注了 **基础场景**的按钮.&amp;nbsp; (实际上它叫做场景选择按钮, 只是当前标上了'基础场景').</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice the line:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T094356Z" creationid="aceway" creationdate="20170131T094356Z">
+        <seg>注意那行:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7325,6 +7363,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The Effect Object has many 'setter' methods on it, one of which is _.setFloat_.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T095207Z" creationid="aceway" creationdate="20170131T095207Z">
+        <seg>该效果对象有许多设置('setter')方法，其中之一便是_.setFloat_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The JS code you see inside the green section... will be talked about soon.&amp;nbsp; Mainly, I would like you to study the big picture, and see how the single HTML file method of creating Babylon.js scenes... is structured.&amp;nbsp; I want you to try to visualize and somewhat memorize... this scene file's 'layout'.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030158Z" creationid="aceway" creationdate="20160404T025459Z">
@@ -7743,6 +7789,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The particle Effect Object is a slightly-modified [Babylon Effect Object](http://doc.babylonjs.com/classes/Effect).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T094907Z" creationid="aceway" creationdate="20170131T094907Z">
+        <seg>粒子的效果对象稍有改变[Babylon效果对象](http://doc.babylonjs.com/classes/Effect).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The pickResult object is mainly composed of 4 pieces of information:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T093830Z" creationid="aceway" creationdate="20170130T093830Z">
@@ -7779,6 +7833,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084738Z" creationid="aceway" creationdate="20170130T084738Z">
         <seg>此处的关键是检测气球和地面间的接触点。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The primary author of Babylon.js was kind enough to make us [a fantastic playground demo of a particle system using a fragment shader effect](http://babylonjs-playground.azurewebsites.net/#1ASENS).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T094200Z" creationid="aceway" creationdate="20170131T094200Z">
+        <seg>Babylon.js的主要作品足以为我们提供[一个使用片段着色器实现的神奇粒子系统的演示](http://babylonjs-playground.azurewebsites.net/#1ASENS).</seg>
       </tuv>
     </tu>
     <tu>
@@ -8133,6 +8195,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111309Z" creationid="aceway" creationdate="20160507T111309Z">
         <seg>这个可以设置为 _null_,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This causes the speed of the effect to cycle across about a 20 second time span.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T095554Z" creationid="aceway" creationdate="20170131T095554Z">
+        <seg>这导致粒子效果以大约20秒为一个跨度循环.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8545,6 +8615,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T103316Z" creationid="aceway@qq.com" creationdate="20160421T103316Z">
         <seg>值... 通常是存储在对象的属性(存储空间)里的内容, 而且可以通过调用 GETTER 方法获取到.&amp;nbsp; 也许听起来这很疯狂：所有值都是Javascript对象.&amp;nbsp; 还记得前面看到的那个0.5浮点数吗?&amp;nbsp; 那是个数值对象.&amp;nbsp; 上面那个 'box_I_made' 变量... 它是个网格对象.&amp;nbsp; 网格，像机和灯光的名称 是字符串对象.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Visit that link, and you can see a fragment shader program that has been stored in a shader store.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T094329Z" creationid="aceway" creationdate="20170131T094329Z">
+        <seg>访问连接，然后你就可以看到一个存储在着色器里的片段着色器程序.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9303,6 +9381,20 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T082355Z" creationid="aceway" creationdate="20160423T082355Z">
         <seg>[**oimo.js**](http://www.babylonjs.com/oimo.js)&amp;nbsp; &lt;= 右击... 保存链接/目标</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_.createEffectForParticles_ accepts the following parameters:
+- fragment name (can be in the shaders store or the id of a DOM element)
+- array of additional parameters (uniforms)
+- array of additional samplers (for additional textures!)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T094751Z" creationid="aceway" creationdate="20170131T094445Z">
+        <seg>_.createEffectForParticles_ 接受下面的参数:
+- 片段名(可以是着色器里存储的，或者时页面DOM元素的ID)
+- 附加参数的数组(类型统一)
+- 附加采样的数组(给附加纹理使用的!)</seg>
       </tuv>
     </tu>
     <tu>
