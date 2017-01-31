@@ -54,6 +54,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Flare](http://www.babylonjs.com/tutorials/12%20-%20Particles/Flare.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031208Z" creationid="aceway" creationdate="20170131T031208Z">
+        <seg>![耀斑](http://www.babylonjs.com/tutorials/12%20-%20Particles/Flare.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![Particles](http://www.babylonjs.com/tutorials/12%20-%20Particles/12.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T023143Z" creationid="aceway" creationdate="20170131T023143Z">
@@ -66,6 +74,14 @@
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T092754Z" creationid="aceway" creationdate="20170130T092754Z">
         <seg>![拾取](http://www.babylonjs.com/tutorials/11%20-%20Collisions%20PickResult/11.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>![TextureMask](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-1.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031605Z" creationid="aceway" creationdate="20170131T031605Z">
+        <seg>![纹理掩码](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-1.png)</seg>
       </tuv>
     </tu>
     <tu>
@@ -2692,6 +2708,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(in the playground demo, we used /textures/flare.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031305Z" creationid="aceway" creationdate="20170131T031305Z">
+        <seg>(在娱乐场的演示，我们使用 /textures/flare.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(precision.w : in width; precision.h: in height), scene, updatable.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T123553Z" creationid="aceway" creationdate="20160507T123553Z">
@@ -4348,6 +4372,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Also keep in mind that multiple particle systems can use the same emitter object.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031129Z" creationid="aceway" creationdate="20170131T031129Z">
+        <seg>也请记住，多个粒子系统能够共用同一个发射器。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Although this playground is blending the same animation into itself, more often, a different animation will be blended-into the original, such as when a walking character changes to running.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T125321Z" creationid="aceway" creationdate="20160402T125321Z">
@@ -4392,6 +4424,14 @@ scene.beginAnimation(torus, 0, 120, true);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152230Z" creationid="aceway" creationdate="20160402T152230Z">
         <seg>一个事件 是在某指定帧会被调用的函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An important part is to define the texture of each particle.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T030743Z" creationid="aceway" creationdate="20170131T030743Z">
+        <seg>一个重要的部分是定义每个粒子的纹理。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4696,6 +4736,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But keep in mind that a single scene can contain multiple particleSystems, and each one can emit particles with unique texture patterns.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031051Z" creationid="aceway" creationdate="20170131T031051Z">
+        <seg>但请记住，一个场景里可以有多个粒子系统，而且每个粒子系统只能发射出一种纹理模式。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But maybe you would like to know when a mesh is in collision with another mesh?</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T080822Z" creationid="aceway" creationdate="20170130T080822Z">
@@ -4916,6 +4964,14 @@ Did you ever play a FPS (First Person Shooter) game?</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T002328Z" creationid="aceway" creationdate="20160403T135120Z">
         <seg>每个包含都是 JavaSCRIPT 文件, 所以它们被放在使用 HTML的 `&lt;SCRIPT&gt;` 元素/标签中.&amp;nbsp; 这些文件里显示的 'src' (源码位置) 在 the Babylon.js 网站的文件夹里, 但是稍后我将告诉你如何把这些文件放到你的硬盘驱动器里 - 如果你希望那样做, 然后从那儿包含它们.&amp;nbsp; 当是"本地" 时她们加载会更快, 但是当你将它们保存到本地后你需要修改 'src' 的网址; 我很快会告诉你如何做的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each one will have the same pattern, so choose carefully which one you want.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T030906Z" creationid="aceway" creationdate="20170131T030906Z">
+        <seg>每个粒子都会拥有相同的纹理模式，因此请仔细选择你想要的纹理。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5152,6 +5208,14 @@ player.cellIndex = 44;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160520Z" creationid="aceway" creationdate="20160402T145829Z">
         <seg>这特地准备了一个参考来说明如何创建你的曲线算法 : [http://cubic-bezier.com](http://cubic-bezier.com)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For this texture, you can use an optional mask to filter some colors, or filter a part of the alpha channel.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031523Z" creationid="aceway" creationdate="20170131T031523Z">
+        <seg>对这种纹理，你可以使用可选的掩码来过滤些颜色，或者过滤部分透明通道.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6447,6 +6511,14 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054015Z" creationid="aceway@qq.com" creationdate="20160331T014128Z">
         <seg>我们的目标是：移动这个"box1"。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Our particle texture is going to be this one:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031150Z" creationid="aceway" creationdate="20170131T031150Z">
+        <seg>我们的粒子纹理将是这样的:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7835,6 +7907,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is the output of this configuration:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031558Z" creationid="aceway" creationdate="20170131T031558Z">
+        <seg>这是该配置的输出:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is very handy, and again, we love it.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T022526Z" creationid="aceway@qq.com" creationdate="20160427T022526Z">
@@ -8033,6 +8113,20 @@ var materialSphere1 = new BABYLON.StandardMaterial("texture1", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T145335Z" creationid="aceway" creationdate="20160410T142433Z">
         <seg>老实说, 光源不是绝对必需的.&amp;nbsp; 如果场景里的网格对象都设置了material.emissiveColor(材质的颜色)或material.emissiveTexture(材质的纹理)属性, 那么它们自己会产生各自的光.&amp;nbsp; 它们将是 '自发光的'.&amp;nbsp; 注意, 如果一个场景里没有光是很容易迷失的.&amp;nbsp; 好的建议是总是创建一个光源(半球体光源(HemisphericLight)是个非常方便的灯光工具 - 应用到天空体上).&amp;nbsp; 你可以通过调整它的 .intensity 值来设置光的亮度.&amp;nbsp;在操练系列教程里我们有一个例子, 专门谈论各种光源.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To define the particle’s texture, add a line like this:
+```javascript
+particleSystem.particleTexture = new BABYLON.Texture("Flare.png", scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031234Z" creationid="aceway" creationdate="20170131T031234Z">
+        <seg>为了定义纹理，添加一行这样的代码:
+```javascript
+particleSystem.particleTexture = new BABYLON.Texture("Flare.png", scene);
+```</seg>
       </tuv>
     </tu>
     <tu>
