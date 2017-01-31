@@ -2436,6 +2436,14 @@ And that’s it!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### Changing the Ambient color (`scene.ambientColor`)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T105849Z" creationid="aceway" creationdate="20170131T105849Z">
+        <seg>### 改变环境色(`scene.ambientColor`)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### Changing the Background color (`scene.clearColor`)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T105002Z" creationid="aceway" creationdate="20170131T105002Z">
@@ -5328,6 +5336,14 @@ particleSystem.disposeOnStop = true;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040241Z" creationid="aceway" creationdate="20170130T040241Z">
         <seg>简单!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Easy.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T110426Z" creationid="aceway" creationdate="20170131T105835Z">
+        <seg>简单.</seg>
       </tuv>
     </tu>
     <tu>
