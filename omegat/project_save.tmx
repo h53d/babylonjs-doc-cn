@@ -54,6 +54,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![EmitBox](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-2.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T073059Z" creationid="aceway" creationdate="20170131T073059Z">
+        <seg>![发射盒EmitBox](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-2.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![Flare](http://www.babylonjs.com/tutorials/12%20-%20Particles/Flare.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031208Z" creationid="aceway" creationdate="20170131T031208Z">
@@ -2998,10 +3006,44 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* Emit rate.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T073902Z" creationid="aceway" creationdate="20170131T073902Z">
+        <seg>* 发射频率.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* Include the Babylon.js source code in the web project.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094620Z" creationid="aceway@qq.com" creationdate="20160427T094620Z">
         <seg>* 在该WEB工程里包含进Babylon.js源代码</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* LifeTime of particles:
+```javascript
+// Life time of each particle (random between...)
+particleSystem.minLifeTime = 0.3;
+particleSystem.maxLifeTime = 1.5;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T073846Z" creationid="aceway" creationdate="20170131T073846Z">
+        <seg>* 粒子的时长:
+```javascript
+// 每个粒子的时长(在两值间随机...)
+particleSystem.minLifeTime = 0.3;
+particleSystem.maxLifeTime = 1.5;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Now you can give some colors to your particles.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T073137Z" creationid="aceway" creationdate="20170131T073137Z">
+        <seg>* 现在你可以给粒子赋予一些颜色.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3021,6 +3063,24 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
  * 变形目标
  * 精灵碰撞
  * 使用webworkers的八叉树连续更新</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Size of particles:
+```javascript
+// Size of each particle (random between...)
+particleSystem.minSize = 0.1;
+particleSystem.maxSize = 0.5;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T073659Z" creationid="aceway" creationdate="20170131T073659Z">
+        <seg>* 粒子的大小:
+```javascript
+// 每个粒子的大小 (在两值间随机...)
+particleSystem.minSize = 0.1;
+particleSystem.maxSize = 0.5;
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -4590,6 +4650,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As you can see, particles are emitted from different positions along the X-axis:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T073046Z" creationid="aceway" creationdate="20170131T073046Z">
+        <seg>正如你所见，粒子沿着X轴从不同的位置发射出来:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As you guessed, the mesh faces are now visible on both sides.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T120926Z" creationid="aceway" creationdate="20160507T120926Z">
@@ -4736,6 +4804,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But it might not be our final result.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T072617Z" creationid="aceway" creationdate="20170131T072617Z">
+        <seg>但它可能不是我们的最终结果.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But keep in mind that a single scene can contain multiple particleSystems, and each one can emit particles with unique texture patterns.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031051Z" creationid="aceway" creationdate="20170131T031051Z">
@@ -4836,6 +4912,14 @@ Did you ever play a FPS (First Person Shooter) game?</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T150650Z">
         <seg>请点击它.&amp;nbsp; 注意那有许多不同当预装场景 (创建场景的功能).&amp;nbsp; 可以在它们中自便的选择.&amp;nbsp; 浏览一下, 在之中拖动鼠标, 甚或在编辑区域修改下代码然后点击 **运行** .&amp;nbsp; 你不可能毁坏预装的场景, 甚至你点击了 **保存**也不会.&amp;nbsp; 你在 Babylon.js 的娱乐场的场景里很安全, 而且你可以看到许多的创建场景的函数.&amp;nbsp; 你可以使用它们的设定玩一下, 再次点击 运行.&amp;nbsp; 再次的, 你可以使用娱乐演示图任何一个演示上方的 *获取 .zip压缩包**, 从而实现你的收集梦想.&amp;nbsp; 方便, 是吧?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Color one and two are combined, and “colorDead” is the color that the particle takes-on just before it disappears.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T073316Z" creationid="aceway" creationdate="20170131T073316Z">
+        <seg>颜色一和二被混合，而且 “colorDead”(死亡色)是粒子消失去前展现出来的颜色.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6275,6 +6359,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now you should see your particle system working.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T072532Z" creationid="aceway" creationdate="20170131T072532Z">
+        <seg>现在你应该看到你的粒子系统工作了.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now, if you construct triangular faces by joining alternate points of the first and the second path, like when you lace shoes, you get a ribbon.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103101Z" creationid="aceway" creationdate="20160507T102759Z">
@@ -6503,6 +6595,18 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T122233Z" creationid="aceway" creationdate="20160507T122233Z">
         <seg>我们的 [**娱乐场演示场景01**](http://www.babylonjs-playground.com/?1)使用了一个CreateGround构造函数... 所以你可以使用上面的链接来看看它的行为.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Our emitter is the center of particles source, but if you want your particles to emit from more than one point, then you can tell it to do so:
+```javascript
+particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T072910Z" creationid="aceway" creationdate="20170131T072910Z">
+        <seg>我们的发射器时粒子源的中心，但是如果你希望粒子从不同的点发射，那么你可以告诉它这也做：
+```javascript
+particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From</seg>
       </tuv>
     </tu>
     <tu>
@@ -8287,6 +8391,16 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We can refine some parameters:
+* Box around our emitter.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T072701Z" creationid="aceway" creationdate="20170131T072701Z">
+        <seg>我们可以优化一些参数:
+* 围绕发射器的盒子.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We defined a precise point in our scene, and if our balloon intersects this point, wherever on the balloon, then the event is raised and we change the color of the balloon.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T091221Z" creationid="aceway" creationdate="20170130T091221Z">
@@ -9364,6 +9478,24 @@ var keys = [];</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>```javascript
+// Colors of all particles (splited in 2 + specific color before dispose)
+particleSystem.color1 = new BABYLON.Color4(0.7, 0.8, 1.0, 1.0);
+particleSystem.color2 = new BABYLON.Color4(0.2, 0.5, 1.0, 1.0);
+particleSystem.colorDead = new BABYLON.Color4(0, 0, 0.2, 0.0);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T073614Z" creationid="aceway" creationdate="20170131T073614Z">
+        <seg>```javascript
+// 所有粒子的颜色 (被拆分成2种色 + 1种特殊色的方式来处理)
+particleSystem.color1 = new BABYLON.Color4(0.7, 0.8, 1.0, 1.0);
+particleSystem.color2 = new BABYLON.Color4(0.2, 0.5, 1.0, 1.0);
+particleSystem.colorDead = new BABYLON.Color4(0, 0, 0.2, 0.0);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
 // Create a sprite manager
 var spriteManagerTrees = new BABYLON.SpriteManager("treesManagr", "Assets/Palm-arecaceae.png", 2000, 800, scene);
 ```</seg>
@@ -9631,6 +9763,16 @@ Parameters are: name, [array of comma-separated vectors], scene.</seg>
 ], 场景);
 ```
 参数为: 名称, [都好分隔的向量数组], 场景.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>particleSystem.maxEmitBox = new BABYLON.Vector3(1, 0, 0); // To...
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T072951Z" creationid="aceway" creationdate="20170131T072951Z">
+        <seg>particleSystem.maxEmitBox = new BABYLON.Vector3(1, 0, 0); // 目标...
+```</seg>
       </tuv>
     </tu>
     <tu>
