@@ -5354,6 +5354,14 @@ player.cellIndex = 44;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>I will talk about the fourth parameter further below.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T030701Z" creationid="aceway" creationdate="20170131T030701Z">
+        <seg>我会在更后面些讨论第四个参数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>I will talk more about scaling... further below.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T143226Z" creationid="aceway" creationdate="20160421T143226Z">
@@ -5632,6 +5640,22 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121305Z" creationid="aceway" creationdate="20160507T121305Z">
         <seg>在其它方面, 你的网格消耗将翻倍.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In our case, a box will be our emitting object, representing a particle fountain.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T025606Z" creationid="aceway" creationdate="20170131T025606Z">
+        <seg>在本例里，一个盒子将成为我们的发生器，代表一个粒子喷泉.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In our case, the emitter is our fountain, but if you wish, you can use only a vector (BABYLON.Vector3) as an emitter.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T030109Z" creationid="aceway" creationdate="20170131T030109Z">
+        <seg>在本例里，发射器是由喷泉来定义，但是如果你愿意的话，也可以使用仅仅一个向量 (BABYLON.Vector3)来定义发射器.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6219,6 +6243,20 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now, we must create a new (not-rendered) ParticleSystem object:
+```javascript
+var particleSystem = new BABYLON.ParticleSystem("particles", 2000, scene, customEffect);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T030153Z" creationid="aceway" creationdate="20170131T030153Z">
+        <seg>现在，我们必须创建一个新的(未渲染的)粒子系统对象:
+```javascript
+var particleSystem = new BABYLON.ParticleSystem("particles", 2000, scene, customEffect);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now, your camera is going to fall on the y-axis until it collides with the ground.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040452Z" creationid="aceway" creationdate="20170130T040452Z">
@@ -6653,6 +6691,14 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Simple.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T030226Z" creationid="aceway" creationdate="20170131T030210Z">
+        <seg>简单吧.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Simply put, “back-face culling” determines whether or not a StandardMaterial is visible from its back side (from behind).  TRUE = NOT visible.  More precisely, this rendering-speed-optimization technique determines if a polygon of a graphical object is visible or not.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T134744Z" creationid="aceway" creationdate="20160522T134744Z">
@@ -6681,6 +6727,14 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034958Z" creationid="aceway@qq.com" creationdate="20160429T034958Z">
         <seg>所以现在，将这里整个createScene函数添加到你的网页里:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So pay attention to the location/rotation of this object.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T025853Z" creationid="aceway" creationdate="20170131T025853Z">
+        <seg>因此注意盒子对象的位置和运转。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7027,6 +7081,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The emitter acts as the source of the particles, and its location in 3D space determines where they are generated and how they move.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T025815Z" creationid="aceway" creationdate="20170131T025815Z">
+        <seg>发射器作为粒子源，它在三维空间里的位置决定着粒子的在哪生成以及如何移动。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The first and second sphere (balloon) will collide on the rotated ground, the last one will be in collision only on a single point.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084422Z" creationid="aceway" creationdate="20170130T084422Z">
@@ -7047,6 +7109,14 @@ scene.registerBeforeRender(function () {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T154251Z" creationid="aceway" creationdate="20160330T033530Z">
         <seg>第一种方式是定义一系列的键值集合，并且定义好每个键值对应的对象物状态。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first parameter is the name, he second parameter is the maximum number of particles, the third parameter is the scene, and the optional fourth parameter is a reference to a shader effect for the particles, overriding the default shader.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T030628Z" creationid="aceway" creationdate="20170131T030628Z">
+        <seg>第一个参数是名称，第二个参数是最大粒子数，第三个是粒子所在的场景，可选的第四个参数是粒子着色器的引用---用来覆盖默认的着色器.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8001,6 +8071,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034728Z" creationid="aceway@qq.com" creationdate="20160429T034728Z">
         <seg>为了保持你的代码和Babylon.js娱乐场兼容, 我们建议你在此处插入一个 'createScene' 函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To perform this magic trick, the first thing to do is to create a new object, which will be the particle emitter.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T025438Z" creationid="aceway" creationdate="20170131T025438Z">
+        <seg>为了执行这个魔法，首先需要创建一个新的粒子发射器对象.</seg>
       </tuv>
     </tu>
     <tu>
