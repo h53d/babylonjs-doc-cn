@@ -124,6 +124,22 @@ A Saved 'Custom' Playground Scene: http://babylonjs-playground.azurewebsites.net
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![emitRate](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-3.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T074106Z" creationid="aceway" creationdate="20170131T074053Z">
+        <seg>![发射速率](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-3.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>![emitRate](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-4.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T075518Z" creationid="aceway" creationdate="20170131T075518Z">
+        <seg>![发射速率](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-4.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![tof](http://www.babylonjs.com/tutorials/04%20-%20Materials/04-2.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T135403Z" creationid="aceway" creationdate="20160522T135403Z">
@@ -2964,6 +2980,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* AngularSpeed.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T075526Z" creationid="aceway" creationdate="20170131T075526Z">
+        <seg>* 角速度.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* BABYLON.Engine.CodeRepository: By default, this value points to "/src/"
 * BABYLON.Engine.ShadersRepository: By default, this value points to "/src/Shaders/"</seg>
       </tuv>
@@ -3006,10 +3030,26 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* Direction.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T075330Z" creationid="aceway" creationdate="20170131T075330Z">
+        <seg>* 方向.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* Emit rate.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T073902Z" creationid="aceway" creationdate="20170131T073902Z">
-        <seg>* 发射频率.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T074115Z" creationid="aceway" creationdate="20170131T073902Z">
+        <seg>* 发射速率.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Gravity.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T075001Z" creationid="aceway" creationdate="20170131T075001Z">
+        <seg>* 重力.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3121,6 +3161,14 @@ particleSystem.maxSize = 0.5;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093400Z" creationid="aceway@qq.com" creationdate="20160427T093400Z">
         <seg>* 编译快速(它仅仅编译.ts文件成.js文件, 没有合并/缩小)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* The selected mode for particles.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T074555Z" creationid="aceway" creationdate="20170131T074555Z">
+        <seg>* 粒子的选中模式.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4722,6 +4770,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Be aware that the stream is no longer continuous.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T074417Z" creationid="aceway" creationdate="20170131T074417Z">
+        <seg>要注意粒子流不在是持续的了.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Be aware that this type of bounding box is especially useful when your mesh is rotated to an angle.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T090120Z" creationid="aceway" creationdate="20170130T090120Z">
@@ -5266,6 +5322,20 @@ player.cellIndex = 44;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, if you want to emit only 300 particles:
+```javascript
+particleSystem.manualEmitCount = 300;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T074336Z" creationid="aceway" creationdate="20170131T074219Z">
+        <seg>比如，你想仅发射300颗粒子:
+```javascript
+particleSystem.manualEmitCount = 300;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example: name = "target" and value = "Plane001")
     "targetType": string (internal use for the BabylonJS Actions Builder, specifies where to find the properties for "propertyPath")
 }
@@ -5698,6 +5768,14 @@ player.playAnimation(0, 43, true, 100);
 ```javascript
 player.playAnimation(0, 43, true, 100);
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to launch only a few particles at once, that can be done, as well.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T074314Z" creationid="aceway" creationdate="20170131T074211Z">
+        <seg>如果你想一次加载特定颗数的粒子，那也是可以做到的。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6791,6 +6869,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160418T150014Z" creationid="aceway" creationdate="20160418T150014Z">
         <seg>属性是存储着的值.&amp;nbsp; 这些纸被Babylon.js框架使用... 用于 '渲染(render)' 场景.&amp;nbsp; 这是个例子:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Random direction of each particle after it has been emitted, between direction1 and direction2 vectors.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T075503Z" creationid="aceway" creationdate="20170131T075503Z">
+        <seg>粒子发射后其方向随机介于方向1和方向2之间.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7993,6 +8079,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is a one-shot particle emission, so this function overrides the previous “emitRate” parameter.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T074537Z" creationid="aceway" creationdate="20170131T074537Z">
+        <seg>这是个一次性的粒子发射，因此这个功能覆盖了之前的发射速率(“emitRate”)参数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is a picture of the playground's pop-up compilation error detector panel.&amp;nbsp; A compilation error is an error detected by the BabylonJS framework... after you have clicked the Run button.&amp;nbsp; It is not a syntax error detected by the editor, but the editor might ALSO detect it and possibly mark the problem line with a red X icon along its left side.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T025420Z" creationid="aceway@qq.com" creationdate="20160427T025420Z">
@@ -8021,6 +8115,20 @@ var index2 = indices[pickResult.faceId * 3 + 2];
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071013Z" creationid="aceway@qq.com" creationdate="20160427T071013Z">
         <seg>这个是完整的babylon.js版本.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is the density of particles, the rate of particle flow:
+```javascript
+particleSystem.emitRate = 1000;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T074025Z" creationid="aceway" creationdate="20170131T074025Z">
+        <seg>这是粒子的密度, 粒子流的速率:
+```javascript
+particleSystem.emitRate = 1000;
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -8625,6 +8733,14 @@ if (pickResult.hit) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can choose between “BLENDMODE_ONEONE” (default choice: source color is added to the destination color without alpha affecting the result), and “BLENDMODE_STANDARD” (to blend current color and particle color using particle’s alpha).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T074946Z" creationid="aceway" creationdate="20170131T074946Z">
+        <seg>你能够在“BLENDMODE_ONEONE” (默认选择: 源色附加到目标色，不受透明通道影响), 和“BLENDMODE_STANDARD” (将当前颜色和粒子的透明通道色混合)模式间选择.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can define the collision radius with this code:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T080638Z" creationid="aceway" creationdate="20170130T080638Z">
@@ -8801,6 +8917,22 @@ materialSphere1.specularTexture = new BABYLON.Texture("grass.png", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110722Z" creationid="aceway" creationdate="20160402T110702Z">
         <seg>通过一个扩展函数你可以创建快速动画:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can use gravity if you want to give an orientation to your particles (e.g.: fire particles travel upward on the Y-axis)
+```javascript
+//Set the gravity of all particles (not necessarily down)
+particleSystem.gravity = new BABYLON.Vector3(0, -9.81, 0);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T075323Z" creationid="aceway" creationdate="20170131T075323Z">
+        <seg>如果你想给粒子方向性你就可以启用重力(例如: 火焰粒子在Y轴向上)
+```javascript
+//为所有粒子设置重力(不一定向下)
+particleSystem.gravity = new BABYLON.Vector3(0, -9.81, 0);
+```</seg>
       </tuv>
     </tu>
     <tu>
