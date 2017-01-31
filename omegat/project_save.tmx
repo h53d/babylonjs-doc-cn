@@ -4328,6 +4328,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&gt; By default Babylon.js will give you a vUV and a vColor varying parameter.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T100306Z" creationid="aceway" creationdate="20170131T100256Z">
+        <seg>&gt; Babylon.js默认为你提供了一个纹理向量(vUV)变参和一个颜色向量(vColor)变参.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A Camera.**&amp;nbsp; The three most commonly used TYPES of cameras... are ArcRotateCamera, FreeCamera, and TouchCamera.&amp;nbsp; There are many types of camera available in Babylon.js, but these three are the most common.&amp;nbsp; ANY number of cameras can be coded into a scene, but only one of those cameras... is the 'active camera'.&amp;nbsp; We have a tutorial in our Playpen Series... dedicated to talking about cameras.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160410T140701Z" creationid="aceway" creationdate="20160410T140701Z">
@@ -4960,6 +4968,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But you can feel free to add any new parameter, like I did, with 'time'.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T101032Z" creationid="aceway" creationdate="20170131T101032Z">
+        <seg>但是你可以随意的添加新参数，就像我添加参数'time'那样做.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But you may want to use it for alpha blending.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T133941Z" creationid="aceway" creationdate="20160508T133941Z">
@@ -5580,6 +5596,14 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is a short comment from Deltakosh... regarding that playground demo linked above:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T100100Z" creationid="aceway" creationdate="20170131T100100Z">
+        <seg>这是Deltakosh的一个简短的评论... 关于上面连接里的娱乐场演示:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is a straightforward sample to animate a torus within a ```CirleEase``` easing function :</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T144743Z" creationid="aceway" creationdate="20160402T144743Z">
@@ -6171,6 +6195,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032859Z" creationid="aceway" creationdate="20160403T032859Z">
         <seg>Babylon.js构造里一个复杂的系统, 让网页图形库更容易使用.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It will also transmit you the particle texture.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T100930Z" creationid="aceway" creationdate="20170131T100930Z">
+        <seg>它也会为你传递粒子纹理.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8357,6 +8389,14 @@ particleSystem.emitRate = 1000;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This section of the tutorial is under construction.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T101140Z" creationid="aceway" creationdate="20170131T101140Z">
+        <seg>本教程的这节正在构建中.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This time, I would like you to press the **Get .zip** button.&amp;nbsp; The playground will open a small panel allowing you to download this scene.&amp;nbsp; Save the zip file in some new empty folder on your home computer.&amp;nbsp; Now use an UNZIP utility program to unzip it.&amp;nbsp; Notice that there is one file in the folder, called index.html.&amp;nbsp; Please load that file into a text editor or programming editor.&amp;nbsp; Does it look like the big picture above?&amp;nbsp; Sure it does.&amp;nbsp; ANY scene from the Babylon.js playground, including its pre-installed demo scenes, can be brought to your home with the **Get .zip** button.&amp;nbsp; Most of them will look very similar to the big picture, above.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T103716Z">
@@ -8635,10 +8675,26 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>WE LOVE IT!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T095945Z" creationid="aceway" creationdate="20170131T095945Z">
+        <seg>我们喜欢它!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Watch this positioning demo scene for some time, if you please.&amp;nbsp; It will not take long for you to completely understand mesh positioning.&amp;nbsp;</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T033026Z" creationid="aceway" creationdate="20160423T033026Z">
         <seg>如果你乐意, 请多花些时间看这个关于位置属性的演示场景.&amp;nbsp; 要不了多久你就会完全理解网格定位了.&amp;nbsp;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We are (the demo author is) varying the time parameter of the fragment shader program... from within the scene's render loop!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T095934Z" creationid="aceway" creationdate="20170131T095934Z">
+        <seg>在场景的渲染循环里，我们(演示程序的作者)不断改变片段着色器程序的时间参数大小!</seg>
       </tuv>
     </tu>
     <tu>
@@ -8719,6 +8775,14 @@ if (pickResult.hit) {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101127Z" creationid="aceway@qq.com" creationdate="20160427T101127Z">
         <seg>我们也需要修复因移动Visual Studio工程到上层目录产生的nuget包引用异常的问题</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We will have much more to say, soon.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T101205Z" creationid="aceway" creationdate="20170131T101205Z">
+        <seg>很快我们会谈论更多内容.</seg>
       </tuv>
     </tu>
     <tu>
