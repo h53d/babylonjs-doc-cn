@@ -7241,6 +7241,20 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The last main thing to do is to define our emitter that we talked about earlier:
+```javascript
+// Where the particles comes from
+particleSystem.emitter = fountain; // the starting object, the emitter, a box in this case.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T072439Z" creationid="aceway" creationdate="20170131T072439Z">
+        <seg>最后件要做的事就是定义个发射器，我们早些时候讨论过的:
+```javascript
+// 粒子的来源地
+particleSystem.emitter = fountain; // 开始的对象，发射器，在我们这例子里是盒子.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The last three lines of your HTML5 web page... should be:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T071602Z" creationid="aceway@qq.com" creationdate="20160429T071602Z">
