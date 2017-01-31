@@ -4188,6 +4188,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A picture of [the playground's ParticleSystem demo](http://babylonjs-playground.azurewebsites.net/?12)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T025021Z" creationid="aceway" creationdate="20170131T025021Z">
+        <seg>一副[娱乐场的粒子系统演示](http://babylonjs-playground.azurewebsites.net/?12)的图景</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A property is defined by the following JSON.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T091156Z" creationid="aceway@qq.com" creationdate="20160427T091156Z">
@@ -7993,14 +8001,6 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034728Z" creationid="aceway@qq.com" creationdate="20160429T034728Z">
         <seg>为了保持你的代码和Babylon.js娱乐场兼容, 我们建议你在此处插入一个 'createScene' 函数.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>To perform this magic trick, the first thing to do is to create a new object, which will be the particle emitter.</seg>
-      </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T012459Z" creationid="aceway" creationdate="20170131T012459Z">
-        <seg>`	````````````````````	-	++-1``		```1-	+++	-To perform this magic trick, the first thing to do is to create a new object, which will be the particle emitter.</seg>
       </tuv>
     </tu>
     <tu>
