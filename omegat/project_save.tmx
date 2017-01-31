@@ -2532,6 +2532,14 @@ BABYLON.Vector3(xValue, yValue, zValue)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### customEffect (the fourth parameter in the constructor)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T081048Z" creationid="aceway" creationdate="20170131T081048Z">
+        <seg>### 自定义效果(该构造函数的第四个参数customEffect)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#### Cons</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093254Z" creationid="aceway@qq.com" creationdate="20160427T093254Z">
