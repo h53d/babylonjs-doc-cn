@@ -1707,6 +1707,16 @@ Great, now you can develop a real FPS game!</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>## Next step
+This collision method is convenient in a lot of situations.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T012418Z" creationid="aceway" creationdate="20170131T012418Z">
+        <seg>-sssdsfyi0p[\123456789123456789023## Next ste
+This collision method is convenient in a lot of situations.b 1234567890-11234561234567890432</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Next step
 With those two functions, your scenes are becoming a lot more dynamic: you can define a specific reaction to object intersecting and colliding, and begin to introduce physics notions into your scene.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T091813Z" creationid="aceway" creationdate="20170130T091813Z">
@@ -3471,6 +3481,20 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T022502Z" creationid="aceway@qq.com" creationdate="20160427T022502Z">
         <seg>**吐槽** - 任何编辑器的重要特征之一是 撤销和重做, 我们的娱乐场编辑器完全支持这两个特征.&amp;nbsp; 我并不熟悉所有操作系统里的撤销和重做的操作键，, 但知道Windows系统里撤销键是Conntrol-z 而且 重做键是 Shift-Control-z.&amp;nbsp; 你也可以多次地执行撤销和重做。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- Drawing on a texture using a DynamicTexture,
+- Modifying a face that was hit (delete, move vertices, change color...),
+- Changing a submesh material,
+- etc.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T012219Z" creationid="aceway" creationdate="20170131T012219Z">
+        <seg>+- Drawing on a texture using a DynamicTexture,
+- Modifying a face that was hit (delete, move vertices, change color...),
+- Changing a submesh material,
+- etc.uipoh;'\</seg>
       </tuv>
     </tu>
     <tu>
@@ -7901,6 +7925,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034728Z" creationid="aceway@qq.com" creationdate="20160429T034728Z">
         <seg>为了保持你的代码和Babylon.js娱乐场兼容, 我们建议你在此处插入一个 'createScene' 函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To perform this magic trick, the first thing to do is to create a new object, which will be the particle emitter.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T012459Z" creationid="aceway" creationdate="20170131T012459Z">
+        <seg>`	````````````````````	-	++-1``		```1-	+++	-To perform this magic trick, the first thing to do is to create a new object, which will be the particle emitter.</seg>
       </tuv>
     </tu>
     <tu>
