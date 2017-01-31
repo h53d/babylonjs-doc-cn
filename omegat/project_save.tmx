@@ -1709,9 +1709,9 @@ Great, now you can develop a real FPS game!</seg>
         <seg>## Next step
 This collision method is convenient in a lot of situations.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T012418Z" creationid="aceway" creationdate="20170131T012418Z">
-        <seg>-sssdsfyi0p[\123456789123456789023## Next ste
-This collision method is convenient in a lot of situations.b 1234567890-11234561234567890432</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T022234Z" creationid="aceway" creationdate="20170131T012418Z">
+        <seg>## 下一步
+这种碰撞检测方式适用于大多数情况。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3490,11 +3490,11 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
 - Changing a submesh material,
 - etc.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T012219Z" creationid="aceway" creationdate="20170131T012219Z">
-        <seg>+- Drawing on a texture using a DynamicTexture,
-- Modifying a face that was hit (delete, move vertices, change color...),
-- Changing a submesh material,
-- etc.uipoh;'\</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T022124Z" creationid="aceway" creationdate="20170131T012219Z">
+        <seg>+- 绘制动态纹理,
+- 改变选中面 (删除，移动顶点，修改颜色...),
+- 改变子网格的材质,
+- 等等</seg>
       </tuv>
     </tu>
     <tu>
@@ -3563,6 +3563,14 @@ if (条件) {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T095509Z" creationid="aceway" creationdate="20170130T095509Z">
         <seg>- `faceId`: 这是拾取面的索引位置--在索引数组里的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- `getTextureCoordinates()`: computes the texture coordinates of the picked point; these will be returned as a `Vector2` in texture space, which means its coordinates will be between 0 and 1.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T021815Z" creationid="aceway" creationdate="20170131T021815Z">
+        <seg>- `getTextureCoordinates()`: 计算拾取点的纹理坐标, 返回纹理空间的2维向量，也就是坐标值在0至1间的坐标.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6157,8 +6165,8 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       <tuv lang="EN-US">
         <seg>Now you should know everything about collisions, so it’s time to move on to a classic effect in 3D : [particles](http://doc.babylonjs.com/tutorials/Particles).</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T092913Z" creationid="aceway" creationdate="20170130T092913Z">
-        <seg>ow you should know everything about collisions, so it’s time to move on to a classic effect in 3D : [particles](http://doc.babylonjs.com/tutorials/Particles).</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T022611Z" creationid="aceway" creationdate="20170130T092913Z">
+        <seg>现在已经知道碰撞检测的所有技能了，所有是时候去瞧瞧经典的三维效果如何了: [粒子](http://doc.babylonjs.com/tutorials/Particles).</seg>
       </tuv>
     </tu>
     <tu>
@@ -6299,6 +6307,14 @@ Easy.&amp;nbsp; Most of these things you already know, don't you?&amp;nbsp; I th
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040023Z" creationid="aceway" creationdate="20170130T040023Z">
         <seg>一旦你完成前面的设置，我们最后一步便是声明我们的场景对碰撞检测感兴趣:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you understand mouse pick events, you can begin using that functionality to advance your application’s development.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T022417Z" creationid="aceway" creationdate="20170131T022417Z">
+        <seg>一旦你理解了鼠标拾取事件，你就可以使用它们优化你的应用程序开发.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6501,6 +6517,14 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T122945Z" creationid="aceway" creationdate="20160507T122945Z">
         <seg>请看我们的[**高度图教程**](http://doc.babylonjs.com/tutorials/Height_Map) 以学习所有的高度图地面知识.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Possible uses include:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T021836Z" creationid="aceway" creationdate="20170131T021836Z">
+        <seg>可能的用处包括:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7251,6 +7275,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T093830Z" creationid="aceway" creationdate="20170130T093830Z">
         <seg>该pickResult对象主要是4个信息片段的组合:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The picked face is a polygon composed of 3 vertices, and the picked point is the barycenter of those three vertices with the following weights:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T021410Z" creationid="aceway" creationdate="20170131T021253Z">
+        <seg>拾取面由3个顶点组成，而且拾取点是这三个顶点的重心with the following weights:</seg>
       </tuv>
     </tu>
     <tu>
