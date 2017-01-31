@@ -62,6 +62,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Environment](http://www.babylonjs.com/tutorials/13%20-%20Environment/13.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104221Z" creationid="aceway" creationdate="20170131T104221Z">
+        <seg>![环境](http://www.babylonjs.com/tutorials/13%20-%20Environment/13.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![Flare](http://www.babylonjs.com/tutorials/12%20-%20Particles/Flare.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031208Z" creationid="aceway" creationdate="20170131T031208Z">
@@ -1762,6 +1770,16 @@ Great, now you can develop a real FPS game!</seg>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T080741Z" creationid="aceway" creationdate="20170130T080741Z">
         <seg>## 下一步
 非常棒, 现在你能够开发真实的FPS游戏了!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Next step
+ParticleSystems are very powerful and versatile tools that can help bring realness and movement to your scenes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T103004Z" creationid="aceway" creationdate="20170131T103004Z">
+        <seg>## 下一步
+粒子系统时非常强有力且灵活的工具，它能够给你的场景带来真实感和运动感.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4972,6 +4990,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But there is something missing in your scenes: a proper environment.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T103506Z" creationid="aceway" creationdate="20170131T103454Z">
+        <seg>但是你的场景里还缺某种东西: 像样环境.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But this bounding box can be more or less precise, and that’s why we have our second parameter.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T085732Z" creationid="aceway" creationdate="20170130T085421Z">
@@ -5202,6 +5228,14 @@ particleSystem.disposeOnStop = true;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Don’t hesitate to use them as they are not resource-intensive.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T103041Z" creationid="aceway" creationdate="20170131T103041Z">
+        <seg>不要犹豫使用它们吧，因为它们不是资源敏感的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Each Animation has a property called ```currentFrame``` that indicates the current animation key.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110235Z" creationid="aceway" creationdate="20160402T110235Z">
@@ -5254,6 +5288,18 @@ particleSystem.disposeOnStop = true;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040241Z" creationid="aceway" creationdate="20170130T040241Z">
         <seg>简单!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Environment
+---
+## Introduction</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T103212Z" creationid="aceway" creationdate="20170131T103212Z">
+        <seg>环境
+---
+## 介绍</seg>
       </tuv>
     </tu>
     <tu>
@@ -7305,6 +7351,14 @@ player.height = 0.4;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Stay with us, because we are going to learn a new, very interesting thing: [Configuring your environment](http://doc.babylonjs.com/tutorials/Environment).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T103155Z" creationid="aceway" creationdate="20170131T103155Z">
+        <seg>继续跟我来, 因为我们将学习个新的，非常有趣的东西: [配置环境](http://doc.babylonjs.com/tutorials/Environment).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Still inside the ```&lt;body&gt;``` part of the web page,  please add:
 ```javascript
 &lt;script&gt;</seg>
@@ -8369,6 +8423,14 @@ particleSystem.emitRate = 1000;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is the first of three consecutive tutorials that talk about scene environment factors and effects.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T103658Z" creationid="aceway" creationdate="20170131T103658Z">
+        <seg>这是三个连续教程的第一部分，谈论场景的环境因素和效果。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is the output of this configuration:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031558Z" creationid="aceway" creationdate="20170131T031558Z">
@@ -8831,6 +8893,14 @@ if (pickResult.hit) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We will start off with simple scene `clearColor` (background color), then talk briefly about scene `ambientColor`, then on to 6-texture skyboxes, and then fog to give an illusion of depth to your scenes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104213Z" creationid="aceway" creationdate="20170131T104213Z">
+        <seg>我们将从简单的场景清理颜色(`clearColor` 设置背景色)开始, 然后简述下场景的环境色`ambientColor`), 然后是6纹理的天空盒, 最后是为场景提供深度感的雾.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We will use the “intersectsMesh()” function, with two parameters: the mesh to be checked, and the precision of the intersection (boolean).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084919Z" creationid="aceway" creationdate="20170130T084919Z">
@@ -9281,6 +9351,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
 &lt;script src="./jsfolder/myJavascript.js"&gt;&lt;/script&gt;
 ```
 You need not concern yourself with that, at this point.&amp;nbsp; Externalizing your Javascript is often done when you have written LOTS of Javascript code.&amp;nbsp; Externalizing your code into separate files helps your project be organized, but it is not necessary this early in your webGL adventures.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You have come a long way, have learned about shapes, lights, sprites, particles, materials.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T103331Z" creationid="aceway" creationdate="20170131T103331Z">
+        <seg>你已经走过漫长的路途了，已经学了造型，灯光，精灵，粒子，材质.</seg>
       </tuv>
     </tu>
     <tu>
