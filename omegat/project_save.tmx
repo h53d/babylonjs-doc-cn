@@ -3038,6 +3038,22 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* Dispose.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T080530Z" creationid="aceway" creationdate="20170131T080259Z">
+        <seg>* 后期处理.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Duration.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T080004Z" creationid="aceway" creationdate="20170131T080004Z">
+        <seg>* 持续时间.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* Emit rate.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T074115Z" creationid="aceway" creationdate="20170131T073902Z">
@@ -3121,6 +3137,14 @@ particleSystem.maxSize = 0.5;
 particleSystem.minSize = 0.1;
 particleSystem.maxSize = 0.5;
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Speed/Strength.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T075644Z" creationid="aceway" creationdate="20170131T075644Z">
+        <seg>* 速度/强度.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4612,6 +4636,20 @@ materialSphere1.diffuseTexture.hasAlpha = true;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>And naturally stop it:
+```javascript
+particleSystem.stop();
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T080648Z" creationid="aceway" creationdate="20170131T080648Z">
+        <seg>而且自然的停止它:
+```javascript
+particleSystem.stop();
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>And that's it!</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152558Z" creationid="aceway" creationdate="20160402T152558Z">
@@ -5036,6 +5074,20 @@ Did you ever play a FPS (First Person Shooter) game?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Disposes (or not) the particle system on stop (very useful if you want to create a one shot particle system with a specific targetStopDuration):
+```javascript
+particleSystem.disposeOnStop = true;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T080520Z" creationid="aceway" creationdate="20170131T080520Z">
+        <seg>粒子系统停止时的处理或不处理 (对于射击类粒子系统非常有用):
+```javascript
+particleSystem.disposeOnStop = true;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Do not hesitate to update this file by editing it [directly on Github](https://github.com/BabylonJS/Documentation/tree/master/content/generals/General).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T040801Z" creationid="aceway@qq.com" creationdate="20160427T040801Z">
@@ -5196,6 +5248,14 @@ Did you ever play a FPS (First Person Shooter) game?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Feel free to play with this scene... [**at our online playground**](http://babylonjs-playground.azurewebsites.net/?12).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T081005Z" creationid="aceway" creationdate="20170131T081005Z">
+        <seg>去[**我们的在线娱乐场**](http://babylonjs-playground.azurewebsites.net/?12)随意体验这个场景吧...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Feel free to play with this scene... [at our online playground](http://babylonjs-playground.azurewebsites.net/?11).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T095210Z" creationid="aceway" creationdate="20170130T095210Z">
@@ -5262,6 +5322,20 @@ player.cellIndex = 44;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T085655Z" creationid="aceway@qq.com" creationdate="20160331T085655Z">
         <seg>最后，你可以在你应用的任何时间点通过一行代码加载动画。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finally, you can start this particle system whenever you want in your code with:
+```javascript
+particleSystem.start();
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T080615Z" creationid="aceway" creationdate="20170131T080615Z">
+        <seg>最后，你可以在代码里任何时候启用这个粒子系统:
+```javascript
+particleSystem.start();
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -8741,10 +8815,34 @@ if (pickResult.hit) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can define a Z-axis rotation for each particle (in radian):
+```javascript
+particleSystem.minAngularSpeed = 0;
+particleSystem.maxAngularSpeed = Math.PI;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T075627Z" creationid="aceway" creationdate="20170131T075627Z">
+        <seg>你可以为每个粒子沿Z轴定义转角 (弧度单位):
+```javascript
+particleSystem.minAngularSpeed = 0;
+particleSystem.maxAngularSpeed = Math.PI;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can define the collision radius with this code:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T080638Z" creationid="aceway" creationdate="20170130T080638Z">
         <seg>你可以使用这行代码来定义碰撞半径:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can define the power of emitting particles, and the overall motion speed (0.01 is default update speed, faster updates = faster animation).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T075947Z" creationid="aceway" creationdate="20170131T075947Z">
+        <seg>离可以给发射中的粒子定义力量，以及作为整体运动的速度(默认更新速度是0.01, 更快的更新速度等于更快的播放动画).</seg>
       </tuv>
     </tu>
     <tu>
@@ -8833,6 +8931,14 @@ materialSphere1.wireframe = true;
 ```javascript
 materialSphere1.wireframe = true;
  ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can set the amount of time the particle system is running (depends of the overall speed above).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T080155Z" creationid="aceway" creationdate="20170131T080155Z">
+        <seg>你可以设置粒子系统的持续运行时间量 (取决于上面提到的粒子的整体运行速度).</seg>
       </tuv>
     </tu>
     <tu>
