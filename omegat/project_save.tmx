@@ -54,6 +54,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Particles](http://www.babylonjs.com/tutorials/12%20-%20Particles/12.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T023143Z" creationid="aceway" creationdate="20170131T023143Z">
+        <seg>![粒子](http://www.babylonjs.com/tutorials/12%20-%20Particles/12.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![Picking](http://www.babylonjs.com/tutorials/11%20-%20Collisions%20PickResult/11.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T092754Z" creationid="aceway" creationdate="20170130T092754Z">
@@ -6453,6 +6461,26 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Particles
+---
+## Introduction</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T022626Z" creationid="aceway" creationdate="20170131T022626Z">
+        <seg>粒子
+---
+## 介绍</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Particles are often small sprites used to simulate hard-to-reproduce phenomena like fire, smoke, water, or abstract visual effects like magic glitter and faery dust.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T023135Z" creationid="aceway" creationdate="20170131T023135Z">
+        <seg>粒子通常时许多小的精灵，被用来模拟难以再现的现象，比如火，烟，水，或者抽象的视觉效果，比如魔法闪光和神奇灰尘。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Paths are also arrays, populated with series of successive _Vector3_.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T104015Z" creationid="aceway" creationdate="20160507T104015Z">
@@ -7805,6 +7833,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084054Z" creationid="aceway" creationdate="20170130T084054Z">
         <seg>本教程里将为你展示两种碰撞检测的方法: 第一种时当网格彼此相交时抛出碰撞事件，另一种是检测网格和单点的接触.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This tutorial is going to talk about the particle system in BabylonJS.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T022648Z" creationid="aceway" creationdate="20170131T022648Z">
+        <seg>本教程会谈论BabylonJS里的粒子系统.</seg>
       </tuv>
     </tu>
     <tu>
