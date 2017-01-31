@@ -622,6 +622,18 @@ Before going further you have to understand there are two compilation modes avai
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Custom functions
+You can get even more control over particles by using custom functions:
+```startDirectionFunction: (emitPower: number, worldMatrix: Matrix, directionToUpdate: Vector3)```: This function can be defined to specify initial direction for every new particle.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T101636Z" creationid="aceway" creationdate="20170131T101636Z">
+        <seg>## 自定义方法
+通过使用自定义方法你可以获得更多的控制粒子:
+```startDirectionFunction: (emitPower: number, worldMatrix: Matrix, directionToUpdate: Vector3)```: 这个函数能够用为每个新粒子定义初始方向.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Cylinders
 A cylinder is defined by the following JSON:
 ```javascript
@@ -5000,6 +5012,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By default the following code is used:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T102640Z" creationid="aceway" creationdate="20170131T102640Z">
+        <seg>默认情况下，以下代码被使用:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By default these functions are the following:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110523Z" creationid="aceway" creationdate="20160402T110523Z">
@@ -5012,6 +5032,14 @@ player.invertU = -1;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T133721Z" creationid="aceway" creationdate="20160522T133721Z">
         <seg>默认情况下, 镜面光和alpha不相干, 但是你可以设置```materialSphere1.useSpecularOverAlpha``` 为真, 从而使alpha和镜面光成反比.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By default, this function is defined with the following code:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T101714Z" creationid="aceway" creationdate="20170131T101714Z">
+        <seg>默认情况下, 这个函数时用以下代码定义的:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5130,6 +5158,14 @@ particleSystem.disposeOnStop = true;
 ```javascript
 particleSystem.disposeOnStop = true;
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do not forget that this function will be called on every frame so try to keep it simple and fast :).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T102605Z" creationid="aceway" creationdate="20170131T102605Z">
+        <seg>不要忘记该函数会在每帧被调用，因此要尽力保证它简单而快速 :).</seg>
       </tuv>
     </tu>
     <tu>
@@ -8263,6 +8299,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This function will be called instead of regular update (age, position, color, etc.).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T102448Z" creationid="aceway" creationdate="20170131T102448Z">
+        <seg>当粒子老化、位置变化、颜色变化等时该函数会被调用以取代常规的更新.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This function will try to move the mesh according to given velocity and will check if there is no collision between current mesh and all meshes with checkCollisions activated.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T041604Z" creationid="aceway" creationdate="20170130T041604Z">
@@ -10139,6 +10183,22 @@ var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene, false, BABYLON.Me
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>```startPositionFunction = (worldMatrix: Matrix, positionToUpdate: Vector3)```: This function can be defined to specify initial position for every new particle.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T101846Z" creationid="aceway" creationdate="20170131T101846Z">
+        <seg>```startPositionFunction = (worldMatrix: Matrix, positionToUpdate: Vector3)```: 这个函数能够用为每个新粒子定义初始位置.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```updateFunction: (particles: Particle[])```: This function can be defined to provide custom update for active particles.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T102046Z" creationid="aceway" creationdate="20170131T102046Z">
+        <seg>```updateFunction: (particles: Particle[])```:这个函数能够用为有效粒子提供自定义更新.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>http://www.html5gamedevs.com/forum/16-babylonjs/</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T144331Z" creationid="aceway" creationdate="20160423T144331Z">
@@ -10151,6 +10211,14 @@ var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene, false, BABYLON.Me
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T091005Z" creationid="aceway@qq.com" creationdate="20160427T091005Z">
         <seg>例如 name = "CombineAction".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if (particle.age &gt;= particle.lifeTime) { // Recycle</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T102714Z" creationid="aceway" creationdate="20170131T102714Z">
+        <seg>if (particle.age &gt;= particle.lifeTime) { // 循环利用</seg>
       </tuv>
     </tu>
     <tu>
