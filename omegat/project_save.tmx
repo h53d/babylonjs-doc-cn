@@ -7409,6 +7409,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The customEffect is a type of BABYLON.Effect used to target a valid shader program.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T093534Z" creationid="aceway" creationdate="20170131T093534Z">
+        <seg>自定义效果customEffect是BABYLON.Effect类型的，用于定义一个有效的着色器程序.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The diffuse is the native color of the object material once it is lit with a light.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T125230Z" creationid="aceway" creationdate="20160508T125230Z">
