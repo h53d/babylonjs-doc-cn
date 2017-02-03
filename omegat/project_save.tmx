@@ -5102,6 +5102,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By default, `scene.ambientColor` is set to `Color3(0, 0, 0)`, which means there is no `scene.ambientColor`.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170203T041100Z" creationid="aceway" creationdate="20170203T041100Z">
+        <seg>默认情况下, `场景的环境色(scene.ambientColor)`被设置成`纯黑色(Color3(0, 0, 0))`, 它意味着没有场景环境色.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By default, specular does not interact with alpha, but you can set ```materialSphere1.useSpecularOverAlpha``` to true to have alpha inversely proportional to specular value.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T133721Z" creationid="aceway" creationdate="20160522T133721Z">
