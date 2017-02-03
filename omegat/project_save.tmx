@@ -9595,6 +9595,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You will find that when there is no `scene.ambientColor`, then `StandardMaterial.ambientColor` and `StandardMaterial.ambientTexture` will appear to do nothing.&amp;nbsp; Set a `scene.ambientColor` of some value, like the example above, and `StandardMaterial.ambientColor`/`StandardMaterial.ambientTexture` will become active on meshes where you have applied such.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170203T040936Z" creationid="aceway" creationdate="20170203T040936Z">
+        <seg>你会发现当没有`场景环境色(scene.ambientColor)`时, `标准材质的环境色属(StandardMaterial.ambientColor)`和`标准材质的环境纹理(StandardMaterial.ambientTexture)`将没有任何表现效果.&amp;nbsp; 给`场景的环境色(scene.ambientColor)`设置一些值,就如上面例子所示,然后那些网格上的你应用了的`标准材质的环境色属(StandardMaterial.ambientColor)`以及`标准材质的环境纹理(StandardMaterial.ambientTexture)`将会被激活.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You will learn more about the parameters and properties for lights, cameras, and built-in shapes... in the tutorials to come.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040424Z" creationid="aceway@qq.com" creationdate="20160429T040424Z">
@@ -10237,6 +10245,20 @@ function createScene() {
     var scene = new BABYLON.Scene(engine);
     var light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(0, 100, 100), scene);
     var camera = new BABYLON.ArcRotateCamera("camera", 0, 0.8, 100, new BABYLON.Vector3.Zero(), scene);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+scene.ambientColor = new BABYLON.Color3(0.3, 0.3, 0.3);
+```
+As you can see, it is set using the same format as `clearColor`, but `ambientColor` is used in quite a few calculations toward determining the final colors of scene items.&amp;nbsp; Mainly, it is used in conjunction with a mesh's `StandardMaterial.ambientColor` to determine a FINAL `ambientColor` for the mesh material.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170203T040101Z" creationid="aceway" creationdate="20170203T040101Z">
+        <seg>```javascript
+scene.ambientColor = new BABYLON.Color3(0.3, 0.3, 0.3);
+```
+正如你所见，它的使用方式和设置`清理背景色(clearColor)`一样, 但是`环境色(ambientColor)`是用在很少的几个计算上---以决定场景物品的最终颜色.&amp;nbsp; ,它主要用来和网格`标准材质的环境色属性(StandardMaterial.ambientColor)`合成出该网格材质最终的`环境色(ambientColor)`.</seg>
       </tuv>
     </tu>
     <tu>
