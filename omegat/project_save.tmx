@@ -5166,6 +5166,14 @@ Did you ever play a FPS (First Person Shooter) game?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Conversely, the `ambientColor` property on the scene object is a very powerful and influential environment property/adjustment.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170203T035034Z" creationid="aceway" creationdate="20170203T035034Z">
+        <seg>相反，场景对象的`环境色(ambientColor)`属性是个非常强大、有影响力的环境属性和调节器.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Create a HTML file that will reference all the .js file of Babylon.js (the list can be found [here](http://doc.babylonjs.com/generals/Creating_the_Mini-fied_Version))</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T102738Z" creationid="aceway@qq.com" creationdate="20160427T102738Z">
@@ -5568,6 +5576,14 @@ particleSystem.start();
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T102232Z" creationid="aceway" creationdate="20160507T102232Z">
         <seg>首先, 想象一下一系列连续点定义的路径.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>First, let's have a look at its syntax:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170203T035054Z" creationid="aceway" creationdate="20170203T035054Z">
+        <seg>首先，让我们看看它的语法:</seg>
       </tuv>
     </tu>
     <tu>
