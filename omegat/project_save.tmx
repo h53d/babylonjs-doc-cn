@@ -5148,8 +5148,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>Buildings, hills, mountains, trees, lakes, planets, stars, you name it (all can be used nicely) as part of skybox textures.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T042938Z" creationid="aceway" creationdate="20170204T042938Z">
-        <seg>建筑,丘陵,山峦,树木,胡泊,行星,恒星(都可以被很好的利用)你均可以指定它为天空纹理的一部分.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T100210Z" creationid="aceway" creationdate="20170204T042938Z">
+        <seg>建筑,丘陵,山峰,树木,胡泊,行星,恒星(都可以被很好的利用)你均可以指定它为天空纹理的一部分.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5526,6 +5526,14 @@ particleSystem.disposeOnStop = true;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T030906Z" creationid="aceway" creationdate="20170131T030906Z">
         <seg>每个粒子都会拥有相同的纹理模式，因此请仔细选择你想要的纹理。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each pixel’s color is interpreted as a distance of displacement or “height” from the “floor” of your mesh.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T095619Z" creationid="aceway" creationdate="20170204T095619Z">
+        <seg>每个像素的颜色被解析成到网格"地面"的位移或"高度".</seg>
       </tuv>
     </tu>
     <tu>
@@ -6366,8 +6374,8 @@ player.playAnimation(0, 43, true, 100);
       <tuv lang="EN-US">
         <seg>If you want to see and play with the playground scene for this tutorial, you can [**click right here**](http://babylonjs-playground.azurewebsites.net/?13).</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045105Z" creationid="aceway" creationdate="20170204T045105Z">
-        <seg>如果你想在娱乐厅看看并体验下本教程的场景, 你可以[**右击此处**](http://babylonjs-playground.azurewebsites.net/?13).</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T100159Z" creationid="aceway" creationdate="20170204T045105Z">
+        <seg>如果你想在游乐场看看并体验下本教程的场景, 你可以[**右击此处**](http://babylonjs-playground.azurewebsites.net/?13).</seg>
       </tuv>
     </tu>
     <tu>
@@ -7715,8 +7723,16 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
       <tuv lang="EN-US">
         <seg>So, in our next environment tutorial, we are going to transform your flat ground into beautiful mountains.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045430Z" creationid="aceway" creationdate="20170204T045430Z">
-        <seg>因此,在我们下一个环境教程里, 我们将把你平坦的地面变成漂亮的山峦.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T095914Z" creationid="aceway" creationdate="20170204T045430Z">
+        <seg>因此,在我们下一个环境教程里, 我们将把你平坦的地面变成漂亮的山峰.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So, the whiter the pixel is, the taller your mountain will be.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T095715Z" creationid="aceway" creationdate="20170204T095715Z">
+        <seg>因此,像素越白,则你的山峰会越高.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8839,6 +8855,22 @@ var index2 = indices[pickResult.faceId * 3 + 2];
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This image is the elevation data for your ground.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T095435Z" creationid="aceway" creationdate="20170204T095435Z">
+        <seg>此图片就是地形的高程数据.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This image will now be used to generate our ground, using the different variants of gray of our picture.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T095334Z" creationid="aceway" creationdate="20170204T095334Z">
+        <seg>这个图片将被用来生成我们的地形, 使用图片上不同的灰度产生不同的变形.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is a one-shot particle emission, so this function overrides the previous “emitRate” parameter.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T074537Z" creationid="aceway" creationdate="20170131T074537Z">
@@ -9089,8 +9121,8 @@ skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
       <tuv lang="EN-US">
         <seg>Those mountains are very easy to generate with Babylon.js, and with only a single function.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045924Z" creationid="aceway" creationdate="20170204T045924Z">
-        <seg>通过Babylon.js非常容易生成这些山峦, 而且只需要一个函数.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T095732Z" creationid="aceway" creationdate="20170204T045924Z">
+        <seg>通过Babylon.js非常容易生成这些山峰, 而且只需要一个函数.</seg>
       </tuv>
     </tu>
     <tu>
