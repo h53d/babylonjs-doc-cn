@@ -495,9 +495,9 @@ We have worked hard and learned much, so we deserve some playground time, at the
         <seg>## About the light
 Keep in mind that this shadow generator can only be used with one light.  If you want to generate shadows from another light, then you will need to create another shadow generator.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T125127Z" creationid="aceway" creationdate="20170204T125127Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T125419Z" creationid="aceway" creationdate="20170204T125127Z">
         <seg>## 关于光源
-Keep in mind that this shadow generator can only be used with one light.  If you want to generate shadows from another light, then you will need to create another shadow generator.</seg>
+要记住,这个阴影生成器只能和一个光源配合使用. 如果你想根据另一个光源生成阴影, 那么你需要创建另一个阴影生成器.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5384,6 +5384,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Both projections are evaluated automatically for you to get the best shadow map possible.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T130141Z" creationid="aceway" creationdate="20170204T130141Z">
+        <seg>两种投影都是自动计算以为你提供尽可能最好的阴影映射.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Briefly said, you can enter or modify Javascript-based BabylonJS scene code on the left-side 'editor' portion of the playground, press the Run button, and the playground will attempt to render the webGL scene on the right side, using the latest version of the BabylonJS framework.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T141641Z" creationid="aceway" creationdate="20160425T141641Z">
@@ -6134,6 +6142,14 @@ skybox.material = skyboxMaterial;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110459Z" creationid="aceway" creationdate="20160402T110459Z">
         <seg>对于高级的关键帧动画, 你也可以定义个函数实现在键之间插入过度效果.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For directional light, you can control the size of the projection window by modifying ```light.shadowOrthoScale``` (0.1 by default which means that the projection window is increase by 10% from the optimal size).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T130605Z" creationid="aceway" creationdate="20170204T130605Z">
+        <seg>对于定向光源, 你可以通过修改```light.shadowOrthoScale``` (默认值为0.1,意味着从投影窗口最佳尺寸增加10%的大小)值来控制投影窗口的大小.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7717,6 +7733,14 @@ myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Only point, directional and spot lights can cast shadows:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T130303Z" creationid="aceway" creationdate="20170204T125536Z">
+        <seg>仅点光源,定向光源和聚光灯光源能够投影:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Open that link in a new tab or window, and then come back here, and we'll get started.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T130627Z" creationid="aceway" creationdate="20160503T130627Z">
@@ -8223,6 +8247,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T101614Z" creationid="aceway@qq.com" creationdate="20160421T101614Z">
         <seg>有时候, 方法被用来设置属性值， 有时后别用来获取属性值.&amp;nbsp; 这些方法/函数通常被称为 GETTERS 和 SETTERS.&amp;nbsp; 注意到上面getMeshByName方法里的用词 'get' 没?&amp;nbsp; 它就是个 GETTER 方法.&amp;nbsp; 这儿又是一个该方法调用':</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Spot lights use perspective projection and directional lights use orthogonal projection.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T130337Z" creationid="aceway" creationdate="20170204T130025Z">
+        <seg>聚光源使用透视投影,而定向光源使用正交投影.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10907,6 +10939,20 @@ Parameters are : name, path, radius, tesselation, optional radiusFunction, cap, 
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T110924Z" creationid="aceway" creationdate="20160507T110924Z">
         <seg>```
 参数为: 名称, 路径, 半径, 曲面细分, 可选的半径函数,  头罩, 场景, 可更新否, 朝向.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```
+var light = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(-1, -2, -1), scene);
+```
+Point lights use cubemaps rendering so please be cautious when enabling them as this could lead to some performance issues.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T125916Z" creationid="aceway" creationdate="20170204T125849Z">
+        <seg>```
+var light = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(-1, -2, -1), scene);
+```
+点光源使用立方贴图渲染,因此需要慎重启用,因为这会导致一些性能问题.</seg>
       </tuv>
     </tu>
     <tu>
