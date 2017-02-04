@@ -2484,6 +2484,14 @@ And that’s it!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### Fog</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T043506Z" creationid="aceway" creationdate="20170204T043506Z">
+        <seg>### 雾</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### Maintaining Your Focus
 Sometimes you will run a scene and use your cursor keys and mouse in the rendering canvas, and then want to 'focus' back to the editor... to make some more code changes.&amp;nbsp; Sometimes, you will need to mouse-click somewhere in the editor area... to give the editor focus again.&amp;nbsp; Once the editor has focus, your cursor keys will, once again, move the editor's cursor.&amp;nbsp; This happens most often when a Babylon FreeCamera is the active camera.</seg>
       </tuv>
@@ -3809,6 +3817,30 @@ if (条件) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>- `BABYLON.Scene.FOGMODE_EXP2` - same that above but faster.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T044129Z" creationid="aceway" creationdate="20170204T044129Z">
+        <seg>- `BABYLON.Scene.FOGMODE_EXP2` - 和上面那个一样但是更快.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- `BABYLON.Scene.FOGMODE_EXP` - the fog density is following an exponential function.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T044044Z" creationid="aceway" creationdate="20170204T044044Z">
+        <seg>- `BABYLON.Scene.FOGMODE_EXP` - 雾的密度是根据一个指数函数定义.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- `BABYLON.Scene.FOGMODE_LINEAR` - the fog density is following a linear function.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T044152Z" creationid="aceway" creationdate="20170204T044152Z">
+        <seg>- `BABYLON.Scene.FOGMODE_LINEAR` - 雾的密度是根据一个线性函数定义.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>- ```BABYLON.EasingFunction.EASINGMODE_EASEINOUT``` : Interpolation uses EaseIn for the first half of the animation and EaseOut for the second half.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160304Z" creationid="aceway" creationdate="20160402T144354Z">
@@ -4028,6 +4060,30 @@ Setup Visual Studio to contribute to Babylon.js
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>-&gt; If you choose the `EXP`, or `EXP2` mode, then you can define the density option (default is `0.1`):
+```javascript
+scene.fogDensity = 0.01;
+```
+-&gt; Otherwise, if you choose `LINEAR` mode, then you can define where fog starts and where fog ends:
+```javascript
+scene.fogStart = 20.0;
+scene.fogEnd = 60.0;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T044315Z" creationid="aceway" creationdate="20170204T044315Z">
+        <seg>-&gt; 如果你选择`EXP`, 或 `EXP2` 模式, 那么你就可以定义幂指数(默认是`0.1`):
+```javascript
+scene.fogDensity = 0.01;
+```
+-&gt; Otherwise, if you choose `LINEAR` mode, then you can define where fog starts and where fog ends:
+```javascript
+scene.fogStart = 20.0;
+scene.fogEnd = 60.0;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// Adding animation to my torus animations collection
 torus.animations.push(animationTorus);</seg>
       </tuv>
@@ -4240,6 +4296,18 @@ easingFunction.setEasingMode(BABYLON.EasingFunction.EASINGMODE_EASEINOUT);</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065147Z" creationid="aceway@qq.com" creationdate="20160429T065147Z">
         <seg>// 注册一个渲染循环已重复的渲染场景</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// Some other mesh
+myMesh.renderingGroupId = 1;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T043413Z" creationid="aceway" creationdate="20170204T043413Z">
+        <seg>// 一些其它网格对象的
+myMesh.renderingGroupId = 1;
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -5020,6 +5088,14 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Buildings, hills, mountains, trees, lakes, planets, stars, you name it (all can be used nicely) as part of skybox textures.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T042938Z" creationid="aceway" creationdate="20170204T042938Z">
+        <seg>建筑,丘陵,山峦,树木,胡泊,行星,恒星(都可以被很好的利用)你均可以指定它为天空纹理的一部分.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But because it’s a sprite, you may use specific parameters: you can change their size, or their orientation:
 ```javascript
 player.size = 0.3;
@@ -5528,6 +5604,18 @@ particleSystem.disposeOnStop = true;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Final note, if you want your skybox to render behind everything else, set the skybox's `renderingGroupId` to `0`, and every other renderable object's `renderingGroupId` greater than zero, for example:
+```javascript
+skybox.renderingGroupId = 0;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T043347Z" creationid="aceway" creationdate="20170204T043347Z">
+        <seg>最好要注意, 如果你想天空盒被渲染在所有其它东西的后面, 就要设置天空盒的`renderingGroupId`属性值为`0`, 同时所有其它对象`renderingGroupId`属性值均大于零,例如:
+```javascript
+skybox.renderingGroupId = 0;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Finally we have to edit the web.config file to declare some file types (actually only .fx would suffice) that the web server would be allowed to serve.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T103037Z" creationid="aceway@qq.com" creationdate="20160427T103037Z">
@@ -5658,6 +5746,14 @@ skybox.material = skyboxMaterial;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Fog is quite an advanced effect, but fog in Babylon.js has been simplified to the maximum.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T043604Z" creationid="aceway" creationdate="20170204T043604Z">
+        <seg>雾是个相当高级的效果,但是在Babylon.js里雾已经被最大限度简化了.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For advanced keyframe animation, you can also define the functions used to interpolate (transition) between keys.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110459Z" creationid="aceway" creationdate="20160402T110459Z">
@@ -5778,6 +5874,16 @@ particleSystem.manualEmitCount = 300;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T125108Z" creationid="aceway" creationdate="20160507T125108Z">
         <seg>如果你能,请帮助我们增加基础元素列表.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here are the available modes :
+- `BABYLON.Scene.FOGMODE_NONE` - default one, fog is deactivated.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T044056Z" creationid="aceway" creationdate="20170204T043742Z">
+        <seg>这些是时可以使用的模式:
+- `BABYLON.Scene.FOGMODE_NONE` - 默认值,雾被停用.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6505,6 +6611,14 @@ animation.addEvent(event1);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It’s now very easy to add fog to your scenes.&amp;nbsp; First, we define the fog mode like this:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T043647Z" creationid="aceway" creationdate="20170204T043647Z">
+        <seg>现在给你的场景添加雾非常简单.&amp;nbsp; 首先,像这样定义雾的模式:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Just be careful to respect the square pixel size that you have specified in your manager (e.g. 64 pixel).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T122012Z" creationid="aceway" creationdate="20170129T122012Z">
@@ -6631,6 +6745,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     "properties": array of properties, (见下面)
     "children": array of Actions,
     "combine": array of Actions (用于组合动画.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More info about rendering groups and rendering order can be found [here](http://doc.babylonjs.com/tutorials/Transparency_and_How_Meshes_Are_Rendered).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T043501Z" creationid="aceway" creationdate="20170204T043501Z">
+        <seg>关于渲染组和渲染顺序的更多信息可以在[这儿](http://doc.babylonjs.com/tutorials/Transparency_and_How_Meshes_Are_Rendered)找到.</seg>
       </tuv>
     </tu>
     <tu>
