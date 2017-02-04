@@ -2536,6 +2536,22 @@ And that’s it!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### Blur variance shadow map 
+```javascript
+shadowGenerator.useBlurVarianceShadowMap = true;
+```
+This is the better soften shadow filter but the slower as well.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T120338Z" creationid="aceway" creationdate="20170204T120338Z">
+        <seg>### 模糊阴影映射 
+```javascript
+shadowGenerator.useBlurVarianceShadowMap = true;
+```
+This is the better soften shadow filter but the slower as well.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### Build !</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101719Z" creationid="aceway@qq.com" creationdate="20160427T101719Z">
@@ -2620,12 +2636,12 @@ shadowGenerator.usePoissonSampling = true;
 ```
 If you set this one to _true_, Variance shadow maps will be disabled.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T110632Z" creationid="aceway" creationdate="20170204T110632Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T120106Z" creationid="aceway" creationdate="20170204T110632Z">
         <seg>### 泊松采样
 ```javascript
 shadowGenerator.usePoissonSampling = true;
 ```
-If you set this one to _true_, Variance shadow maps will be disabled.</seg>
+你过你把该值设置为_true_, 则差分阴影映射将被禁用.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8779,6 +8795,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The result is better, but slower.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T120201Z" creationid="aceway" creationdate="20170204T120201Z">
+        <seg>结果会更好,但是也更慢.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The result should look like this:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101649Z" creationid="aceway@qq.com" creationdate="20160427T101649Z">
@@ -9145,6 +9169,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035759Z" creationid="aceway" creationdate="20170130T034702Z">
         <seg>这个椭球体表示我们播放器大小: 当网格和椭球体发生接触时就会抛出一个碰撞事件，以预防我们的相机和该网格考得太近:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This filter uses Poisson sampling to soften shadows.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T120142Z" creationid="aceway" creationdate="20170204T120142Z">
+        <seg>这个过滤器使用泊松采样柔化阴影.</seg>
       </tuv>
     </tu>
     <tu>
