@@ -110,6 +110,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![HeightMap5](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14-4.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T102043Z" creationid="aceway" creationdate="20170204T102043Z">
+        <seg>![高度图5](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14-4.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![HeightMap](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050349Z" creationid="aceway" creationdate="20170204T045736Z">
@@ -1859,6 +1867,16 @@ This collision method is convenient in a lot of situations.</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>## Next step
+Well done!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T102741Z" creationid="aceway" creationdate="20170204T102741Z">
+        <seg>## 下一步
+干得漂亮!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Next step
 With those two functions, your scenes are becoming a lot more dynamic: you can define a specific reaction to object intersecting and colliding, and begin to introduce physics notions into your scene.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T091813Z" creationid="aceway" creationdate="20170130T091813Z">
@@ -3112,6 +3130,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150747Z" creationid="aceway" creationdate="20160521T150747Z">
         <seg>* **镜面光**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Tips**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T102048Z" creationid="aceway" creationdate="20170204T102048Z">
+        <seg>* **提示**</seg>
       </tuv>
     </tu>
     <tu>
@@ -4520,6 +4546,18 @@ scene.beginAnimation(torus, 0, 120, true);
         <seg>//你的代码放在这里
 });
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>//Zoom
+        if (camera.radius &gt; 150)
+            camera.radius = 150;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T102511Z" creationid="aceway" creationdate="20170204T102511Z">
+        <seg>//缩放
+        if (camera.radius &gt; 150)
+            camera.radius = 150;</seg>
       </tuv>
     </tu>
     <tu>
@@ -6122,6 +6160,14 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is another example showing what you can achieve with BabylonJS height maps:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T102036Z" creationid="aceway" creationdate="20170204T102036Z">
+        <seg>这儿是另一个展示你可以用BabylonJS高度图实现效果的例子:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is how it is done:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T105349Z" creationid="aceway" creationdate="20170131T105349Z">
@@ -6504,6 +6550,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T081301Z" creationid="aceway" creationdate="20170130T081301Z">
         <seg>在动态场景里，物体是在运动中彼此相互作用的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In my example, I have added a skybox (like we have learned before [here](http://doc.babylonjs.com/tutorials/Environment)), and a spotlight to simulate sun activity.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T101854Z" creationid="aceway" creationdate="20170204T101854Z">
+        <seg>在我的例子里,我已经添加了个天空盒(像我们在之前在[这](http://doc.babylonjs.com/tutorials/Environment)学到的), 还有个聚光灯来模拟太阳光的活动.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7391,6 +7445,14 @@ Easy.&amp;nbsp; Most of these things you already know, don't you?&amp;nbsp; I th
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One more important thing you need to know is [how to create shadows](http://doc.babylonjs.com/tutorials/Shadows).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T103406Z" creationid="aceway" creationdate="20170204T103406Z">
+        <seg>一个更重要的事情你需要知道: [如何创建阴影](http://doc.babylonjs.com/tutorials/Shadows).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One of the advantages of sprites is animations.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T121636Z" creationid="aceway" creationdate="20170129T121636Z">
@@ -7829,6 +7891,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T095715Z" creationid="aceway" creationdate="20170204T095715Z">
         <seg>因此,像素越白,则你的山峰会越高.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So, to avoid that kind of situation, we can constrain the camera movement:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T102441Z" creationid="aceway" creationdate="20170204T102441Z">
+        <seg>因此,为了避免这种情况,我们可以约束相机的运动:</seg>
       </tuv>
     </tu>
     <tu>
@@ -9623,6 +9693,14 @@ if (pickResult.hit) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When the user is manipulating the camera, it can be awkward if he can see under the ground, or if he zooms-out outside the skybox.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T102359Z" creationid="aceway" creationdate="20170204T102359Z">
+        <seg>当用户在操作相机时, 如果能够从地面下面看到高度图或在天空盒外放大高度图,那么它(高度图)会显得比较拙劣.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When we included the "src" folder it also included the .js files corresponding to the .ts, we have to remove them from the project as we have no use of them.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100856Z" creationid="aceway@qq.com" creationdate="20160427T100856Z">
@@ -10067,6 +10145,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You may be interested in visiting [**the playground demo**](http://babylonjs-playground.azurewebsites.net/?14) that goes with this tutorial.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T102722Z" creationid="aceway" creationdate="20170204T102722Z">
+        <seg>也许你有兴趣访问这个 [**娱乐场演示**](http://babylonjs-playground.azurewebsites.net/?14),那和本教程相辅相成.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You may have noticed that scaling values are never negative.&amp;nbsp; It would be illogical to use a negative scaling value, and if you decide to use some negative values, unexpected results may occur.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T075646Z" creationid="aceway" creationdate="20160423T075646Z">
@@ -10183,6 +10269,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160839Z" creationid="aceway" creationdate="20160402T152713Z">
         <seg>你的场景现在动起来了, 你的所有网格都可在所有方向上移动!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Your scene looks good now, and you can imagine a lot of new landscapes!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T102834Z" creationid="aceway" creationdate="20170204T102834Z">
+        <seg>你的场景现在看起来不错了,而且你能想想许多新的风景了!</seg>
       </tuv>
     </tu>
     <tu>
@@ -10841,6 +10935,26 @@ scene.clearColor = new BABYLON.Color3(0.5, 0.8, 0.5);
 scene.clearColor = BABYLON.Color3.Blue();
 ```
 在网格、材质、纹理或任何其它东西最终颜色的计算中，该颜色和属性都不会被使用.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+var camerasBorderFunction = function () {
+        //Angle
+        if (camera.beta &lt; 0.1)
+            camera.beta = 0.1;
+        else if (camera.beta &gt; (Math.PI / 2) * 0.9)
+            camera.beta = (Math.PI / 2) * 0.9;</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T102500Z" creationid="aceway" creationdate="20170204T102500Z">
+        <seg>```javascript
+var camerasBorderFunction = function () {
+        //角度
+        if (camera.beta &lt; 0.1)
+            camera.beta = 0.1;
+        else if (camera.beta &gt; (Math.PI / 2) * 0.9)
+            camera.beta = (Math.PI / 2) * 0.9;</seg>
       </tuv>
     </tu>
     <tu>
