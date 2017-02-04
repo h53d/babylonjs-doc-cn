@@ -94,6 +94,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Skybox](http://www.babylonjs.com/tutorials/13%20-%20Environment/13-1.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T024900Z" creationid="aceway" creationdate="20170204T024900Z">
+        <seg>![天空盒](http://www.babylonjs.com/tutorials/13%20-%20Environment/13-1.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![TextureMask](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-1.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031605Z" creationid="aceway" creationdate="20170131T031605Z">
@@ -2506,6 +2514,14 @@ From Visual Studio, close the solution you just created, then go to the director
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### Skybox</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T024635Z" creationid="aceway" creationdate="20170204T024635Z">
+        <seg>### 天空盒</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### The BabylonJS Playground is located at... http://www.babylonjs.com/playground/</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T033304Z" creationid="aceway@qq.com" creationdate="20160427T033304Z">
@@ -2766,6 +2782,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030335Z" creationid="aceway@qq.com" creationdate="20160427T030335Z">
         <seg>(可以自行编辑演示场景的代码然后点击运行或保存.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Please see the section on ambientColors in our [Unleash the Standard Material](http://blogs.msdn.com/b/eternalcoding/archive/2013/07/01/babylon-js-unleash-the-standardmaterial-for-your-babylon-js-game.aspx) tutorial, for more information.)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T024622Z" creationid="aceway" creationdate="20170204T024622Z">
+        <seg>(请在我们的[运用标准材质](http://blogs.msdn.com/b/eternalcoding/archive/2013/07/01/babylon-js-unleash-the-standardmaterial-for-your-babylon-js-game.aspx)教程里查看环境色一节,以获取更多信息)</seg>
       </tuv>
     </tu>
     <tu>
@@ -5596,6 +5620,28 @@ particleSystem.start();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>First, our box, nothing new, just take notice of the disabled [backface culling](http://en.wikipedia.org/wiki/Back-face_culling):
+```javascript
+var skybox = BABYLON.Mesh.CreateBox("skyBox", 100.0, scene);
+var skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
+skyboxMaterial.backFaceCulling = false;
+skyboxMaterial.disableLighting = true;
+skybox.material = skyboxMaterial;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T025013Z" creationid="aceway" creationdate="20170204T025013Z">
+        <seg>首先,我们的盒子没什么新东西, 只是要注意到被禁掉的[背面裁剪](http://en.wikipedia.org/wiki/Back-face_culling):
+```javascript
+var skybox = BABYLON.Mesh.CreateBox("skyBox", 100.0, scene);
+var skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
+skyboxMaterial.backFaceCulling = false;
+skyboxMaterial.disableLighting = true;
+skybox.material = skyboxMaterial;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For advanced keyframe animation, you can also define the functions used to interpolate (transition) between keys.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110459Z" creationid="aceway" creationdate="20160402T110459Z">
@@ -6615,10 +6661,26 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Next, we apply our special sky texture to it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T025504Z" creationid="aceway" creationdate="20170204T025504Z">
+        <seg>然后,我们将特殊的天空纹理应用到盒子上去.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Next, we go inside the ```&lt;body&gt;``` part of the web page... and add a HTML5 canvas element, which will be used to draw our scene.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034318Z" creationid="aceway" creationdate="20160428T145930Z">
         <seg>下一步，我们进入页面的 ```&lt;body&gt;``` 内部... 然后添加一个HTML5 画布元素, 我们将用它来绘制我们的场景.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Next, we set the `infiniteDistance` property.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T025131Z" creationid="aceway" creationdate="20170204T025131Z">
+        <seg>接下来,我们设置`infiniteDistance` 属性.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6731,6 +6793,22 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145722Z" creationid="aceway" creationdate="20160428T145722Z">
         <seg>现在加载我们的框架文件.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now we must remove all light reflections on our box (the sun doesn't reflect on the sky!):
+```javascript
+skyboxMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
+skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T025417Z" creationid="aceway" creationdate="20170204T025417Z">
+        <seg>现在我们必须删除天空盒的所有反射光(天空不会反射出太阳!):
+```javascript
+skyboxMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
+skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -8575,6 +8653,14 @@ particleSystem.emitRate = 1000;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This makes the skybox follow our camera's position.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T025207Z" creationid="aceway" creationdate="20170204T025207Z">
+        <seg>这使天空盒跟随我们相机的位置.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This manager is mandatory, even if you want to create one sprite.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170122T111523Z" creationid="aceway" creationdate="20170122T111523Z">
@@ -8795,6 +8881,14 @@ particleSystem.particleTexture = new BABYLON.Texture("Flare.png", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T081400Z" creationid="aceway" creationdate="20170130T081400Z">
         <seg>为了更好的渲染此种情景，你需要知道你的网格具体什么 时候彼此相交的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To give a perfect illusion of a beautiful sunny sky, we are going to create a simple box, but with a special texture.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T024843Z" creationid="aceway" creationdate="20170204T024843Z">
+        <seg>为了给漂亮的晴朗天空一个完美的演绎, 我们准备创建一个简单的盒子,但是它具有特殊的纹理.</seg>
       </tuv>
     </tu>
     <tu>
