@@ -6,6 +6,14 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>![BlurVSM](http://www.babylonjs.com/forumpics/blurVSM.jpg)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T123324Z" creationid="aceway" creationdate="20170204T123324Z">
+        <seg>![模糊差分阴影映射](http://www.babylonjs.com/forumpics/blurVSM.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![Collisions](http://www.babylonjs.com/tutorials/10%20-%20Collisions%20Intersect/10-1.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T085313Z" creationid="aceway" creationdate="20170130T085313Z">
@@ -78,6 +86,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Hard shadows](http://www.babylonjs.com/forumpics/hard.jpg)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T123143Z" creationid="aceway" creationdate="20170204T123143Z">
+        <seg>![生硬的阴影](http://www.babylonjs.com/forumpics/hard.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![HeightMap2](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14-1.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050405Z" creationid="aceway" creationdate="20170204T050042Z">
@@ -142,6 +158,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Poisson](http://www.babylonjs.com/forumpics/poisson.jpg)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T123207Z" creationid="aceway" creationdate="20170204T123207Z">
+        <seg>![泊松采样](http://www.babylonjs.com/forumpics/poisson.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![Shadows2](http://www.babylonjs.com/tutorials/15%20-%20Shadows/15-1.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T104258Z" creationid="aceway" creationdate="20170204T104258Z">
@@ -198,6 +222,14 @@ We select ASP.Net 4, don't try the 5 version Template: it's a lot of troubles ri
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T095715Z" creationid="aceway@qq.com" creationdate="20160427T095715Z">
         <seg>![VS03](http://i.imgur.com/fZLlLQW.png)
 我们选择 ASP.Net 4, 不要尝试第5版模版: 它现在还有许多问题.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>![VSM](http://www.babylonjs.com/forumpics/vsm.jpg)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T123309Z" creationid="aceway" creationdate="20170204T123309Z">
+        <seg>![差分阴影映射](http://www.babylonjs.com/forumpics/vsm.jpg)</seg>
       </tuv>
     </tu>
     <tu>
@@ -2584,6 +2616,14 @@ shadowGenerator.useBlurVarianceShadowMap = true;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### Examples</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T123002Z" creationid="aceway" creationdate="20170204T123002Z">
+        <seg>### 例子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### Fix the Visual Studio Solution &amp; Project</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100108Z" creationid="aceway@qq.com" creationdate="20160427T100108Z">
@@ -3619,6 +3659,14 @@ particleSystem.maxSize = 0.5;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* shadowGenerator.blurScale: Define the scale used to downscale the shadow map before applying the blur postprocess.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T122939Z" creationid="aceway" creationdate="20170204T122939Z">
+        <seg>* shadowGenerator.blurScale: 在应用模糊化的后期处理之前定义用于降级的级数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* sideOrientation : the wanted side orientation (front, back or double side).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T111540Z" creationid="aceway" creationdate="20160507T111540Z">
@@ -3943,6 +3991,38 @@ particleSystem.maxSize = 0.5;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T022502Z" creationid="aceway@qq.com" creationdate="20160427T022502Z">
         <seg>**吐槽** - 任何编辑器的重要特征之一是 撤销和重做, 我们的娱乐场编辑器完全支持这两个特征.&amp;nbsp; 我并不熟悉所有操作系统里的撤销和重做的操作键，, 但知道Windows系统里撤销键是Conntrol-z 而且 重做键是 Shift-Control-z.&amp;nbsp; 你也可以多次地执行撤销和重做。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*Blur Variance Shadow Map*</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T123329Z" creationid="aceway" creationdate="20170204T123329Z">
+        <seg>*差分阴影映射*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*No filter*</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T123156Z" creationid="aceway" creationdate="20170204T123156Z">
+        <seg>*没有过滤器*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*Poisson sampling*</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T123217Z" creationid="aceway" creationdate="20170204T123217Z">
+        <seg>*泊松采样*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*Variance Shadow Map*</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T123313Z" creationid="aceway" creationdate="20170204T123313Z">
+        <seg>*差分阴影映射*</seg>
       </tuv>
     </tu>
     <tu>
@@ -5452,6 +5532,14 @@ player.invertU = -1;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T133721Z" creationid="aceway" creationdate="20160522T133721Z">
         <seg>默认情况下, 镜面光和alpha不相干, 但是你可以设置```materialSphere1.useSpecularOverAlpha``` 为真, 从而使alpha和镜面光成反比.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By default, the value is 1 (Meaning the box will go from -1 to 1 in bot direction resulting in 9 values read by the blur postprocess).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T122539Z" creationid="aceway" creationdate="20170204T122539Z">
+        <seg>默认情况下,该值是1 (Meaning the box will go from -1 to 1 in bot direction resulting in 9 values read by the blur postprocess).</seg>
       </tuv>
     </tu>
     <tu>
@@ -7801,6 +7889,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070904Z" creationid="aceway@qq.com" creationdate="20160427T070904Z">
         <seg>请不要将它用在生产环境，因为文件大小是需要考虑的重要因素 (超过1.5 MB).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please find here pictures of various filters used with a spot light:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T123116Z" creationid="aceway" creationdate="20170204T123116Z">
+        <seg>请在这里寻找一个聚光灯情况下各种过滤器的图片:</seg>
       </tuv>
     </tu>
     <tu>
