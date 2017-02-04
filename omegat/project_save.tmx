@@ -1913,6 +1913,16 @@ Great, now you can develop a real FPS game!</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>## Next step
+Now that you are becoming a real professional about Babylon.js, maybe it’s time to go deeper into the code to manipulate complex shaders, mesh, or textures.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T131200Z" creationid="aceway" creationdate="20170204T131200Z">
+        <seg>## 下一步
+现在你已经成为了一名Babylon.js专业人才了, 也许是时候深入代码来掌握复杂的着色器,网格或纹理了.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Next step
 ParticleSystems are very powerful and versatile tools that can help bring realness and movement to your scenes.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T103004Z" creationid="aceway" creationdate="20170131T103004Z">
@@ -2368,6 +2378,14 @@ Simply put, you will need to use a browser that supports WebGL and has Javascrip
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T022538Z" creationid="aceway@qq.com" creationdate="20160427T022538Z">
         <seg>## 渲染画布
 ![](http://urbanproductions.com/wingy/babylon/misc/playground_rc01.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## The Ribbon</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132231Z" creationid="aceway" creationdate="20170204T132231Z">
+        <seg>## 色带</seg>
       </tuv>
     </tu>
     <tu>
@@ -4266,6 +4284,22 @@ ID_PAGE: 22681
 PG_TITLE: 路线图
 ---
 ## 路线图</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>---
+ID_PAGE: 24847
+PG_TITLE: Parametric Shapes
+---
+## Introduction</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T131732Z" creationid="aceway" creationdate="20170204T131653Z">
+        <seg>---
+ID_PAGE: 24847
+PG_TITLE: 参数化形状
+---
+## 介绍</seg>
       </tuv>
     </tu>
     <tu>
@@ -7523,6 +7557,14 @@ skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now you might want to visit [**the playground scene**](http://babylonjs-playground.azurewebsites.net/?15) for this tutorial.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T130834Z" creationid="aceway" creationdate="20170204T130834Z">
+        <seg>现在你可能想访问为本教程准备的 [**娱乐场景**](http://babylonjs-playground.azurewebsites.net/?15).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now you should know everything about collisions, so it’s time to move on to a classic effect in 3D : [particles](http://doc.babylonjs.com/tutorials/Particles).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T022611Z" creationid="aceway" creationdate="20170130T092913Z">
@@ -7783,6 +7825,14 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T122233Z" creationid="aceway" creationdate="20160507T122233Z">
         <seg>我们的 [**娱乐场演示场景01**](http://www.babylonjs-playground.com/?1)使用了一个CreateGround构造函数... 所以你可以使用上面的链接来看看它的行为.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Our [home menu for our wiki](http://doc.babylonjs.com/) is your portal to many advanced topics.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T131309Z" creationid="aceway" creationdate="20170204T131309Z">
+        <seg>我们的[维基主页菜单](http://doc.babylonjs.com/) 是你获取许多高级话题门户网站.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8063,6 +8113,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>See you there.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T131450Z" creationid="aceway" creationdate="20170204T131450Z">
+        <seg>稍后见.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Setting it to false will set the collision to the regular collision calculation as it always was.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T050739Z" creationid="aceway" creationdate="20170130T050739Z">
@@ -8175,6 +8233,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T095301Z" creationid="aceway@qq.com" creationdate="20160427T095301Z">
         <seg>所以我们见在仓库的子目录里创建Visual Studio工程，然后把它移动到上层.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So we call these meshes "Parametric Shapes".</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132214Z" creationid="aceway" creationdate="20170204T132214Z">
+        <seg>所以我们称这些网格为"参数化的形状".</seg>
       </tuv>
     </tu>
     <tu>
@@ -8509,6 +8575,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The basic meshes you've seen up until now have an expected shape : when you create a sphere mesh, you expect to see a spherical shape.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T131953Z" creationid="aceway" creationdate="20170204T131953Z">
+        <seg>直到目前你已经看到的基础网格都有预期的形状: 当你创建一个球体网格,你期望看到一个球形.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The code computed at run time must be located in this function:
 ```javascript
 scene.registerBeforeRender(function () {</seg>
@@ -8831,6 +8905,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The light's position, as well as the positions of the mesh that you have pushed into the renderlist, determine where the shadows will appear.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T130743Z" creationid="aceway" creationdate="20170204T130743Z">
+        <seg>光源位置, 还有你加入到渲染列表的网格对象的位置, 一起决定着阴影将在哪出现.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The main difficulty is to click on a 3D object whereas your screen is a flat 2D display.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T092351Z" creationid="aceway" creationdate="20170130T092351Z">
@@ -8991,6 +9073,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The same goes for a box mesh, a torus, a cylinder, etc.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132045Z" creationid="aceway" creationdate="20170204T132045Z">
+        <seg>对于盒子,环,柱体等也时同样的情况.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The scene has now a new flag (false per default):
 ```javascript
 scene.workerCollisions = true|false
@@ -9107,6 +9197,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Their final shape depends upon some parameters.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132140Z" creationid="aceway" creationdate="20170204T132140Z">
+        <seg>它们的最终形状取决于一些参数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Then, another comma, and another vector3 to a new location.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T142156Z" creationid="aceway" creationdate="20160503T142156Z">
@@ -9185,6 +9283,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T103910Z">
         <seg>Babylon.js 娱乐场有个教程.&amp;nbsp; 就在 [**点击这儿**](http://doc.babylonjs.com/page.php?p=22631).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is another kind of mesh whose final shapes aren't fixed.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132115Z" creationid="aceway" creationdate="20170204T132115Z">
+        <seg>存在另外一种网格,它们的形状不是固定的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10199,10 +10305,26 @@ if (pickResult.hit) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can also participate in this project by going to our Github page: [https://github.com/BabylonJS/Babylon.js](https://github.com/BabylonJS/Babylon.js) and also by participating in our very active forum: [http://www.html5gamedevs.com/forum/16-babylonjs](http://www.html5gamedevs.com/forum/16-babylonjs).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T131441Z" creationid="aceway" creationdate="20170204T131441Z">
+        <seg>你也可以通过访问我们的Github页来参与到这个项目: [https://github.com/BabylonJS/Babylon.js](https://github.com/BabylonJS/Babylon.js) 同时参与到我们非常活跃的论坛: [http://www.html5gamedevs.com/forum/16-babylonjs](http://www.html5gamedevs.com/forum/16-babylonjs).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can also use _mesh.ellipsoidOffset_ to move the ellipsoid on the mesh (By default the ellipsoid is centered on the mesh)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T041919Z" creationid="aceway" creationdate="20170130T041622Z">
         <seg>你也能使用 _mesh.ellipsoidOffset_ 在网格上偏移椭球体 (默认情况下椭球体位于网格中心)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can also visit the [point light shadow map playground scene](http://www.babylonjs-playground.com/#LYCSQ#12)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T130925Z" creationid="aceway" creationdate="20170204T130925Z">
+        <seg>你也可以访问 [点光源映射的娱乐场景](http://www.babylonjs-playground.com/#LYCSQ#12)</seg>
       </tuv>
     </tu>
     <tu>
