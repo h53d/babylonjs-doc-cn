@@ -142,6 +142,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Shadows2](http://www.babylonjs.com/tutorials/15%20-%20Shadows/15-1.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T104258Z" creationid="aceway" creationdate="20170204T104258Z">
+        <seg>![阴影2](http://www.babylonjs.com/tutorials/15%20-%20Shadows/15-1.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>![Shadows](http://www.babylonjs.com/tutorials/15%20-%20Shadows/15.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T103708Z" creationid="aceway" creationdate="20170204T103708Z">
+        <seg>![阴影](http://www.babylonjs.com/tutorials/15%20-%20Shadows/15.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![Skybox](http://www.babylonjs.com/tutorials/13%20-%20Environment/13-1.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T024900Z" creationid="aceway" creationdate="20170204T024900Z">
@@ -6208,6 +6224,20 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here we want the shadow of our torus, but you can “push” any meshes you want:
+```javascript 
+shadowGenerator.getShadowMap().renderList.push(torus);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T104758Z" creationid="aceway" creationdate="20170204T104758Z">
+        <seg>此处我们想要我们那个环的阴影, 但时你可以添加任何你想要的网格对象的:
+```javascript 
+shadowGenerator.getShadowMap().renderList.push(torus);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here we want to scale an object on the X axis, so it will be “scaling.x”.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054056Z" creationid="aceway@qq.com" creationdate="20160331T014428Z">
@@ -6698,6 +6728,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this tutorial, we are going to learn how to create shadows in Babylon JS.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T103559Z" creationid="aceway" creationdate="20170204T103559Z">
+        <seg>在本教程里,我们将学习在Babylon JS如何创建阴影.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In this tutorial, we are going to simulate the same camera movements: the camera is on the floor, in collision with the ground, and potentially in collision with any objects in the scene.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131141Z" creationid="aceway" creationdate="20170129T130524Z">
@@ -7089,6 +7127,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T025131Z" creationid="aceway" creationdate="20170204T025131Z">
         <seg>接下来,我们设置`infiniteDistance` 属性.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Next, you have to define which shadows will be rendered.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T104639Z" creationid="aceway" creationdate="20170204T104639Z">
+        <seg>接下来,你需要定义渲染哪个的阴影.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7795,6 +7841,42 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T050739Z" creationid="aceway" creationdate="20170130T050739Z">
         <seg>设置为false将使它为常规的碰撞检测计算.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Shadows
+---
+## Introduction</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T103518Z" creationid="aceway" creationdate="20170204T103518Z">
+        <seg>阴影
+---
+## 介绍</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Shadows are easy to generate using the babylon.js “ShadowGenerator”.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T103739Z" creationid="aceway" creationdate="20170204T103739Z">
+        <seg>使用babylon.js的“ShadowGenerator”创建阴影很容易.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Shadows are now becoming dynamic, and they are now dynamically generated depending upon a light.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T103700Z" creationid="aceway" creationdate="20170204T103700Z">
+        <seg>阴影现在已经时动态的,而且时根据一个光源动态的生成.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Shadows will give your scene a beautiful rendering effect, so don't forget about them!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T103505Z" creationid="aceway" creationdate="20170204T103429Z">
+        <seg>阴影会给你场景漂亮的渲染效果, 所以不要忘记它们!</seg>
       </tuv>
     </tu>
     <tu>
@@ -8743,6 +8825,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The two parameters used by the shadow generator are: the size of the shadow map, and which light is used for the shadow map's computation.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T104449Z" creationid="aceway" creationdate="20170204T104449Z">
+        <seg>阴影生成器使用的两个参数是: 阴影的大小, 和用于计算阴影的光源.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The up-to-date list of the .js files and indications about the Engine's setup can be found [here](http://doc.babylonjs.com/generals/Creating_the_Mini-fied_Version)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094136Z" creationid="aceway@qq.com" creationdate="20160427T094136Z">
@@ -9001,6 +9091,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T104358Z" creationid="aceway" creationdate="20160402T104358Z">
         <seg>这个函数返回一个 ```BABYLON.Animatable``` 对象,通过该对象能够访问个别的动画 (例如使用 ```getAnimationByTargetProperty``` 功能).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This function uses a shadow map: a map of your scene generated from the light’s point of view, as you can see here:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T104251Z" creationid="aceway" creationdate="20170204T104251Z">
+        <seg>这个函数使用阴影映射: 从光源点视角生成的场景映射, 正如你在此处所见:</seg>
       </tuv>
     </tu>
     <tu>
