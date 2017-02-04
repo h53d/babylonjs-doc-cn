@@ -2614,6 +2614,22 @@ From Visual Studio, close the solution you just created, then go to the director
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>### Poisson sampling
+```javascript
+shadowGenerator.usePoissonSampling = true;
+```
+If you set this one to _true_, Variance shadow maps will be disabled.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T110632Z" creationid="aceway" creationdate="20170204T110632Z">
+        <seg>### 泊松采样
+```javascript
+shadowGenerator.usePoissonSampling = true;
+```
+If you set this one to _true_, Variance shadow maps will be disabled.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>### Release mode</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T092524Z" creationid="aceway@qq.com" creationdate="20160427T092524Z">
@@ -2688,6 +2704,22 @@ The purple section of the big picture... is the createScene() 'function'... a Ja
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T031410Z" creationid="aceway" creationdate="20160404T025918Z">
         <seg>### createScene() 函数 - 紫色部分 ###
 大图片里的紫色部分...是createScene() '函数'... 一个Javascript '函数'.&amp;nbsp; 它是'单HTML文件'场景里的最重要部分的.&amp;nbsp; 在你的Javascript代码里你不必使用createScene()函数, 但是在学习WebGL的早期日子里,请这样做吧.&amp;nbsp; 我有些魔法展示给你看... 如果你把大部分的场景代码放到一个叫做createScene()的函数里.&amp;nbsp; (就像大图片里展示的那样.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>### Variance shadow map 
+```javascript
+shadowGenerator.useVarianceShadowMap = true;
+```
+It is _true_ by default, because it is useful to decrease the aliasing of the shadow.  But if you want to reduce computation time, feel free to change it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T110709Z" creationid="aceway" creationdate="20170204T110544Z">
+        <seg>### 差分阴影映射
+```javascript
+shadowGenerator.useVarianceShadowMap = true;
+```
+默认为_true_, 因为它对阴影的抗锯齿非常有用. 但是如果你想缩减计算的时间, 可以随意的改变它的值.</seg>
       </tuv>
     </tu>
     <tu>
