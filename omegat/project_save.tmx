@@ -102,6 +102,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Skybox](http://www.babylonjs.com/tutorials/13%20-%20Environment/13-2.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T035400Z" creationid="aceway" creationdate="20170204T035400Z">
+        <seg>![天空盒](http://www.babylonjs.com/tutorials/13%20-%20Environment/13-2.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![TextureMask](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-1.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T031605Z" creationid="aceway" creationdate="20170131T031605Z">
@@ -5332,6 +5340,14 @@ particleSystem.disposeOnStop = true;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each image must be named per the corresponding face: “skybox_nx.png”, “skybox_ny.png”, “skybox_nz.png”, “skybox_px.png”, “skybox_py.png”, “skybox_pz.png”.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T035354Z" creationid="aceway" creationdate="20170204T035354Z">
+        <seg>每个图片名字必须根据盒子面来命名成: “skybox_nx.png”, “skybox_ny.png”, “skybox_nz.png”, “skybox_px.png”, “skybox_py.png”, “skybox_pz.png”.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Each image of a sprite must be contained in a 64 pixel square, no more no less.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011654Z" creationid="aceway@qq.com" creationdate="20170123T011654Z">
@@ -6258,6 +6274,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T085926Z" creationid="aceway" creationdate="20170130T085643Z">
         <seg>简而言之, 如果这个参数为true (默认是false), 那么边界盒将更叫贴近网格(OBB边界类型), 但是会有更多的计算开销.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In that `/skybox` directory, we must find 6 sky textures, one for each face of our box.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T035231Z" creationid="aceway" creationdate="20170204T035041Z">
+        <seg>在那个`/skybox` 目录, 我们必能找到6个天空纹理, 一个纹理支持天空盒的一个面.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8705,6 +8729,24 @@ particleSystem.emitRate = 1000;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T101140Z" creationid="aceway" creationdate="20170131T101140Z">
         <seg>本教程的这节正在构建中.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This texture must have been prepared to be a skybox, in a dedicated directory, named “skybox” in our example:
+```javascript
+skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("textures/skybox", scene);
+skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
+```
+(More about reflectionTextures can be found in our [Unleash the Standard Material](http://blogs.msdn.com/b/eternalcoding/archive/2013/07/01/babylon-js-unleash-the-standardmaterial-for-your-babylon-js-game.aspx) tutorial.)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T034700Z" creationid="aceway" creationdate="20170204T034700Z">
+        <seg>这纹理必须时为天空盒准备的, 它在我们这个例子里位于专用目录,名为"天空盒":
+```javascript
+skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("textures/skybox", scene);
+skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
+```
+(关于反射纹理(reflectionTextures)的更多信息可以去我们的[运用标准材质](http://blogs.msdn.com/b/eternalcoding/archive/2013/07/01/babylon-js-unleash-the-standardmatNext, we apply our special sky texture to iterial-for-your-babylon-js-game.aspx)教程查看.)</seg>
       </tuv>
     </tu>
     <tu>
