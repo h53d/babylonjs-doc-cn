@@ -78,10 +78,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![HeightMap2](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14-1.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050405Z" creationid="aceway" creationdate="20170204T050042Z">
+        <seg>![高度图2](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14-1.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>![HeightMap3](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/worldHeightMap.jpg)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050552Z" creationid="aceway" creationdate="20170204T050552Z">
+        <seg>![高度图3](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/worldHeightMap.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![HeightMap](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14.png)</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045736Z" creationid="aceway" creationdate="20170204T045736Z">
-        <seg>![高程图](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14.png)</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050349Z" creationid="aceway" creationdate="20170204T045736Z">
+        <seg>![高度图](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14.png)</seg>
       </tuv>
     </tu>
     <tu>
@@ -3044,6 +3060,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **Explanations of a height map**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050412Z" creationid="aceway" creationdate="20170204T050155Z">
+        <seg>* **一张高度图的阐释**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Intersect mesh**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084622Z" creationid="aceway" creationdate="20170130T084622Z">
@@ -4570,6 +4594,14 @@ var effect = engine.createEffectForParticles("myParticle", ["time"]);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A height map is simply a greyscale image like the one we are going to use:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050546Z" creationid="aceway" creationdate="20170204T050546Z">
+        <seg>一张高度图是个简化的绘图图像, 正如我们将使用的</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A picture of [the playground's ParticleSystem demo](http://babylonjs-playground.azurewebsites.net/?12)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T025021Z" creationid="aceway" creationdate="20170131T025021Z">
@@ -5916,8 +5948,8 @@ particleSystem.manualEmitCount = 300;
 ---
 ## Introduction</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045610Z" creationid="aceway" creationdate="20170204T045610Z">
-        <seg>高程图
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050327Z" creationid="aceway" creationdate="20170204T045610Z">
+        <seg>高度图
 ---
 ## 介绍</seg>
       </tuv>
@@ -6528,8 +6560,8 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       <tuv lang="EN-US">
         <seg>In this tutorial, our goal is to understand height maps, and to learn how to generate realistic grounds.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045817Z" creationid="aceway" creationdate="20170204T045728Z">
-        <seg>在本教程,我们的目标是理解高程图,然后学习如何生成真实地面.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050341Z" creationid="aceway" creationdate="20170204T045728Z">
+        <seg>在本教程,我们的目标是理解高度图,然后学习如何生成真实地面.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9237,6 +9269,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Understanding height maps is the main objective of this tutorial.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050419Z" creationid="aceway" creationdate="20170204T050235Z">
+        <seg>理解高度图是本教程的主要目的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Use [Cmder](http://cmder.net/) or any Shell, go to the directory you want to clone your repo, then clone it.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094819Z" creationid="aceway@qq.com" creationdate="20160427T094819Z">
@@ -10133,6 +10173,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T102749Z" creationid="aceway@qq.com" creationdate="20160427T102749Z">
         <seg>_HTML 页面_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_Our material, a texture, applied to the plane_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050120Z" creationid="aceway" creationdate="20170204T050120Z">
+        <seg>_我们的材质, 一张纹理, 应用到该平面上_</seg>
       </tuv>
     </tu>
     <tu>
