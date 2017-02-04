@@ -6104,6 +6104,14 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you want some free skybox texture samples, point your browser to: http://3delyvisions.co/skf1.htm (look at licenses before use, please.) As you can see by those examples, skybox textures need not be textures of sky alone.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T042500Z" creationid="aceway" creationdate="20170204T042500Z">
+        <seg>如果你想要些免费的天空盒的纹理样例,将浏览器定位到: http://3delyvisions.co/skf1.htm (在使用前请看下授权说明.) 正如你从这些例子中所见,天空盒子纹理不单只为天空的花纹.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you want to add a new file, please do the following as well:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T065111Z" creationid="aceway@qq.com" creationdate="20160427T065111Z">
