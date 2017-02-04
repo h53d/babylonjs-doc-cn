@@ -166,6 +166,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Ribbon](http://jerome.bousquie.fr/BJS/images/ribbon.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132542Z" creationid="aceway" creationdate="20170204T132542Z">
+        <seg>![色带](http://jerome.bousquie.fr/BJS/images/ribbon.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![Shadows2](http://www.babylonjs.com/tutorials/15%20-%20Shadows/15-1.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T104258Z" creationid="aceway" creationdate="20170204T104258Z">
@@ -4294,10 +4302,10 @@ PG_TITLE: Parametric Shapes
 ---
 ## Introduction</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T131732Z" creationid="aceway" creationdate="20170204T131653Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132354Z" creationid="aceway" creationdate="20170204T131653Z">
         <seg>---
 ID_PAGE: 24847
-PG_TITLE: 参数化形状
+PG_TITLE: 参数化造型
 ---
 ## 介绍</seg>
       </tuv>
@@ -5278,6 +5286,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T100500Z" creationid="aceway" creationdate="20160507T100500Z">
         <seg>作为许多线段, 每条段先都是以三元向量组的方式呈现在空间里.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As it is very elementary, you can model almost any shape using a ribbon or many merged ribbons.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132535Z" creationid="aceway" creationdate="20170204T132535Z">
+        <seg>由于它是非常基础的, 所以你可以使用一个色带或多个色带合并来为任意形状建模.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8239,8 +8255,8 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
       <tuv lang="EN-US">
         <seg>So we call these meshes "Parametric Shapes".</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132214Z" creationid="aceway" creationdate="20170204T132214Z">
-        <seg>所以我们称这些网格为"参数化的形状".</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132344Z" creationid="aceway" creationdate="20170204T132214Z">
+        <seg>所以我们称这些网格为"参数化造型".</seg>
       </tuv>
     </tu>
     <tu>
@@ -9053,6 +9069,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101649Z" creationid="aceway@qq.com" creationdate="20160427T101649Z">
         <seg>结果看起来像这样:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ribbon is a very simple and versatile shape.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132337Z" creationid="aceway" creationdate="20170204T132337Z">
+        <seg>色带是个非常简单和灵活的造型.</seg>
       </tuv>
     </tu>
     <tu>
@@ -11396,6 +11420,20 @@ window.addEventListener("click", function () {</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>```javascript
+CreateRibbon(name, pathArray, closeArray, closePath, offset, scene, updatable, sideOrientation);
+```
+  * **name** : string.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132612Z" creationid="aceway" creationdate="20170204T132612Z">
+        <seg>```javascript
+CreateRibbon(name, pathArray, closeArray, closePath, offset, scene, updatable, sideOrientation);
+```
+  * **name** : 字符串类型.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
 animationBox.setKeys(keys);
 ```
 * Link this animation to our box:</seg>
@@ -11875,6 +11913,16 @@ optional | speedRatio | number | default : 1.</seg>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040205Z" creationid="aceway@qq.com" creationdate="20160429T040205Z">
         <seg>};  // createScene函数结束
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>  * **pathArray** : an array of paths.  
+As explained in the [Basic Elements](02.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132714Z" creationid="aceway" creationdate="20170204T132714Z">
+        <seg>  * **pathArray** : 一个路径数组.  
+如[基础元素]里解释的(02.</seg>
       </tuv>
     </tu>
     <tu>
