@@ -1338,6 +1338,14 @@ Here is a simple example of .babylon file:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Filters</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T105423Z" creationid="aceway" creationdate="20170204T105423Z">
+        <seg>## 过滤器</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Fresnel parameters
 Fresnel parameters are defined by the following JSON:
 ```javascript
@@ -4950,6 +4958,20 @@ sphere1.material = new BABYLON.StandardMaterial("texture1", scene);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>And finally, you will have to define where the shadows will be displayed... by setting a mesh parameter to true:
+```javascript
+ground.receiveShadows = true;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T105053Z" creationid="aceway" creationdate="20170204T105053Z">
+        <seg>最后,你需要定义下阴影在哪儿呈现... 通过将网格的一个参数设置成来完成:
+```javascript
+ground.receiveShadows = true;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>And if you give it a material, the light then reflects from both sides, too.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121011Z" creationid="aceway" creationdate="20160507T121011Z">
@@ -6482,6 +6504,14 @@ player.playAnimation(0, 43, true, 100);
 ```javascript
 player.playAnimation(0, 43, true, 100);
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to go further, you can activate shadows filtering.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T105519Z" creationid="aceway" creationdate="20170204T105519Z">
+        <seg>你过你想更进一层, 就可以激活阴影过滤.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8889,6 +8919,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are three filters available:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T105534Z" creationid="aceway" creationdate="20170204T105534Z">
+        <seg>有三个过滤器可用:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are three more things to add to your web page.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T064838Z" creationid="aceway@qq.com" creationdate="20160429T064838Z">
@@ -9467,6 +9505,20 @@ particleSystem.particleTexture = new BABYLON.Texture("Flare.png", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T133959Z" creationid="aceway" creationdate="20160508T133959Z">
         <seg>要做到这点, 只需设置 ```materialSphere1.useAlphaFromDiffuseTexture```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To do so, you can define the bias (which is 0.00005 by default).:
+```javascript
+shadowGenerator.bias = 0.01;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T105412Z" creationid="aceway" creationdate="20170204T105412Z">
+        <seg>要做到这点,你可以定义偏差(默认值是0.00005):
+```javascript
+shadowGenerator.bias = 0.01;
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -10263,6 +10315,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T135142Z" creationid="aceway" creationdate="20160522T135142Z">
         <seg>你也许想在[维基页](http://en.wikipedia.org/wiki/Back_face_culling)上阅读更多的背面剔除信息. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may want to reduce shadow acne resulting from not precise enough shadow map.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T105302Z" creationid="aceway" creationdate="20170204T105302Z">
+        <seg>你可能希望减小因精度不够造成的阴影瑕疵.</seg>
       </tuv>
     </tu>
     <tu>
