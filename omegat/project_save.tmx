@@ -2542,12 +2542,12 @@ shadowGenerator.useBlurVarianceShadowMap = true;
 ```
 This is the better soften shadow filter but the slower as well.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T120338Z" creationid="aceway" creationdate="20170204T120338Z">
-        <seg>### 模糊阴影映射 
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T121122Z" creationid="aceway" creationdate="20170204T120338Z">
+        <seg>qi### 模糊阴影映射 
 ```javascript
 shadowGenerator.useBlurVarianceShadowMap = true;
 ```
-This is the better soften shadow filter but the slower as well.</seg>
+这是个更好的柔化阴影过滤器但是也更慢.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5456,6 +5456,16 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By default, the value is 2
+* shadowGenerator.blurBoxOffset: Define the offset of the box's edge used to apply the blur.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T122030Z" creationid="aceway" creationdate="20170204T122030Z">
+        <seg>默认情况,该值是2
+* shadowGenerator.blurBoxOffset: 为应用在模糊化的盒子定义边缘偏移值.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By default, this function is defined with the following code:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T101714Z" creationid="aceway" creationdate="20170131T101714Z">
@@ -6915,6 +6925,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032859Z" creationid="aceway" creationdate="20160403T032859Z">
         <seg>Babylon.js构造里一个复杂的系统, 让网页图形库更容易使用.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It uses blurred variance shadow map.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T121157Z" creationid="aceway" creationdate="20170204T121157Z">
+        <seg>它使用模糊阴影映射.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8783,6 +8801,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150857Z" creationid="aceway" creationdate="20160521T150315Z">
         <seg>环境光产生的颜色对漫反色的作用是乘法效应.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The quality of the blur is defined by two properties:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T121240Z" creationid="aceway" creationdate="20170204T121240Z">
+        <seg>模糊的质量由两个属性定义:</seg>
       </tuv>
     </tu>
     <tu>
