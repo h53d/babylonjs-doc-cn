@@ -1,11 +1,11 @@
-17-1-22 下午4:22
+17-2-4 下午9:23
 项目统计
 
      	  片段	   词汇	字符（无空白）	字符（含空白）	#Files	
-总共：  	5185	79901	 500595	 577592	   103	
-剩余：  	4400	61844	 396406	 453274	   100	
-独特：  	4848	78832	 494253	 570290	   103	
-剩余独特：	4110	61050	 391534	 447715	   100	
+总共：  	5185	79901	 500595	 577343	   103	
+剩余：  	4012	56031	 362647	 414186	   100	
+独特：  	4846	78812	 494127	 569894	   103	
+剩余独特：	3723	55231	 357715	 408556	   100	
 
 
 单文件统计：
@@ -19,28 +19,28 @@ generals/General/Creating_the_Mini-fied_Version.md                              
 generals/General/Framework_versions.md                                                  	 20	   2	  19	     2	 238	  66	 232	    66	    2512	     1615	     2480	       1615	    2721	     1671	     2684	       1671	
 generals/General/File_Format_Map_(.babylon).md                                          	 59	   0	  56	     0	2892	   0	2867	     0	   20243	        0	    20037	          0	   26519	        0	    26282	          0	
 generals/General/setup_visualStudio.md                                                  	113	  46	  99	    32	1098	 147	1098	   147	    6286	     1524	     6244	       1482	    7145	     1531	     7103	       1489	
-generals/Essentials/Roadmap.md                                                          	  4	   1	   4	     1	  37	   1	  37	     1	     266	       12	      266	         12	     305	       12	      305	         12	
+generals/Essentials/Roadmap.md                                                          	  4	   2	   4	     2	  37	  21	  37	    21	     266	      165	      266	        165	     304	      190	      304	        190	
 generals/General/Roadmap.md                                                             	  5	   3	   3	     2	  42	   6	  30	     5	     300	       59	      235	         47	     338	       62	      263	         50	
 tutorials/01_Play_Pen/Creating_a_Basic_Scene.md                                         	185	  99	 126	    62	1258	 382	1027	   283	    7609	     2955	     5993	       2083	    8687	     3216	     6876	       2273	
 tutorials/01_Play_Pen/Discover_Basic_Elements.md                                        	168	  18	 165	    17	2300	 100	2271	    99	   13745	      888	    13592	        875	   15859	      973	    15680	        960	
-tutorials/01_Play_Pen/Materials.md                                                      	 76	   5	  75	     5	1164	  22	1159	    22	    7333	      191	     7317	        191	    8344	      195	     8322	        195	
-tutorials/01_Play_Pen/Cameras.md                                                        	152	 152	 152	   152	2711	2711	2711	  2711	   16564	    16564	    16564	      16564	   19067	    19067	    19067	      19067	
+tutorials/01_Play_Pen/Materials.md                                                      	 76	   8	  75	     8	1164	  92	1159	    92	    7333	      713	     7317	        713	    8338	      797	     8316	        797	
+tutorials/01_Play_Pen/Cameras.md                                                        	152	 151	 152	   151	2711	2710	2711	  2710	   16564	    16559	    16564	      16559	   19067	    19062	    19067	      19062	
 tutorials/01_Play_Pen/Lights.md                                                         	102	 101	 101	   101	1687	1682	1682	  1682	    9199	     9183	     9183	       9183	   10627	    10605	    10605	      10605	
 tutorials/01_Play_Pen/Animations.md                                                     	148	  41	 142	    35	1595	 149	1591	   145	   11151	     1877	    11109	       1835	   12583	     1974	    12540	       1931	
-tutorials/01_Play_Pen/Sprites.md                                                        	 48	  46	  46	    46	 684	 677	 677	   677	    3703	     3674	     3674	       3674	    4294	     4258	     4258	       4258	
-tutorials/01_Play_Pen/Cameras,_Mesh_Collisions_and_Gravity.md                           	 53	  51	  51	    51	 720	 713	 713	   713	    4807	     4778	     4778	       4778	    5432	     5396	     5396	       5396	
-tutorials/01_Play_Pen/Intersect_Collisions_-_mesh.md                                    	 35	  33	  33	    33	 531	 524	 524	   524	    2943	     2914	     2914	       2914	    3390	     3354	     3354	       3354	
-tutorials/01_Play_Pen/Picking_Collisions.md                                             	 48	  46	  44	    44	 564	 557	 555	   555	    3088	     3059	     3055	       3055	    3595	     3559	     3555	       3555	
-tutorials/01_Play_Pen/Particles.md                                                      	141	 140	 132	   132	1525	1520	1510	  1510	   10167	    10151	    10090	      10090	   11464	    11442	    11372	      11372	
-tutorials/01_Play_Pen/Environment.md                                                    	 60	  60	  59	    59	 981	 981	 980	   980	    6384	     6384	     6379	       6379	    7223	     7223	     7218	       7218	
-tutorials/01_Play_Pen/Height_Map.md                                                     	 46	  44	  44	    44	 585	 578	 578	   578	    3559	     3530	     3530	       3530	    4137	     4101	     4101	       4101	
-tutorials/01_Play_Pen/Shadows.md                                                        	 53	  51	  51	    51	 708	 701	 701	   701	    4188	     4159	     4159	       4159	    4780	     4744	     4744	       4744	
-tutorials/01_Play_Pen/Parametric_Shapes.md                                              	103	 103	  98	    98	2490	2490	2418	  2418	   14174	    14174	    13839	      13839	   16771	    16771	    16362	      16362	
+tutorials/01_Play_Pen/Sprites.md                                                        	 48	   5	  46	     5	 684	  40	 677	    40	    3703	      323	     3674	        323	    4294	      330	     4258	        330	
+tutorials/01_Play_Pen/Cameras,_Mesh_Collisions_and_Gravity.md                           	 53	   8	  51	     8	 720	  56	 713	    56	    4807	      785	     4778	        785	    5432	      817	     5396	        817	
+tutorials/01_Play_Pen/Intersect_Collisions_-_mesh.md                                    	 35	   6	  33	     6	 531	  47	 524	    47	    2943	      391	     2914	        391	    3390	      423	     3354	        423	
+tutorials/01_Play_Pen/Picking_Collisions.md                                             	 48	  13	  44	    11	 564	  42	 555	    40	    3088	      279	     3055	        275	    3595	      312	     3555	        308	
+tutorials/01_Play_Pen/Particles.md                                                      	141	  45	 132	    38	1525	 182	1510	   182	   10167	     2164	    10090	       2155	   11464	     2293	    11372	       2284	
+tutorials/01_Play_Pen/Environment.md                                                    	 60	   3	  59	     3	 981	  10	 980	    10	    6384	      135	     6379	        135	    7223	      141	     7218	        141	
+tutorials/01_Play_Pen/Height_Map.md                                                     	 46	   6	  44	     6	 585	  34	 578	    34	    3559	      403	     3530	        403	    4123	      444	     4087	        444	
+tutorials/01_Play_Pen/Shadows.md                                                        	 53	   2	  51	     2	 708	  11	 701	    11	    4188	      106	     4159	        106	    4780	      113	     4744	        113	
+tutorials/01_Play_Pen/Parametric_Shapes.md                                              	103	  96	  96	    89	2490	2420	2398	  2328	   14174	    13817	    13713	      13356	   16707	    16286	    16151	      15730	
 tutorials/01_Play_Pen/Ribbon_Tutorial.md                                                	166	 165	 140	   139	2285	2262	2178	  2155	   11823	    11693	    11333	      11203	   14113	    13963	    13507	      13357	
 tutorials/01_Play_Pen/Supporting_fog_with_ShaderMaterial.md                             	 40	  39	  35	    34	 235	 204	 235	   204	    1606	     1445	     1601	       1440	    1824	     1635	     1819	       1630	
 tutorials/01_Play_Pen/CreateBox_Per_Face_Textures_And_Colors.md                         	 76	  76	  63	    63	 842	 842	 818	   818	    4397	     4397	     4261	       4261	    5191	     5191	     5037	       5037	
 tutorials/01_Play_Pen/Mesh_CreateXXX_Methods_With_Options_Parameter.md                  	 75	  74	  71	    70	2619	2589	2601	  2571	   17661	    17485	    17550	      17374	   19660	    19456	    19534	      19330	
-tutorials/02_Mid_Level/Advanced_Texturing.md                                            	 68	  67	  66	    66	1075	1070	1067	  1067	    7346	     7330	     7321	       7321	    8193	     8171	     8161	       8161	
+tutorials/02_Mid_Level/Advanced_Texturing.md                                            	 68	  66	  66	    66	1075	1067	1067	  1067	    7346	     7321	     7321	       7321	    8193	     8161	     8161	       8161	
 tutorials/02_Mid_Level/Caching_Resources_in_IndexedDB.md                                	 45	  45	  44	    44	 578	 578	 577	   577	    2869	     2869	     2867	       2867	    3389	     3389	     3387	       3387	
 tutorials/02_Mid_Level/Creating_a_3D_WebGL_Procedural_QR-Code_Maze_with_Physics.md      	  3	   3	   3	     3	  33	  33	  33	    33	     274	      274	      274	        274	     292	      292	      292	        292	
 tutorials/02_Mid_Level/Creating_a_Convincing_World.md                                   	  3	   3	   3	     3	  27	  27	  27	    27	     274	      274	      274	        274	     287	      287	      287	        287	
@@ -49,7 +49,7 @@ tutorials/02_Mid_Level/Creating_a_Small_3D_Game_with_Babylon.js.md              
 tutorials/02_Mid_Level/Customizing_Camera_Inputs.md                                     	 50	  50	  50	    50	 660	 660	 660	   660	    4222	     4222	     4222	       4222	    4804	     4804	     4804	       4804	
 tutorials/02_Mid_Level/Loading_a_Scene_Produced_with_Blender.md                         	  3	   3	   3	     3	  29	  29	  29	    29	     244	      244	      244	        244	     259	      259	      259	        259	
 tutorials/02_Mid_Level/More_About_Lights.md                                             	  3	   3	   3	     3	  26	  26	  26	    26	     215	      215	      215	        215	     227	      227	      227	        227	
-tutorials/02_Mid_Level/Playing_sounds_and_music.md                                      	195	 195	 188	   188	2332	2332	2308	  2308	   14551	    14551	    14441	      14441	   16987	    16987	    16858	      16858	
+tutorials/02_Mid_Level/Playing_sounds_and_music.md                                      	195	 195	 188	   188	2332	2332	2308	  2308	   14551	    14551	    14441	      14441	   16971	    16971	    16842	      16842	
 tutorials/02_Mid_Level/Position,_Rotate,_Translate_and_Spaces.md                        	136	 135	 132	   131	1926	1896	1918	  1888	   11826	    11649	    11778	      11601	   13489	    13285	    13437	      13233	
 tutorials/02_Mid_Level/Position,_Rotation,_Scaling.md                                   	 35	  34	  33	    33	 535	 530	 525	   525	    3266	     3250	     3216	       3216	    3706	     3684	     3646	       3646	
 tutorials/02_Mid_Level/The_Babylon.js_Sandbox_and_Editor.md                             	  3	   3	   3	     3	  29	  29	  29	    29	     264	      264	      264	        264	     278	      278	      278	        278	
@@ -68,11 +68,11 @@ tutorials/03_Advanced/How_to_create_a_material_for_materialsLibrary.md          
 tutorials/03_Advanced/How_to_create_a_proceduralTexture_for_procedutalTexturesLibrary.md	 94	  94	  63	    63	 753	 753	 697	   697	    5949	     5949	     5514	       5514	    6557	     6557	     6076	       6076	
 tutorials/03_Advanced/How_to_Create_Your_Own_File_Importer.md                           	  6	   6	   6	     6	 147	 147	 147	   147	     982	      982	      982	        982	    1190	     1190	     1190	       1190	
 tutorials/03_Advanced/How_to_dynamically_morph_a_mesh.md                                	128	 128	 107	   107	2125	2125	2027	  2027	   12639	    12639	    12241	      12241	   14695	    14695	    14216	      14216	
-tutorials/03_Advanced/How_to_Merge_Meshes.md                                            	 23	  23	  23	    23	 485	 485	 485	   485	    4346	     4346	     4346	       4346	    5316	     5316	     5316	       5316	
+tutorials/03_Advanced/How_to_Merge_Meshes.md                                            	 23	  23	  23	    23	 485	 485	 485	   485	    4346	     4346	     4346	       4346	    5252	     5252	     5252	       5252	
 tutorials/03_Advanced/How_to_use_Actions.md                                             	124	 124	 117	   117	1074	1074	1054	  1054	    8360	     8360	     8151	       8151	    9309	     9309	     9086	       9086	
 tutorials/03_Advanced/How_to_use_AssetsManager.md                                       	 29	  29	  29	    29	 300	 300	 300	   300	    2374	     2374	     2374	       2374	    2669	     2669	     2669	       2669	
 tutorials/03_Advanced/How_to_use_Blend_Modes.md                                         	 35	  35	  33	    33	 520	 520	 506	   506	    3030	     3030	     2950	       2950	    3525	     3525	     3431	       3431	
-tutorials/03_Advanced/How_to_use_Bones_and_Skeletons.md                                 	 42	  42	  42	    42	 613	 613	 613	   613	    4173	     4173	     4173	       4173	    4924	     4924	     4924	       4924	
+tutorials/03_Advanced/How_to_use_Bones_and_Skeletons.md                                 	 42	  42	  42	    42	 613	 613	 613	   613	    4173	     4173	     4173	       4173	    4848	     4848	     4848	       4848	
 tutorials/03_Advanced/How_to_use_Curve3.md                                              	 46	  46	  40	    40	 871	 871	 785	   785	    5548	     5548	     5074	       5074	    6437	     6437	     5875	       5875	
 tutorials/03_Advanced/How_to_use_DepthRenderer_to_get_depth_values.md                   	 13	  13	  12	    12	 182	 182	 182	   182	    1108	     1108	     1105	       1105	    1276	     1276	     1273	       1273	
 tutorials/03_Advanced/How_to_use_EdgesRenderer.md                                       	  8	   8	   8	     8	 120	 120	 120	   120	     683	      683	      683	        683	     789	      789	      789	        789	
@@ -81,16 +81,16 @@ tutorials/03_Advanced/How_to_use_Instances.md                                   
 tutorials/03_Advanced/How_to_use_Lens_Flares.md                                         	 13	  13	  13	    13	 250	 250	 250	   250	    1493	     1493	     1493	       1493	    1707	     1707	     1707	       1707	
 tutorials/03_Advanced/How_to_use_LOD.md                                                 	 21	  21	  21	    21	 342	 342	 342	   342	    2063	     2063	     2063	       2063	    2394	     2394	     2394	       2394	
 tutorials/03_Advanced/How_to_use_Multi-Views.md                                         	 10	  10	  10	    10	 134	 134	 134	   134	     771	      771	      771	        771	     886	      886	      886	        886	
-tutorials/03_Advanced/How_to_use_Path3D.md                                              	 14	  14	  14	    14	 434	 434	 434	   434	    2461	     2461	     2461	       2461	    2913	     2913	     2913	       2913	
-tutorials/03_Advanced/How_to_use_PostProcesses.md                                       	 66	  66	  66	    66	1089	1089	1089	  1089	    7598	     7598	     7598	       7598	    8673	     8673	     8673	       8673	
+tutorials/03_Advanced/How_to_use_Path3D.md                                              	 14	  14	  14	    14	 434	 434	 434	   434	    2461	     2461	     2461	       2461	    2910	     2910	     2910	       2910	
+tutorials/03_Advanced/How_to_use_PostProcesses.md                                       	 66	  66	  66	    66	1089	1089	1089	  1089	    7598	     7598	     7598	       7598	    8672	     8672	     8672	       8672	
 tutorials/03_Advanced/How_to_use_PostProcessRenderPipeline.md                           	 41	  41	  41	    41	 731	 731	 731	   731	    6958	     6958	     6958	       6958	    7505	     7505	     7505	       7505	
 tutorials/03_Advanced/How_to_use_Procedural_Textures.md                                 	159	 159	 132	   132	1503	1503	1466	  1466	    8871	     8871	     8583	       8583	   10232	    10232	     9927	       9927	
 tutorials/03_Advanced/How_to_use_Reflection_probes.md                                   	 15	  15	  15	    15	 191	 191	 191	   191	    1377	     1377	     1377	       1377	    1539	     1539	     1539	       1539	
-tutorials/03_Advanced/How_to_use_SceneOptimizer.md                                      	 43	  43	  43	    43	 491	 491	 491	   491	    4300	     4300	     4300	       4300	    4757	     4757	     4757	       4757	
+tutorials/03_Advanced/How_to_use_SceneOptimizer.md                                      	 43	  43	  43	    43	 491	 491	 491	   491	    4300	     4300	     4300	       4300	    4755	     4755	     4755	       4755	
 tutorials/03_Advanced/How_to_use_the_Tags_System.md                                     	 89	  89	  89	    89	1145	1145	1145	  1145	    7209	     7209	     7209	       7209	    8209	     8209	     8209	       8209	
 tutorials/03_Advanced/How_to_use_Tiled_Grounds.md                                       	  2	   2	   2	     2	  24	  24	  24	    24	     213	      213	      213	        213	     227	      227	      227	        227	
 tutorials/03_Advanced/How_to_use_VirtualJoysticksCamera.md                              	 45	  44	  39	    39	 394	 388	 382	   382	    2704	     2663	     2568	       2568	    3030	     2984	     2884	       2884	
-tutorials/03_Advanced/In-Browser_Mesh_Simplification_(Auto-LOD).md                      	144	 144	 134	   134	1641	1641	1631	  1631	    9204	     9204	     9184	       9184	   10794	    10794	    10774	      10774	
+tutorials/03_Advanced/In-Browser_Mesh_Simplification_(Auto-LOD).md                      	144	 144	 134	   134	1641	1641	1631	  1631	    9204	     9204	     9184	       9184	   10792	    10792	    10772	      10772	
 tutorials/03_Advanced/Layermasks_and_Multi-Cam_Textures.md                              	 13	  13	  13	    13	 844	 844	 844	   844	    5533	     5533	     5533	       5533	    6180	     6180	     6180	       6180	
 tutorials/03_Advanced/Optimizing_your_scene.md                                          	 18	  18	  18	    18	 259	 259	 259	   259	    1507	     1507	     1507	       1507	    1740	     1740	     1740	       1740	
 tutorials/03_Advanced/Optimizing_Your_Scene_with_Octrees.md                             	 34	  34	  34	    34	 503	 503	 503	   503	    3125	     3125	     3125	       3125	    3576	     3576	     3576	       3576	
