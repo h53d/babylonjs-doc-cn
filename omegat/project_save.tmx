@@ -94,6 +94,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![HeightMap4](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14-2.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T100756Z" creationid="aceway" creationdate="20170204T100756Z">
+        <seg>![高度图4](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14-2.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>![HeightMap4](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14-3.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T101608Z" creationid="aceway" creationdate="20170204T101608Z">
+        <seg>![高度图4](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14-3.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![HeightMap](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050349Z" creationid="aceway" creationdate="20170204T045736Z">
@@ -3385,6 +3401,22 @@ particleSystem.maxSize = 0.5;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* _Minimum height_ : The lowest level of the mesh
+* _Maximum height_ : the highest level of the mesh
+* _Scene_: the actual scene
+* _Updatable_: indicates if this mesh can be updated dynamically in the future (Boolean)
+* successCallback : will be called after the height map was created and the vertex data is created.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T101201Z" creationid="aceway" creationdate="20170204T101028Z">
+        <seg>* _最小高度_ : 网格的最低级别
+* _最大高度_ : 网格的最高级别
+* _场景_: 实际场景
+* _是否可更新_: 指明该网格后继是否可被动态更新(布尔值)
+* 成功后的回调函数: 当高度图被创建和顶点数据被创建后 将会调用该回调函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* `scene.ambientColor` - changes the color used in several effects, including ambient lighting.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104744Z" creationid="aceway" creationdate="20170131T104744Z">
@@ -4916,6 +4948,14 @@ particleSystem.stop();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>And now we have a beautiful 3D view of the earth!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T101557Z" creationid="aceway" creationdate="20170204T101557Z">
+        <seg>现在我们有个漂亮的三维的地球视图了!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>And that's it!</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152558Z" creationid="aceway" creationdate="20160402T152558Z">
@@ -5724,6 +5764,20 @@ See, we told you it was easy.</seg>
 scene.fogColor = new BABYLON.Color3(0.9, 0.9, 0.85);
 ```
 清楚了吧, 我告诉过你很容易的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finally, when our new mesh is ready, we simply apply our material:
+```javascript
+ground.material = groundMaterial;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T101436Z" creationid="aceway" creationdate="20170204T101436Z">
+        <seg>最周,当我们的新网格准备好后,我们可简单地应用我们的材质:
+```javascript
+ground.material = groundMaterial;
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -6638,6 +6692,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is a function with the mesh as its first variable.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T101325Z" creationid="aceway" creationdate="20170204T101325Z">
+        <seg>它是网格对象将作为其第一个参数的函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is beyond the scope of this tutorial to teach everything about callable methods and settable properties on Javascript objects.&amp;nbsp; The main thing is to try to take notice WHEN a 'pocket' on an object... is a property, and when it is a method.&amp;nbsp; Methods always use parentheses... sometimes empty, sometimes full of parameters/args.&amp;nbsp; Properties never use parentheses and therefore never require parameters.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T101110Z" creationid="aceway@qq.com" creationdate="20160421T101110Z">
@@ -6829,6 +6891,26 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065642Z" creationid="aceway@qq.com" creationdate="20160429T065642Z">
         <seg>请确保你已经使HTML的script, body, 和 html标签元素闭合.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Many parameters here:
+* _Name_
+* _Height map picture url_
+* Size of this mesh: 
+* &gt; _Width_
+* &gt; _Height_
+* _Number of subdivisions_: increase the complexity of this mesh in order to improve the visual quality of it:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T100750Z" creationid="aceway" creationdate="20170204T100605Z">
+        <seg>此处有许多参数:
+* _名字_
+* _高度图图片地址_
+* 网格大小: 
+* &gt; _宽度_
+* &gt; _高度_
+* _细分数目_: 会增加网格的复杂性, 以提高其视觉效果:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7025,6 +7107,20 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T142448Z" creationid="aceway" creationdate="20160421T142448Z">
         <seg>现在让我看看使用Vector3设置缩放(拉伸和缩减)一个网格:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now let’s see this powerful function named “CreateGroundFromHeightMap”:
+```javascript
+var ground = BABYLON.Mesh.CreateGroundFromHeightMap("ground", "worldHeightMap.jpg", 200, 200, 250, 0, 10, scene, false, successCallback);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T100511Z" creationid="aceway" creationdate="20170204T100511Z">
+        <seg>现在让我们看看这个名为“CreateGroundFromHeightMap”的强大函数:
+```javascript
+var ground = BABYLON.Mesh.CreateGroundFromHeightMap("ground", "worldHeightMap.jpg", 200, 200, 250, 0, 10, scene, false, successCallback);
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -9233,6 +9329,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
 ```javascript
 var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Player.png", 2, 64, scene);
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To help you generate those gray-scale height maps, you can use software such as “Terragen”, or ”Picogen”.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T100355Z" creationid="aceway" creationdate="20170204T100355Z">
+        <seg>为了帮助你生成这些灰度高度图,你可以使用诸如“Terragen”或”Picogen”等软件.</seg>
       </tuv>
     </tu>
     <tu>
