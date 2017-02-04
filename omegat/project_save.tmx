@@ -492,6 +492,16 @@ We have worked hard and learned much, so we deserve some playground time, at the
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## About the light
+Keep in mind that this shadow generator can only be used with one light.  If you want to generate shadows from another light, then you will need to create another shadow generator.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T125127Z" creationid="aceway" creationdate="20170204T125127Z">
+        <seg>## 关于光源
+Keep in mind that this shadow generator can only be used with one light.  If you want to generate shadows from another light, then you will need to create another shadow generator.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Actions
 An action is defined by the following JSON.</seg>
       </tuv>
