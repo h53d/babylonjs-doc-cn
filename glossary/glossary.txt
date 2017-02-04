@@ -95,3 +95,4 @@ see below	见下面
  (see below),	 (见下面),
 ellipsoid	椭球体
 StandardMaterial.ambientColor	标准材质的环境色属性
+reflectionTextures	反射纹理
