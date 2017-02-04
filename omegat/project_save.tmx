@@ -78,6 +78,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![HeightMap](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14.png)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045736Z" creationid="aceway" creationdate="20170204T045736Z">
+        <seg>![高程图](http://www.babylonjs.com/tutorials/14%20-%20Height%20map/14.png)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![Particles](http://www.babylonjs.com/tutorials/12%20-%20Particles/12.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T023143Z" creationid="aceway" creationdate="20170131T023143Z">
@@ -1828,6 +1836,16 @@ With those two functions, your scenes are becoming a lot more dynamic: you can d
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Next step
+You should have a beautiful scene now, but except from your 3D models, your world is pretty flat, and that’s a shame for your scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045334Z" creationid="aceway" creationdate="20170204T045334Z">
+        <seg>## 下一步
+你现在应该已经有个漂亮的场景了, 只是缺乏你的三维模型, 你的虚拟世界很平坦, 那就是你场景的简陋之处.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Next step ##
 ----</seg>
       </tuv>
@@ -3042,6 +3060,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **Introduction**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045757Z" creationid="aceway" creationdate="20170204T045757Z">
+        <seg>* **介绍**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Specular**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150747Z" creationid="aceway" creationdate="20160521T150747Z">
@@ -4070,12 +4096,12 @@ scene.fogStart = 20.0;
 scene.fogEnd = 60.0;
 ```</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T044315Z" creationid="aceway" creationdate="20170204T044315Z">
-        <seg>-&gt; 如果你选择`EXP`, 或 `EXP2` 模式, 那么你就可以定义幂指数(默认是`0.1`):
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T044645Z" creationid="aceway" creationdate="20170204T044315Z">
+        <seg>-&gt; 如果你选择`EXP`, 或 `EXP2` 模式, 那么你就可以定义密度选项(默认是`0.1`):
 ```javascript
 scene.fogDensity = 0.01;
 ```
--&gt; Otherwise, if you choose `LINEAR` mode, then you can define where fog starts and where fog ends:
+-&gt; 否则, 你选择`LINEAR`模式, 那么你就可以定义雾起止的地方:
 ```javascript
 scene.fogStart = 20.0;
 scene.fogEnd = 60.0;
@@ -5114,6 +5140,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But before we do that, we have to create a new material, like we have done many times before:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050011Z" creationid="aceway" creationdate="20170204T050011Z">
+        <seg>但是开始做之前,我们必须定义一个新的材质,就像我们之前做过的很多次那样:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But for now, we have to learn [**how to use cameras**](http://doc.babylonjs.com/tutorials/Cameras).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T140430Z" creationid="aceway" creationdate="20160522T140430Z">
@@ -5638,6 +5672,22 @@ player.cellIndex = 44;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Finally, whatever the mode, you can specify the color of the fog (default is `BABYLON.Color3(0.2, 0.2, 0.3)`):
+```javascript
+scene.fogColor = new BABYLON.Color3(0.9, 0.9, 0.85);
+```
+See, we told you it was easy.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T044821Z" creationid="aceway" creationdate="20170204T044821Z">
+        <seg>最后,无论你选择哪种模式,你都能够指定雾的颜色(默认是`BABYLON.Color3(0.2, 0.2, 0.3)`):
+```javascript
+scene.fogColor = new BABYLON.Color3(0.9, 0.9, 0.85);
+```
+清楚了吧, 我告诉过你很容易的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Finally, you can extend the **EasingFunction** base function to create your own easing function, like this :</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160555Z" creationid="aceway" creationdate="20160402T150120Z">
@@ -5858,6 +5908,18 @@ particleSystem.manualEmitCount = 300;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131617Z" creationid="aceway" creationdate="20170129T131617Z">
         <seg>重力加速度可以应用到任何你代码里之前已经定义的相机上。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Height Map
+---
+## Introduction</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045610Z" creationid="aceway" creationdate="20170204T045610Z">
+        <seg>高程图
+---
+## 介绍</seg>
       </tuv>
     </tu>
     <tu>
@@ -6270,6 +6332,14 @@ player.playAnimation(0, 43, true, 100);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you want to see and play with the playground scene for this tutorial, you can [**click right here**](http://babylonjs-playground.azurewebsites.net/?13).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045105Z" creationid="aceway" creationdate="20170204T045105Z">
+        <seg>如果你想在娱乐厅看看并体验下本教程的场景, 你可以[**右击此处**](http://babylonjs-playground.azurewebsites.net/?13).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you want to translate (offset) your texture on your mesh, you can use the “uOffset” and “vOffset” properties:
 ```javascript
 materialSphere1.diffuseTexture.uOffset = 1.5;
@@ -6452,6 +6522,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T035729Z" creationid="aceway@qq.com" creationdate="20160427T035729Z">
         <seg>在这个文件里，你会发现社区里大家在做的一些有趣的事情.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this tutorial, our goal is to understand height maps, and to learn how to generate realistic grounds.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045817Z" creationid="aceway" creationdate="20170204T045728Z">
+        <seg>在本教程,我们的目标是理解高程图,然后学习如何生成真实地面.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7599,6 +7677,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121120Z" creationid="aceway" creationdate="20160507T121120Z">
         <seg>那么为何不总是用 _BABYLON.Mesh.DOUBLESIDE_ 作为默认值 ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So, in our next environment tutorial, we are going to transform your flat ground into beautiful mountains.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045430Z" creationid="aceway" creationdate="20170204T045430Z">
+        <seg>因此,在我们下一个环境教程里, 我们将把你平坦的地面变成漂亮的山峦.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8969,6 +9055,14 @@ skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Those mountains are very easy to generate with Babylon.js, and with only a single function.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045924Z" creationid="aceway" creationdate="20170204T045924Z">
+        <seg>通过Babylon.js非常容易生成这些山峦, 而且只需要一个函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To achieve today’s animated scene, we begin by creating our environment:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T161219Z" creationid="aceway@qq.com" creationdate="20160331T014002Z">
@@ -9083,6 +9177,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034728Z" creationid="aceway@qq.com" creationdate="20160429T034728Z">
         <seg>为了保持你的代码和Babylon.js娱乐场兼容, 我们建议你在此处插入一个 'createScene' 函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To learn this, go [here!](http://doc.babylonjs.com/tutorials/Height_Map)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T045503Z" creationid="aceway" creationdate="20170204T045503Z">
+        <seg>要学习这个,去[这儿!](http://doc.babylonjs.com/tutorials/Height_Map)</seg>
       </tuv>
     </tu>
     <tu>
