@@ -3314,6 +3314,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **closeArray** : _default False_  boolean, if true an extra set of triangles is constructed between the last path and the first path of pathArray.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T061133Z" creationid="aceway" creationdate="20170205T061133Z">
+        <seg>* **closeArray** : _默认为否_  布尔值, 如果为真则在路径数组里的最后一条路径和第一条路径间额外创建一系列三角形.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* A particular setup of the engine has to be made to make sure it works.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093755Z" creationid="aceway@qq.com" creationdate="20160427T093755Z">
@@ -5742,6 +5750,22 @@ Did you ever play a FPS (First Person Shooter) game?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Discover Basic Elements) section, the ribbon is the surface between two, or more, paths.  
+A path is a series of successive points in space (Vector3).  
+So a path can be designed by many ways : you can set points manually, import them from some set of data (json, etc), compute them with some maths function ... or even a bit of all of this.  
+The javascript representation of a path is simply an array of Vector3.  
+A path must have at least two points (four points if you provide a single path).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T060736Z" creationid="aceway" creationdate="20170205T060736Z">
+        <seg>发现基础元素)一节, 色带是两个或多个路径间的面.  
+路径时空间中一系列连续的点(三维向量).  
+所以路径可以通过很多种方式设计: 你可以手动设定点, 从数据集(json等)中引入它们, 使用些数据函数计算它们... 甚或包括所有的数据点.  
+Javascript表示的一条路径是一个简单的三维向量的数组。  
+一条路径至少包含两个点(如果你提供一个单一的路径则至少四个点).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Disposes (or not) the particle system on stop (very useful if you want to create a one shot particle system with a specific targetStopDuration):
 ```javascript
 particleSystem.disposeOnStop = true;
@@ -6840,6 +6864,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T101854Z" creationid="aceway" creationdate="20170204T101854Z">
         <seg>在我的例子里,我已经添加了个天空盒(像我们在之前在[这](http://doc.babylonjs.com/tutorials/Environment)学到的), 还有个聚光灯来模拟太阳光的活动.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In order to create a ribbon, you just have to pass an array of paths.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T060814Z" creationid="aceway" creationdate="20170205T060814Z">
+        <seg>为了创建一条色带,你必须传递一个路径数组.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9399,6 +9431,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T102924Z" creationid="aceway" creationdate="20160507T102924Z">
         <seg>它们甚至不需要是直线或在同一平面内.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This array can contain only one path and in this case, the _offset_ parameter is used.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T060912Z" creationid="aceway" creationdate="20170205T060912Z">
+        <seg>这个数组可以只包含一条路径,这种情况时必须使用_offset_参数.</seg>
       </tuv>
     </tu>
     <tu>
