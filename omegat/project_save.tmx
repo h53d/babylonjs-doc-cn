@@ -3250,6 +3250,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **FreeCamera** - This is a 'first person shooter' (FPS) type of camera where you control the camera with the mouse and the cursors keys.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T120653Z" creationid="aceway" creationdate="20170205T120653Z">
+        <seg>* **自由相机** - 它是一个 '第一人称射击' (FPS) 类型的相机，你通过鼠标和光标键控制相机.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Intersect mesh**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084622Z" creationid="aceway" creationdate="20170130T084622Z">
@@ -5418,6 +5426,14 @@ Here is the same with a plain material ans still the _paths_ displayed : http://
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Babylon.js supports many types of cameras.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T120447Z" creationid="aceway" creationdate="20170205T120447Z">
+        <seg>Babylon.js支持许多类型相机.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>BabylonJS 2.1 allows the user to move the collision calculations to an external web worker thus achieving better rendering time.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T050120Z" creationid="aceway" creationdate="20170130T050120Z">
@@ -5682,6 +5698,26 @@ player.invertU = -1;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094924Z" creationid="aceway@qq.com" creationdate="20160427T094924Z">
         <seg>顺便说下, 关于为Babylon.js做贡献你可以在 [这儿](http://pixelcodr.com/tutos/contribute/contribute.html)找到更多信息</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Camera management in Babylon.js is pretty simple : first you create one of the camera listed below, then you attach it to canvas mouse and touch inputs (see **Wrapping Up** section).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T120422Z" creationid="aceway" creationdate="20170205T120422Z">
+        <seg>在Babylon.js里相机管理非常简单: 首先你创建下面相机清单中的一个相机, 让后将它和画布上的鼠标和触摸输入设备相关联(参见 **结束语** 部分).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cameras
+---
+# Babylon.js Cameras #</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T115902Z" creationid="aceway" creationdate="20170205T115902Z">
+        <seg>相机
+---
+# Babylon.js的相机#</seg>
       </tuv>
     </tu>
     <tu>
@@ -6888,6 +6924,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131518Z" creationid="aceway" creationdate="20170129T131518Z">
         <seg>在一个经典的世界里，比如地球上，重力加速度的方向是沿着Y轴向下的(负方向) , 但是你可以自由的改变它!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In any Babylon.js scene, you can create as many cameras as you wish, but only one camera can be active at a time (unless you are using [multi-viewports](http://doc.babylonjs.com/tutorials/How_to_use_Multi-Views)).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T120051Z" creationid="aceway" creationdate="20170205T120051Z">
+        <seg>在任何Babylon.js场景中, 你可以创建你想要的任意多个相机, 但是一次只能激活一个相机(除非你启用[多视图](http://doc.babylonjs.com/tutorials/How_to_use_Multi-Views)).</seg>
       </tuv>
     </tu>
     <tu>
@@ -10217,6 +10261,14 @@ if (pickResult.hit) {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101127Z" creationid="aceway@qq.com" creationdate="20160427T101127Z">
         <seg>我们也需要修复因移动Visual Studio工程到上层目录产生的nuget包引用异常的问题</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We will begin with the two most-common types - the FreeCamera and the ArcRotateCamera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T120545Z" creationid="aceway" creationdate="20170205T120545Z">
+        <seg>我们将从两种最普通类型 - 自由相机和弧形旋转相机开始.</seg>
       </tuv>
     </tu>
     <tu>
