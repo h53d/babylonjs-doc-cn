@@ -5324,6 +5324,24 @@ Before dealing with the ribbon, we just display each path with the _CreateLines(
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As we can see, the curves are side by side around an incomplete circle.  
+If we apply this _paths_ array to a ribbon mesh, we get this : http://www.babylonjs-playground.com/#295H7U#1  
+You can see that a surface is constructed between each _path_ as expected.  
+Here is the same with a plain material ans still the _paths_ displayed : http://www.babylonjs-playground.com/#295H7U#2  
+If we set _closeArray_ to _true_, the missing surface between the first and the last _paths_ is then constructed : http://www.babylonjs-playground.com/#295H7U#3  
+The mesh becomes then a real closed volume and the light reflects in a continuous way along its surface.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T100041Z" creationid="aceway" creationdate="20170205T100041Z">
+        <seg>正如我们所见,这些曲线边挨着边围绕着一个不完整的圆.  
+如果我们将这些个_路径_ 数组应用到色带网格上, 我们获得这个 : http://www.babylonjs-playground.com/#295H7U#1  
+你可以看到正如预期的:一个面是在各_路径_间构建的.  
+Here is the same with a plain material ans still the _paths_ displayed : http://www.babylonjs-playground.com/#295H7U#2  
+如果我们将_closeArray_设置为_true_, 则在第一个和最后一个路径间缺失的面将被构建出来: http://www.babylonjs-playground.com/#295H7U#3  
+该网格将成为一个正真的封闭体,而且光线将沿着它的连续面反射.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As you can see, particles are emitted from different positions along the X-axis:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T073046Z" creationid="aceway" creationdate="20170131T073046Z">
