@@ -29,7 +29,13 @@ http://doc.babylonjs.com/ 在线文档的翻译。
 7. [精灵](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Sprites.md)
 8. [相机，网格，碰撞和重力](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Cameras,_Mesh_Collisions_and_Gravity.md)
 9. [相交和碰撞](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Intersect_Collisions_-_mesh.md)
-10. [粒子](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Particles.md)
+10. [拾取](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Picking_Collisions.md)
+11. [粒子](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Particles.md)
+12. [环境](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Environment.md)
+13. [高度图](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Height_Map.md)
+13. [阴影](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Shadows.md)
+13. [参数化造型](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Parametric_Shapes.md)
+13. [支持材质渲染雾](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Supporting_fog_with_ShaderMaterial.md)
 
 # 译中文档 #
 
