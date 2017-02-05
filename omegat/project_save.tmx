@@ -5285,9 +5285,9 @@ Your scene is beginning to look great, but it is very static.</seg>
         <seg>Anything else could have been chosen for this example, but I love this strange shape.  
 Before dealing with the ribbon, we just display each path with the _CreateLines()_ method so we can figure out what these paths look like.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T061942Z" creationid="aceway" creationdate="20170205T061942Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T065116Z" creationid="aceway" creationdate="20170205T061942Z">
         <seg>这个示例可以有任何其它的选择结果,但是我就是喜欢这个奇怪的形状.  
-Before dealing with the ribbon, we just display each path with the _CreateLines()_ method so we can figure out what these paths look like.</seg>
+在处理色带之前, 我们使用_CreateLines()_方法呈现每条路径,以便弄清除这些路径的样子.</seg>
       </tuv>
     </tu>
     <tu>
