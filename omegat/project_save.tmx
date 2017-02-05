@@ -5282,6 +5282,16 @@ Your scene is beginning to look great, but it is very static.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Anything else could have been chosen for this example, but I love this strange shape.  
+Before dealing with the ribbon, we just display each path with the _CreateLines()_ method so we can figure out what these paths look like.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T061942Z" creationid="aceway" creationdate="20170205T061942Z">
+        <seg>这个示例可以有任何其它的选择结果,但是我就是喜欢这个奇怪的形状.  
+Before dealing with the ribbon, we just display each path with the _CreateLines()_ method so we can figure out what these paths look like.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Are you running in free-flying mode and not wrapping your code in a createScene() function?&amp;nbsp; That is certainly allowed, but you still need a camera, a light, and a mesh shape.&amp;nbsp; These are a few things that can prevent your scene from rendering.&amp;nbsp; Study the playground demo scenes listed under the drop-down Scene Selector button, and soon you will be a BabylonJS playground expert.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T024657Z" creationid="aceway@qq.com" creationdate="20160427T024657Z">
@@ -11719,6 +11729,18 @@ var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene, false, BABYLON.Me
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T102046Z" creationid="aceway" creationdate="20170131T102046Z">
         <seg>```updateFunction: (particles: Particle[])```:这个函数能够用为有效粒子提供自定义更新.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>example : http://www.babylonjs-playground.com/#295H7U  
+Here we populate an array called _paths_ with many path arrays.  
+Each _path_ array is populated itself with Vector3 along a Bézier curve.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T061747Z" creationid="aceway" creationdate="20170205T061430Z">
+        <seg>示例: http://www.babylonjs-playground.com/#295H7U  
+在这里我们使用许多路径数组填充出一个我们称为_paths_的数组.
+每个路径数组接合贝赛尔曲线上的三维向量来填充.</seg>
       </tuv>
     </tu>
     <tu>
