@@ -5660,6 +5660,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By default, (with no .alpha and .beta values set), ArcRotateCameras aim in a +x direction.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T140137Z" creationid="aceway" creationdate="20170205T140137Z">
+        <seg>默认情况, (没有设置.alpha 和 .beta 的值), 弧形旋转相机朝着某一正X轴方向.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By default, `scene.ambientColor` is set to `Color3(0, 0, 0)`, which means there is no `scene.ambientColor`.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170203T041100Z" creationid="aceway" creationdate="20170203T041100Z">
@@ -6536,6 +6544,16 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is an illustration:
+![](http://urbanproductions.com/wingy/babylon/misc/arc01.jpg)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T135739Z" creationid="aceway" creationdate="20170205T135739Z">
+        <seg>这是个说明例子:
+![](http://urbanproductions.com/wingy/babylon/misc/arc01.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is another example showing what you can achieve with BabylonJS height maps:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T102036Z" creationid="aceway" creationdate="20170204T102036Z">
@@ -6782,6 +6800,14 @@ shadowGenerator.getShadowMap().renderList.push(torus);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T115508Z" creationid="aceway" creationdate="20160507T115508Z">
         <seg>如果你到平面的背后或者盒子/球体的里面, 你会注意到那些面时不可见的: Babylon.js 网格通常都是由默认的朝向 _FRONTSIDE_ 构成.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you imagine an ArcRotateCamera being a satellite orbiting the Earth, then the _alpha_ is the longitudinal or sideways axis, the _beta_ is the latitudinal or up/down axis, and the _radius_ is the altitude or height (distance) from the Earth's core.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T135632Z" creationid="aceway" creationdate="20170205T135332Z">
+        <seg>如果你将弧度相机想象成一颗围绕地球旋转的卫星, 那么_alpha_就是经度或横向平轴, _beta_是纬度或者上下轴, 而_radius_是从地球核心往外的海拔或高度(距离).</seg>
       </tuv>
     </tu>
     <tu>
@@ -8523,6 +8549,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some of the most commonly used properties are _alpha_, _beta_, _radius_, _target_, _speed_, _inertia_, and _fov_.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T140009Z" creationid="aceway" creationdate="20170205T140009Z">
+        <seg>其中一些最常使用的有_经度(alpha)_, _纬度(beta)_, _半径_, _旋转目标(target)_, _速度_, _惯性(inertia)_, 和 _视线夹角(fov)_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Some of the most commonly used properties are _position_, _rotation_, _speed_, _inertia_, and _fov_.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T133217Z" creationid="aceway" creationdate="20170205T133217Z">
@@ -8737,6 +8771,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T105228Z" creationid="aceway" creationdate="20170131T105228Z">
         <seg>场景对象的这个'clearColor'属性，是基础的环境属性/调整器.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ArcRotateCamera has many properties that you can use to adjust your view.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T135813Z" creationid="aceway" creationdate="20170205T135813Z">
+        <seg>弧形旋转相机有许多属性可以用来调整你的视图.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9529,6 +9571,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T143727Z" creationid="aceway" creationdate="20160402T143214Z">
         <seg>有三个值你可以用来赋给 EasingMode: 
 - ```BABYLON.EasingFunction.EASINGMODE_EASEIN``` : 按照简化函数的数学公式来控制插入.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are three unique properties on the ArcRotateCamera which are named _alpha_ (in radians), _beta_ (in radians), and _radius_ (a number).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T135400Z" creationid="aceway" creationdate="20170205T134757Z">
+        <seg>弧形旋转相机有三个唯一的属性，它们是：_经度角alpha_ (弧度单位), _纬度角beta_ (弧度单位), 和_半径_ (一个数值).</seg>
       </tuv>
     </tu>
     <tu>
