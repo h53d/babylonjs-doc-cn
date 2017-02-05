@@ -6536,6 +6536,26 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is how you construct a Babylon.js FreeCamera:
+```javascript
+// FreeCamera &gt;&gt; You can move around the scene with mouse and cursor keys
+// Parameters : name, position, scene
+    var camera = new BABYLON.FreeCamera("FreeCamera", new BABYLON.Vector3(0, 1, -15), scene);
+```
+The FreeCamera is constructed aiming in a +z direction.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T121411Z" creationid="aceway" creationdate="20170205T121411Z">
+        <seg>这儿教你如何创建一个Babylon.js自由相机:
+```javascript
+// 自由相机 &gt;&gt; 你可以使用鼠标和光标键将之在场景中移动
+// 参数: 名称，位置，场景
+    var camera = new BABYLON.FreeCamera("FreeCamera", new BABYLON.Vector3(0, 1, -15), scene);
+```
+创建的相机对准Z轴正方向.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is the basic code needed to create a tiled ground.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T123143Z" creationid="aceway" creationdate="20160507T123143Z">
@@ -7365,6 +7385,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T094533Z" creationid="aceway" creationdate="20170130T092746Z">
         <seg>通过下面这个用枪射击的例子，让我们弄明白如何在你的三维场景中获得转换后的鼠标位置:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Like many of our cameras, you can also add control keys, or reassign them to other keys, such as keys 'w', 'a', 's', and 'd'.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T120836Z" creationid="aceway" creationdate="20170205T120836Z">
+        <seg>我们许多相机都可以添加控制键，或者重新分配别的控制键，诸如'w', 'a', 's', 和 'd'.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8669,6 +8697,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T095207Z" creationid="aceway" creationdate="20170131T095207Z">
         <seg>该效果对象有许多设置('setter')方法，其中之一便是_.setFloat_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The FreeCamera does not automatically aim at a target, but after constructing a FreeCamera, you can easily set it to lock-on to a mesh or to a vector3 position... using the _lockedtarget_ property.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T121026Z" creationid="aceway" creationdate="20170205T121026Z">
+        <seg>自由相机不会自动的对准目标，但是创建自由相机后，你能够使用 _lockedtarget_ 属性来轻松的将它锁定到一个网格或某一三维坐标上.</seg>
       </tuv>
     </tu>
     <tu>
