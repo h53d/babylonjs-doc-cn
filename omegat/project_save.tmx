@@ -3106,6 +3106,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **ArcRotateCamera** - This is a type of camera that rotates around a given target pivot.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T133506Z" creationid="aceway" creationdate="20170205T133506Z">
+        <seg>* **弧形旋转相机** - 这种相机围绕目标点旋转.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Back-Face Culling**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T134309Z" creationid="aceway" creationdate="20160522T134309Z">
@@ -6564,6 +6572,14 @@ The FreeCamera is constructed aiming in a +z direction.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is how you construct our handy ArcRotateCamera:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T133956Z" creationid="aceway" creationdate="20170205T133956Z">
+        <seg>这儿教你如何创建方便的弧形旋转相机:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is the basic code needed to create a tiled ground.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T123143Z" creationid="aceway" creationdate="20160507T123143Z">
@@ -7172,6 +7188,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It can be controlled with cursors and mouse, or with touch events.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T133548Z" creationid="aceway" creationdate="20170205T133548Z">
+        <seg>它可以被光标和鼠标控制，或者触摸事件也行.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It contains:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040613Z" creationid="aceway@qq.com" creationdate="20160429T040613Z">
@@ -7247,6 +7271,14 @@ Here is the example of the former _closeArray_ parameter with _closeArray_ and _
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032859Z" creationid="aceway" creationdate="20160403T032859Z">
         <seg>Babylon.js构造里一个复杂的系统, 让网页图形库更容易使用.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It requires a third-party file called “hand.js”.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T133634Z" creationid="aceway" creationdate="20170205T133634Z">
+        <seg>它需要用到叫做“hand.js”的第三方组件.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8199,6 +8231,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Please see the [FreeCamera API page](http://doc.babylonjs.com/classes/FreeCamera) for more information.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T133353Z" creationid="aceway" creationdate="20170205T133353Z">
+        <seg>请参见[自由相机API页面](http://doc.babylonjs.com/classes/FreeCamera) for more information.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Possible uses include:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T021836Z" creationid="aceway" creationdate="20170131T021836Z">
@@ -8483,6 +8523,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some of the most commonly used properties are _position_, _rotation_, _speed_, _inertia_, and _fov_.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T133217Z" creationid="aceway" creationdate="20170205T133217Z">
+        <seg>其中一些最常用的属性有_位置(position)_, _转角(rotation)_, _速度(speed)_, _惯性(inertia)_, 和_视线夹角(fov)_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Someday, you may want to 'externalize' these styles by placing them in a separate file, possibly called styles.css.&amp;nbsp; Then you could remove the blue section from this HTML file, and use a HTML LINK element/tag to include-in that separate CSS style document.&amp;nbsp; I will not be telling you how to do that, but there are plenty of documents on the web that will show you how.&amp;nbsp; It is very easy.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T030046Z" creationid="aceway" creationdate="20160404T002058Z">
@@ -8693,6 +8741,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The ArcRotateCamera is a little strange to use, at first, but in no time, you will be using them often and easily.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T134606Z" creationid="aceway" creationdate="20170205T134606Z">
+        <seg>刚开始时，弧形旋转相机使用起来有点怪怪的，但是没多久，你就会经常轻松自如的使用它们的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The BabylonJS Playground is an on-line white-boarding and experimenting application... used to assist in creating scenes for the Javascript-based BabylonJS webGL framework.&amp;nbsp; Your browser must be WebGL-ready and have Javascript active... in order to use the playground.&amp;nbsp; &amp;nbsp;Most modern browsers have these capabilities.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T155120Z" creationid="aceway" creationdate="20160423T142412Z">
@@ -8713,6 +8769,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T121026Z" creationid="aceway" creationdate="20170205T121026Z">
         <seg>自由相机不会自动的对准目标，但是创建自由相机后，你能够使用 _lockedtarget_ 属性来轻松的将它锁定到一个网格或某一三维坐标上.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The FreeCamera is also used as the base camera for many of our other cameras, so you will come to 'view' it as an old friend.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T133325Z" creationid="aceway" creationdate="20170205T133325Z">
+        <seg>自由相机也是作为许多其它相机的基础相机使用，所以你会把它当做老朋友看待的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9653,6 +9717,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035759Z" creationid="aceway" creationdate="20170130T034702Z">
         <seg>这个椭球体表示我们播放器大小: 当网格和椭球体发生接触时就会抛出一个碰撞事件，以预防我们的相机和该网格考得太近:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This file is included in many of our demos, or it can be downloaded by [**clicking right here**](http://handjs.codeplex.com/releases/view/119684).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T133915Z" creationid="aceway" creationdate="20170205T133915Z">
+        <seg>在我们许多的演示中都包含有该文件，也可以通过 [**点击这里**](http://handjs.codeplex.com/releases/view/119684)来下载它.</seg>
       </tuv>
     </tu>
     <tu>
@@ -11539,6 +11611,22 @@ var keys = [];</seg>
         <seg>```javascript
 // 存储所有动画键值的数组
 var keys = [];</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+// ArcRotateCamera &gt;&gt; Camera turning around a 3D point (here Vector zero) with mouse and cursor keys
+// Parameters : name, alpha, beta, radius, target, scene
+   var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", 1, 0.8, 10, new BABYLON.Vector3(0, 0, 0), scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T134359Z" creationid="aceway" creationdate="20170205T134359Z">
+        <seg>```javascript
+// 弧形旋转相机 &gt;&gt; 使用鼠标和光标键将相机绕着一个三维点(此处时0坐标处) 旋转
+// 参数: 名称, 水平角(alpha), 垂直角(beta), 半径, 围绕的目标, 场景
+   var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", 1, 0.8, 10, new BABYLON.Vector3(0, 0, 0), scene);
+```</seg>
       </tuv>
     </tu>
     <tu>
