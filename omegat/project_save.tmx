@@ -7137,8 +7137,8 @@ If we set the _closePath_ to _true_ (http://www.babylonjs-playground.com/#1TDTHJ
 If we give this ribbon a plain material, you can then notice it is really closed as the normals are computed to reflect the light in a continuous way : http://www.babylonjs-playground.com/#1TDTHJ#2  
 Here is the example of the former _closeArray_ parameter with _closeArray_ and _closePath_ set to true : http://www.babylonjs-playground.com/#295H7U#4</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T104444Z" creationid="aceway" creationdate="20170205T104444Z">
-        <seg>它仅由两个不完整圆的_path1_ 和 _path2_ 构成.   
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T111700Z" creationid="aceway" creationdate="20170205T104444Z">
+        <seg>lll 它仅由两个不完整圆的_path1_ 和 _path2_ 构成.   
 如果我们把_closePath_ 设置为_true_ (http://www.babylonjs-playground.com/#1TDTHJ#1), 你会注意到_path1_ 和 _path2_ 就闭合了而且有两个三角形被添加到每条路径的首尾之处.  
 如果我们为这条色带提供普通的材质,你会发现它真的闭合了,因为色带面的反射是按照连续法线的方式计算的: http://www.babylonjs-playground.com/#1TDTHJ#2  
 这是个将之前的 _closeArray_参数和_closePath_设置为true的示例 : http://www.babylonjs-playground.com/#295H7U#4</seg>
