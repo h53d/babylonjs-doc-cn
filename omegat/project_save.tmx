@@ -6578,14 +6578,14 @@ particleSystem.manualEmitCount = 300;
 ```
 The FreeCamera is constructed aiming in a +z direction.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T121411Z" creationid="aceway" creationdate="20170205T121411Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T140306Z" creationid="aceway" creationdate="20170205T121411Z">
         <seg>这儿教你如何创建一个Babylon.js自由相机:
 ```javascript
 // 自由相机 &gt;&gt; 你可以使用鼠标和光标键将之在场景中移动
 // 参数: 名称，位置，场景
     var camera = new BABYLON.FreeCamera("FreeCamera", new BABYLON.Vector3(0, 1, -15), scene);
 ```
-创建的相机对准Z轴正方向.</seg>
+创建的相机朝着某一正Z轴方向.</seg>
       </tuv>
     </tu>
     <tu>

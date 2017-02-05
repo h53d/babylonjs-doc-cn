@@ -20,24 +20,24 @@ Babylon.js支持许多类型相机. 我们将从两种最普通类型 - 自由�
 // 参数: 名称，位置，场景
     var camera = new BABYLON.FreeCamera("FreeCamera", new BABYLON.Vector3(0, 1, -15), scene);
 ```
-创建的相机对准Z轴正方向. The position numbers we used in the constructor above... place it in a useful starting position. FreeCameras have many properties that you can use to adjust your view. Some of the most commonly used properties are _position_, _rotation_, _speed_, _inertia_, and _fov_. The FreeCamera is also used as the base camera for many of our other cameras, so you will come to 'view' it as an old friend. Please see the [FreeCamera API page](http://doc.babylonjs.com/classes/FreeCamera) for more information.
+创建的相机朝着某一正Z轴方向. 我们在上面的构造函数中使用的定位数值... 把相机放在了一个有用的起始位置. 自由相机有许多属性可以用来调整视图. 其中一些最常用的属性有_位置(position)_, _转角(rotation)_, _速度(speed)_, _惯性(inertia)_, 和_视线夹角(fov)_. 自由相机也是作为许多其它相机的基础相机使用，所以你会把它当做老朋友看待的. 请参见[自由相机API页面](http://doc.babylonjs.com/classes/FreeCamera) for more information.
 
-* **ArcRotateCamera** - This is a type of camera that rotates around a given target pivot. It can be controlled with cursors and mouse, or with touch events. It requires a third-party file called “hand.js”. This file is included in many of our demos, or it can be downloaded by [**clicking right here**](http://handjs.codeplex.com/releases/view/119684).
+* **弧形旋转相机** - 这种相机围绕目标点旋转. 它可以被光标和鼠标控制，或者触摸事件也行. 它需要用到叫做“hand.js”的第三方组件. 在我们许多的演示中都包含有该文件，也可以通过 [**点击这里**](http://handjs.codeplex.com/releases/view/119684)来下载它.
 
-Here is how you construct our handy ArcRotateCamera:
+这儿教你如何创建方便的弧形旋转相机:
 
 ```javascript
-// ArcRotateCamera >> Camera turning around a 3D point (here Vector zero) with mouse and cursor keys
-// Parameters : name, alpha, beta, radius, target, scene
+// 弧形旋转相机 >> 使用鼠标和光标键将相机绕着一个三维点(此处时0坐标处) 旋转
+// 参数: 名称, 水平角(alpha), 垂直角(beta), 半径, 围绕的目标, 场景
    var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", 1, 0.8, 10, new BABYLON.Vector3(0, 0, 0), scene);
 ```
 
-The ArcRotateCamera is a little strange to use, at first, but in no time, you will be using them often and easily. There are three unique properties on the ArcRotateCamera which are named _alpha_ (in radians), _beta_ (in radians), and _radius_ (a number). If you imagine an ArcRotateCamera being a satellite orbiting the Earth, then the _alpha_ is the longitudinal or sideways axis, the _beta_ is the latitudinal or up/down axis, and the _radius_ is the altitude or height (distance) from the Earth's core. Here is an illustration:
+刚开始时，弧形旋转相机使用起来有点怪怪的，但是没多久，你就会经常轻松自如的使用它们的. 弧形旋转相机有三个唯一的属性，它们是：_经度角alpha_ (弧度单位), _纬度角beta_ (弧度单位), 和_半径_ (一个数值). 如果你将弧度相机想象成一颗围绕地球旋转的卫星, 那么_alpha_就是经度或横向平轴, _beta_是纬度或者上下轴, 而_radius_是从地球核心往外的海拔或高度(距离). 这是个说明例子:
 ![](http://urbanproductions.com/wingy/babylon/misc/arc01.jpg)
 
-The ArcRotateCamera has many properties that you can use to adjust your view. Some of the most commonly used properties are _alpha_, _beta_, _radius_, _target_, _speed_, _inertia_, and _fov_.
+弧形旋转相机有许多属性可以用来调整你的视图. 其中一些最常使用的有_经度(alpha)_, _纬度(beta)_, _半径_, _旋转目标(target)_, _速度_, _惯性(inertia)_, 和 _视线夹角(fov)_.
 
-By default, (with no .alpha and .beta values set), ArcRotateCameras aim in a +x direction. Ironically, there is no rotation property on an ArcRotateCamera, but there is a position property. Because the orientation of an ArcRotateCamera is relative to its _target_ setting, it is wise to use a handy method called _setPosition()_ to set the camera position.
+默认情况, (没有设置.alpha 和 .beta 的值), 弧形旋转相机朝着某一正X轴方向. Ironically, there is no rotation property on an ArcRotateCamera, but there is a position property. Because the orientation of an ArcRotateCamera is relative to its _target_ setting, it is wise to use a handy method called _setPosition()_ to set the camera position.
 
 In the example below, we will construct an ArcRotateCamera with a target of 'Zero()' and no initial _alpha_, _beta_, or _radius_ values. (Be warned: A zeroed-out ArcRotateCamera aims in a strange way until _setPosition()_ is called). Then we will use the setPosition() function with a common Vector3 position value... to set our _alpha_, _beta_, and _radius_ values all at once, automatically:
 
