@@ -1,26 +1,26 @@
 ---
 ID_PAGE: 22061
-PG_TITLE: 05. Cameras
+PG_TITLE: 05. 相机
 ---
-# Babylon.js Cameras #
+# Babylon.js的相机#
 
-In any Babylon.js scene, you can create as many cameras as you wish, but only one camera can be active at a time (unless you are using [multi-viewports](http://doc.babylonjs.com/tutorials/How_to_use_Multi-Views)).
+在任何Babylon.js场景中, 你可以创建你想要的任意多个相机, 但是一次只能激活一个相机(除非你启用[多视图](http://doc.babylonjs.com/tutorials/How_to_use_Multi-Views)).
 
-Camera management in Babylon.js is pretty simple : first you create one of the camera listed below, then you attach it to canvas mouse and touch inputs (see **Wrapping Up** section).
+在Babylon.js里相机管理非常简单: 首先你创建下面相机清单中的一个相机, 让后将它和画布上的鼠标和触摸输入设备相关联(参见 **结束语** 部分).
 
-Babylon.js supports many types of cameras. We will begin with the two most-common types - the FreeCamera and the ArcRotateCamera.
+Babylon.js支持许多类型相机. 我们将从两种最普通类型 - 自由相机和弧形旋转相机开始.
 
-* **FreeCamera** - This is a 'first person shooter' (FPS) type of camera where you control the camera with the mouse and the cursors keys. Like many of our cameras, you can also add control keys, or reassign them to other keys, such as keys 'w', 'a', 's', and 'd'.
+* **自由相机** - 它是一个 '第一人称射击' (FPS) 类型的相机，你通过鼠标和光标键控制相机. 我们许多相机都可以添加控制键，或者重新分配别的控制键，诸如'w', 'a', 's', 和 'd'.
 
-The FreeCamera does not automatically aim at a target, but after constructing a FreeCamera, you can easily set it to lock-on to a mesh or to a vector3 position... using the _lockedtarget_ property.
+自由相机不会自动的对准目标，但是创建自由相机后，你能够使用 _lockedtarget_ 属性来轻松的将它锁定到一个网格或某一三维坐标上.
 
-Here is how you construct a Babylon.js FreeCamera:
+这儿教你如何创建一个Babylon.js自由相机:
 ```javascript
-// FreeCamera >> You can move around the scene with mouse and cursor keys
-// Parameters : name, position, scene
+// 自由相机 >> 你可以使用鼠标和光标键将之在场景中移动
+// 参数: 名称，位置，场景
     var camera = new BABYLON.FreeCamera("FreeCamera", new BABYLON.Vector3(0, 1, -15), scene);
 ```
-The FreeCamera is constructed aiming in a +z direction. The position numbers we used in the constructor above... place it in a useful starting position. FreeCameras have many properties that you can use to adjust your view. Some of the most commonly used properties are _position_, _rotation_, _speed_, _inertia_, and _fov_. The FreeCamera is also used as the base camera for many of our other cameras, so you will come to 'view' it as an old friend. Please see the [FreeCamera API page](http://doc.babylonjs.com/classes/FreeCamera) for more information.
+创建的相机对准Z轴正方向. The position numbers we used in the constructor above... place it in a useful starting position. FreeCameras have many properties that you can use to adjust your view. Some of the most commonly used properties are _position_, _rotation_, _speed_, _inertia_, and _fov_. The FreeCamera is also used as the base camera for many of our other cameras, so you will come to 'view' it as an old friend. Please see the [FreeCamera API page](http://doc.babylonjs.com/classes/FreeCamera) for more information.
 
 * **ArcRotateCamera** - This is a type of camera that rotates around a given target pivot. It can be controlled with cursors and mouse, or with touch events. It requires a third-party file called “hand.js”. This file is included in many of our demos, or it can be downloaded by [**clicking right here**](http://handjs.codeplex.com/releases/view/119684).
 
@@ -48,7 +48,7 @@ In the example below, we will construct an ArcRotateCamera with a target of 'Zer
    camera.setPosition(new BABYLON.Vector3(0, 15, -30));
 ```
 
-When we use that useful _setPosition()_ method, we need not concern ourselves with _alpha_, _beta_, and _radius_. We just make sure we have a _target_ property set ( which we did in the constructor with new BABYLON.Vector3.Zero() ), and then use _setPosition()_ to put our camera exactly where we want it, in 3D space. The handy _setPosition()_ method does the rest. Easy.
+When we use that useful _setPosition()_ method, we need not concern ourselves with _alpha_, _beta_, and _radius_. We just make sure we have a _target_ property set ( which we did in the constructor with new BABYLON.Vector3.Zero() ), and then use _setPosition()_ to put our camera exactly where we want it, in 3D space. The handy _setPosition()_ method does the rest. 简单.
 
 The ArcRotateCamera is an excellent camera to animate. By default, the ArcRotateCamera has no _upperAlphaLimit_ or _lowerAlphaLimit_. So once you have set your arcCamera as the scene.activeCamera (see further below), you can send your ArcRotateCamera gently orbiting around your target... by putting this simple line of Javascript into the render loop of your scene:
 

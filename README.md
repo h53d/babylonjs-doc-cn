@@ -23,8 +23,8 @@ http://doc.babylonjs.com/ 在线文档的翻译。
 1. [创建基础场景](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Creating_a_Basic_Scene.md)
 2. [探索基础元素](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Discover_Basic_Elements.md)
 3. [材质](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Materials.md)
-4. [相机](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Cameras.md)
-5. [光源](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Lights.md)
+4. [相机 - 译中](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Cameras.md)
+5. [光源 - 待译](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Lights.md)
 6. [动画](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Animations.md)
 7. [精灵](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Sprites.md)
 8. [相机，网格，碰撞和重力](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Cameras,_Mesh_Collisions_and_Gravity.md)
@@ -34,8 +34,8 @@ http://doc.babylonjs.com/ 在线文档的翻译。
 12. [环境](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Environment.md)
 13. [高度图](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Height_Map.md)
 13. [阴影](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Shadows.md)
-13. [参数化造型](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Parametric_Shapes.md)
-13. [支持材质渲染雾](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Supporting_fog_with_ShaderMaterial.md)
+13. [参数化造型 - 译中](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Parametric_Shapes.md)
+13. [支持材质渲染雾 - 待译](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Supporting_fog_with_ShaderMaterial.md)
 
 # 译中文档 #
 
