@@ -3322,6 +3322,18 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **closePath** : _default False_ boolean, if true the last point of each path of _pathArray_ is joined to the first point of this same path.  
+example : http://www.babylonjs-playground.com/#1TDTHJ  
+Here is some kind of unclosed tubular ribbon.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T102708Z" creationid="aceway" creationdate="20170205T102708Z">
+        <seg>* **closePath** : 布尔值,_默认为否_ , 如果为真则_路径数组里的_每条路径的首尾点将相连.  
+示例: http://www.babylonjs-playground.com/#1TDTHJ  
+这儿是些非封闭的管状色带.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* A particular setup of the engine has to be made to make sure it works.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093755Z" creationid="aceway@qq.com" creationdate="20160427T093755Z">
