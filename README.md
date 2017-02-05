@@ -4,7 +4,8 @@ Babylonjs文档翻译
 http://doc.babylonjs.com/ 在线文档的翻译。
 
 # 使用工具#
-使用 OmegaT 辅助翻译
+1. 使用 OmegaT 辅助翻译
+2. 如果你对本翻译工作有兴趣并乐于参与其中，请联系微信: aceway, QQ: aceway, email: aceway@qq.com
 
 # 已初译文档 #
 
@@ -39,5 +40,4 @@ http://doc.babylonjs.com/ 在线文档的翻译。
 15. [创建各面不同纹理和颜色的盒子 - 待译](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/CreateBox_Per_Face_Textures_And_Colors.md)
 16. [使用可选参数创建各种网格 - 待译](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Mesh_CreateXXX_Methods_With_Options_Parameter.md)
 
-# 译中文档 #
 
