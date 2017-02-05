@@ -6364,6 +6364,14 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>FreeCameras have many properties that you can use to adjust your view.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T130916Z" creationid="aceway" creationdate="20170205T130916Z">
+        <seg>自由相机有许多属性可以用来调整视图.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>From Babylon.js version 2.3, you can attach [animation events](http://doc.babylonjs.com/classes/AnimationEvent) to specific frames on an animation.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152058Z" creationid="aceway" creationdate="20160402T152058Z">
@@ -9187,6 +9195,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084738Z" creationid="aceway" creationdate="20170130T084738Z">
         <seg>此处的关键是检测气球和地面间的接触点。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The position numbers we used in the constructor above... place it in a useful starting position.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T130847Z" creationid="aceway" creationdate="20170205T130847Z">
+        <seg>我们在上面的构造函数中使用的定位数值... 把相机放在了一个有用的起始位置.</seg>
       </tuv>
     </tu>
     <tu>
