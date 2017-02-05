@@ -1,50 +1,50 @@
 ---
 ID_PAGE: 24847
-PG_TITLE: Parametric Shapes
+PG_TITLE: 参数化造型
 ---
-## Introduction
+## 介绍
 
-The basic meshes you've seen up until now have an expected shape : when you create a sphere mesh, you expect to see a spherical shape. The same goes for a box mesh, a torus, a cylinder, etc.
+直到目前你已经看到的基础网格都有预期的形状: 当你创建一个球体网格,你期望看到一个球形. 对于盒子,环,柱体等也时同样的情况.
 
-There is another kind of mesh whose final shapes aren't fixed. Their final shape depends upon some parameters. So we call these meshes "Parametric Shapes".
+存在另外一种网格,它们的形状不是固定的. 它们的最终形状取决于一些参数. 所以我们称这些网格为"参数化造型".
 
-## The Ribbon
+## 色带
 
-The ribbon is a very simple and versatile shape. As it is very elementary, you can model almost any shape using a ribbon or many merged ribbons.
+色带是个非常简单和灵活的造型. 由于它是非常基础的, 所以你可以使用一个色带或多个色带合并来为任意形状建模.
 
-![Ribbon](http://jerome.bousquie.fr/BJS/images/ribbon.png)
+![色带](http://jerome.bousquie.fr/BJS/images/ribbon.png)
 
 ```javascript
 CreateRibbon(name, pathArray, closeArray, closePath, offset, scene, updatable, sideOrientation);
 ```
-  * **name** : string.
-  * **pathArray** : an array of paths.  
-As explained in the [Basic Elements](02. Discover Basic Elements) section, the ribbon is the surface between two, or more, paths.  
-A path is a series of successive points in space (Vector3).  
-So a path can be designed by many ways : you can set points manually, import them from some set of data (json, etc), compute them with some maths function ... or even a bit of all of this.  
-The javascript representation of a path is simply an array of Vector3.  
-A path must have at least two points (four points if you provide a single path). 
-In order to create a ribbon, you just have to pass an array of paths. This array can contain only one path and in this case, the _offset_ parameter is used. 
+  * **name** : 字符串类型.
+  * **pathArray** : 一个路径数组.  
+如[基础元素]里解释的(02. 发现基础元素)一节, 色带是两个或多个路径间的面.  
+路径时空间中一系列连续的点(三维向量).  
+所以路径可以通过很多种方式设计: 你可以手动设定点, 从数据集(json等)中引入它们, 使用些数据函数计算它们... 甚或包括所有的数据点.  
+Javascript表示的一条路径是一个简单的三维向量的数组。  
+一条路径至少包含两个点(如果你提供一个单一的路径则至少四个点).
+为了创建一条色带,你必须传递一个路径数组. 这个数组可以只包含一条路径,这种情况时必须使用_offset_参数. 
 
-  * **closeArray** : _default False_  boolean, if true an extra set of triangles is constructed between the last path and the first path of pathArray.
-example : http://www.babylonjs-playground.com/#295H7U  
-Here we populate an array called _paths_ with many path arrays.  
-Each _path_ array is populated itself with Vector3 along a Bézier curve. Anything else could have been chosen for this example, but I love this strange shape.  
-Before dealing with the ribbon, we just display each path with the _CreateLines()_ method so we can figure out what these paths look like. As we can see, the curves are side by side around an incomplete circle.  
-If we apply this _paths_ array to a ribbon mesh, we get this : http://www.babylonjs-playground.com/#295H7U#1  
-You can see that a surface is constructed between each _path_ as expected.  
+  * **closeArray** : _默认为否_  布尔值, 如果为真则在路径数组里的最后一条路径和第一条路径间额外创建一系列三角形.
+示例: http://www.babylonjs-playground.com/#295H7U  
+在这里我们使用许多路径数组填充出一个我们称为_paths_的数组.
+每个路径数组接合贝赛尔曲线上的三维向量来填充. 这个示例可以有任何其它的选择结果,但是我就是喜欢这个奇怪的形状.  
+在处理色带之前, 我们使用_CreateLines()_方法呈现每条路径,以便弄清除这些路径的样子. 正如我们所见,这些曲线边挨着边围绕着一个不完整的圆.  
+如果我们将这些个_路径_ 数组应用到色带网格上, 我们获得这个 : http://www.babylonjs-playground.com/#295H7U#1  
+你可以看到正如预期的:一个面是在各_路径_间构建的.  
 Here is the same with a plain material ans still the _paths_ displayed : http://www.babylonjs-playground.com/#295H7U#2  
-If we set _closeArray_ to _true_, the missing surface between the first and the last _paths_ is then constructed : http://www.babylonjs-playground.com/#295H7U#3  
-The mesh becomes then a real closed volume and the light reflects in a continuous way along its surface.  
+如果我们将_closeArray_设置为_true_, 则在第一个和最后一个路径间缺失的面将被构建出来: http://www.babylonjs-playground.com/#295H7U#3  
+该网格将成为一个正真的封闭体,而且光线将沿着它的连续面反射.  
 
 
-  * **closePath** : _default False_ boolean, if true the last point of each path of _pathArray_ is joined to the first point of this same path.  
-example : http://www.babylonjs-playground.com/#1TDTHJ  
-Here is some kind of unclosed tubular ribbon. 
-It is made with only two paths _path1_ and _path2_ each following an incomplete circle.   
-If we set the _closePath_ to _true_ (http://www.babylonjs-playground.com/#1TDTHJ#1), you can notice that _path1_ and _path2_ are now closed and two triangles are added between the beginning and the end of each path.  
-If we give this ribbon a plain material, you can then notice it is really closed as the normals are computed to reflect the light in a continuous way : http://www.babylonjs-playground.com/#1TDTHJ#2  
-Here is the example of the former _closeArray_ parameter with _closeArray_ and _closePath_ set to true : http://www.babylonjs-playground.com/#295H7U#4  
+  * **closePath** : 布尔值,_默认为否_ , 如果为真则_路径数组里的_每条路径的首尾点将相连.  
+示例: http://www.babylonjs-playground.com/#1TDTHJ  
+这儿是些非封闭的管状色带.
+lll 它仅由两个不完整圆的_path1_ 和 _path2_ 构成.   
+如果我们把_closePath_ 设置为_true_ (http://www.babylonjs-playground.com/#1TDTHJ#1), 你会注意到_path1_ 和 _path2_ 就闭合了而且有两个三角形被添加到每条路径的首尾之处.  
+如果我们为这条色带提供普通的材质,你会发现它真的闭合了,因为色带面的反射是按照连续法线的方式计算的: http://www.babylonjs-playground.com/#1TDTHJ#2  
+这是个将之前的 _closeArray_参数和_closePath_设置为true的示例 : http://www.babylonjs-playground.com/#295H7U#4  
 
   * **offset** : _default half size of the pathArray length_, mandatory only for pathArray containing a single path.  
 example : http://www.babylonjs-playground.com/#1W5VJN#14

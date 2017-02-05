@@ -1,59 +1,59 @@
 ---
 ID_PAGE: 22131
-PG_TITLE: 13. Environment
+PG_TITLE: 13. 环境
 ---
-## Introduction
+## 介绍
 
-You have come a long way, have learned about shapes, lights, sprites, particles, materials. But there is something missing in your scenes: a proper environment. This is the first of three consecutive tutorials that talk about scene environment factors and effects. We will start off with simple scene `clearColor` (background color), then talk briefly about scene `ambientColor`, then on to 6-texture skyboxes, and then fog to give an illusion of depth to your scenes.
+你已经走过漫长的路途了，已经学了造型，光源，精灵，粒子，材质. 但是你的场景里还缺某种东西: 像样环境. 这是三个连续教程的第一部分，谈论场景的环境因素和效果。我们将从简单的场景清理颜色(`clearColor` 设置背景色)开始, 然后简述下场景的环境色`ambientColor`), 然后是6纹理的天空盒, 最后是为场景提供深度感的雾.
 
-![Environment](http://www.babylonjs.com/tutorials/13%20-%20Environment/13.png)
+![环境](http://www.babylonjs.com/tutorials/13%20-%20Environment/13.png)
 
-_A picture showing Babylon.js fog in action_
+_一图展示Babylon.js的雾感_
 
-## How can I do this?
+## 我怎么做到这个?
 
-We will talk about that nice fog effect, shortly. First, I want to introduce you to two interesting properties on the [scene class object](http://doc.babylonjs.com/classes/Scene):
+不久我们将讨论那个漂亮的雾效果. 首先, 我想给介绍下[场景类型对象](http://doc.babylonjs.com/classes/Scene)的两个有趣属性:
 
-* `scene.clearColor` - changes the 'background' color.
-* `scene.ambientColor` - changes the color used in several effects, including ambient lighting.
+* `scene.clearColor` - 改变'背景'色.
+ `scene.ambientColor` - 通过几种效果改变颜色，包括环境光源.
 
-Both of them are very useful, and powerful in their own right.
+两者都非常有用，且在各自范围内效果强劲.
 
-### Changing the Background color (`scene.clearColor`)
+### 改变背景色(`scene.clearColor`)
 
-The 'clearColor' property on the scene object is the most rudimentary of environment properties/adjustments. Simply stated, this is how you change the background color of the scene. Here is how it is done:
+场景对象的这个'clearColor'属性，是基础的环境属性/调整器. 简单的说，这是你改变场景背景色的方式. 这个就是具体做法:
 
 ```javascript
 scene.clearColor = new BABYLON.Color3(0.5, 0.8, 0.5);
 ```
-Or maybe you want to use one of our preset colors and avoid using the `new` keyword:
+或者你想使用某个预设的颜色而避免使用`new`关键字:
 ```javascript
 scene.clearColor = BABYLON.Color3.Blue();
 ```
-This color and property is not used in any calculations for the final colors of mesh, materials, textures, or anything else. It is simply the background color of the scene. Easy.
+在网格、材质、纹理或任何其它东西最终颜色的计算中，该颜色和属性都不会被使用. 它简化了场景的背景色. 简单.
 
-### Changing the Ambient color (`scene.ambientColor`)
+### 改变环境色(`scene.ambientColor`)
 
-Conversely, the `ambientColor` property on the scene object is a very powerful and influential environment property/adjustment. First, let's have a look at its syntax:
+相反，场景对象的`环境色(ambientColor)`属性是个非常强大、有影响力的环境属性和调节器. 首先，让我们看看它的语法:
 
 ```javascript
 scene.ambientColor = new BABYLON.Color3(0.3, 0.3, 0.3);
 ```
-As you can see, it is set using the same format as `clearColor`, but `ambientColor` is used in quite a few calculations toward determining the final colors of scene items.&nbsp; Mainly, it is used in conjunction with a mesh's `StandardMaterial.ambientColor` to determine a FINAL `ambientColor` for the mesh material. 
+正如你所见，它的使用方式和设置`清理背景色(clearColor)`一样, 但是`环境色(ambientColor)`是用在很少的几个计算上---以决定场景物品的最终颜色.&nbsp; ,它主要用来和网格`标准材质的环境色属性(StandardMaterial.ambientColor)`合成出该网格材质最终的`环境色(ambientColor)`. 
 
-You will find that when there is no `scene.ambientColor`, then `StandardMaterial.ambientColor` and `StandardMaterial.ambientTexture` will appear to do nothing.&nbsp; Set a `scene.ambientColor` of some value, like the example above, and `StandardMaterial.ambientColor`/`StandardMaterial.ambientTexture` will become active on meshes where you have applied such.
+你会发现当没有`场景环境色(scene.ambientColor)`时, `标准材质的环境色属(StandardMaterial.ambientColor)`和`标准材质的环境纹理(StandardMaterial.ambientTexture)`将没有任何表现效果.&nbsp; 给`场景的环境色(scene.ambientColor)`设置一些值,就如上面例子所示,然后那些网格上的你应用了的`标准材质的环境色属(StandardMaterial.ambientColor)`以及`标准材质的环境纹理(StandardMaterial.ambientTexture)`将会被激活.
 
-By default, `scene.ambientColor` is set to `Color3(0, 0, 0)`, which means there is no `scene.ambientColor`.
+默认情况下, `场景的环境色(scene.ambientColor)`被设置成`纯黑色(Color3(0, 0, 0))`, 它意味着没有场景环境色.
 
-(Please see the section on ambientColors in our [Unleash the Standard Material](http://blogs.msdn.com/b/eternalcoding/archive/2013/07/01/babylon-js-unleash-the-standardmaterial-for-your-babylon-js-game.aspx) tutorial, for more information.)
+(请在我们的[运用标准材质](http://blogs.msdn.com/b/eternalcoding/archive/2013/07/01/babylon-js-unleash-the-standardmaterial-for-your-babylon-js-game.aspx)教程里查看环境色一节,以获取更多信息)
 
-### Skybox
+### 天空盒
 
-To give a perfect illusion of a beautiful sunny sky, we are going to create a simple box, but with a special texture.
+为了给漂亮的晴朗天空一个完美的演绎, 我们准备创建一个简单的盒子,但是它具有特殊的纹理.
 
-![Skybox](http://www.babylonjs.com/tutorials/13%20-%20Environment/13-1.png)
+![天空盒](http://www.babylonjs.com/tutorials/13%20-%20Environment/13-1.png)
 
-First, our box, nothing new, just take notice of the disabled [backface culling](http://en.wikipedia.org/wiki/Back-face_culling):
+首先,我们的盒子没什么新东西, 只是要注意到被禁掉的[背面裁剪](http://en.wikipedia.org/wiki/Back-face_culling):
 ```javascript
 var skybox = BABYLON.Mesh.CreateBox("skyBox", 100.0, scene);
 var skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
@@ -62,71 +62,71 @@ skyboxMaterial.disableLighting = true;
 skybox.material = skyboxMaterial;
 ```
 
-Next, we set the `infiniteDistance` property. This makes the skybox follow our camera's position.
+接下来,我们设置`infiniteDistance` 属性. 这使天空盒跟随我们相机的位置.
 ```javascript
 skybox.infiniteDistance = true;
 ```
 
-Now we must remove all light reflections on our box (the sun doesn't reflect on the sky!):
+现在我们必须删除天空盒的所有反射光(天空不会反射出太阳!):
 ```javascript
 skyboxMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
 skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
 ```
 
-Next, we apply our special sky texture to it. This texture must have been prepared to be a skybox, in a dedicated directory, named “skybox” in our example:
+然后,我们将特殊的天空纹理应用到盒子上去. 这纹理必须时为天空盒准备的, 它在我们这个例子里位于专用目录,名为"天空盒":
 ```javascript
 skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("textures/skybox", scene);
 skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
 ```
-(More about reflectionTextures can be found in our [Unleash the Standard Material](http://blogs.msdn.com/b/eternalcoding/archive/2013/07/01/babylon-js-unleash-the-standardmaterial-for-your-babylon-js-game.aspx) tutorial.)
+(关于反射纹理(reflectionTextures)的更多信息可以去我们的[运用标准材质](http://blogs.msdn.com/b/eternalcoding/archive/2013/07/01/babylon-js-unleash-the-standardmatNext, we apply our special sky texture to iterial-for-your-babylon-js-game.aspx)教程查看.)
 
-In that `/skybox` directory, we must find 6 sky textures, one for each face of our box. Each image must be named per the corresponding face: “skybox_nx.png”, “skybox_ny.png”, “skybox_nz.png”, “skybox_px.png”, “skybox_py.png”, “skybox_pz.png”.
+在那个`/skybox` 目录, 我们必能找到6个天空纹理, 一个纹理支持天空盒的一个面. 每个图片名字必须根据盒子面来命名成: “skybox_nx.png”, “skybox_ny.png”, “skybox_nz.png”, “skybox_px.png”, “skybox_py.png”, “skybox_pz.png”.
 
-![Skybox](http://www.babylonjs.com/tutorials/13%20-%20Environment/13-2.png)
+![天空盒](http://www.babylonjs.com/tutorials/13%20-%20Environment/13-2.png)
 
-If you want some free skybox texture samples, point your browser to: http://3delyvisions.co/skf1.htm (look at licenses before use, please.) As you can see by those examples, skybox textures need not be textures of sky alone. Buildings, hills, mountains, trees, lakes, planets, stars, you name it (all can be used nicely) as part of skybox textures.
+如果你想要些免费的天空盒的纹理样例,将浏览器定位到: http://3delyvisions.co/skf1.htm (在使用前请看下授权说明.) 正如你从这些例子中所见,天空盒子纹理不单只为天空的花纹. 建筑,丘陵,山峰,树木,胡泊,行星,恒星(都可以被很好的利用)你均可以指定它为天空纹理的一部分.
 
-Final note, if you want your skybox to render behind everything else, set the skybox's `renderingGroupId` to `0`, and every other renderable object's `renderingGroupId` greater than zero, for example:
+最好要注意, 如果你想天空盒被渲染在所有其它东西的后面, 就要设置天空盒的`renderingGroupId`属性值为`0`, 同时所有其它对象`renderingGroupId`属性值均大于零,例如:
 ```javascript
 skybox.renderingGroupId = 0;
 
-// Some other mesh
+// 一些其它网格对象的
 myMesh.renderingGroupId = 1;
 ```
 
-More info about rendering groups and rendering order can be found [here](http://doc.babylonjs.com/tutorials/Transparency_and_How_Meshes_Are_Rendered).
+关于渲染组和渲染顺序的更多信息可以在[这儿](http://doc.babylonjs.com/tutorials/Transparency_and_How_Meshes_Are_Rendered)找到.
 
-### Fog
+### 雾
 
-Fog is quite an advanced effect, but fog in Babylon.js has been simplified to the maximum. It’s now very easy to add fog to your scenes.&nbsp; First, we define the fog mode like this:
+雾是个相当高级的效果,但是在Babylon.js里雾已经被最大限度简化了. 现在给你的场景添加雾非常简单.&nbsp; 首先,像这样定义雾的模式:
 
 ```javascript
 scene.fogMode = BABYLON.Scene.FOGMODE_EXP;
 ```
 
-Here are the available modes :
-- `BABYLON.Scene.FOGMODE_NONE` - default one, fog is deactivated.
-- `BABYLON.Scene.FOGMODE_EXP` - the fog density is following an exponential function.
-- `BABYLON.Scene.FOGMODE_EXP2` - same that above but faster.
-- `BABYLON.Scene.FOGMODE_LINEAR` - the fog density is following a linear function.
+这些是时可以使用的模式:
+- `BABYLON.Scene.FOGMODE_NONE` - 默认值,雾被停用.
+- `BABYLON.Scene.FOGMODE_EXP` - 雾的密度是根据一个指数函数定义.
+- `BABYLON.Scene.FOGMODE_EXP2` - 和上面那个一样但是更快.
+- `BABYLON.Scene.FOGMODE_LINEAR` - 雾的密度是根据一个线性函数定义.
 
--> If you choose the `EXP`, or `EXP2` mode, then you can define the density option (default is `0.1`):
+-> 如果你选择`EXP`, 或 `EXP2` 模式, 那么你就可以定义密度选项(默认是`0.1`):
 ```javascript
 scene.fogDensity = 0.01;
 ```
--> Otherwise, if you choose `LINEAR` mode, then you can define where fog starts and where fog ends:
+-> 否则, 你选择`LINEAR`模式, 那么你就可以定义雾起止的地方:
 ```javascript
 scene.fogStart = 20.0;
 scene.fogEnd = 60.0;
 ```
 
-Finally, whatever the mode, you can specify the color of the fog (default is `BABYLON.Color3(0.2, 0.2, 0.3)`):
+最后,无论你选择哪种模式,你都能够指定雾的颜色(默认是`BABYLON.Color3(0.2, 0.2, 0.3)`):
 ```javascript
 scene.fogColor = new BABYLON.Color3(0.9, 0.9, 0.85);
 ```
-See, we told you it was easy.
+清楚了吧, 我告诉过你很容易的.
 
-If you want to see and play with the playground scene for this tutorial, you can [**click right here**](http://babylonjs-playground.azurewebsites.net/?13).
+如果你想在游乐场看看并体验下本教程的场景, 你可以[**右击此处**](http://babylonjs-playground.azurewebsites.net/?13).
 
-## Next step
-You should have a beautiful scene now, but except from your 3D models, your world is pretty flat, and that’s a shame for your scene. So, in our next environment tutorial, we are going to transform your flat ground into beautiful mountains. To learn this, go [here!](http://doc.babylonjs.com/tutorials/Height_Map)
+## 下一步
+你现在应该已经有个漂亮的场景了, 只是缺乏你的三维模型, 你的虚拟世界很平坦, 那就是你场景的简陋之处. 因此,在我们下一个环境教程里, 我们将把你平坦的地面变成漂亮的山峰. 要学习这个,去[这儿!](http://doc.babylonjs.com/tutorials/Height_Map)

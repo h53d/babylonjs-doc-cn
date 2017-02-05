@@ -1,40 +1,41 @@
 ---
 ID_PAGE: 22111
-PG_TITLE: 11. Picking Collisions
+PG_TITLE: 11. 拾取碰触
 ---
-## Introduction
+## 介绍
 
-The last collision type could be very useful for you: it’s picking an object with your mouse. The main difficulty is to click on a 3D object whereas your screen is a flat 2D display.
+为你准备的非常有用的最后一种碰撞类型: 它就是使用你的鼠标拾取物体. 主要的难点是：点击的是三维物体而与此同时你的显示器却是二维平面的.
 
-Let’s see how we can get your mouse position transposed in your 3D scene by this gun shooting example:
+通过下面这个用枪射击的例子，让我们弄明白如何在你的三维场景中获得转换后的鼠标位置:
 
 
-![Picking](http://www.babylonjs.com/tutorials/11%20-%20Collisions%20PickResult/11.png)
+![拾取](http://www.babylonjs.com/tutorials/11%20-%20Collisions%20PickResult/11.png)
 
 _最终结果_ 
-## How can I do this ?
 
-Babylon engine lets you do this very easily by giving you useful functions.
+## 我怎么做到这个 ?
 
-First of all, after creation of a plane representing the wall, and a plane with our impact’s picture, we have to detect a click on the UI (User Interface). Once the event is raised, use the function “pick” to get some powerful information about the relation between your click and your scene.
+Babylon引擎提供了有用的函数让你非常轻松的实现这个.
+
+首先, 创建一个代表墙的平面, 而且是个附有中弹效果的平面, 我们将检索UI (用户界面)上的鼠标点击. 当事件一旦抛出, 使用函数“pick”获取些强有力的信息---点击和场景的关系.
 ```javascript
-//When click event is raised
+//当点击事件抛出时
 window.addEventListener("click", function () {
-   // We try to pick an object
+   // 我们尝试拾取一个物体
    var pickResult = scene.pick(scene.pointerX, scene.pointerY);
 }),
 ```
  
-The pickResult object is mainly composed of 4 pieces of information:
+该pickResult对象主要是4个信息片段的组合:
 
-1. _hit_ (bool): « True » if your click hits an object in the scene.
-1. _distance_ (float): the “distance” between the active camera and your hit (infinite if no mesh was hit)
-1. _pickedMesh_ (BABYLON.Mesh): if you hit an object, this is the selected mesh. If not, it’s null.
-1. _pickedPoint_ (BABYLON.Vector3): the point you have clicked, transformed in 3D coordinates, depending on the object you’ve clicked. Null if no hit.
+1. _点击_ (布尔值): « 真 » 如果你的点击命中了场景中的一个物体.
+1. _距离_ (浮点值): 激活相机与你命中的物体间的 “距离” (如果没有命中则未无穷大)
+1. _拾取的网格_ (BABYLON.Mesh): 如果你命中一个物体，这时该选中的网格. 如果没有，它是null.
+1. _拾取点_ (BABYLON.Vector3): 你点击的点, 转换到三维空间坐标的, 依赖于你点击的物体. 如果没命中则为null.
 
-Now we have all the data we need to build our scene. We just have to position our gun’s impact picture (a plane made earlier... called impact) when the user clicks on the wall plane:
+现在我们已经有了创建场景的所有数据。当用户点击墙面时我们仅需把中弹效果图(之前已经创建好的平面...所谓的中弹)放置好:
 ```javascript
-// if the click hits the wall object, we change the impact picture position
+// 如果点击到了墙面, 我们改变中弹图片位置
 if (pickResult.hit) {
             impact.position.x = pickResult.pickedPoint.x;
             impact.position.y = pickResult.pickedPoint.y;
@@ -42,13 +43,13 @@ if (pickResult.hit) {
 ```
 Fast, and easy, isn’t it?
 
-Feel free to play with this scene... [at our online playground](http://babylonjs-playground.azurewebsites.net/?11).
+请去[我们的在线娱乐厅](http://babylonjs-playground.azurewebsites.net/?11)随意体验这个场景... 
 
-## Advanced Picking Features
+## 高级拾取特征
 
-Please note that the pickResult object can provide you with additional information, detailed below:
+请注意pickResult对象能够提供额外的信息，详细如下:
 
-- `faceId`: this is the position of the picked face's indices in the indices array. These can be accessed like so:
+- `faceId`: 这是拾取面的索引位置--在索引数组里的. 这些索引可以这样访问:
 ```
 var indices = pickResult.pickedMesh.getIndices();
 var index0 = indices[pickResult.faceId * 3];
@@ -56,25 +57,25 @@ var index1 = indices[pickResult.faceId * 3 + 1];
 var index2 = indices[pickResult.faceId * 3 + 2];
 ```
 
-- `submeshId`: the ID of the picked submesh inside the picked mesh
+- `submeshId`: 拾取网格里的子网格ID
 
-- `bu` and `bv` properties: these are the barycentric coordinates of the picked point in the face. The picked face is a polygon composed of 3 vertices, and the picked point is the barycenter of those three vertices with the following weights:
+- `bu` 和 `bv` 属性: 这些是拾取面的重心坐标. 拾取面由3个顶点组成，而且拾取点是这三个顶点的重心with the following weights:
 
   * `1 - bu - bv` for the vertex n. 0
   * `bu` for the vertex n. 1
   * `bv` for the vertex n. 2
 
-- `getTextureCoordinates()`: computes the texture coordinates of the picked point; these will be returned as a `Vector2` in texture space, which means its coordinates will be between 0 and 1.
+- `getTextureCoordinates()`: 计算拾取点的纹理坐标, 返回纹理空间的2维向量，也就是坐标值在0至1间的坐标.
 
-Possible uses include:
+可能的用处包括:
 
-- Drawing on a texture using a DynamicTexture,
-- Modifying a face that was hit (delete, move vertices, change color...),
-- Changing a submesh material,
-- etc.
++- 绘制动态纹理,
+- 改变选中面 (删除，移动顶点，修改颜色...),
+- 改变子网格的材质,
+- 等等
 
 
-## Next step
-This collision method is convenient in a lot of situations. Once you understand mouse pick events, you can begin using that functionality to advance your application’s development.
+## 下一步
+这种碰撞检测方式适用于大多数情况。一旦你理解了鼠标拾取事件，你就可以使用它们优化你的应用程序开发.
 
-Now you should know everything about collisions, so it’s time to move on to a classic effect in 3D : [particles](http://doc.babylonjs.com/tutorials/Particles).
+现在已经知道碰撞检测的所有技能了，所有是时候去瞧瞧经典的三维效果如何了: [粒子](http://doc.babylonjs.com/tutorials/Particles).

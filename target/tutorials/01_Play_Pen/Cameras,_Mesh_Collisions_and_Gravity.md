@@ -1,74 +1,75 @@
 ---
 ID_PAGE: 22091
-PG_TITLE: 09. Cameras, Mesh Collisions and Gravity
+PG_TITLE: 09. 相机，网格碰撞和重力
 ---
-Did you ever play a FPS (First Person Shooter) game? In this tutorial, we are going to simulate the same camera movements: the camera is on the floor, in collision with the ground, and potentially in collision with any objects in the scene.
+你玩过一款FPS (第一人称视角射击)游戏么?在本教程里, 我们将模拟同样的(FPS)相机运动: 放在地板上的相机，与地面发生的碰撞，以及可能与场景中的任何物体发生的碰撞。
 
 ![Elements](https://camo.githubusercontent.com/7422be3bf5ae147243aa3d29d9660a0210530201/687474703a2f2f7777772e626162796c6f6e6a732e636f6d2f7475746f7269616c732f30392532302d253230436f6c6c6973696f6e73253230477261766974792f30392e706e67)
 
 _最终结果_ 
-## How can I do this ?
 
-To replicate this movement, we have to do 3 simple steps:
+## 我怎么做到这个 ?
 
-**1 - Define and apply gravity**
+要复现这个运动, 我们需要做简单的3步:
 
-The first thing to do is to define our gravity vector, defining the G-force. In a classic world such as Earth, the direction of the force of gravity is down (negative) along the Y axis, but feel free to change it!
+**1 - 定义并应用重力**
+
+第一件要做的时定义我们的重力向量，定义重力加速度G. 在一个经典的世界里，比如地球上，重力加速度的方向是沿着Y轴向下的(负方向) , 但是你可以自由的改变它!
 ```javascript
 scene.gravity = new BABYLON.Vector3(0, -9.81, 0);
 ```
  
-Gravity can be applied to any camera that you have defined previously in your code.
+重力加速度可以应用到任何你代码里之前已经定义的相机上。.
 ```javascript 
 camera.applyGravity = true; 
 ```
 
-**2 - Define an ellipsoid**
+**2 - 定义一个椭球体**
 
-The next important step is to define the ellipsoid around our camera. This ellipsoid represents our player’s dimensions: a collision event will be raised when a mesh comes in contact with this ellipsoid, preventing our camera from getting too close to this mesh:
+下一个重要的步骤是定义个椭球体包围相机. 这个椭球体表示我们播放器大小: 当网格和椭球体发生接触时就会抛出一个碰撞事件，以预防我们的相机和该网格考得太近:
 
-![Ellipsoid](https://camo.githubusercontent.com/19931f529e19679a0e2556e23fc94536e6a9b88c/687474703a2f2f7777772e626162796c6f6e6a732e636f6d2f7475746f7269616c732f30392532302d253230436f6c6c6973696f6e73253230477261766974792f30392d312e6a7067)
+![椭球体](https://camo.githubusercontent.com/19931f529e19679a0e2556e23fc94536e6a9b88c/687474703a2f2f7777772e626162796c6f6e6a732e636f6d2f7475746f7269616c732f30392532302d253230436f6c6c6973696f6e73253230477261766974792f30392d312e6a7067)
 
-The _ellipsoid_ property on babylon.js cameras is default to size (0.5, 1, 0.5), but changing values will make you taller, bigger, smaller, thinner, it depends upon the adjusted axis. In the example below, we will make our camera's ellipsoid a bit bigger than the default one:
+Babylon.js里相机的_椭球体_属性默认大小是 (0.5, 1, 0.5), 但是你通过改变值可以更高、更大、更小、更薄, 这依赖于轴的调整. 下面的例子里，我们将使相机的椭球体比默认的大一点:
 
 ```javascript
-//Set the ellipsoid around the camera (e.g. your player's size)
+//设置包围相机的椭球体 (如您的播放器大小)
 camera.ellipsoid = new BABYLON.Vector3(1, 1, 1);
 ```
 
-**3 - Apply collision**
+**3 - 应用碰撞**
 
-Once you have those previous settings completed, our final step is to declare that we are interested in sensing collisions in our scene:
+一旦你完成前面的设置，我们最后一步便是声明我们的场景对碰撞检测感兴趣:
 
 ```javascript
-// Enable Collisions
+// 启用碰撞检测
 scene.collisionsEnabled = true;
 camera.checkCollisions = true;
 ```
 
-And declare which meshes could be in collision with our camera:
+然后声明哪些网格会和我们的相机发生碰撞:
 
 ```javascript
 ground.checkCollisions = true;
 box.checkCollisions = true;
 ```
 
-That’s it! Easy!
+这就可以了!简单!
 
-You can play with the scene used in this tutorial... by visiting the Babylon.js [**playground demo**](http://www.babylonjs-playground.com/#4HUQQ).
+通过访问Babylon.js [**娱乐场的演示**](http://www.babylonjs-playground.com/#4HUQQ)你能够体验下我们例子里使用的场景.
 
-Now, your camera is going to fall on the y-axis until it collides with the ground. And, your camera will collide with the box when you move it too near to it.
+现在，你的相机会沿Y轴下落直到和地面发生碰撞. 而且，你的相机会和盒子发生碰撞当你将相机移近它时。
 
-**4 - Object vs. object collision**
+**4 - 物体间的碰撞**
 
-You can also do the same thing with a mesh by playing with _mesh.ellipsoid_ property and _mesh.moveWithCollisions(velocity)_ function. This function will try to move the mesh according to given velocity and will check if there is no collision between current mesh and all meshes with checkCollisions activated.
+你也能够在网格间执行同样的功能，通过使用 _mesh.ellipsoid_ 属性并调用 _mesh.moveWithCollisions(velocity)_ 函数来实现. 当启用碰撞检测时，此函数将根据给定的加速度移动网格，并检测当前网格和任何其它网格对象间是否会碰撞.
 
-You can also use _mesh.ellipsoidOffset_ to move the ellipsoid on the mesh (By default the ellipsoid is centered on the mesh)
+你也能使用 _mesh.ellipsoidOffset_ 在网格上偏移椭球体 (默认情况下椭球体位于网格中心)
 
 ```javascript
 var speedCharacter = 8;
 var gravity = 0.15;
-var character = Your mesh;
+var character = 你的网格对象;
 
 character.ellipsoid = new BABYLON.Vector3(0.5, 1.0, 0.5);
 character.ellipsoidOffset = new BABYLON.Vector3(0, 1.0, 0);
@@ -76,36 +77,36 @@ character.ellipsoidOffset = new BABYLON.Vector3(0, 1.0, 0);
 var forwards = new BABYLON.Vector3(parseFloat(Math.sin(character.rotation.y)) / speedCharacter, gravity, parseFloat(Math.cos(character.rotation.y)) / speedCharacter);
 forwards.negate();
 character.moveWithCollisions(forwards);
-// or
+// 或者
 var backwards = new BABYLON.Vector3(parseFloat(Math.sin(character.rotation.y)) / speedCharacter, -gravity, parseFloat(Math.cos(character.rotation.y)) / speedCharacter);
 character.moveWithCollisions(backwards);
 ```
 
-Demo by Dad72: [**Move character with gravity and collision**](http://www.babylon.actifgames.com/moveCharacter/)
+Dad72提供了演示: [**支持重力和碰撞检测的角色移动**](http://www.babylon.actifgames.com/moveCharacter/)
 
-## Web worker based collision system (Since 2.1)
+## 基于碰撞检测的Web工作线程 (2.1版本以上)
 
-BabylonJS 2.1 allows the user to move the collision calculations to an external web worker thus achieving better rendering time.
-The worker is integrated in the single framework file, and no changes are required by the developer.
-The scene has now a new flag (false per default):
+BabylonJS 2.1 允许用户将碰撞检测的计算移到外部的Web工作线程以实现更好的实时渲染.
+该工作线程的实现集成在那个单一的框架文件中，而且开发者不需要做什么改变.
+场景现在有新的标识(默认为false):
 ```javascript
 scene.workerCollisions = true|false
 ```
-Setting this flag to true will start the worker in the background. The worker will then receive all collision requests from the cameras and meshes. Setting it to false will set the collision to the regular collision calculation as it always was.
+设置该值为true将使工作线程在后台执行. 该线程将接收来自相机和网格的全部碰撞检测请求. 设置为false将使它为常规的碰撞检测计算.
 
-To read more about how workers were integrated head to Raanan Weber's blog:
+想读到更多关于工作线程是如何实现的，请移步到Raanan的网页博客:
 
 * https://blog.raananweber.com/2015/05/26/collisions-using-workers-for-babylonjs/
 * https://blog.raananweber.com/2015/06/06/collisions-using-workers-for-babylonjs-part-2/
 
-## ArcRotateCamera
-The ArcRotateCamera can also check collisions but instead of sliding along obstacles, this camera won't move when a collision appends.
+## 弧形旋转相机
+弧形旋转相机也能支持检测碰撞，但是当碰撞发生时相机会停止移动而不是沿着障碍物移动。
 
-To activate collisions, just call ```camera.checkCollisions = true```. You can define the collision radius with this code:
+为了启用碰撞检测，仅需调用 ```camera.checkCollisions = true```. 你可以使用这行代码来定义碰撞半径:
 
 ```javascript
 camera.collisionRadius = new BABYLON.Vector3(0.5, 0.5, 0.5)
 ```
 
-## Next step
-Great, now you can develop a real FPS game! But maybe you would like to know when a mesh is in collision with another mesh? Good, because that is exactly the purpose of our [next tutorial](http://doc.babylonjs.com/tutorials/Intersect_Collisions_-_mesh).
+## 下一步
+非常棒, 现在你能够开发真实的FPS游戏了!但是你也许想知道一个网格时什么时候与另外的网格发生碰撞的?非常好，因为这就是我们[下一教程](http://doc.babylonjs.com/tutorials/Intersect_Collisions_-_mesh)的教学目的.

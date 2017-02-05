@@ -1,99 +1,100 @@
 ---
 ID_PAGE: 22082
-PG_TITLE: 08. Sprites
+PG_TITLE: 08. 精灵
 ---
-In this tutorial, we are going to learn how to manipulate Sprites. Sprites are 2D image/animation, and we will use them to display an image with alpha channel. Sprites always face the camera.
+在本教程里，我们将学习如何操作精灵. 精灵是二维的图片或动画，我们将使用精灵来显示具有透明通道的图片。精灵总是朝向摄像机的。
 
-Nowadays, sprites are often used to display animated characters, and for particles, and to simulate 3D complex objects like trees. 
+如今，精灵往往用于显示动画角色，粒子效果，以及模拟复杂的三维对象，比如树木。 
 
 ![Elements](http://www.babylonjs.com/tutorials/08%20-%20Sprites/08.png)
 
 _最终结果_ 
-## How can I do this ?
 
-1- **Sprite manager**
+## 我怎么做到这个 ?
 
-If you want to use sprites, you need to create a “sprite manager” to optimize GPU resources by grouping in one place multiple instances of a sprite.
-This manager is mandatory, even if you want to create one sprite. You just have to write:
+1- **精灵管理器**
+
+ 如果你想使用精灵，你需要创建一个"精灵管理"(在一处分组管理精灵的多个实例)来优化GPU资源。
+这个管理器是强制的，即使你至想创建一个精灵。你只需像这样写代码:
 
 ```javascript
-// Create a sprite manager
+// 创建一个精灵管理器
 var spriteManagerTrees = new BABYLON.SpriteManager("treesManagr", "Assets/Palm-arecaceae.png", 2000, 800, scene);
 ```
 
-When creating a sprite manager, you have to decide a few parameters:
-* Name: a name for this manager.
-* The 2D image URL (most of the time, you will want use an image format which contain alpha channel, like .PNG).
-* The capacity of this manager : the maximum number of instances in this manager (in our example, we could create 2000 instances of trees).
-* The cell size, corresponding to the size of your image, like we’ll see below.
-* The actual scene, to which we will add this manager.
+当创建一个精灵管理器时，你需要确定一些参数:
+* Name: 该管理器的名字.
+* 二维图片的地址 (大多数时候，你会使用带透明通道的图片，比如.PNG格式的).
+* 管理器的容量: 这个管理器里可以管理的最大实例数(在我们的例子里, 我们可以创建树的两千个实例)。
+* 单元尺寸，取决于你的图片尺寸，就像我们将在下面看到.
+* 实际的场景，我们往其中添加本管理器.
 
-To give another example, look at this snippet:
+在举一个例子，看看这个代码片段:
 ```javascript
 var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Player.png", 2, 64, scene);
 ```
 
-This time, we only want 2 instances, and we said that our sprite’s size is 64. Here is what our image looks like:
+这次，我们仅要2个实例，而且我们精灵的尺寸是64像素的. 这个是我们的图片看起来的样子:
 
 ![Elements](http://www.babylonjs.com/tutorials/08%20-%20Sprites/08-1.png)
 
-Each image of a sprite must be contained in a 64 pixel square, no more no less.
+没给精灵的图片必须存储在64像素的方块中，不多也不少.
 
-2- **Create an instance**
+2- **创建一个实例**
 
-Now that we have our manager, we can create instances of our sprite linked to this manager. Creating an instance is as simple as:
+现在我们已经有了管理器，我们可以创建精灵并将其关联到该管理器上。创建实例就是如此简单:
 
 ```javascript
 var player = new BABYLON.Sprite("player", spriteManagerPlayer);
 ```
 
-Voilà, you have got your sprite displayed!
+瞧， 你已经显示出你的精灵了!
 
-If you want to add parameters to this instance, you can manipulate it like any other meshes:
+如果你希望给这个实例添加参数，你可以像操作其它网格对象一样:
 ```javascript
 player.position.y = -0.3;
 ```
 
-But because it’s a sprite, you may use specific parameters: you can change their size, or their orientation:
+但是因为它是个精灵，你可以使用特殊的参数: 你可以改变它们的大小，或者它们的朝向:
 ```javascript
 player.size = 0.3;
 player.angle = Math.PI/4;
 player.invertU = -1;
 ```
 
-Starting with Babylon.js v2.1, you can define sprite's width and height:
+从Babylon.js v2.1开始, 你可以定义精灵的宽度和高度:
 ```
 player.width = 0.3;
 player.height = 0.4;
 ```
 
-You can keep using ```player.size``` and in this case width and height will just be the same.
+你可以继续使用 ```player.size``` 而且在这种情况下宽度和高度是一样的.
 
-3- **Sprite animation**
+3- **精灵动画**
 
-One of the advantages of sprites is animations. You only have to load one large image file which will contain all animation images, one next to another. Just be careful to respect the square pixel size that you have specified in your manager (e.g. 64 pixel).
+使用精灵的优势之一是利用它们的动画功能. 你仅需加载一个大的包含所有动画图像的图片文件. 只是要注意在管理器中指定方形的像素尺寸 (例如 64 像素的).
 
-Here is what a complete sprite image looks like:
+这儿是个完整的精灵图像例子的样子:
 
 ![Elements](http://www.babylonjs.com/tutorials/08%20-%20Sprites/08-2.png)
 
-This will animate our players in more than 40 positions, depending upon the situation (walking, jumping,…). Babylon's engine is automatically reading sprites on more than one line, so the engine does the work for you :)
+这个会演示角色的40多个动作定位，取决于具体的情况 (走路，跳跃,…). Babylon的引擎会自动读取精灵数据，这些都是引擎帮你做的 :)
 
-If you want to begin the animation, simply call this function:
+如果你想开始播放动画，可以简单的调用这个函数:
 ```javascript
 player.playAnimation(0, 43, true, 100);
 ```
 
-By calling « playAnimation » with those parameters, our player will be animated from frame 0 to frame 43. The third parameter is indicating if this animation will loop or not. And the last parameter is the delay between the frames (the smaller it is, the faster the animation).
+通过使用这些参数来调用 « playAnimation » , 我们的角色会播放从0帧到43帧的动画. 第三个参数指示这个动画时否会循环播放。. 还有第三个参数是帧间的延迟 (延迟越小，动画会播放得更快).
 
-Finally, if you want to go to a specific image (e.g. the last one, when the character is not moving), just call:
+最后，如果你想定位到某个特殊图像上 (例如. 最后一帧的图像, 当角色不在移动时), 就调用:
 ```javascript
 player.cellIndex = 44;
 ```
 
-You can play with the scene and code used in this tutorial... by visiting the Babylon.js [**Playground sprites demo**](http://babylonjs-playground.azurewebsites.net/?8).
+你可以通过访问 [**娱乐场场精灵演示**](http://babylonjs-playground.azurewebsites.net/?8) 来体验本教程的这些场景和代码.
 
-## Next step
-Don’t hesitate to use sprites in your scene: they are not resource intensive, and they really can help keep high frame rates in your application.
+## 下一步
+在你的场景中使用精灵吧，不要犹豫: 它们不是资源密集性的，而且它们真的有助于保持应用程序的高帧频.
 
-Now you know how to create a complete simple dynamic scene and it is going to be important to talk about [collisions](http://doc.babylonjs.com/tutorials/Intersect_Collisions_-_mesh).
+现在你知道如何创建一个完整简约的动态场景，而且它对于即将讨论[碰撞](http://doc.babylonjs.com/tutorials/Intersect_Collisions_-_mesh)非常重要.

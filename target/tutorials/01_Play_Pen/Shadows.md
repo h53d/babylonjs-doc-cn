@@ -1,111 +1,112 @@
 ---
 ID_PAGE: 22151
-PG_TITLE: 15. Shadows
+PG_TITLE: 15. 阴影
 ---
-## Introduction
+## 介绍
 
-In this tutorial, we are going to learn how to create shadows in Babylon JS. Shadows are now becoming dynamic, and they are now dynamically generated depending upon a light.
+在本教程里,我们将学习在Babylon JS如何创建阴影. 阴影现在已经时动态的,而且时根据一个光源动态的生成.
 
-![Shadows](http://www.babylonjs.com/tutorials/15%20-%20Shadows/15.png)
+![阴影](http://www.babylonjs.com/tutorials/15%20-%20Shadows/15.png)
 
 _最终结果_ 
-## How can I do this ?
 
-Shadows are easy to generate using the babylon.js “ShadowGenerator”. This function uses a shadow map: a map of your scene generated from the light’s point of view, as you can see here:
+## 我怎么做到这个 ?
 
-![Shadows2](http://www.babylonjs.com/tutorials/15%20-%20Shadows/15-1.png)
+使用babylon.js的“ShadowGenerator”创建阴影很容易. 这个函数使用阴影映射: 从光源点视角生成的场景映射, 正如你在此处所见:
 
-The two parameters used by the shadow generator are: the size of the shadow map, and which light is used for the shadow map's computation.
+![阴影2](http://www.babylonjs.com/tutorials/15%20-%20Shadows/15-1.png)
+
+阴影生成器使用的两个参数是: 阴影的大小, 和用于计算阴影的光源.
 ```javascript
 var shadowGenerator = new BABYLON.ShadowGenerator(1024, light);
 ```
 
-Next, you have to define which shadows will be rendered. Here we want the shadow of our torus, but you can “push” any meshes you want:
+接下来,你需要定义渲染哪个的阴影. 此处我们想要我们那个环的阴影, 但时你可以添加任何你想要的网格对象的:
 ```javascript 
 shadowGenerator.getShadowMap().renderList.push(torus);
 ```
 
-And finally, you will have to define where the shadows will be displayed... by setting a mesh parameter to true:
+最后,你需要定义下阴影在哪儿呈现... 通过将网格的一个参数设置成来完成:
 ```javascript
 ground.receiveShadows = true;
 ```
 
-You may want to reduce shadow acne resulting from not precise enough shadow map. To do so, you can define the bias (which is 0.00005 by default).:
+你可能希望减小因精度不够造成的阴影瑕疵. 要做到这点,你可以定义偏差(默认值是0.00005):
 ```javascript
 shadowGenerator.bias = 0.01;
 ```
 
-## Filters
+## 过滤器
 
-If you want to go further, you can activate shadows filtering.
+你过你想更进一层, 就可以激活阴影过滤.
 
-There are three filters available:
+有三个过滤器可用:
 
-### Variance shadow map 
+### 差分阴影映射
 ```javascript
 shadowGenerator.useVarianceShadowMap = true;
 ```
-It is _true_ by default, because it is useful to decrease the aliasing of the shadow.  But if you want to reduce computation time, feel free to change it.
+默认为_true_, 因为它对阴影的抗锯齿非常有用. 但是如果你想缩减计算的时间, 可以随意的改变它的值.
 
-### Poisson sampling
+### 泊松采样
 ```javascript
 shadowGenerator.usePoissonSampling = true;
 ```
-If you set this one to _true_, Variance shadow maps will be disabled. This filter uses Poisson sampling to soften shadows. The result is better, but slower.
+你过你把该值设置为_true_, 则差分阴影映射将被禁用. 这个过滤器使用泊松采样柔化阴影. 结果会更好,但是也更慢.
 
-### Blur variance shadow map 
+qi### 模糊阴影映射 
 ```javascript
 shadowGenerator.useBlurVarianceShadowMap = true;
 ```
-This is the better soften shadow filter but the slower as well. It uses blurred variance shadow map.
+这是个更好的柔化阴影过滤器但是也更慢. 它使用模糊阴影映射.
 
-The quality of the blur is defined by two properties:
+模糊的质量由两个属性定义:
 
-* shadowGenerator.blurScale: Define the scale used to downscale the shadow map before applying the blur postprocess. By default, the value is 2
-* shadowGenerator.blurBoxOffset: Define the offset of the box's edge used to apply the blur. By default, the value is 1 (Meaning the box will go from -1 to 1 in bot direction resulting in 9 values read by the blur postprocess).
+* shadowGenerator.blurScale: 在应用模糊化的后期处理之前定义用于降级的级数. 默认情况,该值是2
+* shadowGenerator.blurBoxOffset: 为应用在模糊化的盒子定义边缘偏移值. 默认情况下,该值是1 (Meaning the box will go from -1 to 1 in bot direction resulting in 9 values read by the blur postprocess).
 
-### Examples
+### 例子
 
-Please find here pictures of various filters used with a spot light:
+请在这里寻找一个聚光灯情况下各种过滤器的图片:
 
-![Hard shadows](http://www.babylonjs.com/forumpics/hard.jpg)
+![生硬的阴影](http://www.babylonjs.com/forumpics/hard.jpg)
 
-*No filter*
+*没有过滤器*
 
-![Poisson](http://www.babylonjs.com/forumpics/poisson.jpg)
-
-
-*Poisson sampling*
-
-![VSM](http://www.babylonjs.com/forumpics/vsm.jpg)
+![泊松采样](http://www.babylonjs.com/forumpics/poisson.jpg)
 
 
-*Variance Shadow Map*
+*泊松采样*
 
-![BlurVSM](http://www.babylonjs.com/forumpics/blurVSM.jpg)
+![差分阴影映射](http://www.babylonjs.com/forumpics/vsm.jpg)
 
 
-*Blur Variance Shadow Map*
+*差分阴影映射*
 
-## About the light
-Keep in mind that this shadow generator can only be used with one light.  If you want to generate shadows from another light, then you will need to create another shadow generator.
+![模糊差分阴影映射](http://www.babylonjs.com/forumpics/blurVSM.jpg)
 
-Only point, directional and spot lights can cast shadows:
+
+*差分阴影映射*
+
+## 关于光源
+要记住,这个阴影生成器只能和一个光源配合使用. 如果你想根据另一个光源生成阴影, 那么你需要创建另一个阴影生成器.
+
+仅点光源,定向光源和聚光灯光源能够投影:
 
 ```
 var light = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(-1, -2, -1), scene);
 ```
-Point lights use cubemaps rendering so please be cautious when enabling them as this could lead to some performance issues.
+点光源使用立方贴图渲染,因此需要慎重启用,因为这会导致一些性能问题.
 
-Spot lights use perspective projection and directional lights use orthogonal projection. Both projections are evaluated automatically for you to get the best shadow map possible.
+聚光源使用透视投影,而定向光源使用正交投影. 两种投影都是自动计算以为你提供尽可能最好的阴影映射.
 
-For directional light, you can control the size of the projection window by modifying ```light.shadowOrthoScale``` (0.1 by default which means that the projection window is increase by 10% from the optimal size).
+对于定向光源, 你可以通过修改```light.shadowOrthoScale``` (默认值为0.1,意味着从投影窗口最佳尺寸增加10%的大小)值来控制投影窗口的大小.
 
-The light's position, as well as the positions of the mesh that you have pushed into the renderlist, determine where the shadows will appear.
+光源位置, 还有你加入到渲染列表的网格对象的位置, 一起决定着阴影将在哪出现.
 
-Now you might want to visit [**the playground scene**](http://babylonjs-playground.azurewebsites.net/?15) for this tutorial.
+现在你可能想访问为本教程准备的 [**娱乐场景**](http://babylonjs-playground.azurewebsites.net/?15).
 
-You can also visit the [point light shadow map playground scene](http://www.babylonjs-playground.com/#LYCSQ#12)
+你也可以访问 [点光源映射的娱乐场景](http://www.babylonjs-playground.com/#LYCSQ#12)
 
-## Next step
-Now that you are becoming a real professional about Babylon.js, maybe it’s time to go deeper into the code to manipulate complex shaders, mesh, or textures. Our [home menu for our wiki](http://doc.babylonjs.com/) is your portal to many advanced topics. You can also participate in this project by going to our Github page: [https://github.com/BabylonJS/Babylon.js](https://github.com/BabylonJS/Babylon.js) and also by participating in our very active forum: [http://www.html5gamedevs.com/forum/16-babylonjs](http://www.html5gamedevs.com/forum/16-babylonjs). See you there.
+## 下一步
+现在你已经成为了一名Babylon.js专业人才了, 也许是时候深入代码来掌握复杂的着色器,网格或纹理了. 我们的[维基主页菜单](http://doc.babylonjs.com/) 是你获取许多高级话题门户网站. 你也可以通过访问我们的Github页来参与到这个项目: [https://github.com/BabylonJS/Babylon.js](https://github.com/BabylonJS/Babylon.js) 同时参与到我们非常活跃的论坛: [http://www.html5gamedevs.com/forum/16-babylonjs](http://www.html5gamedevs.com/forum/16-babylonjs). 稍后见.

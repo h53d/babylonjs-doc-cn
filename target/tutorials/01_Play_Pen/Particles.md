@@ -1,134 +1,134 @@
 ---
 ID_PAGE: 22121
-PG_TITLE: 12. Particles
+PG_TITLE: 12. 粒子
 ---
-## Introduction
+## 介绍
 
-This tutorial is going to talk about the particle system in BabylonJS. Particles are often small sprites used to simulate hard-to-reproduce phenomena like fire, smoke, water, or abstract visual effects like magic glitter and faery dust.
+本教程会谈论BabylonJS里的粒子系统. 粒子通常时许多小的精灵，被用来模拟难以再现的现象，比如火，烟，水，或者抽象的视觉效果，比如魔法闪光和神奇灰尘。
 
-![Particles](http://www.babylonjs.com/tutorials/12%20-%20Particles/12.png)
+![粒子](http://www.babylonjs.com/tutorials/12%20-%20Particles/12.png)
 
-A picture of [the playground's ParticleSystem demo](http://babylonjs-playground.azurewebsites.net/?12)
+一副[娱乐场的粒子系统演示](http://babylonjs-playground.azurewebsites.net/?12)的图景
 
-## How can I do this ?
+## 我怎么做到这个 ?
 
-To perform this magic trick, the first thing to do is to create a new object, which will be the particle emitter. In our case, a box will be our emitting object, representing a particle fountain.
+为了执行这个魔法，首先需要创建一个新的粒子发射器对象. 在本例里，一个盒子将成为我们的发生器，代表一个粒子喷泉.
 
 ```javascript
 var fountain = BABYLON.Mesh.CreateBox("fountain", 1.0, scene);
 ```
 
-The emitter acts as the source of the particles, and its location in 3D space determines where they are generated and how they move. So pay attention to the location/rotation of this object.
-In our case, the emitter is our fountain, but if you wish, you can use only a vector (BABYLON.Vector3) as an emitter.
+发射器作为粒子源，它在三维空间里的位置决定着粒子的在哪生成以及如何移动。因此注意盒子对象的位置和运转。
+在本例里，发射器是由喷泉来定义，但是如果你愿意的话，也可以使用仅仅一个向量 (BABYLON.Vector3)来定义发射器.
 
-Now, we must create a new (not-rendered) ParticleSystem object:
+现在，我们必须创建一个新的(未渲染的)粒子系统对象:
 ```javascript
 var particleSystem = new BABYLON.ParticleSystem("particles", 2000, scene, customEffect);
 ```
 
-        Simple. The first parameter is the name, he second parameter is the maximum number of particles, the third parameter is the scene, and the optional fourth parameter is a reference to a shader effect for the particles, overriding the default shader. I will talk about the fourth parameter further below.
+        简单吧. 第一个参数是名称，第二个参数是最大粒子数，第三个是粒子所在的场景，可选的第四个参数是粒子着色器的引用---用来覆盖默认的着色器. 我会在更后面些讨论第四个参数.
 
 
-    An important part is to define the texture of each particle. Each one will have the same pattern, so choose carefully which one you want. But keep in mind that a single scene can contain multiple particleSystems, and each one can emit particles with unique texture patterns. Also keep in mind that multiple particle systems can use the same emitter object. 
-Our particle texture is going to be this one:
+    一个重要的部分是定义每个粒子的纹理。每个粒子都会拥有相同的纹理模式，因此请仔细选择你想要的纹理。但请记住，一个场景里可以有多个粒子系统，而且每个粒子系统只能发射出一种纹理模式。也请记住，多个粒子系统能够共用同一个发射器。
+我们的粒子纹理将是这样的:
 
-![Flare](http://www.babylonjs.com/tutorials/12%20-%20Particles/Flare.png)
+![耀斑](http://www.babylonjs.com/tutorials/12%20-%20Particles/Flare.png)
 
-To define the particle’s texture, add a line like this:
+为了定义纹理，添加一行这样的代码:
 ```javascript
 particleSystem.particleTexture = new BABYLON.Texture("Flare.png", scene);
 ```
 
-(in the playground demo, we used /textures/flare.png)
+(在娱乐场的演示，我们使用 /textures/flare.png)
 
 
-For this texture, you can use an optional mask to filter some colors, or filter a part of the alpha channel.
+对这种纹理，你可以使用可选的掩码来过滤些颜色，或者过滤部分透明通道.
 ```javascript
 particleSystem.textureMask = new BABYLON.Color4(0.1, 0.8, 0.8, 1.0);
 ```
 
-This is the output of this configuration:
+这是该配置的输出:
 
-![TextureMask](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-1.png)
+![纹理掩码](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-1.png)
 
-The last main thing to do is to define our emitter that we talked about earlier:
+最后件要做的事就是定义个发射器，我们早些时候讨论过的:
 ```javascript
-// Where the particles comes from
-particleSystem.emitter = fountain; // the starting object, the emitter, a box in this case.
+// 粒子的来源地
+particleSystem.emitter = fountain; // 开始的对象，发射器，在我们这例子里是盒子.
 ```
 
-Now you should see your particle system working. But it might not be our final result. We can refine some parameters:
-* Box around our emitter. Our emitter is the center of particles source, but if you want your particles to emit from more than one point, then you can tell it to do so:
+现在你应该看到你的粒子系统工作了. 但它可能不是我们的最终结果. 我们可以优化一些参数:
+* 围绕发射器的盒子. 我们的发射器时粒子源的中心，但是如果你希望粒子从不同的点发射，那么你可以告诉它这也做：
 ```javascript
 particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From
-    particleSystem.maxEmitBox = new BABYLON.Vector3(1, 0, 0); // To...
+    particleSystem.maxEmitBox = new BABYLON.Vector3(1, 0, 0); // 目标...
 ```
 
-As you can see, particles are emitted from different positions along the X-axis:
+正如你所见，粒子沿着X轴从不同的位置发射出来:
 
-![EmitBox](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-2.png)
+![发射盒EmitBox](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-2.png)
 
-* Now you can give some colors to your particles. Color one and two are combined, and “colorDead” is the color that the particle takes-on just before it disappears.
+* 现在你可以给粒子赋予一些颜色. 颜色一和二被混合，而且 “colorDead”(死亡色)是粒子消失去前展现出来的颜色.
 ```javascript
-// Colors of all particles (splited in 2 + specific color before dispose)
+// 所有粒子的颜色 (被拆分成2种色 + 1种特殊色的方式来处理)
 particleSystem.color1 = new BABYLON.Color4(0.7, 0.8, 1.0, 1.0);
 particleSystem.color2 = new BABYLON.Color4(0.2, 0.5, 1.0, 1.0);
 particleSystem.colorDead = new BABYLON.Color4(0, 0, 0.2, 0.0);
 ```
 
-* Size of particles:
+* 粒子的大小:
 ```javascript
-// Size of each particle (random between...)
+// 每个粒子的大小 (在两值间随机...)
 particleSystem.minSize = 0.1;
 particleSystem.maxSize = 0.5;
 ```
 
-* LifeTime of particles:
+* 粒子的时长:
 ```javascript
-// Life time of each particle (random between...)
+// 每个粒子的时长(在两值间随机...)
 particleSystem.minLifeTime = 0.3;
 particleSystem.maxLifeTime = 1.5;
 ```
 
-* Emit rate. This is the density of particles, the rate of particle flow:
+* 发射速率. 这是粒子的密度, 粒子流的速率:
 ```javascript
 particleSystem.emitRate = 1000;
 ```
 
-![emitRate](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-3.png)
+![发射速率](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-3.png)
 
-    If you want to launch only a few particles at once, that can be done, as well. For example, if you want to emit only 300 particles:
+    如果你想一次加载特定颗数的粒子，那也是可以做到的。比如，你想仅发射300颗粒子:
 ```javascript
 particleSystem.manualEmitCount = 300;
 ```
-    Be aware that the stream is no longer continuous. This is a one-shot particle emission, so this function overrides the previous “emitRate” parameter.
+    要注意粒子流不在是持续的了. 这是个一次性的粒子发射，因此这个功能覆盖了之前的发射速率(“emitRate”)参数.
 
-* The selected mode for particles. You can choose between “BLENDMODE_ONEONE” (default choice: source color is added to the destination color without alpha affecting the result), and “BLENDMODE_STANDARD” (to blend current color and particle color using particle’s alpha).
+* 粒子的选中模式. 你能够在“BLENDMODE_ONEONE” (默认选择: 源色附加到目标色，不受透明通道影响), 和“BLENDMODE_STANDARD” (将当前颜色和粒子的透明通道色混合)模式间选择.
 ```javascript
 particleSystem.blendMode = BABYLON.ParticleSystem.BLENDMODE_ONEONE;
 ```
 
-* Gravity. You can use gravity if you want to give an orientation to your particles (e.g.: fire particles travel upward on the Y-axis)
+* 重力. 如果你想给粒子方向性你就可以启用重力(例如: 火焰粒子在Y轴向上)
 ```javascript
-//Set the gravity of all particles (not necessarily down)
+//为所有粒子设置重力(不一定向下)
 particleSystem.gravity = new BABYLON.Vector3(0, -9.81, 0);
 ```
 
-* Direction. Random direction of each particle after it has been emitted, between direction1 and direction2 vectors.
+* 方向. 粒子发射后其方向随机介于方向1和方向2之间.
 ```javascript
 particleSystem.direction1 = new BABYLON.Vector3(-7, 8, 3);
 particleSystem.direction2 = new BABYLON.Vector3(7, 8, -3);
 ```
 
-![emitRate](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-4.png)
+![发射速率](http://www.babylonjs.com/tutorials/12%20-%20Particles/12-4.png)
 
-* AngularSpeed. You can define a Z-axis rotation for each particle (in radian):
+* 角速度. 你可以为每个粒子沿Z轴定义转角 (弧度单位):
 ```javascript
 particleSystem.minAngularSpeed = 0;
 particleSystem.maxAngularSpeed = Math.PI;
 ```
 
-* Speed/Strength. You can define the power of emitting particles, and the overall motion speed (0.01 is default update speed, faster updates = faster animation).
+* 速度/强度. 离可以给发射中的粒子定义力量，以及作为整体运动的速度(默认更新速度是0.01, 更快的更新速度等于更快的播放动画).
 ```javascript
 particleSystem.minEmitPower = 1;
 particleSystem.maxEmitPower = 3;
@@ -136,66 +136,66 @@ particleSystem.maxEmitPower = 3;
 particleSystem.updateSpeed = 0.005;
 ```
 
-* Duration. You can set the amount of time the particle system is running (depends of the overall speed above).
+* 持续时间. 你可以设置粒子系统的持续运行时间量 (取决于上面提到的粒子的整体运行速度).
 ```javascript
 particleSystem.targetStopDuration = 5;
 ```
 
-* Dispose. Disposes (or not) the particle system on stop (very useful if you want to create a one shot particle system with a specific targetStopDuration):
+* 后期处理. 粒子系统停止时的处理或不处理 (对于射击类粒子系统非常有用):
 ```javascript
 particleSystem.disposeOnStop = true;
 ```
 
-Finally, you can start this particle system whenever you want in your code with:
+最后，你可以在代码里任何时候启用这个粒子系统:
 ```javascript
 particleSystem.start();
 ```
 
-And naturally stop it:
+而且自然的停止它:
 ```javascript
 particleSystem.stop();
 ```
 
-Feel free to play with this scene... [**at our online playground**](http://babylonjs-playground.azurewebsites.net/?12).
+去[**我们的在线娱乐场**](http://babylonjs-playground.azurewebsites.net/?12)随意体验这个场景吧...
 
-### customEffect (the fourth parameter in the constructor)
+### 自定义效果(该构造函数的第四个参数customEffect)
 
 var ps = new BABYLON.ParticleSystem("particles", 2000, scene, **customEffect**);
 
-The customEffect is a type of BABYLON.Effect used to target a valid shader program.
+自定义效果customEffect是BABYLON.Effect类型的，用于定义一个有效的着色器程序.
 
-The primary author of Babylon.js was kind enough to make us [a fantastic playground demo of a particle system using a fragment shader effect](http://babylonjs-playground.azurewebsites.net/#1ASENS). Visit that link, and you can see a fragment shader program that has been stored in a shader store. Notice the line:
+Babylon.js的主要作品足以为我们提供[一个使用片段着色器实现的神奇粒子系统的演示](http://babylonjs-playground.azurewebsites.net/#1ASENS). 访问连接，然后你就可以看到一个存储在着色器里的片段着色器程序. 注意那行:
 
 ```javascript
 BABYLON.Effect.ShadersStore["myParticleFragmentShader"] = [...]
 ```
 
-A bit below that, you will see:
+下面一点, 你会看到:
 ```javascript
 var effect = engine.createEffectForParticles("myParticle", ["time"]);
 ```
 
-_.createEffectForParticles_ accepts the following parameters:
-- fragment name (can be in the shaders store or the id of a DOM element)
-- array of additional parameters (uniforms)
-- array of additional samplers (for additional textures!)
+_.createEffectForParticles_ 接受下面的参数:
+- 片段名(可以是着色器里存储的，或者时页面DOM元素的ID)
+- 附加参数的数组(类型统一)
+- 附加采样的数组(给附加纹理使用的!)
 
 
-The particle Effect Object is a slightly-modified [Babylon Effect Object](http://doc.babylonjs.com/classes/Effect). Also notice that the ShadersStore is a namespace upon this special [Effect Object](http://doc.babylonjs.com/classes/Effect). 
+粒子的效果对象稍有改变[Babylon效果对象](http://doc.babylonjs.com/classes/Effect). 还要注意，ShadersStore是基于该特殊[效果对象](http://doc.babylonjs.com/classes/Effect)的命名空间. 
 
-The Effect Object has many 'setter' methods on it, one of which is _.setFloat_. Notice how it is used in the registerBeforeRender function. This causes the speed of the effect to cycle across about a 20 second time span. We are (the demo author is) varying the time parameter of the fragment shader program... from within the scene's render loop! WE LOVE IT!
+该效果对象有许多设置('setter')方法，其中之一便是_.setFloat_. 注意在registerBeforeRender函数中是如何使用它的. 这导致粒子效果以大约20秒为一个跨度循环. 在场景的渲染循环里，我们(演示程序的作者)不断改变片段着色器程序的时间参数大小!我们喜欢它!
 
-Here is a short comment from Deltakosh... regarding that playground demo linked above:
+这是Deltakosh的一个简短的评论... 关于上面连接里的娱乐场演示:
 
-> By default Babylon.js will give you a vUV and a vColor varying parameter. It will also transmit you the particle texture. But you can feel free to add any new parameter, like I did, with 'time'.
+> Babylon.js默认为你提供了一个纹理向量(vUV)变参和一个颜色向量(vColor)变参. 它也会为你传递粒子纹理. 但是你可以随意的添加新参数，就像我添加参数'time'那样做.
 
-This section of the tutorial is under construction. We will have much more to say, soon.
+本教程的这节正在构建中. 很快我们会谈论更多内容.
 
-## Custom functions
-You can get even more control over particles by using custom functions:
-```startDirectionFunction: (emitPower: number, worldMatrix: Matrix, directionToUpdate: Vector3)```: This function can be defined to specify initial direction for every new particle. By default, this function is defined with the following code:
+## 自定义方法
+通过使用自定义方法你可以获得更多的控制粒子:
+```startDirectionFunction: (emitPower: number, worldMatrix: Matrix, directionToUpdate: Vector3)```: 这个函数能够用为每个新粒子定义初始方向. 默认情况下, 这个函数时用以下代码定义的:
 
-startDirectionFunction = (emitPower: number, worldMatrix: Matrix, directionToUpdate: Vector3): void => {
+    startDirectionFunction = (emitPower: number, worldMatrix: Matrix, directionToUpdate: Vector3): void => {
         var randX = randomNumber(this.direction1.x, this.direction2.x);
         var randY = randomNumber(this.direction1.y, this.direction2.y);
         var randZ = randomNumber(this.direction1.z, this.direction2.z);
@@ -203,9 +203,10 @@ startDirectionFunction = (emitPower: number, worldMatrix: Matrix, directionToUpd
         Vector3.TransformNormalFromFloatsToRef(randX * emitPower, randY * emitPower, randZ * emitPower, worldMatrix, directionToUpdate);
     }
 
-```startPositionFunction = (worldMatrix: Matrix, positionToUpdate: Vector3)```: This function can be defined to specify initial position for every new particle. By default, this function is defined with the following code:
 
-startPositionFunction = (worldMatrix: Matrix, positionToUpdate: Vector3): void => {
+```startPositionFunction = (worldMatrix: Matrix, positionToUpdate: Vector3)```: 这个函数能够用为每个新粒子定义初始位置. 默认情况下, 这个函数时用以下代码定义的:
+
+    startPositionFunction = (worldMatrix: Matrix, positionToUpdate: Vector3): void => {
         var randX = randomNumber(this.minEmitBox.x, this.maxEmitBox.x);
         var randY = randomNumber(this.minEmitBox.y, this.maxEmitBox.y);
         var randZ = randomNumber(this.minEmitBox.z, this.maxEmitBox.z);
@@ -213,14 +214,15 @@ startPositionFunction = (worldMatrix: Matrix, positionToUpdate: Vector3): void =
         Vector3.TransformCoordinatesFromFloatsToRef(randX, randY, randZ, worldMatrix, positionToUpdate);
     }
 
-```updateFunction: (particles: Particle[])```: This function can be defined to provide custom update for active particles. This function will be called instead of regular update (age, position, color, etc.). Do not forget that this function will be called on every frame so try to keep it simple and fast :). By default the following code is used:
 
-updateFunction = function(particles) {
+```updateFunction: (particles: Particle[])```:这个函数能够用为有效粒子提供自定义更新. 当粒子老化、位置变化、颜色变化等时该函数会被调用以取代常规的更新. 不要忘记该函数会在每帧被调用，因此要尽力保证它简单而快速 :). 默认情况下，以下代码被使用:
+
+    updateFunction = function(particles) {
          for (var index = 0; index < particles.length; index++) {
                var particle = particles[index];
                particle.age += this._scaledUpdateSpeed;
             
-               if (particle.age >= particle.lifeTime) { // Recycle
+               if (particle.age >= particle.lifeTime) { // 循环利用
                     particles.splice(index, 1);
                     this._stockParticles.push(particle);
                     index--;
@@ -244,7 +246,8 @@ updateFunction = function(particles) {
          }
     }
 
-## Next step
-ParticleSystems are very powerful and versatile tools that can help bring realness and movement to your scenes. Don’t hesitate to use them as they are not resource-intensive.
 
-Stay with us, because we are going to learn a new, very interesting thing: [Configuring your environment](http://doc.babylonjs.com/tutorials/Environment).
+## 下一步
+粒子系统时非常强有力且灵活的工具，它能够给你的场景带来真实感和运动感. 不要犹豫使用它们吧，因为它们不是资源敏感的.
+
+继续跟我来, 因为我们将学习个新的，非常有趣的东西: [配置环境](http://doc.babylonjs.com/tutorials/Environment).
