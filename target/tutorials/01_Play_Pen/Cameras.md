@@ -63,55 +63,55 @@ Babylon.js支持许多类型相机. 我们将从两种最普通类型 - 自由�
 ```javascript
    camera.attachControl(canvas, noPreventDefault, useCtrlForPanning);
 ```
-(关于这个方法的跟多信息请参见 **总结**部分)
+(关于这个方法的更多信息请参见 **总结**部分)
 
-If required you can also totally deactivate panning by setting :
+如果有需要你也可以通过设定来完全禁止平移:
 ```javascript
    scene.activeCamera.panningSensibility = 0;
 ```
 
-## Unique Purpose Cameras
+## 独特用途的相机
 
-There are some Babylon.js cameras that have unique purposes. I will try to explain their purposes as we examine each camera and their constructors.
+存在一些特殊用途的Babylon.js相机我将试着解释它们的用途，我们检验每个相机的用途和构造函数.
 
-The next 2 cameras... touch, and gamepad... are somewhat superseded by our new [Universal Camera](http://doc.babylonjs.com/classes/UniversalCamera) (explained far below).  The documentation for touch and gamepad cameras are still included here... for historical reference.
+下面两种相机...触控相机相机和手持相机... 有点会被新的[通用相机](http://doc.babylonjs.com/classes/UniversalCamera)取代(再晚些会讲解).  此处也包含有触控相机和手持相机的，以作为历史参考.
 
-* **TouchCamera** - The TouchCamera is a camera that works closely with hand.js, and opens Babylon.js to the modern technology of DOM Gesture Events. Touch is a type a 'gesture', whether it be on a pad or screen, with finger(s), stylus, glove, feet, or laser pointer. Any movement that can be sensed... can be considered a gesture. You can learn all about gestures by visiting [**a wikipedia page that tells all about it**](http://en.wikipedia.org/wiki/Gesture_recognition).
+* **触控相机** - 它是和hand.js紧密接合使用的相机, 而且是基于DOM技术的开放式手势操作事件. 触碰是种'姿态', 无论在平板还是屏幕上使用手指、手写笔、手套、脚指或激光笔. 任何能被感知的运动... 都可以说是一种姿态. 你可以通过访问[**关于姿态的维基百页**](http://en.wikipedia.org/wiki/Gesture_recognition)学习所有的姿态技术.
 
-The TouchCamera is specially programmed for nearly all modern gesture-active input devices. Much of its power comes from hand.js. If you would like to learn more about hand.js and its gestures-ready methods, take a look at [**this comprehensive blog entry**](http://blogs.msdn.com/b/eternalcoding/archive/2013/01/16/hand-js-a-polyfill-for-supporting-pointer-events-on-every-browser.aspx) written by our friend and hero David Catuhe.
+触控相机是专程为几乎所有的现代手势活动输入设备准备的. 它的强大力多源于hand.js. 如果你想学习更多的hand.js及其手势调用方法, 看一看我们的朋友和英雄David Catuhe写的[**此综合博客条目**](http://blogs.msdn.com/b/eternalcoding/archive/2013/01/16/hand-js-a-polyfill-for-supporting-pointer-events-on-every-browser.aspx) .
 
-There is much underlying magic to the TouchCamera, but like everything else in Babylon.js, we make it easy and enjoyable for you. Here is how to construct a TouchCamera:
+触控相机底层有许多潜在的魔法, 但是正如Babylon.js里许多其它技术一样, 我们使之简单和容易上手. 这是如何创建一个触控相机:
 ```javascript
-// TouchCamera >> Move in your world with your touch-gesture device
-// Parameters : name, position, scene
+// 触控相机 >> 使用触控设备来在场景中移动它
+// 参数: 名称，位置，场景
     var camera = new BABYLON.TouchCamera("TouchCamera", new BABYLON.Vector3(0, 1, -15), scene);
 ```
-The TouchCamera uses a FreeCamera as its basis, so all the powerful properties and methods of our familiar FreeCamera... are also found on our TouchCamera. You can explore all the properties and methods available on the TouchCamera... at [**our API documentation site**](http://doc.babylonjs.com/classes/TouchCamera).
+触控相机使用自由相机作为基础, 所以我们熟悉的自由相机具有的所有属性都可以在触控相机上找到. 你可以在[**我们的API文档网站**](http://doc.babylonjs.com/classes/TouchCamera)探索触控相机具有的所有属性和方法...
 
-* **GamepadCamera** - Local superhero David "davrous" Rousset, who invented our cool VirtualJoysticksCamera, is also the inventor of our cool GamepadCamera. Thanks David!  The Babylon.js GamepadCamera is specially designed to work with... you guessed it... gamepads. This camera works closely with Babylon.js Gamepad, Gamepads, and Xbox360Pad classes. More will be written about that, soon, and nearby.
+* **手持相机(GamepadCamera)** - 它也是很酷的虚拟操纵杆相机(VirtualJoysticksCamera)发明者 - 我们的本地英雄David "davrous" Rousset - 发明的. 谢谢David! 你猜对了，Babylon.js的手持相机(GamepadCamera)hi特别为游戏手柄设计的. 这种相机同Babylon.js的游戏手柄，游戏手柄类以及Xbox360Pad类密切接合起来工作. 关于那很快会写更多内容的.
 
-Ok, let's create a GamepadCamera:
+好吧，让我们创建一个手持相机:
 
 ```javascript
-// GamepadCamera >> Move in your scene with gamepad controls
-// Parameters : name, position, scene
+// 手持相机 >> 使用控制手柄在场景中移动它
+// 参数: 名称，位置，场景
 var camera = new BABYLON.GamepadCamera("Camera", new BABYLON.Vector3(0, 15, -45), scene);
 ```
-Easy. Many of the powerful properties and methods found on our familiar FreeCamera... are also found on our GamepadCamera. Take notice of the ._angularSensibility_ and ._moveSensibility_ properties, similar to our DeviceOrientationCamera. You can explore all the properties and methods available on the GamepadCamera... at [our API documentation site](http://doc.babylonjs.com/classes/GamepadCamera).
+简单吧. 我们熟悉的自由相机的许多强有力属性和方法都可以在手持相机上找到. 注意下._角度感知(angularSensibility)_ 和 ._运动感知(moveSensibility)_ 属性, 类似于我们的设备定向相机(DeviceOrientationCamera). 你可以在[**我们的API文档网站**](http://doc.babylonjs.com/classes/GamepadCamera)探索手持相机具有的所有属性和方法...
 
-* **DeviceOrientationCamera** - The DeviceOrientationCamera is a camera that is specifically designed to react-to device orientation events. Device orientation is when you tilt your modern mobile device forward or back, left or right, to control cameras or other scene items. And once again, our friend and technology guru David Catuhe has created [**a wonderfully-detailed blog entry**](http://blogs.msdn.com/b/eternalcoding/archive/2013/10/07/understanding-deviceorientation-events-by-creating-a-small-3d-game-with-babylon-js.aspx) to tell us all about it.
+* **设备定向相机(DeviceOrientationCamera)** - 它是专程为响应方向事件的设备设计的相机. 当你前后倾斜或左右倾斜现代移动设备时，定向设备将控制相机或场景中的其它物品. 再一次的， 我们的朋友和技术大拿David Catuhe已经创建了[**精彩详细的博客条目**](http://blogs.msdn.com/b/eternalcoding/archive/2013/10/07/understanding-deviceorientation-events-by-creating-a-small-3d-game-with-babylon-js.aspx)来教我们关于它的所以知识.
 
-Again, we we want it to be easy and enjoyable for you. Here is how you construct a Babylon.js DeviceOrientationCamera:
+再次的, 我们希望它对你们来说简单而充满乐趣. 这儿是如何创建一个Babylon.js设备定向相机的方法:
 ```javascript
-// DeviceOrientationCamera >> Move in your scene with device orientation
-// Parameters : name, position, scene
+// 设备定向相机 >> 使用定向设备在场景中移动相机
+// 参数：名称，位置，场景
     var camera = new BABYLON.DeviceOrientationCamera("DevOr_camera", new BABYLON.Vector3(0, 1, -15), scene);
 ```
-The DeviceOrientationCamera also uses a FreeCamera as its basis, so all the powerful properties and methods of our familiar FreeCamera... are also found on our DeviceOrientationCamera. There are two rather important properties on the DeviceOrientationCamera: _angularSensibility_ and _moveSensibility_, which you can discover and explore... along with all of the other properties and methods... at [**our API documentation site**](http://doc.babylonjs.com/classes/DeviceOrientationCamera).
+设备定向相机也是使用自由相机作为基础, 因此我们熟悉的自由相机上所有强大的属性和方法在设备定向相机也能够找到. 设备定向相机上有两个特别重要的属性: _角度感知(angularSensibility)_ 和_运动感知(moveSensibility)_, 这些你可以和其它属性以及方法一起在[**我们的API文档站点**](http://doc.babylonjs.com/classes/DeviceOrientationCamera)发现和探索.
 
-* **FollowCamera** - Forum user AlexB was kind enough to contribute the handy FollowCamera to Babylon.js. (Thanks AlexB!) This camera is specifically designed to follow any scene item with a ._position_... as it moves. It can be set to follow from the rear, from the front, or from any angle. Its follow distance and movement speeds can be set, as well.
+* **跟随相机(FollowCamera)** - 论域用户AlexB好心的将便捷的跟随相机贡献给了Babylon.js. (感谢AlexB!) 它特别设计的， 以便通过一个._position_属性设置来使相机随场景中的任何移动物品... . 它可以设置成从后面，前面，或任何角度跟随目标. 它的跟随距离和运动速度也可以被设置.
 
-The constructor method we will show below... is from [Alex's FollowCamera forum thread](http://www.html5gamedevs.com/topic/8433-smooth-camera-follow/) and, as you can see, Alex makes it easy. Here is how you construct a Babylon.js FollowCamera:
+下面显示的它的构造方法是出自[Alex的跟随相机论坛主题](http://www.html5gamedevs.com/topic/8433-smooth-camera-follow/), 正如你所见，Alex使之很容易. Here is how you construct a Babylon.js FollowCamera:
 ```javascript
 // FollowCamera >> Follow a mesh through your scene
 // Parameters : name, position, scene
