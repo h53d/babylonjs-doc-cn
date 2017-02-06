@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.6.0" segtype="sentence" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.5.4" segtype="sentence" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -3010,6 +3010,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Be warned: A zeroed-out ArcRotateCamera aims in a strange way until _setPosition()_ is called).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T043935Z" creationid="aceway@qq.com" creationdate="20170206T043935Z">
+        <seg>(注意: 一个归零的弧形旋转相机的对准目标是怪异的，除非调用_setPosition()_给它设置位置).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Feel free to edit the code of the demo scenes and click Run or Save.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030335Z" creationid="aceway@qq.com" creationdate="20160427T030335Z">
@@ -5466,6 +5474,14 @@ Here is the same with a plain material ans still the _paths_ displayed : http://
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because the orientation of an ArcRotateCamera is relative to its _target_ setting, it is wise to use a handy method called _setPosition()_ to set the camera position.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T043431Z" creationid="aceway@qq.com" creationdate="20170206T043431Z">
+        <seg>因为弧形旋转相机的朝向是相对其_旋转目标(target)_的, 所以使用方便的_setPosition()_方法设置相机位置是个好注意.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because this value creates twice the vertices of a frontside mesh.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121219Z" creationid="aceway" creationdate="20160507T121219Z">
@@ -5660,6 +5676,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By default you can do that with CTRL+MouseLeftClick, but you can specify to use MouseRightClick instead, by setting _useCtrlForPanning_ to false in the _attachControl_ call :</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T050213Z" creationid="aceway@qq.com" creationdate="20170206T050213Z">
+        <seg>默认情况可以通过CTRL+ 鼠标左键 做到， 但是你也可以指定使用鼠标右键来代替, 通过在 _attachControl_ 调用中将l设置 _useCtrlForPanning_ 设置为 false来实现 :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By default, (with no .alpha and .beta values set), ArcRotateCameras aim in a +x direction.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T140137Z" creationid="aceway" creationdate="20170205T140137Z">
@@ -5680,6 +5704,14 @@ player.invertU = -1;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T133721Z" creationid="aceway" creationdate="20160522T133721Z">
         <seg>默认情况下, 镜面光和alpha不相干, 但是你可以设置```materialSphere1.useSpecularOverAlpha``` 为真, 从而使alpha和镜面光成反比.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By default, the ArcRotateCamera has no _upperAlphaLimit_ or _lowerAlphaLimit_.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T045338Z" creationid="aceway@qq.com" creationdate="20170206T045253Z">
+        <seg>默认情况下, 弧形旋转相机的经度在竖直方向不存 _上限(upperAlphaLimit)_ 和 _下限(lowerAlphaLimit)_.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5994,8 +6026,8 @@ particleSystem.disposeOnStop = true;
       <tuv lang="EN-US">
         <seg>Easy.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T110426Z" creationid="aceway" creationdate="20170131T105835Z">
-        <seg>简单.</seg>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T045041Z" creationid="aceway" creationdate="20170131T105835Z">
+        <seg>简单吧.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7086,6 +7118,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the example below, we will construct an ArcRotateCamera with a target of 'Zero()' and no initial _alpha_, _beta_, or _radius_ values.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T043714Z" creationid="aceway@qq.com" creationdate="20170206T043714Z">
+        <seg>在下面的例子里, 我们将构造个旋转相机： 旋转目标是 '零点' 同时没有初始化_经度_, _纬度_, 和 _半径_ 值.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the example below, we will make our camera's ellipsoid a bit bigger than the default one:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035626Z" creationid="aceway" creationdate="20170130T035626Z">
@@ -7214,6 +7254,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Ironically, there is no rotation property on an ArcRotateCamera, but there is a position property.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T041148Z" creationid="aceway@qq.com" creationdate="20170206T041148Z">
+        <seg>搞笑的是, 弧形旋转相机本身没有旋转属性，但是有个位置属性.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It can be controlled with cursors and mouse, or with touch events.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T133548Z" creationid="aceway" creationdate="20170205T133548Z">
@@ -7250,6 +7298,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T105647Z" creationid="aceway" creationdate="20160507T105647Z">
         <seg>这个参数会被忽略如果 _路径数组_ 里有多于一条路径,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is interesting to know that panning an ArcRotateCamera is also possible.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T045949Z" creationid="aceway@qq.com" creationdate="20170206T045949Z">
+        <seg>弧形旋转相机也可以平移， 有趣吧.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7325,10 +7381,26 @@ Here is the example of the former _closeArray_ parameter with _closeArray_ and _
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It will look broken.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T044434Z" creationid="aceway@qq.com" creationdate="20170206T044434Z">
+        <seg>它看起来破碎了.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It will try to set _dashNumber_ strokes on this line depending on the length of each segment between two successive vectors3.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T101336Z" creationid="aceway" creationdate="20160507T101336Z">
         <seg>上面函数设置了这条点划线里线段的数量, 每段都是由两个连续三元向量定义.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It's beautiful, it's easy, it's Babylon.js.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T045742Z" creationid="aceway@qq.com" creationdate="20170206T045742Z">
+        <seg>漂亮，简洁， 这就是Babylon.js.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8265,6 +8337,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Please see the  [ArcRotateCamera API page](http://doc.babylonjs.com/classes/ArcRotateCamera) for more information.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T045814Z" creationid="aceway@qq.com" creationdate="20170206T045814Z">
+        <seg>请查看 [弧形旋转相机API页面](http://doc.babylonjs.com/classes/ArcRotateCamera) for more information.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Possible uses include:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T021836Z" creationid="aceway" creationdate="20170131T021836Z">
@@ -8457,6 +8537,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T034958Z" creationid="aceway@qq.com" creationdate="20160429T034958Z">
         <seg>所以现在，将这里整个createScene函数添加到你的网页里:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So once you have set your arcCamera as the scene.activeCamera (see further below), you can send your ArcRotateCamera gently orbiting around your target... by putting this simple line of Javascript into the render loop of your scene:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T045656Z" creationid="aceway@qq.com" creationdate="20170206T045656Z">
+        <seg>所以一旦你将弧形旋转相机设置为场景的激活相机 (请往后看更多), 你就可以将弧形旋转相机围绕目标运转... 把下面一行Javascript代码放到场景的渲染循环中即可:</seg>
       </tuv>
     </tu>
     <tu>
@@ -8791,6 +8879,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The ArcRotateCamera is an excellent camera to animate.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T045118Z" creationid="aceway@qq.com" creationdate="20170206T045118Z">
+        <seg>对于播放动画来说弧形旋转相机非常棒.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The BabylonJS Playground is an on-line white-boarding and experimenting application... used to assist in creating scenes for the Javascript-based BabylonJS webGL framework.&amp;nbsp; Your browser must be WebGL-ready and have Javascript active... in order to use the playground.&amp;nbsp; &amp;nbsp;Most modern browsers have these capabilities.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T155120Z" creationid="aceway" creationdate="20160423T142412Z">
@@ -9007,6 +9103,14 @@ scene.registerBeforeRender(function () {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103552Z" creationid="aceway" creationdate="20160507T103552Z">
         <seg>成对路径间构成的所有板带会结合起来形成连续表面.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The handy _setPosition()_ method does the rest.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T045032Z" creationid="aceway@qq.com" creationdate="20170206T045032Z">
+        <seg>便捷的 _setPosition()_ 方法将会做好剩下的事情.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9513,6 +9617,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132140Z" creationid="aceway" creationdate="20170204T132140Z">
         <seg>它们的最终形状取决于一些参数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then we will use the setPosition() function with a common Vector3 position value... to set our _alpha_, _beta_, and _radius_ values all at once, automatically:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T044256Z" creationid="aceway@qq.com" creationdate="20170206T044256Z">
+        <seg>那么我们将一个普通的三维向量值传给setPosition()函数... 一次完成我们的 _经度_, _纬度_, 和 _半径_ 值设置:</seg>
       </tuv>
     </tu>
     <tu>
@@ -10431,6 +10543,14 @@ if (pickResult.hit) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We just make sure we have a _target_ property set ( which we did in the constructor with new BABYLON.Vector3.Zero() ), and then use _setPosition()_ to put our camera exactly where we want it, in 3D space.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T045001Z" creationid="aceway@qq.com" creationdate="20170206T045001Z">
+        <seg>我们只要确保有个合适的 _旋转目标_ 属性的设置 ( 我们之前用new BABYLON.Vector3.Zero() 构造的), 然后使用 _setPosition()_ 把相机准确地放置到我们期望的三维空间中的位置.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We will also fix the referenced nuget packages that are now incorrect because we moved the Visual Studio project one level up.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101127Z" creationid="aceway@qq.com" creationdate="20160427T101127Z">
@@ -10533,6 +10653,14 @@ if (pickResult.hit) {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100856Z" creationid="aceway@qq.com" creationdate="20160427T100856Z">
         <seg>当我们包含进 "src" 文件夹时，也包含进了和 .ts 文件相应的 .js 文件, 我们需要将它们从工程里删除掉，因为我们不使用它们.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When we use that useful _setPosition()_ method, we need not concern ourselves with _alpha_, _beta_, and _radius_.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T044723Z" creationid="aceway@qq.com" creationdate="20170206T044723Z">
+        <seg>当我们使用得力的 _setPosition()_ 方法时, 我们自己不需要关心 _经度_, _纬度_, 和 _半径_.</seg>
       </tuv>
     </tu>
     <tu>
@@ -12003,6 +12131,30 @@ var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene, false, BABYLON.Me
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>```javascript
+   // Create an ArcRotateCamera aimed at 0,0,0, with no alpha, beta or radius, so be careful.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T044408Z" creationid="aceway@qq.com" creationdate="20170206T044408Z">
+        <seg>```javascript
+   // 创建一个弧形旋转相机瞄准0,0,0, 没有经度，纬度和半径, 所以仔细点.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+   camera.attachControl(canvas, noPreventDefault, useCtrlForPanning);
+```
+(more info about this method in the **Wrapping Up** section)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T050446Z" creationid="aceway@qq.com" creationdate="20170206T050446Z">
+        <seg>```javascript
+   camera.attachControl(canvas, noPreventDefault, useCtrlForPanning);
+```
+(关于这个方法的跟多信息请参见 **总结**部分)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>```startPositionFunction = (worldMatrix: Matrix, positionToUpdate: Vector3)```: This function can be defined to specify initial position for every new particle.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T101846Z" creationid="aceway" creationdate="20170131T101846Z">
@@ -12303,6 +12455,16 @@ materialSphere1.alpha = 0.5;
 ```javascript
 materialSphere1.alpha = 0.5;
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>   var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", 0, 0, 0, BABYLON.Vector3.Zero(), scene);
+   // Quick, let's use the setPosition() method... with a common Vector3 position, to make our camera better aimed.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T044557Z" creationid="aceway@qq.com" creationdate="20170206T044557Z">
+        <seg>   var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", 0, 0, 0, BABYLON.Vector3.Zero(), scene);
+   // 快点， 让我们使用setPosition() 方法... 带一个普通三维向量, 以使相机的瞄向更好的目标.</seg>
       </tuv>
     </tu>
     <tu>
