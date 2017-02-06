@@ -3250,6 +3250,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **DeviceOrientationCamera** - The DeviceOrientationCamera is a camera that is specifically designed to react-to device orientation events.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T133842Z" creationid="aceway" creationdate="20170206T133842Z">
+        <seg>* **设备定向相机(DeviceOrientationCamera)** - 它是专程为响应方向事件的设备设计的相机.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Diffuse**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124847Z" creationid="aceway" creationdate="20160508T124847Z">
@@ -5894,6 +5902,14 @@ Did you ever play a FPS (First Person Shooter) game?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Device orientation is when you tilt your modern mobile device forward or back, left or right, to control cameras or other scene items.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T134250Z" creationid="aceway" creationdate="20170206T134250Z">
+        <seg>当你前后倾斜或左右倾斜现代移动设备时，定向设备将控制相机或场景中的其它物品.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Discover Basic Elements
 ---
 ## Introduction</seg>
@@ -7625,6 +7641,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Many of the powerful properties and methods found on our familiar FreeCamera... are also found on our GamepadCamera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T133253Z" creationid="aceway" creationdate="20170206T133253Z">
+        <seg>我们熟悉的自由相机的许多强有力属性和方法都可以在手持相机上找到.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Many parameters here:
 * _Name_
 * _Height map picture url_
@@ -8073,6 +8097,14 @@ var particleSystem = new BABYLON.ParticleSystem("particles", 2000, scene, custom
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T143514Z" creationid="aceway" creationdate="20160425T143514Z">
         <seg>通常, **保存**按钮用在你要和其他人分享你的场景网址时, 或者用在你要将场景作为书签保存到浏览器里时, 这样你可以可以回来继续工作.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ok, let's create a GamepadCamera:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T133018Z" creationid="aceway" creationdate="20170206T133018Z">
+        <seg>好吧，让我们创建一个手持相机:</seg>
       </tuv>
     </tu>
     <tu>
@@ -8867,6 +8899,14 @@ player.height = 0.4;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T125916Z" creationid="aceway" creationdate="20160507T125916Z">
         <seg>你肯定准备好了!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Take notice of the ._angularSensibility_ and ._moveSensibility_ properties, similar to our DeviceOrientationCamera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T133459Z" creationid="aceway" creationdate="20170206T133459Z">
+        <seg>注意下._角度感知(angularSensibility)_ 和 ._运动感知(moveSensibility)_ 属性, 类似于我们的设备定向相机(DeviceOrientationCamera).</seg>
       </tuv>
     </tu>
     <tu>
@@ -11003,6 +11043,14 @@ particleSystem.maxAngularSpeed = Math.PI;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can explore all the properties and methods available on the GamepadCamera... at [our API documentation site](http://doc.babylonjs.com/classes/GamepadCamera).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T133618Z" creationid="aceway" creationdate="20170206T133618Z">
+        <seg>你可以在[**我们的API文档网站**](http://doc.babylonjs.com/classes/GamepadCamera)探索手持相机具有的所有属性和方法...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can explore all the properties and methods available on the TouchCamera... at [**our API documentation site**](http://doc.babylonjs.com/classes/TouchCamera).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T131226Z" creationid="aceway" creationdate="20170206T131226Z">
@@ -12031,6 +12079,24 @@ camera.checkCollisions = true;
 scene.collisionsEnabled = true;
 camera.checkCollisions = true;
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+// GamepadCamera &gt;&gt; Move in your scene with gamepad controls
+// Parameters : name, position, scene
+var camera = new BABYLON.GamepadCamera("Camera", new BABYLON.Vector3(0, 15, -45), scene);
+```
+Easy.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T133146Z" creationid="aceway" creationdate="20170206T133102Z">
+        <seg>```javascript
+// 手持相机 &gt;&gt; 使用控制手柄在场景中移动它
+// 参数: 名称，位置，场景
+var camera = new BABYLON.GamepadCamera("Camera", new BABYLON.Vector3(0, 15, -45), scene);
+```
+简单吧.</seg>
       </tuv>
     </tu>
     <tu>
