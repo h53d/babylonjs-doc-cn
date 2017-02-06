@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.5.4" segtype="sentence" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.6.0" segtype="sentence" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -2470,6 +2470,14 @@ A torus is defined by the following JSON:
     "tags": string
 }
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Unique Purpose Cameras</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T123026Z" creationid="aceway" creationdate="20170206T123026Z">
+        <seg>## 独特用途的相机</seg>
       </tuv>
     </tu>
     <tu>
@@ -6732,6 +6740,14 @@ shadowGenerator.getShadowMap().renderList.push(torus);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>I will try to explain their purposes as we examine each camera and their constructors.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T123349Z" creationid="aceway" creationdate="20170206T123349Z">
+        <seg>我将试着解释它们的用途，我们检验每个相机的用途和构造函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>I would like you to take note... that scaling is **for mesh only**.&amp;nbsp; For example, you can POSITION a mesh, camera, or light.&amp;nbsp; You can often ROTATE a mesh, camera, or light.&amp;nbsp; But SCALING... is for mesh.&amp;nbsp; If you stretch or shrink (scale) a camera or light, you will break its electrical parts.&amp;nbsp; (It's a joke, ok?)&amp;nbsp; &amp;nbsp;There is no reason to set scaling for a camera or light.&amp;nbsp; They are invisible scene items.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T080321Z" creationid="aceway" creationdate="20160423T080321Z">
@@ -6776,6 +6792,20 @@ shadowGenerator.getShadowMap().renderList.push(torus);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T094228Z" creationid="aceway" creationdate="20170130T094228Z">
         <seg>如果没有，它是null.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If required you can also totally deactivate panning by setting :
+```javascript
+   scene.activeCamera.panningSensibility = 0;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T123005Z" creationid="aceway" creationdate="20170206T123005Z">
+        <seg>如果有需要你也可以通过设定来完全禁止平移:
+```javascript
+   scene.activeCamera.panningSensibility = 0;
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -9661,6 +9691,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are some Babylon.js cameras that have unique purposes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T123052Z" creationid="aceway" creationdate="20170206T123052Z">
+        <seg>存在一些特殊用途的Babylon.js相机</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are three filters available:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T105534Z" creationid="aceway" creationdate="20170204T105534Z">
@@ -12146,11 +12184,11 @@ var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene, false, BABYLON.Me
 ```
 (more info about this method in the **Wrapping Up** section)</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T050446Z" creationid="aceway@qq.com" creationdate="20170206T050446Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T122855Z" creationid="aceway@qq.com" creationdate="20170206T050446Z">
         <seg>```javascript
    camera.attachControl(canvas, noPreventDefault, useCtrlForPanning);
 ```
-(关于这个方法的跟多信息请参见 **总结**部分)</seg>
+(关于这个方法的更多信息请参见 **总结**部分)</seg>
       </tuv>
     </tu>
     <tu>
