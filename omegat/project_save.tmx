@@ -3322,6 +3322,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **TouchCamera** - The TouchCamera is a camera that works closely with hand.js, and opens Babylon.js to the modern technology of DOM Gesture Events.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T125118Z" creationid="aceway" creationdate="20170206T125118Z">
+        <seg>* **触控相机** - 它是和hand.js紧密接合使用的相机, 而且是基于DOM技术的开放式手势操作事件.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Transparency** (alpha channel)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124034Z" creationid="aceway" creationdate="20160508T124034Z">
@@ -5322,6 +5330,14 @@ Your scene is beginning to look great, but it is very static.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T024634Z" creationid="aceway" creationdate="20160422T150329Z">
         <seg>另一个Color3值的用途是设置光的散射(.diffuse)属性.&amp;nbsp; 注意该属性的名字是.diffuse, 而不是.diffuseColor.&amp;nbsp; 光源使用一个名为.diffuse的属性设置其主色.&amp;nbsp; 让们看看如何给那个你创建的光源设置主色:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Any movement that can be sensed... can be considered a gesture.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T125642Z" creationid="aceway" creationdate="20170206T125642Z">
+        <seg>任何能被感知的运动... 都可以说是一种姿势.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9057,6 +9073,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The documentation for touch and gamepad cameras are still included here... for historical reference.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T124721Z" creationid="aceway" creationdate="20170206T124627Z">
+        <seg>此处也包含有触控相机和手持相机的，以作为历史参考.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The emissive is the color produced by the object itself.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150829Z" creationid="aceway" creationdate="20160521T145416Z">
@@ -9355,6 +9379,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040831Z" creationid="aceway@qq.com" creationdate="20160429T040605Z">
         <seg>最重要的一点是我们的createScene 函数具有所要求的全部。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The next 2 cameras... touch, and gamepad... are somewhat superseded by our new [Universal Camera](http://doc.babylonjs.com/classes/UniversalCamera) (explained far below).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T124715Z" creationid="aceway" creationdate="20170206T124455Z">
+        <seg>下面两种相机...触控相机相机和手持相机... 有点会被新的[通用相机](http://doc.babylonjs.com/classes/UniversalCamera)取代(再晚些会讲解).</seg>
       </tuv>
     </tu>
     <tu>
@@ -10429,6 +10461,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Touch is a type a 'gesture', whether it be on a pad or screen, with finger(s), stylus, glove, feet, or laser pointer.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T125603Z" creationid="aceway" creationdate="20170206T125603Z">
+        <seg>触碰是种'姿势', 无论在平板还是屏幕上使用手指、手写笔、手套、脚指或激光笔.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Try to memorize this web page layout, and see how the createScene function is at the heart of it.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T130143Z" creationid="aceway" creationdate="20160429T130143Z">
@@ -10901,6 +10941,14 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T121539Z" creationid="aceway" creationdate="20170129T121539Z">
         <seg>你可以继续使用 ```player.size``` 而且在这种情况下宽度和高度是一样的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can learn all about gestures by visiting [**a wikipedia page that tells all about it**](http://en.wikipedia.org/wiki/Gesture_recognition).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T125814Z" creationid="aceway" creationdate="20170206T125814Z">
+        <seg>你可以通过访问[**关于姿势的维基百页**](http://en.wikipedia.org/wiki/Gesture_recognition)学习所有的姿势信息.</seg>
       </tuv>
     </tu>
     <tu>
