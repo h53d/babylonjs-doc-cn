@@ -3050,6 +3050,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Thanks AlexB!) This camera is specifically designed to follow any scene item with a ._position_... as it moves.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T135917Z" creationid="aceway" creationdate="20170206T135917Z">
+        <seg>(感谢AlexB!) 它特别设计的， 以便通过一个._position_属性设置来使相机随场景中的任何移动物品... .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(if the mesh must be modified later)  and the optional side orientation (see below).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103801Z" creationid="aceway" creationdate="20160507T103801Z">
@@ -3278,6 +3286,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050412Z" creationid="aceway" creationdate="20170204T050155Z">
         <seg>* **一张高度图的阐释**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **FollowCamera** - Forum user AlexB was kind enough to contribute the handy FollowCamera to Babylon.js.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T135632Z" creationid="aceway" creationdate="20170206T135632Z">
+        <seg>* **跟随相机(FollowCamera)** - 论域用户AlexB好心的将便捷的跟随相机贡献给了Babylon.js.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5072,6 +5088,14 @@ var effect = engine.createEffectForParticles("myParticle", ["time"]);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Again, we we want it to be easy and enjoyable for you.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T134657Z" creationid="aceway" creationdate="20170206T134657Z">
+        <seg>再次的, 我们希望它对你们来说简单而充满乐趣.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Again, you can see things from this tutorial... come to life... by browsing to [the Babylon.js Playground scene 4](http://www.babylonjs.com/playground/?4).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T135844Z" creationid="aceway" creationdate="20160522T135844Z">
@@ -5284,6 +5308,14 @@ particleSystem.stop();
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T101557Z" creationid="aceway" creationdate="20170204T101557Z">
         <seg>现在我们有个漂亮的三维的地球视图了!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And once again, our friend and technology guru David Catuhe has created [**a wonderfully-detailed blog entry**](http://blogs.msdn.com/b/eternalcoding/archive/2013/10/07/understanding-deviceorientation-events-by-creating-a-small-3d-game-with-babylon-js.aspx) to tell us all about it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T134511Z" creationid="aceway" creationdate="20170206T134511Z">
+        <seg>再一次的， 我们的朋友和技术大拿David Catuhe已经创建了[**精彩详细的博客条目**](http://blogs.msdn.com/b/eternalcoding/archive/2013/10/07/understanding-deviceorientation-events-by-creating-a-small-3d-game-with-babylon-js.aspx)来教我们关于它的所以知识.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6666,6 +6698,26 @@ The TouchCamera uses a FreeCamera as its basis, so all the powerful properties a
     var camera = new BABYLON.TouchCamera("TouchCamera", new BABYLON.Vector3(0, 1, -15), scene);
 ```
 触控相机使用自由相机作为基础, 所以我们熟悉的自由相机具有的所有属性都可以在触控相机上找到.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is how you construct a Babylon.js DeviceOrientationCamera:
+```javascript
+// DeviceOrientationCamera &gt;&gt; Move in your scene with device orientation
+// Parameters : name, position, scene
+    var camera = new BABYLON.DeviceOrientationCamera("DevOr_camera", new BABYLON.Vector3(0, 1, -15), scene);
+```
+The DeviceOrientationCamera also uses a FreeCamera as its basis, so all the powerful properties and methods of our familiar FreeCamera... are also found on our DeviceOrientationCamera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T135204Z" creationid="aceway" creationdate="20170206T135204Z">
+        <seg>这儿是如何创建一个Babylon.js设备定向相机的方法:
+```javascript
+// 设备定向相机 &gt;&gt; 使用定向设备在场景中移动相机
+// 参数：名称，位置，场景
+    var camera = new BABYLON.DeviceOrientationCamera("DevOr_camera", new BABYLON.Vector3(0, 1, -15), scene);
+```
+设备定向相机也是使用自由相机作为基础, 因此我们熟悉的自由相机上所有强大的属性和方法在设备定向相机也能够找到.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9877,6 +9929,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T033350Z" creationid="aceway" creationdate="20160330T033350Z">
         <seg>有两种主要的方式实现场景动画。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are two rather important properties on the DeviceOrientationCamera: _angularSensibility_ and _moveSensibility_, which you can discover and explore... along with all of the other properties and methods... at [**our API documentation site**](http://doc.babylonjs.com/classes/DeviceOrientationCamera).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T135503Z" creationid="aceway" creationdate="20170206T135503Z">
+        <seg>设备定向相机上有两个特别重要的属性: _角度感知(angularSensibility)_ 和_运动感知(moveSensibility)_, 这些你可以和其它属性以及方法一起在[**我们的API文档站点**](http://doc.babylonjs.com/classes/DeviceOrientationCamera)发现和探索.</seg>
       </tuv>
     </tu>
     <tu>
