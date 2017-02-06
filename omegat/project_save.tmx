@@ -5336,8 +5336,8 @@ Your scene is beginning to look great, but it is very static.</seg>
       <tuv lang="EN-US">
         <seg>Any movement that can be sensed... can be considered a gesture.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T125642Z" creationid="aceway" creationdate="20170206T125642Z">
-        <seg>任何能被感知的运动... 都可以说是一种姿势.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T125920Z" creationid="aceway" creationdate="20170206T125642Z">
+        <seg>任何能被感知的运动... 都可以说是一种姿态.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6626,6 +6626,26 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is how to construct a TouchCamera:
+```javascript
+// TouchCamera &gt;&gt; Move in your world with your touch-gesture device
+// Parameters : name, position, scene
+    var camera = new BABYLON.TouchCamera("TouchCamera", new BABYLON.Vector3(0, 1, -15), scene);
+```
+The TouchCamera uses a FreeCamera as its basis, so all the powerful properties and methods of our familiar FreeCamera... are also found on our TouchCamera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T131119Z" creationid="aceway" creationdate="20170206T131119Z">
+        <seg>这是如何创建一个触控相机:
+```javascript
+// 触控相机 &gt;&gt; 使用触控设备来在场景中移动它
+// 参数: 名称，位置，场景
+    var camera = new BABYLON.TouchCamera("TouchCamera", new BABYLON.Vector3(0, 1, -15), scene);
+```
+触控相机使用自由相机作为基础, 所以我们熟悉的自由相机具有的所有属性都可以在触控相机上找到.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is how you construct a Babylon.js FreeCamera:
 ```javascript
 // FreeCamera &gt;&gt; You can move around the scene with mouse and cursor keys
@@ -7056,6 +7076,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T144941Z" creationid="aceway" creationdate="20160425T144941Z">
         <seg>如果你想把你的场景带回家, 或发布到某个网站服务器上, 或者发送给其他人, 这个按钮就是为你提供的.&amp;nbsp; **获取.zip** 尝试将你编辑器里的代码放入一个单一的index.html文件, 然后把之打包进一个叫做sample.zip的压缩文件里.&amp;nbsp; 最后把这个sample.zip文件提供给你下载.&amp;nbsp; 一旦你下载并解压, 你就会看到名为index.html的文件.&amp;nbsp; 你能用一个支持WebGL的浏览器打开该文件, 你会发现场景被浏览器渲染得妥妥的在那.&amp;nbsp; 当妮确定index.html文件工作正常后, 你也许想将之发布到某个网页服务器上, 然后同全世界分享你漂亮的娱乐场场景.&amp;nbsp; 没有必要安装诸如babylon.js和hand.js的框架文件到index.html的附近路径, 因为index.html文件里引用了和在线娱乐场框架使用的一样版本.&amp;nbsp; index.html文件已经可以运行并且完全可移植.&amp;nbsp; (我们爱死它了!)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you would like to learn more about hand.js and its gestures-ready methods, take a look at [**this comprehensive blog entry**](http://blogs.msdn.com/b/eternalcoding/archive/2013/01/16/hand-js-a-polyfill-for-supporting-pointer-events-on-every-browser.aspx) written by our friend and hero David Catuhe.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T130605Z" creationid="aceway" creationdate="20170206T130605Z">
+        <seg>如果你想学习更多的hand.js及其手势调用方法, 看一看我们的朋友和英雄David Catuhe写的[**此综合博客条目**](http://blogs.msdn.com/b/eternalcoding/archive/2013/01/16/hand-js-a-polyfill-for-supporting-pointer-events-on-every-browser.aspx) .</seg>
       </tuv>
     </tu>
     <tu>
@@ -7671,6 +7699,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054024Z" creationid="aceway@qq.com" creationdate="20160331T014205Z">
         <seg>更多信息在参数里：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Much of its power comes from hand.js.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T130256Z" creationid="aceway" creationdate="20170206T130256Z">
+        <seg>它的强大力多源于hand.js.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8973,6 +9009,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The TouchCamera is specially programmed for nearly all modern gesture-active input devices.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T130217Z" creationid="aceway" creationdate="20170206T130217Z">
+        <seg>触控相机是专程为几乎所有的现代手势活动输入设备准备的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The _ellipsoid_ property on babylon.js cameras is default to size (0.5, 1, 0.5), but changing values will make you taller, bigger, smaller, thinner, it depends upon the adjusted axis.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035540Z" creationid="aceway" creationdate="20170130T035540Z">
@@ -9797,6 +9841,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There is much underlying magic to the TouchCamera, but like everything else in Babylon.js, we make it easy and enjoyable for you.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T130816Z" creationid="aceway" creationdate="20170206T130816Z">
+        <seg>触控相机底层有许多潜在的魔法, 但是正如Babylon.js里许多其它技术一样, 我们使之简单和容易上手.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There, we have visited the primary color and texture properties of StandardMaterial.  But we are not done yet.  Here are a few more handy properties.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T134247Z" creationid="aceway" creationdate="20160522T134247Z">
@@ -10463,8 +10515,8 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       <tuv lang="EN-US">
         <seg>Touch is a type a 'gesture', whether it be on a pad or screen, with finger(s), stylus, glove, feet, or laser pointer.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T125603Z" creationid="aceway" creationdate="20170206T125603Z">
-        <seg>触碰是种'姿势', 无论在平板还是屏幕上使用手指、手写笔、手套、脚指或激光笔.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T125913Z" creationid="aceway" creationdate="20170206T125603Z">
+        <seg>触碰是种'姿态', 无论在平板还是屏幕上使用手指、手写笔、手套、脚指或激光笔.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10919,6 +10971,14 @@ particleSystem.maxAngularSpeed = Math.PI;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can explore all the properties and methods available on the TouchCamera... at [**our API documentation site**](http://doc.babylonjs.com/classes/TouchCamera).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T131226Z" creationid="aceway" creationdate="20170206T131226Z">
+        <seg>你可以在[**我们的API文档网站**](http://doc.babylonjs.com/classes/TouchCamera)探索触控相机具有的所有属性和方法...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can find the complete loader code here:
 https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/babylon.babylonFileLoader.js</seg>
       </tuv>
@@ -10947,8 +11007,8 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
       <tuv lang="EN-US">
         <seg>You can learn all about gestures by visiting [**a wikipedia page that tells all about it**](http://en.wikipedia.org/wiki/Gesture_recognition).</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T125814Z" creationid="aceway" creationdate="20170206T125814Z">
-        <seg>你可以通过访问[**关于姿势的维基百页**](http://en.wikipedia.org/wiki/Gesture_recognition)学习所有的姿势信息.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T130001Z" creationid="aceway" creationdate="20170206T125814Z">
+        <seg>你可以通过访问[**关于姿态的维基百页**](http://en.wikipedia.org/wiki/Gesture_recognition)学习所有的姿态技术.</seg>
       </tuv>
     </tu>
     <tu>
