@@ -7420,6 +7420,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It can be set to follow from the rear, from the front, or from any angle.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T140032Z" creationid="aceway" creationdate="20170206T140032Z">
+        <seg>它可以设置成从后面，前面，或任何角度跟随目标.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It contains:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T040613Z" creationid="aceway@qq.com" creationdate="20160429T040613Z">
@@ -7577,6 +7585,14 @@ var event1 = new BABYLON.AnimationEvent(50, function() { console.log("Yeah!"); }
 // 将你的事件附加到动画上
 animation.addEvent(event1);
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Its follow distance and movement speeds can be set, as well.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T140104Z" creationid="aceway" creationdate="20170206T140104Z">
+        <seg>它的跟随距离和运动速度也可以被设置.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9205,6 +9221,14 @@ scene.registerBeforeRender(function () {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T160646Z" creationid="aceway" creationdate="20160402T151121Z">
         <seg>复杂动画允许你选择每帧的每样东西(每一瞬间).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The constructor method we will show below... is from [Alex's FollowCamera forum thread](http://www.html5gamedevs.com/topic/8433-smooth-camera-follow/) and, as you can see, Alex makes it easy.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T140322Z" creationid="aceway" creationdate="20170206T140322Z">
+        <seg>下面显示的它的构造方法是出自[Alex的跟随相机论坛主题](http://www.html5gamedevs.com/topic/8433-smooth-camera-follow/), 正如你所见，Alex使之很容易.</seg>
       </tuv>
     </tu>
     <tu>
