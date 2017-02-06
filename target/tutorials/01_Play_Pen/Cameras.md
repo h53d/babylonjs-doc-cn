@@ -37,33 +37,33 @@ Babylon.js支持许多类型相机. 我们将从两种最普通类型 - 自由�
 
 弧形旋转相机有许多属性可以用来调整你的视图. 其中一些最常使用的有_经度(alpha)_, _纬度(beta)_, _半径_, _旋转目标(target)_, _速度_, _惯性(inertia)_, 和 _视线夹角(fov)_.
 
-默认情况, (没有设置.alpha 和 .beta 的值), 弧形旋转相机朝着某一正X轴方向. Ironically, there is no rotation property on an ArcRotateCamera, but there is a position property. Because the orientation of an ArcRotateCamera is relative to its _target_ setting, it is wise to use a handy method called _setPosition()_ to set the camera position.
+默认情况, (没有设置.alpha 和 .beta 的值), 弧形旋转相机朝着某一正X轴方向. 搞笑的是, 弧形旋转相机本身没有旋转属性，但是有个位置属性. 因为弧形旋转相机的朝向是相对其_旋转目标(target)_的, 所以使用方便的_setPosition()_方法设置相机位置是个好注意.
 
-In the example below, we will construct an ArcRotateCamera with a target of 'Zero()' and no initial _alpha_, _beta_, or _radius_ values. (Be warned: A zeroed-out ArcRotateCamera aims in a strange way until _setPosition()_ is called). Then we will use the setPosition() function with a common Vector3 position value... to set our _alpha_, _beta_, and _radius_ values all at once, automatically:
+在下面的例子里, 我们将构造个旋转相机： 旋转目标是 '零点' 同时没有初始化_经度_, _纬度_, 和 _半径_ 值. (注意: 一个归零的弧形旋转相机的对准目标是怪异的，除非调用_setPosition()_给它设置位置). 那么我们将一个普通的三维向量值传给setPosition()函数... 一次完成我们的 _经度_, _纬度_, 和 _半径_ 值设置:
 
 ```javascript
-   // Create an ArcRotateCamera aimed at 0,0,0, with no alpha, beta or radius, so be careful. It will look broken.
+   // 创建一个弧形旋转相机瞄准0,0,0, 没有经度，纬度和半径, 所以仔细点. 它看起来破碎了.
    var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", 0, 0, 0, BABYLON.Vector3.Zero(), scene);
-   // Quick, let's use the setPosition() method... with a common Vector3 position, to make our camera better aimed.
+   // 快点， 让我们使用setPosition() 方法... 带一个普通三维向量, 以使相机的瞄向更好的目标.
    camera.setPosition(new BABYLON.Vector3(0, 15, -30));
 ```
 
-When we use that useful _setPosition()_ method, we need not concern ourselves with _alpha_, _beta_, and _radius_. We just make sure we have a _target_ property set ( which we did in the constructor with new BABYLON.Vector3.Zero() ), and then use _setPosition()_ to put our camera exactly where we want it, in 3D space. The handy _setPosition()_ method does the rest. 简单.
+当我们使用得力的 _setPosition()_ 方法时, 我们自己不需要关心 _经度_, _纬度_, 和 _半径_. 我们只要确保有个合适的 _旋转目标_ 属性的设置 ( 我们之前用new BABYLON.Vector3.Zero() 构造的), 然后使用 _setPosition()_ 把相机准确地放置到我们期望的三维空间中的位置. 便捷的 _setPosition()_ 方法将会做好剩下的事情. 简单吧.
 
-The ArcRotateCamera is an excellent camera to animate. By default, the ArcRotateCamera has no _upperAlphaLimit_ or _lowerAlphaLimit_. So once you have set your arcCamera as the scene.activeCamera (see further below), you can send your ArcRotateCamera gently orbiting around your target... by putting this simple line of Javascript into the render loop of your scene:
+对于播放动画来说弧形旋转相机非常棒. 默认情况下, 弧形旋转相机的经度在竖直方向不存 _上限(upperAlphaLimit)_ 和 _下限(lowerAlphaLimit)_. 所以一旦你将弧形旋转相机设置为场景的激活相机 (请往后看更多), 你就可以将弧形旋转相机围绕目标运转... 把下面一行Javascript代码放到场景的渲染循环中即可:
 
 ```javascript
    scene.activeCamera.alpha += .01;
 ```
 
-It's beautiful, it's easy, it's Babylon.js. Please see the  [ArcRotateCamera API page](http://doc.babylonjs.com/classes/ArcRotateCamera) for more information.
+漂亮，简洁， 这就是Babylon.js. 请查看 [弧形旋转相机API页面](http://doc.babylonjs.com/classes/ArcRotateCamera) for more information.
 
-It is interesting to know that panning an ArcRotateCamera is also possible. By default you can do that with CTRL+MouseLeftClick, but you can specify to use MouseRightClick instead, by setting _useCtrlForPanning_ to false in the _attachControl_ call :
+弧形旋转相机也可以平移， 有趣吧. 默认情况可以通过CTRL+ 鼠标左键 做到， 但是你也可以指定使用鼠标右键来代替, 通过在 _attachControl_ 调用中将l设置 _useCtrlForPanning_ 设置为 false来实现 :
 
 ```javascript
    camera.attachControl(canvas, noPreventDefault, useCtrlForPanning);
 ```
-(more info about this method in the **Wrapping Up** section)
+(关于这个方法的跟多信息请参见 **总结**部分)
 
 If required you can also totally deactivate panning by setting :
 ```javascript
