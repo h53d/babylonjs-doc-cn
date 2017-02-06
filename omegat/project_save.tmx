@@ -3282,6 +3282,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **GamepadCamera** - Local superhero David "davrous" Rousset, who invented our cool VirtualJoysticksCamera, is also the inventor of our cool GamepadCamera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T132443Z" creationid="aceway" creationdate="20170206T132331Z">
+        <seg>* **手持相机(GamepadCamera)** - 它也是很酷的虚拟操纵杆相机(VirtualJoysticksCamera)发明者 - 我们的本地英雄David "davrous" Rousset - 发明的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Intersect mesh**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084622Z" creationid="aceway" creationdate="20170130T084622Z">
@@ -7687,6 +7695,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More will be written about that, soon, and nearby.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T132837Z" creationid="aceway" creationdate="20170206T132837Z">
+        <seg>关于那很快会写更多内容的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Most important, though, is the Babylon.js framework, our pride and joy.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T133717Z" creationid="aceway" creationdate="20160403T133717Z">
@@ -8895,6 +8911,14 @@ player.height = 0.4;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thanks David!  The Babylon.js GamepadCamera is specially designed to work with... you guessed it... gamepads.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T132623Z" creationid="aceway" creationdate="20170206T132623Z">
+        <seg>谢谢David! 你猜对了，Babylon.js的手持相机(GamepadCamera)hi特别为游戏手柄设计的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Thanks to forum user Kostar111 for this handy Tiled Ground constructor.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T123116Z" creationid="aceway" creationdate="20160507T123116Z">
@@ -9969,6 +9993,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160426T142726Z" creationid="aceway" creationdate="20160425T150008Z">
         <seg>这个按钮简单的清空娱乐场编辑器里的所有代码.&amp;nbsp; 它经常用在意境准备好代码直接往里粘贴createScene()函数代码, 或者用在当你准备做些试验的代码尝试时.&amp;nbsp; BabylonJS娱乐场是使用BabylonJS框架来创建试验代码的非常棒的地方.&amp;nbsp; 它是个美妙的学习方法.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This camera works closely with Babylon.js Gamepad, Gamepads, and Xbox360Pad classes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T132757Z" creationid="aceway" creationdate="20170206T132757Z">
+        <seg>这种相机同Babylon.js的游戏手柄，游戏手柄类以及Xbox360Pad类密切接合起来工作.</seg>
       </tuv>
     </tu>
     <tu>
