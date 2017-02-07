@@ -3378,6 +3378,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **VRDeviceOrientationFreeCamera** - The [VRDeviceOrientationFreeCamera](http://doc.babylonjs.com/classes/VRDeviceOrientationFreeCamera) is new, but we have SOME documentation.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T134743Z" creationid="aceway" creationdate="20170207T134552Z">
+        <seg>* **虚拟现实设备定向相机(VRDeviceOrientationFreeCamera)** -  [这个玩意](http://doc.babylonjs.com/classes/VRDeviceOrientationFreeCamera)是新鲜东西, 但是我们也游戏文档.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **Vector3**: An array of 3 floats ([x, y, z]).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T072337Z" creationid="aceway@qq.com" creationdate="20160427T072337Z">
@@ -6664,6 +6672,14 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is a [playground demo](http://www.babylonjs-playground.com/#DZTQH#2) that uses it, as well as showing some top secret tricks for making the camera initialize to certain angles.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T134706Z" creationid="aceway" creationdate="20170207T134706Z">
+        <seg>这是使用了虚拟现实设备定向相机个[娱乐场演示](http://www.babylonjs-playground.com/#DZTQH#2) that uses it, as well as showing some top secret tricks for making the camera initialize to certain angles.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is a pretty cool implementation using the bezier curve algorithm :</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T150006Z" creationid="aceway" creationdate="20160402T150006Z">
@@ -6844,6 +6860,14 @@ The FreeCamera is constructed aiming in a +z direction.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T123143Z" creationid="aceway" creationdate="20160507T123143Z">
         <seg>这儿是创建一个瓦片地图所需的基础代码.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is the constructor:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T134604Z" creationid="aceway" creationdate="20170207T134604Z">
+        <seg>这是构造函数:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7732,11 +7756,11 @@ animation.addEvent(event1);
 var camera = new BABYLON.AnaglyphArcRotateCamera("aar_cam", -Math.PI/2, Math.PI/4, 20, new BABYLON.Vector3.Zero(), 0.033, scene);
 ```</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T132932Z" creationid="aceway" creationdate="20170207T132731Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T133521Z" creationid="aceway" creationdate="20170207T132731Z">
         <seg>它的构造函数看起来像这样:
 ```javascript
 // 弧形旋转立体相机 &gt;&gt; 使用过滤偏移技术实现三维立体效果的弧形旋转相机
-// 参数 : 名称，经度，维度，半径，目标(三维向量形式)，视角(度为单位)，场景
+// 参数 : 名称，经度，维度，半径，目标(三维向量形式)，眼界(度为单位)，场景
 var camera = new BABYLON.AnaglyphArcRotateCamera("aar_cam", -Math.PI/2, Math.PI/4, 20, new BABYLON.Vector3.Zero(), 0.033, scene);
 ```</seg>
       </tuv>
@@ -7750,11 +7774,11 @@ var camera = new BABYLON.AnaglyphArcRotateCamera("aar_cam", -Math.PI/2, Math.PI/
 var camera = new BABYLON.AnaglyphFreeCamera("af_cam", new BABYLON.Vector3(0, 1, -15), 0.033, scene);
 ```</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T133134Z" creationid="aceway" creationdate="20170207T133134Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T133444Z" creationid="aceway" creationdate="20170207T133134Z">
         <seg>它的构造函数看起来像这样的:
 ```javascript
 // 立体自由相机 &gt;&gt; 使用过滤偏移技术实现三维立体效果的自由相机
-// 参数：名称，位置(三维向量形式)，视角(度为单位)，场景
+// 参数：名称，位置(三维向量形式)，眼界(度为单位)，场景
 var camera = new BABYLON.AnaglyphFreeCamera("af_cam", new BABYLON.Vector3(0, 1, -15), 0.033, scene);
 ```</seg>
       </tuv>
@@ -8369,6 +8393,14 @@ var particleSystem = new BABYLON.ParticleSystem("particles", 2000, scene, custom
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T093647Z" creationid="aceway" creationdate="20170130T093647Z">
         <seg>当事件一旦抛出, 使用函数“pick”获取些强有力的信息---点击和场景的关系.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you are wearing your 3D glasses, you might want to experiment with this float value.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T134332Z" creationid="aceway" creationdate="20170207T133747Z">
+        <seg>一旦你带上3D眼镜，你就会想进入该虚无飘渺之境体验下.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9349,6 +9381,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035540Z" creationid="aceway" creationdate="20170130T035540Z">
         <seg>Babylon.js里相机的_椭球体_属性默认大小是 (0.5, 1, 0.5), 但是你通过改变值可以更高、更大、更小、更薄, 这依赖于轴的调整.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The _eyeSpace_ parameter (and property) sets the amount of shift between the left eye view and the right eye view.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T133613Z" creationid="aceway" creationdate="20170207T133354Z">
+        <seg>那个_眼界(eyeSpace)_ 参数(和属性)设置左眼视图和右眼视图的偏差(搭界区域).</seg>
       </tuv>
     </tu>
     <tu>
@@ -11441,6 +11481,14 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T121539Z" creationid="aceway" creationdate="20170129T121539Z">
         <seg>你可以继续使用 ```player.size``` 而且在这种情况下宽度和高度是一样的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can learn all about anaglyphs by visiting a [Wikipedia page that explains it thoroughly](http://en.wikipedia.org/wiki/Anaglyph_3D).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T134032Z" creationid="aceway" creationdate="20170207T134032Z">
+        <seg>你可以访问[维基百页-漂浮立体技术](http://en.wikipedia.org/wiki/Anaglyph_3D)来学习其所有技术知识.</seg>
       </tuv>
     </tu>
     <tu>
