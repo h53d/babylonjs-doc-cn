@@ -772,6 +772,14 @@ You can get even more control over particles by using custom functions:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Customizing inputs</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T142311Z" creationid="aceway" creationdate="20170207T142311Z">
+        <seg>## 自定义输入</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Cylinders
 A cylinder is defined by the following JSON:
 ```javascript
@@ -1974,6 +1982,16 @@ With those two functions, your scenes are becoming a lot more dynamic: you can d
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T091813Z" creationid="aceway" creationdate="20170130T091813Z">
         <seg>## 下一步
 通过这两个函数，你的场景变得更加的动态了: 你可以为相交和碰撞定义指定的响应方式， 以及开始为你的场景引入物理概念.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Next step
+You have now learned how to use many cameras, and learned some advanced input options available on our two most-used cameras.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T143256Z" creationid="aceway" creationdate="20170207T143256Z">
+        <seg>## 下一步
+现在你已经学会了如何使用许多相机，而且学了我们两种最常用相机提供的一些高级输入选项.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5056,6 +5074,20 @@ var effect = engine.createEffectForParticles("myParticle", ["time"]);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A simpler version might look like this:
+```javascript
+myCamera.attachControl(canvas);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T142026Z" creationid="aceway" creationdate="20170207T142026Z">
+        <seg>一个简化的版本看起来像这样的:
+```javascript
+myCamera.attachControl(canvas);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A specific article about that can be found [here](page.php?p=25100).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124405Z" creationid="aceway" creationdate="20160508T124405Z">
@@ -5808,6 +5840,14 @@ player.invertU = -1;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T122938Z" creationid="aceway" creationdate="20170129T122938Z">
         <seg>通过使用这些参数来调用 « playAnimation » , 我们的角色会播放从0帧到43帧的动画.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By default _noPreventDefault_ is set to false, meaning that _preventDefault()_ is automatically called on all canvas mouse clicks and touch events.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T142254Z" creationid="aceway" creationdate="20170207T142254Z">
+        <seg>默认情况下 _noPreventDefault_ 被设置成 false, 意味着所有画布上的鼠标点击和触碰事件都会自动触发调用_preventDefault()_.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6596,6 +6636,14 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>FreeCamera and ArcRotateCamera rely upon user inputs to move the camera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T142352Z" creationid="aceway" creationdate="20170207T142352Z">
+        <seg>自由相机和弧形旋转相机依赖于用户的输入来移动.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>FreeCameras have many properties that you can use to adjust your view.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T130916Z" creationid="aceway" creationdate="20170205T130916Z">
@@ -7154,6 +7202,14 @@ scene.activeCamera = camera;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you are happy with the camera presets Babylon.js is giving you, like the GamepadCamera, just stick with it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T142603Z" creationid="aceway" creationdate="20170207T142603Z">
+        <seg>如果你高兴，你可以使用Babylon.js提供的相机预设功能, 就像操纵杆相机，只要你能坚持.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you choose one of the demo scenes from the drop-down Scene Selector button, the playground URL will change to this:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030238Z" creationid="aceway@qq.com" creationdate="20160427T030238Z">
@@ -7270,6 +7326,14 @@ player.playAnimation(0, 43, true, 100);
 ```javascript
 player.playAnimation(0, 43, true, 100);
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to change user inputs based upon user preferences, customize one of the existing presets, or use your own input mechanisms.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T142748Z" creationid="aceway" creationdate="20170207T142748Z">
+        <seg>如果你想基于用户的喜好改变输入方式, 可以使用预设的定指一个, 或者使用你自己的输入机制.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8895,6 +8959,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T075503Z" creationid="aceway" creationdate="20170131T075503Z">
         <seg>粒子发射后其方向随机介于方向1和方向2之间.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Read [customizing camera inputs](http://doc.babylonjs.com/tutorials/Customizing_Camera_Inputs) to learn more about tweaking inputs on your cameras.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T143040Z" creationid="aceway" creationdate="20170207T143040Z">
+        <seg>请阅读[自定义相机输入](http://doc.babylonjs.com/tutorials/Customizing_Camera_Inputs)，以学习更多的为相机调整输入机制.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10893,6 +10965,14 @@ skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Those cameras have an input manager that is designed for those advanced scenarios.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T142914Z" creationid="aceway" creationdate="20170207T142914Z">
+        <seg>这些相机有个输入管理器，是为高级情景设计的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Those mountains are very easy to generate with Babylon.js, and with only a single function.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T095732Z" creationid="aceway" creationdate="20170204T045924Z">
@@ -11535,6 +11615,14 @@ if (pickResult.hit) {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T074946Z" creationid="aceway" creationdate="20170131T074946Z">
         <seg>你能够在“BLENDMODE_ONEONE” (默认选择: 源色附加到目标色，不受透明通道影响), 和“BLENDMODE_STANDARD” (将当前颜色和粒子的透明通道色混合)模式间选择.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can control how you see your scene, you can choose your input and viewing devices, and you now know how to move cameras around.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T143518Z" creationid="aceway" creationdate="20170207T143518Z">
+        <seg>你能控制如观看看场景，你能选择输入机制以及查看设备, 而且你知道如何移动相机.</seg>
       </tuv>
     </tu>
     <tu>
