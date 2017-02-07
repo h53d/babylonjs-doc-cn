@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.6.0" segtype="sentence" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.5.4" segtype="sentence" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -3378,6 +3378,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **VirtualJoysticksCamera** - The VirtualJoysticksCamera is a camera that is specifically designed to react-to Virtual Joystick events.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T052205Z" creationid="aceway@qq.com" creationdate="20170207T052205Z">
+        <seg>* **虚拟操纵杆相机(VirtualJoysticksCamera)** - 它是专门为响应虚拟操纵杆事件的设备设计的相机..</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **WireFrame**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T135420Z" creationid="aceway" creationdate="20160522T135420Z">
@@ -5104,6 +5112,14 @@ var effect = engine.createEffectForParticles("myParticle", ["time"]);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>AlexB's cool FollowCamera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T051742Z" creationid="aceway@qq.com" creationdate="20170207T051742Z">
+        <seg>AlexB的酷酷的跟随相机.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All of these texture settings apply to the other StandardMaterial properties as well.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T145229Z" creationid="aceway" creationdate="20160508T134028Z">
@@ -5684,6 +5700,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But the FollowCamera has some more useful properties that you can set if you choose to do so.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T051336Z" creationid="aceway@qq.com" creationdate="20170207T051336Z">
+        <seg>如果你乐意，跟随相机还有许多有用的属性可以设置.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But there is something missing in your scenes: a proper environment.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T103506Z" creationid="aceway" creationdate="20170131T103454Z">
@@ -5926,6 +5950,14 @@ Did you ever play a FPS (First Person Shooter) game?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>David Rousset... takes us on [**a video tour with Virtual Joysticks**](https://www.youtube.com/watch?v=53Piiy71lB0), and makes it look easy.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T052535Z" creationid="aceway@qq.com" creationdate="20170207T052535Z">
+        <seg>David Rousset... 为我们带来了[**一段虚拟操纵杆视频**](https://www.youtube.com/watch?v=53Piiy71lB0), 而且使它看起来很简单.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Demo by Dad72: [**Move character with gravity and collision**](http://www.babylon.actifgames.com/moveCharacter/)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T042152Z" creationid="aceway" creationdate="20170130T042152Z">
@@ -5966,6 +5998,14 @@ A path must have at least two points (four points if you provide a single path).
 所以路径可以通过很多种方式设计: 你可以手动设定点, 从数据集(json等)中引入它们, 使用些数据函数计算它们... 甚或包括所有的数据点.  
 Javascript表示的一条路径是一个简单的三维向量的数组。  
 一条路径至少包含两个点(如果你提供一个单一的路径则至少四个点).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Discover all of the other properties and methods... at [**our API documentation site**](http://doc.babylonjs.com/classes/FollowCamera).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T051821Z" creationid="aceway@qq.com" creationdate="20170207T051821Z">
+        <seg>在 [**我们的API文档站点**](http://doc.babylonjs.com/classes/FollowCamera)探索其它所有的属性和方法吧.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6682,6 +6722,26 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is how to construct a Babylon.js VirtualJoysticksCamera:
+```javascript
+// VirtualJoysticksCamera &gt;&gt; Move in your world with on-screen Virtual Joysticks
+// Parameters : name, position, scene
+    var camera = new BABYLON.VirtualJoysticksCamera("VJ_camera", new BABYLON.Vector3(0, 1, -15), scene);
+```
+The VirtualJoysticksCamera also uses a FreeCamera as its basis, so all the properties and methods of our familiar FreeCamera... are found on our VirtualJoysticksCamera as well.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T053155Z" creationid="aceway@qq.com" creationdate="20170207T053155Z">
+        <seg>下面就是如何构建Babylon.js的虚拟操纵杆相机:
+```javascript
+// 虚拟操纵杆相机 &gt;&gt; 通过屏幕上的虚拟操纵杆控制它在场景中移动
+//参数：名称，位置，场景
+    var camera = new BABYLON.VirtualJoysticksCamera("VJ_camera", new BABYLON.Vector3(0, 1, -15), scene);
+```
+虚拟操纵杆相机也是用自由相机作为基础, 因此自由相机的所有属性和方法均能在虚拟操纵杆相机上找到.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is how to construct a TouchCamera:
 ```javascript
 // TouchCamera &gt;&gt; Move in your world with your touch-gesture device
@@ -6718,6 +6778,28 @@ The DeviceOrientationCamera also uses a FreeCamera as its basis, so all the powe
     var camera = new BABYLON.DeviceOrientationCamera("DevOr_camera", new BABYLON.Vector3(0, 1, -15), scene);
 ```
 设备定向相机也是使用自由相机作为基础, 因此我们熟悉的自由相机上所有强大的属性和方法在设备定向相机也能够找到.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is how you construct a Babylon.js FollowCamera:
+```javascript
+// FollowCamera &gt;&gt; Follow a mesh through your scene
+// Parameters : name, position, scene
+    var camera = new BABYLON.FollowCamera("FollowCam", new BABYLON.Vector3(0, 15, -45), scene);
+    camera.target = myMeshObject; // target any mesh or object with a "position" Vector3
+```
+The code above... constructs the FollowCamera and adds a target mesh, which is all that is required.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T051253Z" creationid="aceway@qq.com" creationdate="20170207T051253Z">
+        <seg>这儿是教你如何创建Babylon.js的跟随相机:
+```javascript
+// 跟随相机 &gt;&gt; 跟随个网格对象在场景里穿越
+// 参数：名称，位置，场景
+    var camera = new BABYLON.FollowCamera("FollowCam", new BABYLON.Vector3(0, 15, -45), scene);
+    camera.target = myMeshObject; // target any mesh or object with a "position" Vector3
+```
+上面的代码... 构建一个跟随相机然后设置个目标网格，这就是全部需要做到的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6808,6 +6890,36 @@ shadowGenerator.getShadowMap().renderList.push(torus);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054110Z" creationid="aceway@qq.com" creationdate="20160331T014803Z">
         <seg>此处你决定开始修改什么类型的数据：floating（比如是平移），一个向量(比如是方向)，或四元数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here's a few, with some example values:
+```javascript
+camera.radius = 30; // how far from the object to follow
+camera.heightOffset = 8; // how high above the object to place the camera
+camera.rotationOffset = 180; // the viewing angle
+camera.cameraAcceleration = 0.05 // how fast to move
+camera.maxCameraSpeed = 20 // speed limit
+```
+And don't forget to set:
+```javascript
+scene.activeCamera = camera;
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T051641Z" creationid="aceway@qq.com" creationdate="20170207T051641Z">
+        <seg>这儿就是些设置了属性值的:
+```javascript
+camera.radius = 30; // 距离跟随对象多远
+camera.heightOffset = 8; // 在跟随对象上面多高放置相机
+camera.rotationOffset = 180; // 观察角度
+camera.cameraAcceleration = 0.05 // 移动速度
+camera.maxCameraSpeed = 20 // 速度限制
+```
+不要忘了设置:
+```javascript
+scene.activeCamera = camera;
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -7693,6 +7805,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Like everything in Babylon.js, we try to make it easy and enjoyable.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T052924Z" creationid="aceway@qq.com" creationdate="20170207T052924Z">
+        <seg>就像Babylon.js里的其它技术一样, 我们使之简单而充满乐趣.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Like many of our cameras, you can also add control keys, or reassign them to other keys, such as keys 'w', 'a', 's', and 'd'.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T120836Z" creationid="aceway" creationdate="20170205T120836Z">
@@ -7881,6 +8001,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T104639Z" creationid="aceway" creationdate="20170204T104639Z">
         <seg>接下来,你需要定义渲染哪个的阴影.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Not a bit of extra work for you.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T052844Z" creationid="aceway@qq.com" creationdate="20170207T052844Z">
+        <seg>你不需做其它额外的工作.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9043,6 +9171,14 @@ player.height = 0.4;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>That is because it **is** easy.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T052620Z" creationid="aceway@qq.com" creationdate="20170207T052620Z">
+        <seg>应为它 **本就** 简单.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>That is done by setting the properties on the material.  Let's see what they are:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124019Z" creationid="aceway" creationdate="20160508T124019Z">
@@ -9997,6 +10133,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There you have it.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T051727Z" creationid="aceway@qq.com" creationdate="20170207T051727Z">
+        <seg>就这些，你实现了跟随相机.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There, we have visited the primary color and texture properties of StandardMaterial.  But we are not done yet.  Here are a few more handy properties.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T134247Z" creationid="aceway" creationdate="20160522T134247Z">
@@ -10401,6 +10545,14 @@ skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This time, another friend and hero of ours...</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T052415Z" creationid="aceway@qq.com" creationdate="20170207T052415Z">
+        <seg>这次，我么另一位朋友和英雄...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This time, we only want 2 instances, and we said that our sprite’s size is 64.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170123T011446Z" creationid="aceway@qq.com" creationdate="20170123T011446Z">
@@ -10717,6 +10869,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Virtual Joysticks are on-screen (canvas atop canvas) 2D graphics that are used to control cameras or other scene items.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T052340Z" creationid="aceway@qq.com" creationdate="20170207T052340Z">
+        <seg>虚拟操纵杆是屏幕上层(画布叠加)的二维图像，它用来控制相机或其它屏幕物品.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Visit that link, and you can see a fragment shader program that has been stored in a shader store.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T094329Z" creationid="aceway" creationdate="20170131T094329Z">
@@ -10795,6 +10955,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T091221Z" creationid="aceway" creationdate="20170130T091221Z">
         <seg>我们在场景中定义了个精确的点, 如果我们的气球和这个点相交，那么特定事件将会被抛出，然后我们会改变气球的颜色。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We have a [special tutorial dedicated to the VirtualJoysticksCamera](http://doc.babylonjs.com/tutorials/How_to_use_VirtualJoysticksCamera).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T053506Z" creationid="aceway@qq.com" creationdate="20170207T053506Z">
+        <seg>我们有个[特别教程专为虚拟操纵杆相机](http://doc.babylonjs.com/tutorials/How_to_use_VirtualJoysticksCamera)准备.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10983,6 +11151,14 @@ if (pickResult.hit) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>With the touch of a touchscreen, or the click of a mouse button, the virtual joysticks activate.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T052824Z" creationid="aceway@qq.com" creationdate="20170207T052824Z">
+        <seg>通过触碰触摸屏，或者点击鼠标键激活虚拟操纵杆.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Wow, this is a lot of information, isn't it?&amp;nbsp; You have learned what a scene file (the big picture) looks like, you have learned about its important createScene() function and how copy'n'paste portable it is.&amp;nbsp; You have seen a createScene() function in the Babylon.js playground, and you have been introduced to the playground's RUN, SAVE, and Get .zip buttons.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T104506Z">
@@ -11035,6 +11211,14 @@ if (pickResult.hit) {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T125451Z" creationid="aceway" creationdate="20160402T125451Z">
         <seg>你可以使用简化函数给动画添加一些不同的行为.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can also [**read about Virtual Joysticks**](http://blogs.msdn.com/b/davrous/archive/2013/02/22/creating-an-universal-virtual-touch-joystick-working-for-all-touch-models-thanks-to-hand-js.aspx) on David's blog.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T052723Z" creationid="aceway@qq.com" creationdate="20170207T052723Z">
+        <seg>你也可在David的博客上阅读[**关于虚拟操纵杆**](http://blogs.msdn.com/b/davrous/archive/2013/02/22/creating-an-universal-virtual-touch-joystick-working-for-all-touch-models-thanks-to-hand-js.aspx).</seg>
       </tuv>
     </tu>
     <tu>
@@ -11139,6 +11323,14 @@ particleSystem.maxAngularSpeed = Math.PI;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T131226Z" creationid="aceway" creationdate="20170206T131226Z">
         <seg>你可以在[**我们的API文档网站**](http://doc.babylonjs.com/classes/TouchCamera)探索触控相机具有的所有属性和方法...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can explore all the properties and methods available on the VirtualJoysticksCamera... at [**our API documentation site**](http://doc.babylonjs.com/classes/VirtualJoysticksCamera).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T053556Z" creationid="aceway@qq.com" creationdate="20170207T053556Z">
+        <seg>你可以在 [**我们的API文档站点**](http://doc.babylonjs.com/classes/VirtualJoysticksCamera)探索虚拟操纵杆相机的所有属性和方法.</seg>
       </tuv>
     </tu>
     <tu>
