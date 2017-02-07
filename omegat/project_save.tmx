@@ -8033,6 +8033,18 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Lights
+---
+Now that you have learned about the camera types and how to place them into your scene, we will continue our tutorial series with learning about Babylon.js lights.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T143827Z" creationid="aceway" creationdate="20170207T143827Z">
+        <seg>光源
+---
+现在你已经学习了相机类型和如何在场景中放置相机, 我们将继续我们的系列教程-学习Babylon.js 的光源.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Like everything in Babylon.js, we try to make it easy and enjoyable.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T052924Z" creationid="aceway@qq.com" creationdate="20170207T052924Z">
@@ -9031,6 +9043,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T034539Z" creationid="aceway" creationdate="20160404T034539Z">
         <seg>看到左边代码窗口里的 'createScene' 函数里么?&amp;nbsp; 看起来熟悉吧?&amp;nbsp; 它是和大图片里的紫色部分非常像的代码(只是多了些换行).&amp;nbsp; 现在你该清楚了为什么那个 createScene 函数是一个重要的部分.&amp;nbsp; 它是有一定可移植性的.&amp;nbsp; 你能够在 createScene 函数和你本地的场景文件之间将代码拷来拷去.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See you soon.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T143635Z" creationid="aceway" creationdate="20170207T143635Z">
+        <seg>很快再见面的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -11101,6 +11121,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
 ```javascript
 var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Player.png", 2, 64, scene);
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To give your scene a more realistic effect, we are now going to learn [**how to manage lights**](http://doc.babylonjs.com/tutorials/Lights).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T143616Z" creationid="aceway" creationdate="20170207T143616Z">
+        <seg>为了给你的场景提供更真实的效果，现在我们开始学习 [**如何管理光源**](http://doc.babylonjs.com/tutorials/Lights).</seg>
       </tuv>
     </tu>
     <tu>
