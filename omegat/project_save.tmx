@@ -3132,8 +3132,8 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       <tuv lang="EN-US">
         <seg>* **AnaglyphCamera** - The AnaglyphCamera is for use with red and cyan 3D glasses.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T131030Z" creationid="aceway" creationdate="20170207T131030Z">
-        <seg>* **立体相机(AnaglyphCamera)** - 它是为使用红The AnaglyphCamera is for use with red and cyan 3D glasses.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T132118Z" creationid="aceway" creationdate="20170207T131030Z">
+        <seg>* **立体相机(AnaglyphCamera)** - 它是为使用红色与青色的3D眼镜准备的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7627,6 +7627,14 @@ Here is the example of the former _closeArray_ parameter with _closeArray_ and _
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is very new to Babylon.js, and to be honest quite sexy.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T132203Z" creationid="aceway" creationdate="20170207T132203Z">
+        <seg>对于Babylon.js来说它也很新鲜性感的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It makes a complicated system, (WebGL,) much easier to use.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032859Z" creationid="aceway" creationdate="20160403T032859Z">
@@ -7647,6 +7655,14 @@ Here is the example of the former _closeArray_ parameter with _closeArray_ and _
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T121157Z" creationid="aceway" creationdate="20170204T121157Z">
         <seg>它使用模糊阴影映射.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It uses post-processing filtering techniques.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T132238Z" creationid="aceway" creationdate="20170207T132238Z">
+        <seg>它使用后期处理过滤技术.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7704,6 +7720,42 @@ animation.addEvent(event1);
 var event1 = new BABYLON.AnimationEvent(50, function() { console.log("Yeah!"); }, true);
 // 将你的事件附加到动画上
 animation.addEvent(event1);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Its constructor looks like this:
+```javascript
+// AnaglyphArcRotateCamera &gt;&gt; Analglyph 3D using filter-shifted ArcRotateCamera
+// Parameters : name, alpha, beta, radius, target (in Vector3), eyeSpace (in degrees), scene
+var camera = new BABYLON.AnaglyphArcRotateCamera("aar_cam", -Math.PI/2, Math.PI/4, 20, new BABYLON.Vector3.Zero(), 0.033, scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T132932Z" creationid="aceway" creationdate="20170207T132731Z">
+        <seg>它的构造函数看起来像这样:
+```javascript
+// 弧形旋转立体相机 &gt;&gt; 使用过滤偏移技术实现三维立体效果的弧形旋转相机
+// 参数 : 名称，经度，维度，半径，目标(三维向量形式)，视角(度为单位)，场景
+var camera = new BABYLON.AnaglyphArcRotateCamera("aar_cam", -Math.PI/2, Math.PI/4, 20, new BABYLON.Vector3.Zero(), 0.033, scene);
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Its constructor looks like this:
+```javascript
+// AnaglyphFreeCamera &gt;&gt; Analglyph 3D using filter-shifted FreeCamera
+// Parameters : name, position (in Vector3), eyeSpace (in degrees), scene
+var camera = new BABYLON.AnaglyphFreeCamera("af_cam", new BABYLON.Vector3(0, 1, -15), 0.033, scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T133134Z" creationid="aceway" creationdate="20170207T133134Z">
+        <seg>它的构造函数看起来像这样的:
+```javascript
+// 立体自由相机 &gt;&gt; 使用过滤偏移技术实现三维立体效果的自由相机
+// 参数：名称，位置(三维向量形式)，视角(度为单位)，场景
+var camera = new BABYLON.AnaglyphFreeCamera("af_cam", new BABYLON.Vector3(0, 1, -15), 0.033, scene);
 ```</seg>
       </tuv>
     </tu>
@@ -9441,6 +9493,14 @@ scene.registerBeforeRender(function () {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The first is the **AnaglyphArcRotateCamera**.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T132423Z" creationid="aceway" creationdate="20170207T132423Z">
+        <seg>第一种是 **弧形旋转立体相机**.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The first is to define a collection of keys and defining your object's situation at each key.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160330T154251Z" creationid="aceway" creationdate="20160330T033530Z">
@@ -9905,8 +9965,8 @@ scene.workerCollisions = true|false
       <tuv lang="EN-US">
         <seg>The second is the **AnaglyphFreeCamera**.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T131055Z" creationid="aceway" creationdate="20170207T131055Z">
-        <seg>resetThe second is the **AnaglyphFreeCamera**.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T133004Z" creationid="aceway" creationdate="20170207T131055Z">
+        <seg>第二种是 **自由立体相机**.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10039,6 +10099,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T065040Z" creationid="aceway@qq.com" creationdate="20160429T065040Z">
         <seg>然后, 最重要的渲染循环.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are actually two types of AnaglyphCamera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T132348Z" creationid="aceway" creationdate="20170207T132258Z">
+        <seg>实际上有立体相机有两种类型.</seg>
       </tuv>
     </tu>
     <tu>
