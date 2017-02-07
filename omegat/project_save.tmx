@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.5.4" segtype="sentence" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.6.0" segtype="sentence" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -3126,6 +3126,14 @@ BABYLON.Color3(0.2, 0, 0.2) - 暗紫
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150756Z" creationid="aceway" creationdate="20160521T150053Z">
         <seg>* **环境光**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **AnaglyphCamera** - The AnaglyphCamera is for use with red and cyan 3D glasses.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T131030Z" creationid="aceway" creationdate="20170207T131030Z">
+        <seg>* **立体相机(AnaglyphCamera)** - 它是为使用红The AnaglyphCamera is for use with red and cyan 3D glasses.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9891,6 +9899,14 @@ Setting this flag to true will start the worker in the background.</seg>
 scene.workerCollisions = true|false
 ```
 设置该值为true将使工作线程在后台执行.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The second is the **AnaglyphFreeCamera**.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T131055Z" creationid="aceway" creationdate="20170207T131055Z">
+        <seg>resetThe second is the **AnaglyphFreeCamera**.</seg>
       </tuv>
     </tu>
     <tu>
