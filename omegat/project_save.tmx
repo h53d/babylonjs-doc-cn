@@ -1530,6 +1530,14 @@ A ground is defined by the following JSON:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Inputs</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T141350Z" creationid="aceway" creationdate="20170207T141350Z">
+        <seg>## 输入</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Instances
 A instance is defined by the following JSON:
 ```javascript
@@ -4934,6 +4942,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>;-) All demos on babylonjs.com are based upon that feature.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T141213Z" creationid="aceway" creationdate="20170207T141213Z">
+        <seg>;-) 在babylonjs.com网站上所有的演示都是基于该功能的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;/html&gt;
 ```
 ### The CSS Style Part</seg>
@@ -5388,6 +5404,14 @@ particleSystem.stop();
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105307Z" creationid="aceway" creationdate="20160402T105307Z">
         <seg>你做到了!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And you can revoke the control by using the _detachControl_ function.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T141625Z" creationid="aceway" creationdate="20170207T141625Z">
+        <seg>而且你可以使用_detachControl_函数来卸载该自动处理.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6200,6 +6224,14 @@ particleSystem.disposeOnStop = true;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160421T142350Z" creationid="aceway" creationdate="20160421T141755Z">
         <seg>尽管Vector3的值可以是非常的大正数或负数, 但通常没必要为旋转属性将xValue, yValue, 或 zValue的值设置超出 -6.28 和 +6.28之外的值.&amp;nbsp; 任何这个范围之外的值都没必要, 因为 -6.28 (弧度) 是在一个方向旋转 360 度, 而 +6.28 (弧度) 是在另一个方向旋转 360.&amp;nbsp; 那是可旋转的所有范围, 不是么?&amp;nbsp; 后面我们将在多些讨论旋转.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Every Babylon.js camera will automatically handle inputs for you... once you call the camera's _attachControl_ function.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T141458Z" creationid="aceway" creationdate="20170207T141458Z">
+        <seg>Babylon.js的每种相机都会为你自动地处理输入... 只要你调用了相机的 _attachControl_函数.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7540,6 +7572,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Indeed, you can control the camera using keyboard/mouse on a desktop machine, using a finger/touch on a mobile device and a gamepad controller on Xbox One, for instance.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T140656Z" creationid="aceway" creationdate="20170207T140656Z">
+        <seg>事实上，在桌面机器上你可以使用键盘/鼠标来控制相机, 在移动设备、平板上或XboxOne上用手指/触控设备来控制.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Inside the ```&lt;head&gt;``` part, please add this CSS to view the canvas in maximum size:
 ```css
 &lt;style&gt;</seg>
@@ -8043,6 +8083,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T132837Z" creationid="aceway" creationdate="20170206T132837Z">
         <seg>关于那很快会写更多内容的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Most Babylon.js experts use a two-step process to activate and attach a camera:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T141959Z" creationid="aceway" creationdate="20170207T141735Z">
+        <seg>大多Babylon.js老鸟以两步走的方式使用相机：激活相机，挂载相机:</seg>
       </tuv>
     </tu>
     <tu>
@@ -8811,6 +8859,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Plug a Xbox controller into your PC and you’ll be able to navigate most of our demos, using it, for instance.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T141342Z" creationid="aceway" creationdate="20170207T141342Z">
+        <seg>将一个Xbox控制器接入你的PC，然后你就可以傲游大多数的演示了, 用用吧.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Possible uses include:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T021836Z" creationid="aceway" creationdate="20170131T021836Z">
@@ -9425,6 +9481,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The Universal Camera is now the default camera used by Babylon.js if nothing is specified, and it’s your best choice if you’d like to have a FPS-like control in your scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T140454Z" creationid="aceway" creationdate="20170207T140454Z">
+        <seg>现在若没有特别指定，万能相机就是Babylon.js中默认使用的相机, 而且是你最好选择-如果你喜欢场景中拥有第一人称视角一样的控制.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The VRDeviceOrientationFreeCamera uses FreeCamera as its basis, so all of the properties and methods of FreeCamera... are also found on our VRDeviceOrientationFreeCamera.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T135516Z" creationid="aceway" creationdate="20170207T135516Z">
@@ -10035,6 +10099,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The same camera is handling those 3 inputs at the same time... in a transparent way for you.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T140930Z" creationid="aceway" creationdate="20170207T140930Z">
+        <seg>一部相机同时支持处理这3种输入... 并以透明的方式提供给你.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The same goes for a box mesh, a torus, a cylinder, etc.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T132045Z" creationid="aceway" creationdate="20170204T132045Z">
@@ -10401,6 +10473,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T102924Z" creationid="aceway" creationdate="20160507T102924Z">
         <seg>它们甚至不需要是直线或在同一平面内.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This also means that on a touch PC, you can use those 3 types of inputs on the same machine, if you’d like.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T141127Z" creationid="aceway" creationdate="20170207T141127Z">
+        <seg>这意味着在一台支持触控的PC上, 你可以在这台机器上是使用这3种输入方式，只要你喜欢.</seg>
       </tuv>
     </tu>
     <tu>
@@ -12868,6 +12948,16 @@ var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene, false, BABYLON.Me
     <tu>
       <tuv lang="EN-US">
         <seg>```javascript
+   // First, set the scene's activeCamera... to be YOUR camera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T141908Z" creationid="aceway" creationdate="20170207T141908Z">
+        <seg>```javascript
+   // 第一部, 设定场景的激活相机指向你的相机.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
    camera.attachControl(canvas, noPreventDefault, useCtrlForPanning);
 ```
 (more info about this method in the **Wrapping Up** section)</seg>
@@ -13181,6 +13271,16 @@ materialSphere1.alpha = 0.5;
 ```javascript
 materialSphere1.alpha = 0.5;
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>   scene.activeCamera = myCamera;
+   // Then attach the activeCamera to the canvas.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T141953Z" creationid="aceway" creationdate="20170207T141953Z">
+        <seg>   scene.activeCamera = myCamera;
+   // 然后把激活相机挂载到画布上.</seg>
       </tuv>
     </tu>
     <tu>
