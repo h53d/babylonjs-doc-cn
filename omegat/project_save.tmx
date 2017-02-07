@@ -3378,6 +3378,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **Universal Camera** - Introduced with version 2.3 of Babylon.js, this camera, as its name says... provides a universal way to handle inputs.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T140034Z" creationid="aceway" creationdate="20170207T140034Z">
+        <seg>* **万能相机** - Babylon.js2.3版本中引入的, 如其名所表述的，这种相机提供一种通用的方法来处理输入.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* **VRDeviceOrientationFreeCamera** - The [VRDeviceOrientationFreeCamera](http://doc.babylonjs.com/classes/VRDeviceOrientationFreeCamera) is new, but we have SOME documentation.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T134743Z" creationid="aceway" creationdate="20170207T134552Z">
@@ -3398,6 +3406,14 @@ var sphere = BABYLON.Mesh.CreateSphere("sphere", 10.0, 10.0, 场景, false,  BAB
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T052205Z" creationid="aceway@qq.com" creationdate="20170207T052205Z">
         <seg>* **虚拟操纵杆相机(VirtualJoysticksCamera)** - 它是专门为响应虚拟操纵杆事件的设备设计的相机..</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **WebVRFreeCamera** - The [WebVRFreeCamera](http://doc.babylonjs.com/classes/WebVRFreeCamera) quite new as well.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T135609Z" creationid="aceway" creationdate="20170207T135609Z">
+        <seg>* **页面虚拟现实自由相机(WebVRFreeCamera)** - [这玩意儿](http://doc.babylonjs.com/classes/WebVRFreeCamera) 也非常新潮.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6674,8 +6690,8 @@ particleSystem.manualEmitCount = 300;
       <tuv lang="EN-US">
         <seg>Here is a [playground demo](http://www.babylonjs-playground.com/#DZTQH#2) that uses it, as well as showing some top secret tricks for making the camera initialize to certain angles.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T134706Z" creationid="aceway" creationdate="20170207T134706Z">
-        <seg>这是使用了虚拟现实设备定向相机个[娱乐场演示](http://www.babylonjs-playground.com/#DZTQH#2) that uses it, as well as showing some top secret tricks for making the camera initialize to certain angles.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T135147Z" creationid="aceway" creationdate="20170207T134706Z">
+        <seg>这儿有个使用了_虚拟现实设备定向相机_的[娱乐场演示](http://www.babylonjs-playground.com/#DZTQH#2) , 它也展示了如何将该相机初始化成指定角度的顶级秘笈.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6852,6 +6868,14 @@ The FreeCamera is constructed aiming in a +z direction.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T133956Z" creationid="aceway" creationdate="20170205T133956Z">
         <seg>这儿教你如何创建方便的弧形旋转相机:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is its constructor:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T135620Z" creationid="aceway" creationdate="20170207T135620Z">
+        <seg>这是它的构造函数:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7556,6 +7580,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It also introduces our new [Composable Inputs](http://doc.babylonjs.com/tutorials/Customizing_Camera_Inputs) for cameras.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T135316Z" creationid="aceway" creationdate="20170207T135316Z">
+        <seg>它也介绍了我们新的给相机提供的[组合输入](http://doc.babylonjs.com/tutorials/Customizing_Camera_Inputs).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It can be controlled with cursors and mouse, or with touch events.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T133548Z" creationid="aceway" creationdate="20170205T133548Z">
@@ -7711,6 +7743,14 @@ Here is the example of the former _closeArray_ parameter with _closeArray_ and _
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T101336Z" creationid="aceway" creationdate="20160507T101336Z">
         <seg>上面函数设置了这条点划线里线段的数量, 每段都是由两个连续三元向量定义.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It's basically a combination of the FreeCamera + TouchCamera + GamepadCamera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T140144Z" creationid="aceway" creationdate="20170207T140144Z">
+        <seg>它基本上时自由相机 + 触控相机 + 手持相机的组合.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7971,6 +8011,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     "properties": array of properties, (见下面)
     "children": array of Actions,
     "combine": array of Actions (用于组合动画.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More about that... a bit further along.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T135411Z" creationid="aceway" creationdate="20170207T135411Z">
+        <seg>信息量比那还多... 走得更远一点.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9373,6 +9421,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T130217Z" creationid="aceway" creationdate="20170206T130217Z">
         <seg>触控相机是专程为几乎所有的现代手势活动输入设备准备的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The VRDeviceOrientationFreeCamera uses FreeCamera as its basis, so all of the properties and methods of FreeCamera... are also found on our VRDeviceOrientationFreeCamera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T135516Z" creationid="aceway" creationdate="20170207T135516Z">
+        <seg>_虚拟现实设备定向相机_也是使用自由相机作为基础... 因此自由相机的所有属性和方法都可以在_虚拟现实设备定向相机_上找到.</seg>
       </tuv>
     </tu>
     <tu>
@@ -12505,6 +12561,24 @@ Easy.</seg>
 var camera = new BABYLON.GamepadCamera("Camera", new BABYLON.Vector3(0, 15, -45), scene);
 ```
 简单吧.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+// WebVRFreeCamera &gt;&gt; Move in your VR scene
+// Parameters : name, position, scene
+    var camera = new BABYLON.WebVRFreeCamera("WVR", new BABYLON.Vector3(0, 1, -15), scene);
+```
+The WebVRFreeCamera uses FreeCamera as its basis, so all of the properties and methods of FreeCamera... are also found on our WebVRFreeCamera.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T135823Z" creationid="aceway" creationdate="20170207T135823Z">
+        <seg>```javascript
+// 页面虚拟现实自由相机 &gt;&gt; 在虚拟现实场景中移动
+// 参数：名称，位置，场景
+    var camera = new BABYLON.WebVRFreeCamera("WVR", new BABYLON.Vector3(0, 1, -15), scene);
+```
+页面虚拟现实自由相机也是用自由相机作为基础.. 因此自由相机的所有属性和方法也都可以在它上面找到.</seg>
       </tuv>
     </tu>
     <tu>
