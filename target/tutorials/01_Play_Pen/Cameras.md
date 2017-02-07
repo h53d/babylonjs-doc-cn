@@ -111,42 +111,42 @@ var camera = new BABYLON.GamepadCamera("Camera", new BABYLON.Vector3(0, 15, -45)
 
 * **跟随相机(FollowCamera)** - 论域用户AlexB好心的将便捷的跟随相机贡献给了Babylon.js. (感谢AlexB!) 它特别设计的， 以便通过一个._position_属性设置来使相机随场景中的任何移动物品... . 它可以设置成从后面，前面，或任何角度跟随目标. 它的跟随距离和运动速度也可以被设置.
 
-下面显示的它的构造方法是出自[Alex的跟随相机论坛主题](http://www.html5gamedevs.com/topic/8433-smooth-camera-follow/), 正如你所见，Alex使之很容易. Here is how you construct a Babylon.js FollowCamera:
+下面显示的它的构造方法是出自[Alex的跟随相机论坛主题](http://www.html5gamedevs.com/topic/8433-smooth-camera-follow/), 正如你所见，Alex使之很容易. 这儿是教你如何创建Babylon.js的跟随相机:
 ```javascript
-// FollowCamera >> Follow a mesh through your scene
-// Parameters : name, position, scene
+// 跟随相机 >> 跟随个网格对象在场景里穿越
+// 参数：名称，位置，场景
     var camera = new BABYLON.FollowCamera("FollowCam", new BABYLON.Vector3(0, 15, -45), scene);
     camera.target = myMeshObject; // target any mesh or object with a "position" Vector3
 ```
-The code above... constructs the FollowCamera and adds a target mesh, which is all that is required. But the FollowCamera has some more useful properties that you can set if you choose to do so. Here's a few, with some example values:
+上面的代码... 构建一个跟随相机然后设置个目标网格，这就是全部需要做到的. 如果你乐意，跟随相机还有许多有用的属性可以设置. 这儿就是些设置了属性值的:
 ```javascript
-camera.radius = 30; // how far from the object to follow
-camera.heightOffset = 8; // how high above the object to place the camera
-camera.rotationOffset = 180; // the viewing angle
-camera.cameraAcceleration = 0.05 // how fast to move
-camera.maxCameraSpeed = 20 // speed limit
+camera.radius = 30; // 距离跟随对象多远
+camera.heightOffset = 8; // 在跟随对象上面多高放置相机
+camera.rotationOffset = 180; // 观察角度
+camera.cameraAcceleration = 0.05 // 移动速度
+camera.maxCameraSpeed = 20 // 速度限制
 ```
-And don't forget to set:
+不要忘了设置:
 ```javascript
 scene.activeCamera = camera;
 ```
 
-There you have it. AlexB's cool FollowCamera. Discover all of the other properties and methods... at [**our API documentation site**](http://doc.babylonjs.com/classes/FollowCamera).
+就这些，你实现了跟随相机. AlexB的酷酷的跟随相机. 在 [**我们的API文档站点**](http://doc.babylonjs.com/classes/FollowCamera)探索其它所有的属性和方法吧.
 
 
-* **VirtualJoysticksCamera** - The VirtualJoysticksCamera is a camera that is specifically designed to react-to Virtual Joystick events. Virtual Joysticks are on-screen (canvas atop canvas) 2D graphics that are used to control cameras or other scene items. This time, another friend and hero of ours... David Rousset... takes us on [**a video tour with Virtual Joysticks**](https://www.youtube.com/watch?v=53Piiy71lB0), and makes it look easy. That is because it **is** easy. You can also [**read about Virtual Joysticks**](http://blogs.msdn.com/b/davrous/archive/2013/02/22/creating-an-universal-virtual-touch-joystick-working-for-all-touch-models-thanks-to-hand-js.aspx) on David's blog.
+* **虚拟操纵杆相机(VirtualJoysticksCamera)** - 它是专门为响应虚拟操纵杆事件的设备设计的相机.. 虚拟操纵杆是屏幕上层(画布叠加)的二维图像，它用来控制相机或其它屏幕物品. 这次，我么另一位朋友和英雄... David Rousset... 为我们带来了[**一段虚拟操纵杆视频**](https://www.youtube.com/watch?v=53Piiy71lB0), 而且使它看起来很简单. 应为它 **本就** 简单. 你也可在David的博客上阅读[**关于虚拟操纵杆**](http://blogs.msdn.com/b/davrous/archive/2013/02/22/creating-an-universal-virtual-touch-joystick-working-for-all-touch-models-thanks-to-hand-js.aspx).
 
-With the touch of a touchscreen, or the click of a mouse button, the virtual joysticks activate. Not a bit of extra work for you. Like everything in Babylon.js, we try to make it easy and enjoyable. Here is how to construct a Babylon.js VirtualJoysticksCamera:
+通过触碰触摸屏，或者点击鼠标键激活虚拟操纵杆. 你不需做其它额外的工作. 就像Babylon.js里的其它技术一样, 我们使之简单而充满乐趣. 下面就是如何构建Babylon.js的虚拟操纵杆相机:
 ```javascript
-// VirtualJoysticksCamera >> Move in your world with on-screen Virtual Joysticks
-// Parameters : name, position, scene
+// 虚拟操纵杆相机 >> 通过屏幕上的虚拟操纵杆控制它在场景中移动
+//参数：名称，位置，场景
     var camera = new BABYLON.VirtualJoysticksCamera("VJ_camera", new BABYLON.Vector3(0, 1, -15), scene);
 ```
-The VirtualJoysticksCamera also uses a FreeCamera as its basis, so all the properties and methods of our familiar FreeCamera... are found on our VirtualJoysticksCamera as well. 
+虚拟操纵杆相机也是用自由相机作为基础, 因此自由相机的所有属性和方法均能在虚拟操纵杆相机上找到. 
 
-We have a [special tutorial dedicated to the VirtualJoysticksCamera](http://doc.babylonjs.com/tutorials/How_to_use_VirtualJoysticksCamera).
+我们有个[特别教程专为虚拟操纵杆相机](http://doc.babylonjs.com/tutorials/How_to_use_VirtualJoysticksCamera)准备.
 
-You can explore all the properties and methods available on the VirtualJoysticksCamera... at [**our API documentation site**](http://doc.babylonjs.com/classes/VirtualJoysticksCamera).
+你可以在 [**我们的API文档站点**](http://doc.babylonjs.com/classes/VirtualJoysticksCamera)探索虚拟操纵杆相机的所有属性和方法.
 
 * **AnaglyphCamera** - The AnaglyphCamera is for use with red and cyan 3D glasses. It is very new to Babylon.js, and to be honest quite sexy. It uses post-processing filtering techniques. There are actually two types of AnaglyphCamera.
 
