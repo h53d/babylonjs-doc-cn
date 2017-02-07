@@ -148,74 +148,74 @@ scene.activeCamera = camera;
 
 你可以在 [**我们的API文档站点**](http://doc.babylonjs.com/classes/VirtualJoysticksCamera)探索虚拟操纵杆相机的所有属性和方法.
 
-* **AnaglyphCamera** - The AnaglyphCamera is for use with red and cyan 3D glasses. It is very new to Babylon.js, and to be honest quite sexy. It uses post-processing filtering techniques. There are actually two types of AnaglyphCamera.
+* **立体相机(AnaglyphCamera)** - 它是为使用红色与青色的3D眼镜准备的. 对于Babylon.js来说它也很新鲜性感的. 它使用后期处理过滤技术. 实际上有立体相机有两种类型.
 
 
-The first is the **AnaglyphArcRotateCamera**. Its constructor looks like this:
+第一种是 **弧形旋转立体相机**. 它的构造函数看起来像这样:
 ```javascript
-// AnaglyphArcRotateCamera >> Analglyph 3D using filter-shifted ArcRotateCamera
-// Parameters : name, alpha, beta, radius, target (in Vector3), eyeSpace (in degrees), scene
+// 弧形旋转立体相机 >> 使用过滤偏移技术实现三维立体效果的弧形旋转相机
+// 参数 : 名称，经度，维度，半径，目标(三维向量形式)，眼界(度为单位)，场景
 var camera = new BABYLON.AnaglyphArcRotateCamera("aar_cam", -Math.PI/2, Math.PI/4, 20, new BABYLON.Vector3.Zero(), 0.033, scene);
 ```
 
-The second is the **AnaglyphFreeCamera**. Its constructor looks like this:
+第二种是 **自由立体相机**. 它的构造函数看起来像这样的:
 ```javascript
-// AnaglyphFreeCamera >> Analglyph 3D using filter-shifted FreeCamera
-// Parameters : name, position (in Vector3), eyeSpace (in degrees), scene
+// 立体自由相机 >> 使用过滤偏移技术实现三维立体效果的自由相机
+// 参数：名称，位置(三维向量形式)，眼界(度为单位)，场景
 var camera = new BABYLON.AnaglyphFreeCamera("af_cam", new BABYLON.Vector3(0, 1, -15), 0.033, scene);
 ```
 
-The _eyeSpace_ parameter (and property) sets the amount of shift between the left eye view and the right eye view. Once you are wearing your 3D glasses, you might want to experiment with this float value.
+那个_眼界(eyeSpace)_ 参数(和属性)设置左眼视图和右眼视图的偏差(搭界区域). 一旦你带上3D眼镜，你就会想进入该虚无飘渺之境体验下.
 
-You can learn all about anaglyphs by visiting a [Wikipedia page that explains it thoroughly](http://en.wikipedia.org/wiki/Anaglyph_3D). 
+你可以访问[维基百页-漂浮立体技术](http://en.wikipedia.org/wiki/Anaglyph_3D)来学习其所有技术知识. 
 
-* **VRDeviceOrientationFreeCamera** - The [VRDeviceOrientationFreeCamera](http://doc.babylonjs.com/classes/VRDeviceOrientationFreeCamera) is new, but we have SOME documentation.  Here is the constructor:
+* **虚拟现实设备定向相机(VRDeviceOrientationFreeCamera)** -  [这个玩意](http://doc.babylonjs.com/classes/VRDeviceOrientationFreeCamera)是新鲜东西, 但是我们也游戏文档.  这是构造函数:
 
 ```javascript
 var camera = new BABYLON.VRDeviceOrientationFreeCamera ("Camera", new BABYLON.Vector3 (-6.7, 1.2, -1.3), scene, 0);
 ```
 
-Here is a [playground demo](http://www.babylonjs-playground.com/#DZTQH#2) that uses it, as well as showing some top secret tricks for making the camera initialize to certain angles.  It also introduces our new [Composable Inputs](http://doc.babylonjs.com/tutorials/Customizing_Camera_Inputs) for cameras.  More about that... a bit further along.
+这儿有个使用了_虚拟现实设备定向相机_的[娱乐场演示](http://www.babylonjs-playground.com/#DZTQH#2) , 它也展示了如何将该相机初始化成指定角度的顶级秘笈.  它也介绍了我们新的给相机提供的[组合输入](http://doc.babylonjs.com/tutorials/Customizing_Camera_Inputs).  信息量比那还多... 走得更远一点.
 
-The VRDeviceOrientationFreeCamera uses FreeCamera as its basis, so all of the properties and methods of FreeCamera... are also found on our VRDeviceOrientationFreeCamera.
+_虚拟现实设备定向相机_也是使用自由相机作为基础... 因此自由相机的所有属性和方法都可以在_虚拟现实设备定向相机_上找到.
 
-* **WebVRFreeCamera** - The [WebVRFreeCamera](http://doc.babylonjs.com/classes/WebVRFreeCamera) quite new as well.  Here is its constructor:
+* **页面虚拟现实自由相机(WebVRFreeCamera)** - [这玩意儿](http://doc.babylonjs.com/classes/WebVRFreeCamera) 也非常新潮.  这是它的构造函数:
 
 ```javascript
-// WebVRFreeCamera >> Move in your VR scene
-// Parameters : name, position, scene
+// 页面虚拟现实自由相机 >> 在虚拟现实场景中移动
+// 参数：名称，位置，场景
     var camera = new BABYLON.WebVRFreeCamera("WVR", new BABYLON.Vector3(0, 1, -15), scene);
 ```
-The WebVRFreeCamera uses FreeCamera as its basis, so all of the properties and methods of FreeCamera... are also found on our WebVRFreeCamera.
+页面虚拟现实自由相机也是用自由相机作为基础.. 因此自由相机的所有属性和方法也都可以在它上面找到.
 
-* **Universal Camera** - Introduced with version 2.3 of Babylon.js, this camera, as its name says... provides a universal way to handle inputs. It's basically a combination of the FreeCamera + TouchCamera + GamepadCamera.
+* **万能相机** - Babylon.js2.3版本中引入的, 如其名所表述的，这种相机提供一种通用的方法来处理输入. 它基本上时自由相机 + 触控相机 + 手持相机的组合.
 
-The Universal Camera is now the default camera used by Babylon.js if nothing is specified, and it’s your best choice if you’d like to have a FPS-like control in your scene. Indeed, you can control the camera using keyboard/mouse on a desktop machine, using a finger/touch on a mobile device and a gamepad controller on Xbox One, for instance. The same camera is handling those 3 inputs at the same time... in a transparent way for you. This also means that on a touch PC, you can use those 3 types of inputs on the same machine, if you’d like. ;-) All demos on babylonjs.com are based upon that feature. Plug a Xbox controller into your PC and you’ll be able to navigate most of our demos, using it, for instance.
+现在若没有特别指定，万能相机就是Babylon.js中默认使用的相机, 而且是你最好选择-如果你喜欢场景中拥有第一人称视角一样的控制. 事实上，在桌面机器上你可以使用键盘/鼠标来控制相机, 在移动设备、平板上或XboxOne上用手指/触控设备来控制. 一部相机同时支持处理这3种输入... 并以透明的方式提供给你. 这意味着在一台支持触控的PC上, 你可以在这台机器上是使用这3种输入方式，只要你喜欢. ;-) 在babylonjs.com网站上所有的演示都是基于该功能的. 将一个Xbox控制器接入你的PC，然后你就可以傲游大多数的演示了, 用用吧.
 
-## Inputs
+## 输入
 
-Every Babylon.js camera will automatically handle inputs for you... once you call the camera's _attachControl_ function. And you can revoke the control by using the _detachControl_ function. Most Babylon.js experts use a two-step process to activate and attach a camera:
+Babylon.js的每种相机都会为你自动地处理输入... 只要你调用了相机的 _attachControl_函数. 而且你可以使用_detachControl_函数来卸载该自动处理. 大多Babylon.js老鸟以两步走的方式使用相机：激活相机，挂载相机:
 
 ```javascript
-   // First, set the scene's activeCamera... to be YOUR camera.
+   // 第一部, 设定场景的激活相机指向你的相机.
    scene.activeCamera = myCamera;
-   // Then attach the activeCamera to the canvas.
+   // 然后把激活相机挂载到画布上.
    scene.activeCamera.attachControl(canvas, noPreventDefault);
 ```
 
-A simpler version might look like this:
+一个简化的版本看起来像这样的:
 ```javascript
 myCamera.attachControl(canvas);
 ```
 
-By default _noPreventDefault_ is set to false, meaning that _preventDefault()_ is automatically called on all canvas mouse clicks and touch events.
+默认情况下 _noPreventDefault_ 被设置成 false, 意味着所有画布上的鼠标点击和触碰事件都会自动触发调用_preventDefault()_.
 
 
-## Customizing inputs
+## 自定义输入
 
-FreeCamera and ArcRotateCamera rely upon user inputs to move the camera. If you are happy with the camera presets Babylon.js is giving you, like the GamepadCamera, just stick with it.
+自由相机和弧形旋转相机依赖于用户的输入来移动. 如果你高兴，你可以使用Babylon.js提供的相机预设功能, 就像操纵杆相机，只要你能坚持.
 
-If you want to change user inputs based upon user preferences, customize one of the existing presets, or use your own input mechanisms.  Those cameras have an input manager that is designed for those advanced scenarios. Read [customizing camera inputs](http://doc.babylonjs.com/tutorials/Customizing_Camera_Inputs) to learn more about tweaking inputs on your cameras.
+如果你想基于用户的喜好改变输入方式, 可以使用预设的定指一个, 或者使用你自己的输入机制.  这些相机有个输入管理器，是为高级情景设计的. 请阅读[自定义相机输入](http://doc.babylonjs.com/tutorials/Customizing_Camera_Inputs)，以学习更多的为相机调整输入机制.
 
-## Next step
-You have now learned how to use many cameras, and learned some advanced input options available on our two most-used cameras. You can control how you see your scene, you can choose your input and viewing devices, and you now know how to move cameras around. To give your scene a more realistic effect, we are now going to learn [**how to manage lights**](http://doc.babylonjs.com/tutorials/Lights). See you soon.
+## 下一步
+现在你已经学会了如何使用许多相机，而且学了我们两种最常用相机提供的一些高级输入选项. 你能控制如观看看场景，你能选择输入机制以及查看设备, 而且你知道如何移动相机. 为了给你的场景提供更真实的效果，现在我们开始学习 [**如何管理光源**](http://doc.babylonjs.com/tutorials/Lights). 很快再见面的.

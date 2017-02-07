@@ -1,14 +1,14 @@
 ---
 ID_PAGE: 22071
-PG_TITLE: 06. Lights
+PG_TITLE: 06. 光源
 ---
-Now that you have learned about the camera types and how to place them into your scene, we will continue our tutorial series with learning about Babylon.js lights.
+现在你已经学习了相机类型和如何在场景中放置相机, 我们将继续我们的系列教程-学习Babylon.js 的光源.
 
 ![Elements](http://www.babylonjs.com/Screenshots/testlight.jpg)
 
 _A pretty sphere with multiple lights_
 
-## How can I do this ?
+## 我怎么做到这个 ?
 
 Lights are used to produce the diffuse and specular color received by each pixel. This color is then used by materials to determine the final color of every pixel. Babylon.js allows you to create and register as many lights as you choose, but know that a single StandardMaterial can only handle 4 simultaneous lights (the first four enabled lights of the scene's lights list).
 
