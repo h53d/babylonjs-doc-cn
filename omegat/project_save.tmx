@@ -1686,6 +1686,16 @@ A light is defined by the following JSON:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Lights types##
+Here we go... with our 4 cool Babylon.js light types:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T134011Z" creationid="aceway" creationdate="20170208T133819Z">
+        <seg>## 光源类型##
+这就开始... Babylon.js有的很酷的四种光源:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Materials
 A material is defined by the following JSON:
 ```javascript
@@ -4237,6 +4247,22 @@ particleSystem.maxSize = 0.5;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>- **The Directional Light**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T134619Z" creationid="aceway" creationdate="20170208T134619Z">
+        <seg>- **定向光源**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- **The Point Light**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T134020Z" creationid="aceway" creationdate="20170208T134020Z">
+        <seg>- **点光源**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>- Drawing on a texture using a DynamicTexture,
 - Modifying a face that was hit (delete, move vertices, change color...),
 - Changing a submesh material,
@@ -5050,6 +5076,22 @@ var effect = engine.createEffectForParticles("myParticle", ["time"]);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A directional light is defined by a direction (what a surprise!).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T134726Z" creationid="aceway" creationdate="20170208T134726Z">
+        <seg>一个定向光是通过一个方向定义的(没什么好惊奇的!).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A good example of a point light is the sun.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T134246Z" creationid="aceway" creationdate="20170208T134246Z">
+        <seg>点光源的一个好例子是太阳.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A height map is simply a greyscale image like the one we are going to use:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T050546Z" creationid="aceway" creationdate="20170204T050546Z">
@@ -5062,6 +5104,14 @@ var effect = engine.createEffectForParticles("myParticle", ["time"]);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T025021Z" creationid="aceway" creationdate="20170131T025021Z">
         <seg>一副[娱乐场的粒子系统演示](http://babylonjs-playground.azurewebsites.net/?12)的图景</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A point light is a light defined by an unique point in world space.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T134059Z" creationid="aceway" creationdate="20170208T134059Z">
+        <seg>点光源时世界空间中由一个唯一点定义的光源.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5308,6 +5358,14 @@ myCamera.attachControl(canvas);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T152230Z" creationid="aceway" creationdate="20160402T152230Z">
         <seg>一个事件 是在某指定帧会被调用的函数.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An example near the end of this tutorial shows how to use both the *intensity* property and the *setEnabled()* method.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T133809Z" creationid="aceway" creationdate="20170208T133809Z">
+        <seg>这个教程临近结尾部分的一个例子展示了如何使用 *intensity* 属性和 *setEnabled()* 方法.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5928,6 +5986,14 @@ player.invertU = -1;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T045338Z" creationid="aceway@qq.com" creationdate="20170206T045253Z">
         <seg>默认情况下, 弧形旋转相机的经度在竖直方向不存 _上限(upperAlphaLimit)_ 和 _下限(lowerAlphaLimit)_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By default, the directional light is created at origin (0,0,0) position.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T135210Z" creationid="aceway" creationdate="20170208T135210Z">
+        <seg>默认情况，定向光建立在原点(0,0,0)的位置.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10055,6 +10121,22 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The light is emitted from everywhere... toward a specific direction, and has an infinite range.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T135034Z" creationid="aceway" creationdate="20170208T135034Z">
+        <seg>该光源无处不在... 但是朝向一个特别的方向发射, 并且具有无限的范围.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The light is emitted in every direction from this point.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T134159Z" creationid="aceway" creationdate="20170208T134159Z">
+        <seg>光源从该点向所有方向发射光线.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The light's position, as well as the positions of the mesh that you have pushed into the renderlist, determine where the shadows will appear.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T130743Z" creationid="aceway" creationdate="20170204T130743Z">
@@ -11727,6 +11809,14 @@ if (pickResult.hit) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can control the color of any light... with the *diffuse* and *specular* properties:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T134346Z" creationid="aceway" creationdate="20170208T134346Z">
+        <seg>你可以通过 *漫反射(diffuse)* 和 *镜面反射(specular)* 属性来控制任何光源的颜色:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can define a Z-axis rotation for each particle (in radian):
 ```javascript
 particleSystem.minAngularSpeed = 0;
@@ -12365,6 +12455,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100027Z" creationid="aceway@qq.com" creationdate="20160427T100027Z">
         <seg>_粘贴到上一层._</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_Red diffuse point light with white specular_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T134550Z" creationid="aceway" creationdate="20170208T134550Z">
+        <seg>_带白色镜面反射的红色漫反射点光源_</seg>
       </tuv>
     </tu>
     <tu>
