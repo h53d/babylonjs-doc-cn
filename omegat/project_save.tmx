@@ -4263,6 +4263,14 @@ particleSystem.maxSize = 0.5;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>- **The Spot Light**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T135611Z" creationid="aceway" creationdate="20170208T135611Z">
+        <seg>- **聚光灯光源**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>- Drawing on a texture using a DynamicTexture,
 - Modifying a face that was hit (delete, move vertices, change color...),
 - Changing a submesh material,
@@ -5158,6 +5166,14 @@ myCamera.attachControl(canvas);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T124405Z" creationid="aceway" creationdate="20160508T124405Z">
         <seg>关于透明度 [这儿](page.php?p=25100)能找到篇专门的文章.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A spot light is defined by a position (2nd arg), a direction (3rd arg), an angle (4th arg), and an exponent (5th arg).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T135748Z" creationid="aceway" creationdate="20170208T135748Z">
+        <seg>一个聚光灯光源是通过一个位置 (第二个参数), 一个方向(第三个参数), 一个角度(第四个参数), 和一个指数(第五个参数)定义的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8067,6 +8083,14 @@ var camera = new BABYLON.AnaglyphFreeCamera("af_cam", new BABYLON.Vector3(0, 1, 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Just like the other lights, you can control the color of the light with the *diffuse* and *specular* properties:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T140719Z" creationid="aceway" creationdate="20170208T140719Z">
+        <seg>像其它光源一样，你可以通过 *漫反射(diffuse)* 和 *镜面反射(specular)* 属性来控制该光的颜色:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Keep in mind that Vector3 values can be negative numbers as well.&amp;nbsp; So you could easily use -Math.PI/4, -Math.PI/2, -Math.PI, and -Math.PI times 2.&amp;nbsp; These values would rotate the object in the opposite direction around the x-axis.&amp;nbsp; How about this Vector3 rotation:
 ``` javascript
 box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
@@ -8163,6 +8187,14 @@ Now that you have learned about the camera types and how to place them into your
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T132614Z" creationid="aceway" creationdate="20170208T132614Z">
         <seg>光线用来产生各个像素的漫反射和镜面反射的颜色.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Like a point light, you can control the color of the light with the *diffuse* and *specular* properties:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T135409Z" creationid="aceway" creationdate="20170208T135409Z">
+        <seg>像点光源一样, 你可以通过 *漫反射(diffuse)* 和 *镜面反射(specular)* 属性来控制该光源的颜色:</seg>
       </tuv>
     </tu>
     <tu>
@@ -9751,6 +9783,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The angle defines the size (field of illumination) of the spotlight's conical beam (in radians), and the exponent defines the speed of the decay of the light with distance (the light's 'reach distance').</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T140625Z" creationid="aceway" creationdate="20170208T140016Z">
+        <seg>角度(弧度单位)定义了聚光灯光源椎体光束的大小(照明q区域), 同时指数定义了光随距离(光照射的距离)衰减的速度.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The animation is based on objects called Animation (!!).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053948Z" creationid="aceway@qq.com" creationdate="20160330T094901Z">
@@ -10679,6 +10719,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105020Z" creationid="aceway" creationdate="20160402T105020Z">
         <seg>这些指令将应用到包涵在 _animations 数组里的每个动画对象上.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These values define a cone of light starting from the position, emitting toward the direction.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T135935Z" creationid="aceway" creationdate="20170208T135935Z">
+        <seg>这些值定义了一个圆椎体，光源从中发射出来.</seg>
       </tuv>
     </tu>
     <tu>
@@ -12455,6 +12503,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100027Z" creationid="aceway@qq.com" creationdate="20160427T100027Z">
         <seg>_粘贴到上一层._</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_Red diffuse directional light with white specular_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T135544Z" creationid="aceway" creationdate="20170208T135544Z">
+        <seg>_带白色镜面反射的红色漫反射定向光源_</seg>
       </tuv>
     </tu>
     <tu>
