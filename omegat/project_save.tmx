@@ -4255,6 +4255,14 @@ particleSystem.maxSize = 0.5;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>- **The Hemispheric Light**</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T141217Z" creationid="aceway" creationdate="20170208T141217Z">
+        <seg>- **半球状光源**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>- **The Point Light**</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T134020Z" creationid="aceway" creationdate="20170208T134020Z">
@@ -12447,6 +12455,22 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T132422Z" creationid="aceway" creationdate="20170208T132422Z">
         <seg>_多光源下的一个漂亮球体_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_A red diffuse spot light with white specular, a 0.8 radians-wide cone, and an exponent of 2_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T141058Z" creationid="aceway" creationdate="20170208T141058Z">
+        <seg>_一个带红色漫反射的白色镜面反射光聚光灯光源，椎体0.8弧度，衰减指数2_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_A simple drawing showing the shape of a spot light_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T140836Z" creationid="aceway" creationdate="20170208T140836Z">
+        <seg>_一个简单绘图显示了聚光灯光源的形状_</seg>
       </tuv>
     </tu>
     <tu>
