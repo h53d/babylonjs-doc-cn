@@ -46,6 +46,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>![Elements](http://www.babylonjs.com/Screenshots/testlight.jpg)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T132348Z" creationid="aceway" creationdate="20170208T132348Z">
+        <seg>![元素](http://www.babylonjs.com/Screenshots/testlight.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>![Elements](http://www.babylonjs.com/tutorials/04%20-%20Materials/04.png)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T121413Z" creationid="aceway" creationdate="20160508T121413Z">
@@ -516,6 +524,14 @@ An action is defined by the following JSON.</seg>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T090520Z" creationid="aceway@qq.com" creationdate="20160427T090520Z">
         <seg>## 动作
 动作通过如下的JSON格式定义.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Activating/Deactivating Lights ##</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T133436Z" creationid="aceway" creationdate="20170208T133436Z">
+        <seg>## 激活/停用光源 ##</seg>
       </tuv>
     </tu>
     <tu>
@@ -5610,6 +5626,14 @@ Here is the same with a plain material ans still the _paths_ displayed : http://
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Babylon.js allows you to create and register as many lights as you choose, but know that a single StandardMaterial can only handle 4 simultaneous lights (the first four enabled lights of the scene's lights list).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T133319Z" creationid="aceway" creationdate="20170208T133319Z">
+        <seg>Babylon.js允许你想要多少就创建并注册多少光源, 但是要知道一种标准材质只能同事处理4个光源(场景光源列表中先启用的四个光源).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Babylon.js files can be found on our CDN:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T070518Z" creationid="aceway@qq.com" creationdate="20160427T070518Z">
@@ -6168,6 +6192,14 @@ particleSystem.disposeOnStop = true;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>During this tutorial, I will show you how to use every kind of light that is supported by Babylon.js.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T133418Z" creationid="aceway" creationdate="20170208T133418Z">
+        <seg>在这教程里，我将教你如何创建Babylon.js支持的每种类型的光源.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Each Animation has a property called ```currentFrame``` that indicates the current animation key.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T110235Z" creationid="aceway" creationdate="20160402T110235Z">
@@ -6280,6 +6312,14 @@ particleSystem.disposeOnStop = true;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T013853Z" creationid="aceway@qq.com" creationdate="20160331T013853Z">
         <seg>每个键值代表了动画片段在那个时刻的值。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Every light can be activated or deactivated by calling its *setEnabled(true/false)* method.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T133515Z" creationid="aceway" creationdate="20170208T133515Z">
+        <seg>每个光源可以通过调用器 *setEnabled(true/false)* 方法来激活或停用.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7811,6 +7851,14 @@ Here is the example of the former _closeArray_ parameter with _closeArray_ and _
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It uses a floating point value (such as 1.5).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T133703Z" creationid="aceway" creationdate="20170208T133703Z">
+        <seg>它使用一个浮点类型的值 (比如 1.5).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It uses blurred variance shadow map.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T121157Z" creationid="aceway" creationdate="20170204T121157Z">
@@ -8041,6 +8089,14 @@ Now that you have learned about the camera types and how to place them into your
         <seg>光源
 ---
 现在你已经学习了相机类型和如何在场景中放置相机, 我们将继续我们的系列教程-学习Babylon.js 的光源.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Lights are used to produce the diffuse and specular color received by each pixel.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T132614Z" creationid="aceway" creationdate="20170208T132614Z">
+        <seg>光线用来产生各个像素的漫反射和镜面反射的颜色.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10649,6 +10705,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This color is then used by materials to determine the final color of every pixel.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T132704Z" creationid="aceway" creationdate="20170208T132704Z">
+        <seg>然后这种颜色被用来决定每个像素的材质的最终颜色.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This ellipsoid represents our player’s dimensions: a collision event will be raised when a mesh comes in contact with this ellipsoid, preventing our camera from getting too close to this mesh:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035759Z" creationid="aceway" creationdate="20170130T034702Z">
@@ -11599,6 +11663,14 @@ if (pickResult.hit) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can also control the global intensity of any light by using the *intensity* property.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T133643Z" creationid="aceway" creationdate="20170208T133643Z">
+        <seg>你也可以通过 *intensity* 属性来控制任何光源的全局强度.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can also do the same thing with a mesh by playing with _mesh.ellipsoid_ property and _mesh.moveWithCollisions(velocity)_ function.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T041029Z" creationid="aceway" creationdate="20170130T041029Z">
@@ -12229,6 +12301,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104404Z" creationid="aceway" creationdate="20170131T104404Z">
         <seg>_一图展示Babylon.js的雾感_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_A pretty sphere with multiple lights_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T132422Z" creationid="aceway" creationdate="20170208T132422Z">
+        <seg>_多光源下的一个漂亮球体_</seg>
       </tuv>
     </tu>
     <tu>
