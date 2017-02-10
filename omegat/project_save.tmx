@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.6.0" segtype="sentence" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.5.4" segtype="sentence" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -246,6 +246,16 @@ We select ASP.Net 4, don't try the 5 version Template: it's a lot of troubles ri
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T123309Z" creationid="aceway" creationdate="20170204T123309Z">
         <seg>![差分阴影映射](http://www.babylonjs.com/forumpics/vsm.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>![](http://urbanproductions.com/wingy/babylon/misc/normals03.jpg)
+_A blue back-faced plane and a blue front-faced plane, with a spot light and point light_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T150225Z" creationid="aceway" creationdate="20170210T150225Z">
+        <seg>![](http://urbanproductions.com/wingy/babylon/misc/normals03.jpg)
+_一个蓝色背面平面和一个蓝色前面，在一个聚光源和一个点光源照射下_</seg>
       </tuv>
     </tu>
     <tu>
@@ -1960,6 +1970,16 @@ A multiMaterial is defined by the following JSON:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Next Step ##
+With the use of these powerful lights, your scene is likely really starting to 'shine'.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T153035Z" creationid="aceway" creationdate="20170210T153035Z">
+        <seg>## 下一步 ##
+使用强大的光源，你的场景可能真的开始 '明亮'起来.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Next step
 Don’t hesitate to use sprites in your scene: they are not resource intensive, and they really can help keep high frame rates in your application.</seg>
       </tuv>
@@ -2076,6 +2096,16 @@ We saw that we needed a bit of 'positioning' to keep our basic elements from sit
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T071649Z" creationid="aceway@qq.com" creationdate="20160427T071649Z">
         <seg>## 无worker的版本: *babylon.noworker.js*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>## Normals and Backfaces - Seeing the Light: ##
+You may have heard words like '_normals_' and '_backfaces_' spoken or written, during your 3D travels.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T144904Z" creationid="aceway" creationdate="20170210T144904Z">
+        <seg>## 发线和北面 - 看见光: ##
+在你学习3D知识过程中，你应该在口头或书面听闻过词汇如 '_法线_' 和 '_背面_'.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4089,6 +4119,14 @@ particleSystem.maxSize = 0.5;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>**NEW**: In recent versions of Babylon.js, a new property was introduced... called _.range_:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T152746Z" creationid="aceway" creationdate="20170210T152746Z">
+        <seg>**新**: 在经期Babylon.js版本里, 一个新属性被引入了... 叫做 _.range_:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>**New** - The New button is a unique and handy feature.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160425T145027Z" creationid="aceway" creationdate="20160425T145027Z">
@@ -5380,6 +5418,14 @@ myCamera.attachControl(canvas);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Although not truly a light, you might be interested in our [Volumetric Light Scattering](http://doc.babylonjs.com/tutorials/Using_the_Volumetric_LightScattering_post-process) (GodRays) system.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T153947Z" creationid="aceway" creationdate="20170210T153947Z">
+        <seg>尽管不是真的光，你也许对我们的[散射体光源](http://doc.babylonjs.com/教程/Using_the_Volumetric_LightScattering_post-process)(神光)系统感兴趣 .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Although this playground is blending the same animation into itself, more often, a different animation will be blended-into the original, such as when a walking character changes to running.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T125321Z" creationid="aceway" creationdate="20160402T125321Z">
@@ -5470,6 +5516,14 @@ sphere1.material = new BABYLON.StandardMaterial("texture1", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040154Z" creationid="aceway" creationdate="20170130T040154Z">
         <seg>然后声明哪些网格会和我们的相机发生碰撞:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And don't forget that you can animate light positions, directions, colors, and therefore create wonderful 'light shows'.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T153210Z" creationid="aceway" creationdate="20170210T153210Z">
+        <seg>而且别忘了你可以变动光源的位置，方向，颜色，并因此创建一个精彩的'光秀'.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5652,6 +5706,14 @@ Before dealing with the ribbon, we just display each path with the _CreateLines(
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As a last note, I want you to know that the left plane's material.backFaceCulling = false.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T151928Z" creationid="aceway" creationdate="20170210T151928Z">
+        <seg>最后注意， 我希望你知道左边平面的材质的背面剪切(backFaceCulling)属性被设置成否: material.backFaceCulling = false.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As for Lines, a line along the vectors3 will be displayed in space.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T100500Z" creationid="aceway" creationdate="20160507T100500Z">
@@ -5698,6 +5760,14 @@ Here is the same with a plain material ans still the _paths_ displayed : http://
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T073046Z" creationid="aceway" creationdate="20170131T073046Z">
         <seg>正如你所见，粒子沿着X轴从不同的位置发射出来:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As you can see, when a standard Babylon.js plane has its backface lit (the left plane), the lights have no affect, because its normals are not facing toward the lights.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T151002Z" creationid="aceway" creationdate="20170210T150635Z">
+        <seg>正如你所见，当一个标准的Babylon.js平面的背面被照到时(左边平面)，是没有光照效果的,因为它的法线没有面对光线.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5818,6 +5888,14 @@ Here is the same with a plain material ans still the _paths_ displayed : http://
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145324Z" creationid="aceway" creationdate="20160428T145324Z">
         <seg>在你开始之前,请确定你有个支持WebGL的浏览器 (比如:IE11+, 火狐4+, 谷歌浏览器9+, Opera15+, 等.).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Below is an example of the slower and less-simple way to construct a spot light.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T144106Z" creationid="aceway" creationdate="20170210T144023Z">
+        <seg>下面是个慢且不那么简单的构造一个聚光源的方法.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5960,6 +6038,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But we thought you should know that you can do constructing in this way, if you so choose.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T144502Z" creationid="aceway" creationdate="20170210T144502Z">
+        <seg>当时我们认为你应该知道你可以用这种方式来构造，只要你选择.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But you can feel free to add any new parameter, like I did, with 'time'.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T101032Z" creationid="aceway" creationdate="20170131T101032Z">
@@ -6090,6 +6176,14 @@ player.invertU = -1;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By doing that, we know that it will turn-on/operate with just that one line.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T142947Z" creationid="aceway" creationdate="20170210T142947Z">
+        <seg>通过那样做，我们知道它将通过一行代码来打开／运行.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By the way, you can find more info about contributing to Babylon.js [here](http://pixelcodr.com/tutos/contribute/contribute.html)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T094924Z" creationid="aceway@qq.com" creationdate="20160427T094924Z">
@@ -6162,6 +6256,14 @@ Did you ever play a FPS (First Person Shooter) game?</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170203T035034Z" creationid="aceway" creationdate="20170203T035034Z">
         <seg>相反，场景对象的`环境色(ambientColor)`属性是个非常强大、有影响力的环境属性和调节器.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Conversely, when a standard plane has its frontface lit (the right plane), both lights work perfectly to light the plane, because its normals are facing toward the lights.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T151017Z" creationid="aceway" creationdate="20170210T150704Z">
+        <seg>相反，但一个平面的前面被照到时，两个光源都很好的照亮了该平面，因为它的法线面对光线.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6328,6 +6430,14 @@ particleSystem.disposeOnStop = true;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170208T133418Z" creationid="aceway" creationdate="20170208T133418Z">
         <seg>在这教程里，我将教你如何创建Babylon.js支持的每种类型的光源.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each 'arg' of the one-line constructor is setting a 'necessary initial property' on the scene item.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T142810Z" creationid="aceway" creationdate="20170210T142810Z">
+        <seg>每个一行代码构造函数参数都有个设置场景物品的 '必要的初始化属性'.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6670,6 +6780,14 @@ particleSystem.start();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>First, all properties on a spot light or on any Babylon.js scene item... can be set after the object has been constructed.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T143519Z" creationid="aceway" creationdate="20170210T143519Z">
+        <seg>第一件，一个光源或任何Babylon.js场景物品的所有属性... 都可以在该对象被创建后设置.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>First, create our Animation object:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T054019Z" creationid="aceway@qq.com" creationdate="20160331T014146Z">
@@ -6860,6 +6978,14 @@ particleSystem.manualEmitCount = 300;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131617Z" creationid="aceway" creationdate="20170129T131617Z">
         <seg>重力加速度可以应用到任何你代码里之前已经定义的相机上。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Guess what!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T154006Z" creationid="aceway" creationdate="20170210T154006Z">
+        <seg>猜猜看t!</seg>
       </tuv>
     </tu>
     <tu>
@@ -7244,6 +7370,14 @@ scene.activeCamera = camera;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T141618Z" creationid="aceway" creationdate="20160503T141618Z">
         <seg>我可以解释线型网格是如何工作的, 当时我认为剋可以通过观察上面的演示代码而知晓.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I want you to know two important things.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T143359Z" creationid="aceway" creationdate="20170210T143359Z">
+        <seg>我希望你知道两件重要的事情.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7896,6 +8030,14 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is also interesting to note that neither plane blocks the lights.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T151400Z" creationid="aceway" creationdate="20170210T151120Z">
+        <seg>有趣的是，注意两个平面都没挡住光线.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is beyond the scope of this tutorial to teach everything about callable methods and settable properties on Javascript objects.&amp;nbsp; The main thing is to try to take notice WHEN a 'pocket' on an object... is a property, and when it is a method.&amp;nbsp; Methods always use parentheses... sometimes empty, sometimes full of parameters/args.&amp;nbsp; Properties never use parentheses and therefore never require parameters.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T101110Z" creationid="aceway@qq.com" creationdate="20160421T101110Z">
@@ -8117,6 +8259,14 @@ var camera = new BABYLON.AnaglyphFreeCamera("af_cam", new BABYLON.Vector3(0, 1, 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Its fun and beautiful!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T153459Z" creationid="aceway" creationdate="20170210T153459Z">
+        <seg>有趣且漂亮!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It’s now very easy to add fog to your scenes.&amp;nbsp; First, we define the fog mode like this:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T043647Z" creationid="aceway" creationdate="20170204T043647Z">
@@ -8177,6 +8327,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160522T140351Z" creationid="aceway" creationdate="20160522T140351Z">
         <seg>稍后, 我们将看看如何使用高级材质技术.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let's look at the picture carefully.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T150039Z" creationid="aceway" creationdate="20170210T150039Z">
+        <seg>让我们自习看下图片.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8317,6 +8475,14 @@ Now that you have learned about the camera types and how to place them into your
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105655Z" creationid="aceway" creationdate="20160402T105655Z">
         <seg>现在你也许希望在y轴上缩放box1, 而且实时移动box1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Maybe you could do light property settings inside the scene's render loop function.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T153431Z" creationid="aceway" creationdate="20170210T153431Z">
+        <seg>也许你可以在场景的渲染循环里设置光线属性的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8857,6 +9023,14 @@ Easy.&amp;nbsp; Most of these things you already know, don't you?&amp;nbsp; I th
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One light is a spot light, the other is a point light.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T145406Z" creationid="aceway" creationdate="20170210T145406Z">
+        <seg>一个光源是聚光源, 另一个是点光源.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One more important thing you need to know is [how to create shadows](http://doc.babylonjs.com/tutorials/Shadows).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T103406Z" creationid="aceway" creationdate="20170204T103406Z">
@@ -8885,6 +9059,14 @@ Our box is now colored medium green.&amp;nbsp; It's just that easy.&amp;nbsp; Th
 myMaterial.diffuseColor = new BABYLON.Color3(0, 0.5, 0);
 `
 我们的盒子现在是种绿色了.&amp;nbsp; 就是那么简单.&amp;nbsp; 标准材质对象有许多其它的属性.&amp;nbsp; 你可以给诸如&amp;nbsp;镜面光颜色( .specularColor), 放射光颜色(.emissiveColor), 环境光颜色(.ambientColor)等属性天假颜色.&amp;nbsp; 所有这些属性都使用(如果你选择这样做)Babylon.js的三元色(Color3)值来设置.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One such property is *intensity*.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T143130Z" creationid="aceway" creationdate="20170210T143130Z">
+        <seg>比如属性 *强度*.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9259,6 +9441,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Second, if you so choose, you can null-out (set to zero/empty) the args in the one-line constructor, and then set all of the necessary initial properties yourself... property by property.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T143847Z" creationid="aceway" creationdate="20170210T143847Z">
+        <seg>第二件，如果你选择这样做， 你可以空着(设置为零或空)一行构造函数的参数, 然后一个属性一个属性的设置那些必须初始化的所有属性.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See the 'createScene' function in the left-side code editing window?&amp;nbsp; Does it look familiar?&amp;nbsp; It is the very same code from the purple section of the big picture (but with a couple of word-wrapped lines).&amp;nbsp; Now you can see why the createScene function is an important section.&amp;nbsp; It is somewhat portable.&amp;nbsp; You can copy createScene functions to/from the playground editor, and to/from your home scene files.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160404T034539Z" creationid="aceway" creationdate="20160404T034539Z">
@@ -9571,6 +9761,14 @@ player.height = 0.4;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Stay tuned.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T152916Z" creationid="aceway" creationdate="20170210T152916Z">
+        <seg>敬请关注.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Stay with us, because we are going to learn a new, very interesting thing: [Configuring your environment](http://doc.babylonjs.com/tutorials/Environment).</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T103155Z" creationid="aceway" creationdate="20170131T103155Z">
@@ -9869,6 +10067,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T053948Z" creationid="aceway@qq.com" creationdate="20160330T094901Z">
         <seg>基于众多物体对象动画也叫电影片段。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The arrows show the direction of the lighting normals, and these arrows are not visible in a standard scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T145638Z" creationid="aceway" creationdate="20170210T145638Z">
+        <seg>那些箭头表明光线方向的法线，在标准场景中这些箭头是不可见的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10267,6 +10473,14 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The lights are primarily concerned about the direction of the lighting normals (the arrows).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T152603Z" creationid="aceway" creationdate="20170210T152402Z">
+        <seg>光线效果主要和被照射处的采光法线方向(图中箭头)相关.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The main difficulty is to click on a 3D object whereas your screen is a flat 2D display.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T092351Z" creationid="aceway" creationdate="20170130T092351Z">
@@ -10307,6 +10521,22 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The next tutorial... is about animation!</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T154146Z" creationid="aceway" creationdate="20170210T154146Z">
+        <seg>下一教程... 是关于动画的!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The only way that any mesh can block light rays in Babylon.js, is with the use of a ShadowGenerator or two.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T151543Z" creationid="aceway" creationdate="20170210T151543Z">
+        <seg>在Babylon.js里任何网格可阻挡光线的唯一方法是, 使用一个或两个ShadowGenerator(阴影生成器).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The other common type of 'pocket' on a Javascript object... is called a 'method' (sometimes called a 'function').&amp;nbsp; Methods are used to store Javascript code onto Javascript objects.&amp;nbsp; Earlier, I said that properties are 'set'.&amp;nbsp; Well, methods are 'called'.&amp;nbsp; Here is the way a method is 'called'.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160420T141810Z" creationid="aceway" creationdate="20160420T141810Z">
@@ -10343,6 +10573,30 @@ var tube = BABYLON.Mesh.CreateTube("tube", [V1, V2, ..., Vn], radius, tesselatio
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T021410Z" creationid="aceway" creationdate="20170131T021253Z">
         <seg>拾取面由3个顶点组成，而且拾取点是这三个顶点的重心with the following weights:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The picture below will help you understand how lights interact with normals and backfaces.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T145244Z" creationid="aceway" creationdate="20170210T145244Z">
+        <seg>下面的图片将有助于你理解光源和法线以及背面是如何相互作用的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The picture shows two planes and two lights.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T145337Z" creationid="aceway" creationdate="20170210T145337Z">
+        <seg>图片展示了两个平面和两个光源.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The plane is not blocking the light rays.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T151304Z" creationid="aceway" creationdate="20170210T151304Z">
+        <seg>该平面没有阻止光线.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10545,8 +10799,16 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       <tuv lang="EN-US">
         <seg>The spot light is a rather powerful scene item, and it takes quite a few arguments (args) in the constructor... in order for it to appear and operate in one line of code.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T141802Z" creationid="aceway" creationdate="20170210T141802Z">
-        <seg>聚光源是个非常强大的场景物品, and it takes quite a few arguments (args) in the constructor... in order for it to appear and operate in one line of code.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T142523Z" creationid="aceway" creationdate="20170210T141802Z">
+        <seg>聚光源是个非常强大的场景物品, 它的构造函数... 以便于在一行代码里表示和操作.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The standard Babylon.js plane (and ground) has its lighting normals aimed toward the frontface.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T152635Z" creationid="aceway" creationdate="20170210T152533Z">
+        <seg>标准Babylon.js平面(和地面)的采光法线方向瞄向前面.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10659,6 +10921,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T123052Z" creationid="aceway" creationdate="20170206T123052Z">
         <seg>存在一些特殊用途的Babylon.js相机</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are some properties which we set 'behind-the-scenes'.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T143110Z" creationid="aceway" creationdate="20170210T143110Z">
+        <seg>有些属性我们设置为 '场景幕后的'.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10825,6 +11095,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T121947Z" creationid="aceway" creationdate="20160507T121947Z">
         <seg>它们(下面例子)是Babylon.js创建'地面'的各种方法.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They are used in the picture to help illustrate the concept of normals, as are the diamond and cone shapes for the two lights.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T145959Z" creationid="aceway" creationdate="20170210T145943Z">
+        <seg>在这张图片中它们是被用来阐述法线概念的，正如那个钻石体和那个锥体是用来阐述两个光源的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -11569,6 +11847,22 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We 'default' that property to a float 1.0 value.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T143225Z" creationid="aceway" creationdate="20170210T143225Z">
+        <seg>我们让该属性为'默认'浮点值1.0.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We also call the light's *setEnabled(true)* method.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T143333Z" creationid="aceway" creationdate="20170210T143333Z">
+        <seg>我们也调用光源的*setEnabled(true)* 方法.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We also want the scene item to be seen/operating with just one line of programming.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T141642Z" creationid="aceway" creationdate="20170210T141642Z">
@@ -11681,6 +11975,14 @@ if (pickResult.hit) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We set that 'necessary initial property' for you.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T143310Z" creationid="aceway" creationdate="20170210T143310Z">
+        <seg>我们为你设置那个'必要的初始化属性'.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We want Babylon.js scene item creation... to be as quick and simple as possible.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T141537Z" creationid="aceway" creationdate="20170210T141537Z">
@@ -11713,6 +12015,14 @@ if (pickResult.hit) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We will not be deeply examining those two terms in this tutorial, but I am going to try to explain how normals and backfaces... affect lights.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T145048Z" creationid="aceway" creationdate="20170210T145048Z">
+        <seg>在本教材中我们不会深入解释着两个概念，但是我们将尽力说明法线和背面是如何影响光线的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We will start off with simple scene `clearColor` (background color), then talk briefly about scene `ambientColor`, then on to 6-texture skyboxes, and then fog to give an illusion of depth to your scenes.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T104213Z" creationid="aceway" creationdate="20170131T104213Z">
@@ -11733,6 +12043,14 @@ if (pickResult.hit) {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084919Z" creationid="aceway" creationdate="20170130T084919Z">
         <seg>我们用带两个参数的 “intersectsMesh()” 函数 : 被检测的网格，和相交的精度(布尔类型).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We'll talk about that soon, or have fun discovering how to do it on your own.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T153331Z" creationid="aceway" creationdate="20170210T153331Z">
+        <seg>我们很快会谈论的，或者你可以自己探索如何做的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -11823,6 +12141,14 @@ if (pickResult.hit) {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T030925Z" creationid="aceway@qq.com" creationdate="20160427T030925Z">
         <seg>当你想同人分享网址或为之后工作记住场景而将一个场景保存到娱乐场的数据库里时，那么网址看起来会像这样的:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Whether it is set to true or false, there will be no change in how lights affect backfaces.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T152123Z" creationid="aceway" creationdate="20170210T152123Z">
+        <seg>是否将其设置为 true 或 false， 光线对背面的照射效果都没有改变.</seg>
       </tuv>
     </tu>
     <tu>
@@ -12133,6 +12459,14 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can see that the arrows on the left plane, are lit by the lights.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T151217Z" creationid="aceway" creationdate="20170210T151217Z">
+        <seg>你可以看到左平面上的箭头，被光源照亮.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can see your object in wireframe mode... by using:
 ```javascript
 materialSphere1.wireframe = true;
@@ -12291,6 +12625,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
 &lt;script src="./jsfolder/myJavascript.js"&gt;&lt;/script&gt;
 ```
 You need not concern yourself with that, at this point.&amp;nbsp; Externalizing your Javascript is often done when you have written LOTS of Javascript code.&amp;nbsp; Externalizing your code into separate files helps your project be organized, but it is not necessary this early in your webGL adventures.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You have already seen the fast/simple way to construct the spot light scene item.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T144035Z" creationid="aceway" creationdate="20170210T143947Z">
+        <seg>你已经见识过快速／简单的构造聚光源场景物品的方法.</seg>
       </tuv>
     </tu>
     <tu>
@@ -12539,6 +12881,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T082355Z" creationid="aceway" creationdate="20160423T082355Z">
         <seg>[**oimo.js**](http://www.babylonjs.com/oimo.js)&amp;nbsp; &lt;= 右击... 保存链接/目标</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[Click this and let's go!](http://doc.babylonjs.com/tutorials/Animations)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T154224Z" creationid="aceway" creationdate="20170210T154224Z">
+        <seg>[点击这，我们开始吧!](http://doc.babylonjs.com/教程/Animations)</seg>
       </tuv>
     </tu>
     <tu>
@@ -13230,6 +13580,20 @@ function createScene() {
     <tu>
       <tuv lang="EN-US">
         <seg>```javascript
+light.range = 300;
+```
+More information about the _.range_ property... coming soon.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T152905Z" creationid="aceway" creationdate="20170210T152905Z">
+        <seg>```javascript
+light.range = 300;
+```
+很快就介绍更多的 _.range_ 属性信息... </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
 scene.ambientColor = new BABYLON.Color3(0.3, 0.3, 0.3);
 ```
 As you can see, it is set using the same format as `clearColor`, but `ambientColor` is used in quite a few calculations toward determining the final colors of scene items.&amp;nbsp; Mainly, it is used in conjunction with a mesh's `StandardMaterial.ambientColor` to determine a FINAL `ambientColor` for the mesh material.</seg>
@@ -13335,6 +13699,38 @@ Parameters are: name, radius, tube, radialSegments, tubularSegments, p, q, scene
 var knot = BABYLON.Mesh.CreateTorusKnot("knot", 2, 0.5, 128, 64, 2, 3, scene, false, BABYLON.Mesh.DEFAULTSIDE);
 ```
 参数为: 名称, 半径, tube, 半径上分段数, tubularSegments, p, q, 场景, 可更新否和可选的朝向(参见下面).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```javascript
+var light0 = new BABYLON.SpotLight("", new BABYLON.Vector3.Zero(), new BABYLON.Vector3.Zero(), 0, 0, scene);
+light0.name = "My Slowly and Discretely Constructed Spot Light"
+light0.position = new BABYLON.Vector3(0, 30, -10);
+light0.direction = new BABYLON.Vector3(0, -1, 0);
+light0.angle = 0.8;
+light0.exponent = 2;
+light0.intensity = 0.5;
+light0.diffuse = new BABYLON.Color3(1, 1, 1);
+light0.specular = new BABYLON.Color3(1, 1, 1);
+light0.setEnabled(1);
+```
+Using this 'long method' of scene item constructing... is rarely necessary or wanted.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T144355Z" creationid="aceway" creationdate="20170210T144355Z">
+        <seg>```javascript
+var light0 = new BABYLON.SpotLight("", new BABYLON.Vector3.Zero(), new BABYLON.Vector3.Zero(), 0, 0, scene);
+light0.name = "我的缓慢且分散的构造聚光光源"
+light0.定位 = new BABYLON.Vector3(0, 30, -10);
+light0.direction = new BABYLON.Vector3(0, -1, 0);
+light0.angle = 0.8;
+light0.exponent = 2;
+light0.intensity = 0.5;
+light0.diffuse = new BABYLON.Color3(1, 1, 1);
+light0.specular = new BABYLON.Color3(1, 1, 1);
+light0.setEnabled(1);
+```
+使用这种构造场景的'长方法' ... 很少有必要或想要的.</seg>
       </tuv>
     </tu>
     <tu>
