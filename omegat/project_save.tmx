@@ -1419,13 +1419,13 @@ var light0 = new BABYLON.SpotLight("Spot0", new BABYLON.Vector3(0, 30, -10), new
 ```
 That one-line is all it takes to create a spot light.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T141226Z" creationid="aceway" creationdate="20170210T141226Z">
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T141356Z" creationid="aceway" creationdate="20170210T141226Z">
         <seg>## 关于Babylon.js一行代码构造函数的额外信息: ##
-Here is an example of a one-line constructor:
+这儿是一行构造函数的例子:
 ```javascript
 var light0 = new BABYLON.SpotLight("Spot0", new BABYLON.Vector3(0, 30, -10), new BABYLON.Vector3(0, -1, 0), 0.8, 2, scene);
 ```
-That one-line is all it takes to create a spot light.</seg>
+那一行就是用来创建一个聚光源的全部.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10543,6 +10543,14 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The spot light is a rather powerful scene item, and it takes quite a few arguments (args) in the constructor... in order for it to appear and operate in one line of code.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T141802Z" creationid="aceway" creationdate="20170210T141802Z">
+        <seg>聚光源是个非常强大的场景物品, and it takes quite a few arguments (args) in the constructor... in order for it to appear and operate in one line of code.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The third parameter is indicating if this animation will loop or not.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T123014Z" creationid="aceway" creationdate="20170129T123014Z">
@@ -11561,6 +11569,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We also want the scene item to be seen/operating with just one line of programming.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T141642Z" creationid="aceway" creationdate="20170210T141642Z">
+        <seg>我们也相关场景中的物品看起来/操作起来都只需编写一行代码.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We are (the demo author is) varying the time parameter of the fragment shader program... from within the scene's render loop!</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T095934Z" creationid="aceway" creationdate="20170131T095934Z">
@@ -11661,6 +11677,14 @@ if (pickResult.hit) {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T045001Z" creationid="aceway@qq.com" creationdate="20170206T045001Z">
         <seg>我们只要确保有个合适的 _旋转目标_ 属性的设置 ( 我们之前用new BABYLON.Vector3.Zero() 构造的), 然后使用 _setPosition()_ 把相机准确地放置到我们期望的三维空间中的位置.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We want Babylon.js scene item creation... to be as quick and simple as possible.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T141537Z" creationid="aceway" creationdate="20170210T141537Z">
+        <seg>我们希望Babylon.js场景中物品的创建... 尽可能快且尽可能简单.</seg>
       </tuv>
     </tu>
     <tu>
