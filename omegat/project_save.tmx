@@ -5116,6 +5116,22 @@ var effect = engine.createEffectForParticles("myParticle", ["time"]);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A hemispheric light is an easy way to simulate realistic ambient environment light.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T134441Z" creationid="aceway" creationdate="20170210T134441Z">
+        <seg>半球光源是模式现实环境光的简单方法.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A hemispheric light is defined by a direction to the sky (the 2nd arg in the constructor) and by 3 colors: one for the diffuse (the sky color - for pixels/faces facing upward), one for the ground (the color for pixels/faces facing downward), and one for the specular.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T135602Z" creationid="aceway" creationdate="20170210T135500Z">
+        <seg>半球光源是通过一个朝天的方向(构造函数的第二个参数)和三种颜色定义， 一种颜色提供给漫反射(天空的颜色-朝上的像素/面片)，一种是给地面的 (朝下的像素/面片的颜色), 以及一种给镜面反射的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A picture of [the playground's ParticleSystem demo](http://babylonjs-playground.azurewebsites.net/?12)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T025021Z" creationid="aceway" creationdate="20170131T025021Z">
