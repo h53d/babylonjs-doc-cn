@@ -1412,6 +1412,24 @@ Here is a simple example of .babylon file:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Extra Information About Babylon.js One-Line Constructors: ##
+Here is an example of a one-line constructor:
+```javascript
+var light0 = new BABYLON.SpotLight("Spot0", new BABYLON.Vector3(0, 30, -10), new BABYLON.Vector3(0, -1, 0), 0.8, 2, scene);
+```
+That one-line is all it takes to create a spot light.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T141226Z" creationid="aceway" creationdate="20170210T141226Z">
+        <seg>## 关于Babylon.js一行代码构造函数的额外信息: ##
+Here is an example of a one-line constructor:
+```javascript
+var light0 = new BABYLON.SpotLight("Spot0", new BABYLON.Vector3(0, 30, -10), new BABYLON.Vector3(0, -1, 0), 0.8, 2, scene);
+```
+That one-line is all it takes to create a spot light.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Filters</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T105423Z" creationid="aceway" creationdate="20170204T105423Z">
@@ -5210,6 +5228,14 @@ myCamera.attachControl(canvas);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Above, I used the terms 'upward' and 'downward', but keep in mind that the direction to the sky (the 2nd arg in the constructor) can be set to any direction.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T135820Z" creationid="aceway" creationdate="20170210T135820Z">
+        <seg>上面，完使用了词语 '朝上' 和 '朝下', 但是记住那个指向天空的方向 (构造函数的第二个参数) 可以被设置成任何方向.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Add this:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160429T064925Z" creationid="aceway@qq.com" creationdate="20160429T064925Z">
@@ -8645,6 +8671,14 @@ skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now, back to creating the useful and interesting hemispheric light:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T140542Z" creationid="aceway" creationdate="20170210T140542Z">
+        <seg>现在，回到创建有用且有趣的半球光源:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now, if you construct triangular faces by joining alternate points of the first and the second path, like when you lace shoes, you get a ribbon.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T103101Z" creationid="aceway" creationdate="20160507T102759Z">
@@ -8913,6 +8947,14 @@ materialSphere1.emissiveTexture = new BABYLON.Texture("grass.png", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T131309Z" creationid="aceway" creationdate="20170204T131309Z">
         <seg>我们的[维基主页菜单](http://doc.babylonjs.com/) 是你获取许多高级话题门户网站.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Our [web site](http://www.babylonjs.com/) has a nice lights demo in the Features Tests section, and a similar lights demo can be found at our 'playground', [right here](http://www.babylonjs.com/playground/?06).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T141103Z" creationid="aceway" creationdate="20170210T141103Z">
+        <seg>在我们[网站](http://www.babylonjs.com/) 的特性测试节有个漂亮光源演示, 以及一个类似的光源演示可以在我们的 '娱乐场'找到, [点击这儿](http://www.babylonjs.com/playground/?06).</seg>
       </tuv>
     </tu>
     <tu>
@@ -9413,6 +9455,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>So, you could tilt this light slightly toward the east for cloudy morning skies, and slightly toward the west for cloudy evening skies.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T140416Z" creationid="aceway" creationdate="20170210T140416Z">
+        <seg>所以，你可以将光线稍微像东倾斜以模拟多云的早晨天空，以及向西稍微倾斜模拟多云的傍晚天空.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So:</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160331T083415Z" creationid="aceway@qq.com" creationdate="20160331T083415Z">
@@ -9887,6 +9937,14 @@ scene.registerBeforeRender(function () {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160508T125230Z" creationid="aceway" creationdate="20160508T125230Z">
         <seg>一旦对象材质被一个光源点亮, 散射光就是材质对象的天然色.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The direction to the sky is often straight upward (0, 1, 0).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T135900Z" creationid="aceway" creationdate="20170210T135900Z">
+        <seg>朝向天空的方向经常是笔直向上的.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10963,6 +11021,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is a soft light that cannot produce shadows.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T140458Z" creationid="aceway" creationdate="20170210T140458Z">
+        <seg>这是个不会产生阴影的柔和光源.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is called white-boarding.&amp;nbsp; It is an easy way to allow many people to work on your createScene function and help you figure out what is wrong.&amp;nbsp; See how the createScene function is 'portable'?&amp;nbsp; You took it from your home, to the playground, then played with it there for awhile.&amp;nbsp; Then, if needed, you clicked the playground's **SAVE** button, which gave it a URL.&amp;nbsp; &amp;nbsp;Then you went to the forum and showed that URL to others, and asked for their help.&amp;nbsp; Handy, huh?&amp;nbsp; We think so.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T100906Z">
@@ -11515,6 +11581,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T084119Z" creationid="aceway" creationdate="20170130T084119Z">
         <seg>我们将讨论上面的场景.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We are simulating light from a cloudy sky, but even on cloudy days, the sun crosses the sky above the clouds.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T140111Z" creationid="aceway" creationdate="20170210T140111Z">
+        <seg>我们正模拟光从天空云里照射下来, 但是即使在阴天, 阳光也会从云层之上穿透下来.</seg>
       </tuv>
     </tu>
     <tu>
@@ -12599,6 +12673,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T100640Z" creationid="aceway@qq.com" creationdate="20160427T100640Z">
         <seg>_我们仅需要 "external refeernces" 和 "src" 文件夹来编译Babylon.js._</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>_White/black hemispheric light - upward pixels white (diffuse), downward pixels black (groundColor)_</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T140815Z" creationid="aceway" creationdate="20170210T140815Z">
+        <seg>_白/黑半球光源 - 朝上的像素白色(漫反射), 朝下的像素黑色(底色)_</seg>
       </tuv>
     </tu>
     <tu>
