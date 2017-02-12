@@ -1440,6 +1440,20 @@ var light0 = new BABYLON.SpotLight("Spot0", new BABYLON.Vector3(0, 30, -10), new
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>## Extrusion
+What is extrusion ?  
+Extrusion is the way to transform a 2D shape into a volumic shape.  
+Let's imagine that you define a star shape by filling an array with successive _Vector3_.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T123417Z" creationid="aceway" creationdate="20170212T122802Z">
+        <seg>## 挤拉
+什么是挤拉 ?  
+挤拉是种将2维形状转换成有体积造型的方法.  
+让我们想象下：你通过连续_三元向量_数组定义了一个星星形状.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>## Filters</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T105423Z" creationid="aceway" creationdate="20170204T105423Z">
@@ -3572,6 +3586,54 @@ Here is a single path _path1_, a simple helix.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* **path** : the path to extrude the shape along, an array of successive Vector3.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T124519Z" creationid="aceway" creationdate="20170212T122843Z">
+        <seg>* **path** : 沿着该路径挤拉造型，一个连续三元向量.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **rotation** : _default 0_, the step value to rotate the shape at each path point.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T124729Z" creationid="aceway" creationdate="20170212T124729Z">
+        <seg>* **旋转** : _默认 0_, 路径上每步点上造型被旋转的值.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **scale** : _default 1_, the value to scale the initial shape.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T124616Z" creationid="aceway" creationdate="20170212T124616Z">
+        <seg>* **scale** : _默认为 1_, 初始造型的缩放值.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **shape** : the shape to be extruded, an array of successive Vector3.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T124430Z" creationid="aceway" creationdate="20170212T122840Z">
+        <seg>* **shape** : 被挤拉的造型, 一个连续三元向量数组.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **sideOrientation** : the side orientation - _front, back_ or _double_.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T125712Z" creationid="aceway" creationdate="20170212T125712Z">
+        <seg>* **sideOrientation** : 面的朝向 - _前面, 背面_ 或者 _双面_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **updatable?** : if the mesh is updatable.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T125614Z" creationid="aceway" creationdate="20170212T125614Z">
+        <seg>* **updatable?** : 该网格可更新.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>* A particular setup of the engine has to be made to make sure it works.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T093755Z" creationid="aceway@qq.com" creationdate="20160427T093755Z">
@@ -4325,6 +4387,16 @@ particleSystem.maxSize = 0.5;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T123313Z" creationid="aceway" creationdate="20170204T123313Z">
         <seg>*差分阴影映射*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*  **cap** : BABYLON.Mesh.NO_CAP, BABYLON.Mesh.CAP_START, BABYLON.Mesh.CAP_END, BABYLON.Mesh.CAP_ALL.  
+* **scene** : the current scene.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T125559Z" creationid="aceway" creationdate="20170212T125559Z">
+        <seg>*  **cap** : BABYLON.Mesh.NO_CAP, BABYLON.Mesh.CAP_START, BABYLON.Mesh.CAP_END, BABYLON.Mesh.CAP_ALL.  
+* **场景** : 当前场景.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5160,6 +5232,14 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A basic one and an advanced or custom one.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T124229Z" creationid="aceway" creationdate="20170212T124229Z">
+        <seg>一个基础的和一个自定义高级的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A bit below that, you will see:
 ```javascript
 var effect = engine.createEffectForParticles("myParticle", ["time"]);
@@ -5826,6 +5906,22 @@ Here is the same with a plain material ans still the _paths_ displayed : http://
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T124109Z" creationid="aceway" creationdate="20160507T123812Z">
         <seg>在那个链接, Kostar111全面地说明了瓷砖地面的工作方式，还提供了一些Babylon.js游乐场景, 很好地演示了一些它的许多用途.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>BASIC METHOD  
+```javascript
+BABYLON.Mesh.ExtrudeShape(name, shape, path, scale, rotation, cap, scene, updatable?, sideOrientation)
+```
+* **name** : the extruded mesh name.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T124403Z" creationid="aceway" creationdate="20170212T122829Z">
+        <seg>基础方法  
+```javascript
+BABYLON.Mesh.ExtrudeShape(name, shape, path, scale, rotation, cap, scene, updatable?, sideOrientation)
+```
+* **name** : 被挤拉网格的名字.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6678,6 +6774,14 @@ _Offset_ 这里被设置成20. 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Extrusion can be accomplished with two different methods.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T124259Z" creationid="aceway" creationdate="20170212T122806Z">
+        <seg>挤拉可以通过两种不同的方法实现。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Feel free to imagine a few of your own basic element ideas, and present them on the forum.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T125032Z" creationid="aceway" creationdate="20160507T125032Z">
@@ -7178,12 +7282,40 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is an example with both an _i_ sinusoidal radius function and _x_ sinusoidal incrementing path :
+http://www.babylonjs-playground.com/#LG3GS#9    
+Here's another example with a circular path and varying radius : http://www.babylonjs-playground.com/#LG3GS#10</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T122411Z" creationid="aceway" creationdate="20170212T112922Z">
+        <seg>这是个使用 正弦函数计算半径同时 使用 正弦函数增量路径位置点的管道例子 :
+http://www.babylonjs-playground.com/#LG3GS#9    
+这是另一个使用了圆形路径和变化半径的管道例子: http://www.babylonjs-playground.com/#LG3GS#10</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is an illustration:
 ![](http://urbanproductions.com/wingy/babylon/misc/arc01.jpg)</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T135739Z" creationid="aceway" creationdate="20170205T135739Z">
         <seg>这是个说明例子:
 ![](http://urbanproductions.com/wingy/babylon/misc/arc01.jpg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is an offset simple shape : http://www.babylonjs-playground.com/#RF9W9#10  
+Extrusion (the extrusion path is shown in magenta so the offset is visible) : http://www.babylonjs-playground.com/#RF9W9#35    
+Now rotation... around the path axis : http://www.babylonjs-playground.com/#RF9W9#36    
+As you can see, this is a way to build complex curved helix meshes without handling maths or simpler ones : http://www.babylonjs-playground.com/#RF9W9#37    
+As the shape to be extruded is unpredictable, it is assumed that the cap, if want to add it one or two to your extruded mesh, is computed with its center set to the shape barycenter.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T132526Z" creationid="aceway" creationdate="20170212T132526Z">
+        <seg>这个是有偏倚的简单形状 : http://www.babylonjs-playground.com/#RF9W9#10  
+挤拉 (the extrusion path is shown in magenta so the offset is visible) : http://www.babylonjs-playground.com/#RF9W9#35    
+现在旋转... 绕着路径轴 : http://www.babylonjs-playground.com/#RF9W9#36    
+正如你所见, 这是种构建复杂螺旋曲线网格或其它简单些对象的方法，而不用手工处理数学函数 : http://www.babylonjs-playground.com/#RF9W9#37    
+因为挤拉的形状不可预判，因此假设cap(如果给被挤拉网格添加1或2个)的中心位于形状的重心来计算.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7556,6 +7688,16 @@ scene.activeCamera = camera;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If we change the _scale_ value from 1 to 3 for example (line 84), the initial star is scaled to 3 along the curve : http://www.babylonjs-playground.com/#RF9W9#4  
+If we now change the _rotation_ step value from 0 to _PI / 24_ for example, the curve is twisted this angle at each curve point : http://www.babylonjs-playground.com/#RF9W9#218</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T125856Z" creationid="aceway" creationdate="20170212T125856Z">
+        <seg>在这里例子里如果我们将 _scale_ 值从1 改成 3，初始的星星将沿着曲线被拉伸3倍: http://www.babylonjs-playground.com/#RF9W9#4  
+If we now change the _旋转_ step value from 0 to _PI / 24_ for example, the curve is twisted this angle at each curve point : http://www.babylonjs-playground.com/#RF9W9#218</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If well done, it’s very powerful.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T151549Z" creationid="aceway" creationdate="20160402T151549Z">
@@ -7858,6 +8000,20 @@ materialSphere1.diffuseTexture.vScale = 5.0;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170205T060814Z" creationid="aceway" creationdate="20170205T060814Z">
         <seg>为了创建一条色带,你必须传递一个路径数组.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In order to have a 2D shape, you only set these points in the xOy plane, so every z coordinate is zero.  
+ex : http://www.babylonjs-playground.com/#RF9W9  
+Let's show the World axis so it is clearer : http://www.babylonjs-playground.com/#RF9W9#1  
+Let's now imagine you could stretch this 2D shape along the Z-axis to give it some volume... this is extrusion :  http://www.babylonjs-playground.com/#RF9W9#30</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T123929Z" creationid="aceway" creationdate="20170212T122804Z">
+        <seg>为了定义二维的形状，你只需在 xOy 平面定义设置些点，因此所有的Z坐标都为零.  
+比如 : http://www.babylonjs-playground.com/#RF9W9  
+让我们显示出世界坐标轴，以便更加清楚展示 : http://www.babylonjs-playground.com/#RF9W9#1  
+现在让我们想象下，你可以沿着Z轴拉伸这个二维形状从而让它有体积... 这就是挤拉 :  http://www.babylonjs-playground.com/#RF9W9#30</seg>
       </tuv>
     </tu>
     <tu>
@@ -8449,6 +8605,16 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let's now imagine you can extrude your star along a 3D path in space, a sinus curve for example, and not only along the z-axis.  
+http://www.babylonjs-playground.com/#RF9W9#31</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T124124Z" creationid="aceway" creationdate="20170212T122806Z">
+        <seg>现在让我们想象下：你可以沿着三维空间中的一个路径挤拉你的星星, 比如沿着正弦曲线, 而且不仅沿着Z轴.  
+http://www.babylonjs-playground.com/#RF9W9#31</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Let's pretend that you have been working on a scene file at home, and after many tries, you just cannot get it to work properly.&amp;nbsp; You could copy your home createScene function, then visit the playground, press its **CLEAR** button to empty its editor window, and then paste YOUR createScene function into the editor.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T091226Z" creationid="aceway" creationdate="20160404T073957Z">
@@ -8639,6 +8805,14 @@ Now that you have learned about the camera types and how to place them into your
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170206T132837Z" creationid="aceway" creationdate="20170206T132837Z">
         <seg>关于那很快会写更多内容的.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Moreover, the shape doesn't need to be closed.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T130258Z" creationid="aceway" creationdate="20170212T130258Z">
+        <seg>更甚者, 形状也不必闭合.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9029,6 +9203,14 @@ var particleSystem = new BABYLON.ParticleSystem("particles", 2000, scene, custom
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160421T103458Z" creationid="aceway@qq.com" creationdate="20160421T103458Z">
         <seg>对象无处不在, 然而它是我们组织管理存储内容的好助手.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Of course, even if you define your 2D shape in the xOy plane as described, the extrusion still works along any path direction : http://www.babylonjs-playground.com/#RF9W9#32</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T130215Z" creationid="aceway" creationdate="20170212T130215Z">
+        <seg>当然，即使你如所述的那样在 xOy 平面上定义你的二维形状，挤拉操作仍然可以在任何路径方向上执行 : http://www.babylonjs-playground.com/#RF9W9#32</seg>
       </tuv>
     </tu>
     <tu>
@@ -9527,6 +9709,14 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Remember that your shape doesn't need to be centered on the coordinate system either.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T130557Z" creationid="aceway" creationdate="20170212T130557Z">
+        <seg>记住你的形状也不必定位在坐标系统中心.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Same reason : the default side orientation is still _FRONTSIDE_.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T120049Z" creationid="aceway" creationdate="20160507T120049Z">
@@ -9697,6 +9887,42 @@ This path can be filled as you like : manually, by importing Vector3 from a data
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170131T025853Z" creationid="aceway" creationdate="20170131T025853Z">
         <seg>因此注意盒子对象的位置和运转。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So set it to what level of precision you need, just keep in mind the more segments, the heavier your mesh.  
+  *  **cap** : BABYLON.Mesh.NO_CAP, BABYLON.Mesh.CAP_START, BABYLON.Mesh.CAP_END, BABYLON.Mesh.CAP_ALL.  
+  *  **radiusFunction** : a custom javascript function.  
+If you pass this parameter to the _CreateTube()_ method, then the _radius_ parameter value will be ignored.  
+Your custom function will be called at each point of the path while constructing the tube.  
+It will then be passed two arguments : the position of the current point _i_ and the _distance_ of this _i-th_ point from the beginnig of the tube.  
+Your function must just return a radius value.  
+Example :
+```javascript
+var myFunction = function(i, distance) {
+  var radius = 3 * Math.cos(distance / 5);
+  return radius;
+};
+var tube = BABYLON.Mesh.CreateTube("lumps", path, null, 20, myFunction, scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T113032Z" creationid="aceway" creationdate="20170212T112919Z">
+        <seg>因此根据你需要的精度来设置级别，记住段数越多，网格计算量就越重.  
+  *  **cap** : BABYLON.Mesh.NO_CAP, BABYLON.Mesh.CAP_START, BABYLON.Mesh.CAP_END, BABYLON.Mesh.CAP_ALL.  
+  *  **radiusFunction** : 一个自定义javascript 函数.  
+如果你把这个参数传递给 _CreateTube()_ 方法, 那么 _radius_ 参数值将会被忽略.  
+当在构建管道过程时会为每个轴线路径点调用该自定函数.  
+该自定义函数会被传递两个参数 : 当前点 _i_ 点尾位置和从管道开始位置道这 _第i_ 个点的 _距离_ .  
+你提供的自定义函数必须返回个半径值.  
+例子 :
+```javascript
+var myFunction = function(i, distance) {
+  var radius = 3 * Math.cos(distance / 5);
+  return radius;
+};
+var tube = BABYLON.Mesh.CreateTube("lumps", path, null, 20, myFunction, scene);
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -12545,6 +12771,18 @@ https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Loading/Plugins/baby
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101938Z" creationid="aceway@qq.com" creationdate="20160427T101938Z">
         <seg>你可以获取这些文件:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can have a simple (or complex) open shape : http://www.babylonjs-playground.com/#RF9W9#7  
+Extrusion : http://www.babylonjs-playground.com/#RF9W9#33      
+Extrusion with rotation : http://www.babylonjs-playground.com/#RF9W9#34</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170212T130401Z" creationid="aceway" creationdate="20170212T130401Z">
+        <seg>你可以用个简单(或者复杂的)开放形状 : http://www.babylonjs-playground.com/#RF9W9#7  
+挤拉 : http://www.babylonjs-playground.com/#RF9W9#33      
+旋转挤拉: http://www.babylonjs-playground.com/#RF9W9#34</seg>
       </tuv>
     </tu>
     <tu>
