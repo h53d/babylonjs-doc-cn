@@ -36,7 +36,7 @@ http://doc.babylonjs.com/ 在线文档的翻译。
 13. [高度图](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Height_Map.md)
 13. [阴影](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Shadows.md)
 13. [参数化造型](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Parametric_Shapes.md)
-14. [带材质的雾 - 待中](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Supporting_fog_with_ShaderMaterial.md)
+14. [带材质的雾 - 译中](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Supporting_fog_with_ShaderMaterial.md)
 15. [创建各面不同纹理和颜色的盒子 - 待译](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/CreateBox_Per_Face_Textures_And_Colors.md)
 16. [使用可选参数创建各种网格 - 待译](https://github.com/h53d/babylonjs-doc-cn/blob/master/target/tutorials/01_Play_Pen/Mesh_CreateXXX_Methods_With_Options_Parameter.md)
 
