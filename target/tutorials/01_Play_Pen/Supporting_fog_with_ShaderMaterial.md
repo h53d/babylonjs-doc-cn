@@ -1,8 +1,8 @@
 ---
 ID_PAGE: 25101
-PG_TITLE: Supporting fog with ShaderMaterial
+PG_TITLE: 带材质的雾
 ---
-In order to support fog in your custom shaders, you will have to add some lines of code in your vertex and pixel shaders.
+为零在你的自定义着色器里支持雾，我们必须在你的顶点和像素着色器里添加一些行代码.
 
 ##Vertex shader
 First, you need to declare a varying variable:
