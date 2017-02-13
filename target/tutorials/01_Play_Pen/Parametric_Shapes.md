@@ -131,7 +131,7 @@ BABYLON.Mesh.ExtrudeShape(name, shape, path, scale, rotation, cap, scene, updata
 * **sideOrientation** : 面的朝向 - _前面, 背面_ 或者 _双面_.  
 
 在这里例子里如果我们将 _scale_ 值从1 改成 3，初始的星星将沿着曲线被拉伸3倍: http://www.babylonjs-playground.com/#RF9W9#4  
-If we now change the _旋转_ step value from 0 to _PI / 24_ for example, the curve is twisted this angle at each curve point : http://www.babylonjs-playground.com/#RF9W9#218  
+现在如果我们将这个例子的 _旋转_ 步长值从 0 改成 _PI / 24_ , 则在曲线上每个点处被扭转 : http://www.babylonjs-playground.com/#RF9W9#218  
 
 当然，即使你如所述的那样在 xOy 平面上定义你的二维形状，挤拉操作仍然可以在任何路径方向上执行 : http://www.babylonjs-playground.com/#RF9W9#32    
 
@@ -147,31 +147,31 @@ If we now change the _旋转_ step value from 0 to _PI / 24_ for example, the cu
 
 
 
-ADVANCED METHOD  
+高级方法  
 ```javascript
 BABYLON.Mesh.ExtrudeShapeCustom(name, shape, path, scaleFunction, rotateFunction, ribbonCloseArray, ribbonClosePath, cap, scene)
 ```
-* **name** : the extruded mesh name,
-* **shape** : the shape to be extruded, an array of successive Vector3.
+* **name** : 被挤拉的网格名称,
+* **shape** : 被挤拉的形状，一个连续三元向量数组.
 * **path** : 沿着该路径挤拉造型，一个连续三元向量.
-* **scaleFunction** : a custom javascript function. This function is called on each path point and is given the _i_ position of the point in the path and its _distance_ from the begining of the path. It must return a _scale_ numeric value. This value will be the scaling applied to the shape drawn at the _i-th_  point.
-* **rotationFunction** : a custom javascript function. This function is called on each path point and is given the _i_ position of the point in the path and its _distance_ from the begining of the path. It must return a _rotation_ numeric value. This value will be the rotation applied to the shape drawn at the _i-th_  point.
-* **ribbonCloseArray** : _default false_, boolean. The underlying ribbon _closeArray_  parameter. This can be used to automatically close a path with right normals computation.
-* **ribbonClosePath** : _default false_, boolean. The underlying ribbon _closePath_  parameter. This can be used to automatically close a shape with right normals computation.  
+* **scaleFunction** : 一个自定义的 javascript 函数. 该函数在路径的每个点处被调用，并提供参数：路径上 _第几个_ 点及其距离路径开始处的 _距离_ . 它必须返回个 _缩放_ 值. 这个值将被作为缩放大小应用到造型的 _第i个_ 点上.
+* **rotationFunction** : 一个自定义的 javascript 函数. 该函数在路径的每个点处被调用，并提供参数：路径上 _第几个_ 点及其距离路径开始处的 _距离_ . 它必须返回一个 _旋转_ 值. 这个值将被作为 旋转 大小应用到造型的 _第i个_  点.
+* **ribbonCloseArray** : _默认为 false_, 布尔类型. 底层色带的 _closeArray_  的参数. 它可以和右手法线相结合来自动计算路径的闭合.
+* **ribbonClosePath** : _默认 false_, 布尔类型. 底层色带的 _closePath_  的参数. 它可以和右手法线相结合来自动计算造型的闭合.  
 *  **cap** : BABYLON.Mesh.NO_CAP, BABYLON.Mesh.CAP_START, BABYLON.Mesh.CAP_END, BABYLON.Mesh.CAP_ALL.  
-* **scene** : the current scene.
+* **场景** : the current 场景.
 * **updatable?** : 该网格可更新.
 * **sideOrientation** : 面的朝向 - _前面, 背面_ 或者 _双面_.
 
-In this advanced method, the _scale_ and _rotation_ parameters are replaced by custom functions.  
+在这个高级方法中, 该 _scale_ 和 _旋转_ 参数被自定义函数取代.  
 
   **_scaleFunction_**   
-This javascript function will be called on each path point iteration when extruding. It will be passed two parameters : _i_ and _distance_.  
+这个自定函数会在挤拉中每个路径点迭代时被调用. 它会被传递两个参数 : _i_ 和 _distance_.  
 
-* **i** is the point position in the path, starting from zero for the first point.
-* **distance** is the current point distance from the begining of the path.  
+* **i** 路径上的点序号, 用0开始表示第一个点.
+* **distance** 当前点到路径开始处的距离.  
 
-This custom function must return a _scale_ numeric value which will be applied to the shape on the _i-th_ point.  
+这个函数必须返回个 _缩放_ 值，用于造型的e _第i个_ 点.  
 Example :
 ```javascript
 var myScale = function(i, distance) {
@@ -180,18 +180,18 @@ var myScale = function(i, distance) {
 };
 ```
 
-Here is an example with an unclosed un-centered simple shape whose scale evolves linearly along the path : http://www.babylonjs-playground.com/#RF9W9#38    
-Now if we use a sinus scaling function instead and as the shape isn't centered, we get interesting results : http://www.babylonjs-playground.com/#RF9W9#39    
-We can even emulate rotation by alternately scaling positive/negative : http://www.babylonjs-playground.com/#RF9W9#40    
+这儿是一个不闭合，不居中的简单造型的例子，造型随着路径位置线性缩放: http://www.babylonjs-playground.com/#RF9W9#38    
+现在如果我们使用正弦函数代替线性函数缩放，同时将造型居中，我们得到个有趣的结果 : http://www.babylonjs-playground.com/#RF9W9#39    
+我们甚至可以使用正／负数的缩放来模拟旋转 : http://www.babylonjs-playground.com/#RF9W9#40    
 
 
   **_rotateFunction_**  
-This javascript function will be called on each path point iteration when extruding. It will be passed two parameters : _i_ and _distance_.  
+这个 函数 会在每个路径点迭代挤拉时被调用. 它会被传递两个参数 : _i_ 和 _distance_.  
 
-* **i** is the point position in the path, starting from zero for the first point.
-* **distance** is the current point distance from the begining of the path. 
+* **i** 路径上的点序号, 用0开始表示第一个点.
+* **distance** 当前点到路径开始处的距离. 
 
-This custom function must return a _rotation_ numeric value which will be applied to the shape on the _i-th_ point.  
+这个自定义函数必须返回个 _旋转_ 值，将用于造型的 _第i个_ 点.  
 Example :
 ```javascript
 var myRotation = function(i, distance) {
@@ -199,49 +199,49 @@ var myRotation = function(i, distance) {
   return rotation;
 };
 ```
-Here is an example of constant scale and rotation evolving with the distance : http://www.babylonjs-playground.com/#RF9W9#41    
-You can set a non-linear rotation function of course, sinus here : http://www.babylonjs-playground.com/#RF9W9#42    
+这儿是个例子，缩放大小为常量，旋转值随距离变化 : http://www.babylonjs-playground.com/#RF9W9#41    
+当然，你也可以设置非线的旋转函数,  此处时正弦函数的 : http://www.babylonjs-playground.com/#RF9W9#42    
 
 
 
-  **Fixed values**
+  **固定值**
 
-This advanced method needs two custom functions. But you may want to use a custom scale function with a fixed (or no) rotation function, for example. In this case, just pass a custom rotation function returning a fixed value :  
+这个高级方法需要两个自定义函数. 但是你也许想使用个自定的缩放函数 和 一个旋转值固定(或无值)的函数，如下面例子. 这个案例里, 只是传递一个自定义旋转函数，它返回个固定值:  
 Example :  
 ```javascript
 var noRotation = function(i, distance) {
   return 0;
 };
 ```
-If you carefully read the code of this previous example, you can see in line 41 that the _scaleFunction_ returns the constant 1 value : http://www.babylonjs-playground.com/#RF9W9#41      
+如果你仔细阅读过前面例子的代码，你可以在第 41 行代码看到 _scaleFunction_ 返回常量值 1 : http://www.babylonjs-playground.com/#RF9W9#41      
 
-  **_ribbonCloseXXX_ parameters**
+  **_ribbonCloseXXX_ 参数**
 
-The extruded mesh is based on an underlying ribbon. When you extrude a shape, you actually make a particular ribbon.  
-This means you can also set this ribbon _closeArray_ and _closePath_ parameter if you need to automatically close the extruded shape.  
-NOTE : the _closeXXX_ names are the ribbon ones. Not the extruded shape ones.  
-So it may be confusing because :  
+被挤拉的网格是基于一个底层的色带. 当你挤拉一个形状时，你实际上在制作一个特殊的色带.  
+这意味着你也可以设置它的 _closeArray_  _closePath_ 参数，如果你需要自动闭合被挤拉的造型.  
+注意 : 该 _closeXXX_ 名称是色带的名称. 不是被挤拉的造型的名称.  
+因此这个容易混淆，因为 :  
 
-* **_ribbonCloseArray_** set to true will close your shape extrusion path,
-* **_ribbonClosePath_** set to true will close your shape itself (if unclosed).  
+* **_ribbonCloseArray_** 设置为 true 将闭合造型的挤拉路径,
+* **_ribbonClosePath_** 设置为 true 将闭合造型本身 (如果未闭合).  
 
-Let's now do this unclosed, un-centered extruded shape : http://www.babylonjs-playground.com/#RF9W9#20  
-And this almost circular path : http://www.babylonjs-playground.com/#RF9W9#21  
-Extrusion with constant scale and no rotation : http://www.babylonjs-playground.com/#RF9W9#43    
-Now let's set the _ribbonCloseArray_ to true :http://www.babylonjs-playground.com/#RF9W9#44    
-As you can see, it closes the extrusion path. Let's set it back to false and let's set the _ribbonClosePath_ to true instead : http://www.babylonjs-playground.com/#RF9W9#45    
-Now the shape is closed.  
-Both together : http://www.babylonjs-playground.com/#RF9W9#46    
+我们做个不闭合，不居中的挤拉造型 : http://www.babylonjs-playground.com/#RF9W9#20  
+而且几乎是环形的路径And this almost circular path : http://www.babylonjs-playground.com/#RF9W9#21  
+常量缩放同时无旋转道挤拉 : http://www.babylonjs-playground.com/#RF9W9#43    
+现在让我们设置 _ribbonCloseArray_ 为 true :http://www.babylonjs-playground.com/#RF9W9#44    
+你可以看到, 挤拉路径闭合了. 我们把它设置回 false 同时设置 _ribbonClosePath_ 为true : http://www.babylonjs-playground.com/#RF9W9#45    
+现在造型闭合了.  
+两个一起设置为true : http://www.babylonjs-playground.com/#RF9W9#46    
 
 
- **Summary**  
-At last, the extrude custom function call would be, for example:  
+ **概要**  
+最后, 挤拉的自定义函数可以是如下例:  
 ```javascript
 BABYLON.Mesh.ExtrudeShapeCustom("extruded", shape, path, myScale, myRotation, false, true, scene)
 ```
-A shape is an array of successive Vector3. This means 2D or 3D shapes can be extruded as well.  
-The shape is to be designed in the local coordinate system knowing that the z-axis will be the extrusion path axis.  
-Finally, shapes don't have to be centered in the local coordinate system.  
-A centered shape will be extruded symmetrically centered along the path axis. An un-centered shape will be extruded offset from the path axis.  
+一个形状是一个连续的三元向量数组. 这意味着二维或三位的形状都可以被挤拉.  
+形状被设计在本地坐标系统中，Z轴作为挤拉的路径轴.  
+最后，形状不必在本地坐标系统里居中。.  
+居中的形状，将沿着路径轴被对称挤拉. 一个不居中的形状，将从路径轴偏倚挤拉.  
 
-Easy way to generate strange shapes : http://www.babylonjs-playground.com/#RF9W9#47   
+生成奇怪造型的简单方法 : http://www.babylonjs-playground.com/#RF9W9#47   
