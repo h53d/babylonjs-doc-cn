@@ -3022,6 +3022,14 @@ This parameter, present in each mesh creation method... tells if the mesh can be
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>###Textures</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T101939Z" creationid="aceway" creationdate="20170219T101939Z">
+        <seg>###纹理</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>##Beautiful Playgrounds</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T040941Z" creationid="aceway@qq.com" creationdate="20160427T040941Z">
@@ -3034,6 +3042,14 @@ This parameter, present in each mesh creation method... tells if the mesh can be
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T060346Z" creationid="aceway@qq.com" creationdate="20160427T060346Z">
         <seg>##例子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>##MeshBuilder CreateBox per face textures and colors</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T101908Z" creationid="aceway" creationdate="20170219T101908Z">
+        <seg>##创建各面不同纹理和颜色的网格盒子</seg>
       </tuv>
     </tu>
     <tu>
@@ -3056,6 +3072,26 @@ Great, your scene is looking better than ever with those materials!</seg>
         <seg>##下一步##
 ----
 非常棒, 你的场景具有这些材质后看起来比之前好多了!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>##Pixel shader
+Next, you need to add the following code to be able to compute the fog accordingly to parameters sent by the scene:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T100557Z" creationid="aceway" creationdate="20170219T100557Z">
+        <seg>##像素着色器
+下一步，你需要添加以下代码来启用计算雾，依据场景中传递过去的参数:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>##Vertex shader
+First, you need to declare a varying variable:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T100046Z" creationid="aceway" creationdate="20170219T100046Z">
+        <seg>##顶点着色器
+首先，你需要声明一个变量:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5886,6 +5922,14 @@ particleSystem.stop();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>And, you are done :)</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T101204Z" creationid="aceway" creationdate="20170219T101204Z">
+        <seg>最终，你做到的 :)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>And, your camera will collide with the box when you move it too near to it.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T040611Z" creationid="aceway" creationdate="20170130T040611Z">
@@ -8130,6 +8174,16 @@ materialSphere1.diffuseTexture.vScale = 5.0;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Imagine that we have an image file such as this : http://jerome.bousquie.fr/BJS/images/spriteAtlas.png  
+We call it, in video games development,  a sprite atlas because we have 24 different spite images in a single file : 4 rows of 6 sprites, each having the same size.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T102601Z" creationid="aceway" creationdate="20170219T102411Z">
+        <seg>想象下我们有一个如这样的图片文件 : http://jerome.bousquie.fr/BJS/images/spriteAtlas.png  
+我们在视频游戏开发中调用它,  一个精灵集合大图，因为在一个文件里我们有24个不同的精灵图片 : 4行，每行6个精灵，每个都同样大小.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In a classic world such as Earth, the direction of the force of gravity is down (negative) along the Y axis, but feel free to change it!</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131518Z" creationid="aceway" creationdate="20170129T131518Z">
@@ -8370,6 +8424,14 @@ var noRotation = function(i, distance) {
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131141Z" creationid="aceway" creationdate="20170129T130524Z">
         <seg>在本教程里, 我们将模拟同样的(FPS)相机运动: 放在地板上的相机，与地面发生的碰撞，以及可能与场景中的任何物体发生的碰撞。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this tutorial, we will learn how to use the _faceUV_ and _faceColors_ parameters of the `MeshBuilder.CreateBox()` method in order to set a different texture or color per box face.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T101934Z" creationid="aceway" creationdate="20170219T101657Z">
+        <seg>在这个教程里, 我们将学习如何使用`MeshBuilder.CreateBox()` 方法的 _faceUV_ 和 _faceColors_ 参数来设置一个各面不同纹理和颜色的盒子.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8675,6 +8737,14 @@ Here is the example of the former _closeArray_ parameter with _closeArray_ and _
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It's not mandatory to use an atlas, we can just use a regular texture file and choose what part of it to display on each (or only some) box face.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T103102Z" creationid="aceway" creationdate="20170219T103102Z">
+        <seg>并不是强制使用集合大图，我们可以使用一个常规的文件而后选择其某一部分显示在盒子的每个(或仅一些) 面.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It's very simple to do this:
 ```javascript
 // 3 parameters to create an event:
@@ -8817,6 +8887,14 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let's go on.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T104020Z" creationid="aceway" creationdate="20170219T104020Z">
+        <seg>我们继续.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Let's look at the picture carefully.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T150039Z" creationid="aceway" creationdate="20170210T150039Z">
@@ -8867,6 +8945,14 @@ Both together : http://www.babylonjs-playground.com/#RF9W9#46</seg>
         <seg>我们把它设置回 false 同时设置 _ribbonClosePath_ 为true : http://www.babylonjs-playground.com/#RF9W9#45    
 现在造型闭合了.  
 两个一起设置为true : http://www.babylonjs-playground.com/#RF9W9#46</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let's start...</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T103111Z" creationid="aceway" creationdate="20170219T103111Z">
+        <seg>让我们开始...</seg>
       </tuv>
     </tu>
     <tu>
@@ -11513,10 +11599,26 @@ optional | animatable | [Animatable](http://doc.babylonjs.com/classes/Animatable
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Then you have to compute this value inside the shader:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T100149Z" creationid="aceway" creationdate="20170219T100149Z">
+        <seg>然后需要在着色器内计算其值:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Then, another comma, and another vector3 to a new location.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T142156Z" creationid="aceway" creationdate="20160503T142156Z">
         <seg>然后, 又一个逗号, 和又一个三元向标示点新定位点.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then, inside the shader, you have to use this function to get the fog color:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T100737Z" creationid="aceway" creationdate="20170219T100737Z">
+        <seg>然后，在着色器内部，你必须使用该函数获取雾的颜色:</seg>
       </tuv>
     </tu>
     <tu>
@@ -12055,6 +12157,14 @@ var myScale = function(i, distance) {
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160521T150542Z" creationid="aceway" creationdate="20160521T150324Z">
         <seg>这特别有用, 如果你想使用光照贴图烘焙到纹理.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is just an example, we could have had 32 rows of 32 images as well.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T102509Z" creationid="aceway" creationdate="20170219T102509Z">
+        <seg>这仅仅是个例子，我们也可以有32行，每行32个精灵图像.</seg>
       </tuv>
     </tu>
     <tu>
@@ -12705,6 +12815,18 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We create a rectangular box by using the `options` parameters line 43 and 50 : http://www.babylonjs-playground.com/#1V3CAT#10  
+Then we set the texture as a value on a material as usual : http://www.babylonjs-playground.com/#1V3CAT#11    
+Nothing new until now, right ?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T104057Z" creationid="aceway" creationdate="20170219T103701Z">
+        <seg>在43和50行我们使用 `可选` 参数创建了一个长方形盒子 : http://www.babylonjs-playground.com/#1V3CAT#10  
+然后像通常那样我们在一个材质上设置纹理值 : http://www.babylonjs-playground.com/#1V3CAT#11    
+直到现在也没有新东西，对吗 ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We defined a precise point in our scene, and if our balloon intersects this point, wherever on the balloon, then the event is raised and we change the color of the balloon.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T091221Z" creationid="aceway" creationdate="20170130T091221Z">
@@ -12843,6 +12965,14 @@ if (pickResult.hit) {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160403T032215Z" creationid="aceway" creationdate="20160403T032215Z">
         <seg>欢迎阅读 Babylon.js 初级教程, 这是后面学习最棒的基于Javascript的网页图形库框架所需必备知识的一个基础介绍.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Well, I'm about to talk about atlases here, but remember it's only an example to illustrate the per-texture feature.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T102809Z" creationid="aceway" creationdate="20170219T102542Z">
+        <seg>好了，我将在这开始讲集合大图，但是记住它仅是个用来阐述各面独立纹理特性的例子.</seg>
       </tuv>
     </tu>
     <tu>
@@ -13573,6 +13703,14 @@ You need not concern yourself with that, at this point.&amp;nbsp; Externalizing 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You then have to add the following code for the onBind callback of your ShaderMaterial:</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T101100Z" creationid="aceway" creationdate="20170219T101100Z">
+        <seg>然后你必须把下面代码添加到你的着色器材质 (ShaderMaterial)的onBind回调函数上:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You will also have to add a line below the TypeScriptSourceMap element to enable TypeScriptExperimentalDecorators.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T101631Z" creationid="aceway@qq.com" creationdate="20160427T101631Z">
@@ -13957,6 +14095,28 @@ Parameters are : name, path, radius, tesselation, optional radiusFunction, cap, 
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160507T110924Z" creationid="aceway" creationdate="20160507T110924Z">
         <seg>```
 参数为: 名称, 路径, 半径, 曲面细分, 可选的半径函数,  头罩, 场景, 可更新否, 朝向.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```
+fFogDistance = (view * worldPosition).z; // This is the distance of the vertex from the point of view of the camera (Camera space)
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T100343Z" creationid="aceway" creationdate="20170219T100343Z">
+        <seg>```
+fFogDistance = (view * worldPosition).z; // 这是从相机观察点(相机坐标空间)到顶点的距离
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>```
+shaderMaterial.onBind = function(mat, mesh) {</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T101116Z" creationid="aceway" creationdate="20170219T101116Z">
+        <seg>```
+shaderMaterial.onBind = function(mat,mesh) {</seg>
       </tuv>
     </tu>
     <tu>
