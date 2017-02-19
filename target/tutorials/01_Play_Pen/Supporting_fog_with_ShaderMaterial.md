@@ -4,21 +4,21 @@ PG_TITLE: 带材质的雾
 ---
 为零在你的自定义着色器里支持雾，我们必须在你的顶点和像素着色器里添加一些行代码.
 
-##Vertex shader
-First, you need to declare a varying variable:
+##顶点着色器
+首先，你需要声明一个变量:
 
 ```
 varying float fFogDistance;
 ```
 
-Then you have to compute this value inside the shader:
+然后需要在着色器内计算其值:
 
 ```
-fFogDistance = (view * worldPosition).z; // This is the distance of the vertex from the point of view of the camera (Camera space)
+fFogDistance = (view * worldPosition).z; // 这是从相机观察点(相机坐标空间)到顶点的距离
 ```
 
-##Pixel shader
-Next, you need to add the following code to be able to compute the fog accordingly to parameters sent by the scene:
+##像素着色器
+下一步，你需要添加以下代码来启用计算雾，依据场景中传递过去的参数:
 
 ```
 #define FOGMODE_NONE 0.
@@ -55,7 +55,7 @@ float CalcFogFactor()
 }
 ```
 
-Then, inside the shader, you have to use this function to get the fog color:
+然后，在着色器内部，你必须使用该函数获取雾的颜色:
 
 ```
 float fog = CalcFogFactor();
@@ -64,15 +64,15 @@ color.rgb = fog * color.rgb + (1.0 - fog) * vFogColor;
 
 ##Javascript
 
-You then have to add the following code for the onBind callback of your ShaderMaterial:
+然后你必须把下面代码添加到你的着色器材质 (ShaderMaterial)的onBind回调函数上:
 
 ```
-shaderMaterial.onBind = function(mat, mesh) {
+shaderMaterial.onBind = function(mat,mesh) {
     var effect = mat.getEffect();
     effect.setMatrix("view", scene.getViewMatrix());
-    effect.setFloat4("vFogInfos", scene.fogMode, scene.fogStart, scene.fogEnd, scene.fogDensity); 
+    effect.setFloat4("vFogInfos", scene.fogMode, scene.fogStart, scene.fogEnd, scene.fogDensity);
     effect.setColor3("vFogColor", scene.fogColor);
 }
 ```
 
-And, you are done :)
+最终，你做到的 :)
