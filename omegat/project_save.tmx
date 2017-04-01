@@ -9339,8 +9339,8 @@ Now that you have learned about the camera types and how to place them into your
       <tuv lang="EN-US">
         <seg>No need for submaterials or submeshes, when seeking such simple things as box-side materials.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T135940Z" creationid="aceway" creationdate="20170401T135940Z">
-        <seg>不需要子材质也不需要子网格, 当搜寻如盒子面一样的材质是.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T141119Z" creationid="aceway" creationdate="20170401T135940Z">
+        <seg>不需要子材质也不需要子网格, 当搜寻如盒子面一样的材质时.</seg>
       </tuv>
     </tu>
     <tu>
