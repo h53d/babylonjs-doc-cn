@@ -3022,6 +3022,14 @@ This parameter, present in each mesh creation method... tells if the mesh can be
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>###Colors</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T134617Z" creationid="aceway" creationdate="20170401T134617Z">
+        <seg>###颜色</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>###Textures</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T101939Z" creationid="aceway" creationdate="20170219T101939Z">
@@ -5340,6 +5348,18 @@ scene.beginAnimation(torus, 0, 120, true);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;br/&gt;
+&lt;br/&gt;
+Now let's look at the red haired character on the top face of the box.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T133500Z" creationid="aceway" creationdate="20170401T133500Z">
+        <seg>&lt;br/&gt;
+&lt;br/&gt;
+现在让我们看下盒子上面的红发的角色.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;title&gt;Babylon - Basic scene&lt;/title&gt;</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T145423Z" creationid="aceway" creationdate="20160428T145423Z">
@@ -5804,6 +5824,14 @@ sphere1.material = new BABYLON.StandardMaterial("texture1", scene);
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T153210Z" creationid="aceway" creationdate="20170210T153210Z">
         <seg>而且别忘了你可以变动光源的位置，方向，颜色，并因此创建一个精彩的'光秀'.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And finally we can also mix per-face colors with per-face textures, and/or mix either of those... with the material's standard colors.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T135744Z" creationid="aceway" creationdate="20170401T135744Z">
+        <seg>而且最终我们也可以将每个面的颜色和其纹理混合，或者和标准材质里的其它颜色混合.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6762,6 +6790,14 @@ particleSystem.disposeOnStop = true;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each _Vector4(x, y, z, w)_ will be defined in this way :</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T131224Z" creationid="aceway" creationdate="20170401T131155Z">
+        <seg>每个_四元向量(x, y, z, w)_ 将通过这种方式定义 :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Each image must be named per the corresponding face: “skybox_nx.png”, “skybox_ny.png”, “skybox_nz.png”, “skybox_px.png”, “skybox_py.png”, “skybox_pz.png”.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170204T035354Z" creationid="aceway" creationdate="20170204T035354Z">
@@ -7292,6 +7328,16 @@ particleSystem.manualEmitCount = 300;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Forget about the _for{}_ loop, just initialize our _faceUV_ array and set only _faceUV[4]_ :  
+```javascript</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T134249Z" creationid="aceway" creationdate="20170401T134249Z">
+        <seg>忘掉那个 _for{}_ 循环把, 只要初始化我们的_faceUV_ 数组同时只设置 _faceUV[4]_ :  
+```javascript</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>FreeCamera and ArcRotateCamera rely upon user inputs to move the camera.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170207T142352Z" creationid="aceway" creationdate="20170207T142352Z">
@@ -7352,6 +7398,14 @@ particleSystem.manualEmitCount = 300;
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T154006Z" creationid="aceway" creationdate="20170210T154006Z">
         <seg>猜猜看t!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>He has his head on the left, correct ?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T133617Z" creationid="aceway" creationdate="20170401T133617Z">
+        <seg>他的头在左侧，正确么 ?</seg>
       </tuv>
     </tu>
     <tu>
@@ -8184,6 +8238,14 @@ We call it, in video games development,  a sprite atlas because we have 24 diffe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Imagine we want to set only the face 4.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T134140Z" creationid="aceway" creationdate="20170401T134140Z">
+        <seg>想象下我们仅想要设置4号面.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In a classic world such as Earth, the direction of the force of gravity is down (negative) along the Y axis, but feel free to change it!</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170129T131518Z" creationid="aceway" creationdate="20170129T131518Z">
@@ -8887,6 +8949,32 @@ box.rotation = new BABYLON.Vector3(Math.PI/2, 0, -.707);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let's define a 6 element array _faceColors_ (6 box faces) and just set the color of the faces we want with `Colors4`.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T134941Z" creationid="aceway" creationdate="20170401T134941Z">
+        <seg>让我们定义一个 6元素的数组 _faceColors_ (盒子6个面) 同时设置盒子各面的颜色，我们使用类型`Colors4`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let's go back to our initial rectangular box : http://www.babylonjs-playground.com/#1V3CAT#10   
+We are about to apply the same principle here not with textures, but with colors.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T134804Z" creationid="aceway" creationdate="20170401T134804Z">
+        <seg>让我们回到我们初始的矩形盒子 : http://www.babylonjs-playground.com/#1V3CAT#10   
+我们将应用两个同样的规则，但不是纹理，而是颜色.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let's go back to our sprite atlas : we've got 4 rows of 6 sprites.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T132006Z" creationid="aceway" creationdate="20170401T132006Z">
+        <seg>让我们回头看看我们的精灵大集合图: 我们有4行每行6个精灵.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Let's go on.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T104020Z" creationid="aceway" creationdate="20170219T104020Z">
@@ -9249,10 +9337,26 @@ Now that you have learned about the camera types and how to place them into your
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No need for submaterials or submeshes, when seeking such simple things as box-side materials.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T135940Z" creationid="aceway" creationdate="20170401T135940Z">
+        <seg>不需要子材质也不需要子网格, 当搜寻如盒子面一样的材质是.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Not a bit of extra work for you.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170207T052844Z" creationid="aceway@qq.com" creationdate="20170207T052844Z">
         <seg>你不需做其它额外的工作.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Not clear ?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T131727Z" creationid="aceway" creationdate="20170401T131727Z">
+        <seg>不清楚么 ?</seg>
       </tuv>
     </tu>
     <tu>
@@ -9263,6 +9367,16 @@ So it may be confusing because :</seg>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170213T134316Z" creationid="aceway" creationdate="20170213T134316Z">
         <seg>不是被挤拉的造型的名称.  
 因此这个容易混淆，因为 :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Nothing easier : http://www.babylonjs-playground.com/#1V3CAT#26    
+Two boxes, two images, but only one texture !</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T134552Z" creationid="aceway" creationdate="20170401T134552Z">
+        <seg>没有比这更简单的: http://www.babylonjs-playground.com/#1V3CAT#26    
+两个盒子, 两个图像, 但只有个纹理!</seg>
       </tuv>
     </tu>
     <tu>
@@ -9925,6 +10039,16 @@ particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all From<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Please let's have a look from line 27 :  
+Line 30, we define a new array called _faceUV_, sized 6 because our box has 6 faces.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T130943Z" creationid="aceway" creationdate="20170401T130943Z">
+        <seg> 请让我们从27行开始看:  
+在30行, 我们定义了一个叫作 _faceUV_的新数组, 大小是6，因为我们的盒子有6个面.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Please make your array of vectors be formatted similarly.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160503T142319Z" creationid="aceway" creationdate="20160503T142319Z">
@@ -10199,6 +10323,28 @@ This path can be filled as you like : manually, by importing Vector3 from a data
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170211T045246Z" creationid="aceway" creationdate="20170211T045246Z">
         <seg>所以只用两个点，你就获得了一个简单的柱体.  
 只要你喜欢，可以这样提供该路径 : 手动， 从一个数据集里引入，使用些数学函数甚或这些方法组合.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So if we iterate i from 0 to 5 (so 6 times as 6 box faces) and if we assign  
+```javascript
+Ubottom = i / 6
+Vbottom = 0
+Utop = (i+1) / 6
+Vtop = 1 / 4
+```
+to each array element, we actually set a different sprite from the first horizontal row to each box face in the _faceUV_ array.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T132553Z" creationid="aceway" creationdate="20170401T132210Z">
+        <seg>所以如果我们从0开始迭代到5(要6次，因为6个面) 而且如果我们这样赋值
+给数组的每个元素：  
+```javascript
+Ubottom = i / 6
+Vbottom = 0
+Utop = (i+1) / 6
+Vtop = 1 / 4
+```, 我们实际是在从精灵集合图中第一水平行开始为盒子的每个面设置不同的精灵.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10645,6 +10791,14 @@ Hey, thanks for reading this tutorial and for discovering the BabylonJS playgrou
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T155120Z" creationid="aceway" creationdate="20160423T142412Z">
         <seg>该BabylonJS 娱乐场是一个在线的白板式可,可试验的应用程序... 用于辅助创建基于Javascript的网页图形库框架BabylonJS的场景.&amp;nbsp; 为了试验该娱乐场你的浏览器必须支持WebGL-而激活Javascript... .&amp;nbsp; &amp;nbsp;大多数的现在浏览器都支持.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Color4 alpha values become active if we set `hasVertexAlpha = true` : http://www.babylonjs-playground.com/#1V3CAT#27</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T135310Z" creationid="aceway" creationdate="20170401T135310Z">
+        <seg>类型Color4的透明通道值回被激活，如果我们设置`hasVertexAlpha = true` : http://www.babylonjs-playground.com/#1V3CAT#27</seg>
       </tuv>
     </tu>
     <tu>
@@ -11813,6 +11967,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These colors are BJS Color4-class values.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T135227Z" creationid="aceway" creationdate="20170401T135227Z">
+        <seg>这些颜色是BJS的Color4类型值.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These commands will apply to every animation object contained in the Animatable's ._animations array.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160402T105020Z" creationid="aceway" creationdate="20160402T105020Z">
@@ -11889,6 +12051,14 @@ var index2 = indices[pickResult.faceId * 3 + 2];
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170211T044808Z" creationid="aceway" creationdate="20170211T044808Z">
         <seg>这个路径数组至少有两个三元向量.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This array will always content Vector4 elements.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T131200Z" creationid="aceway" creationdate="20170401T130742Z">
+        <seg>这个数组的内容总是四元向量.</seg>
       </tuv>
     </tu>
     <tu>
@@ -12037,6 +12207,14 @@ var myScale = function(i, distance) {
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170130T035759Z" creationid="aceway" creationdate="20170130T034702Z">
         <seg>这个椭球体表示我们播放器大小: 当网格和椭球体发生接触时就会抛出一个碰撞事件，以预防我们的相机和该网格考得太近:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This face is the box face 4 (just make attempts to discover the box geometry).</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T133843Z" creationid="aceway" creationdate="20170401T133843Z">
+        <seg>这个面是盒子的4号面(只是方便区分组成盒子的几何形状).</seg>
       </tuv>
     </tu>
     <tu>
@@ -12805,6 +12983,14 @@ var spriteManagerPlayer = new BABYLON.SpriteManager("playerManagr","Assets/Playe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We can even combine the vertex colors with a colored material, blue here :  http://www.babylonjs-playground.com/#1V3CAT#15</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T135441Z" creationid="aceway" creationdate="20170401T135441Z">
+        <seg>我们甚至可以将该顶点颜色和颜色材质结合使用， 此处是结合蓝色的:  http://www.babylonjs-playground.com/#1V3CAT#15</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We can refine some parameters:
 * Box around our emitter.</seg>
       </tuv>
@@ -12877,6 +13063,16 @@ if (pickResult.hit) {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T045001Z" creationid="aceway@qq.com" creationdate="20170206T045001Z">
         <seg>我们只要确保有个合适的 _旋转目标_ 属性的设置 ( 我们之前用new BABYLON.Vector3.Zero() 构造的), 然后使用 _setPosition()_ 把相机准确地放置到我们期望的三维空间中的位置.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We just then need to swap _y_ and _w_ coordinate values :  
+```javascript</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T133920Z" creationid="aceway" creationdate="20170401T133920Z">
+        <seg>我们只需要交换 _y_ 和 _w_ 的坐标值 :  
+```javascript</seg>
       </tuv>
     </tu>
     <tu>
@@ -12981,6 +13177,14 @@ if (pickResult.hit) {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20160427T023517Z" creationid="aceway@qq.com" creationdate="20160427T023517Z">
         <seg>对于BabylonJS的网页图形库渲染画布你怎么评价, 没有比这个说法更牛逼的了 "它是这个星球上最酷的事情!".&amp;nbsp; 娱乐场的右边部分是BabylonJS网页图形库框架用来渲染场景的区域，而且你可以通过左边的编辑器实时控制场景.&amp;nbsp; 渲染出来的画布还是空白么?&amp;nbsp; 你点击了运行按钮么?&amp;nbsp; 你有创建相机么?&amp;nbsp; 相机的目标设置正确么?&amp;nbsp; 你网格的材质设置好了光源或散射色么？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What if we want to flip only this face ?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T133704Z" creationid="aceway" creationdate="20170401T133704Z">
+        <seg>如果我们想翻转下这个面，怎么办 ?</seg>
       </tuv>
     </tu>
     <tu>
@@ -14861,6 +15065,38 @@ var tube =  BABYLON.Mesh.CreateTube(name, path, radius, tessellation, radiusFun
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>as _Ubottom_, _Vbottom_ are the 2D coordinates of the bottom left point of where the texture crop starts and _Utop_, _Vtop_ the top right ones of where the texture crop ends.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T131708Z" creationid="aceway" creationdate="20170401T131708Z">
+        <seg>正如 _Ubottom_, _Vbottom_ 是左下点(纹理裁剪开始处)的2维坐标，同时 _Utop_, _Vtop_ 是右上点(纹理裁剪的结束处)的2维坐标.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>box.material = mat;
+```
+Here's the result : http://www.babylonjs-playground.com/#1V3CAT#12  
+Quite easy, isn't it ?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T133400Z" creationid="aceway" creationdate="20170401T133400Z">
+        <seg>box.material = mat;
+```
+这儿有结果 : http://www.babylonjs-playground.com/#1V3CAT#12  
+非常简单，不是么?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>code :
+```javascript</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T132223Z" creationid="aceway" creationdate="20170401T132223Z">
+        <seg>代码 :
+```javascript</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>example : http://www.babylonjs-playground.com/#295H7U  
 Here we populate an array called _paths_ with many path arrays.  
 Each _path_ array is populated itself with Vector3 along a Bézier curve.</seg>
@@ -14869,6 +15105,56 @@ Each _path_ array is populated itself with Vector3 along a Bézier curve.</seg>
         <seg>示例: http://www.babylonjs-playground.com/#295H7U  
 在这里我们使用许多路径数组填充出一个我们称为_paths_的数组.
 每个路径数组接合贝赛尔曲线上的三维向量来填充.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>faceColors[1] = new BABYLON.Color4(0,1,0,1);   // green front
+```
+Then pass this array to the `CreateBox()` method with the new `faceColors` parameter of `options`    
+```javascript</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T135132Z" creationid="aceway" creationdate="20170401T135132Z">
+        <seg>faceColors[1] = new BABYLON.Color4(0,1,0,1);   // 绿色的前面
+```
+然后将这个数组传给 `CreateBox()` 方法，通过`options`参数新的`faceColors`项：     
+```javascript</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>faceUV[4] = new BABYLON.Vector4(0, 0, 1 / hSpriteNb, 1 / vSpriteNb);
+```
+Only two lines of code only and that's all : http://www.babylonjs-playground.com/#1V3CAT#25  
+&lt;br/&gt;
+&lt;br/&gt;
+We could also want to apply two different images from the same texture file onto two different meshes.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T134609Z" creationid="aceway" creationdate="20170401T134448Z">
+        <seg>faceUV[4] = new BABYLON.Vector4(0, 0, 1 / hSpriteNb, 1 / vSpriteNb);
+```
+只需两行代码，而且那就是全部 : http://www.babylonjs-playground.com/#1V3CAT#25  
+&lt;br/&gt;
+&lt;br/&gt;
+我们也可能想从同一个纹理文件中取两个不同的图像应用到两个不同的网格.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>faceUV[f].w = temp;
+```
+And now, his head is in on the right : http://www.babylonjs-playground.com/#1V3CAT#13  
+&lt;br/&gt;
+&lt;br/&gt;
+Obviously, we aren't not required to set every box face.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T134055Z" creationid="aceway" creationdate="20170401T133958Z">
+        <seg>faceUV[f].w = temp;
+```
+然后, 他的头就位于右侧了: http://www.babylonjs-playground.com/#1V3CAT#13  
+&lt;br/&gt;
+&lt;br/&gt;
+显然, 我们并不需要设置每个面.</seg>
       </tuv>
     </tu>
     <tu>
@@ -14959,6 +15245,18 @@ You will find a complete demonstration of the easing functions behaviors, in the
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>var box = BABYLON.MeshBuilder.CreateBox('box', options, scene);
+```
+Simple, isn't it ?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T135203Z" creationid="aceway" creationdate="20170401T135203Z">
+        <seg>var box = BABYLON.MeshBuilder.CreateBox('box', options, 场景);
+```
+简单，不是么 ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>var engine = new BABYLON.Engine(canvas, true);</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160423T145902Z" creationid="aceway" creationdate="20160423T145902Z">
@@ -14987,10 +15285,42 @@ character.moveWithCollisions(backwards);
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>var hSpriteNb =  6;  // 6 sprites per raw</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T132634Z" creationid="aceway" creationdate="20170401T132634Z">
+        <seg>var hSpriteNb =  6;  // 每行6个精灵</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>var vSpriteNb =  4;  // 4 sprite raws</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T132647Z" creationid="aceway" creationdate="20170401T132647Z">
+        <seg>var vSpriteNb =  4;  // 4行精灵</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>window.addEventListener("resize", function () {</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20160429T125454Z" creationid="aceway" creationdate="20160429T125454Z">
         <seg>window.addEventListener("resize", 函数 () {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x = Ubottom  
+y = Vbottom  
+z = Utop   
+w = Vtop  
+all are in the range [0, 1]</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T131245Z" creationid="aceway" creationdate="20170401T131245Z">
+        <seg>x = Ubottom  
+y = Vbottom  
+z = Utop   
+w = Vtop  
+所有值在[0, 1]区间</seg>
       </tuv>
     </tu>
     <tu>
@@ -15093,6 +15423,32 @@ optional | speedRatio | number | default : 1.</seg>
         <seg> | 止于 | 数量 | 结束fps
 可选 | 循环 | 布尔值 | 如果为真,则动画循环播放 (取决于BABYLON.Animation.ANIMATIONLOOPMODE)
 可选 | 速率 | 数值 | 默认 : 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>}
+```
+Then, to pass this array to the `CreateBox()` method, just add a parameter called `faceUV`, valued with this array, to the options :  
+```javascript</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T133305Z" creationid="aceway" creationdate="20170401T132730Z">
+        <seg>}
+```
+然后，将这个数组传递给`CreateBox()` 方法, 只要在该方法的options参数里添加一个叫做 `faceUV`项, 用这个数组作为其值:  
+```javascript</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>};
+```
+Enjoy : http://www.babylonjs-playground.com/#1V3CAT#16</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T135805Z" creationid="aceway" creationdate="20170401T135805Z">
+        <seg>};
+```
+把玩下 : http://www.babylonjs-playground.com/#1V3CAT#16</seg>
       </tuv>
     </tu>
     <tu>
