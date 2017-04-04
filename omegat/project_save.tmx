@@ -3065,9 +3065,9 @@ This parameter, present in each mesh creation method... tells if the mesh can be
         <seg>##MeshBuilder CreateXXX() Methods With Options Parameter
 In this tutorial, we will learn how to use the classical _CreateXXX()_ methods with the _options_ parameter instead of the full list of parameters.</seg>
       </tuv>
-      <tuv lang="ZH-CN" changeid="aceway" changedate="20160428T144127Z" creationid="aceway" creationdate="20160428T144127Z">
-        <seg>##MeshBuilder CreateXXX() 方法 With Options Parameter
-In this 教程, we will learn how to use the classical _CreateXXX()_ 方法 with the _options_ parameter instead of the full list of 参数.</seg>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170404T133559Z" creationid="aceway" creationdate="20160428T144127Z">
+        <seg>##带可选参数的网格构造器的 CreateXXX() 方法
+在本教程里, 我们将学习如何使用经典的 _CreateXXX()_ 方法，以 _可选_ 参数而不是罗列所有参数的方式.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6200,6 +6200,16 @@ BABYLON.Mesh.ExtrudeShape(name, shape, path, scale, rotation, cap, scene, updata
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because it doesn't do just only the same ...  
+Depending on the shape type, it allows to make some (or all) parameters optional or it provides more features to the created mesh.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170404T135342Z" creationid="aceway" creationdate="20170404T135342Z">
+        <seg>因为它们并非完全一样 ...  
+取决于造型物的类型, 它允许你设置些(或全部) 可选参数 或 它能过提供更多的特性来创建网格.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because the orientation of an ArcRotateCamera is relative to its _target_ setting, it is wise to use a handy method called _setPosition()_ to set the camera position.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway@qq.com" changedate="20170206T043431Z" creationid="aceway@qq.com" creationdate="20170206T043431Z">
@@ -8494,6 +8504,28 @@ var noRotation = function(i, distance) {
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170219T101934Z" creationid="aceway" creationdate="20170219T101657Z">
         <seg>在这个教程里, 我们将学习如何使用`MeshBuilder.CreateBox()` 方法的 _faceUV_ 和 _faceColors_ 参数来设置一个各面不同纹理和颜色的盒子.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Indeed, as for BJS 2.3+, all the _CreateXXX()_ methods can be called either by 
+```javascript
+var mesh = BABYLON.Mesh.CreateMesh(name, param1, param2, param3, ..., scene);
+```
+either by
+```javascript
+var mesh = BABYLON.MeshBuilder.CreateMesh(name, {param1 : val1, param2: val2}, scene);
+```</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170404T133822Z" creationid="aceway" creationdate="20170404T133256Z">
+        <seg>实际上, 到BJS 2.3+版本为止, 所有的 _CreateXXX()_ 方法 都能过以 
+```javascript
+var mesh = BABYLON.Mesh.CreateMesh(name, param1, param2, param3, ..., scene);
+```
+方式调用，也能以这个方式调用：
+```javascript
+var mesh = BABYLON.MeshBuilder.CreateMesh(name, {param1 : val1, param2: val2}, scene);
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -13279,6 +13311,14 @@ NOTE : the _closeXXX_ names are the ribbon ones.</seg>
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170210T152123Z" creationid="aceway" creationdate="20170210T152123Z">
         <seg>是否将其设置为 true 或 false， 光线对背面的照射效果都没有改变.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Why to use then the _options_ parameter if it only does the same as the parameter list ?</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20170404T133949Z" creationid="aceway" creationdate="20170404T133949Z">
+        <seg>如果 _可选_ 参数方式仅和参数列表方式作一样的事情，为什么使用 可选 参数方式呢？</seg>
       </tuv>
     </tu>
     <tu>
