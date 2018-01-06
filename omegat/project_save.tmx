@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tmx SYSTEM "tmx11.dtd">
 <tmx version="1.1">
-  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.5.4" segtype="sentence" srclang="EN-US"/>
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-3.6.0" segtype="sentence" srclang="EN-US"/>
   <body>
 <!-- Default translations -->
     <tu>
@@ -3026,6 +3026,16 @@ This parameter, present in each mesh creation method... tells if the mesh can be
       </tuv>
       <tuv lang="ZH-CN" changeid="aceway" changedate="20170401T134617Z" creationid="aceway" creationdate="20170401T134617Z">
         <seg>###颜色</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>###Fixed Shapes
+We call _fixed shapes_ all the mesh types that are not parametric, it is to say all the mesh types what have an expected final shape.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20180106T112218Z" creationid="aceway" creationdate="20180106T112218Z">
+        <seg>###固定造型
+我们将所有那些没用参数网格构造的对象称为 _固定造型_ , 也就是说的那些所有可预期的造型.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7310,6 +7320,14 @@ particleSystem.manualEmitCount = 300;
     "targetType": string (BabylonJS动作创建器内部使用的, 指明在哪找到"propertyPath"属性的)
 }
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, if we create a _Sphere_ or a _Box_ mesh, we expect to get a spherical or a cubic shape whereas if we create a _Ribbon_ mesh, as it depends upon a data set to be created (the _pathArray_), we can't predict its final shape.</seg>
+      </tuv>
+      <tuv lang="ZH-CN" changeid="aceway" changedate="20180106T112939Z" creationid="aceway" creationdate="20180106T112939Z">
+        <seg>例如,如果我们创建一个 _球体_ 或一个 _盒子_ 型的网格, 我们期望得到一个球状的或立方体状的造型, 然而如果我们创建一个 _条带_ 的网格, 由于它取决于一个需要构造的数据库 (那个 _路径数组_), 我们不能预测其最终的形状.</seg>
       </tuv>
     </tu>
     <tu>
